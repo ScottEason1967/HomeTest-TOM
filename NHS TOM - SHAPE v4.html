@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex,nofollow">
+<script>
+(function(){
+  if (window.location.protocol === 'file:') return;
+  if (sessionStorage.getItem('ht_auth') === '1') return;
+  try { sessionStorage.setItem('ht_dest', window.location.pathname + window.location.search); } catch(e){}
+  window.location.replace('index.html');
+})();
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SHAPE: NHS Target Operating Model</title>
@@ -361,7 +371,7 @@
 <body>
 <nav class="site-topnav">
   <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-    <a href="HomeTest Operating Model — Index.html" class="nav-back">&larr; Operating Model</a>
+    <a href="home.html" class="nav-back">&larr; Operating Model</a>
     <span class="nav-crumb">/</span>
     <a href="HomeTest Operating Model — Lifecycle.html" class="nav-back">When</a>
   </div>
