@@ -209,7 +209,7 @@
         <p class="hero-sub">Every operating model has to answer five questions. <span class="q-why">WHY</span> it exists, at the centre. <span class="q-what">WHAT</span> it is composed of, <span class="q-when">WHEN</span> things happen, <span class="q-how">HOW</span> people work day to day, and <span class="q-who">WHO</span> is accountable around it.</p>
       </div>
       <div class="hero-patients">
-        <a href="HomeTest Operating Model — Persona Abdul.html" class="hero-patient">
+        <a href="HomeTest Operating Model - Persona Abdul.html" class="hero-patient">
           <img src="Assets/Personas/abdul.png" alt="Abdul">
           <div class="hero-patient-text">
             <span class="hero-patient-name">Abdul, 38</span>
@@ -217,7 +217,7 @@
             <span class="hero-patient-bio">Works full time, doesn&apos;t want to take time off for a screening clinic. Picks up an NHS App nudge, takes a BP check at home, lands in a CVKM Check Up if his risk score warrants it.</span>
           </div>
         </a>
-        <a href="HomeTest Operating Model — Persona Mark.html" class="hero-patient">
+        <a href="HomeTest Operating Model - Persona Mark.html" class="hero-patient">
           <img src="Assets/Personas/mark.png" alt="Mark">
           <div class="hero-patient-text">
             <span class="hero-patient-name">Mark, 65</span>
@@ -225,7 +225,7 @@
             <span class="hero-patient-bio">On active surveillance for low-grade prostate cancer. His consultant orders the PSA, the kit comes to the house, the result is reviewed before he ever hears about it.</span>
           </div>
         </a>
-        <a href="HomeTest Operating Model — Persona Layla.html" class="hero-patient">
+        <a href="HomeTest Operating Model - Persona Layla.html" class="hero-patient">
           <img src="Assets/Personas/layla.png" alt="Layla">
           <div class="hero-patient-text">
             <span class="hero-patient-name">Layla, 42</span>
@@ -243,27 +243,27 @@
     <h2 class="hiw-title">Five questions. Nine people. One model.</h2>
     <p class="hiw-sub"><strong>WHY</strong> sits in the centre. <strong>WHAT</strong>, <strong>WHEN</strong>, <strong>HOW</strong> and <strong>WHO</strong> sit around it. Five questions, five pages. The same nine people thread through all of them.</p>
     <div class="hiw-layers">
-      <a class="hiw-layer" href="HomeTest Operating Model — Why.html">
+      <a class="hiw-layer" href="HomeTest Operating Model - Why.html">
         <div class="hiw-layer-q q-why">WHY</div>
         <div class="hiw-layer-h">Why does the model exist?</div>
         <div class="hiw-layer-body">Purpose. Three lenses: the problem we solve, the economics that have to hold, why each audience engages. Patient, Commissioner, Supplier at the centre.</div>
       </a>
-      <a class="hiw-layer" href="HomeTest Operating Model — Anatomical.html">
+      <a class="hiw-layer" href="HomeTest Operating Model - Anatomical.html">
         <div class="hiw-layer-q q-what">WHAT</div>
         <div class="hiw-layer-h">What is it composed of?</div>
         <div class="hiw-layer-body">Anatomy. Four levels: <strong>foundation</strong> (what every test type shares), <strong>overlays</strong> (what varies by pathway), <strong>patterns</strong> (named recipes that combine foundation + overlays), <strong>configurations</strong> (live deployments with specific suppliers and parameters). The foundation / overlay split is what lets one platform serve many conditions without rebuilding from scratch.</div>
       </a>
-      <a class="hiw-layer" href="HomeTest Operating Model — Lifecycle.html">
+      <a class="hiw-layer" href="HomeTest Operating Model - Lifecycle.html">
         <div class="hiw-layer-q q-when">WHEN</div>
         <div class="hiw-layer-h">When do things happen?</div>
         <div class="hiw-layer-body">Lifecycle. Five-stage continuous loop: Shape, Assure, Contract, Fulfil, Measure. The same cast appears at each stage in different combinations.</div>
       </a>
-      <a class="hiw-layer" href="HomeTest Operating Model — Operational.html">
+      <a class="hiw-layer" href="HomeTest Operating Model - Operational.html">
         <div class="hiw-layer-q q-how">HOW</div>
         <div class="hiw-layer-h">How does it operate?</div>
         <div class="hiw-layer-body">Operations. Seven swimlanes, one per actor (including a dedicated information governance lane). Foundation vs overlay colour coding inside the lanes shows what's universal vs what varies by configuration.</div>
       </a>
-      <a class="hiw-layer" href="HomeTest Operating Model — Governance.html">
+      <a class="hiw-layer" href="HomeTest Operating Model - Governance.html">
         <div class="hiw-layer-q q-who">WHO</div>
         <div class="hiw-layer-h">Who is accountable?</div>
         <div class="hiw-layer-body">Governance. Decision rights, RACI tables, escalation routes. Ten open governance questions still pending SLT input.</div>
@@ -272,19 +272,19 @@
     <p class="hiw-note">Same nine people in every frame: three patient archetypes (Abdul, Mark, Layla) plus six operating roles (Sarah, Joe, Aisha, Priya, David, Ngozi). The questions are how you read the site. The people are who you&apos;re reading about.</p>
   </div>
 
-  <a href="HomeTest Operating Model — Status.html" class="status-panel">
+  <a href="HomeTest Operating Model - Status.html" class="status-panel">
     <div class="sp-text">
       <div class="sp-eyebrow">Where the model stands</div>
       <div class="sp-title">Status<span class="sp-cta-arrow">&rarr;</span></div>
       <div class="sp-desc">Every open decision, open question and piece of work in flight across the model, in one place. Click through to see the full list grouped by category.</div>
     </div>
     <div class="sp-stat open">
-      <div class="sp-stat-count">62</div>
+      <div class="sp-stat-count" id="home-count-unresolved">64</div>
       <div class="sp-stat-label">Unresolved</div>
       <div class="sp-stat-desc">Awaiting decision, position or owner.</div>
     </div>
     <div class="sp-stat prog">
-      <div class="sp-stat-count">36</div>
+      <div class="sp-stat-count" id="home-count-in-progress">30</div>
       <div class="sp-stat-label">In progress</div>
       <div class="sp-stat-desc">Work in flight across the five stages.</div>
     </div>
@@ -530,5 +530,34 @@
     </div>
   </div>
 </div>
+
+<script>
+// Keep home-page status counts in sync with the Status page.
+// Tries ASCII filename first (post-rename), falls back to em-dash.
+// If both fail, static values in the HTML remain as fallback.
+(async function syncStatusCounts(){
+  try {
+    const candidates = [
+      'HomeTest Operating Model - Status.html',
+      'HomeTest Operating Model - Status.html'
+    ];
+    let html = null;
+    for (const url of candidates) {
+      try {
+        const r = await fetch(url);
+        if (r.ok) { html = await r.text(); break; }
+      } catch (_) { /* try next */ }
+    }
+    if (!html) return;
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const counts = doc.querySelectorAll('.sum-count');
+    if (counts.length < 2) return;
+    const u = document.getElementById('home-count-unresolved');
+    const p = document.getElementById('home-count-in-progress');
+    if (u) u.textContent = counts[0].textContent.trim();
+    if (p) p.textContent = counts[1].textContent.trim();
+  } catch (e) { /* keep static fallback */ }
+})();
+</script>
 </body>
 </html>
