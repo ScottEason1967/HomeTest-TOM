@@ -370,9 +370,18 @@
 </style>
 </head>
 <body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
 <nav class="site-topnav">
   <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-    <a href="index.html" class="nav-back">&larr; Operating Model</a>
+    <a href="home.html" class="nav-back">&larr; Operating Model</a>
     <span class="nav-crumb">/</span>
     <a href="HomeTest Operating Model - Lifecycle.html" class="nav-back">When</a>
   </div>

@@ -57,8 +57,17 @@
 </style>
 </head>
 <body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
 <nav class="topnav">
-  <a href="index.html" class="nav-back">&larr; Operating Model</a>
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
   <div class="nav-siblings">
     <a href="HomeTest Operating Model - Persona Abdul.html">Abdul</a>
     <a href="HomeTest Operating Model - Persona Mark.html">Mark</a>
