@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta name="robots" content="noindex,nofollow">
-<script>
-(function(){
-  if (window.location.protocol === 'file:') return;
-  if (sessionStorage.getItem('ht_auth') === '1') return;
-  try { sessionStorage.setItem('ht_dest', window.location.pathname + window.location.search); } catch(e){}
-  window.location.replace('index.html');
-})();
-</script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HomeTest Operating Model: Status</title>
@@ -93,6 +83,7 @@
   details.cat-slt{border-left:4px solid var(--amber-deep);}
   details.cat-stage{border-left:4px solid var(--nhs-blue);}
   details.cat-op{border-left:4px solid var(--nhs-green);}
+  details.cat-risk{border-left:4px solid var(--status-open);background:#fffafa;}
   /* In-progress stage variants */
   details.stage-shape{border-left:4px solid #005EB8;}
   details.stage-assure{border-left:4px solid #41B6E6;}
@@ -111,7 +102,7 @@
 </head>
 <body>
 <nav class="topnav">
-  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <a href="HomeTest Operating Model — Index.html" class="nav-back">&larr; Operating Model</a>
   <div class="nav-siblings">
     <a href="HomeTest Operating Model — Why.html">Why</a>
     <a href="HomeTest Operating Model — Anatomical.html">What</a>
@@ -134,7 +125,7 @@
   <div class="summary">
     <a href="#unresolved" class="sum-card sum-card-open">
       <div class="sum-eyebrow open">Awaiting decision</div>
-      <div class="sum-count">62</div>
+      <div class="sum-count">64</div>
       <div class="sum-label">Unresolved items</div>
       <div class="sum-desc">Governance accountability, architectural positioning, operational mechanism, stage decisions, Open Qs for SLT.</div>
       <div class="sum-cta">See the full list <span class="sum-cta-arrow">&darr;</span></div>
@@ -150,7 +141,7 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">62 items, awaiting decision</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">64 items, awaiting decision or mitigation</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Governance -->
@@ -311,10 +302,52 @@
       </div>
     </details>
 
+    <!-- Operating risks -->
+    <details class="cat cat-risk" open>
+      <summary>
+        <span class="cat-h">Operating risks <span class="cat-count">4</span></span>
+        <span class="cat-desc">Delivery dependencies the framework has to mitigate, not decisions to take.</span>
+      </summary>
+      <div class="items">
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">IG decision responsiveness</div>
+            <div class="item-desc">The platform depends on PTT and other IG bodies to confirm positions on lawful basis, controller designation, direction need, and DPIA sign-off. Those counterparts operate on their own timelines and rarely commit to a response window or articulate the rules they apply. The framework&apos;s response is the assumption discipline embedded in the IG lane (working assumption documented, SLT signed off, programme board records it), but the underlying risk is that delays compound across configurations as the platform scales. Needs visibility at programme level, not just inside the IG lane.</div>
+            <div class="item-owner"><strong>Owner:</strong> SRO with IG Lead and Commercial Lead. Programme to surface IG response gaps as a standing item.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model — Operational.html#lane-5">Open on HOW &rarr;</a>
+        </div>
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">PTT scope is fragmented across clinical areas</div>
+            <div class="item-desc">PTT teams are organised by clinical area, not by platform. The team that decides directions for the current clinical area is not the team that decides directions for primary care, secondary care diagnostics, or screening outside the current condition. As the platform scales, it engages multiple PTT teams in parallel, each with its own posture, process and timeline. The framework needs to be portable across them, with a clear handover pattern when a new clinical area first comes into scope.</div>
+            <div class="item-owner"><strong>Owner:</strong> IG Lead with SRO. Pattern to be agreed before the second clinical area enters SHAPE.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model — Persona Ngozi.html">Open on Ngozi &rarr;</a>
+        </div>
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">IG counterpart capacity (PTT and broader NHSE IG)</div>
+            <div class="item-desc">Beyond the IAO requirement, IG counterpart capacity is constrained across NHS. PTT teams in particular have limited bandwidth, and IG bodies are not resourced for the cadence of work a multi-condition, multi-configuration platform generates over time. The framework has to assume IG counterpart bandwidth is finite and plan around it: batched submissions where possible, early engagement before formal sign-off windows, working assumptions where responses lag, and a clear escalation route when capacity is the blocker rather than the position.</div>
+            <div class="item-owner"><strong>Owner:</strong> IG Lead with SRO.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model — Operational.html#lane-5">Open on HOW &rarr;</a>
+        </div>
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">Parallel supply-chain framework fragmenting the supplier market</div>
+            <div class="item-desc">The NHS Supply Chain POCT framework plans to add home testing and is already in use by parts of the system. A parallel framework fragments the supplier market the platform is trying to organise, and is being built outside the platform&apos;s authority. The framework cannot decide it away. The mitigation is positioning: clarity on which suppliers and use cases each framework is best suited to, an explicit interface where the two overlap, and an aligned commercial story so suppliers are not forced to pick a side.</div>
+            <div class="item-owner"><strong>Owner:</strong> Commercial Lead with SRO. Cross-programme alignment needed with NHS Supply Chain.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a>
+        </div>
+      </div>
+    </details>
+
     <!-- Stage decisions -->
     <details class="cat cat-stage">
       <summary>
-        <span class="cat-h">Stage-specific decisions <span class="cat-count">27</span></span>
+        <span class="cat-h">Stage-specific decisions <span class="cat-count">26</span></span>
         <span class="cat-desc">Lifecycle-stage decisions awaiting resolution. Click to expand.</span>
       </summary>
       <div class="items">
@@ -327,7 +360,6 @@
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: offboarding trigger criteria and process</div><div class="item-desc">What happens when a supplier fails to meet standards?</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: IAO appointment</div><div class="item-desc"><strong>Critical blocker.</strong> PTT requires permanent NHSE employee. Programme heavily contractor-led, no eligible IAO yet identified.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: EScAL assurance framework</div><div class="item-desc">Surfaced in April. Suppliers must go through EScAL when coming on board. Process and gate criteria not yet integrated into onboarding flow.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
-        <div class="item"><div class="item-body"><div class="item-title">ASSURE: IG resourcing</div><div class="item-desc">Broader governance gaps beyond IAO. PTT capacity constrained across NHS.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: delivery model assessment</div><div class="item-desc">Should suppliers deliver directly to patients or through NHS infrastructure? Determines the supply chain shape.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: framework purpose-built vs hosted</div><div class="item-desc">Whether the framework is purpose-built or hosted on an existing vehicle (SBS being explored as one possibility).</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: exit terms and offboarding mechanics</div><div class="item-desc">Contractual mechanics for exit and offboarding.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
@@ -351,7 +383,7 @@
     <!-- Operational mechanism -->
     <details class="cat cat-op">
       <summary>
-        <span class="cat-h">Operational mechanism <span class="cat-count">19</span></span>
+        <span class="cat-h">Operational mechanism <span class="cat-count">18</span></span>
         <span class="cat-desc">Lane-by-lane operational decisions. From HOW page. Click to expand.</span>
       </summary>
       <div class="items">
@@ -370,7 +402,6 @@
         <div class="item"><div class="item-body"><div class="item-title">DCB0160 model</div><div class="item-desc">Full, light-touch, or hybrid per commissioner. Full at every LA is a bottleneck risk.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Return rate publication</div><div class="item-desc">Transparency mechanism. Format, frequency and audience not specified.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Safe Launch Engine</div><div class="item-desc">Term appears in a published clinical-safety position statement but scope, ownership, technical content and cost are not defined. Clinical Safety needs to define it before treating as a load-bearing capability.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
-        <div class="item"><div class="item-body"><div class="item-title">NHS Supply Chain parallel path</div><div class="item-desc">NHS SC POCT framework plans to add home testing. GSTT already using it. Parallel framework fragments the supplier market.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Framework administration route</div><div class="item-desc">NHSE direct, SBS, CCS or third-party delivery partner. NHS Commercial preference is to outsource. Decision required ahead of June Options Paper.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Supplier removal process</div><div class="item-desc">PA23 provides the legal basis but operational process not defined. Notice periods, evidence thresholds, appeals, transition support all need designing.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Minimum supplier count</div><div class="item-desc">Two per region? Per pathway? Per test type? Not defined. A resilience question.</div></div><a class="item-link" href="HomeTest Operating Model — Operational.html">Open on HOW &rarr;</a></div>
