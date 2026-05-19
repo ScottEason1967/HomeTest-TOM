@@ -219,6 +219,44 @@
   .tom-topnav .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
   .tom-topnav .nav-siblings a.active{background:#9A6700;color:#fff;}
   .tom-topnav .nav-sep{width:1px;height:18px;background:#ebeef1;margin:0 6px;display:inline-block;}
+
+  /* === Legend strip (horizontal, full-width below title) === */
+  .legend{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 22px 18px;box-shadow:0 2px 8px rgba(0,32,64,0.04);margin:18px 0 28px;}
+  .legend-title{font-size:10.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;}
+  .legend-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+  @media (max-width:880px){.legend-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:520px){.legend-grid{grid-template-columns:1fr;}}
+  .legend-item{display:grid;grid-template-columns:70px 1fr;gap:12px;align-items:center;padding:8px 18px;border-left:1px solid var(--border-lt);}
+  .legend-item:first-of-type{border-left:none;padding-left:0;}
+  @media (max-width:880px){
+    .legend-item{border-left:none;border-top:1px solid var(--border-lt);padding:10px 0;}
+    .legend-item:nth-of-type(-n+2){border-top:none;}
+    .legend-item:nth-of-type(2){border-left:1px solid var(--border-lt);padding-left:18px;}
+  }
+  @media (max-width:520px){
+    .legend-item{border-left:none !important;padding-left:0 !important;border-top:1px solid var(--border-lt);}
+    .legend-item:first-of-type{border-top:none;}
+  }
+  .legend-icon{display:flex;align-items:center;justify-content:center;}
+  /* Demo "1 of 11" badge — mirrors .cap-num at scaled-down size */
+  .legend-num{background:#003087;color:#fff;border-radius:6px;padding:5px 7px;text-align:center;width:62px;display:flex;flex-direction:column;justify-content:center;align-items:center;height:44px;}
+  .legend-num .cap-num-big{font-size:18px;font-weight:900;letter-spacing:-0.5px;line-height:1;}
+  .legend-num .cap-num-of{font-size:8.5px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;opacity:0.85;margin-top:2px;}
+  /* Demo sizing box — mirrors .cap-sizing */
+  .legend-sizing{background:#F4F8FC;border:1px solid #DCE6EE;border-radius:8px;padding:6px 10px;min-width:62px;text-align:center;}
+  .legend-sizing-label{font-size:8.5px;font-weight:800;letter-spacing:0.9px;color:var(--text-muted);text-transform:uppercase;margin-bottom:1px;}
+  .legend-sizing-fte{font-size:15px;font-weight:900;color:var(--nhs-dark);line-height:1;letter-spacing:-0.4px;}
+  .legend-sizing-unit{font-size:8.5px;font-weight:700;color:var(--text-muted);margin-top:2px;letter-spacing:0.5px;text-transform:uppercase;}
+  /* Demo portraits — mirrors .persona-portrait sized smaller */
+  .legend-portraits{display:flex;gap:0;align-items:center;}
+  .legend-portraits img{width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:top center;border:2px solid #fff;box-shadow:0 0 0 1px var(--border);background:#fff;margin-left:-6px;}
+  .legend-portraits img:first-child{margin-left:0;}
+  /* Demo size pills row */
+  .legend-pills{display:flex;gap:3px;flex-wrap:wrap;justify-content:center;}
+  .legend-pills .size-pill{font-size:8.5px;padding:2px 5px;min-width:24px;}
+  .legend-text strong{font-size:12px;font-weight:800;color:var(--text);display:block;margin-bottom:2px;letter-spacing:-0.1px;}
+  .legend-text span{font-size:11px;color:var(--text-sec);line-height:1.45;}
+
 </style>
 </head>
 <body>
@@ -277,6 +315,28 @@
     <p class="h-sub">Eleven capabilities. For each one, <strong>what has to land to stand it up</strong> and <strong>what it does once running.</strong> Click any capability to drill into the detail.</p>
     <p class="h-sub" style="margin-top:10px;font-size:13.5px;border-left:3px solid var(--nhs-blue);padding-left:12px;background:#F4F8FC;padding-top:8px;padding-bottom:8px;border-radius:0 6px 6px 0;"><strong>Operating principle.</strong> NHSE acts as a coordinating function and collective bargaining entity, not a buyer. The BAU team orchestrates; suppliers, labs, carriers and commissioners do the work. Sizing and shape follow from that.</p>
   </div>
+
+  <aside class="legend" aria-label="How to read each capability card">
+    <div class="legend-title">How to read each card</div>
+    <div class="legend-grid">
+      <div class="legend-item">
+        <div class="legend-icon"><div class="legend-num"><span class="cap-num-big">1</span><span class="cap-num-of">of 11</span></div></div>
+        <div class="legend-text"><strong>Capability number</strong><span>One of eleven distinct functions the BAU team has to deliver.</span></div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-icon"><div class="legend-sizing"><div class="legend-sizing-label">Sizing</div><div class="legend-sizing-fte">3&ndash;5</div><div class="legend-sizing-unit">FTE</div></div></div>
+        <div class="legend-text"><strong>Team size in BAU</strong><span>Order-of-magnitude estimate of headcount needed once live.</span></div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-icon"><div class="legend-portraits"><img src="Assets/Personas/abdul.png" alt="Abdul"><img src="Assets/Personas/aisha.png" alt="Aisha"><img src="Assets/Personas/joe.png" alt="Joe"></div></div>
+        <div class="legend-text"><strong>Who it affects</strong><span>Cast members the capability touches. Click any portrait to open their page.</span></div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-icon"><div class="legend-pills"><span class="size-pill size-xs">XS</span><span class="size-pill size-s">S</span><span class="size-pill size-m">M</span><span class="size-pill size-l">L</span><span class="size-pill size-xl">XL</span></div></div>
+        <div class="legend-text"><strong>Effort to stand up</strong><span>T-shirt sizing inside the expanded view for each item required to go live.</span></div>
+      </div>
+    </div>
+  </aside>
 
   <details class="cap cap-c1" id="cap-1">
     <summary>
