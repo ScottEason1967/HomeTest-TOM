@@ -214,6 +214,7 @@
     <a href="HomeTest Operating Model - Lifecycle.html">When</a>
     <a href="HomeTest Operating Model - Operational.html" class="active">How</a>
     <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <a href="HomeTest Operating Model - Teamwork.html">HomeTest teamwork</a>
     <span class="nav-sep" style="width:1px;height:18px;background:var(--border-lt);margin:0 6px;display:inline-block;"></span>
     <a href="HomeTest Operating Model - Status.html">Status</a>
   </div>
@@ -276,9 +277,9 @@
 
  <div class="sl-actor" style="background:var(--platform);color:var(--platform-dark);border-color:var(--platform-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/priya.png" alt="Priya"></div><div class="sl-actor-label"><span class="sl-actor-name">Priya</span>NHSE Platform</div></div>
  <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I publish the catalogue.</strong>Tests, pathways, pricing tiers, eligibility criteria, supplier list. Visible in the public domain. Findable via Future NHS, partnerships team and the platform itself.</div>
- <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I provide the assets.</strong>Self-assessment toolkit. Boilerplate IG and clinical templates. Route-to-buy guidance. Sarah (commissioner) can self-assess fit without engaging me.</div>
- <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I configure the platform.</strong>Catalogue selection, supplier allocation, pathway routing, population parameters, MI dashboards. Ready-made contract templates available.</div>
- <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I activate Sarah (commissioner).</strong>Sarah goes live. Ordering enabled. MI provisioned. Local comms and pathway routing tested.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I provide the toolkit.</strong>Self-assessment checklist. Ready-made IG and clinical templates. Route-to-buy guidance. Sarah can work out whether HomeTest fits her area without engaging me first.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I set the platform up for Sarah.</strong>Catalogue picks, supplier allocation, pathway routing, population parameters, MI dashboards. Ready-made contract templates available.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I bring Sarah live.</strong>Ordering switched on. MI provisioned. Local comms and pathway routing tested before patients arrive.</div>
  <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I monitor activity.</strong>Volumes, SLA compliance, pathway completion rates. Cross-commissioner benchmarking. I charge a platform fee on activity (long term).</div>
 
  <div class="sl-actor" style="background:var(--framework);color:var(--framework-dark);border-color:var(--framework-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/david.png" alt="David"></div><div class="sl-actor-label"><span class="sl-actor-name">David</span>NHS Commercial</div></div>
@@ -419,7 +420,7 @@
  <p class="route"><strong>Growth pathway.</strong> Route B can progress to Route A by demonstrating scaled-tier evidence through live operation over a defined period. Annual default review or triggered by material change.</p>
  </div>
  <div class="note-box">
- <strong>Why this design.</strong> Onboard once per API, lighter-weight per test. Publish the criteria, don&apos;t gate them. Self-assessment first, human review second. Tiered thresholds so the floor doesn&apos;t exclude. No defensive filtering. Every artefact exists once. Supplier experience is a design input. Seven principles per the Supplier Onboarding Framework Briefing. Anchored in the working position: a good supplier onboarding model with self-service for suppliers to onboard themselves; the centre has to make it really, really easy" made the boundary explicit. Notify provides messaging, not physical kit fulfilment. Earlier briefing assumed broader scope; the patient journey lane reflects the corrected scope.
+ <strong>Why this design.</strong> Onboard once per API, lighter-weight per test. Publish the criteria; don&apos;t gate them. Self-assessment first, human review second. Tiered thresholds so the floor doesn&apos;t exclude. No defensive filtering. Every artefact exists once. Supplier experience is a design input. Anchored in the working position that a good supplier onboarding model is mostly self-service: the centre has to make it really easy for suppliers to bring themselves in, not act as a bottleneck.
  </div>
  <div class="decision-box">
  <h4>Open decisions</h4>
@@ -514,11 +515,50 @@
  <h3>4. Financial settlement</h3>
  <p>How money flows between <strong>Sarah (commissioner)</strong>, <strong>Joe (supplier)</strong>, and <strong>David (NHS Commercial)</strong> who holds the rules. Steady-state working assumption: a percent-fee-per-transaction platform funding model. The system pays for itself by taking a small percent fee each time the commissioner buys through it. Mirrors how existing NHS purchasing bodies work. No permanent central subsidy. The centre is accountable for market shaping and supplier onboarding; not for local contract ownership or local billing. <span class="gap-flag">Initial payment route during early operation may differ from the steady-state model</span>.
  </div>
+ <div class="sl-wrap">
+ <div class="sl-grid" style="grid-template-columns:120px repeat(5,1fr);">
+ <div class="sl-stage"></div>
+ <div class="sl-stage">Set terms</div>
+ <div class="sl-stage">Invoice</div>
+ <div class="sl-stage">Settle</div>
+ <div class="sl-stage">Reconcile</div>
+ <div class="sl-stage">Refresh</div>
+
+ <div class="sl-actor" style="background:var(--framework);color:var(--framework-dark);border-color:var(--framework-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/david.png" alt="David"></div><div class="sl-actor-label"><span class="sl-actor-name">David</span>NHS Commercial</div></div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I publish the framework pricing.</strong>Working position: per-completed-test pricing with volume tiers and capped maxima. Same terms for every commissioner. Pricing schedule sits inside the framework instrument. <span class="gap-flag">Per-completed-test is the working default but is still open: it incentivises return rates, shifts risk to suppliers, and needs health-economics modelling to confirm</span></div>
+ <div class="sl-cell sl-empty"></div>
+ <div class="sl-cell sl-empty"></div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I monitor framework-level pricing.</strong>Cross-supplier price trends. Variance from published rates flagged. Aggregate value-of-framework data fed to the Commercial Lead and Health Economist.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I refresh the framework pricing.</strong>Annual review under PA23 rules. I align the framework pricing to any national tariffs in scope (e.g. the PSA AS Monitoring Episode tariff once it lands). The tariff itself is set by NHSE Strategic Finance, not by me; my job is to make sure the framework prices line up with it. New volume tiers if warranted. <span class="new-flag">PSA AS Monitoring Episode tariff design in flight</span></div>
+
+ <div class="sl-actor" style="background:var(--commissioner);color:var(--commissioner-dark);border-color:var(--commissioner-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/sarah.png" alt="Sarah"></div><div class="sl-actor-label"><span class="sl-actor-name">Sarah</span>Commissioner</div></div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I agree pricing in the call-off.</strong>Pick the volume tier and pathway scope from the published framework. Local budget code allocated.</div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I receive invoices direct from Joe.</strong>Joe invoices me per the cadence we agreed in the call-off. I pay from my own budget: LA test-and-treat budget for HIV, my acute envelope for PSA, the ICB or GP funding route for HbA1c. <span class="gap-flag">For PSA the source of my money shifts as the AS Monitoring Episode tariff comes in: today I pay from my acute envelope; from 26/27 the new tariff runs in shadow, from 27/28 dual-runs at 50%, and from 28/29 fully replaces the envelope route</span></div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I pay Joe direct.</strong>NHSE does not sit in the payment flow under MVP. Standard commissioner-to-supplier payment route applies. <span class="gap-flag">Centralised invoicing remains a longer-term option, not designed</span></div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I close the period.</strong>Activity records from Joe matched against invoiced amounts. Local budget reconciliation. Variance reported through local finance route.</div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I review terms annually.</strong>Accept the framework refresh or negotiate variation within published bands. Forward plan against the next tariff cycle where one applies.</div>
+
+ <div class="sl-actor" style="background:var(--supplier);color:var(--supplier-dark);border-color:var(--supplier-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/joe.png" alt="Joe"></div><div class="sl-actor-label"><span class="sl-actor-name">Joe</span>Supplier</div></div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I sign up to the pricing in the call-off.</strong>Within framework caps. Per-completed pricing default. Volume tiering applies as the commissioner&apos;s tier requires.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I issue invoices direct to Sarah.</strong>Per agreed cadence. Activity backing supplied alongside each invoice. Standard NHS payment terms.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I receive payment from Sarah.</strong>Existing supplier-to-commissioner payment channels. No NHSE intermediation under MVP.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I provide activity records.</strong>For audit and matching. Activity feed to Priya supports framework-level reconciliation in parallel.</div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I respond to refreshed terms.</strong>Accept the refreshed framework, request a variation, or exit per PA23 rules.</div>
+
+ <div class="sl-actor" style="background:var(--platform);color:var(--platform-dark);border-color:var(--platform-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/priya.png" alt="Priya"></div><div class="sl-actor-label"><span class="sl-actor-name">Priya</span>NHSE Platform</div></div>
+ <div class="sl-cell sl-empty"></div>
+ <div class="sl-cell sl-empty"></div>
+ <div class="sl-cell sl-empty"></div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I provide the activity data feed.</strong>Volumes, completion rates, by configuration. Supports Sarah&apos;s and David&apos;s reconciliation. Aggregate trend data, no payment data.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I supply refresh evidence.</strong>Trend data, volume mix shifts, configuration breakdown to support the annual framework refresh.</div>
+ </div>
+ </div>
+
  <div class="note-box">
  <strong>NHS Online payment flow as reference architecture.</strong> The PbR / CDS / SUS / HRG / NHSBSA / OPCS plumbing for an analogous central service: ICB host &harr; NHS Online via NHS Standard Contract; ICB local &harr; Diagnostic Provider via PbR / CDS / SUS / HRG; NHSBSA &harr; Pharmacy via Drug Tariff. The friction point: central platform generates local activity that local commissioners did not plan or contract for. Same gap HomeTest faces at scale.
  </div>
  <div class="note-box" style="background:#fef3c7;border-color:#f5d787;color:#92580a;">
- <strong>The tariff gap.</strong> No NHS tariff code exists for home testing. Central platform generates local activity nobody commissioned or budgeted. Biggest structural barrier to scale. Long-term push is to the national tariff team for a code; in the interim, planned volumes and opt-in commissioning sit alongside the framework as a workaround pattern.
+ <strong>The tariff position.</strong> No live NHS tariff code yet covers home testing, but a Patient-Not-Present tariff design is now in flight. NHSE Strategic Finance has drafted a <strong>PSA Active Surveillance Monitoring Episode</strong> tariff with a glide-path: shadow 26/27, dual-run at 50% in 27/28, live at 100% in 28/29. Five reconciliation mechanisms sit underneath it (bundled episode, efficiency-factor offset, glide-path, capacity-release credits, ICB-level capitated AS top-up). The longer-term "no tariff code" framing is therefore wrong in flavour for PSA; for HIV the LA budget route remains the position. Planned volumes and opt-in commissioning still apply where the tariff has not yet landed.
  </div>
  <div class="decision-box">
  <h4>Open decisions</h4>
@@ -577,7 +617,7 @@
  <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I report on safety.</strong>Clinical safety status to Programme Board. Escalation of unresolved P1 / P2 hazards.</div>
 
  <div class="sl-actor" style="background:var(--commissioner);color:var(--commissioner-dark);border-color:var(--commissioner-dark);"><div class="sl-actor-portrait"><img src="Assets/Personas/sarah.png" alt="Sarah"></div><div class="sl-actor-label"><span class="sl-actor-name">Sarah</span>Commissioner</div></div>
- <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I hold local oversight.</strong>Pathway outcomes. the patient&apos;s experience. Local complaints handling.</div>
+ <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I hold local oversight.</strong>Pathway outcomes. Patient experience. Local complaints handling.</div>
  <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I handle local incidents.</strong>Patient-facing incident management. Complaint resolution. Escalation to Priya (NHSE Platform) if systemic.</div>
  <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I review Joe (supplier).</strong>His performance for my population. I consider switching supplier if persistent underperformance.</div>
  <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I&apos;m the data controller (local).</strong>Local DPIA compliance. DSA with Joe (supplier). LA IG hierarchy. DCB0160 sign-off via local CSO.</div>
@@ -587,7 +627,7 @@
  <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I monitor data flow compliance.</strong>DPA terms adherence. Access patterns. Sub-processor activity. Cross-border transfers logged. Anomaly detection on data movements.</div>
  <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I handle data incidents.</strong>Breach notification within statutory timescales. Root cause analysis. Liaison with ICO if required. Patient notification where the threshold is met.</div>
  <div class="sl-cell overlay"><span class="so-tag overlay-tag">Overlay</span><strong>I review IG performance.</strong>Annual DPIA refresh. Lawful basis re-review. Controller designation review when configurations change. Supplier IG audit.</div>
- <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I OWN IG compliance.</strong>The IG column is mine end-to-end. DPIA register. DSA register. IAO register. ROPA up to date. Caldicott principles applied.</div>
+ <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I own IG compliance.</strong>The IG column is mine end-to-end. DPIA register. DSA register. IAO register. ROPA up to date. Caldicott principles applied.</div>
  <div class="sl-cell foundation"><span class="so-tag foundation-tag">Foundation</span><strong>I report on IG.</strong>IG status to Programme Board. Escalation of unresolved IG risks. Annual report to NHSE Caldicott Guardian.</div>
  </div>
  </div>
@@ -597,13 +637,13 @@
  <strong>Clinical-safety gates at the deployment edge.</strong> Each go-live carries clinical-safety prerequisites: CATR (Clinical Assurance to Release) sign-off, integration testing against the NHS App and NHS Notify, CAG input and assurance, and deployment considerations within DCB0160 for the commissioning organisation. Safe Launch Engine has been flagged separately as a refinement of the clinical safety process but is not yet defined in scope, ownership or technical content. <span class="gap-flag">Operational mechanics still to be set</span>.
  </div>
  <div class="note-box">
- <strong>Assure once, reuse nationally.</strong> DTAC baseline plus DCB0129 and DCB0160 for clinical safety. Suppliers submit once and reuse across ICBs. The supplier tells the centre once and is onboarded. <strong>Scalable artefacts.</strong> Guidance from the centre to commissioners, suppliers and patients as well". Boilerplate IG, clinical safety, technical integration templates published in the public domain so suppliers, commissioners and patients see what is required without engaging NHSE first.
+ <strong>Assure once, reuse nationally.</strong> DTAC baseline plus DCB0129 and DCB0160 for clinical safety. Suppliers submit once and reuse across ICBs. The supplier tells the centre once and is onboarded. <strong>Scalable artefacts.</strong> Ready-made IG, clinical-safety and technical-integration templates published in the public domain so suppliers, commissioners and patients can see what is required before engaging NHSE.
  </div>
  <div class="decision-box">
  <h4>Open decisions</h4>
  <p><strong>NHSE residual clinical responsibility.</strong> Whether NHSE carries residual obligation beyond DCB0129 in LA-commissioned settings. If yes, that strengthens the case for building safety into the platform once.</p>
  <p><strong>DCB0160 model.</strong> Full, light-touch, or hybrid per commissioner. Full at every LA is a bottleneck that worsens with scale. Push for light-touch.</p>
- <p><strong>Return rate publication.</strong> Martin&apos;s A10 ask. Transparency mechanism. Format, frequency and audience not defined.</p>
+ <p><strong>Return rate publication.</strong> Transparency mechanism for supplier return-rate performance. Format, frequency and audience not defined.</p>
  <p><strong>Safe Launch Engine.</strong> Term and concept appear in a published clinical-safety position statement, but the document does not define scope, ownership, technical content or cost. Clinical Safety needs to define it before any artefact treats it as a load-bearing capability.</p>
  </div>
  
@@ -669,14 +709,14 @@
  <strong>Vehicle decision (live).</strong> Procurement vehicle for the framework still being selected. Options being scored include creating an NHSE-administered Dynamic Purchasing Framework or Dynamic Purchasing System, and layering onto existing frameworks. PA23 Dynamic Market natively supports the continuous-admission pattern the framework needs. NHS Commercial preference is not to run a framework in-house; an NHSE-administered precedent exists for related test-related frameworks. <span class="gap-flag">Recommendation pending. See CONTRACT stage detail for the live Options Matrix</span>.
  </div>
  <div class="note-box">
- <strong>Preferred route to market.</strong> Stops the market from fragmenting; the centre being lots of routes through the market. So ideally we&apos;re the preferred, it&apos;s not we&apos;re the only, but we&apos;re the people who need it." Centre as matchmaker: "We are just going to be a matchmaker. We&apos;re going to make sure these things are taken care of."
+ <strong>Preferred route to market, not the only route.</strong> The centre exists to stop the market fragmenting into too many parallel routes. Ideally HomeTest is the preferred route through which testing flows, but not the exclusive one. The centre acts as matchmaker: it makes sure clinical, IG, commercial and operational standards are met, not the only place where transactions happen.
  </div>
  <div class="decision-box">
  <h4>Open decisions</h4>
  <p><strong>NHS Supply Chain parallel path.</strong> NHS SC POCT framework plans to add home testing. GSTT already using it for diabetes / haematology. Parallel framework fragments the supplier market. The institutional case for consolidation needs to be made.</p>
  <p><strong>Framework administration route.</strong> NHSE direct, SBS, CCS or third-party delivery partner. NHS Commercial preference is to outsource. GPIT / DC cited as precedent for NHSE direct. Decision required ahead of June Options Paper.</p>
  <p><strong>Supplier removal process.</strong> PA23 provides the legal basis but operational process not defined. Notice periods, evidence thresholds, appeals, transition support all need designing.</p>
- <p><strong>Minimum supplier count.</strong> Martin&apos;s A11 (resilience). Two per region? Per pathway? Per test type? Not defined.</p>
+ <p><strong>Minimum supplier count.</strong> Two per region? Per pathway? Per test type? Resilience question. Not defined.</p>
  </div>
  
  </div>
@@ -751,6 +791,7 @@
  <p><strong>The legal-direction document set.</strong> When a configuration sits outside the lawful basis the platform already carries, the route is a legal direction. The set is four artefacts: approved DPIA, technical specification, privacy notice, and Secretary of State letter. The DPIA is the core. The technical specification and privacy notice face the public and explain what is being done with the data. The Secretary of State letter is the formal sign-off, drafted in PTT, signed at the top of NHSE, and published online with the rest of the set.</p>
  <p><strong>The test for whether a legal direction is required.</strong> Five factors: what data, for what purpose, who is the controller, whether data is matched against other datasets (secondary uses), whether data is anonymous or pseudonymised. Run early in SHAPE, not at the end of CONTRACT. The widest plausible list of data controllers and data flows is asked for upfront, not bolted on later, because revising a direction mid-flight is painful.</p>
  <p><strong>Assumption discipline.</strong> When IG counterparts are slow to respond, the framework documents the working assumption, takes SLT sign-off, and embeds it in the programme board pack. The platform keeps moving while the formal IG channel is pressed. Assumptions are explicit, evidenced and traceable, so the gap between assumption and final decision is small when the answer lands.</p>
+ <p><strong>Data controllers are a growing list, not a fixed set.</strong> Under Pathway 1 (LA-commissioned, patient-init) the controllers are NHSE for the foundation, the LA commissioner for the testing purpose, and the supplier as processor. Under Pathway 2 (acute-initiated) acute trusts join as controllers for their testing purpose. Under Pathway 3 (GP-initiated) GP practices join as controllers. The framework asks for the widest plausible list of controllers upfront when a new clinical area enters scope (the Wayfinder precedent), rather than returning for incremental directions each time a configuration adds a new controller type.</p>
  </div>
  <div class="decision-box">
  <h4>Open decisions</h4>
@@ -768,7 +809,7 @@
  <p><strong>The framework administrator role is the hardest new capability.</strong> Whether NHSE self-administers or outsources, somebody has to run continuous supplier admission, performance management, pricing compliance, market health monitoring. That&apos;s a standing team, not a project function.</p>
  <p><strong>The centre&apos;s role is matchmaker, not contract counterparty.</strong> The centre runs onboarding, sets standards, builds integration, monitors market health. It does not sign local contracts on behalf of LAs, own billing, or operate logistics.</p>
  <p><strong>Systematisation is the work.</strong> Most of these processes need to be designed and built as standing capabilities, not as project-mode workarounds. The framework administrator role and the centre&apos;s standing onboarding, performance, and market-health functions are where this concentrates.</p>
- <p><strong>The financial lane is the weakest part of the design.</strong> No tariff code, no addressable market model, no central funding, no overflow backstop.</p>
+ <p><strong>The financial lane is still the weakest part of the design.</strong> The PSA Active Surveillance Monitoring Episode tariff is now in design with a 26/27 to 28/29 glide-path, but the addressable market model, central funding for the platform itself, and overflow backstop remain unresolved.</p>
  </div>
 
 </div>
