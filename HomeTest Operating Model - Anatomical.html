@@ -239,6 +239,36 @@
   .page { background:#ffffff; border-radius:18px; box-shadow:0 14px 40px rgba(0,48,135,0.20); margin-top:30px !important; margin-bottom:50px !important; }
   @media (max-width:720px){ .page { border-radius:12px; margin-top:18px !important; } }
 
+
+  /* === D1: Foundation Built/Consumed split === */
+  .fls-l1 .fls-shared { display:none; }  /* hide original flat chip list, we replace with split */
+  .fls-l1 .fls-split-bc { display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:14px; }
+  @media (max-width:760px){ .fls-l1 .fls-split-bc { grid-template-columns: 1fr; } }
+  .fls-bc { border-radius:10px; padding:14px 16px 16px; position:relative; }
+  .fls-bc-built { background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.20); }
+  .fls-bc-consumed { background:rgba(0,169,206,0.16); border:1px solid rgba(0,169,206,0.45); }
+  .fls-bc-label { display:flex; align-items:center; gap:8px; font-size:11px; font-weight:800; letter-spacing:1.6px; text-transform:uppercase; color:#fff; margin-bottom:6px; }
+  .fls-bc-consumed .fls-bc-label { color:#bce7f0; }
+  .fls-bc-line { font-size:12px; font-weight:500; color:rgba(255,255,255,0.85); margin-bottom:12px; line-height:1.5; }
+  .fls-bc-consumed .fls-bc-line { color:#dbf2f7; }
+  .fls-bc-chips { display:flex; flex-wrap:wrap; gap:6px; }
+  .fls-bc-chips .fls-chip { background:rgba(255,255,255,0.18); border-color:rgba(255,255,255,0.28); color:#fff; }
+  .fls-bc-consumed .fls-bc-chips .fls-chip { background:rgba(0,169,206,0.32); border-color:rgba(255,255,255,0.42); color:#fff; }
+  .fls-bc-nhs-logo { position:absolute; top:12px; right:14px; width:28px; height:auto; opacity:0.95; background:#fff; padding:3px 5px; border-radius:4px; }
+  .fls-bc-ht-logo { position:absolute; top:12px; right:14px; height:18px; width:auto; opacity:0.98; background:#fff; padding:3px 6px; border-radius:4px; }
+  .fls-bc-link { display:inline-block; margin-top:12px; font-size:11px; font-weight:700; letter-spacing:0.4px; text-transform:uppercase; color:#fff; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.6); padding-bottom:1px; }
+  .fls-bc-link:hover { border-bottom-color:#fff; }
+  .fls-bc-consumed .fls-bc-link { color:#bce7f0; border-bottom-color:rgba(188,231,240,0.5); }
+  .fls-bc-consumed .fls-bc-link:hover { color:#fff; border-bottom-color:#fff; }
+
+  /* === D3: framing paragraph above the level visualisation === */
+  .anat-framing { background:#F4F8FC; border-left:4px solid var(--nhs-blue); padding:16px 22px 18px; border-radius:0 10px 10px 0; margin:24px 0 26px; }
+  .anat-framing-h { font-size:13px; font-weight:800; color:var(--nhs-dark); letter-spacing:0.4px; margin-bottom:8px; text-transform:uppercase; }
+  .anat-framing-body { font-size:14px; color:var(--text-sec); line-height:1.7; }
+  .anat-framing-body strong { color:var(--text); font-weight:700; }
+  .anat-framing-body a { color:var(--nhs-blue); font-weight:700; text-decoration:none; border-bottom:1px solid rgba(0,94,184,0.35); }
+  .anat-framing-body a:hover { border-bottom-color:var(--nhs-blue); }
+
 </style>
 </head>
 <body>
@@ -256,7 +286,7 @@
   <a href="home.html" class="nav-back">&larr; Operating Model</a>
   <div class="nav-siblings">
     <a href="HomeTest Operating Model - Why.html">Why</a>
-    <a href="HomeTest Operating Model - Anatomical.html" class="active">What</a>
+    <a href="HomeTest Operating Model - What.html" class="active">What</a>
     <a href="HomeTest Operating Model - Lifecycle.html">When</a>
     <a href="HomeTest Operating Model - Operational.html">How</a>
     <a href="HomeTest Operating Model - Governance.html">Who</a>
@@ -266,6 +296,13 @@
 </nav>
 
 <div class="page">
+
+  <div class="what-sub" style="display:flex;gap:8px;margin:0 0 22px;padding:8px;background:#f4f8fc;border-radius:10px;border:1px solid var(--border-lt);width:fit-content;">
+    <a href="HomeTest Operating Model - What.html" style="font-size:12px;font-weight:700;color:var(--text-sec);text-decoration:none;padding:8px 14px;border-radius:6px;letter-spacing:0.3px;">WHAT hub</a>
+    <a class="active" href="HomeTest Operating Model - Anatomical.html" style="font-size:12px;font-weight:700;color:#fff;text-decoration:none;padding:8px 14px;border-radius:6px;letter-spacing:0.3px;background:var(--nhs-dark);">Anatomy</a>
+    <a href="HomeTest Operating Model - Ecosystem.html" style="font-size:12px;font-weight:700;color:var(--text-sec);text-decoration:none;padding:8px 14px;border-radius:6px;letter-spacing:0.3px;">Ecosystem</a>
+  </div>
+
 
   <div class="header">
     <div class="amber-rule"></div>
@@ -337,23 +374,50 @@
     </div>
   </div>
 
+  <div class="anat-framing">
+    <div class="anat-framing-h">Read the Foundation carefully</div>
+    <div class="anat-framing-body">The Foundation level has two halves that are easy to conflate. <strong>Some foundation elements HomeTest builds, runs and staffs</strong> (integration spine, framework instrument, IG framework structure, hazard log structure). <strong>Others are shared NHS services HomeTest plugs into rather than runs</strong> (NHS Login, NHS Notify, NHS App, FHIR routing). The first half is the BAU team&apos;s job to operate. The second half is the BAU team&apos;s job to interface with, govern and configure. The full ecosystem of consumed, regulated, contracted and served entities sits on the <a href="HomeTest Operating Model - Ecosystem.html">Who page</a>.</div>
+  </div>
+
   <div class="fls">
         <!-- Level 1 (top) - Foundation - shared, full width, foundation -->
         <div class="fls-level fls-l1">
           <div class="fls-head">
             <div class="fls-num">LEVEL 1</div>
             <div class="fls-name">Foundation</div>
-            <div class="fls-tag">Universal capabilities. Built once. Reused by every condition, every commissioner, every supplier.</div>
+            <div class="fls-tag">Universal capabilities. Two parts: what HomeTest builds and runs, and what HomeTest consumes from shared NHS infrastructure. The BAU team sizes around the first. The second is interfaced with, governed and configured, not staffed.</div>
           </div>
-          <div class="fls-shared">
-            <span class="fls-chip">Integration &amp; APIs</span>
-            <span class="fls-chip">Identity (NHS Login)</span>
-            <span class="fls-chip">Comms (NHS Notify)</span>
-            <span class="fls-chip">Onboarding gateway</span>
-            <span class="fls-chip">IG framework</span>
-            <span class="fls-chip">Clinical safety case</span>
-            <span class="fls-chip">Hazard log structure</span>
-            <span class="fls-chip">MI / data flows</span>
+          <div class="fls-split-bc">
+            <div class="fls-bc fls-bc-built">
+              <img class="fls-bc-ht-logo" src="Assets/nhs-hometest.svg" alt="NHS HomeTest" title="Built and run by HomeTest">
+              <div class="fls-bc-label">Built foundation</div>
+              <div class="fls-bc-line">What HomeTest builds, runs and staffs directly.</div>
+              <div class="fls-bc-chips">
+                <span class="fls-chip">Integration spine</span>
+                <span class="fls-chip">Framework instrument</span>
+                <span class="fls-chip">IG framework structure</span>
+                <span class="fls-chip">Clinical safety case structure</span>
+                <span class="fls-chip">Hazard log structure</span>
+                <span class="fls-chip">Onboarding gateway</span>
+                <span class="fls-chip">Pattern catalogue</span>
+                <span class="fls-chip">MI / data flow integrity</span>
+              </div>
+              <a class="fls-bc-link" href="HomeTest Operating Model - Ecosystem Built.html">See in ecosystem map &rarr;</a>
+            </div>
+            <div class="fls-bc fls-bc-consumed">
+              <img class="fls-bc-nhs-logo" src="Assets/NHS-England-Logo-High-Res.jpg" alt="NHS England" title="Consumed from NHS England infrastructure">
+              <div class="fls-bc-label">Consumed foundation</div>
+              <div class="fls-bc-line">Shared NHS services HomeTest plugs into. Configured and paid for per use, not built or run.</div>
+              <div class="fls-bc-chips">
+                <span class="fls-chip">NHS Login (identity)</span>
+                <span class="fls-chip">NHS Notify (comms)</span>
+                <span class="fls-chip">NHS App (patient surface)</span>
+                <span class="fls-chip">FHIR routing</span>
+                <span class="fls-chip">Federated Data Platform</span>
+                <span class="fls-chip">Single Patient Record</span>
+              </div>
+              <a class="fls-bc-link" href="HomeTest Operating Model - Ecosystem Consumed.html">See in ecosystem map &rarr;</a>
+            </div>
           </div>
         </div>
 

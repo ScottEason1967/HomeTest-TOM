@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HomeTest Operating Model: Ecosystem &middot; Contracted</title>
+<style>
+  :root {
+    --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
+    --nhs-cyan:#00A9CE;
+    --amber:#FFB91D; --amber-deep:#C9A227; --warm-cream:#FFF9EC;
+    --accent:#C9A227;
+    --text:#212B32; --text-sec:#4C6272; --text-muted:#7E8B97;
+    --border:#d9dee3; --border-lt:#ebeef1;
+    --card:#ffffff; --bg:#f8fafc;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;}
+  .nav-back:hover{color:var(--nhs-blue);}
+  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;}
+  .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
+  .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
+  .nav-siblings a.active{background:var(--nhs-dark);color:#fff;}
+
+  .page{max-width:1000px;margin:0 auto;padding:50px 40px 80px;}
+
+  .what-sub{display:flex;gap:8px;margin:0 0 14px;padding:8px;background:#f4f8fc;border-radius:10px;border:1px solid var(--border-lt);width:fit-content;}
+  .what-sub a{font-size:12px;font-weight:700;color:var(--text-sec);text-decoration:none;padding:8px 14px;border-radius:6px;letter-spacing:0.3px;}
+  .what-sub a.active{background:var(--accent);color:#fff;}
+  .what-sub a:hover:not(.active){background:#e3edf8;color:var(--text);}
+
+  .eco-sub{display:flex;gap:6px;margin:0 0 26px;padding:6px;background:#f4f8fc;border-radius:10px;border:1px solid var(--border-lt);flex-wrap:wrap;}
+  .eco-sub a{font-size:11.5px;font-weight:700;color:var(--text-sec);text-decoration:none;padding:7px 12px;border-radius:6px;letter-spacing:0.3px;}
+  .eco-sub a:hover:not(.active){background:#e3edf8;color:var(--text);}
+  .eco-sub-hub{font-style:italic;color:var(--text-muted);}
+
+  .header{margin-bottom:30px;}
+  .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
+  .h-eyebrow{display:inline-block;background:#C9A227;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
+  .h-num{display:inline-block;background:#C9A227;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
+  .h-title{font-size:34px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.5px;line-height:1.15;margin-bottom:10px;}
+  .h-subtitle{font-size:16px;color:var(--text-sec);font-weight:500;margin-bottom:14px;}
+  .h-intro{max-width:780px;font-size:14px;color:var(--text-sec);line-height:1.7;}
+  .h-intro strong{color:var(--text);font-weight:700;}
+
+  .entities{margin-top:14px;background:#fff;border:1px solid var(--border-lt);border-radius:12px;overflow:hidden;}
+  .entity{display:grid;grid-template-columns:240px 1fr;gap:24px;padding:18px 22px;border-bottom:1px solid var(--border-lt);}
+  .entity:last-child{border-bottom:none;}
+  .entity-name{font-size:14px;font-weight:800;color:var(--text);}
+  .entity-line{font-size:13px;color:var(--text-sec);line-height:1.65;}
+  @media(max-width:680px){.entity{grid-template-columns:1fr;gap:6px;}}
+
+  .footer-nav{margin-top:32px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .footer-nav a{font-size:12px;font-weight:700;color:var(--nhs-blue);text-decoration:none;padding:10px 16px;border:1px solid var(--border-lt);border-radius:8px;background:#fff;letter-spacing:0.3px;}
+  .footer-nav a:hover{background:#f4f8fc;border-color:var(--nhs-blue);}
+
+  body { background: linear-gradient(180deg, var(--nhs-blue) 0%, var(--nhs-dark) 100%) !important; background-attachment: fixed !important; }
+  .topnav { box-shadow: 0 2px 14px rgba(0,48,135,0.18); }
+  .page { background:#ffffff; border-radius:18px; box-shadow:0 14px 40px rgba(0,48,135,0.20); margin-top:30px !important; margin-bottom:50px !important; }
+</style>
+</head>
+<body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Why.html">Why</a>
+    <a href="HomeTest Operating Model - What.html" class="active">What</a>
+    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
+    <a href="HomeTest Operating Model - Operational.html">How</a>
+    <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <span class="nav-sep" style="width:1px;height:18px;background:var(--border-lt);margin:0 6px;display:inline-block;"></span>
+    <a href="HomeTest Operating Model - Status.html">Status</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="what-sub">
+    <a href="HomeTest Operating Model - What.html">WHAT hub</a>
+    <a href="HomeTest Operating Model - Anatomical.html">Anatomy</a>
+    <a class="active" href="HomeTest Operating Model - Ecosystem.html">Ecosystem</a>
+  </div>
+
+  <div class="eco-sub">
+    <a class="eco-sub-hub" href="HomeTest Operating Model - Ecosystem.html">&larr; Ecosystem hub</a>
+    <a href="HomeTest Operating Model - Ecosystem Built.html">Built and run</a>
+      <a href="HomeTest Operating Model - Ecosystem Consumed.html">Consumed</a>
+      <a href="HomeTest Operating Model - Ecosystem Regulated.html">Regulated</a>
+      <a class="active" style="background:#C9A227;color:#fff;" href="HomeTest Operating Model - Ecosystem Contracted.html">Contracted</a>
+      <a href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
+  </div>
+
+  <div class="header">
+    <div class="amber-rule"></div>
+    <div class="h-eyebrow">Ecosystem &middot; Category 4</div>
+    <h1 class="h-title"><span class="h-num">4</span>Contracted commercially</h1>
+    <div class="h-subtitle">Direct commercial relationships</div>
+    <p class="h-intro">Either HomeTest or its commissioners hold these contracts. Four broad categories, each a distinct commercial relationship type.</p>
+  </div>
+
+  <div class="entities">
+      <div class="entity">
+        <div class="entity-name">Framework suppliers</div>
+        <div class="entity-line">Kits, labs, end-to-end providers admitted under the framework instrument. Contracts run between commissioner and supplier with NHSE as framework holder.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">Royal Mail</div>
+        <div class="entity-line">Carrier leg. Volume discounts apply per shipper, not aggregated across suppliers. Engagement underway on a Health Samples package category.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">Pathology labs</div>
+        <div class="entity-line">Where separately contracted (e.g. PSA specialist lab). Sample processing where the supplier model splits logistics from analysis.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">Advisory and capacity</div>
+        <div class="entity-line">Contracted advisory (e.g. Efficio) and contracted Health Economics capacity. NHS Supply Chain runs an adjacent POCT framework that is not a HomeTest contract but sits in the same supplier market.</div>
+      </div>
+  </div>
+
+  <div class="footer-nav">
+    <a href="HomeTest Operating Model - Ecosystem.html">&larr; Back to ecosystem hub</a>
+    <a href="HomeTest Operating Model - Ecosystem Served.html">Next: Served &rarr;</a>
+  </div>
+
+</div>
+</body>
+</html>

@@ -42,31 +42,31 @@
   <div class="foot">This site is a working draft. Do not share or redistribute.</div>
 </div>
 <script>
-const EXPECTED = 'aff9e5c92aa9478e54cc10839fe9cf36615bbe4ae2ad7e6dd6e2c0c14f0b540e';
+const EXPECTED = "aff9e5c92aa9478e54cc10839fe9cf36615bbe4ae2ad7e6dd6e2c0c14f0b540e";
 async function sha256(s){
   const buf = new TextEncoder().encode(s);
-  const hash = await crypto.subtle.digest('SHA-256', buf);
-  return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  const hash = await crypto.subtle.digest("SHA-256", buf);
+  return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,"0")).join("");
 }
 function nextTarget(){
   const params = new URLSearchParams(location.search);
-  const n = params.get('next');
-  return n && /^[A-Za-z0-9._%\- ]+\.html$/.test(decodeURIComponent(n)) ? decodeURIComponent(n) : 'home.html';
+  const n = params.get("next");
+  return n && /^[A-Za-z0-9._%\- ]+\.html$/.test(decodeURIComponent(n)) ? decodeURIComponent(n) : "home.html";
 }
-if (sessionStorage.getItem('hometest-auth') === 'ok') {
+if (sessionStorage.getItem("hometest-auth") === "ok") {
   location.href = nextTarget();
 }
-document.getElementById('gate-form').addEventListener('submit', async function(e){
+document.getElementById("gate-form").addEventListener("submit", async function(e){
   e.preventDefault();
-  const v = document.getElementById('pwd').value;
+  const v = document.getElementById("pwd").value;
   const h = await sha256(v);
   if (h === EXPECTED) {
-    sessionStorage.setItem('hometest-auth', 'ok');
+    sessionStorage.setItem("hometest-auth", "ok");
     location.href = nextTarget();
   } else {
-    document.getElementById('err').textContent = 'Incorrect password.';
-    document.getElementById('pwd').value = '';
-    document.getElementById('pwd').focus();
+    document.getElementById("err").textContent = "Incorrect password.";
+    document.getElementById("pwd").value = "";
+    document.getElementById("pwd").focus();
   }
 });
 </script>

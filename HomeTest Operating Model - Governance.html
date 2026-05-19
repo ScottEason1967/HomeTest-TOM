@@ -82,6 +82,73 @@
   .page { background:#ffffff; border-radius:18px; box-shadow:0 14px 40px rgba(0,48,135,0.20); margin-top:30px !important; margin-bottom:50px !important; }
   @media (max-width:720px){ .page { border-radius:12px; margin-top:18px !important; } }
 
+
+  /* === Ecosystem map + accordion restructure (D2) === */
+  .toc-bar { position:sticky; top:0; z-index:50; background:rgba(255,255,255,0.96); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); padding:10px 16px; margin:-30px -28px 26px; border-bottom:1px solid var(--border-lt); border-radius:18px 18px 0 0; }
+  .toc-bar-inner { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .toc-bar-label { font-size:10px; font-weight:800; letter-spacing:1.4px; color:var(--text-muted); text-transform:uppercase; margin-right:8px; }
+  .toc-bar a { font-size:11.5px; font-weight:700; color:var(--text-sec); text-decoration:none; padding:5px 10px; border-radius:6px; background:#f4f8fc; transition:background 0.15s, color 0.15s; }
+  .toc-bar a:hover { background:var(--accent); color:#fff; }
+
+  .eco-lede { background:linear-gradient(135deg, #f4f8fc, #ffffff); border:1px solid var(--border-lt); border-left:4px solid var(--nhs-blue); border-radius:0 12px 12px 0; padding:16px 22px; margin:0 0 14px; }
+  .eco-lede-h { font-size:13px; font-weight:800; letter-spacing:1.6px; color:var(--nhs-blue); text-transform:uppercase; margin-bottom:8px; }
+  .eco-lede-title { font-size:22px; font-weight:800; color:var(--nhs-dark); letter-spacing:-0.4px; line-height:1.25; margin-bottom:10px; }
+  .eco-lede-body { font-size:14px; color:var(--text-sec); line-height:1.7; max-width:840px; }
+  .eco-lede-body strong { color:var(--text); font-weight:700; }
+
+  .eco-cards { display:grid; grid-template-columns:1fr; gap:6px; margin-bottom:28px; }
+  details.eco-card { background:#fff; border:1px solid var(--border-lt); border-radius:10px; overflow:hidden; transition:box-shadow 0.2s; }
+  details.eco-card[open] { box-shadow:0 4px 14px rgba(0,32,64,0.08); }
+  details.eco-card summary { list-style:none; cursor:pointer; padding:10px 18px; display:grid; grid-template-columns:32px 1fr auto; gap:12px; align-items:center; user-select:none; }
+  details.eco-card summary::-webkit-details-marker { display:none; }
+  details.eco-card .eco-num { font-size:11px; font-weight:900; letter-spacing:0.4px; color:#fff; background:var(--text-muted); width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+  details.eco-card.eco-built .eco-num { background:#005EB8; }
+  details.eco-card.eco-consumed .eco-num { background:#00A9CE; }
+  details.eco-card.eco-regulated .eco-num { background:#7C2855; }
+  details.eco-card.eco-contracted .eco-num { background:#C9A227; }
+  details.eco-card.eco-served .eco-num { background:#006747; }
+  details.eco-card .eco-head-text { display:flex; flex-direction:column; gap:3px; min-width:0; }
+  details.eco-card .eco-name { font-size:13.5px; font-weight:800; color:var(--text); letter-spacing:-0.1px; }
+  details.eco-card .eco-line { font-size:11.5px; color:var(--text-sec); line-height:1.45; }
+  details.eco-card .eco-count { font-size:11px; font-weight:700; color:var(--text-muted); background:#f4f6f8; padding:4px 10px; border-radius:999px; flex-shrink:0; letter-spacing:0.3px; }
+  details.eco-card summary::after { content:'\25BC'; font-size:10px; color:var(--text-muted); margin-left:6px; transition:transform 0.18s; }
+  details.eco-card[open] summary::after { transform:rotate(180deg); }
+  details.eco-card .eco-body { padding:6px 18px 16px; border-top:1px solid var(--border-lt); }
+  .eco-entities { display:grid; grid-template-columns:1fr; gap:10px; margin-top:8px; }
+  .eco-entity { display:grid; grid-template-columns:200px 1fr; gap:18px; padding:10px 0; border-bottom:1px solid #f1f4f7; }
+  .eco-entity:last-child { border-bottom:none; }
+  .eco-entity-name { font-size:12.5px; font-weight:700; color:var(--text); }
+  .eco-entity-line { font-size:12.5px; color:var(--text-sec); line-height:1.55; }
+  @media(max-width:700px){
+    .eco-entity { grid-template-columns:1fr; gap:4px; }
+    details.eco-card summary { grid-template-columns:30px 1fr; }
+    .eco-count { grid-column:2; justify-self:start; margin-top:6px; }
+  }
+
+  /* Accordion sections (wraps existing raci-section blocks) */
+  details.section-acc { background:#fff; border:1px solid var(--border-lt); border-radius:12px; margin-bottom:14px; overflow:hidden; transition:box-shadow 0.2s; }
+  details.section-acc[open] { box-shadow:0 4px 14px rgba(0,32,64,0.08); }
+  details.section-acc > summary { list-style:none; cursor:pointer; padding:18px 26px; display:flex; align-items:center; justify-content:space-between; gap:14px; user-select:none; }
+  details.section-acc > summary::-webkit-details-marker { display:none; }
+  details.section-acc > summary::after { content:'\25BC'; font-size:11px; color:var(--text-muted); transition:transform 0.18s; }
+  details.section-acc[open] > summary::after { transform:rotate(180deg); }
+  details.section-acc .acc-title { font-size:17px; font-weight:800; color:var(--nhs-dark); letter-spacing:-0.2px; }
+  details.section-acc .acc-sub { font-size:12px; color:var(--text-muted); font-weight:500; margin-top:3px; }
+  details.section-acc .acc-body { padding:6px 26px 26px; border-top:1px solid var(--border-lt); }
+  details.section-acc .raci-section { margin-bottom:0; }
+  details.section-acc .raci-section h2 { display:none; }
+  details.section-acc .raci-section .raci-sub { margin-top:14px; }
+
+  /* Collapsible open-questions banner */
+  details.gov-q-banner { background:#FBEAF2; border-left:4px solid var(--accent); padding:0; margin:22px 0 36px; border-radius:0 8px 8px 0; overflow:hidden; }
+  details.gov-q-banner > summary { list-style:none; cursor:pointer; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; user-select:none; }
+  details.gov-q-banner > summary::-webkit-details-marker { display:none; }
+  details.gov-q-banner > summary::after { content:'\25BC'; font-size:11px; color:var(--accent); transition:transform 0.18s; }
+  details.gov-q-banner[open] > summary::after { transform:rotate(180deg); }
+  details.gov-q-banner .gov-q-h { font-size:11px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--accent); }
+  details.gov-q-banner .gov-q-count { font-size:10px; font-weight:700; color:var(--accent); background:rgba(174,37,115,0.12); padding:3px 9px; border-radius:999px; margin-left:10px; }
+  details.gov-q-banner .gov-q-body { padding:6px 20px 18px; border-top:1px solid rgba(174,37,115,0.18); }
+
 </style>
 </head>
 <body>
@@ -99,7 +166,7 @@
   <a href="home.html" class="nav-back">&larr; Operating Model</a>
   <div class="nav-siblings">
     <a href="HomeTest Operating Model - Why.html">Why</a>
-    <a href="HomeTest Operating Model - Anatomical.html">What</a>
+    <a href="HomeTest Operating Model - What.html">What</a>
     <a href="HomeTest Operating Model - Lifecycle.html">When</a>
     <a href="HomeTest Operating Model - Operational.html">How</a>
     <a href="HomeTest Operating Model - Governance.html" class="active">Who</a>
@@ -109,6 +176,18 @@
 </nav>
 
 <div class="page">
+
+  <div class="toc-bar">
+    <div class="toc-bar-inner">
+      <span class="toc-bar-label">On this page</span>
+      <a href="#raci-four-levels">RACI by level</a>
+      <a href="#raci-foundation">Foundation ops</a>
+      <a href="#raci-hiv">HIV ops</a>
+      <a href="#raci-psa">PSA ops</a>
+      <a href="#decisions">Decision rights</a>
+      <a href="#open-q">Open Qs</a>
+    </div>
+  </div>
 
   <div class="header">
     <div class="amber-rule"></div>
@@ -124,10 +203,12 @@
     <div class="status-banner-body">This frame uses <strong>roles, not named individuals</strong>. It describes who is accountable, responsible, consulted and informed once the operating model is live and running &mdash; the end-state RACI. Roles are deliberately not named to individuals on this page; that is the SRO's call once the model is signed off. The architectural RACI rows still show TBC where the end-state owner has not yet been agreed.</div>
   </div>
 
-  <div class="status-banner" style="background:#FBEAF2;border-left-color:var(--accent);">
-    <div class="status-banner-h" style="color:var(--accent);">Key open governance questions</div>
-    <div class="status-banner-body">
-      Three things SLT needs to land before this skeleton becomes named accountability. The TBC cells across the architectural RACI and the configuration-specific tables are pointing at these: making them explicit here.
+  <details class="gov-q-banner" id="open-q">
+    <summary>
+      <span><span class="gov-q-h">Key open governance questions</span><span class="gov-q-count">10 items</span></span>
+    </summary>
+    <div class="gov-q-body">
+      Ten things SLT needs to land before this skeleton becomes named accountability. The TBC cells across the architectural RACI and the configuration-specific tables are pointing at these: making them explicit here.
       <ul style="margin:10px 0 0 22px; padding:0; font-size:12.5px; line-height:1.6;">
         <li><strong>Permanent platform hosting post-Beta.</strong> Architectural RACI for the Foundation is TBC. When HomeTest exits discovery, where does the platform live permanently: inside NHSE, an ALB, or a new entity? <em>Owner: SRO with Commercial Lead.</em></li>
         <li><strong>Year 1 vs Year 2 commercial vehicle.</strong> What does NHS Commercial sign in Year 1 (PSR, PA23 Framework, PA23 Dynamic Market, or DPC Framework)? What changes in Year 2 (framework host, archetype set)? <em>Owner: Commercial Lead with NHS Legal.</em></li>
@@ -142,7 +223,7 @@
       </ul>
       <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.08);font-size:12px;"><a href="HomeTest Operating Model - Status.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;letter-spacing:0.3px;">See all open items across the model &rarr;</a></div>
     </div>
-  </div>
+  </details>
 
   <div class="gov-cast">
     <div class="gc"><div class="gc-portrait"><img src="Assets/Personas/abdul.png" alt="Abdul"></div><div class="gc-name">Abdul</div><div class="gc-role">Patient &middot; CVKM</div><div class="gc-decision"><strong>Informed</strong> across most decisions. Consulted on patient-facing changes.</div></div>
@@ -164,6 +245,15 @@
       Senior accountability for those functions sits on a <strong>Blue Book assurance board</strong> (working name): a constituted body with named individuals accountable for clinical safety, IG, commercial integrity and platform standards at the most senior level. The cast roles are the conduit through which the platform's day-to-day work runs; the assurance board is where senior accountability lives. <em>Both the BAU team sizing and the assurance board composition are open governance questions.</em>
     </div>
   </div>
+
+  <details class="section-acc" id="raci-four-levels">
+    <summary>
+      <div>
+        <div class="acc-title">Accountability across the four levels</div>
+        <div class="acc-sub">RACI for the operating-model elements: foundation, overlays, patterns, configurations.</div>
+      </div>
+    </summary>
+    <div class="acc-body">
 
   <div class="raci-section">
     <h2>Accountability across the four levels</h2>
@@ -280,6 +370,18 @@
     </div>
   </div>
 
+    </div>
+  </details>
+
+  <details class="section-acc" id="raci-foundation">
+    <summary>
+      <div>
+        <div class="acc-title">Operational accountability: Foundation</div>
+        <div class="acc-sub">Activities that run universally across every configuration. Held centrally.</div>
+      </div>
+    </summary>
+    <div class="acc-body">
+
   <div class="raci-section">
     <h2>Operational accountability: Foundation</h2>
     <div class="raci-sub">Activities that run universally across every configuration. Roles, not named individuals. Foundation operational responsibility cuts across all configurations and is held centrally.</div>
@@ -346,6 +448,18 @@
       </tbody>
     </table>
   </div>
+
+    </div>
+  </details>
+
+  <details class="section-acc" id="raci-hiv">
+    <summary>
+      <div>
+        <div class="acc-title">Operational accountability: HIV configuration</div>
+        <div class="acc-sub">LA-commissioned, patient-init, all-inclusive supplier, sex health service governance, patient-direct results.</div>
+      </div>
+    </summary>
+    <div class="acc-body">
 
   <div class="raci-section">
     <h2>Operational accountability: HIV configuration</h2>
@@ -441,6 +555,18 @@
       </tbody>
     </table>
   </div>
+
+    </div>
+  </details>
+
+  <details class="section-acc" id="raci-psa">
+    <summary>
+      <div>
+        <div class="acc-title">Operational accountability: PSA configuration</div>
+        <div class="acc-sub">Acute trust commissioning, clinician-init, specialist lab plus logistics split, clinician-first results.</div>
+      </div>
+    </summary>
+    <div class="acc-body">
 
   <div class="raci-section">
     <h2>Operational accountability: PSA configuration</h2>
@@ -544,6 +670,18 @@
     </table>
   </div>
 
+    </div>
+  </details>
+
+  <details class="section-acc" id="decisions">
+    <summary>
+      <div>
+        <div class="acc-title">Decision rights for key changes</div>
+        <div class="acc-sub">Who decides what when a change is proposed.</div>
+      </div>
+    </summary>
+    <div class="acc-body">
+
   <div class="raci-section">
     <h2>Decision rights for key changes</h2>
     <div class="raci-sub">Who decides what when a change is proposed. Used when a configuration needs a pattern that does not yet exist, when a pattern needs to change, when an overlay needs a new pattern added, or when a procurement regime change is on the table.</div>
@@ -571,12 +709,41 @@
     </div>
   </div>
 
+    </div>
+  </details>
+
   <div class="status-banner" style="background:#E8F1F6;border-left-color:var(--nhs-blue);">
     <div class="status-banner-h" style="color:var(--nhs-blue);">Next step</div>
     <div class="status-banner-body">This is the end-state accountability layer for the operating model. It describes who will run, govern and own each part once live. The work to deliver the model into this end-state &mdash; designing each piece, agreeing each owner, sequencing the build &mdash; is tracked separately as project ownership. Both have to be true: the end-state has to be defined (this page), and the path to it has to be delivered (project plan).</div>
   </div>
 
 </div>
+
+
+<script>
+(function(){
+  function openTarget(){
+    var id = location.hash.replace('#','');
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    // Walk up and open any <details> ancestors and the target itself if it's a details
+    var node = el;
+    while (node && node !== document.body) {
+      if (node.tagName && node.tagName.toLowerCase() === 'details') {
+        node.open = true;
+      }
+      node = node.parentNode;
+    }
+    // Small delay then re-scroll so the opened element lands properly
+    setTimeout(function(){
+      el.scrollIntoView({behavior:'smooth', block:'start'});
+    }, 50);
+  }
+  window.addEventListener('load', openTarget);
+  window.addEventListener('hashchange', openTarget);
+})();
+</script>
 
 </body>
 </html>
