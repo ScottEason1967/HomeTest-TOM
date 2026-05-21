@@ -588,6 +588,20 @@
         </div>
 
         <div class="fls-note">
+          <div class="fls-note-tag">Note on initiation channel terminology</div>
+          <div class="fls-note-body">
+            <strong>Patient-activated handed-out kits are a digital pathway variant, not the non-digital channel.</strong> Kits that are handed out in person (at a pharmacy, an outreach event, a community setting) and then activated by the patient online still run on the digital infrastructure. They sit inside the digital channel as a variant of patient-init. The true non-digital channel is telephony: a patient who phones in, never touches the digital surface, and has the test arranged on their behalf. That channel remains a separate gap to be designed for equity and for GDS inclusion, and should not be confused with handed-out kit variants.
+          </div>
+        </div>
+
+        <div class="fls-note">
+          <div class="fls-note-tag">Note on trend analysis</div>
+          <div class="fls-note-body">
+            <strong>Longitudinal trend analysis is deprioritised for now.</strong> PSA values from capillary samples and from venous samples are not directly comparable, so presenting them on a single trend line carries a clinical safety risk: a patient could be reassured or alarmed by an apparent rise or fall that is actually a modality effect. The position is to research the comparability question rather than build trend rendering into the platform at this phase. Result handling continues to expose individual results clearly; longitudinal interpretation stays with the treating clinician until the research lands.
+          </div>
+        </div>
+
+        <div class="fls-note">
           <div class="fls-note-tag">Note on result shape</div>
           <div class="fls-note-body">
             <strong>Result shape is a condition characteristic, not a pattern.</strong> HIV gives a binary outcome (reactive / non-reactive). PSA gives a continuous numerical value, often interpreted in trend during active surveillance. Nobody picks a result shape; it's intrinsic to the condition. It does, however, influence which Result handling pattern is sensible (binary leans Patient-direct, continuous leans Clinician-first) and shapes the hazards loaded into the clinical safety case (missed positive vs range misinterpretation are different failure modes). The platform carries both shapes via FHIR Observation without modification; the variation lives in the patient-facing rendering and the hazard log content.

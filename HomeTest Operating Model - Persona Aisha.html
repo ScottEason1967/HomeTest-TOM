@@ -126,6 +126,7 @@
         <ul style="margin:8px 0 0 18px;line-height:1.7;">
           <li><strong>EPR landscape.</strong> System One, EMIS, Cerner, Epic. Read-write capabilities differ. HomeTest aligns to the strengths and acknowledges the weaknesses: it does not require uniform EPR behaviour to work.</li>
           <li><strong>SPR (Single Patient Record / Shared Patient Record).</strong> Where it exists, HomeTest writes to it; where it doesn't, the model falls back to point-to-point integration. Coverage varies by region.</li>
+          <li><strong>PDM (Personal Data Model) as the future-state record of truth.</strong> The longer-term target for test results is the PDM, with the NHS App rendering against it natively. This supersedes the interim pattern of web hand-off into a HomeTest-hosted results UI, and over time replaces the IM1 aggregator pattern for HomeTest results. Aisha's remit is to keep the canonical models aligned so the PDM target is reachable without rework.</li>
           <li><strong>FDP (Federated Data Platform) and the events architecture.</strong> The relationship between HomeTest and FDP is currently being scoped. Canonical data models, event orchestration, and how a HomeTest test result flows through the FDP pipeline rather than around it. ChelWest insights are feeding the design. <em>Open work: architecture strategy and commercial strategy need joining into one coherent platform story.</em></li>
         </ul>
         <strong>The ecosystem fits HomeTest in, not the other way round.</strong>
