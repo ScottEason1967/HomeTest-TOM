@@ -135,7 +135,7 @@
   <div class="summary">
     <a href="#unresolved" class="sum-card sum-card-open">
       <div class="sum-eyebrow open">Awaiting decision</div>
-      <div class="sum-count">72</div>
+      <div class="sum-count">80</div>
       <div class="sum-label">Unresolved items</div>
       <div class="sum-desc">Governance accountability, architectural positioning, operational mechanism, stage decisions, Open Qs for SLT.</div>
       <div class="sum-cta">See the full list <span class="sum-cta-arrow">&darr;</span></div>
@@ -151,7 +151,7 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">72 items, awaiting decision or mitigation</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">80 items, awaiting decision or mitigation</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Governance -->
@@ -247,7 +247,7 @@
     <!-- Architecture -->
     <details class="cat cat-arch">
       <summary>
-        <span class="cat-h">Architectural positioning <span class="cat-count">4</span></span>
+        <span class="cat-h">Architectural positioning <span class="cat-count">5</span></span>
         <span class="cat-desc">Where things sit in the model. From WHAT page.</span>
       </summary>
       <div class="items">
@@ -282,6 +282,14 @@
             <div class="item-owner"><strong>Owner:</strong> TBC.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Anatomical.html#not-positioned">Open on WHAT &rarr;</a>
+        </div>
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">Trust integration architecture</div>
+            <div class="item-desc">Four options on the table for how HomeTest integrates with acute trust systems. <strong>Reuse Genomics InterSystems</strong> (essentially ruled out on fit and ownership). <strong>Collaborate with Genomics on a common component</strong>. <strong>Build a tightly-scoped HomeTest integration</strong> with a small number of trusts. <strong>Buy</strong> a third-party integration capability. Decision affects the Built foundation (integration spine), downstream cost and the pace at which acute use cases can scale.</div>
+            <div class="item-owner"><strong>Owner:</strong> Platform Lead with Commercial Lead. SLT direction needed on build-vs-buy-vs-collaborate.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model - Anatomical.html">Open on WHAT &rarr;</a>
         </div>
       </div>
     </details>
@@ -323,10 +331,34 @@
     <!-- Operating risks -->
     <details class="cat cat-risk">
       <summary>
-        <span class="cat-h">Operating risks <span class="cat-count">8</span></span>
+        <span class="cat-h">Operating risks <span class="cat-count">11</span></span>
         <span class="cat-desc">Delivery dependencies the framework has to mitigate, not decisions to take.</span>
       </summary>
       <div class="items">
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">Legal-direction transition window around the April 2027 merger</div>
+            <div class="item-desc">The DHSC and NHSE legally merge April 2027. A transition window approximately January to March 2027 is likely while existing legal Directions fold into a replacement legal mechanism (the replacement mechanism is TBC). Materially affects the Public Beta MI route, because any Direction-dependent data flow that needs to be issued, amended or renewed during that window may be blocked or carry an unusual approval shape. Compounds with the existing six-month Direction lead time risk: a Direction submitted in late 2026 may land into a different governance regime than the one it was submitted under.</div>
+            <div class="item-owner"><strong>Owner:</strong> IG Lead with SRO. Cross-cutting with the wider merger planning.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model - Operational.html#lane-5">Open on HOW &rarr;</a>
+        </div>
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">NHS App scope for the order journey is open</div>
+            <div class="item-desc">NHS App leadership is reviewing whether the order journey for HomeTest belongs in the App at all. Material because publishing QR codes, launch points, marketing surfaces and downstream design all assume the App as the default entry point. If the order journey lands somewhere else, the patient initiation pattern, the integration spine commitments and the comms approach all need rework. Cross-reference Ecosystem Consumed (NHS App entry is already flagged in-flight on test-results integration; the order journey is a separate scope question).</div>
+            <div class="item-owner"><strong>Owner:</strong> Platform Lead with SRO. Resolution sits with NHS App.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model - Ecosystem Consumed.html">Open on Ecosystem Consumed &rarr;</a>
+        </div>
+        <div class="item">
+          <div class="item-body">
+            <div class="item-title">NHS Online dependency window</div>
+            <div class="item-desc">NHS Online targets September 2027 go-live and wants to be national from day one rather than rolling out by region. This makes CDC integration and pharmacy pickup an all-or-nothing dependency on the NHS Online launch window: HomeTest cannot phase these capabilities in earlier or by region without misaligning with NHS Online's national-from-day-one shape. Any configuration that depends on CDC integration or pharmacy pickup is gated by the September 2027 launch holding to plan.</div>
+            <div class="item-owner"><strong>Owner:</strong> Partnerships Lead with Platform Lead. External dependency.</div>
+          </div>
+          <a class="item-link" href="HomeTest Operating Model - Ecosystem Consumed.html">Open on Ecosystem Consumed &rarr;</a>
+        </div>
         <div class="item">
           <div class="item-body">
             <div class="item-title">Legal-direction lead time is six months end to end</div>
@@ -397,7 +429,7 @@
     <!-- Stage decisions -->
     <details class="cat cat-stage">
       <summary>
-        <span class="cat-h">Stage-specific decisions <span class="cat-count">26</span></span>
+        <span class="cat-h">Stage-specific decisions <span class="cat-count">30</span></span>
         <span class="cat-desc">Lifecycle-stage decisions awaiting resolution. Click to expand.</span>
       </summary>
       <div class="items">
@@ -405,6 +437,7 @@
         <div class="item"><div class="item-body"><div class="item-title">SHAPE: change management within SHAPE</div><div class="item-desc">How change management operates within the SHAPE stage.</div></div><a class="item-link" href="NHS TOM - SHAPE v4.html">Open on SHAPE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">SHAPE: post-PSA prioritisation</div><div class="item-desc">Which conditions or pathways to prioritise after PSA. Five pathway patterns identified.</div></div><a class="item-link" href="NHS TOM - SHAPE v4.html">Open on SHAPE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">SHAPE: NHSE internal capability for ongoing SHAPE</div><div class="item-desc">Whether NHSE has the internal capability to run SHAPE as an ongoing function. The Dynamic Market / Framework structure assumes some ongoing function.</div></div><a class="item-link" href="NHS TOM - SHAPE v4.html">Open on SHAPE &rarr;</a></div>
+        <div class="item"><div class="item-body"><div class="item-title">SHAPE: six HIV interaction modes, only mode 1 in scope today</div><div class="item-desc">The HIV pathway has six interaction modes identified. <strong>Mode 1: self-directed</strong> (NHS App-led, in scope today). <strong>Mode 2: planned clinical referral</strong>. <strong>Mode 3: proactive community outreach</strong>. <strong>Mode 4: household or network champion</strong>. <strong>Mode 5: opportunistic clinician-initiated</strong>. <strong>Mode 6: group or supported setting</strong>. The other five modes are open SHAPE pattern questions for prioritisation, design and inclusion in the configuration. Currently no SLT-confirmed sequencing.</div></div><a class="item-link" href="NHS TOM - SHAPE v4.html">Open on SHAPE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: minimum supplier standards</div><div class="item-desc">Not yet codified. Direction agreed that these should include accreditation, clinical safety, IG and commercial entry criteria.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: clinical accountability model per touch point</div><div class="item-desc">Where does clinical accountability sit at each touch point in the patient journey?</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: offboarding trigger criteria and process</div><div class="item-desc">What happens when a supplier fails to meet standards?</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
@@ -414,6 +447,7 @@
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: framework purpose-built vs hosted</div><div class="item-desc">Whether the framework is purpose-built or hosted on an existing vehicle (SBS being explored as one possibility).</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: exit terms and offboarding mechanics</div><div class="item-desc">Contractual mechanics for exit and offboarding.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: future-condition accommodation</div><div class="item-desc">How the framework accommodates future conditions beyond HIV without requiring a new procurement each time.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
+        <div class="item"><div class="item-body"><div class="item-title">CONTRACT: tariff planning window and primary-care constraint</div><div class="item-desc">Tariff planning guidance is issued October to November 2026. Modelling has to land August to September 2026 to clear governance for the 2027/28 cycle. <strong>Primary care tariff is effectively off the table for 2027/28</strong> within the available time, because the route through the BMA negotiation cycle is too contentious to land cleanly. Practical 2027/28 opportunities sit with <strong>PSA Active Surveillance via best-practice tariff</strong>, plus <strong>MSK and cardiac rehab</strong> via Digital Therapeutics. Tightens the August 2026 modelling deadline and narrows the realistic in-scope conditions for next year's tariff cycle.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">FULFIL: service standards and SLAs</div><div class="item-desc">Not yet defined.</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">FULFIL: supplier switching process</div><div class="item-desc">And patient continuity during transitions.</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">FULFIL: HealthStore fulfilment delta</div><div class="item-desc">How HealthStore fulfilment differs from HomeTest, not yet scoped. Notify centralised-payment model may differ.</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
@@ -421,6 +455,8 @@
         <div class="item"><div class="item-body"><div class="item-title">FULFIL: cold chain logistics</div><div class="item-desc">For temperature-sensitive tests (e.g. capillary blood for PSA).</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">FULFIL: Royal Mail engagement and route alignment</div><div class="item-desc">Strategic Royal Mail contact identified. Meeting with Royal Mail and MarketReach scheduled for 13 May to address Tracked 24 reliability and a potential new 'Health Samples' package category for blood collection devices. Notify route (Royal Mail Health) and this MarketReach engagement still to be reconciled.</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">FULFIL: centralised kit procurement viability</div><div class="item-desc">Whether centralised procurement (NHS taking on stock holding and management) is viable or contradicts the platform-orchestrator model.</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
+        <div class="item"><div class="item-body"><div class="item-title">FULFIL: RDUH PSA Active Surveillance pilot mobilisation</div><div class="item-desc">Royal Devon University Healthcare selected as acute PSA Active Surveillance partner (EOI assessment score 92.75 of 100). Mobilisation from 1 June 2026. The existing RDUH AS cohort baseline is approximately 917 patients. The HomeTest pilot subset is approximately 100 to 200 patients in the June 2026 to March 2027 engagement window. Cambridge University Hospitals (88.0) and Somerset NHS Foundation Trust (77.0) sit as reserves. Mobilisation runs under MOU as Alpha/Beta interim contracting; transitions into the formal framework instrument at BAU.</div></div><a class="item-link" href="HomeTest Operating Model - Ecosystem Contracted.html">Open on Ecosystem Contracted &rarr;</a></div>
+        <div class="item"><div class="item-body"><div class="item-title">FULFIL: collection-first vs delivery-first fulfilment</div><div class="item-desc">Delivery-first (postal kit dispatch and return) carries 5-7 day wait, unsafe-address and motivation-decay barriers. Collection-first (pharmacy or community-hub pickup of an activated kit) removes those barriers but introduces channel partnership and operational complexity. Emerging as a parallel fulfilment pattern, not a replacement. Another DTx programme has independently inserted "collect from pharmacy" into journeys lifted from HomeTest screens, signalling a shared architectural move. Affects which configurations can carry both fulfilment patterns and which lean to one.</div></div><a class="item-link" href="NHS TOM - FULFIL v4.html">Open on FULFIL &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">MEASURE: KPI framework</div><div class="item-desc">Not yet designed. Prior DTx experience showed licence-based KPIs failed because they didn't track outcomes.</div></div><a class="item-link" href="NHS TOM - MEASURE v4.html">Open on MEASURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">MEASURE: attribution methodology</div><div class="item-desc">Undefined. Linking a home test kit to a downstream clinical outcome requires methodology not yet agreed.</div></div><a class="item-link" href="NHS TOM - MEASURE v4.html">Open on MEASURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">MEASURE: feedback loop to SHAPE</div><div class="item-desc">Not yet designed. The mechanism (what data, in what format, at what frequency) is undefined.</div></div><a class="item-link" href="NHS TOM - MEASURE v4.html">Open on MEASURE &rarr;</a></div>
