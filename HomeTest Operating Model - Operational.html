@@ -504,7 +504,8 @@
  <div style="padding:0 16px 16px;">
  <div class="decision-box">
  <h4>Open decisions</h4>
- <p><strong>Result handling for unhappy paths.</strong> What the platform does if a result is missing, late, or fails delivery via NHS App. Backstop process not yet specified.</p>
+ <p><strong>Result delivery failure handling.</strong> What the platform does if a result is missing, late, or fails delivery via NHS App. Backstop process not yet specified.</p>
+          <p><strong>Reactive result clinical pathway.</strong> What happens clinically when a result is reactive or abnormal. Architecture is in place: Reactive Results API implemented, supplier obligation of clinical follow-up before escalation, platform-side safety control withholds the result from user-visible release and triggers the clinical pathway, data controller split defined across platform, commissioned service and supplier. Onward referral routes mapped per configuration (LA sexual health for HIV, acute trust for PSA-AS, GP for HbA1c, CVKM pathway for cardiovascular). Hardening pre-BAU: watertight safety-net evidence is a Beta exit criterion; hard-coded fail safes still under validation.</p>
  <p><strong>Repeat-test cadence.</strong> How often patients should retest after a non-reactive or in-range result. Signposting and cadence rules vary by configuration and are not yet codified.</p>
  <p><strong>Patient withdrawal.</strong> What happens if a patient orders, then withdraws, or doesn&apos;t return the sample. Sample-rejection and no-return handling are operational details still to define.</p>
  </div>
