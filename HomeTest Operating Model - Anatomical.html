@@ -210,7 +210,9 @@
   .fls-badge-live { background:#009688; color:#fff; }
   .fls-badge-prospective { background:#FFE082; color:#5D4037; }
   .fls-pill-list { display:flex; flex-direction:column; gap:7px; }
-  .fls-pill-row { display:flex; align-items:center; gap:10px; font-size:12px; }
+  .fls-pill-row { display:flex; align-items:center; gap:10px; font-size:12px; text-decoration:none; color:inherit; cursor:pointer; padding:3px 4px; margin-left:-4px; margin-right:-4px; border-radius:6px; transition:background 0.15s; }
+  .fls-pill-row:hover { background:#F4F8FC; }
+  .fls-pill-row:hover .fls-pill-overlay { color:var(--nhs-blue); }
   .fls-pill-overlay { font-weight:600; color:#455A64; min-width:120px; flex-shrink:0; font-size:11.5px; }
   .fls-pill { display:inline-block; padding:4px 12px; border-radius:999px; font-size:11.5px; font-weight:700; color:#fff; }
   .fls-pill-hiv { background:#009688; }
@@ -455,15 +457,15 @@
                 <div class="fls-col-name fls-col-name-hiv">HIV picks</div>
               </div>
               <div class="fls-pill-list">
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-hiv">Patient-init</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-hiv">LA</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-hiv">All-inclusive</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-hiv">Per-completed</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-hiv">Comm-paid</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-hiv">UKAS / ISO</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-hiv">Sex health svc</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-hiv">Patient-direct</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-hiv">Federated controller</span></div>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#initiation" title="Open Initiation overlay detail"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-hiv">Patient-init</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commissioning" title="Open Commissioning overlay detail"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-hiv">LA</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#supply-chain" title="Open Supply chain overlay detail"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-hiv">All-inclusive</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commercial" title="Open Commercial overlay detail"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-hiv">Per-completed</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#tariff" title="Open Tariff overlay detail"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-hiv">Comm-paid</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#accreditation" title="Open Accreditation overlay detail"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-hiv">UKAS / ISO</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#sign-off" title="Open Sign-off overlay detail"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-hiv">Sex health svc</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#result-handling" title="Open Result handling overlay detail"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-hiv">Patient-direct</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#ig" title="Open IG overlay detail"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-hiv">Federated controller</span></a>
               </div>
             </div>
             <div class="fls-col fls-col-psa">
@@ -471,15 +473,15 @@
                 <div class="fls-col-name fls-col-name-psa">PSA picks</div>
               </div>
               <div class="fls-pill-list">
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-psa">Clinician-init</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-psa">Acute trust</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-psa">Specialist+log</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-psa">Activity-based</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-psa">Acute envelope</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-psa">Capillary draw</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-psa">Trust gov</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-psa">Clinician-first</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-psa">Federated controller</span></div>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#initiation" title="Open Initiation overlay detail"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-psa">Clinician-init</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commissioning" title="Open Commissioning overlay detail"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-psa">Acute trust</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#supply-chain" title="Open Supply chain overlay detail"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-psa">Specialist+log</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commercial" title="Open Commercial overlay detail"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-psa">Activity-based</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#tariff" title="Open Tariff overlay detail"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-psa">Acute envelope</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#accreditation" title="Open Accreditation overlay detail"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-psa">Capillary draw</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#sign-off" title="Open Sign-off overlay detail"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-psa">Trust gov</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#result-handling" title="Open Result handling overlay detail"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-psa">Clinician-first</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#ig" title="Open IG overlay detail"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-psa">Federated controller</span></a>
               </div>
             </div>
             <div class="fls-col fls-col-hba1c">
@@ -488,15 +490,15 @@
                 <div class="fls-badge fls-badge-design">Use Case 3 &middot; design phase</div>
               </div>
               <div class="fls-pill-list">
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-hba1c">GP-init</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-hba1c">ICB / GP</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-hba1c">Lab-led</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-hba1c">TBC</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-hba1c">QOF / outpatient</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-hba1c">UKAS / ISO</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-hba1c">GP / diabetes</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-hba1c">GP record</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-hba1c">GP-record DSA</span></div>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#initiation" title="Open Initiation overlay detail"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-hba1c">GP-init</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commissioning" title="Open Commissioning overlay detail"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-hba1c">ICB / GP</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#supply-chain" title="Open Supply chain overlay detail"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-hba1c">Lab-led</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commercial" title="Open Commercial overlay detail"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-hba1c">TBC</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#tariff" title="Open Tariff overlay detail"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-hba1c">QOF / outpatient</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#accreditation" title="Open Accreditation overlay detail"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-hba1c">UKAS / ISO</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#sign-off" title="Open Sign-off overlay detail"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-hba1c">GP / diabetes</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#result-handling" title="Open Result handling overlay detail"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-hba1c">GP record</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#ig" title="Open IG overlay detail"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-hba1c">GP-record DSA</span></a>
               </div>
             </div>
             <div class="fls-col fls-col-pharmacy">
@@ -505,15 +507,15 @@
                 <div class="fls-badge fls-badge-assumption">Working assumption</div>
               </div>
               <div class="fls-pill-list">
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-pharmacy">Pharmacy-init</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-pharmacy">Pharmacy net / ICB</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-pharmacy">Local lab</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-pharmacy">Per-review</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-pharmacy">New code?</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-pharmacy">GPhC + UKAS</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-pharmacy">Pharmacist+GP</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-pharmacy">Mixed</span></div>
-                <div class="fls-pill-row"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-pharmacy">Pharmacy DSA</span></div>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#initiation" title="Open Initiation overlay detail"><div class="fls-pill-overlay">Initiation</div><span class="fls-pill fls-pill-pharmacy">Pharmacy-init</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commissioning" title="Open Commissioning overlay detail"><div class="fls-pill-overlay">Commissioning</div><span class="fls-pill fls-pill-pharmacy">Pharmacy net / ICB</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#supply-chain" title="Open Supply chain overlay detail"><div class="fls-pill-overlay">Supply chain</div><span class="fls-pill fls-pill-pharmacy">Local lab</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#commercial" title="Open Commercial overlay detail"><div class="fls-pill-overlay">Commercial</div><span class="fls-pill fls-pill-pharmacy">Per-review</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#tariff" title="Open Tariff overlay detail"><div class="fls-pill-overlay">Tariff</div><span class="fls-pill fls-pill-pharmacy">New code?</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#accreditation" title="Open Accreditation overlay detail"><div class="fls-pill-overlay">Accreditation</div><span class="fls-pill fls-pill-pharmacy">GPhC + UKAS</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#sign-off" title="Open Sign-off overlay detail"><div class="fls-pill-overlay">Sign-off</div><span class="fls-pill fls-pill-pharmacy">Pharmacist+GP</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#result-handling" title="Open Result handling overlay detail"><div class="fls-pill-overlay">Result handling</div><span class="fls-pill fls-pill-pharmacy">Mixed</span></a>
+                <a class="fls-pill-row" href="HomeTest Operating Model - Pattern Overlay Detail.html#ig" title="Open IG overlay detail"><div class="fls-pill-overlay">IG</div><span class="fls-pill fls-pill-pharmacy">Pharmacy DSA</span></a>
               </div>
             </div>
           </div>

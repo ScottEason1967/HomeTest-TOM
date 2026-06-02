@@ -56,6 +56,33 @@
   .raci-table tr:last-child td{border-bottom:none;}
   .tbc{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:0.5px;color:#999;background:#f0f0f0;padding:3px 8px;border-radius:4px;text-transform:uppercase;}
   .raci-key{display:flex;gap:18px;margin-top:14px;font-size:11.5px;color:var(--text-muted);flex-wrap:wrap;}
+  /* Level-band header rows inside the elements RACI table */
+  .raci-table tr.raci-level-row td { background:linear-gradient(to right, #F4F8FC, #fafbfc); color:var(--nhs-dark); font-size:11.5px; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; padding:14px 16px; border-top:2px solid var(--nhs-blue); border-bottom:1px solid var(--border-lt); }
+  .raci-table tr.raci-level-row td .level-desc { display:block; font-size:11px; font-weight:500; color:var(--text-sec); letter-spacing:0.3px; text-transform:none; margin-top:3px; }
+  /* Four-level explainer panel */
+  .four-level-panel { background:#fff; border:1px solid var(--border-lt); border-radius:12px; padding:24px 26px; margin:0 0 22px; box-shadow:0 2px 10px rgba(0,32,64,0.04); }
+  .four-level-h { font-size:11px; font-weight:800; letter-spacing:1.8px; color:var(--text-muted); text-transform:uppercase; margin-bottom:6px; }
+  .four-level-sub { font-size:13.5px; color:var(--text-sec); line-height:1.65; margin-bottom:18px; max-width:880px; }
+  .four-level-sub strong { color:var(--text); font-weight:700; }
+  .four-level-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+  .flp-card { background:#fafbfc; border:1px solid var(--border-lt); border-radius:8px; padding:14px 16px; }
+  .flp-card.l1 { border-top:3px solid var(--nhs-dark); }
+  .flp-card.l2 { border-top:3px solid var(--nhs-blue); }
+  .flp-card.l3 { border-top:3px solid #78909C; }
+  .flp-card.l4 { border-top:3px solid var(--nhs-pink); }
+  .flp-card-h { font-size:10.5px; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; margin-bottom:6px; }
+  .flp-card.l1 .flp-card-h { color:var(--nhs-dark); }
+  .flp-card.l2 .flp-card-h { color:var(--nhs-blue); }
+  .flp-card.l3 .flp-card-h { color:#546E7A; }
+  .flp-card.l4 .flp-card-h { color:var(--nhs-pink); }
+  .flp-card-name { font-size:14.5px; font-weight:800; color:var(--text); margin-bottom:6px; letter-spacing:-0.1px; }
+  .flp-card-body { font-size:11.5px; color:var(--text-sec); line-height:1.55; }
+  /* Status pill for overlay accountability */
+  .acc-status { display:inline-block; font-size:9.5px; font-weight:800; letter-spacing:0.6px; padding:3px 8px; border-radius:4px; text-transform:uppercase; }
+  .acc-pinned { background:#E0F2EE; color:#00695C; }
+  .acc-working { background:#FFF3E0; color:#E65100; }
+  .acc-tbc { background:#ECEFF1; color:#546E7A; }
+  @media (max-width: 820px) { .four-level-grid { grid-template-columns:repeat(2,1fr); } }
   .raci-key strong{color:var(--text);}
   /* Decision rights */
   .decisions{display:grid;grid-template-columns:1fr;gap:14px;}
@@ -247,7 +274,34 @@
     </div>
   </div>
 
-  <details class="section-acc" id="raci-four-levels">
+  <div class="four-level-panel">
+    <div class="four-level-h">Four levels &middot; vocabulary</div>
+    <div class="four-level-sub">The operating model is structured as <strong>four levels of inheritance</strong>. Foundation built once and reused. Overlays where conditions diverge. Patterns are the catalogue of choices inside each overlay. Configurations are real-world deployments. Accountability lands differently at each level: this whole page is about who owns what at each.</div>
+    <div class="four-level-grid">
+      <div class="flp-card l1">
+        <div class="flp-card-h">Level 1</div>
+        <div class="flp-card-name">Foundation</div>
+        <div class="flp-card-body">Universal building blocks. Built once, reused across every condition. Integration, identity, gateway, IG framework, clinical safety case structure, hazard log structure.</div>
+      </div>
+      <div class="flp-card l2">
+        <div class="flp-card-h">Level 2</div>
+        <div class="flp-card-name">Overlays</div>
+        <div class="flp-card-body">The dimensions where conditions diverge. Nine overlays in total (Initiation, Commissioning, Supply chain, Commercial, Tariff, Accreditation, Sign-off, Result handling, IG). Each overlay holds a library of patterns.</div>
+      </div>
+      <div class="flp-card l3">
+        <div class="flp-card-h">Level 3</div>
+        <div class="flp-card-name">Pattern catalogue</div>
+        <div class="flp-card-body">The library of available choices within each overlay. E.g. the Commissioning overlay holds patterns: LA, Acute trust, ICB, NHSE, Pharmacy network. Each configuration picks one pattern from each overlay.</div>
+      </div>
+      <div class="flp-card l4">
+        <div class="flp-card-h">Level 4</div>
+        <div class="flp-card-name">Configurations</div>
+        <div class="flp-card-body">Real-world deployments. The nine picks combined into a working service. HIV in Salford with one supplier is one configuration. PSA-AS is another. HbA1c is a third.</div>
+      </div>
+    </div>
+  </div>
+
+    <details class="section-acc" id="raci-four-levels">
     <summary>
       <div>
         <div class="acc-title">Accountability across the four levels</div>
@@ -270,6 +324,7 @@
         </tr>
       </thead>
       <tbody>
+        <tr class="raci-level-row"><td colspan="5">Level 1 &mdash; Foundation<span class="level-desc">Universal, built once, reused across every condition.</span></td></tr>
         <tr>
           <td class="label">Foundation (Level 1)<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">The universal foundation. Integration, identity, comms, onboarding gateway, IG framework, clinical safety case structure, hazard log structure, MI / data flows.</span></td>
           <td class="col-r"><span class="tbc">TBC</span></td>
@@ -277,6 +332,7 @@
           <td class="col-c"><span class="tbc">TBC</span></td>
           <td class="col-i"><span class="tbc">TBC</span></td>
         </tr>
+        <tr class="raci-level-row"><td colspan="5">Level 2 &mdash; Overlays<span class="level-desc">Nine overlays. The dimensions where conditions diverge. Each overlay holds a library of patterns.</span></td></tr>
         <tr>
           <td class="label">Information governance overlay<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">DPIA, DSA, DPA, IAO, controller designation, lawful basis. The data side of every configuration.</span></td>
           <td class="col-r">Ngozi (IG / DPO)</td>
@@ -340,6 +396,7 @@
           <td class="col-c"><span class="tbc">TBC</span></td>
           <td class="col-i"><span class="tbc">TBC</span></td>
         </tr>
+        <tr class="raci-level-row"><td colspan="5">Level 3 &mdash; Pattern catalogue<span class="level-desc">The library of available choices inside each overlay.</span></td></tr>
         <tr>
           <td class="label">Pattern catalogue (Level 3)<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">The library of pattern options inside each overlay.</span></td>
           <td class="col-r"><span class="tbc">TBC</span></td>
@@ -347,6 +404,7 @@
           <td class="col-c"><span class="tbc">TBC</span></td>
           <td class="col-i"><span class="tbc">TBC</span></td>
         </tr>
+        <tr class="raci-level-row"><td colspan="5">Level 4 &mdash; Configurations<span class="level-desc">Real-world deployments. The picks combined into a working service.</span></td></tr>
         <tr>
           <td class="label">HIV configuration<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">The live deployment in Salford via SH:24.</span></td>
           <td class="col-r"><span class="tbc">TBC</span></td>
@@ -453,7 +511,119 @@
     </div>
   </details>
 
-  <details class="section-acc" id="raci-hiv">
+  <details class="section-acc" id="raci-overlays">
+    <summary>
+      <div>
+        <div class="acc-title">Operational accountability: Overlays</div>
+        <div class="acc-sub">Who owns the pattern catalogue inside each overlay, and who approves a configuration's pick. Most still TBC.</div>
+      </div>
+    </summary>
+    <div class="acc-body">
+
+  <div class="raci-section">
+    <h2>Operational accountability: Overlays</h2>
+    <div class="raci-sub">Overlays are where conditions diverge. The operational accountability for an overlay sits in two places: who maintains the pattern catalogue within the overlay (the library of choices), and who approves a configuration's pick when it enters or changes. Both sit centrally, not with the configuration. <strong>Pinning the overlay-level accountabilities is one of the explicit asks coming out of the accountability workshop</strong>. Most are TBC today; honest framing rather than fake-filling.</div>
+    <table class="raci-table">
+      <thead>
+        <tr>
+          <th>Overlay</th>
+          <th class="col-r">Responsible</th>
+          <th class="col-a">Accountable</th>
+          <th class="col-c">Consulted</th>
+          <th class="col-i">Informed</th>
+          <th style="text-align:center;width:10%;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="label">IG / data controller<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">DPIA framework, DSA templates, controller designation rules, lawful basis assertions.</span></td>
+          <td class="col-r">Ngozi (IG / DPO)</td>
+          <td class="col-a">National Assurance Board</td>
+          <td class="col-c">NHS Legal, Caldicott Guardian</td>
+          <td class="col-i">All configurations, suppliers, commissioners</td>
+          <td style="text-align:center;"><span class="acc-status acc-pinned">Pinned</span></td>
+        </tr>
+        <tr>
+          <td class="label">Clinical safety / Accreditation bar<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Hazard log structure, DCB0129 / DCB0160 standards, accreditation requirements (UKAS / ISO, capillary draw equivalence, etc.).</span></td>
+          <td class="col-r">Aisha (Clinical Safety Officer)</td>
+          <td class="col-a">National Assurance Board</td>
+          <td class="col-c">Configuration Clinical Leads, UKAS, Royal College of Pathologists</td>
+          <td class="col-i">All configurations</td>
+          <td style="text-align:center;"><span class="acc-status acc-pinned">Pinned</span></td>
+        </tr>
+        <tr>
+          <td class="label">Commercial<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Pricing structure (mobilisation + activity + volume floor), ceiling pricing, supplier admission criteria, framework instrument stewardship.</span></td>
+          <td class="col-r">David (NHS Commercial)</td>
+          <td class="col-a">SRO</td>
+          <td class="col-c">NHS Legal, Health Economist, suppliers</td>
+          <td class="col-i">All configurations, all commissioners</td>
+          <td style="text-align:center;"><span class="acc-status acc-working">Working</span></td>
+        </tr>
+        <tr>
+          <td class="label">Tariff treatment<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Best-practice tariff design at pathway level (e.g. PSA Active Surveillance Monitoring Episode). National tariff workstream sits outside the operating model; the dependency does not.</span></td>
+          <td class="col-r">NHSE Strategic Finance</td>
+          <td class="col-a">SRO</td>
+          <td class="col-c">Health Economist, Commercial Lead</td>
+          <td class="col-i">All commissioners</td>
+          <td style="text-align:center;"><span class="acc-status acc-working">Working</span></td>
+        </tr>
+        <tr>
+          <td class="label">Sign-off route<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Which clinical authority signs off on the result and owns onward action, especially on a reactive or abnormal result. Varies per configuration.</span></td>
+          <td class="col-r"><span class="tbc">TBC</span></td>
+          <td class="col-a"><span class="tbc">TBC</span></td>
+          <td class="col-c">Configuration Clinical Leads, Clinical Safety Officer</td>
+          <td class="col-i">All configurations</td>
+          <td style="text-align:center;"><span class="acc-status acc-tbc">TBC</span></td>
+        </tr>
+        <tr>
+          <td class="label">Initiation<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Pattern stewardship across Patient-init, Clinician-init, GP-init and Pharmacy-init.</span></td>
+          <td class="col-r"><span class="tbc">TBC</span></td>
+          <td class="col-a"><span class="tbc">TBC</span></td>
+          <td class="col-c">Configuration Clinical Leads, NHS App team</td>
+          <td class="col-i">All configurations</td>
+          <td style="text-align:center;"><span class="acc-status acc-tbc">TBC</span></td>
+        </tr>
+        <tr>
+          <td class="label">Commissioning<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Pattern stewardship across LA, Acute trust, ICB, NHSE-central and Pharmacy network commissioning routes.</span></td>
+          <td class="col-r"><span class="tbc">TBC</span></td>
+          <td class="col-a"><span class="tbc">TBC</span></td>
+          <td class="col-c">Commissioners, NHS Online, ADASS, ADPH</td>
+          <td class="col-i">All configurations, all suppliers</td>
+          <td style="text-align:center;"><span class="acc-status acc-tbc">TBC</span></td>
+        </tr>
+        <tr>
+          <td class="label">Supply chain<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Pattern stewardship across all-inclusive, specialist-lab-plus-logistics, NHS-pathology-led and parallel mixed-economy supply chains.</span></td>
+          <td class="col-r"><span class="tbc">TBC</span></td>
+          <td class="col-a"><span class="tbc">TBC</span></td>
+          <td class="col-c">Suppliers, NHS Supply Chain, Pathology SIG</td>
+          <td class="col-i">All configurations</td>
+          <td style="text-align:center;"><span class="acc-status acc-tbc">TBC</span></td>
+        </tr>
+        <tr>
+          <td class="label">Result handling<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">Pattern stewardship across patient-direct, clinician-first, GP-record and mixed result-delivery models.</span></td>
+          <td class="col-r"><span class="tbc">TBC</span></td>
+          <td class="col-a"><span class="tbc">TBC</span></td>
+          <td class="col-c">NHS App team, Configuration Clinical Leads, IG / DPO</td>
+          <td class="col-i">All configurations</td>
+          <td style="text-align:center;"><span class="acc-status acc-tbc">TBC</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="raci-key">
+      <span><strong>Pinned</strong> &middot; accountability agreed and documented</span>
+      <span><strong>Working</strong> &middot; lead role identified, framework being defined</span>
+      <span><strong>TBC</strong> &middot; awaiting SLT decision</span>
+    </div>
+    <div style="margin-top:18px;padding:14px 18px;background:#FFF9EC;border:1px solid #F0DCA0;border-left:4px solid var(--amber-deep);border-radius:0 8px 8px 0;font-size:12.5px;color:var(--text-sec);line-height:1.6;">
+      <strong style="color:var(--text);display:block;margin-bottom:4px;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#9A6700;">Where the gap sits</strong>
+      Three overlays (IG, Clinical safety / Accreditation, Commercial) are settled or close to settled. Six remain TBC pending SLT decisions. Pinning these is the explicit outcome the accountability workshop is driving towards. The first table on this page surfaces the same gap at element altitude; this table surfaces it at operational altitude.
+    </div>
+  </div>
+
+    </div>
+  </details>
+
+    <details class="section-acc" id="raci-hiv">
     <summary>
       <div>
         <div class="acc-title">Operational accountability: HIV configuration</div>
