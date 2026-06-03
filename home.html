@@ -136,6 +136,22 @@
   .actor-name { font-size: 13px; font-weight: 800; color: var(--nhs-dark); }
   .actor-role { font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.1px; font-weight: 700; margin-top: 3px; }
   .actor-bio { font-size: 11px; color: var(--text-sec); margin-top: 8px; line-height: 1.45; }
+  /* Commissioner cluster card — one card, four personas, mirrors Operational actor-key Lane 1 cluster */
+  .actor.actor-cluster { grid-column: span 2; cursor: default; }
+  .actor.actor-cluster:hover { transform: none; box-shadow: 0 2px 6px rgba(0,32,64,0.04); border-color: var(--border-lt); }
+  .actor-portrait.actor-portrait-cluster { display: flex; flex-direction: row; align-items: end; justify-content: center; gap: 0; height: 110px; }
+  .actor-portrait.actor-portrait-cluster > a { display: inline-block; text-decoration: none; cursor: pointer; transition: transform 0.16s ease; }
+  .actor-portrait.actor-portrait-cluster > a + a { margin-left: -14px; }
+  .actor-portrait.actor-portrait-cluster > a:hover { transform: translateY(-3px); z-index: 2; }
+  .actor-portrait.actor-portrait-cluster img,
+  .actor-portrait.actor-portrait-cluster .actor-disc { width: 60px; height: 60px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 2px 8px rgba(0,32,64,0.20); background: #fff; object-fit: cover; object-position: top center; box-sizing: content-box; }
+  .actor-portrait.actor-portrait-cluster .actor-disc { background: linear-gradient(160deg, #1B3A6B, #003087); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 600; line-height: 1; }
+  .actor.actor-cluster .actor-role { color: var(--nhs-blue); font-weight: 800; }
+  @media (max-width: 900px) {
+    .actor.actor-cluster { grid-column: span 2; }
+    .actor-portrait.actor-portrait-cluster img,
+    .actor-portrait.actor-portrait-cluster .actor-disc { width: 52px; height: 52px; }
+  }
   .foot { margin-top: 36px; padding-bottom: 36px; text-align: center; font-size: 11.5px; color: var(--text-muted); line-height: 1.6; }
   @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
@@ -515,8 +531,8 @@
   <div class="cast">
     <div class="cast-rule"></div>
     <div class="cast-eyebrow">The cast</div>
-    <h2 class="cast-title">Eleven people. Three patient stories. One model.</h2>
-    <p class="cast-intro">An operating model is a set of relationships between people. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, patient-initiated), Mark (PSA-AS, clinician-initiated) and Layla (HbA1c, GP-initiated). Alongside them, the operational cast who run the model around them, plus Adam (the consultant urologist anchoring the clinician-initiated pattern) and Ruth (the monitoring-gap cohort commissioner held open as a TBC). Every page on this site is structured around what each plays.</p>
+    <h2 class="cast-title">Thirteen people. Three patient stories. One model.</h2>
+    <p class="cast-intro">An operating model is a set of relationships between people. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, patient-initiated), Mark (PSA-AS, clinician-initiated) and Layla (HbA1c, GP-initiated). Around them, the <strong>Commissioner role</strong> played by four personas across configurations (Sarah, Catherine, Ruth and Anita), plus the operational cast who run the model, plus Adam (the consultant urologist anchoring the clinician-initiated pattern). Every page on this site is structured around what each plays.</p>
     <div class="cast-row-label">The patients: three Year-1 archetypes</div>
     <div class="cast-row cast-patients">
       <a href="HomeTest Operating Model - Persona Abdul.html" class="actor">
@@ -538,16 +554,17 @@
 
     <div class="cast-row-label">The roles: who run the model around the patients</div>
     <div class="cast-row cast-roles">
-      <a href="HomeTest Operating Model - Persona Sarah.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/sarah.png" alt="Sarah"></div>
-        <div class="actor-name">Sarah</div><div class="actor-role">Commissioner</div>
-        <div class="actor-bio">Buys the service for her LA / ICB / Trust.</div>
-      </a>
-      <a href="HomeTest Operating Model - Persona Ruth.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/ruth.png" alt="Ruth"></div>
-        <div class="actor-name">Ruth</div><div class="actor-role">Commissioner &middot; Monitoring-gap TBC</div>
-        <div class="actor-bio">PSA-AS monitoring-gap commissioner. Held open as a TBC while the team scoping this cohort are in discovery on cohort definition and budget shape.</div>
-      </a>
+      <div class="actor actor-cluster">
+        <div class="actor-portrait actor-portrait-cluster">
+          <a href="HomeTest Operating Model - Persona Sarah.html" title="Sarah — LA sexual health commissioner, HomeTest HIV"><img src="Assets/Personas/sarah.png" alt="Sarah"></a>
+          <a href="HomeTest Operating Model - Persona Catherine.html" title="Catherine — Acute Trust commissioner, PSA-AS established cohort"><div class="actor-disc">C</div></a>
+          <a href="HomeTest Operating Model - Persona Ruth.html" title="Ruth — PSA-AS monitoring-gap commissioner (TBC)"><img src="Assets/Personas/ruth.png" alt="Ruth"></a>
+          <a href="HomeTest Operating Model - Persona Anita.html" title="Anita — ICB / GP commissioner, HomeTest HbA1c"><div class="actor-disc">A</div></a>
+        </div>
+        <div class="actor-name">Commissioner</div>
+        <div class="actor-role">Sarah &middot; Catherine &middot; Ruth &middot; Anita</div>
+        <div class="actor-bio">One role, four institutions. LA for HIV (Sarah). Acute Trust for PSA-AS established cohort (Catherine). PSA-AS monitoring-gap held open (Ruth, TBC). ICB / GP for HbA1c (Anita).</div>
+      </div>
       <a href="HomeTest Operating Model - Persona Joe.html" class="actor">
         <div class="actor-portrait"><img src="Assets/Personas/joe.png" alt="Joe"></div>
         <div class="actor-name">Joe</div><div class="actor-role">Supplier</div>
