@@ -152,8 +152,8 @@
       </div>
       <div class="ov-card psa">
         <div class="ov-card-head"><div class="ov-card-name">PSA-AS</div><span class="status-pill status-prospective">Prospective</span></div>
-        <div class="pick">Clinician-initiated (acute)</div>
-        <div class="ov-card-body"><p>An acute trust consultant requests follow-up monitoring on their patient. The patient receives the kit at home, returns the sample, and the result goes back to the clinician.</p><p><em>Year 1 cohort: radiotherapy follow-up plus a monitoring-gap cohort (men referred to Urology with elevated PSA but no cancer diagnosis). Mark&apos;s journey.</em></p></div>
+        <div class="pick">Clinician-initiated, patient-confirmed (acute)</div>
+        <div class="ov-card-body"><p>Hospital clinical staff identify clinical suitability and set the intent to order. The patient confirms the order, address and timing. The kit is dispatched, the patient returns the sample, and the result returns to the requesting clinician. Repeat ordering carries the same confirmation step at each cycle.</p><p><em>Year 1 cohort: radiotherapy follow-up plus a monitoring-gap cohort (men referred to Urology with elevated PSA but no cancer diagnosis). Mark&apos;s journey.</em></p></div>
       </div>
       <div class="ov-card hba1c">
         <div class="ov-card-head"><div class="ov-card-name">HbA1c</div><span class="status-pill status-design">Design</span></div>
@@ -166,6 +166,8 @@
         <div class="ov-card-body"><p>A community pharmacist initiates testing as part of medication management (HRT, GLP-1, DMARDs / steroids, RA, etc.). Working sketch from the discovery taxonomy. Not on the Year 1 OBO list.</p></div>
       </div>
     </div>
+    <div class="ov-note"><span class="label">Underneath the clinician-initiated configurations</span><strong>HomeTest sits underneath existing clinical recall and tracking systems where they already exist.</strong> Where a trust runs a condition-specific tracker for scheduling and recall, HomeTest is the remote-delivery layer beneath it, not a replacement. The tracker remains the source of truth for cadence and clinical management; HomeTest enables the kit, sample and result flow to happen remotely rather than in clinic.</div>
+    <div class="ov-note"><span class="label">Across clinician-initiated patterns</span><strong>Patient route choice is preserved.</strong> The patient retains the choice between in-person and home test at the point of order confirmation. The clinician sets the intent; the patient consents to the delivery route. This applies at every order in a repeat cycle, not only at first order.</div>
   </section>
 
   <!-- 2. Commissioning -->
