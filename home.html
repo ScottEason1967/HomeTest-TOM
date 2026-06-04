@@ -126,7 +126,7 @@
   .cast-intro { font-size: 14.5px; color: rgba(255,255,255,0.92); line-height: 1.65; max-width: 640px; margin-bottom: 28px; }
   .cast-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
   .cast-row.cast-patients { grid-template-columns: repeat(3, 1fr); max-width: 720px; margin: 0 auto 14px; }
-  .cast-row.cast-roles { grid-template-columns: repeat(4, 1fr); margin-top: 14px; }
+  .cast-row.cast-roles { grid-template-columns: repeat(3, 1fr); margin-top: 14px; }
   .cast-row-label { font-size: 10px; font-weight: 800; letter-spacing: 1.6px; color: rgba(255,255,255,0.7); text-transform: uppercase; margin: 22px 0 8px; text-align: center; }
   .cast-row-label:first-of-type { margin-top: 6px; }
   .actor { background: var(--card); border: 1px solid var(--border-lt); border-radius: 12px; padding: 18px 14px 18px; text-align: center; transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease; text-decoration: none; color: inherit; display: block; }
@@ -531,8 +531,8 @@
   <div class="cast">
     <div class="cast-rule"></div>
     <div class="cast-eyebrow">The cast</div>
-    <h2 class="cast-title">Thirteen people. Three patient stories. One model.</h2>
-    <p class="cast-intro">An operating model is a set of relationships between people. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, patient-initiated), Mark (PSA-AS, clinician-initiated) and Layla (HbA1c, GP-initiated). Around them, the <strong>Commissioner role</strong> played by four personas across configurations (Sarah, Catherine, Ruth and Anita), plus the operational cast who run the model, plus Adam (the consultant urologist anchoring the clinician-initiated pattern). Every page on this site is structured around what each plays.</p>
+    <h2 class="cast-title">Fourteen people. Three patient stories. One model.</h2>
+    <p class="cast-intro">An operating model is a set of relationships between people. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, patient-initiated), Mark (PSA-AS, clinician-initiated) and Layla (HbA1c, GP-initiated). Around them, the <strong>Commissioner role</strong> played by four personas across configurations (Sarah, Catherine, Ruth and Anita), plus the operational cast who run the model, plus a Clinician role played by two personas across configurations (Adam, consultant urologist on PSA-AS; Hannah, GP on HbA1c). Every page on this site is structured around what each plays.</p>
     <div class="cast-row-label">The patients: three Year-1 archetypes</div>
     <div class="cast-row cast-patients">
       <a href="HomeTest Operating Model - Persona Abdul.html" class="actor">
@@ -575,11 +575,15 @@
         <div class="actor-name">Aisha</div><div class="actor-role">Clinical / CSG</div>
         <div class="actor-bio">Reviews results, signs off care, holds clinical safety.</div>
       </a>
-      <a href="HomeTest Operating Model - Persona Adam.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/adam.png" alt="Adam"></div>
-        <div class="actor-name">Adam</div><div class="actor-role">Consultant &middot; PSA-AS</div>
-        <div class="actor-bio">Consultant urologist. Live case for clinician-initiated configurations, anchored to PSA Active Surveillance. Sketch grounded in discovery research.</div>
-      </a>
+      <div class="actor actor-cluster">
+        <div class="actor-portrait actor-portrait-cluster">
+          <a href="HomeTest Operating Model - Persona Adam.html" title="Adam — Consultant urologist, PSA-AS (clinician-initiated)"><img src="Assets/Personas/adam.png" alt="Adam"></a>
+          <a href="HomeTest Operating Model - Persona Hannah.html" title="Hannah — GP / primary-care clinician, HbA1c (GP-initiated)"><img src="Assets/Personas/hannah.png" alt="Hannah"></a>
+        </div>
+        <div class="actor-name">Clinician</div>
+        <div class="actor-role">Adam &middot; Hannah</div>
+        <div class="actor-bio">One role, two configurations. Adam, consultant urologist, clinician-initiated PSA-AS. Hannah, GP, GP-initiated HbA1c. Same clinician role; different specialty, different care setting.</div>
+      </div>
       <a href="HomeTest Operating Model - Persona Priya.html" class="actor">
         <div class="actor-portrait"><img src="Assets/Personas/priya.png" alt="Priya"></div>
         <div class="actor-name">Priya</div><div class="actor-role">NHSE Platform</div>
