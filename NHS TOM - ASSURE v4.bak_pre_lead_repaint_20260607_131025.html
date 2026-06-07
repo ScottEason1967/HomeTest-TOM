@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FULFIL: NHS Target Operating Model</title>
+<title>ASSURE: NHS Target Operating Model</title>
 <style>
   :root {
     --nhs-blue: #005EB8;
@@ -88,6 +88,16 @@
     margin-bottom: 8px;
   }
   .stage-intro p:last-child { margin-bottom: 0; }
+  .asymmetry-callout {
+    margin-top: 12px;
+    padding: 8px 14px;
+    background: #f0f7ff;
+    border-left: 3px solid var(--nhs-blue);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--nhs-dark);
+    border-radius: 0 4px 4px 0;
+  }
 
   .section-title {
     font-size: 18px;
@@ -102,9 +112,10 @@
     background: white;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
-    padding: 16px 20px 14px;
-    margin-bottom: 16px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
   }
+  .status-section:last-child { margin-bottom: 0; }
   .status-section.open-section {
     background: #fef4f3;
     border: 1px solid #f5c6c2;
@@ -121,14 +132,14 @@
     display: flex;
     align-items: center;
     gap: 9px;
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.7px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .status-dot {
-    width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
+    width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0;
   }
   .dot-decided { background: var(--status-decided); }
   .dot-progress { background: var(--status-progress); }
@@ -151,9 +162,9 @@
 
   .status-list { list-style: none; padding: 0; margin: 0; }
   .status-list li {
-    padding: 6px 0 6px 20px;
+    padding: 5px 0 5px 18px;
     position: relative;
-    font-size: 13px;
+    font-size: 12.5px;
     line-height: 1.5;
     color: #333;
     border-bottom: 1px solid #f0f0f0;
@@ -163,7 +174,7 @@
     content: '';
     position: absolute;
     left: 4px;
-    top: 13px;
+    top: 12px;
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -175,6 +186,28 @@
     font-weight: 500;
     color: #2a2a2a;
   }
+
+  .split-block { margin-bottom: 26px; }
+  .split-block-header {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+  }
+  .split-block-header.supplier { background: #ED8B00; }
+  .split-block-header .desc { font-weight: 400; opacity: 0.85; margin-left: 8px; }
+  .split-block-header.customer { background: #009639; }
+  .split-block-body {
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 14px;
+  }
+  .split-block-body .status-section { margin-bottom: 12px; }
+  .split-block-body .status-section:last-child { margin-bottom: 0; }
 
   .prev-next {
     display: grid;
@@ -328,9 +361,11 @@
   }
 
 
-  /* === Lead-marker repaint 2026-06-07 === */
-  .actor .role-disc{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#5B8EE0,#003087);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.15);flex-shrink:0;}
-  .actor.lead .role-disc{width:44px;height:44px;font-size:18px;border:2px solid #FFB91D;box-shadow:0 2px 6px rgba(201,162,39,0.35);}
+  /* Holding Q callouts (pathology / pharmacy / etc) */
+  .holding-q { background: var(--warm-cream, #FFF9EC); border: 1px solid #F0DCA0; border-left: 4px solid #FFB91D; border-radius: 8px; padding: 16px 20px; margin: 14px 0; font-size: 13px; color: #4C6272; line-height: 1.6; }
+  .holding-q .holding-q-h { font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: #C9A227; margin-bottom: 6px; }
+  .holding-q strong { color: #212B32; font-weight: 700; }
+  .holding-q em { color: #4C6272; font-style: italic; }
 
 </style>
 </head>
@@ -366,9 +401,9 @@
 <div class="header">
   <div>
     <div style="width:60px;height:3px;background:#FFB91D;border-radius:2px;margin-bottom:10px;"></div>
-    <span class="stage-tag">Stage 4 of 5</span>
-    <h1>FULFIL</h1>
-    <div class="subtitle">Where products live and look different</div>
+    <span class="stage-tag">Stage 2 of 5</span>
+    <h1>ASSURE</h1>
+    <div class="subtitle">Quality gateway and enablement</div>
   </div>
   <a href="HomeTest Operating Model - Lifecycle.html" class="back-btn">&larr; Back to Operating Model</a>
 </div>
@@ -376,13 +411,27 @@
 <div class="main">
 
   <div class="actors-strip">
-    <span class="actors-label">Who lives in this stage</span>
+    <span class="actors-label">Who assures this stage</span>
     <div class="actors-list">
-      <div class="actor">
-        <img src="Assets/Personas/abdul.png" alt="Abdul">
+      <div class="actor lead">
+        <img src="Assets/Personas/aisha.png" alt="Aisha">
         <div class="actor-text">
-          <span class="actor-name">Abdul</span>
-          <span class="actor-role">Patient · HIV (patient-init)</span>
+          <span class="actor-name">Aisha</span>
+          <span class="actor-role">Clinical / CSG · lead</span>
+        </div>
+      </div>
+      <div class="actor">
+        <img src="Assets/Personas/priya.png" alt="Priya">
+        <div class="actor-text">
+          <span class="actor-name">Priya</span>
+          <span class="actor-role">NHSE Platform</span>
+        </div>
+      </div>
+      <div class="actor">
+        <img src="Assets/Personas/joe.png" alt="Joe">
+        <div class="actor-text">
+          <span class="actor-name">Joe</span>
+          <span class="actor-role">Supplier</span>
         </div>
       </div>
       <div class="actor">
@@ -392,104 +441,103 @@
           <span class="actor-role">IG / DPO</span>
         </div>
       </div>
-      <div class="actor">
-        <img src="Assets/Personas/mark.png" alt="Mark">
-        <div class="actor-text">
-          <span class="actor-name">Mark</span>
-          <span class="actor-role">Patient · PSA-AS (clinician-init)</span>
-        </div>
-      </div>
-      <div class="actor">
-        <img src="Assets/Personas/layla.png" alt="Layla">
-        <div class="actor-text">
-          <span class="actor-name">Layla</span>
-          <span class="actor-role">Patient · HbA1c (GP-init)</span>
-        </div>
-      </div>
-      <div class="actor lead">
-        <img src="Assets/Personas/joe.png" alt="Joe">
-        <div class="actor-text">
-          <span class="actor-name">Joe</span>
-          <span class="actor-role">Supplier</span>
-        </div>
-      </div>
-      <div class="actor lead">
-        <a href="HomeTest Operating Model - Persona Sarah.html" style="display:inline-block;text-decoration:none;cursor:pointer;"><img src="Assets/Personas/sarah.png" alt="Commissioner"></a>
-        <div class="actor-text">
-          <span class="actor-name">Commissioner</span>
-          <span class="actor-role">Multiple variants</span>
-        </div>
-      </div>
-      <div class="actor">
-        <img src="Assets/Personas/aisha.png" alt="Aisha">
-        <div class="actor-text">
-          <span class="actor-name">Aisha</span>
-          <span class="actor-role">Clinical / CSG</span>
-        </div>
-      </div>
     </div>
   </div>
 
 
   <div class="stage-intro">
     <h2>About this stage</h2>
-    <p><strong>This is where products primarily live.</strong> SHAPE, ASSURE and CONTRACT are largely product-agnostic (with product-specific parameters). FULFIL is where each product looks and feels different.</p>
-    <p><strong>HomeTest:</strong> Kit ordering, sample logistics, lab processing, result return, clinical safety net, patient notifications via NHS Notify.</p>
-    <p><strong>HealthStore:</strong> Digital therapeutic onboarding, licence management, usage monitoring, clinical pathway integration, outcome tracking.</p>
-    <p><strong>HealthSync (Wearables):</strong> Wearable data integration, continuous monitoring protocols, clinical alerting, device management. Not yet scoped beyond high-level concept.</p>
-    <p>Supplier switching and operational transition mechanisms live here. When a supplier exits, FULFIL manages the patient-facing transition to maintain continuity of care.</p>
+    <p><strong>The asymmetry is deliberate.</strong> Suppliers must demonstrate they meet minimum standards before they can operate on the platform. Commissioners face the opposite: barriers are removed, support is provided, the aim is to make participation as easy as possible.</p>
+    <p><strong>Supplier onboarding:</strong> Evidence packs, IG compliance (DPIA, data controller model), clinical safety (DCB0129/DCB0160), MHRA registration where applicable, EScAL assurance framework. Single reusable gateway rather than per-commissioner reassurance.</p>
+    <p><strong>Commissioner enablement:</strong> Ready-made business cases, pathway templates, integration support, dedicated onboarding contacts. Zero friction for a commissioner who wants to offer home testing to their population.</p>
+    <div class="asymmetry-callout">Suppliers face a gateway. Commissioners face an open door.</div>
+  <div class="holding-q">
+    <div class="holding-q-h">Open Q for SLT &middot; pathology lab dual position</div>
+    <strong>Pathology labs sit in two places at once.</strong> They are clinical infrastructure under Aisha's safety governance (sample analysis, result generation, turnaround SLAs) AND they are suppliers in Joe's contract framework. The model has not yet resolved which territory holds the contract. <em>Open Q: do pathology contracts run through the HomeTest framework as suppliers, or sit outside it as clinical infrastructure that HomeTest plugs into? The answer affects procurement vehicle, tariff treatment, and the assurance bar applied at this stage.</em>
+  </div>
+
   </div>
 
   <h2 class="section-title">Current Status</h2>
 
-  <div class="status-section progress-section">
-    <div class="status-heading heading-progress">
-      <span class="status-dot dot-progress"></span>
-      In Progress
-      <span class="status-count">7 items</span>
+  <!-- SUPPLIER SIDE -->
+  <div class="split-block">
+    <div class="split-block-header supplier">
+      &#9650; Supplier Side <span class="desc">Filtered and held to account</span>
     </div>
-    <ul class="status-list progress">
-      <li>Supply chain architecture: Notify capability assessment completed 29 April. Notify can do digital communications (SMS, email, NHS App, letters via Royal Mail) but has no infrastructure for physical kit fulfilment, lab linkage or end-to-end logistics. Notify would have to build fulfilment from scratch. Strawman drafted 30 April for Notify to mark up. Likely direction forming: Notify in for comms, parked for fulfilment and labs. All-inclusive supplier model remains working default for kit fulfilment</li>
-      <li>Efficio Consulting engaged as external supply chain advisory (20 Apr). Working group established across commercial, clinical, and programme leads</li>
-      <li>NHS Notify integration for patient notifications: digital comms settled as Notify's domain. Notify works through dedicated Royal Mail Health function (NHS-facing, ~18 months old). Covers large-letter postal tariffs and volume discounts</li>
-      <li>Plymouth/Devon as potential NHS pathology partner. Royal Devon has acute self-sample pathways, high-sensitivity PSA analysers, NIHR centre. To be treated as external pathology provider, API in / API out. Draft EOI to partner as clinical partner, not commercial supplier</li>
-      <li>Beta scope: Private Beta up to 100 targeted tests. Public Beta up to 1,000+, December 2026 to March 2027 window. GDS Alpha Assessment completed 30 April. Private Beta approval being sought</li>
-      <li>HPV Self-Testing architecture as comparator. Prime contractor + 8 regional NHS labs model. 4 million invitations planned year 1, 18% uptake baseline. Procurement failed twice including one legal challenge. Lessons directly applicable to framework design</li>
-      <li>Four pathology supplier phenotypes identified: NHS-supplied pathology (14 networks), NHS commercial partnerships (51/49 JVs), NHS trusts with commercial offering (Royal Devon), commercial suppliers (~8 HIV-active, 15+ via transdermal RFI)</li>
-    </ul>
+    <div class="split-block-body">
+
+      <div class="status-section progress-section">
+        <div class="status-heading heading-progress">
+          <span class="status-dot dot-progress"></span>
+          In Progress
+          <span class="status-count">5 items</span>
+        </div>
+        <ul class="status-list progress">
+          <li>DPIA: parts 1-4 reviewed with amendments. Cross-functional workshop completed. Actions assigned: update data flow diagram with beta cohort selection process, condense DPIA narrative and move data field details to addendum, review technical controls and security wording, clarify audit logging. Direction-required question for Private Beta back open pending Privacy, Trust and Transparency (PTT) confirmation. Caldicott Guardian review assumed not needed but unconfirmed. Target sign-off: end June 2026.</li>
+          <li><strong>Public beta DPIA scope decision (agreed in principle):</strong> include Pathway 2 (acute-initiated, e.g. PSA-AS) and Pathway 3 (GP-initiated, e.g. HbA1c) in the public beta DPIA documentation, with the right to descope Pathway 3 first and Pathway 2 second if complexity threatens launch. Decision logic: data flows for Pathway 2 are not materially different from Pathway 1; the wider precedent is to ask for the full scope upfront rather than return for incremental directions later.</li>
+          <li>DSA work with LAs and suppliers ongoing. Template DSA being developed. Initial LA IG engagement met pushback, redirecting to service channel. Future IG requests to be routed through service leads, not IG teams directly</li>
+          <li>Clinical safety: hazard log (8 hazards across 4 groupings) and System Level Security Policy (SLSP) in progress. GDS Alpha Assessment complete. SH:24 submitted HomeTest-specific Clinical Safety Case</li>
+          <li>Supplier eligibility criteria being shaped. Commercial, clinical and IG entry criteria need to be defined and published so suppliers can self-assess before engaging the framework</li>
+          <li>Supplier Onboarding Framework: two straw-man documents created as a starting point. Cover the intended onboarding journey at a high level: pre-qualification, evidence pack submission, IG and clinical safety gateway, commercial terms, technical integration, and go-live readiness. Early-stage scaffolding only, not final artefacts, not yet in operational use</li>
+        </ul>
+      </div>
+
+      <div class="status-section open-section">
+        <div class="status-heading heading-open">
+          <span class="status-dot dot-open"></span>
+          Open Decisions
+          <span class="status-count">6 items</span>
+        </div>
+        <ul class="status-list open">
+          <li>Minimum supplier standards not yet codified. Direction agreed that these should include accreditation requirements, not just self-declaration. Quality assurance framework needs to define what 'good' looks like before suppliers can be measured against it</li>
+          <li>Clinical accountability model: where does accountability sit at each touch point in the patient journey?</li>
+          <li>Offboarding trigger criteria and process: what happens when a supplier fails to meet standards?</li>
+          <li>Information Asset Owner (IAO) appointment: CRITICAL BLOCKER. PTT requires the IAO to be a permanent NHSE employee. Programme heavily contractor-staffed. SRO on maternity leave with deputy in place. Information Asset Administrator (IAA) governance also unresolved. No timeline for resolution. DPIA cannot be approved without IAO sign-off</li>
+          <li>EScAL assurance framework: surfaced in April. Suppliers must go through EScAL when coming on board. Alpha suppliers (Preventx, SH:24) may need to complete retroactively. No owner assigned</li>
+          <li>IG resourcing: broader governance gaps beyond IAO. PTT capacity constrained across NHS</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
-  <div class="status-section open-section">
-    <div class="status-heading heading-open">
-      <span class="status-dot dot-open"></span>
-      Open Decisions
-      <span class="status-count">7 items</span>
+  <!-- COMMISSIONER SIDE -->
+  <div class="split-block">
+    <div class="split-block-header customer">
+      &#9660; Commissioner Side <span class="desc">Enabled and supported</span>
     </div>
-    <ul class="status-list open">
-      <li>Service standards and SLAs not yet defined</li>
-      <li>Supplier switching process and patient continuity during transitions</li>
-      <li>How HealthStore fulfilment differs from HomeTest (not yet scoped). Notify centralised-payment model assessed as not replicable for HealthStore due to complexity</li>
-      <li>HealthSync: not yet scoped beyond high-level concept. No delivery timeline</li>
-      <li>Cold chain logistics for temperature-sensitive tests (e.g. capillary blood for PSA)</li>
-      <li>Royal Mail engagement under way. Strategic Royal Mail contact identified through the Notify team and Commercial colleagues; meeting scheduled with Royal Mail and MarketReach for 13 May to address two threads surfaced from Supplier Forum feedback: (1) reliability of the Tracked 24 service for kit logistics, (2) potential new 'Health Samples' package category sized to fit new blood collection devices that currently fall outside Large Letter format and require Small Parcel format at up to three times the price. Notify works through Royal Mail Health; this engagement is via MarketReach; route alignment between the three paths still to be reconciled</li>
-      <li>Whether centralised kit procurement (NHS taking on stock holding and management) is viable or contradicts the platform-orchestrates-doesn't-operate principle. Notify flagged this dependency explicitly in the 29 April session</li>
-    </ul>
+    <div class="split-block-body">
+
+      <div class="status-section open-section">
+        <div class="status-heading heading-open">
+          <span class="status-dot dot-open"></span>
+          Open Decisions
+          <span class="status-count">2 items</span>
+        </div>
+        <ul class="status-list open">
+          <li>What commissioner readiness support looks like in practice. Three commissioner types confirmed (paying customers, pathway transformers, remote managers): each needs a different support package</li>
+          <li>How to make onboarding frictionless for commissioners. The Operational swim lanes capture the role-level journey; the granular UX-level commissioner experience (click paths, friction points, decision moments) has not been mapped</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
 
   <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.08);font-size:12px;padding-top:14px;margin-bottom:24px;"><a href="HomeTest Operating Model - Status.html" style="color:#005EB8;font-weight:700;text-decoration:none;letter-spacing:0.3px;">See all open items across the model &rarr;</a></div>
 
   <div class="prev-next">
-    <a href="NHS%20TOM%20-%20CONTRACT%20v4.html" class="nav-link prev">
+    <a href="NHS%20TOM%20-%20SHAPE%20v4.html" class="nav-link prev">
       <span class="nav-label">&larr; Previous in cycle</span>
-      <span class="nav-stage">3. CONTRACT</span>
+      <span class="nav-stage">1. SHAPE</span>
     </a>
     <a href="HomeTest Operating Model - Lifecycle.html" class="home-btn">
       &#8962; Full diagram
     </a>
-    <a href="NHS%20TOM%20-%20MEASURE%20v4.html" class="nav-link next">
+    <a href="NHS%20TOM%20-%20CONTRACT%20v4.html" class="nav-link next">
       <span class="nav-label">Next in cycle &rarr;</span>
-      <span class="nav-stage">5. MEASURE</span>
+      <span class="nav-stage">3. CONTRACT</span>
     </a>
   </div>
 
