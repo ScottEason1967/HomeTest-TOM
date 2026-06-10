@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONTRACT: NHS Target Operating Model</title>
+<title>ASSURE: NHS Target Operating Model</title>
 <style>
   :root {
     --nhs-blue: #005EB8;
@@ -123,8 +123,6 @@
   }
   .status-section.decided-section {
     border-left: 5px solid var(--status-decided);
-    background: #f4faf6;
-    border-color: #c8e6d0;
   }
   .status-section.progress-section {
     border-left: 5px solid var(--status-progress);
@@ -161,10 +159,6 @@
     background: rgba(218,41,28,0.12);
     color: var(--status-open);
   }
-  .decided-section .status-count {
-    background: rgba(0,112,60,0.12);
-    color: var(--status-decided);
-  }
 
   .status-list { list-style: none; padding: 0; margin: 0; }
   .status-list li {
@@ -188,8 +182,10 @@
   .status-list.decided li::before { background: var(--status-decided); }
   .status-list.progress li::before { background: var(--status-progress); }
   .status-list.open li::before { background: var(--status-open); }
-  .open-section .status-list li { font-weight: 500; color: #2a2a2a; }
-  .decided-section .status-list li { font-weight: 500; }
+  .open-section .status-list li {
+    font-weight: 500;
+    color: #2a2a2a;
+  }
 
   .split-block { margin-bottom: 26px; }
   .split-block-header {
@@ -371,6 +367,11 @@
   .holding-q strong { color: #212B32; font-weight: 700; }
   .holding-q em { color: #4C6272; font-style: italic; }
 
+
+  /* === Lead-marker repaint 2026-06-07 === */
+  .actor .role-disc{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#5B8EE0,#003087);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.15);flex-shrink:0;}
+  .actor.lead .role-disc{width:44px;height:44px;font-size:18px;border:2px solid #FFB91D;box-shadow:0 2px 6px rgba(201,162,39,0.35);}
+
 </style>
 </head>
 <body>
@@ -405,9 +406,9 @@
 <div class="header">
   <div>
     <div style="width:60px;height:3px;background:#FFB91D;border-radius:2px;margin-bottom:10px;"></div>
-    <span class="stage-tag">Stage 3 of 5</span>
-    <h1>CONTRACT</h1>
-    <div class="subtitle">Commercial framework and access</div>
+    <span class="stage-tag">Stage 2 of 5</span>
+    <h1>ASSURE</h1>
+    <div class="subtitle">Quality gateway and enablement</div>
   </div>
   <a href="HomeTest Operating Model - Lifecycle.html" class="back-btn">&larr; Back to Operating Model</a>
 </div>
@@ -415,20 +416,20 @@
 <div class="main">
 
   <div class="actors-strip">
-    <span class="actors-label">Who contracts this stage</span>
+    <span class="actors-label">Who assures this stage</span>
     <div class="actors-list">
       <div class="actor lead">
-        <img src="Assets/Personas/david.png" alt="David">
+        <img src="Assets/Personas/aisha.png" alt="Aisha">
         <div class="actor-text">
-          <span class="actor-name">David</span>
-          <span class="actor-role">NHS Commercial · lead</span>
+          <span class="actor-name">Aisha</span>
+          <span class="actor-role">Clinical / CSG · lead</span>
         </div>
       </div>
       <div class="actor">
-        <img src="Assets/Personas/sarah.png" alt="Sarah">
+        <img src="Assets/Personas/priya.png" alt="Priya">
         <div class="actor-text">
-          <span class="actor-name">Sarah</span>
-          <span class="actor-role">Commissioner</span>
+          <span class="actor-name">Priya</span>
+          <span class="actor-role">NHSE Platform</span>
         </div>
       </div>
       <div class="actor">
@@ -438,7 +439,7 @@
           <span class="actor-role">Supplier</span>
         </div>
       </div>
-      <div class="actor">
+      <div class="actor lead">
         <img src="Assets/Personas/ngozi.png" alt="Ngozi">
         <div class="actor-text">
           <span class="actor-name">Ngozi</span>
@@ -451,26 +452,13 @@
 
   <div class="stage-intro">
     <h2>About this stage</h2>
-    <p><strong>Same asymmetry as ASSURE.</strong> Suppliers are held to commercial terms: pricing constraints, service levels, exit provisions. Commissioners get a simplified buying experience: call-off from frameworks, clear pricing, minimal procurement overhead.</p>
-    <p><strong>Framework structure:</strong> The GPIT three-layer contracting construct is the candidate model: catalogue agreement (standards and requirements suppliers must meet), framework agreement (national terms, max pricing, supplier entry and exit rules), call-off agreement (local commissioner-supplier direct contract). Well-established at government level but no recent NHS England precedent for NHSE running a dynamic framework itself.</p>
-    <p><strong>Procurement routing:</strong> PA23 vs PSR not settled in law. NHS Legal confirms a case can be made for either (26 May 2026); the recommended approach is to start from the desired solution and work backwards. Working dual-route recommendation: <strong>Plan A</strong> PA23 Option B framework or Dynamic Market (Hill Dickinson external legal formally instructed to run scoping workshop w/c 1 June 2026); <strong>Plan B</strong> Digital Primary Care Framework leverage; <strong>Plan C</strong> commissioner-led direct purchase. Six-month SBS PSR bridge recommended as the interim route for HIV only. Provisional; SLT alignment at 22 June Leeds playback.</p>
-    <p><strong>Options Matrix &middot; current shape:</strong> Four options being scored against 15 commercial criteria: O1 PSR or PA23 Framework, O2 PA23 Dynamic Market, O3 Notify-style centralised, O4 Digital Primary Care Framework. PA23 Dynamic Market (O2) leads on procedural fit (13 ticks / 1 partial / 1 cross) but carries a partial against April 2027 go-live. Digital Primary Care Framework (O4) is the only option with a clean tick on April 2027 deliverability, because it is an existing live framework that HomeTest could call off against rather than stand up new. Trade-off: DPC compromises on supplier dynamism, end-to-end accreditation reach (labs not covered), and admission windows (every 18 months, not continuous) in exchange for deliverability. Recommendation still open.</p>
-    <p style="background:#FFF9EC;border:1px solid #F0DCA0;border-left:4px solid #C9A227;border-radius:0 6px 6px 0;padding:10px 14px;font-size:13px;line-height:1.6;"><strong>Broader driver &middot; tariff conversation at SLT level.</strong> The Options Matrix sits inside a wider conversation about how HomeTest pathways are funded at scale, currently live at SLT level alongside NHSE strategic finance. The procurement vehicle question (which PA23 instrument) and the tariff question (best-practice pathway tariff design) are separate workstreams but interlocked: a procurement route that assumes long-run test-economics funding will not survive the tariff conclusion. The lock target is the procurement question; the tariff question runs on its own SLT cadence and is not gated by this matrix.</p>
-    <p style="background:#FFF9EC;border:1px solid #F0DCA0;border-left:4px solid #C9A227;border-radius:0 6px 6px 0;padding:10px 14px;font-size:13px;line-height:1.6;margin-top:10px;"><strong>Tariff planning window and 2027/28 availability.</strong> Planning guidance for the relevant tariff cycle lands October to November 2026, with health-economics modelling having to land in August to September to feed it. The primary-care contractual mechanism is <strong>not available within the 2027/28 window</strong>. The route is too contentious to use in the time available. The practical opportunity for the 2027/28 cycle sits with <strong>PSA Active Surveillance via a best-practice tariff</strong>. HomeTest configurations that depend on a primary-care funding route fall outside this window and require an alternative funding articulation.</p>
-    <div class="asymmetry-callout">Suppliers are contracted tightly. Commissioners buy easily.</div>
-  <div class="holding-q">
-    <div class="holding-q-h">Open Q for SLT &middot; pathway-level economics</div>
-    <strong>The commissioner case lands at pathway level, not test level.</strong> Cost and benefit sit on different budget lines. Pathology networks do not run phlebotomy; the saving falls with clinical services or the ICB while the new test cost falls with another holder. A commissioner already funding venepuncture cannot fund the switch out of test economics alone. The test reads as a cost pressure on top of an existing line. The unlock is best-practice tariffs at the pathway level, costed end-to-end against the condition pathway. <em>Tariff design itself sits outside this operating model as a separate workstream; the dependency does not. Owner: SLT with NHSE strategic finance, Health Economist input required.</em>
-  </div>
-
+    <p><strong>The asymmetry is deliberate.</strong> Suppliers must demonstrate they meet minimum standards before they can operate on the platform. Commissioners face the opposite: barriers are removed, support is provided, the aim is to make participation as easy as possible.</p>
+    <p><strong>Supplier onboarding:</strong> Evidence packs, IG compliance (DPIA, data controller model), clinical safety (DCB0129/DCB0160), MHRA registration where applicable, EScAL assurance framework. Single reusable gateway rather than per-commissioner reassurance.</p>
+    <p><strong>Commissioner enablement:</strong> Ready-made business cases, pathway templates, integration support, dedicated onboarding contacts. Zero friction for a commissioner who wants to offer home testing to their population.</p>
+    <div class="asymmetry-callout">Suppliers face a gateway. Commissioners face an open door.</div>
   <div class="holding-q">
     <div class="holding-q-h">Open Q for SLT &middot; pathology lab dual position</div>
-    <strong>Where do pathology contracts live?</strong> Inside the HomeTest framework as suppliers, or outside it as clinical infrastructure HomeTest plugs into? Affects procurement vehicle, tariff treatment, exclusivity terms. <em>Aisha's persona page treats pathology as both a supplier and a clinical infrastructure partner; the contract architecture has not yet picked a side. Owner: SLT.</em>
-  </div>
-
-  <div class="holding-q">
-    <div class="holding-q-h">Open Q for SLT &middot; pharmacy-led prescribing</div>
-    <strong>Where does pharmacy-led prescribing fit in the framework?</strong> Different governance regime (Community Pharmacy Contractual Framework), different tariff implications, different IG flows between GP and pharmacy systems. Holding position: sub-area of Aisha's clinical governance pending input. <em>Owner: SLT. Real positioning to be agreed once the GP-init journeys (e.g. Layla's iron deficiency anaemia) are operationally specified.</em>
+    <strong>Pathology labs sit in two places at once.</strong> They are clinical infrastructure under Aisha's safety governance (sample analysis, result generation, turnaround SLAs) AND they are suppliers in Joe's contract framework. The model has not yet resolved which territory holds the contract. <em>Open Q: do pathology contracts run through the HomeTest framework as suppliers, or sit outside it as clinical infrastructure that HomeTest plugs into? The answer affects procurement vehicle, tariff treatment, and the assurance bar applied at this stage.</em>
   </div>
 
   </div>
@@ -480,7 +468,7 @@
   <!-- SUPPLIER SIDE -->
   <div class="split-block">
     <div class="split-block-header supplier">
-      &#9650; Supplier Side <span class="desc">Held to terms</span>
+      &#9650; Supplier Side <span class="desc">Filtered and held to account</span>
     </div>
     <div class="split-block-body">
 
@@ -488,19 +476,15 @@
         <div class="status-heading heading-progress">
           <span class="status-dot dot-progress"></span>
           In Progress
-          <span class="status-count">9 items</span>
+          <span class="status-count">5 items</span>
         </div>
         <ul class="status-list progress">
-          <li>Procurement regime not settled in law. NHS Legal (26 May 2026) confirms a case can be made for either PA23 or PSR. Working dual-route recommendation in draft Recommendation paper: Plan A PA23 Option B framework or Dynamic Market, Plan B DPC Framework leverage, Plan C commissioner-led direct. Six-month SBS PSR bridge as interim for HIV only. Hill Dickinson external legal workshop w/c 1 June 2026 scoping Plan A. SLT alignment at 22 June Leeds playback</li>
-          <li>All-inclusive supplier model is the working default, but it&apos;s not locked. Internal challenge on whether it holds when suppliers only cover a subset of test cases. Framework needs to support both single-supplier end-to-end delivery and commissioner-assembled multi-supplier chains. Direction only at this stage</li>
-          <li>SBS exploration in early stages. One initial meeting held; it was promising but no decision made. SBS Lot 1 is the vehicle for the current ACE Framework call-off in Alpha (SBS10255), but no existing SBS framework covers HomeTest end-to-end. Any SBS route would need a new or extended framework. Whether SBS becomes a partner is still open</li>
-          <li>Commercial framework design in progress. GPIT three-layer construct under consideration as candidate contracting model: catalogue agreement, framework agreement, call-off agreement</li>
-          <li>Who administers the framework: NHSE directly vs NHS Supply Chain vs CCS. NHS Supply Chain going through major organisational change and infrastructure upgrade, carrying delivery risk. Options being gathered on all three routes. Prior NHSE position was that it should not run its own frameworks, being re-tested</li>
-          <li>Sourcing strategy timeline: draft by mid-June 2026, final by end June. Gating document for procurement route and framework administration decisions. Much content reusable from recommendation report</li>
-          <li>Pricing model direction: three-tier structure (mobilisation fee, activity on cost per valid result, volume floor) under a national maximum, with commissioners negotiating below ceiling locally. Flat per-kit pricing rejected through RFI and supplier forums; subscription rejected at strategic level. PSA Active Surveillance is a separate model (per-patient-per-year Monitoring Episode). Component-level pricing understanding needed before setting maximum; next step is to map existing service elements and test whether components can be purchased individually or only bundled. Final activity-unit position is A9 in the recommendation paper.</li>
-          <li>Framework must accommodate both end-to-end single-supplier and disaggregated multi-supplier supply chains. HIV is the end-to-end reference; other conditions may need commissioners to access different parts of the chain from different suppliers</li>
-          <li>15 commercial criteria used to score the Procurement Options Matrix. Covers pricing model, procurement route, framework administration, supplier switching, commissioner funding, evidence requirements, deliverability against April 2027 go-live. Each candidate option scored as tick / partial / cross against each criterion</li>
-          <li>Procurement Options Matrix refreshed 8 May with Digital Primary Care Framework added as fourth column. Scoring against 15 criteria: O1 PSR or PA23 Framework (10 / 3 / 2), O2 PA23 Dynamic Market (13 / 1 / 1), O3 Notify-style central (7 / 6 / 2), O4 Digital Primary Care Framework (7 / 5 / 3). Recommendation TBC; matrix held as working version pending feedback on framework assumptions</li>
+          <li>DPIA: parts 1-4 reviewed with amendments. Cross-functional workshop completed. Actions assigned: update data flow diagram with beta cohort selection process, condense DPIA narrative and move data field details to addendum, review technical controls and security wording, clarify audit logging. Direction-required question for Private Beta back open pending Privacy, Trust and Transparency (PTT) confirmation. Caldicott Guardian review assumed not needed but unconfirmed. Target sign-off: end June 2026.</li>
+          <li><strong>Public beta DPIA scope decision (agreed in principle):</strong> include Pathway 2 (acute-initiated, e.g. PSA-AS) and Pathway 3 (GP-initiated, e.g. HbA1c) in the public beta DPIA documentation, with the right to descope Pathway 3 first and Pathway 2 second if complexity threatens launch. Decision logic: data flows for Pathway 2 are not materially different from Pathway 1; the wider precedent is to ask for the full scope upfront rather than return for incremental directions later.</li>
+          <li>DSA work with LAs and suppliers ongoing. Template DSA being developed. Initial LA IG engagement met pushback, redirecting to service channel. Future IG requests to be routed through service leads, not IG teams directly</li>
+          <li>Clinical safety: hazard log (8 hazards across 4 groupings) and System Level Security Policy (SLSP) in progress. GDS Alpha Assessment complete. SH:24 submitted HomeTest-specific Clinical Safety Case</li>
+          <li>Supplier eligibility criteria being shaped. Commercial, clinical and IG entry criteria need to be defined and published so suppliers can self-assess before engaging the framework</li>
+          <li>Supplier Onboarding Framework: two straw-man documents created as a starting point. Cover the intended onboarding journey at a high level: pre-qualification, evidence pack submission, IG and clinical safety gateway, commercial terms, technical integration, and go-live readiness. Early-stage scaffolding only, not final artefacts, not yet in operational use</li>
         </ul>
       </div>
 
@@ -508,13 +492,15 @@
         <div class="status-heading heading-open">
           <span class="status-dot dot-open"></span>
           Open Decisions
-          <span class="status-count">4 items</span>
+          <span class="status-count">6 items</span>
         </div>
         <ul class="status-list open">
-          <li>Delivery model assessment: should suppliers deliver directly to patients or through NHS infrastructure? This determines the commercial model architecture</li>
-          <li>Whether the framework is purpose-built or hosted on an existing vehicle. SBS being explored as one possible host (one early meeting, no commitment either way); GPIT remains under consideration as the contracting model</li>
-          <li>Exit terms and offboarding contractual mechanics</li>
-          <li>How the framework accommodates future conditions beyond HIV without requiring a new procurement each time</li>
+          <li>Minimum supplier standards not yet codified. Direction agreed that these should include accreditation requirements, not just self-declaration. Quality assurance framework needs to define what 'good' looks like before suppliers can be measured against it</li>
+          <li>Clinical accountability model: where does accountability sit at each touch point in the patient journey?</li>
+          <li>Offboarding trigger criteria and process: what happens when a supplier fails to meet standards?</li>
+          <li>Information Asset Owner (IAO) appointment: CRITICAL BLOCKER. PTT requires the IAO to be a permanent NHSE employee. Programme heavily contractor-staffed. SRO on maternity leave with deputy in place. Information Asset Administrator (IAA) governance also unresolved. No timeline for resolution. DPIA cannot be approved without IAO sign-off</li>
+          <li>EScAL assurance framework: surfaced in April. Suppliers must go through EScAL when coming on board. Alpha suppliers (Preventx, SH:24) may need to complete retroactively. No owner assigned</li>
+          <li>IG resourcing: broader governance gaps beyond IAO. PTT capacity constrained across NHS</li>
         </ul>
       </div>
 
@@ -524,33 +510,19 @@
   <!-- COMMISSIONER SIDE -->
   <div class="split-block">
     <div class="split-block-header customer">
-      &#9660; Commissioner Side <span class="desc">Frictionless access</span>
+      &#9660; Commissioner Side <span class="desc">Enabled and supported</span>
     </div>
     <div class="split-block-body">
-
-      <div class="status-section progress-section">
-        <div class="status-heading heading-progress">
-          <span class="status-dot dot-progress"></span>
-          In Progress
-          <span class="status-count">2 items</span>
-        </div>
-        <ul class="status-list progress">
-          <li>Health economist on board. Initial scope: mapping existing funding flows, costing current service components, identifying gaps and blockers. Market research on existing home testing solutions</li>
-          <li>NHS Online confirmed as most likely first customer. Establishes one-to-many payment shape: NHS Online as commissioner, platform in middle, multiple suppliers. Invoicing mechanics still open (does NHS Online pay platform or suppliers directly?)</li>
-        </ul>
-      </div>
 
       <div class="status-section open-section">
         <div class="status-heading heading-open">
           <span class="status-dot dot-open"></span>
           Open Decisions
-          <span class="status-count">4 items</span>
+          <span class="status-count">2 items</span>
         </div>
         <ul class="status-list open">
-          <li>How commissioners access suppliers practically. Call-off mechanism design not started</li>
-          <li>Financial viability for commissioners: health economist now on board but modelling not yet begun. Addressable market sizing (total volume by 2030, &pound; value) not yet assigned</li>
-          <li>Funding routes: transitional funding argument vs tariff route vs local commissioning budgets. Tariff blocker remains at programme level. Finance workstream MVP position: payment flows retained supplier-to-commissioner for first iteration. Centralised models deferred to roadmap</li>
-          <li>Whether commissioners need to understand the PSR/PA23 distinction or whether the platform abstracts it. Design principle says abstract it, but mechanism not designed</li>
+          <li>What commissioner readiness support looks like in practice. Three commissioner types confirmed (paying customers, pathway transformers, remote managers): each needs a different support package</li>
+          <li>How to make onboarding frictionless for commissioners. The Operational swim lanes capture the role-level journey; the granular UX-level commissioner experience (click paths, friction points, decision moments) has not been mapped</li>
         </ul>
       </div>
 
@@ -561,16 +533,16 @@
   <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.08);font-size:12px;padding-top:14px;margin-bottom:24px;"><a href="HomeTest Operating Model - Status.html" style="color:#005EB8;font-weight:700;text-decoration:none;letter-spacing:0.3px;">See all open items across the model &rarr;</a></div>
 
   <div class="prev-next">
-    <a href="NHS%20TOM%20-%20ASSURE%20v4.html" class="nav-link prev">
+    <a href="NHS%20TOM%20-%20SHAPE%20v4.html" class="nav-link prev">
       <span class="nav-label">&larr; Previous in cycle</span>
-      <span class="nav-stage">2. ASSURE</span>
+      <span class="nav-stage">1. SHAPE</span>
     </a>
     <a href="HomeTest Operating Model - Lifecycle.html" class="home-btn">
       &#8962; Full diagram
     </a>
-    <a href="NHS%20TOM%20-%20FULFIL%20v4.html" class="nav-link next">
+    <a href="NHS%20TOM%20-%20CONTRACT%20v4.html" class="nav-link next">
       <span class="nav-label">Next in cycle &rarr;</span>
-      <span class="nav-stage">4. FULFIL</span>
+      <span class="nav-stage">3. CONTRACT</span>
     </a>
   </div>
 
