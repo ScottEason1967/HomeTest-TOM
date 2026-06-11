@@ -589,7 +589,7 @@
       <a href="HomeTest Operating Model - Persona Mark.html" class="actor">
         <div class="actor-portrait"><img src="Assets/Personas/mark.png" alt="Mark"></div>
         <div class="actor-name">Mark</div><div class="actor-role">Patient &middot; clinician-initiated</div>
-        <div class="actor-bio">PSA-AS for newly-diagnosed prostate cancer on Active Surveillance, pre-treatment. Consultant requests, kit arrives, result reviewed before he hears.</div>
+        <div class="actor-bio">PSA-AS for post-treatment surveillance after radiotherapy. Consultant requests, kit arrives, result reviewed before he hears.</div>
       </a>
       <a href="HomeTest Operating Model - Persona Layla.html" class="actor">
         <div class="actor-portrait"><img src="Assets/Personas/layla.png" alt="Layla"></div>
@@ -603,73 +603,4 @@
       </a>
     </div>
 
-    <div class="cast-row-label">The roles: who run the model around the patients</div>
-    <div class="cast-row cast-roles">
-      <div class="actor actor-cluster">
-        <div class="actor-portrait actor-portrait-cluster">
-          <a href="HomeTest Operating Model - Persona Sarah.html" title="Sarah — LA sexual health commissioner, HomeTest HIV"><img src="Assets/Personas/sarah.png" alt="Sarah"></a>
-          <a href="HomeTest Operating Model - Persona Catherine.html" title="Catherine — Acute Trust commissioner, PSA-AS established pre-treatment cohort"><img src="Assets/Personas/catherine.png" alt="Catherine"></a>
-          <a href="HomeTest Operating Model - Persona Ruth.html" title="Ruth — PSA-AS monitoring-gap commissioner (TBC)"><img src="Assets/Personas/ruth.png" alt="Ruth"></a>
-          <a href="HomeTest Operating Model - Persona Anita.html" title="Anita — ICB / GP commissioner, HomeTest iron deficiency anaemia"><img src="Assets/Personas/anita.png" alt="Anita"></a>
-        </div>
-        <div class="actor-name">Commissioner</div>
-        <div class="actor-role">Sarah &middot; Catherine &middot; Ruth &middot; Anita</div>
-        <div class="actor-bio">One role, four institutions. LA for HIV (Sarah). Acute Trust for PSA-AS established pre-treatment cohort (Catherine). PSA-AS monitoring-gap held open (Ruth, TBC). ICB / GP for iron deficiency anaemia (Anita).</div>
-      </div>
-      <a href="HomeTest Operating Model - Persona Joe.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/joe.png" alt="Joe"></div>
-        <div class="actor-name">Joe</div><div class="actor-role">Supplier</div>
-        <div class="actor-bio">Sends the kit, runs the lab, returns the result.</div>
-      </a>
-      <a href="HomeTest Operating Model - Persona Aisha.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/aisha.png" alt="Aisha"></div>
-        <div class="actor-name">Aisha</div><div class="actor-role">Clinical / CSG</div>
-        <div class="actor-bio">Reviews results, signs off care, holds clinical safety.</div>
-      </a>
-      <div class="actor actor-cluster">
-        <div class="actor-portrait actor-portrait-cluster">
-          <a href="HomeTest Operating Model - Persona Adam.html" title="Adam — Consultant urologist, PSA-AS (clinician-initiated)"><img src="Assets/Personas/adam.png" alt="Adam"></a>
-          <a href="HomeTest Operating Model - Persona Hannah.html" title="Hannah — GP / primary-care clinician, iron deficiency anaemia (GP-initiated)"><img src="Assets/Personas/hannah.png" alt="Hannah"></a>
-        </div>
-        <div class="actor-name">Clinician</div>
-        <div class="actor-role">Adam &middot; Hannah</div>
-        <div class="actor-bio">One role, two configurations. Adam, consultant urologist, clinician-initiated PSA-AS. Hannah, GP, GP-initiated iron deficiency anaemia. Same clinician role; different specialty, different care setting.</div>
-      </div>
-      <a href="HomeTest Operating Model - Persona Priya.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/priya.png" alt="Priya"></div>
-        <div class="actor-name">Priya</div><div class="actor-role">NHSE Platform</div>
-        <div class="actor-bio">Builds and runs the platform.</div>
-      </a>
-      <a href="HomeTest Operating Model - Persona David.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/david.png" alt="David"></div>
-        <div class="actor-name">David</div><div class="actor-role">NHS Commercial</div>
-        <div class="actor-bio">Holds the framework and contract terms together.</div>
-      </a>
-      <a href="HomeTest Operating Model - Persona Ngozi.html" class="actor">
-        <div class="actor-portrait"><img src="Assets/Personas/ngozi.png" alt="Ngozi"></div>
-        <div class="actor-name">Ngozi</div><div class="actor-role">Information Governance</div>
-        <div class="actor-bio">Holds the data side: DPIA, DSA, controller designation, lawful basis.</div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<script>
-// Keep home-page status counts in sync with the Status page.
-(async function syncStatusCounts(){
-  try {
-    const r = await fetch('HomeTest Operating Model - Status.html');
-    if (!r.ok) return;
-    const html = await r.text();
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const counts = doc.querySelectorAll('.sum-count');
-    if (counts.length < 2) return;
-    const u = document.getElementById('home-count-unresolved');
-    const p = document.getElementById('home-count-in-progress');
-    if (u) u.textContent = counts[0].textContent.trim();
-    if (p) p.textContent = counts[1].textContent.trim();
-  } catch (e) { /* keep static fallback */ }
-})();
-</script>
-</body>
-</html>
+    <div class="cast-row-label">The roles: who run th
