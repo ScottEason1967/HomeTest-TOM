@@ -98,6 +98,19 @@
     .stage-bar{display:none;}
     .hero{flex-direction:column;text-align:center;}
   }
+  .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 6px;max-width:760px;}
+  .benefit{background:linear-gradient(160deg,#E7F4EC,#fff);border:1.5px solid var(--nhs-green);border-radius:12px;padding:16px 18px;}
+  .benefit .b-num{font-size:34px;font-weight:900;color:var(--nhs-green);letter-spacing:-1.5px;line-height:1;}
+  .benefit .b-label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--nhs-green);margin-top:8px;}
+  .benefit .b-desc{font-size:12px;color:var(--text-sec);line-height:1.5;margin-top:5px;}
+  .benefit.choice{border-color:var(--nhs-blue);background:linear-gradient(160deg,#EAF2FB,#fff);}
+  .benefit.choice .b-num,.benefit.choice .b-label{color:var(--nhs-blue);}
+  .benefit-banner{display:flex;align-items:center;gap:30px;background:linear-gradient(135deg,var(--nhs-green),#0a8f5b);border-radius:14px;padding:26px 32px;margin:48px 0 0;color:#fff;flex-wrap:wrap;box-shadow:0 12px 30px rgba(0,103,71,0.25);}
+  .benefit-banner .bb-num{font-size:52px;font-weight:900;letter-spacing:-2.5px;line-height:1;white-space:nowrap;}
+  .benefit-banner .bb-text{flex:1;min-width:260px;}
+  .benefit-banner .bb-title{font-size:17px;font-weight:900;margin-bottom:5px;letter-spacing:-0.2px;}
+  .benefit-banner .bb-desc{font-size:13px;color:rgba(255,255,255,0.92);line-height:1.55;}
+  .benefit-banner .bb-desc strong{color:#fff;}
 </style>
 </head>
 <body>
@@ -159,9 +172,11 @@
       <div class="stage-eyebrow">Her GP arranges it</div>
       <h2 class="stage-title">Nothing for Layla to order, chase or remember.</h2>
       <p class="stage-body">Layla doesn&apos;t order her own test, and no hospital consultant does either. <strong>Her GP arranges it from the practice system</strong> as part of the standard anaemia review cycle &mdash; the same cycle the practice already runs, with the kit replacing the clinic slot. No catalogue, no app demanded of her, no new behaviour to learn. The review cycle stays Hannah&apos;s; only the venue changes.</p>
+      <div class="benefits">
+        <div class="benefit choice"><div class="b-num">Her terms</div><div class="b-label">Patient route choice preserved</div><div class="b-desc">The clinic stays available; the kit just removes the half-day price tag the clinic was charging her.</div></div>
+      </div>
       <div class="chips">
         <span class="chip">GP-initiated &middot; practice system &middot; routine review cycle</span>
-        <span class="chip">Patient route choice preserved</span>
       </div>
     </div>
   </div>
@@ -176,9 +191,11 @@
         <div class="pull-quote-text">&ldquo;I can&apos;t take half a day off for bloods. The kit comes to me, I do it on a Saturday, the GP sees the result.&rdquo;</div>
         <div class="pull-quote-attribution">Layla, 42 &mdash; on what access actually means</div>
       </div>
+      <div class="benefits">
+        <div class="benefit"><div class="b-num">&minus;&frac12; day</div><div class="b-label">Lost income, every cycle</div><div class="b-desc">A Saturday morning at the kitchen table instead of a missed shift and a rearranged school run.</div></div>
+      </div>
       <div class="chips">
         <span class="chip kit">Kit logistics: kit out &middot; post back &middot; result to the GP record</span>
-        <span class="chip saved">Half-day of lost income avoided, every cycle</span>
       </div>
     </div>
   </div>
@@ -196,6 +213,14 @@
       <h2 class="stage-title">Six months later, it simply happens again.</h2>
       <p class="stage-body">The next review falls due; the practice system raises it; the kit arrives; the Saturday morning does its work. Layla stays in work, her kids&apos; routine stays whole, and her anaemia stays measured &mdash; <strong>monitored without ever again choosing between her health and a shift.</strong> If her ferritin drifts, Hannah sees it in the record and the contact happens because it should, not because a slot finally aligned.</p>
       <p class="stage-body">Status, honestly: this configuration is <strong>Use Case 3 on the Year-1 list, in design phase</strong>. Pattern picks are working assumptions and several entries genuinely say TBC. The journey above is what the design is being built to deliver. <span style="color:var(--amber-deep);font-weight:800;">&#9873;</span></p>
+    </div>
+  </div>
+
+  <div class="benefit-banner">
+    <div class="bb-num">&minus;&frac12; day</div>
+    <div class="bb-text">
+      <div class="bb-title">Of lost income, per test, every six months &mdash; and the volume case behind it.</div>
+      <div class="bb-desc">Primary-care monitoring is the <strong>largest pool of long-term-condition testing in the NHS</strong>. When Layla&apos;s journey works, the platform&apos;s headline numbers work &mdash; and the equity claim has evidence.</div>
     </div>
   </div>
 

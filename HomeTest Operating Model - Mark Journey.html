@@ -98,6 +98,19 @@
     .stage-bar{display:none;}
     .hero{flex-direction:column;text-align:center;}
   }
+  .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 6px;max-width:760px;}
+  .benefit{background:linear-gradient(160deg,#E7F4EC,#fff);border:1.5px solid var(--nhs-green);border-radius:12px;padding:16px 18px;}
+  .benefit .b-num{font-size:34px;font-weight:900;color:var(--nhs-green);letter-spacing:-1.5px;line-height:1;}
+  .benefit .b-label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--nhs-green);margin-top:8px;}
+  .benefit .b-desc{font-size:12px;color:var(--text-sec);line-height:1.5;margin-top:5px;}
+  .benefit.choice{border-color:var(--nhs-blue);background:linear-gradient(160deg,#EAF2FB,#fff);}
+  .benefit.choice .b-num,.benefit.choice .b-label{color:var(--nhs-blue);}
+  .benefit-banner{display:flex;align-items:center;gap:30px;background:linear-gradient(135deg,var(--nhs-green),#0a8f5b);border-radius:14px;padding:26px 32px;margin:48px 0 0;color:#fff;flex-wrap:wrap;box-shadow:0 12px 30px rgba(0,103,71,0.25);}
+  .benefit-banner .bb-num{font-size:52px;font-weight:900;letter-spacing:-2.5px;line-height:1;white-space:nowrap;}
+  .benefit-banner .bb-text{flex:1;min-width:260px;}
+  .benefit-banner .bb-title{font-size:17px;font-weight:900;margin-bottom:5px;letter-spacing:-0.2px;}
+  .benefit-banner .bb-desc{font-size:13px;color:rgba(255,255,255,0.92);line-height:1.55;}
+  .benefit-banner .bb-desc strong{color:#fff;}
 </style>
 </head>
 <body>
@@ -156,9 +169,11 @@
       <h2 class="stage-title">Adam sets the intent. Mark confirms it.</h2>
       <p class="stage-body">Mark never sees a catalogue, never picks a supplier, never holds a contract. His consultant urologist identifies him from the active surveillance list and sets the intent to order. <strong>Mark confirms the order, the address and the timing</strong> &mdash; and that confirmation step repeats at every cycle, so the test never arrives unrequested or unexplained.</p>
       <p class="stage-body">The choice stays his. At the point of confirmation, Mark can still choose the in-person route &mdash; the home kit is an offer, not a conscription. He takes the kit.</p>
+      <div class="benefits">
+        <div class="benefit choice"><div class="b-num">His call</div><div class="b-label">Patient route choice preserved</div><div class="b-desc">At every cycle&apos;s confirmation the in-person route stays open. The home kit is an offer, never a conscription.</div></div>
+      </div>
       <div class="chips">
         <span class="chip">Clinician-initiated &middot; patient-confirmed</span>
-        <span class="chip">Patient route choice preserved</span>
       </div>
     </div>
   </div>
@@ -173,9 +188,11 @@
         <div class="pull-quote-text">&ldquo;The test comes to me. The consultant sees the result. They only call me if something needs to change.&rdquo;</div>
         <div class="pull-quote-attribution">Mark, 65 &mdash; on what surveillance feels like when it works</div>
       </div>
+      <div class="benefits">
+        <div class="benefit"><div class="b-num">&minus;1</div><div class="b-label">Hospital visit, every cycle</div><div class="b-desc">Car park, waiting room, needle, journey home &mdash; replaced by the kitchen table and Royal Mail. For life.</div></div>
+      </div>
       <div class="chips">
         <span class="chip kit">Kit logistics: capillary kit out &middot; Royal Mail back &middot; specialist lab &middot; result to the requesting clinician</span>
-        <span class="chip saved">Hospital phlebotomy visit avoided, every cycle</span>
       </div>
     </div>
   </div>
@@ -197,6 +214,14 @@
         <span class="chip">Sits underneath existing recall trackers</span>
         <span class="chip">Escalation only on trend change</span>
       </div>
+    </div>
+  </div>
+
+  <div class="benefit-banner">
+    <div class="bb-num">&minus;1</div>
+    <div class="bb-text">
+      <div class="bb-title">Hospital visit per test, for every man on the list, for as long as the list exists.</div>
+      <div class="bb-desc">Routine draws move to kit-and-post; clinic time concentrates on the patients whose trend lines moved. <strong>Lifelong cohorts grow. Clinic capacity doesn&apos;t have to.</strong></div>
     </div>
   </div>
 

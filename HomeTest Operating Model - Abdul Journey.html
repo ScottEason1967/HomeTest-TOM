@@ -102,6 +102,19 @@
   .stage-image img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 8px 22px rgba(0,32,64,0.14);}
   .interlude-image{max-width:440px;margin:0 0 16px;}
   .interlude-image img{width:100%;height:auto;display:block;border-radius:12px;border:3px solid rgba(255,255,255,0.25);}
+  .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 6px;max-width:760px;}
+  .benefit{background:linear-gradient(160deg,#E7F4EC,#fff);border:1.5px solid var(--nhs-green);border-radius:12px;padding:16px 18px;}
+  .benefit .b-num{font-size:34px;font-weight:900;color:var(--nhs-green);letter-spacing:-1.5px;line-height:1;}
+  .benefit .b-label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--nhs-green);margin-top:8px;}
+  .benefit .b-desc{font-size:12px;color:var(--text-sec);line-height:1.5;margin-top:5px;}
+  .benefit.choice{border-color:var(--nhs-blue);background:linear-gradient(160deg,#EAF2FB,#fff);}
+  .benefit.choice .b-num,.benefit.choice .b-label{color:var(--nhs-blue);}
+  .benefit-banner{display:flex;align-items:center;gap:30px;background:linear-gradient(135deg,var(--nhs-green),#0a8f5b);border-radius:14px;padding:26px 32px;margin:48px 0 0;color:#fff;flex-wrap:wrap;box-shadow:0 12px 30px rgba(0,103,71,0.25);}
+  .benefit-banner .bb-num{font-size:52px;font-weight:900;letter-spacing:-2.5px;line-height:1;white-space:nowrap;}
+  .benefit-banner .bb-text{flex:1;min-width:260px;}
+  .benefit-banner .bb-title{font-size:17px;font-weight:900;margin-bottom:5px;letter-spacing:-0.2px;}
+  .benefit-banner .bb-desc{font-size:13px;color:rgba(255,255,255,0.92);line-height:1.55;}
+  .benefit-banner .bb-desc strong{color:#fff;}
 </style>
 </head>
 <body>
@@ -171,10 +184,12 @@
       <div class="stage-image"><img src="Assets/Abdul Story/abdul-stage2.png" alt="Abdul at the neighbourhood health centre having his blood pressure validated" onerror="this.parentElement.style.display='none'"></div>
       <p class="stage-body">A short digital questionnaire, then a choice: the rest of the checks can happen <strong>at home, with his GP, or at his newly opened Neighbourhood Health Centre</strong>. Abdul picks the new centre and books a slot that doesn&apos;t cost him a day&apos;s work. There, a nurse validates his BP on a proper cuff and checks for atrial fibrillation. Abdul dislikes needles &mdash; so the nurse shows him a new sampling device that sticks onto his arm and draws a small amount of blood, with less pain.</p>
       <p class="stage-body">The nurse lends him an ambulatory blood-pressure smart ring to wear for 24 hours. It confirms Stage 1 hypertension; he posts the ring back. Two days later his blood results land in the NHS App &mdash; <strong>high cholesterol and pre-diabetes</strong> &mdash; and his health centre calls to talk them through. Everything is recorded back to the GP record.</p>
+      <div class="benefits">
+        <div class="benefit"><div class="b-num">&minus;1</div><div class="b-label">Appointment</div><div class="b-desc">Saved at this stage alone &mdash; the screening conversation moved out of the clinic.</div></div>
+        <div class="benefit choice"><div class="b-num">4 doors</div><div class="b-label">Patient route choice preserved</div><div class="b-desc">Home, GP, high-street pharmacy or the new centre. The patient picks; nobody is conscripted into digital.</div></div>
+      </div>
       <div class="chips">
-        <span class="chip">Patient route choice preserved</span>
         <span class="chip kit">Kit logistics: device out, sample back, result to the record</span>
-        <span class="chip saved">&minus;1 appointment</span>
       </div>
       <div class="callout amber">
         <div class="callout-label">The Sean thread</div>
@@ -198,10 +213,12 @@
       <div class="stage-image"><img src="Assets/Abdul Story/abdul-stage3.png" alt="Abdul at his kitchen table with his delivered prescription and readings" onerror="this.parentElement.style.display='none'"></div>
       <p class="stage-body">A clinician messages Abdul through the NHS App and asks him to book an appointment. She prescribes a CVKM health programme he can access in the App, alongside a GLP-1, statins and ACE inhibitors, and refers him to the pre-diabetes prevention programme. She checks whether his smartwatch is accurate enough to monitor his BP &mdash; and it is.</p>
       <p class="stage-body">From there the cycle runs without waiting rooms. His phone uploads his BP readings automatically; the pharmacist at his health centre reviews them and adjusts his medication remotely until his BP reaches control. His electronic prescription updates and the new prescription arrives through the post. With medication reminders and logging tools doing the unglamorous work, his BP and cholesterol come under control.</p>
+      <div class="benefits">
+        <div class="benefit"><div class="b-num">&minus;1</div><div class="b-label">Appointment</div><div class="b-desc">The prescribing conversation happens once; the follow-ups don&apos;t need a room.</div></div>
+        <div class="benefit"><div class="b-num">&minus;1&ndash;3</div><div class="b-label">Appointments across the cycle</div><div class="b-desc">Remote titration replaces the prescription shuttle until his BP reaches control.</div></div>
+      </div>
       <div class="chips">
         <span class="chip">Remote medication titration</span>
-        <span class="chip saved">&minus;1 appointment</span>
-        <span class="chip saved">&minus;1&ndash;3 appointments across the cycle</span>
       </div>
     </div>
   </div>
@@ -214,11 +231,21 @@
       <div class="stage-image"><img src="Assets/Abdul Story/abdul-stage4.png" alt="Abdul completing his home HbA1c self-sample kit" onerror="this.parentElement.style.display='none'"></div>
       <p class="stage-body">Eight weeks into the digital diabetes reversal programme, the diabetes team message Abdul and ask him to check progress with an HbA1c self-sample. <strong>The kit comes to the house; he takes the test at home and posts it to the lab.</strong> The result confirms his HbA1c has already dropped, and he&apos;s given a CGM device to watch his blood sugars through the day. This is the HomeTest shape in miniature: kit out, sample back, result to the record, action owned by the right clinician &mdash; no clinic visit, no day off work.</p>
       <p class="stage-body">He carries on with a single self-service CVKM app for weight, diet and activity &mdash; rewards, local support, no switching between apps. His diabetes risk is under control. Community nurses receive alerts only when his readings drift outside his individually set levels, and reach him proactively by video call &mdash; replacing periodic reviews with attention exactly when it&apos;s needed. Abdul can pull the same cord himself and request a follow-up in the App.</p>
+      <div class="benefits">
+        <div class="benefit"><div class="b-num">&minus;1</div><div class="b-label">Appointment</div><div class="b-desc">The progress check posts itself to the lab; the team only reaches for him when the result says so.</div></div>
+      </div>
       <div class="chips">
         <span class="chip kit">HbA1c self-sample &middot; home to lab &middot; the Year 1 HomeTest pattern</span>
         <span class="chip">Alerts replace periodic reviews</span>
-        <span class="chip saved">&minus;1 appointment</span>
       </div>
+    </div>
+  </div>
+
+  <div class="benefit-banner">
+    <div class="bb-num">4&ndash;6</div>
+    <div class="bb-text">
+      <div class="bb-title">Appointments saved. Per patient. Per year.</div>
+      <div class="bb-desc">With greater emphasis on self-service &mdash; and a fully digital journey saves up to <strong>6&ndash;8</strong>. Multiply that across a population and this single journey is the frontline-pressure case in miniature.</div>
     </div>
   </div>
 
