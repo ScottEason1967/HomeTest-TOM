@@ -115,6 +115,13 @@
   .benefit-banner .bb-title{font-size:17px;font-weight:900;margin-bottom:5px;letter-spacing:-0.2px;}
   .benefit-banner .bb-desc{font-size:13px;color:rgba(255,255,255,0.92);line-height:1.55;}
   .benefit-banner .bb-desc strong{color:#fff;}
+
+  @media print {
+    .topnav, .ecosystem-nav, nav { display:none !important; }
+    .hm-witness .hmw-card { display:block !important; position:static; transform:none; width:auto; max-width:none; margin:8px 0; box-shadow:none; border:1px solid #ccc; }
+    .hmw-chip { display:none; }
+    .hmw-card, .pull-quote, .benefit, .callout { page-break-inside: avoid; }
+  }
 </style>
 </head>
 <body>
@@ -274,7 +281,7 @@
   </div>
 
   <div class="foot">
-    <span>HomeTest Operating Model &middot; Hearts and Minds &middot; Abdul&apos;s journey &middot; source: national CVKM patient journey</span>
+    <span>HomeTest Operating Model &middot; Hearts and Minds &middot; Abdul&apos;s journey &middot; source: national CVKM patient journey &middot; <a href="Assets/evidence-register.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">evidence register</a></span>
     <a href="HomeTest Operating Model - Hearts and Minds.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">&larr; Back to Hearts and Minds</a>
   </div>
 
