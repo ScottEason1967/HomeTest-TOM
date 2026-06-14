@@ -112,6 +112,14 @@
   .benefit-banner .bb-desc{font-size:13px;color:rgba(255,255,255,0.92);line-height:1.55;}
   .benefit-banner .bb-desc strong{color:#fff;}
 
+  .scene{width:100%;max-width:760px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;margin:2px 0 18px;box-shadow:0 10px 28px rgba(0,32,64,0.16);border:1px solid var(--border-lt);background:linear-gradient(135deg,#F4F8FC,#E0E5EB);position:relative;}
+  .scene img{width:100%;height:100%;object-fit:cover;display:block;}
+  .scene-cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,32,64,0.82));color:#fff;font-size:12px;font-weight:600;letter-spacing:0.2px;line-height:1.45;padding:30px 18px 12px;}
+  .interlude-wrap{margin:48px 0;border-radius:14px;overflow:hidden;box-shadow:0 16px 36px rgba(0,48,135,0.24);}
+  .interlude-wrap .interlude{margin:0;border-radius:0;}
+  .interlude-photo{width:100%;aspect-ratio:21/9;overflow:hidden;background:#dde6ef;position:relative;}
+  .interlude-photo img{width:100%;height:100%;object-fit:cover;object-position:center 36%;display:block;}
+
   @media print {
     .topnav, .ecosystem-nav, nav { display:none !important; }
     .hm-witness .hmw-card { display:block !important; position:static; transform:none; width:auto; max-width:none; margin:8px 0; box-shadow:none; border:1px solid #ccc; }
@@ -162,6 +170,7 @@
   <div class="stage" id="act1">
     <div class="stage-side"><div class="stage-number">1</div><div class="stage-bar"></div></div>
     <div class="stage-main">
+      <div class="scene"><img src="Assets/mark-stage1.png" alt="Mark and his wife with the consultant, talking through the surveillance plan" onerror="this.closest('.scene').style.display='none'"><div class="scene-cap">The diagnosis, and the choice to watch it closely rather than treat it now.</div></div>
       <div class="stage-eyebrow">The diagnosis he lives with</div>
       <h2 class="stage-title">Watching, not fighting. That was the choice. <span class="hm-witness" data-moment="mark-a1"></span></h2>
       <p class="stage-body">Low-grade prostate cancer grows slowly, and for men like Mark the evidence says watch it carefully rather than treat it immediately &mdash; treatment has costs of its own. Active Surveillance means sustained vigilance: regular PSA tests, watching the trend for any rise that would change the plan. <strong>The test is routine. What it stands guard over is not.</strong></p>
@@ -172,6 +181,7 @@
   <div class="stage" id="act2">
     <div class="stage-side"><div class="stage-number">2</div><div class="stage-bar"></div></div>
     <div class="stage-main">
+      <div class="scene"><img src="Assets/mark-stage2.png" alt="Mark at home confirming the order on his tablet" onerror="this.closest('.scene').style.display='none'"><div class="scene-cap">The order comes to Mark to confirm. The choice, the address and the timing stay his.</div></div>
       <div class="stage-eyebrow">His consultant orders</div>
       <h2 class="stage-title">Adam sets the intent. Mark confirms it. <span class="hm-witness" data-moment="mark-a2"></span></h2>
       <p class="stage-body">Mark never sees a catalogue, never picks a supplier, never holds a contract. His consultant urologist identifies him from the active surveillance list and sets the intent to order. <strong>Mark confirms the order, the address and the timing</strong> &mdash; and that confirmation step repeats at every cycle, so the test never arrives unrequested or unexplained.</p>
@@ -188,6 +198,7 @@
   <div class="stage" id="act3">
     <div class="stage-side"><div class="stage-number">3</div><div class="stage-bar"></div></div>
     <div class="stage-main">
+      <div class="scene"><img src="Assets/mark-stage3.png" alt="Mark taking the capillary sample at his kitchen table, his wife in the garden beyond" onerror="this.closest('.scene').style.display='none'"><div class="scene-cap">A capillary draw at the kitchen table. No car park, no waiting room, no needle in a clinic.</div></div>
       <div class="stage-eyebrow">Kit out, sample back</div>
       <h2 class="stage-title">A capillary draw at his kitchen table. <span class="hm-witness" data-moment="mark-a3"></span></h2>
       <p class="stage-body">The kit arrives at the house &mdash; a capillary draw, not a full venous one. Mark takes the sample at home and returns it by Royal Mail to a specialist pathology lab. <strong>The result goes to his consultant first</strong>, reviewed in trend against every previous reading &mdash; not as a number in isolation, but as a line that is either flat or isn&apos;t.</p>
@@ -204,10 +215,13 @@
     </div>
   </div>
 
-  <div class="interlude">
-    <div class="interlude-eyebrow">Between the cycles</div>
-    <div class="interlude-title">The silence is the service.</div>
-    <div class="interlude-body">For a man on lifelong surveillance, the phone that doesn&apos;t ring is the whole point. No news doesn&apos;t mean nobody looked &mdash; it means somebody looked, in trend, against everything that came before, and the line is flat. Mark&apos;s retirement is not scheduled around phlebotomy appointments, and his cancer is watched more closely than it ever was in the waiting-room era. The result he doesn&apos;t hear about is the model working.</div>
+  <div class="interlude-wrap">
+    <div class="interlude-photo"><img src="Assets/mark-interlude.png" alt="Mark and his wife walking together in the park" onerror="this.closest('.interlude-photo').style.display='none'"></div>
+    <div class="interlude">
+      <div class="interlude-eyebrow">Between the cycles</div>
+      <div class="interlude-title">The silence is the service.</div>
+      <div class="interlude-body">For a man on lifelong surveillance, the phone that doesn&apos;t ring is the whole point. No news doesn&apos;t mean nobody looked &mdash; it means somebody looked, in trend, against everything that came before, and the line is flat. Mark&apos;s retirement is not scheduled around phlebotomy appointments, and his cancer is watched more closely than it ever was in the waiting-room era. The result he doesn&apos;t hear about is the model working.</div>
+    </div>
   </div>
 
   <div class="stage" id="act4">
