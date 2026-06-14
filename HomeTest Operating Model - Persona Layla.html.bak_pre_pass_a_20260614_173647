@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Abdul: HomeTest Operating Model</title>
+<title>Layla: HomeTest Operating Model</title>
 <style>
   :root {
     --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
@@ -75,11 +75,11 @@
     <a href="HomeTest Operating Model - Persona Priya.html">Priya</a>
     <a href="HomeTest Operating Model - Persona David.html">David</a>
     <a href="HomeTest Operating Model - Persona Ngozi.html">Ngozi</a>
-    <a href="HomeTest Operating Model - Persona Abdul.html" class="active">Abdul</a>
+    <a href="HomeTest Operating Model - Persona Abdul.html">Abdul</a>
     <a href="HomeTest Operating Model - Persona Adam.html">Adam</a>
     <a href="HomeTest Operating Model - Persona Hannah.html">Hannah</a>
     <a href="HomeTest Operating Model - Persona Mark.html">Mark</a>
-    <a href="HomeTest Operating Model - Persona Layla.html">Layla</a>
+    <a href="HomeTest Operating Model - Persona Layla.html" class="active">Layla</a>
     <a href="HomeTest Operating Model - Persona Sean.html">Sean</a>
     <a href="HomeTest Operating Model - Persona Joe.html">Joe</a>
   </div>
@@ -88,46 +88,44 @@
 <div class="page">
 
   <div class="amber-rule"></div>
-  <div class="h-eyebrow">The cast &middot; meet Abdul</div>
+  <div class="h-eyebrow">The cast &middot; meet Layla</div>
 
   <div class="h-flex">
     <div>
-      <h1 class="h-title">Abdul.</h1>
-      <div class="h-role">Patient &middot; CVKM screening</div>
-      <div class="h-quote">&ldquo;I checked my BP on the NHS App because heart trouble runs in the family. The app told me to book a CVKM Check Up.&rdquo;</div>
-      <div class="h-bio">38, married, two young kids. Both he and his wife work full-time. Family history of heart disease and diabetes. Sat all day, knows his diet isn&apos;t great. Digitally savvy: expects to manage his health through one app. Used the NHS App BP tool to check his cardiovascular risk; the result triggered a CVKM Check Up pathway.</div>
-      <a href="HomeTest Operating Model - Abdul Journey.html" style="display:inline-block;margin-top:14px;background:#FFB91D;color:#003087;font-weight:800;font-size:13px;letter-spacing:0.3px;padding:10px 20px;border-radius:8px;text-decoration:none;box-shadow:0 4px 14px rgba(0,32,64,0.20);">Read Abdul&apos;s journey &rarr;</a>
+      <h1 class="h-title">Layla.</h1>
+      <div class="h-role">Patient &middot; GP-initiated</div>
+      <div class="h-quote">&ldquo;I can't take half a day off for bloods. The kit comes to me, I do it on a Saturday, the GP sees the result.&rdquo;</div>
+      <div class="h-bio">42, single parent of two school-age kids, works two part-time jobs (one shift-based). Iron deficiency anaemia diagnosed three years ago, on ferrous sulphate. Her GP needs FBC and ferritin every six months to monitor her response. A clinic visit means losing income; a kit at home means she stays in work and her anaemia stays monitored. She is the access story the model has to serve.</div>
+      <a href="HomeTest Operating Model - Layla Journey.html" style="display:inline-block;margin-top:14px;background:#FFB91D;color:#003087;font-weight:800;font-size:13px;letter-spacing:0.3px;padding:10px 20px;border-radius:8px;text-decoration:none;box-shadow:0 4px 14px rgba(0,32,64,0.20);">Read Layla&apos;s journey &rarr;</a>
     </div>
     <div class="h-portrait">
-      <img src="Assets/Personas/abdul.png" alt="Abdul">
+      <img src="Assets/Personas/layla.png" alt="Layla">
     </div>
   </div>
 
   
   <div class="where-panel">
-    <span class="label">Why Abdul is here</span>
-    Abdul is the CVKM screening patient &mdash; the patient-initiated archetype. He is the proof point that the platform serves a patient with no diagnosis yet, no pathway open and no prescription waiting. CVKM screening is distinct from HIV testing in commissioning terms (CVKM sits in primary-care / cardiovascular commissioning; HIV LA sits with <a href="HomeTest Operating Model - Persona Sarah.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Sarah</a>&apos;s sexual-health budget). The two are sometimes confused because both are patient-initiated through the NHS App. Abdul anchors the patient-initiated pattern; the HIV-specific patient archetype is not yet named in the model. The casting is deliberate: <strong>Abdul is the vision archetype and HIV is the live configuration.</strong> His journey is the national CVKM future-state &mdash; where patient-initiated testing is heading; HIV is the signed Beta that proves the same pattern commercially today. His full story is told in <a href="HomeTest Operating Model - Abdul Journey.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Abdul&apos;s journey</a>, four acts drawn from the original CVKM patient journey.
+    <span class="label">Why Layla is here</span>
+    Layla is a patient on the iron deficiency anaemia GP-initiated configuration &mdash; primary care anaemia monitoring. She represents the patient-side of the GP-initiated pattern, distinct from clinician-initiated (<a href="HomeTest Operating Model - Persona Mark.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Mark</a>) and patient-initiated (<a href="HomeTest Operating Model - Persona Abdul.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Abdul</a>). Her configuration matters because primary-care monitoring is the largest pool of long-term-condition testing in the NHS; if HomeTest does not work for the anaemia review cycle, the platform&apos;s headline volume case does not land. Layla sits inside <a href="HomeTest Operating Model - Persona Anita.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Anita</a>&apos;s commissioning shape and on <a href="HomeTest Operating Model - Persona Hannah.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Hannah</a>&apos;s review cycle.
   </div>
 
   <h2 class="section-h">Why this role matters</h2>
-  <p class="section-body">Abdul is the patient-initiated screening archetype. He used the NHS App himself to check his BP, the result flagged him as high cardiovascular risk, and that triggered a structured CVKM (cardiovascular, kidney, metabolic) Check Up pathway: BP validation with an AF check, bloods confirming high cholesterol and elevated cardiometabolic risk markers, a 24-hour ABPM smart ring confirming Stage 1 hypertension, treatment with statins / GLP-1 / ACE inhibitors plus referral to the pre-diabetes prevention programme, then long-term remote monitoring through home BP and continuous glucose monitoring. He represents the screening journey: the patient initiates, the home test surfaces the risk, the clinical pathway picks up.</p>
+  <p class="section-body">Layla is the third Year 1 patient archetype. <strong>Abdul</strong> is patient-initiated (he self-screens with the NHS App, CVKM Check Up follows), <strong>Mark</strong> is clinician-initiated (his consultant requests, PSA-AS), <strong>Layla</strong> is GP-initiated (her GP arranges, iron deficiency anaemia monitoring). Together the three cover the SLT-confirmed initiation patterns. They also test whether the model serves access: Layla is the one whose journey to a clinic is the actual barrier. If the model only works for people who can take time off, it isn't doing the equity job. Her full story is told in <a href="HomeTest Operating Model - Layla Journey.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Layla&apos;s journey</a>, four acts from the missed appointment to the cycle that fits her life.</p>
 
   <div class="pair-callout">
-    <strong>What Abdul tells the model.</strong> Patient-initiated screening is the entry point most likely to scale at population level. It has to work without a clinician request, without a pre-existing care relationship, and without losing clinical safety. If the model can serve someone with no diagnosis yet, no pathway open, no prescription waiting: it can serve patient-initiated patterns at scale. CVKM is the first proof; Abdul is the first patient.
+    <strong>The third archetype carries the equity load.</strong> Abdul and Mark both have routes into care that don't depend on physical access barriers. Layla is the one who can't easily take time off, can't easily get to the clinic, and for whom a kit at home is the difference between staying monitored and falling out of the system. The Purpose statement (better access, earlier detection, fairer outcomes) reads true when Layla's journey works. If she can't reach the model, the model isn't doing what it says on the tin.
   </div>
 
-  <h2 class="section-h">What's different about Abdul's journey</h2>
-  <p class="section-body">Abdul's journey starts before any clinician is involved. He's not on a pathway when he opens the NHS App; he's curious about his BP because heart trouble runs in the family. The home test (BP via the camera) is the entry point, not a step inside an existing care plan. The result triggers the pathway: and from that point on, the model follows the same architecture as everyone else's: validation, blood, ABPM, treatment, monitoring. The patient-initiated overlay is what makes Abdul's journey distinctive; the rest of the foundation is shared with Mark and Layla. This is why patient-initiated needs the lightest possible entry friction: the patient hasn't agreed to be a patient yet.</p>
+  <h2 class="section-h">What's different about Layla's journey</h2>
+  <p class="section-body">Layla doesn't order her own test, and her consultant doesn't either. Her GP arranges it from the practice system as part of her anaemia review cycle. The kit arrives at her house, she takes the sample around her shifts, returns it via post, and the result lands directly in her GP record. Her GP only contacts her if something needs action: medication adjustment, lifestyle review, referral. The data flow is GP-system to lab to GP-record, with Layla as the sample provider rather than the orderer or recipient. This is fundamentally different to both Abdul (who initiates and receives) and Mark (whose consultant initiates and reviews): and it stresses a different part of the model: integration with primary care systems, GP-record write-back, GP-led follow-up.</p>
 
-  <h2 class="section-h">Where Abdul appears in the model</h2>
+  <h2 class="section-h">Where Layla appears in the model</h2>
   <ul class="where-list">
-    <li>WHY centre on the homepage</li>
-    <li>The Year 1 patient stories trio (Abdul, Mark, Layla) on the homepage</li>
-    <li>The Lifecycle pentagon centre hub above Purpose (alongside Mark and Layla)</li>
-    <li>The patient row in every <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> swimlane (overlay cells, alongside Mark and Layla)</li>
-    <li>The patient-initiated initiation pattern in the Anatomical comparison table on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
-    <li>The <a href="NHS%20TOM%20-%20FULFIL%20v4.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">FULFIL</a> stage detail page (lead alongside Mark and Layla)</li>
-    <li>The Why page Venn (Patient circle, alongside the other two archetypes)</li>
+    <li>The Year 1 patient stories alongside Abdul and Mark on the homepage</li>
+    <li>The GP-initiated initiation pattern on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
+    <li>The patient lane on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> page (overlay cells, alongside Abdul and Mark)</li>
+    <li>The <a href="NHS%20TOM%20-%20FULFIL%20v4.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">FULFIL</a> stage detail page (GP-init configuration)</li>
+    <li>The EPR / SPR data flow conversation in <a href="HomeTest Operating Model - Persona Aisha.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Aisha</a>'s territory: her journey is the canonical primary care integration scenario</li>
   </ul>
 </div>
 </body>

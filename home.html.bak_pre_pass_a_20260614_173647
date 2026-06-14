@@ -284,7 +284,7 @@
     <div class="hero-grid">
       <div>
         <h1 class="hero-title">An operating model designed around real people.</h1>
-        <p class="hero-sub">Test at home. Get a clear result. Take action with confidence. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, Self-initiated), Mark (PSA-AS, Secondary care initiated) and Layla (iron deficiency anaemia, Primary care initiated). The five initiation patterns are named on the <a href="HomeTest Operating Model - Prioritisation Framework.html" style="color:#fff;font-weight:700;text-decoration:underline;text-decoration-color:var(--amber);text-underline-offset:3px;">HomeTest Prioritisation Framework</a>.</p>
+        <p class="hero-sub">Test at home. Get a clear result. Take action with confidence. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, patient-initiated), Mark (PSA-AS, clinician-initiated) and Layla (iron deficiency anaemia, GP-initiated). Served by the same architecture, the same cast, the same overlays.</p>
         <p class="hero-sub">Every operating model has to answer five questions. <span class="q-why">WHY</span> it exists, at the centre. <span class="q-what">WHAT</span> it is composed of, <span class="q-when">WHEN</span> things happen, <span class="q-how">HOW</span> people work day to day, and <span class="q-who">WHO</span> is accountable around it.</p>
       </div>
       <div class="hero-patients">
@@ -292,7 +292,7 @@
           <img src="Assets/Personas/abdul.png" alt="Abdul">
           <div class="hero-patient-text">
             <span class="hero-patient-name">Abdul, 38</span>
-            <span class="hero-patient-role">Self-initiated &middot; CVKM</span>
+            <span class="hero-patient-role">Patient-initiated &middot; CVKM</span>
             <span class="hero-patient-bio">Works full time, doesn&apos;t want to take time off for a screening clinic. Checks his BP on the NHS App himself &mdash; heart trouble runs in the family &mdash; and lands in a CVKM Check Up because the risk score warrants it.</span>
           </div>
         </a>
@@ -300,7 +300,7 @@
           <img src="Assets/Personas/mark.png" alt="Mark">
           <div class="hero-patient-text">
             <span class="hero-patient-name">Mark, 65</span>
-            <span class="hero-patient-role">Secondary care initiated &middot; PSA-AS</span>
+            <span class="hero-patient-role">Clinician-initiated &middot; PSA-AS</span>
             <span class="hero-patient-bio">On Active Surveillance for low-grade prostate cancer &mdash; monitoring chosen over immediate treatment. His consultant orders the PSA, the kit comes to the house, the result is reviewed before he ever hears about it.</span>
           </div>
         </a>
@@ -308,7 +308,7 @@
           <img src="Assets/Personas/layla.png" alt="Layla">
           <div class="hero-patient-text">
             <span class="hero-patient-name">Layla, 42</span>
-            <span class="hero-patient-role">Primary care initiated &middot; iron deficiency anaemia</span>
+            <span class="hero-patient-role">GP-initiated &middot; iron deficiency anaemia</span>
             <span class="hero-patient-bio">Working two jobs and raising kids. Keeps missing her routine blood-test appointments. Her GP arranges an iron deficiency anaemia kit at home; result lands in her record, and she&apos;s only contacted if action is needed.</span>
           </div>
         </a>
@@ -609,7 +609,7 @@
     <div class="cast-rule"></div>
     <div class="cast-eyebrow">The cast</div>
     <h2 class="cast-title">Fifteen people. Four patient stories. One model.</h2>
-    <p class="cast-intro">An operating model is a set of relationships between people. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, Self-initiated), Mark (PSA-AS, Secondary care initiated) and Layla (iron deficiency anaemia, Primary care initiated). Around them, the <strong>Commissioner role</strong> played by four personas across configurations (Sarah, Catherine, Ruth and Anita), plus the operational cast who run the model, plus a Clinician role played by two personas across configurations (Adam, consultant urologist on PSA-AS; Hannah, GP on iron deficiency anaemia). Every page on this site is structured around what each plays. A fourth patient story, <strong>Sean</strong>, runs through all three: the access story for the people the appointment system fails hardest. The <a href="HomeTest Operating Model - Hearts and Minds.html" style="color:#fff;font-weight:800;text-decoration:underline;text-decoration-color:var(--amber);text-underline-offset:3px;">Hearts and Minds layer</a> holds the four stories together and is how this model walks into a room.</p>
+    <p class="cast-intro">An operating model is a set of relationships between people. <strong>Three patient archetypes</strong>: Abdul (CVKM screening, patient-initiated), Mark (PSA-AS, clinician-initiated) and Layla (iron deficiency anaemia, GP-initiated). Around them, the <strong>Commissioner role</strong> played by four personas across configurations (Sarah, Catherine, Ruth and Anita), plus the operational cast who run the model, plus a Clinician role played by two personas across configurations (Adam, consultant urologist on PSA-AS; Hannah, GP on iron deficiency anaemia). Every page on this site is structured around what each plays. A fourth patient story, <strong>Sean</strong>, runs through all three: the access story for the people the appointment system fails hardest. The <a href="HomeTest Operating Model - Hearts and Minds.html" style="color:#fff;font-weight:800;text-decoration:underline;text-decoration-color:var(--amber);text-underline-offset:3px;">Hearts and Minds layer</a> holds the four stories together and is how this model walks into a room.</p>
     <div class="cast-row-label">The patients: three Year-1 archetypes, and the story that runs through them</div>
     <div class="cast-row cast-patients">
       <a href="HomeTest Operating Model - Persona Abdul.html" class="actor">

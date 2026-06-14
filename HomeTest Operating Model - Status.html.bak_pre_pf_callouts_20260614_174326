@@ -129,10 +129,6 @@
   <div class="amber-rule"></div>
   <div class="h-eyebrow">Where the model stands</div>
   <h1 class="h-title">Status.</h1>
-  <div style="margin:10px 0 28px;background:#E8F1F6;border:1px solid #B5D4E5;border-radius:10px;padding:14px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:#003087;">
- <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#006747;flex-shrink:0;"></span>
- <span style="flex:1;min-width:240px;">Status here reflects decisions taken under the <a href="HomeTest Operating Model - Prioritisation Framework.html" style="color:#005EB8;font-weight:800;text-decoration:underline;">HomeTest Prioritisation Framework</a> (endorsed 9 June 2026). Open the framework to see how patterns, tiers and the Prioritisation Construct drive what's on this page.</span>
-</div>
   <p class="h-subtitle">Everything across the operating model that is either unresolved or in flight, in one place. Each item links back to where it lives in detail.</p>
   <p class="h-intro">The model has many moving parts. This page does not replace the per-page detail, it aggregates it. <strong>Unresolved</strong> items are awaiting a decision, a position, or an owner. <strong>In progress</strong> items are work in flight that does not need a fresh decision, only execution.</p>
 

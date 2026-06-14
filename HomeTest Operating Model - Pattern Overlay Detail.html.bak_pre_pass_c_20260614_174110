@@ -56,7 +56,7 @@
   .ov-card.hiv{border-top:4px solid var(--hiv);}
   .ov-card.psa{border-top:4px solid var(--psa);}
   .ov-card.hba1c{border-top:4px dashed var(--hba1c);}
-  .ov-card.pharm{border-top:4px dotted var(--pharm);} .ov-card.programme{border-top:4px dashed #00A9CE;} .ov-card.programme .ov-card-name{color:#00697A;} .ov-card.programme .pick{background:rgba(0,169,206,0.12);color:#00697A;}
+  .ov-card.pharm{border-top:4px dotted var(--pharm);}
   .ov-card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px;}
   .ov-card-name{font-size:13.5px;font-weight:800;letter-spacing:-0.1px;}
   .ov-card.hiv .ov-card-name{color:var(--hiv);}
@@ -165,11 +165,6 @@
         <div class="ov-card-head"><div class="ov-card-name">Community / Pharmacy</div><span class="status-pill status-sketch">Sketch</span></div>
         <div class="pick">Community / Pharmacy initiated (previously Pharmacy-initiated)</div>
         <div class="ov-card-body"><p>A community pharmacist initiates testing as part of medication management (HRT, GLP-1, DMARDs / steroids, RA, etc.). Working sketch from the discovery taxonomy. Not on the Year 1 OBO list.</p></div>
-      </div>
-      <div class="ov-card programme">
-        <div class="ov-card-head"><div class="ov-card-name">Programme / System</div><span class="status-pill status-design">Pattern catalogued</span></div>
-        <div class="pick">Programme / System initiated</div>
-        <div class="ov-card-body"><p>National programmes, Genomics-led cohorts, or research-driven invitations trigger testing at population scale. The 5th pattern from the <a href="HomeTest Operating Model - Prioritisation Framework.html" style="color:#005EB8;font-weight:700;text-decoration:none;">HomeTest Prioritisation Framework</a>. No live HomeTest configuration yet. The natural candidates are PSA invitation pathways and Genomics-led indications. Carried at the structural level so the catalogue reflects the framework.</p>
       </div>
     </div>
     <div class="ov-note"><span class="label">Underneath the clinician-initiated configurations</span><strong>HomeTest sits underneath existing clinical recall and tracking systems where they already exist.</strong> Where a trust runs a condition-specific tracker for scheduling and recall, HomeTest is the remote-delivery layer beneath it, not a replacement. The tracker remains the source of truth for cadence and clinical management; HomeTest enables the kit, sample and result flow to happen remotely rather than in clinic.</div>

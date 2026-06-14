@@ -235,14 +235,14 @@
     <div class="stage-main">
       <div class="stage-eyebrow">Long-term optimisation</div>
       <h2 class="stage-title">The kit moment: a blood test that comes to the house. <span class="hm-witness" data-moment="abdul-a4"></span></h2>
-      <div class="stage-image"><img src="Assets/Abdul Story/abdul-stage4.png" alt="Abdul completing his home cardiometabolic self-sample kit" onerror="this.parentElement.style.display='none'"></div>
-      <p class="stage-body">Eight weeks into the digital cardiometabolic programme, the clinical team message Abdul and ask him to check progress with a home blood-test self-sample. <strong>The kit comes to the house; he takes the test at home and posts it to the lab.</strong> The result confirms his risk markers have already moved in the right direction, and he&apos;s given a continuous glucose monitor to watch his blood sugars through the day. This is the HomeTest shape in miniature: kit out, sample back, result to the record, action owned by the right clinician &mdash; no clinic visit, no day off work. Today the same shape runs live on HIV testing; the CVKM configuration Abdul stands for is the future-state this journey points at.</p>
+      <div class="stage-image"><img src="Assets/Abdul Story/abdul-stage4.png" alt="Abdul completing his home HbA1c self-sample kit" onerror="this.parentElement.style.display='none'"></div>
+      <p class="stage-body">Eight weeks into the digital diabetes reversal programme, the diabetes team message Abdul and ask him to check progress with an HbA1c self-sample. <strong>The kit comes to the house; he takes the test at home and posts it to the lab.</strong> The result confirms his HbA1c has already dropped, and he&apos;s given a CGM device to watch his blood sugars through the day. This is the HomeTest shape in miniature: kit out, sample back, result to the record, action owned by the right clinician &mdash; no clinic visit, no day off work.</p>
       <p class="stage-body">He carries on with a single self-service CVKM app for weight, diet and activity &mdash; rewards, local support, no switching between apps. His diabetes risk is under control. Community nurses receive alerts only when his readings drift outside his individually set levels, and reach him proactively by video call &mdash; replacing periodic reviews with attention exactly when it&apos;s needed. Abdul can pull the same cord himself and request a follow-up in the App.</p>
       <div class="benefits">
         <div class="benefit"><div class="b-num">&minus;1</div><div class="b-label">Appointment</div><div class="b-desc">The progress check posts itself to the lab; the team only reaches for him when the result says so.</div></div>
       </div>
       <div class="chips">
-        <span class="chip kit">Home blood-test self-sample &middot; home to lab &middot; the HomeTest pattern shape</span>
+        <span class="chip kit">HbA1c self-sample &middot; home to lab &middot; the Year 1 HomeTest pattern</span>
         <span class="chip">Alerts replace periodic reviews</span>
       </div>
     </div>
