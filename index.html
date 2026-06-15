@@ -51,7 +51,7 @@ async function sha256(s){
 function nextTarget(){
   const params = new URLSearchParams(location.search);
   const n = params.get("next");
-  return n && /^[A-Za-z0-9._%\- ]+\.html$/.test(decodeURIComponent(n)) ? decodeURIComponent(n) : "home.html";
+  return n && /^[A-Za-z0-9._%\- ]+\.html$/.test(decodeURIComponent(n)) ? decodeURIComponent(n) : "reading-guide.html";
 }
 if (sessionStorage.getItem("hometest-auth") === "ok") {
   location.href = nextTarget();
