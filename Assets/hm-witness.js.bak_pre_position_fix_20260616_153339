@@ -34,19 +34,7 @@ document.querySelectorAll(".hm-witness[data-moment]").forEach(function(el){
     '<div class="hmw-stat">' + m.stat + '</div>' +
     '<div class="hmw-src">Source: ' + (m.url ? '<a href="' + m.url + '" target="_blank" rel="noopener" style="color:#005EB8;text-decoration:underline;">' + m.source + "</a>" : m.source) + "</div>" + link;
   el.appendChild(chip); el.appendChild(card);
-  function positionCard(){
-    card.style.left = "50%"; card.style.right = "auto"; card.style.transform = "translateX(-50%)";
-    var prevDisplay = card.style.display, prevVis = card.style.visibility;
-    if (window.getComputedStyle(card).display === "none") { card.style.visibility = "hidden"; card.style.display = "block"; }
-    var rect = card.getBoundingClientRect(); var vw = document.documentElement.clientWidth;
-    if (rect.right > vw - 20) { card.style.left = "auto"; card.style.right = "0"; card.style.transform = "none"; }
-    else if (rect.left < 20) { card.style.left = "0"; card.style.transform = "none"; }
-    card.style.display = prevDisplay; card.style.visibility = prevVis;
-  }
-  el.addEventListener("mouseenter", positionCard);
-  chip.addEventListener("focus", positionCard);
   chip.addEventListener("click", function(e){ e.stopPropagation(); e.preventDefault();
-    positionCard();
     document.querySelectorAll(".hm-witness.open").forEach(function(o){ if(o!==el) o.classList.remove("open"); });
     el.classList.toggle("open"); });
 });

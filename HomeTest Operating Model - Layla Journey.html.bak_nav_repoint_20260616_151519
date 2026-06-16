@@ -132,14 +132,12 @@
 
 <nav class="topnav">
   <a href="home.html" class="nav-back">&larr; Operating Model</a>
-    <div class="nav-siblings">
+  <div class="nav-siblings">
     <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
-    <a href="HomeTest Operating Model - Abdul Journey.html">Abdul</a>
-    <a href="HomeTest Operating Model - Mark Journey.html">Mark</a>
-    <a href="HomeTest Operating Model - Layla Journey.html" class="active">Layla</a>
-    <a href="HomeTest Operating Model - Sean Journey.html">Sean</a>
-    <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
-    <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
+    <a href="HomeTest Operating Model - Persona Abdul.html">Abdul</a>
+    <a href="HomeTest Operating Model - Persona Mark.html">Mark</a>
+    <a href="HomeTest Operating Model - Persona Layla.html" class="active">Layla</a>
+    <a href="HomeTest Operating Model - Persona Sean.html">Sean</a>
   </div>
 </nav>
 

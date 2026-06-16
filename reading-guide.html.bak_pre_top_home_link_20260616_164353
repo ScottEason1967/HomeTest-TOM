@@ -182,13 +182,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 @media(max-width:780px){.cta{grid-template-columns:1fr;}}
 
 .foot{margin-top:36px;padding-top:22px;border-top:1px solid var(--border-lt);font-size:11.5px;color:var(--text-muted);text-align:center;}
-
-/* ===== Top-of-page Home shortcut ===== */
-.rg-top-strip{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--border-lt);font-size:12px;}
-.rg-top-strip-back{color:var(--nhs-blue);font-weight:700;text-decoration:none;letter-spacing:0.3px;}
-.rg-top-strip-back:hover{color:var(--nhs-dark);}
-.rg-top-strip-cta{display:inline-flex;align-items:center;gap:6px;background:var(--amber);color:var(--nhs-dark);font-weight:800;padding:7px 14px;border-radius:99px;text-decoration:none;letter-spacing:0.3px;font-size:11.5px;}
-.rg-top-strip-cta:hover{background:#FFD45A;}
 </style>
 </head>
 <body>
@@ -203,12 +196,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
 <div class="page">
   <div class="card">
-
-    <!-- Top-of-page Home shortcut -->
-    <div class="rg-top-strip">
-      <a href="home.html" class="rg-top-strip-back">&larr; HomeTest Operating Model home</a>
-      <a href="home.html" class="rg-top-strip-cta">Skip to the home page &rarr;</a>
-    </div>
 
     <div class="eyebrow">Start here</div>
     <div class="amber-rule"></div>

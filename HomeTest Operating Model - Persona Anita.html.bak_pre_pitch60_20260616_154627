@@ -86,14 +86,14 @@
 
   <div class="amber-rule"></div>
   <div class="h-eyebrow">The cast &middot; meet Anita</div>
-  <div class="status-badge">Design &middot; HomeTest Iron deficiency anaemia</div>
+  <div class="status-badge">Design &middot; HomeTest iron deficiency anaemia</div>
 
   <div class="h-flex">
     <div>
       <h1 class="h-title">Anita.</h1>
-      <div class="h-role">ICB / GP commissioner &middot; HomeTest Iron deficiency anaemia</div>
+      <div class="h-role">ICB / GP commissioner &middot; HomeTest iron deficiency anaemia</div>
       <div class="h-quote">&ldquo;Show me where the money sits, who carries the clinical pathway and how it ties to the QOF cycle. Until you do, my ICB can&apos;t commit.&rdquo;</div>
-      <div class="h-bio">Anita is the ICB / GP commissioner who holds the budget for HomeTest Iron deficiency anaemia &mdash; the GP-initiated primary-care anaemia monitoring configuration. Layla sits inside her cohort. Her institution is either an ICB-level commissioner with primary-care reach or a GP-practice commissioner inside the ICB; the exact split is design-phase. Her route depends on the QOF / outpatient tariff position and the primary-care contractual mechanism, neither of which is available within the 2027/28 tariff window.</div>
+      <div class="h-bio">Anita is the ICB / GP commissioner who holds the budget for HomeTest iron deficiency anaemia &mdash; the GP-initiated primary-care anaemia monitoring configuration. Layla sits inside her cohort. Her institution is either an ICB-level commissioner with primary-care reach or a GP-practice commissioner inside the ICB; the exact split is design-phase. Her route depends on the QOF / outpatient tariff position and the primary-care contractual mechanism, neither of which is available within the 2027/28 tariff window.</div>
     </div>
     <div class="h-portrait">
       <img src="Assets/Personas/anita.png" alt="Anita">
@@ -102,39 +102,15 @@
 
   <div class="where-panel">
     <span class="label">Why Anita is here</span>
-    Sarah was originally framed as a single universal commissioner across HIV (LA), PSA-AS (Acute Trust) and Iron deficiency anaemia (ICB / GP). Three institutions, three jobs &mdash; not one person. Anita is the ICB / GP commissioner persona separated out from Sarah. She is anchored on the HomeTest Iron deficiency anaemia configuration, which is <a href="HomeTest Operating Model - Persona Layla.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Layla</a>&apos;s pathway. Sarah remains as the LA sexual health commissioner for HIV. <a href="HomeTest Operating Model - Persona Catherine.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Catherine</a> is the Acute Trust commissioner for the PSA-AS established cohort. <a href="HomeTest Operating Model - Persona Ruth.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ruth</a> is the PSA-AS monitoring-gap commissioner (TBC).
+    Sarah was originally framed as a single universal commissioner across HIV (LA), PSA-AS (Acute Trust) and iron deficiency anaemia (ICB / GP). Three institutions, three jobs &mdash; not one person. Anita is the ICB / GP commissioner persona separated out from Sarah. She is anchored on the HomeTest iron deficiency anaemia configuration, which is <a href="HomeTest Operating Model - Persona Layla.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Layla</a>&apos;s pathway. Sarah remains as the LA sexual health commissioner for HIV. <a href="HomeTest Operating Model - Persona Catherine.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Catherine</a> is the Acute Trust commissioner for the PSA-AS established cohort. <a href="HomeTest Operating Model - Persona Ruth.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ruth</a> is the PSA-AS monitoring-gap commissioner (TBC).
   </div>
 
   <h2 class="section-h">What Anita needs from the framework</h2>
-  <p class="section-body">Three things. First, a viable funding route at pathway level: QOF, outpatient tariff or new primary-care contractual mechanism &mdash; the primary-care contractual mechanism is not available within the 2027/28 window, so the route has to land before Iron deficiency anaemia can scale. Second, IG that fits the GP-record integration shape (FHIR write-back, DSA between supplier and GP practice). Third, a buy mechanism that fits ICB-level commissioning and doesn&apos;t require every GP practice to sign separately.</p>
-
-
-  <h2 class="section-h">The commissioner pitch in 60 seconds</h2>
-  <p class="section-body">The pitch Anita hears in the first ten minutes, before she decides whether the conversation is worth continuing. Direct answers to the questions she will ask. No aspiration, no architecture, no abstractions.</p>
-
-  <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>Where does the value land for me?</strong> GP appointment freed &mdash; every routine FBC done at home is one fewer 10-minute practice slot consumed by routine monitoring, releasing primary-care capacity for the patients who clinically need to be in the room. Phlebotomy load lifted off practice nurses, who are scarce. Lab routine-monitoring volume moves off the daily collection. The cashable saving per test is modest; the released capacity is the real economic move, and it shows up in practice-level access metrics.
-  </div>
-
-  <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>Who&apos;s going to pay me for this?</strong> Funding mechanism is still in flight. QOF (Quality and Outcomes Framework) is one route under consideration &mdash; Iron deficiency anaemia monitoring is already a QOF-incentivised activity, and home testing could be folded into the existing point structure. Outpatient tariff is another route. Neither is available within the 2027/28 tariff window, so the working arrangement for the first deployments is bilateral commissioning at ICB or GP-federation level under the NHS Standard Contract. The wider primary-care contractual mechanism is unresolved at SLT level and on the open governance questions list.
-  </div>
-
-  <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>How quickly can I get this in front of patients?</strong> Mobilisation is weeks not months for a practice that opts in. The patient cohort is already identifiable (Iron deficiency anaemia patients on iron supplementation due 6-month FBC). The GP requests via existing electronic-prescribing pathways &mdash; same workflow as ordering a routine in-clinic blood. The kit arrives, the sample comes back, the result lands in the GP record. The practice change is the consent conversation and the workflow tweak, not a new clinical pathway.
-  </div>
-
-  <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>What if it doesn&apos;t work for my cohort?</strong> Exit terms sit in the call-off contract. The practice reverts to in-clinic phlebotomy at any point &mdash; Iron deficiency anaemia monitoring is a routine quarterly cycle, so switching back to in-person testing is a service-level adjustment, not a clinical step-back. Supplier-switching within the pattern is supported via the framework&apos;s switching mechanism. No multi-year platform lock-in.
-  </div>
-
-  <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>How is this different from what GPs already do?</strong> GPs already commission home-collected sampling in some pathways (cholesterol via Digital Health Checks with Thriva; HPV self-sampling for cervical screening; Hep-C via Preventx). What changes here is the framework wrapper: a single national platform brokering admitted suppliers, with results writing back to the EPR cleanly, an MI feed into the ICB-level commissioning view, and reach into the patients standard in-clinic provision misses &mdash; carers, shift workers, those who repeatedly miss appointments. The novel piece for primary care is treating routine monitoring as a candidate for routine home self-sampling at scale.
-  </div>
+  <p class="section-body">Three things. First, a viable funding route at pathway level: QOF, outpatient tariff or new primary-care contractual mechanism &mdash; the primary-care contractual mechanism is not available within the 2027/28 window, so the route has to land before iron deficiency anaemia can scale. Second, IG that fits the GP-record integration shape (FHIR write-back, DSA between supplier and GP practice). Third, a buy mechanism that fits ICB-level commissioning and doesn&apos;t require every GP practice to sign separately.</p>
 
   <h2 class="section-h">Where Anita appears in the model</h2>
   <ul class="where-list">
-    <li>Pattern Overlay Detail Commissioning overlay, Iron deficiency anaemia card (ICB / GP pick)</li>
+    <li>Pattern Overlay Detail Commissioning overlay, iron deficiency anaemia card (ICB / GP pick)</li>
     <li>Operational swimlane Lane 1 (Commissioner buying), as one of four commissioner personas in the cluster</li>
     <li>Around <a href="HomeTest Operating Model - Persona Layla.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Layla</a>&apos;s persona page as the commissioner for her pathway</li>
   </ul>

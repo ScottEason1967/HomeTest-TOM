@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>How to read this model — HomeTest Operating Model</title>
+<title>How to read this model — HomeTest Operating Model (DRAFT v2)</title>
 <style>
 :root {
   --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
@@ -86,22 +86,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .own-block-body strong{color:#fff;font-weight:700;}
 @media(max-width:880px){.own-strip{grid-template-columns:1fr;}}
 
-/* ===== Three Steps strip (Referral · Fulfilment · Result) ===== */
-.three-steps-wrap{margin-top:14px;}
-.three-steps-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:stretch;}
-.step-card{background:#fff;border:1.5px solid var(--border-lt);border-top:5px solid var(--nhs-blue);border-radius:14px;padding:22px 22px 20px;display:flex;flex-direction:column;}
-.step-eyebrow{font-size:10.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:var(--nhs-blue);margin-bottom:8px;}
-.step-h{font-size:18px;font-weight:900;color:var(--nhs-dark);letter-spacing:-0.4px;margin-bottom:10px;line-height:1.25;}
-.step-body{font-size:13px;color:var(--text-sec);line-height:1.6;margin-bottom:12px;}
-.step-body strong{color:var(--text);font-weight:700;}
-.step-list{font-size:12px;color:var(--text-sec);line-height:1.55;padding-left:0;list-style:none;margin-top:auto;}
-.step-list li{margin-bottom:4px;padding-left:14px;position:relative;}
-.step-list li::before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:var(--nhs-blue);}
-.step-arrow{display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:300;color:var(--text-muted);padding:0 4px;}
-.steps-anchor{font-size:13px;color:var(--text-sec);line-height:1.6;font-style:italic;margin-top:18px;text-align:center;}
-.steps-anchor strong{color:var(--text);font-weight:700;font-style:normal;}
-@media(max-width:980px){.three-steps-grid{grid-template-columns:1fr;}.step-arrow{transform:rotate(90deg);padding:8px 0;}}
-
 /* Five questions diagram (kept from v1) */
 .shape-wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;margin-top:4px;}
 .shape-circle{position:relative;width:340px;height:340px;margin:0 auto;}
@@ -182,13 +166,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 @media(max-width:780px){.cta{grid-template-columns:1fr;}}
 
 .foot{margin-top:36px;padding-top:22px;border-top:1px solid var(--border-lt);font-size:11.5px;color:var(--text-muted);text-align:center;}
-
-/* ===== Top-of-page Home shortcut ===== */
-.rg-top-strip{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--border-lt);font-size:12px;}
-.rg-top-strip-back{color:var(--nhs-blue);font-weight:700;text-decoration:none;letter-spacing:0.3px;}
-.rg-top-strip-back:hover{color:var(--nhs-dark);}
-.rg-top-strip-cta{display:inline-flex;align-items:center;gap:6px;background:var(--amber);color:var(--nhs-dark);font-weight:800;padding:7px 14px;border-radius:99px;text-decoration:none;letter-spacing:0.3px;font-size:11.5px;}
-.rg-top-strip-cta:hover{background:#FFD45A;}
 </style>
 </head>
 <body>
@@ -204,10 +181,8 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 <div class="page">
   <div class="card">
 
-    <!-- Top-of-page Home shortcut -->
-    <div class="rg-top-strip">
-      <a href="home.html" class="rg-top-strip-back">&larr; HomeTest Operating Model home</a>
-      <a href="home.html" class="rg-top-strip-cta">Skip to the home page &rarr;</a>
+    <div class="draft-banner">
+      <strong>DRAFT v3.</strong> Reading guide reframed as Future State Blueprint (the bridge itself, with the TOM as one of its outputs). Three-layer model (Input · Bridge · Output). Live reading-guide.html untouched.
     </div>
 
     <div class="eyebrow">Start here</div>
@@ -326,57 +301,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       </div>
     </div>
 
-    <!-- ===== SECTION: THREE STEPS · the service itself ===== -->
-    <div class="section">
-      <div class="section-eyebrow">The service itself, in three steps</div>
-      <h2 class="section-h">Referral. Fulfilment. Result.</h2>
-      <p class="section-intro">Before you unpack the five questions, the service itself sits in three steps. <strong>Every page of this blueprint expands one or more of them.</strong> The petal that follows just gives you five lenses through which to read them.</p>
-
-      <div class="three-steps-wrap">
-        <div class="three-steps-grid">
-          <div class="step-card">
-            <div class="step-eyebrow">01 &middot; Referral</div>
-            <div class="step-h">Demand finds the platform.</div>
-            <div class="step-body">An order can come from anywhere a clinician, citizen or screening service can legitimately raise one. The platform is <strong>client-neutral</strong> &mdash; it receives demand, it does not dictate where demand comes from.</div>
-            <ul class="step-list">
-              <li>Citizen, via the NHS App</li>
-              <li>GP / primary care</li>
-              <li>Secondary care consultant</li>
-              <li>Screening / cohorting service</li>
-              <li>Community pharmacy</li>
-            </ul>
-          </div>
-          <div class="step-arrow">&rarr;</div>
-          <div class="step-card">
-            <div class="step-eyebrow">02 &middot; Fulfilment</div>
-            <div class="step-h">The kit goes out, the sample comes back.</div>
-            <div class="step-body">Ordering, dispatch, sample collection, lab processing. The platform brokers the operational flow between commissioner, supplier and patient. <strong>The integration was done before anyone walked in.</strong></div>
-            <ul class="step-list">
-              <li>Ordering &amp; tracking</li>
-              <li>Kit delivery to home</li>
-              <li>Sample collection &amp; return</li>
-              <li>Lab processing</li>
-              <li>Supplier MI feed</li>
-            </ul>
-          </div>
-          <div class="step-arrow">&rarr;</div>
-          <div class="step-card">
-            <div class="step-eyebrow">03 &middot; Result</div>
-            <div class="step-h">The result reaches the right place.</div>
-            <div class="step-body">Back to the patient. Back to the GP record. Back to the clinician who needs to act. <strong>Reactive support paths sit underneath</strong> for results that need them.</div>
-            <ul class="step-list">
-              <li>Result to NHS App</li>
-              <li>Result to clinical record</li>
-              <li>Result to commissioner MI</li>
-              <li>Onward pathway triage</li>
-              <li>Reactive support for unsafe results</li>
-            </ul>
-          </div>
-        </div>
-        <p class="steps-anchor">Three steps describe what the service <strong>does</strong>. <strong>The five questions below describe how the model is organised to support them.</strong></p>
-      </div>
-    </div>
-
     <!-- ===== SECTION 3: Five questions petal (kept) ===== -->
     <div class="section">
       <div class="section-eyebrow">The shape of the bridge</div>
@@ -455,7 +379,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           </div>
         </a>
 
-        <a href="home.html" class="start-tile">
+        <a href="home-restructure-draft.html" class="start-tile">
           <div class="start-num">4</div>
           <div class="start-body">
             <div class="start-mins">10 minutes</div>
@@ -531,13 +455,13 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="cta-text-body">The home page gives you the full set of doors into the blueprint, the live status counts and the full cast. Bookmark it if you want to come back. This reading guide will stay here as a refresher.</div>
       </div>
       <div class="cta-btns">
-        <a href="home.html" class="cta-btn-main">Take me to the home page &rarr;</a>
+        <a href="home-restructure-draft.html" class="cta-btn-main">Take me to the home page &rarr;</a>
         <a href="HomeTest Operating Model - Why.html" class="cta-btn-sec">Or open Why first &rarr;</a>
       </div>
     </div>
 
     <div class="foot">
-      HomeTest Future State Blueprint &middot; Reading guide  &middot; The blueprint is the centre of the work. This page is the on-ramp.
+      HomeTest Future State Blueprint &middot; Reading guide DRAFT v3 &middot; The blueprint is the centre of the work. This page is the on-ramp.
     </div>
 
   </div>

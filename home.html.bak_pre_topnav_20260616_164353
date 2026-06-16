@@ -203,36 +203,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .foot-strip{margin-top:18px;text-align:center;font-size:11px;color:rgba(255,255,255,0.78);line-height:1.6;}
 .foot-strip a{color:var(--amber);text-decoration:none;font-weight:700;}
 .foot-strip a:hover{color:#fff;}
-
-/* ===== Canonical topnav ===== */
-.topnav{background:#fff;border-bottom:1px solid #ebeef1;padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.18);position:sticky;top:0;z-index:200;}
-.topnav .nav-brand{font-size:13px;font-weight:800;color:var(--nhs-dark);letter-spacing:0.2px;}
-.topnav .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
-.topnav .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 12px;border-radius:6px;letter-spacing:0.2px;white-space:nowrap;}
-.topnav .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
-.topnav .nav-sep{width:1px;height:18px;background:#ebeef1;margin:0 4px;display:inline-block;}
-.topnav .nav-rg{background:var(--amber);color:var(--nhs-dark);font-weight:800;}
-.topnav .nav-rg:hover{background:#FFD45A;color:var(--nhs-dark);}
-@media (max-width:760px){.topnav{padding:10px 16px;}}
 </style>
 </head>
 <body>
-<nav class="topnav">
-  <span class="nav-brand">HomeTest &middot; Operating Model</span>
-  <div class="nav-siblings">
-    <a href="HomeTest Operating Model - Why.html">Why</a>
-    <a href="HomeTest Operating Model - Anatomical.html">What</a>
-    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
-    <a href="HomeTest Operating Model - Operational.html">How</a>
-    <a href="HomeTest Operating Model - Governance.html">Who</a>
-    <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
-    <a href="HomeTest Operating Model - Teamwork.html">Teamwork</a>
-    <a href="HomeTest Operating Model - Status.html">Status</a>
-    <span class="nav-sep"></span>
-    <a href="reading-guide.html" class="nav-rg">Reading guide</a>
-  </div>
-</nav>
-
 
 <div class="page">
   <!-- ===== HERO — deep blue panel ===== -->
