@@ -191,7 +191,7 @@
     </div>
 
   <!-- Arrow row 1: cards → contextual blocks -->
-  <div style="position:relative;height:60px;margin:-4px 0;z-index:5;pointer-events:none;">
+  <div style="position:relative;height:60px;margin:-4px 0;">
     <svg viewBox="0 0 1020 60" preserveAspectRatio="none" style="width:100%;height:100%;display:block;overflow:visible;">
       <path d="M 130 0 C 130 32, 250 26, 250 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
       <polygon points="250,60 244,52 256,52" fill="#FFD66B"/>
@@ -201,21 +201,21 @@
   </div>
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
-    <div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:12px;padding:22px 24px;color:#fff;position:relative;"><div style="position:absolute;top:14px;right:14px;display:flex;gap:-8px;align-items:center;"><a href="HomeTest Operating Model - Persona Sarah.html" title="Sarah" style="display:inline-block;width:46px;height:46px;border-radius:50%;overflow:hidden;border:3px solid #FFD66B;box-shadow:0 4px 12px rgba(0,0,0,0.30);background:#fff;margin-right:-10px;z-index:3;"><img src="Assets/Personas/sarah.png" alt="Sarah" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"></a><a href="HomeTest Operating Model - Persona Catherine.html" title="Catherine" style="display:inline-block;width:46px;height:46px;border-radius:50%;overflow:hidden;border:3px solid #FFD66B;box-shadow:0 4px 12px rgba(0,0,0,0.30);background:#fff;margin-right:-10px;z-index:2;"><img src="Assets/Personas/catherine.png" alt="Catherine" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"></a><a href="HomeTest Operating Model - Persona Anita.html" title="Anita" style="display:inline-block;width:46px;height:46px;border-radius:50%;overflow:hidden;border:3px solid #FFD66B;box-shadow:0 4px 12px rgba(0,0,0,0.30);background:#fff;z-index:1;"><img src="Assets/Personas/anita.png" alt="Anita" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"></a></div>
-      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:8px;padding-right:160px;">For the commissioner &middot; where the economics actually resolves</div>
+    <div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:12px;padding:22px 24px;color:#fff;">
+      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:8px;">For the commissioner &middot; where the economics actually resolves</div>
       <h2 style="font-size:22px;font-weight:900;color:#fff;letter-spacing:-0.4px;line-height:1.18;margin-bottom:10px;">The commissioner case lands at pathway level, not test level.</h2>
       <p style="font-size:13px;line-height:1.62;color:rgba(255,255,255,0.92);margin:0 0 8px;">The economics lens above is necessary, not sufficient. In live commissioning, the cost of a new test and the saving it produces sit on different budget lines. The new test cost lands with one budget holder; the freed-up clinic capacity, the avoided onward referral and the workforce time recovered land with others.</p>
       <p style="font-size:13px;line-height:1.62;color:rgba(255,255,255,0.92);margin:0;">The model only delivers at scale when the test sits inside a pathway and the pathway carries the economics. Best-practice tariffs at pathway level. <strong style="color:#fff;">Configurations only land where the commissioner has a viable funding route at the pathway level.</strong></p>
     </div>
-    <div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:12px;padding:22px 24px;position:relative;"><div style="position:absolute;top:14px;right:14px;"><a href="HomeTest Operating Model - Persona Joe.html" title="Joe" style="display:inline-block;width:58px;height:58px;border-radius:50%;overflow:hidden;border:3px solid #FFD66B;box-shadow:0 4px 14px rgba(0,0,0,0.32);background:#fff;"><img src="Assets/Personas/joe.png" alt="Joe" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;"></a></div>
-      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:10px;padding-right:80px;">For the supplier &middot; the structural commitment</div>
+    <div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:14px;padding:22px 26px;margin-top:18px;">
+      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:10px;">For the supplier &middot; the structural commitment</div>
       <div style="font-size:23px;font-weight:900;color:#fff;line-height:1.18;margin-bottom:10px;letter-spacing:-0.4px;">Assure once. Reuse nationally.</div>
       <div style="font-size:13.5px;line-height:1.65;color:rgba(255,255,255,0.92);max-width:880px;">A supplier admitted to the framework is admitted once. The clinical safety case, the IG package and the lab assurance are then portable across every commissioner who calls them off. The local body acts as the deployment authority &mdash; not as a re-assurer. The published artefact stack (templates for DSA, DPIA, DCB0160, clinical safety case starter) is the carrier of the assurance, not the local team. The centre&apos;s job is the upstream assurance; the local job is administering the deployment, not redoing the work.</div>
     </div>
   </div>
 
   <!-- Arrow row 2: contextual blocks → strategic questions -->
-  <div style="position:relative;height:60px;margin:-4px 0;z-index:5;pointer-events:none;">
+  <div style="position:relative;height:60px;margin:-4px 0;">
     <svg viewBox="0 0 1020 60" preserveAspectRatio="none" style="width:100%;height:100%;display:block;overflow:visible;">
       <path d="M 255 0 C 255 28, 340 28, 340 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
       <polygon points="340,60 334,52 346,52" fill="#FFD66B"/>
@@ -226,7 +226,7 @@
 <div class="strat-section">
     <div class="strat-eyebrow">What we're trying to figure out at a strategic level</div><h2 class="strat-title">Three strategic questions.</h2>
     <p class="strat-intro">Cross-cutting questions that <strong>apply to every product</strong>, not just to one stage or one pathway. The three lenses above frame why the model exists. These three frame what is genuinely hard about making it work.</p>
-    <div style="border:2.5px dashed #FFD66B;border-radius:14px;padding:20px 18px;background:rgba(255,217,107,0.04);"><div class="strat-grid">
+    <div class="strat-grid">
       <div class="strat-q">
         <div class="strat-q-num">Question 01</div>
         <div class="strat-q-h">Route to market</div>
@@ -243,10 +243,9 @@
         <div class="strat-q-body">How is a supply chain built that can handle different use cases, different initiation patterns, and grow with volume without fragmenting?</div>
       </div>
     </div>
-    </div>
   </div>
   <!-- Arrow row 3: strategic questions → Direction of Travel -->
-  <div style="position:relative;height:60px;margin:-4px 0;z-index:5;pointer-events:none;">
+  <div style="position:relative;height:60px;margin:-4px 0;">
     <svg viewBox="0 0 1020 60" preserveAspectRatio="none" style="width:100%;height:100%;display:block;overflow:visible;">
       <path d="M 340 0 C 340 28, 430 28, 430 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
       <polygon points="430,60 424,52 436,52" fill="#FFD66B"/>
