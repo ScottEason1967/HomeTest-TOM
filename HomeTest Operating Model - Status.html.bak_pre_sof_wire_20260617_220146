@@ -375,7 +375,7 @@
         <div class="item">
           <div class="item-body">
             <div class="item-title">Supplier off-boarding has no NHSE precedent</div>
-            <div class="item-desc">The <a href="HomeTest Operating Model - Supplier Onboarding Framework.html" style="color:#005EB8;font-weight:700;text-decoration:underline;">framework</a> needs a defined process for removing a supplier that fails standards, exits the market or is replaced. There is no precedent elsewhere in NHSE the platform can lift wholesale: PA23 provides the legal basis but operational mechanics (notice periods, evidence thresholds, appeals, patient continuity, sample-in-flight handling, residual contractual obligations) all need to be designed. Without it the platform locks in to first-mover suppliers by default.</div>
+            <div class="item-desc">The framework needs a defined process for removing a supplier that fails standards, exits the market or is replaced. There is no precedent elsewhere in NHSE the platform can lift wholesale: PA23 provides the legal basis but operational mechanics (notice periods, evidence thresholds, appeals, patient continuity, sample-in-flight handling, residual contractual obligations) all need to be designed. Without it the platform locks in to first-mover suppliers by default.</div>
             <div class="item-owner"><strong>Owner:</strong> Commercial Lead with Operations Lead. Cross-reference to ASSURE off-boarding trigger criteria.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Teamwork.html">Open on Teamwork &rarr;</a>
@@ -423,7 +423,7 @@
         <div class="item">
           <div class="item-body">
             <div class="item-title">Parallel supply-chain framework fragmenting the supplier market</div>
-            <div class="item-desc">The NHS Supply Chain POCT framework plans to add home testing and is already in use by parts of the system. A parallel framework <span style="color:var(--text-muted);font-size:11px;">[<a href="HomeTest Operating Model - Supplier Onboarding Framework.html" style="color:#005EB8;font-weight:700;">see our framework</a>]</span> fragments the supplier market the platform is trying to organise, and is being built outside the platform&apos;s authority. The framework cannot decide it away. The mitigation is positioning: clarity on which suppliers and use cases each framework is best suited to, an explicit interface where the two overlap, and an aligned commercial story so suppliers are not forced to pick a side.</div>
+            <div class="item-desc">The NHS Supply Chain POCT framework plans to add home testing and is already in use by parts of the system. A parallel framework fragments the supplier market the platform is trying to organise, and is being built outside the platform&apos;s authority. The framework cannot decide it away. The mitigation is positioning: clarity on which suppliers and use cases each framework is best suited to, an explicit interface where the two overlap, and an aligned commercial story so suppliers are not forced to pick a side.</div>
             <div class="item-owner"><strong>Owner:</strong> Commercial Lead with SRO. Cross-programme alignment needed with NHS Supply Chain.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Operational.html">Open on HOW &rarr;</a>

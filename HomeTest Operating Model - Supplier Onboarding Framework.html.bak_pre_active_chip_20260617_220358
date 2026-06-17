@@ -120,8 +120,6 @@
     <a href="HomeTest Operating Model - Teamwork.html">HomeTest teamwork</a>
     <span class="nav-sep"></span>
     <a href="HomeTest Operating Model - Status.html">Status</a>
-    <span class="nav-sep" style="width:1px;height:18px;background:var(--border-lt);margin:0 6px;display:inline-block;"></span>
-    <a href="HomeTest Operating Model - Supplier Onboarding Framework.html" class="active">Supplier Onboarding Framework</a>
   </div>
 </nav>
 

@@ -149,7 +149,7 @@
         <div class="hero-rule"></div>
         <div class="hero-eyebrow">A supplier&apos;s story through the operating model</div>
         <h1 class="hero-title">Admitted<br><em>once</em>.<br>Reused everywhere.</h1>
-        <p class="hero-strap">Joe runs a self-sample diagnostics business. Twenty staff, two labs, a kit, a clinical safety officer, the regulatory paperwork done. The market is fragmented, every commissioner wants their own DPIA, their own contract, their own assurance pack. <strong>This is the story of how the framework turns one admission into many deployments, without a fresh assurance pass each time.</strong></p>
+        <p class="hero-strap">Joe runs a self-sample diagnostics business. Twenty staff, two labs, a kit, a clinical safety officer, the regulatory paperwork done. The market is fragmented &mdash; every commissioner wants their own DPIA, their own contract, their own assurance pack. <strong>This is the story of how the framework turns one admission into many deployments, without a fresh assurance pass each time.</strong></p>
       </div>
       <div class="hero-portrait-box">
         <div class="hero-portrait-circ">
@@ -277,7 +277,7 @@
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">The framework principle: <strong>self-declared evidence against published criteria is the first step</strong>. The boilerplate artefacts are versioned centrally and reused across pathways, Joe does not author a DPIA from scratch, he completes the NHSE template. The self-assessment output is a structured position against each criterion with references to the evidence Joe will produce at application stage. <strong>The grey-area calls escalate; the box-ticks run themselves.</strong></div>
+          <div class="whats-happening-body">The framework principle: <strong>self-declared evidence against published criteria is the first step</strong>. The boilerplate artefacts are versioned centrally and reused across pathways &mdash; Joe does not author a DPIA from scratch, he completes the NHSE template. The self-assessment output is a structured position against each criterion with references to the evidence Joe will produce at application stage. <strong>The grey-area calls escalate; the box-ticks run themselves.</strong></div>
         </div>
 
         <div class="old-way">
@@ -310,7 +310,7 @@
       <div class="stage-side"><div class="stage-number">03</div></div>
       <div class="stage-main">
         <div class="stage-eyebrow">Submit the EOI &middot; structured, evidenced</div>
-        <h2 class="stage-title">Joe submits the EOI through Atamis. The form is structured: APIs he wants to onboard to, scope (tests, pathways, territory), the self-assessment result by criterion, the evidence references. Nothing free-text. Nothing bespoke. He uploads his DCB0129 evidence pack, his DSPT certificate, his Cyber Essentials Plus letter, his accounts. He picks Route A, the standard route, because he is sitting at the scaled tier across all five dimensions. <span class="hm-witness" data-moment="joe-s3a"></span><span class="hm-witness" data-moment="joe-s3b"></span></h2>
+        <h2 class="stage-title">Joe submits the EOI through Atamis. The form is structured: APIs he wants to onboard to, scope (tests, pathways, territory), the self-assessment result by criterion, the evidence references. Nothing free-text. Nothing bespoke. He uploads his DCB0129 evidence pack, his DSPT certificate, his Cyber Essentials Plus letter, his accounts. He picks Route A &mdash; the standard route &mdash; because he is sitting at the scaled tier across all five dimensions. <span class="hm-witness" data-moment="joe-s3a"></span><span class="hm-witness" data-moment="joe-s3b"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Joe Story/joe-stage3.png" alt="Joe Stage 3" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
@@ -354,7 +354,7 @@
       <div class="stage-side"><div class="stage-number">04</div></div>
       <div class="stage-main">
         <div class="stage-eyebrow">Through the gate &middot; triage, review, conformance</div>
-        <h2 class="stage-title">Automated triage checks Joe&apos;s submission for completeness and valid evidence references. It passes. The workstream leads pick it up: Commercial, IG, Clinical Safety, Technical, each reviews the dimension they own against a time-boxed SLA. There are two grey-area calls (one on clinical evidence novelty, one on operational SLA scope) that escalate to senior review. Both clear in a fortnight. Joe receives the conformance certificate. He is now an admitted framework supplier. <span class="hm-witness" data-moment="joe-s4a"></span><span class="hm-witness" data-moment="joe-s4b"></span><span class="hm-witness" data-moment="joe-s4c"></span><span class="hm-witness" data-moment="joe-s4d"></span></h2>
+        <h2 class="stage-title">Automated triage checks Joe&apos;s submission for completeness and valid evidence references. It passes. The workstream leads pick it up: Commercial, IG, Clinical Safety, Technical &mdash; each reviews the dimension they own against a time-boxed SLA. There are two grey-area calls (one on clinical evidence novelty, one on operational SLA scope) that escalate to senior review. Both clear in a fortnight. Joe receives the conformance certificate. He is now an admitted framework supplier. <span class="hm-witness" data-moment="joe-s4a"></span><span class="hm-witness" data-moment="joe-s4b"></span><span class="hm-witness" data-moment="joe-s4c"></span><span class="hm-witness" data-moment="joe-s4d"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Joe Story/joe-stage4.png" alt="Joe Stage 4" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
@@ -454,7 +454,7 @@
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">The principle of <strong>onboard-once-per-API</strong> doing its work. Joe&apos;s technical integration to the platform was evidenced once. A new test under the same API is a lightweight check against the API&apos;s eligibility rules, it does not repeat the API-level evidence. A new commissioner calling Joe off uses the standing framework call-off contract. The annual refresh is the touchpoint. <strong>The conformance certificate is the durable artefact; the deployments multiply around it.</strong></div>
+          <div class="whats-happening-body">The principle of <strong>onboard-once-per-API</strong> doing its work. Joe&apos;s technical integration to the platform was evidenced once. A new test under the same API is a lightweight check against the API&apos;s eligibility rules &mdash; it does not repeat the API-level evidence. A new commissioner calling Joe off uses the standing framework call-off contract. The annual refresh is the touchpoint. <strong>The conformance certificate is the durable artefact; the deployments multiply around it.</strong></div>
         </div>
 
         <div class="old-way">

@@ -487,7 +487,7 @@
 <p class="route"><strong>Growth pathway.</strong> Route B can progress to Route A by demonstrating scaled-tier evidence through live operation over a defined period. Annual default review or triggered by material change.</p>
 </div>
 <div class="note-box">
-<strong>Why this design.</strong> <a href="HomeTest Operating Model - Supplier Onboarding Framework.html" style="color:#005EB8;font-weight:700;text-decoration:underline;">Onboard once per API</a>, lighter-weight per test. Publish the criteria; don't gate them. Self-assessment first, human review second. Tiered thresholds so the floor doesn't exclude. No defensive filtering. Every artefact exists once. Supplier experience is a design input. Anchored in the working position that a good supplier onboarding model is mostly self-service: the centre has to make it really easy for suppliers to bring themselves in, not act as a bottleneck.
+<strong>Why this design.</strong> Onboard once per API, lighter-weight per test. Publish the criteria; don't gate them. Self-assessment first, human review second. Tiered thresholds so the floor doesn't exclude. No defensive filtering. Every artefact exists once. Supplier experience is a design input. Anchored in the working position that a good supplier onboarding model is mostly self-service: the centre has to make it really easy for suppliers to bring themselves in, not act as a bottleneck.
  </div>
 <div class="decision-box">
 <h4>Open decisions</h4>
