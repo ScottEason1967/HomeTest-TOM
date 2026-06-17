@@ -97,7 +97,7 @@
       <h1 class="h-title">Aisha.</h1>
       <div class="h-role">Clinical / CSG</div>
       <div class="h-quote">&ldquo;If Abdul's result needs action, I'm the one who makes sure that action happens: safely.&rdquo;</div>
-      <div class="h-bio">GP and clinical safety officer. Holds clinical governance for the patients in her area. Cares about patient safety, hazard logs, and what happens after the result lands.</div>
+      <div class="h-bio">GP and clinical safety officer. Holds clinical governance for the patients in her area. Cares about patient safety, hazard logs, and what happens after the result lands. <strong>Note on her role:</strong> Aisha represents the deployer-side CSO archetype. Under DCB0129/0160 the two CSO roles (manufacturer-side and deployer-side) must be independent to avoid conflict of interest. The platform-side CSO is a separate appointment; Aisha&apos;s role mirrors what the deployer-side CSO does locally.</div>
     </div>
     <div class="h-portrait">
       <img src="Assets/Personas/aisha.png" alt="Aisha">
@@ -105,7 +105,7 @@
   </div>
 
   <h2 class="section-h">Why this role matters</h2>
-  <p class="section-body">Without clinical sign-off, the service can&apos;t deploy. Aisha represents the clinical safety machinery: the hazard log, the DCB0129 review, the safety case. <strong>She works alongside Ngozi (IG / DPO).</strong> Clinical safety and information governance are the two parallel frameworks the platform has to satisfy at every deployment. Aisha makes the clinical activity safe. <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> makes the data activity lawful. The model needs both to hold for any configuration to go live.</p>
+  <p class="section-body">Without clinical sign-off, the service can&apos;t deploy. Aisha represents the deployer-side clinical safety machinery: the local hazard log, the DCB0160 deployment safety case, the readiness for local sign-off. The manufacturer-side DCB0129 review is held by a separate independent CSO appointed on the platform side. <strong>Aisha also works alongside Ngozi (IG / DPO).</strong> Clinical safety and information governance are the two parallel frameworks the platform has to satisfy at every deployment. Aisha makes the clinical activity safe. <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> makes the data activity lawful. The model needs both to hold for any configuration to go live.</p>
 
   <h2 class="section-h">What drives her</h2> <p class="section-body" style="margin-top:14px;"><strong>A near-miss that shifted her career.</strong> Aisha trained as a paediatric registrar. She was on the team during a serious-incident on her ward where a medical device behaved exactly as designed but the deployment had no operational safety wrap around it , an information failure that nearly killed a child. The child survived. The investigation took six months and reshaped how the trust deployed any new medical technology. Aisha moved out of front-line clinical work into clinical safety governance two years later. She could see the system-level fix was where the impact was.</p> <p class="section-body" style="margin-top:14px;"><strong>A pattern she keeps seeing.</strong> She's watched DCB0129 and DCB0160 done well, and done badly. The badly cases all share a shape , manufacturers and deployers each thinking the other has the safety work covered, so neither owns it explicitly. Her instinct is to over-document the split, even when colleagues find it pedantic. She knows what happens when the split isn't documented.</p> <p class="section-body" style="margin-top:14px;"><strong>What it adds up to.</strong> Patient safety is the only thing that matters to her professionally. Everything else is means. She doesn't see clinical safety as paperwork; she sees it as the difference between &ldquo;this works&rdquo; and &ldquo;someone gets hurt&rdquo;. She'll hold up a go-live as long as it takes for the hazard log to be honest.</p> 
 
@@ -115,7 +115,7 @@
   <div style="margin-top:18px;">
     <div class="aisha-card">
       <div class="aisha-card-h">Clinical safety case and hazard log</div>
-      <div class="aisha-card-body">DCB0129 and DCB0160 hazard logs, supplier safety assessments, the assurance bar for any new pattern. Aisha and the Clinical Safety Group sign off whether a configuration is safe to deploy. This is the original role: everything else is the territory she has to govern around it.</div>
+      <div class="aisha-card-body">Aisha holds the deployer-side hazard log (DCB0160). The manufacturer-side hazard log (DCB0129) is held by the independent manufacturer-side CSO; the two CSOs run in parallel and must stay independent to avoid conflict of interest. Aisha runs supplier safety assessments at deployment, the assurance bar for any new pattern, and the local sign-off on whether a configuration is safe to deploy in her area. The Clinical Safety Group signs off the cross-configuration safety position. This is the original role: everything else is the territory she has to govern around it.</div>
     </div>
 
     <div class="aisha-card">

@@ -33,7 +33,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
 /* HERO */
 .hero{position:relative;padding:70px 60px 60px;background:linear-gradient(135deg,#001a4d 0%,#003087 50%,#005EB8 100%);color:#fff;overflow:hidden;}
-.hero::after{content:'';position:absolute;right:-80px;bottom:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(255,214,107,0.18),transparent 65%);pointer-events:none;}
+.hero::after{content:'';position:absolute;right:-80px;bottom:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(255,185,29,0.22),transparent 65%);pointer-events:none;}
 .hero-inner{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center;z-index:1;}
 .hero-rule{width:60px;height:4px;background:var(--gold);border-radius:2px;margin-bottom:22px;}
 .hero-eyebrow{font-size:11px;font-weight:800;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:24px;}
@@ -42,7 +42,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .hero-strap{font-size:17px;color:rgba(255,255,255,0.94);line-height:1.65;max-width:560px;}
 .hero-strap strong{color:var(--gold);font-weight:700;}
 .hero-portrait-box{display:flex;flex-direction:column;align-items:center;gap:14px;}
-.hero-portrait-circ{width:280px;height:280px;border-radius:50%;overflow:hidden;border:6px solid rgba(255,255,255,0.25);box-shadow:0 14px 36px rgba(0,0,0,0.35);background:#fff;}
+.hero-portrait-circ{width:280px;height:280px;border-radius:50%;overflow:hidden;border:6px solid rgba(255,185,29,0.45);box-shadow:0 14px 36px rgba(0,0,0,0.35);background:#fff;}
 .hero-portrait-circ img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
 .hero-portrait-name{font-size:18px;font-weight:800;color:#fff;letter-spacing:0.4px;}
 .hero-portrait-role{font-size:11px;color:var(--gold);letter-spacing:1.4px;text-transform:uppercase;font-weight:700;text-align:center;line-height:1.4;}
@@ -53,7 +53,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .ribbon{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;position:relative;align-items:start;}
 .ribbon-stage{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;cursor:pointer;text-decoration:none;color:inherit;padding:8px 4px;border-radius:8px;transition:background 0.15s;}
 .ribbon-stage:hover{background:rgba(0,48,135,0.04);}
-.ribbon-num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--nhs-dark),var(--nhs-blue));color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;letter-spacing:-0.5px;box-shadow:0 4px 10px rgba(0,48,135,0.18);}
+.ribbon-num{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#C9A227,#FFB91D);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;letter-spacing:-0.5px;box-shadow:0 4px 10px rgba(201,162,39,0.22);}
 .ribbon-label{font-size:11.5px;font-weight:800;color:var(--nhs-dark);text-align:center;line-height:1.3;letter-spacing:0.2px;}
 .ribbon-substage{font-size:10px;font-weight:600;color:var(--text-sec);text-align:center;letter-spacing:0.4px;margin-top:2px;}
 
@@ -61,7 +61,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .framing{padding:50px 60px 36px;background:#fff;}
 .framing-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
 .framing-tile{background:linear-gradient(135deg,#F4F8FC,#FFFFFF);border:1px solid #D5E8F0;border-radius:14px;padding:24px 26px;}
-.framing-tile-eyebrow{font-size:10px;font-weight:800;letter-spacing:1.8px;color:var(--nhs-blue);text-transform:uppercase;margin-bottom:8px;}
+.framing-tile-eyebrow{font-size:10px;font-weight:800;letter-spacing:1.8px;color:#C9A227;text-transform:uppercase;margin-bottom:8px;}
 .framing-tile-h{font-size:16px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.2px;margin-bottom:10px;line-height:1.3;}
 .framing-tile-body{font-size:13px;color:var(--text-sec);line-height:1.65;}
 .framing-tile-body strong{color:var(--text);font-weight:700;}
@@ -71,9 +71,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .stage{display:grid;grid-template-columns:80px 1fr;gap:36px;padding:48px 0;border-top:1px solid var(--border-lt);}
 .stage:first-child{border-top:none;}
 .stage-side{display:flex;flex-direction:column;align-items:center;gap:14px;}
-.stage-number{font-size:48px;font-weight:900;color:var(--nhs-dark);letter-spacing:-2px;opacity:0.18;line-height:1;}
+.stage-number{font-size:48px;font-weight:900;color:#C9A227;letter-spacing:-2px;opacity:0.22;line-height:1;}
 .stage-main{}
-.stage-eyebrow{font-size:11px;font-weight:800;letter-spacing:1.8px;color:var(--amber-deep);text-transform:uppercase;margin-bottom:10px;}
+.stage-eyebrow{font-size:11px;font-weight:800;letter-spacing:1.8px;color:#C9A227;text-transform:uppercase;margin-bottom:10px;}
 .stage-title{font-size:24px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.5px;line-height:1.32;margin-bottom:22px;}
 .stage-image{background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-radius:12px;padding:32px 24px;text-align:center;color:var(--text-muted);margin-bottom:22px;border:1px dashed #B5D4E5;font-size:12px;font-weight:600;letter-spacing:0.3px;line-height:1.55;}
 .stage-image-icon{font-size:36px;opacity:0.4;margin-bottom:6px;}
@@ -103,7 +103,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .crosslinks a:hover{text-decoration:underline;}
 
 /* OUTCOME */
-.outcome{background:linear-gradient(135deg,#003087,#005EB8);color:#fff;padding:50px 60px;text-align:center;}
+.outcome{background:linear-gradient(135deg,#C9A227,#FFB91D);color:#fff;padding:50px 60px;text-align:center;}
 .outcome-eyebrow{font-size:11px;font-weight:800;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;}
 .outcome-title{font-size:34px;font-weight:900;color:#fff;letter-spacing:-1px;line-height:1.15;margin-bottom:18px;}
 .outcome-body{font-size:15.5px;color:rgba(255,255,255,0.92);line-height:1.7;max-width:760px;margin:0 auto 22px;}
@@ -265,16 +265,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
             <div class="careteam-text">Adam, consultant urologist. The MDT. Catherine on the Trust commissioner side. Mark.</div>
           </div>
         </div>
-
-        <div class="crosslinks">
-          <div class="crosslinks-label">Where this lives in the model</div>
-          <div class="crosslinks-row">
-            <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Mark.html" target="_blank">Mark persona</a>
-            <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Adam.html" target="_blank">Adam persona</a>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -309,16 +299,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
             <div class="careteam-text">Adam. Clinical nurse specialist. Mark.</div>
           </div>
         </div>
-
-        <div class="crosslinks">
-          <div class="crosslinks-label">Where this lives in the model</div>
-          <div class="crosslinks-row">
-            <span class="crosslinks-tag">How</span>
-            <a href="HomeTest Operating Model - Operational.html" target="_blank">Lane 3 — clinician-initiated</a>
-            <span class="crosslinks-tag">H&amp;M</span>
-            <a href="HomeTest Operating Model - Adam Journey.html" target="_blank">Adam&apos;s journey</a>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -351,16 +331,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">The supplier shipping the kit. UKAS-accredited lab. Platform writing the result back to the Trust EPR. Adam reading the trend.</div>
-          </div>
-        </div>
-
-        <div class="crosslinks">
-          <div class="crosslinks-label">Where this lives in the model</div>
-          <div class="crosslinks-row">
-            <span class="crosslinks-tag">When</span>
-            <a href="HomeTest Operating Model - Lifecycle.html" target="_blank">FULFIL stage</a>
-            <span class="crosslinks-tag">How</span>
-            <a href="HomeTest Operating Model - Operational.html" target="_blank">Result handling</a>
           </div>
         </div>
       </div>
@@ -400,16 +370,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
             <div class="careteam-text">Adam. The MDT. The radiologist on the imaging cycle.</div>
           </div>
         </div>
-
-        <div class="crosslinks">
-          <div class="crosslinks-label">Where this lives in the model</div>
-          <div class="crosslinks-row">
-            <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Adam.html" target="_blank">Adam persona</a>
-            <span class="crosslinks-tag">What</span>
-            <a href="HomeTest Operating Model - Pattern Overlay Detail.html" target="_blank">PSA-AS overlay detail</a>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -442,16 +402,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">Adam. The MDT. Mark.</div>
-          </div>
-        </div>
-
-        <div class="crosslinks">
-          <div class="crosslinks-label">Where this lives in the model</div>
-          <div class="crosslinks-row">
-            <span class="crosslinks-tag">When</span>
-            <a href="HomeTest Operating Model - Lifecycle.html" target="_blank">MEASURE stage</a>
-            <span class="crosslinks-tag">Status</span>
-            <a href="HomeTest Operating Model - Status.html" target="_blank">Where measurement sits</a>
           </div>
         </div>
       </div>
