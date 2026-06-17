@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark's Journey: HomeTest Operating Model</title>
+<style>
+  :root {
+    --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
+    --amber:#FFB91D; --amber-deep:#C9A227; --warm-cream:#FFF9EC;
+    --accent:#C9A227;
+    --text:#212B32; --text-sec:#4C6272; --text-muted:#7E8B97;
+    --border-lt:#ebeef1; --card:#ffffff; --bg:#f8fafc;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI', system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--text); }
+
+  .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.10);}
+  .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+  .nav-back:hover{color:var(--nhs-blue);}
+  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;}
+  .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
+  .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
+  .nav-siblings a.active{background:var(--accent);color:#fff;}
+
+  .page{max-width:1060px;margin:0 auto;padding:0 28px 60px;}
+
+  .hero{display:flex;gap:36px;align-items:center;padding:48px 0 36px;border-bottom:1px solid var(--border-lt);flex-wrap:wrap;}
+  .hero-portrait{width:150px;height:150px;border-radius:50%;overflow:hidden;flex-shrink:0;border:4px solid var(--nhs-blue);box-shadow:0 8px 24px rgba(0,48,135,0.18);background:#fff;}
+  .hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+  .hero-text{flex:1;min-width:300px;}
+  .hero-eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--amber-deep);margin-bottom:10px;}
+  .hero-title{font-size:36px;font-weight:900;color:var(--nhs-dark);letter-spacing:-0.8px;line-height:1.08;margin-bottom:12px;}
+  .hero-sub{font-size:14.5px;color:var(--text-sec);line-height:1.6;max-width:680px;}
+  .hero-source{margin-top:12px;font-size:12px;color:var(--text-muted);font-style:italic;}
+
+  .ribbon{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:30px 0 8px;}
+  .ribbon a{display:block;background:var(--card);border:1px solid var(--border-lt);border-radius:10px;padding:14px 16px;text-decoration:none;color:inherit;transition:transform .15s ease, box-shadow .15s ease;}
+  .ribbon a:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,32,64,0.12);}
+  .ribbon-num{font-size:22px;font-weight:900;color:var(--nhs-blue);line-height:1;}
+  .ribbon-label{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-sec);margin-top:6px;}
+
+  .stage{display:flex;gap:28px;margin-top:44px;}
+  .stage-side{flex-shrink:0;width:64px;display:flex;flex-direction:column;align-items:center;}
+  .stage-number{width:54px;height:54px;border-radius:50%;background:var(--nhs-dark);color:#fff;font-size:24px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(0,48,135,0.22);}
+  .stage-bar{flex:1;width:3px;background:linear-gradient(180deg,var(--nhs-blue),transparent);margin-top:10px;border-radius:2px;}
+  .stage-main{flex:1;min-width:0;}
+  .stage-eyebrow{font-size:10.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:var(--amber-deep);}
+  .stage-title{font-size:24px;font-weight:900;color:var(--nhs-dark);letter-spacing:-0.4px;margin:4px 0 14px;}
+  .stage-body{font-size:14px;color:var(--text-sec);line-height:1.65;margin-bottom:14px;max-width:760px;}
+  .stage-body strong{color:var(--text);}
+
+  .pull-quote{border-left:4px solid var(--amber);background:var(--warm-cream);border-radius:0 10px 10px 0;padding:16px 20px;margin:16px 0;max-width:680px;}
+  .pull-quote-text{font-size:15.5px;font-weight:600;color:var(--text);line-height:1.5;font-style:italic;}
+  .pull-quote-attribution{font-size:12px;color:var(--text-muted);margin-top:6px;}
+
+  .callout{display:flex;gap:14px;background:var(--card);border:1px solid var(--border-lt);border-left:4px solid var(--nhs-blue);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;max-width:720px;}
+  .callout.amber{border-left-color:var(--amber);}
+  .callout-label{font-size:10px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--nhs-blue);white-space:nowrap;padding-top:2px;}
+  .callout.amber .callout-label{color:var(--amber-deep);}
+  .callout-text{font-size:13px;color:var(--text-sec);line-height:1.55;}
+  .callout-text a{color:var(--nhs-blue);font-weight:700;text-decoration:none;}
+
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0;}
+  .chip{font-size:11px;font-weight:800;letter-spacing:0.6px;padding:5px 12px;border-radius:99px;background:#eef4fa;color:var(--nhs-dark);}
+  .chip.saved{background:#E7F4EC;color:var(--nhs-green);}
+  .chip.kit{background:var(--warm-cream);color:var(--amber-deep);border:1px solid var(--amber);}
+
+  .interlude{background:linear-gradient(135deg,var(--nhs-dark),var(--nhs-blue));border-radius:14px;padding:30px 34px;margin:48px 0;color:#fff;}
+  .interlude-eyebrow{font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:10px;}
+  .interlude-title{font-size:21px;font-weight:900;letter-spacing:-0.3px;margin-bottom:10px;}
+  .interlude-body{font-size:14px;line-height:1.65;color:rgba(255,255,255,0.92);max-width:760px;}
+  .interlude-body a{color:var(--amber);font-weight:700;text-decoration:none;}
+
+  .outcomes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:48px 0 0;}
+  .outcome{background:var(--card);border:1px solid var(--border-lt);border-top:4px solid var(--nhs-blue);border-radius:12px;padding:22px;}
+  .outcome:nth-child(2){border-top-color:var(--nhs-green);}
+  .outcome:nth-child(3){border-top-color:var(--amber);}
+  .outcome-h{font-size:10.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;}
+  .outcome-title{font-size:16px;font-weight:900;color:var(--nhs-dark);margin-bottom:8px;letter-spacing:-0.2px;}
+  .outcome-body{font-size:12.5px;color:var(--text-sec);line-height:1.6;}
+  .outcome-body strong{color:var(--text);}
+
+  .casting{background:var(--card);border:1.5px solid var(--nhs-dark);border-radius:14px;padding:26px 30px;margin:48px 0 0;}
+  .casting-eyebrow{font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--amber-deep);margin-bottom:8px;}
+  .casting-title{font-size:19px;font-weight:900;color:var(--nhs-dark);margin-bottom:10px;letter-spacing:-0.3px;}
+  .casting-body{font-size:13.5px;color:var(--text-sec);line-height:1.65;}
+  .casting-body strong{color:var(--text);}
+  .casting-body a{color:var(--nhs-blue);font-weight:700;text-decoration:none;}
+
+  .foot{margin-top:52px;padding-top:18px;border-top:1px solid var(--border-lt);font-size:11.5px;color:var(--text-muted);line-height:1.6;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+
+  @media (max-width:760px){
+    .ribbon{grid-template-columns:repeat(2,1fr);}
+    .outcomes{grid-template-columns:1fr;}
+    .stage{flex-direction:column;gap:12px;}
+    .stage-side{flex-direction:row;width:auto;}
+    .stage-bar{display:none;}
+    .hero{flex-direction:column;text-align:center;}
+  }
+  .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 6px;max-width:760px;}
+  .benefit{background:linear-gradient(160deg,#E7F4EC,#fff);border:1.5px solid var(--nhs-green);border-radius:12px;padding:16px 18px;}
+  .benefit .b-num{font-size:34px;font-weight:900;color:var(--nhs-green);letter-spacing:-1.5px;line-height:1;}
+  .benefit .b-label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--nhs-green);margin-top:8px;}
+  .benefit .b-desc{font-size:12px;color:var(--text-sec);line-height:1.5;margin-top:5px;}
+  .benefit.choice{border-color:var(--nhs-blue);background:linear-gradient(160deg,#EAF2FB,#fff);}
+  .benefit.choice .b-num,.benefit.choice .b-label{color:var(--nhs-blue);}
+  .benefit-banner{display:flex;align-items:center;gap:30px;background:linear-gradient(135deg,var(--nhs-green),#0a8f5b);border-radius:14px;padding:26px 32px;margin:48px 0 0;color:#fff;flex-wrap:wrap;box-shadow:0 12px 30px rgba(0,103,71,0.25);}
+  .benefit-banner .bb-num{font-size:52px;font-weight:900;letter-spacing:-2.5px;line-height:1;white-space:nowrap;}
+  .benefit-banner .bb-text{flex:1;min-width:260px;}
+  .benefit-banner .bb-title{font-size:17px;font-weight:900;margin-bottom:5px;letter-spacing:-0.2px;}
+  .benefit-banner .bb-desc{font-size:13px;color:rgba(255,255,255,0.92);line-height:1.55;}
+  .benefit-banner .bb-desc strong{color:#fff;}
+
+  .scene{width:100%;max-width:760px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;margin:2px 0 18px;box-shadow:0 10px 28px rgba(0,32,64,0.16);border:1px solid var(--border-lt);background:linear-gradient(135deg,#F4F8FC,#E0E5EB);position:relative;}
+  .scene img{width:100%;height:100%;object-fit:cover;display:block;}
+  .scene-cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,32,64,0.82));color:#fff;font-size:12px;font-weight:600;letter-spacing:0.2px;line-height:1.45;padding:30px 18px 12px;}
+  .interlude-wrap{margin:48px 0;border-radius:14px;overflow:hidden;box-shadow:0 16px 36px rgba(0,48,135,0.24);}
+  .interlude-wrap .interlude{margin:0;border-radius:0;}
+  .interlude-photo{width:100%;aspect-ratio:21/9;overflow:hidden;background:#dde6ef;position:relative;}
+  .interlude-photo img{width:100%;height:100%;object-fit:cover;object-position:center 36%;display:block;}
+
+  .dashboard{background:linear-gradient(135deg,#001a4d,var(--nhs-dark));border-radius:16px;padding:28px 30px 22px;color:#fff;margin:46px 0 0;box-shadow:0 14px 34px rgba(0,26,77,0.32);}
+  .dashboard-eyebrow{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--amber);text-transform:uppercase;margin-bottom:6px;}
+  .dashboard-title{font-size:18px;font-weight:900;color:#fff;margin-bottom:18px;letter-spacing:-0.3px;}
+  .dashboard-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .dashboard-card{background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.18);border-radius:10px;padding:14px 16px;}
+  .dashboard-card-label{font-size:10px;font-weight:800;letter-spacing:1.3px;color:rgba(255,255,255,0.78);text-transform:uppercase;margin-bottom:8px;}
+  .dashboard-metric{font-size:26px;font-weight:900;color:#fff;letter-spacing:-0.5px;line-height:1;margin-bottom:6px;}
+  .dashboard-metric.flat{color:var(--amber);}
+  .dashboard-metric-sub{font-size:11px;color:rgba(255,255,255,0.66);line-height:1.4;}
+  .dashboard-chart{height:32px;margin-top:8px;}
+  .dashboard-chart svg{display:block;width:100%;height:100%;}
+  .dashboard-footer{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.6;padding-top:14px;margin-top:14px;border-top:1px solid rgba(255,255,255,0.16);}
+  .dashboard-footer strong{color:var(--amber);}
+  @media(max-width:760px){.dashboard-row{grid-template-columns:1fr;}}
+
+  @media print {
+    .topnav, .ecosystem-nav, nav { display:none !important; }
+    .hm-witness .hmw-card { display:block !important; position:static; transform:none; width:auto; max-width:none; margin:8px 0; box-shadow:none; border:1px solid #ccc; }
+    .hmw-chip { display:none; }
+    .hmw-card, .pull-quote, .benefit, .callout { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+      <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
+    <a href="HomeTest Operating Model - Abdul Journey.html">Abdul</a>
+    <a href="HomeTest Operating Model - Mark Journey.html" class="active">Mark</a>
+    <a href="HomeTest Operating Model - Layla Journey.html">Layla</a>
+    <a href="HomeTest Operating Model - Sean Journey.html">Sean</a>
+    <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
+    <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
+    <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
+    <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="hero">
+    <div class="hero-portrait"><img src="Assets/Personas/mark.png" alt="Mark"></div>
+    <div class="hero-text">
+      <div class="hero-eyebrow">Hearts and Minds &middot; a patient journey</div>
+      <h1 class="hero-title">Mark&apos;s journey.<br>The phone that doesn&apos;t ring.</h1>
+      <p class="hero-sub">Mark is 65, a retired teacher, and lives with his wife. Last year he was diagnosed with low-grade prostate cancer (CPG&nbsp;2) and chose Active Surveillance &mdash; active monitoring rather than immediate treatment, per NICE NG131. He sees his consultant urologist every six months. Between those visits, his PSA is what stands watch.</p>
+      <p class="hero-source">Built from the model&apos;s PSA-AS configuration: the clinician-initiated pattern, told from the patient&apos;s side. Year 1 status: prospective.</p>
+    </div>
+  </div>
+
+  <div class="ribbon">
+    <a href="#act1"><div class="ribbon-num">1</div><div class="ribbon-label">The diagnosis he lives with</div></a>
+    <a href="#act2"><div class="ribbon-num">2</div><div class="ribbon-label">His consultant orders</div></a>
+    <a href="#act3"><div class="ribbon-num">3</div><div class="ribbon-label">Kit out, sample back</div></a>
+    <a href="#act4"><div class="ribbon-num">4</div><div class="ribbon-label">Living on surveillance</div></a>
+  </div>
+
+  <div class="stage" id="act1">
+    <div class="stage-side"><div class="stage-number">1</div><div class="stage-bar"></div></div>
+    <div class="stage-main">
+      <div class="scene"><img src="Assets/mark-stage1.png" alt="Mark and his wife with the consultant, talking through the surveillance plan" onerror="this.closest('.scene').style.display='none'"><div class="scene-cap">The diagnosis, and the choice to watch it closely rather than treat it now.</div></div>
+      <div class="stage-eyebrow">The diagnosis he lives with</div>
+      <h2 class="stage-title">Watching, not fighting. That was the choice. <span class="hm-witness" data-moment="mark-a1"></span></h2>
+      <p class="stage-body">Low-grade prostate cancer grows slowly, and for men like Mark the evidence says watch it carefully rather than treat it immediately &mdash; treatment has costs of its own. Active Surveillance means sustained vigilance: regular PSA tests, watching the trend for any rise that would change the plan. <strong>The test is routine. What it stands guard over is not.</strong></p>
+      <p class="stage-body">The old shape of that vigilance: a trip to hospital phlebotomy for every routine draw &mdash; car park, waiting room, needle, journey home &mdash; for a test whose most likely outcome is &ldquo;no change&rdquo;. Multiply that by every man on a surveillance list, for years, and the clinic is full of people who didn&apos;t need to be there.</p>
+    </div>
+  </div>
+
+  <div class="stage" id="act2">
+    <div class="stage-side"><div class="stage-number">2</div><div class="stage-bar"></div></div>
+    <div class="stage-main">
+      <div class="scene"><img src="Assets/mark-stage2.png" alt="Mark at home confirming the order on his tablet" onerror="this.closest('.scene').style.display='none'"><div class="scene-cap">The order comes to Mark to confirm. The choice, the address and the timing stay his.</div></div>
+      <div class="stage-eyebrow">His consultant orders</div>
+      <h2 class="stage-title">Adam sets the intent. Mark confirms it. <span class="hm-witness" data-moment="mark-a2"></span></h2>
+      <p class="stage-body">Mark never sees a catalogue, never picks a supplier, never holds a contract. His consultant urologist identifies him from the active surveillance list and sets the intent to order. <strong>Mark confirms the order, the address and the timing</strong> &mdash; and that confirmation step repeats at every cycle, so the test never arrives unrequested or unexplained.</p>
+      <p class="stage-body">The choice stays his. At the point of confirmation, Mark can still choose the in-person route &mdash; the home kit is an offer, not a conscription. He takes the kit.</p>
+      <div class="benefits">
+        <div class="benefit choice"><div class="b-num">His call</div><div class="b-label">Patient route choice preserved</div><div class="b-desc">At every cycle&apos;s confirmation the in-person route stays open. The home kit is an offer, never a conscription.</div></div>
+      </div>
+      <div class="chips">
+        <span class="chip">Clinician-initiated &middot; patient-confirmed</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stage" id="act3">
+    <div class="stage-side"><div class="stage-number">3</div><div class="stage-bar"></div></div>
+    <div class="stage-main">
+      <div class="scene"><img src="Assets/mark-stage3.png" alt="Mark taking the capillary sample at his kitchen table, his wife in the garden beyond" onerror="this.closest('.scene').style.display='none'"><div class="scene-cap">A capillary draw at the kitchen table. No car park, no waiting room, no needle in a clinic.</div></div>
+      <div class="stage-eyebrow">Kit out, sample back</div>
+      <h2 class="stage-title">A capillary draw at his kitchen table. <span class="hm-witness" data-moment="mark-a3"></span></h2>
+      <p class="stage-body">The kit arrives at the house &mdash; a capillary draw, not a full venous one. Mark takes the sample at home and returns it by Royal Mail to a specialist pathology lab. <strong>The result goes to his consultant first</strong>, reviewed in trend against every previous reading &mdash; not as a number in isolation, but as a line that is either flat or isn&apos;t.</p>
+      <div class="pull-quote">
+        <div class="pull-quote-text">&ldquo;The test comes to me. The consultant sees the result. They only call me if something needs to change.&rdquo;</div>
+        <div class="pull-quote-attribution">Mark, 65 &mdash; on what surveillance feels like when it works</div>
+      </div>
+      <div class="benefits">
+        <div class="benefit"><div class="b-num">&minus;1</div><div class="b-label">Hospital visit, every cycle</div><div class="b-desc">Car park, waiting room, needle, journey home &mdash; replaced by the kitchen table and Royal Mail. For life.</div></div>
+      </div>
+      <div class="chips">
+        <span class="chip kit">Kit logistics: capillary kit out &middot; Royal Mail back &middot; specialist lab &middot; result to the requesting clinician</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="interlude-wrap">
+    <div class="interlude-photo"><img src="Assets/mark-interlude.png" alt="Mark and his wife walking together in the park" onerror="this.closest('.interlude-photo').style.display='none'"></div>
+    <div class="interlude">
+      <div class="interlude-eyebrow">Between the cycles</div>
+      <div class="interlude-title">The silence is the service.</div>
+      <div class="interlude-body">For a man on lifelong surveillance, the phone that doesn&apos;t ring is the whole point. No news doesn&apos;t mean nobody looked &mdash; it means somebody looked, in trend, against everything that came before, and the line is flat. Mark&apos;s retirement is not scheduled around phlebotomy appointments, and his cancer is watched more closely than it ever was in the waiting-room era. The result he doesn&apos;t hear about is the model working.</div>
+    </div>
+  </div>
+
+  <div class="stage" id="act4">
+    <div class="stage-side"><div class="stage-number">4</div><div class="stage-bar"></div></div>
+    <div class="stage-main">
+      <div class="stage-eyebrow">Living on surveillance</div>
+      <h2 class="stage-title">The cycle repeats. The list stays whole. <span class="hm-witness" data-moment="mark-a4"></span></h2>
+      <p class="stage-body">Every cycle runs the same way: intent from the surveillance list, confirmation from Mark, kit, sample, lab, trend review. Where a trust already runs a condition-specific tracker for scheduling and recall, HomeTest sits <strong>underneath</strong> it as the remote-delivery layer &mdash; the tracker stays the source of truth for cadence and clinical management. If Mark&apos;s PSA ever rises, escalation starts from a trend the team can see whole, and the clinic slot goes to the conversation that needs it.</p>
+      <p class="stage-body">And beside Mark&apos;s cohort sit two more: a <strong>radiotherapy follow-up cohort</strong> (men in post-treatment PSA surveillance, watched for biochemical recurrence &mdash; a different clinical state from Active Surveillance, served by the same machinery), and a quieter one: <strong>men referred to Urology with elevated PSA but no cancer diagnosis</strong>, who currently fall between acute care and a GP contract that carries no obligation to monitor them. The same kit-and-trend machinery is the candidate answer for that monitoring gap. <span style="color:var(--amber-deep);font-weight:800;">&#9873;</span> prospective cohort, commissioning shape held open.</p>
+      <div class="chips">
+        <span class="chip">Sits underneath existing recall trackers</span>
+        <span class="chip">Escalation only on trend change</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <div class="dashboard-eyebrow">What the surveillance list shows &middot; between escalations</div>
+    <div class="dashboard-title">Mark &middot; PSA active surveillance &middot; watch, no action</div>
+    <div class="dashboard-row">
+      <div class="dashboard-card">
+        <div class="dashboard-card-label">PSA trend &middot; four cycles</div>
+        <div class="dashboard-metric flat">Flat</div>
+        <div class="dashboard-metric-sub">no rise across two years of monitoring &mdash; the line that means &ldquo;no change&rdquo;</div>
+        <div class="dashboard-chart"><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#FFB91D" stroke-width="2.5" points="0,16 25,15 50,16 75,15 100,16"/></svg></div>
+      </div>
+      <div class="dashboard-card">
+        <div class="dashboard-card-label">Routine clinic visits</div>
+        <div class="dashboard-metric">0</div>
+        <div class="dashboard-metric-sub">this year &middot; every draw done at the kitchen table, not in phlebotomy</div>
+        <div class="dashboard-chart"><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="#5EBCDB" stroke-width="2.5" points="0,6 25,19 50,24 75,25 100,25"/></svg></div>
+      </div>
+      <div class="dashboard-card">
+        <div class="dashboard-card-label">Escalation status</div>
+        <div class="dashboard-metric">Watch</div>
+        <div class="dashboard-metric-sub">no trend change &middot; no call needed &middot; the clinic slot stays free</div>
+        <div class="dashboard-chart"><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" points="0,16 25,16 50,16 75,16 100,16"/></svg></div>
+      </div>
+    </div>
+    <div class="dashboard-footer">The line is flat, so nobody had to phone Mark and Mark didn&apos;t have to come in. <strong>Every cycle that stays flat is a clinic appointment that didn&apos;t need to happen</strong> &mdash; for Mark, and for every man on the surveillance list behind him.</div>
+  </div>
+
+  <div class="benefit-banner">
+    <div class="bb-num">&minus;1</div>
+    <div class="bb-text">
+      <div class="bb-title">Hospital visit per test, for every man on the list, for as long as the list exists.</div>
+      <div class="bb-desc">Routine draws move to kit-and-post; clinic time concentrates on the patients whose trend lines moved. <strong>Lifelong cohorts grow. Clinic capacity doesn&apos;t have to.</strong></div>
+    </div>
+  </div>
+
+  <div class="outcomes">
+    <div class="outcome">
+      <div class="outcome-h">For Mark</div>
+      <div class="outcome-title">Surveillance without the waiting room.</div>
+      <div class="outcome-body">Routine monitoring happens at his kitchen table, on his calendar. He confirms every order, keeps the in-person option, and hears from his team <strong>when it matters</strong> &mdash; which is the only time anyone wants that call.</div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-h">For the care team</div>
+      <div class="outcome-title">Trend lines, not snapshots.</div>
+      <div class="outcome-body">Adam&apos;s surveillance list runs itself between escalations: results return in trend, recall stays with the existing tracker, and outpatient phlebotomy stops absorbing men whose most likely result is &ldquo;no change&rdquo;. Clinic time concentrates on the patients whose lines moved.</div>
+    </div>
+    <div class="outcome">
+      <div class="outcome-h">For the system</div>
+      <div class="outcome-title">A surveillance pathway that scales.</div>
+      <div class="outcome-body">Lifelong cohorts grow; clinic capacity doesn&apos;t. Remote PSA monitoring moves the routine load to kit-and-post logistics and a specialist lab &mdash; and offers the <strong>monitoring-gap cohort</strong> a way to be monitored at all, rather than falling between two contracts.</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>HomeTest Operating Model &middot; Hearts and Minds &middot; Mark&apos;s journey &middot; source: PSA-AS configuration, established pre-treatment Active Surveillance cohort (NICE NG131) &middot; <a href="Assets/evidence-register.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">evidence register</a></span>
+    <a href="HomeTest Operating Model - Hearts and Minds.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">&larr; Back to Hearts and Minds</a>
+  </div>
+
+</div>
+
+<script src="Assets/hm-witness.js"></script>
+</body>
+</html>

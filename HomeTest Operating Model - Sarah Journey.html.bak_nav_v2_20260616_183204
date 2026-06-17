@@ -146,16 +146,13 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
 <nav class="topnav">
   <a href="home.html" class="nav-back">&larr; Operating Model</a>
-    <div class="nav-siblings">
+  <div class="nav-siblings">
     <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
     <a href="HomeTest Operating Model - Abdul Journey.html">Abdul</a>
     <a href="HomeTest Operating Model - Mark Journey.html">Mark</a>
     <a href="HomeTest Operating Model - Layla Journey.html">Layla</a>
     <a href="HomeTest Operating Model - Sean Journey.html">Sean</a>
     <a href="HomeTest Operating Model - Sarah Journey.html" class="active">Sarah</a>
-    <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
-    <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
-    <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
 

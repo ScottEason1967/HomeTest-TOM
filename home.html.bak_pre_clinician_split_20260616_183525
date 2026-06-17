@@ -509,10 +509,10 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <img src="Assets/Personas/adam.png" alt="Adam">
           <img src="Assets/Personas/hannah.png" alt="Hannah">
         </div>
-        <div class="hm-tile-strap">Clinician stories</div>
-        <div class="hm-tile-h">Adam &amp; Hannah</div>
-        <div class="hm-tile-desc">Two clinician journeys. Consultant urologist on PSA-AS surveillance, and GP partner on routine Iron deficiency anaemia review. Same shape, different venue. Open either from the journey nav once you&apos;re in.</div>
-        <div class="hm-tile-cta">Open Adam&apos;s journey &rarr; (Hannah&apos;s sits alongside)</div>
+        <div class="hm-tile-strap">Clinician story</div>
+        <div class="hm-tile-h">Adam&apos;s surveillance cohort</div>
+        <div class="hm-tile-desc">Consultant urologist on PSA-AS. Six stages from the cohort in front of him to the clinic shape that emerges when routine bloods leave the room. Hannah&apos;s GP journey follows.</div>
+        <div class="hm-tile-cta">Open Adam&apos;s journey &rarr;</div>
       </a>
     </div>
   </div>
