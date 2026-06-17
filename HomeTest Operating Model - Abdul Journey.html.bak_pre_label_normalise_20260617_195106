@@ -157,7 +157,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
     <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
     <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
-    <a href="HomeTest Operating Model - Joe Journey.html">Joe</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -249,7 +248,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">AI-assisted CVKM risk stratification reads structured and unstructured data on Abdul&apos;s single patient record: age, BMI, smoking history, family history of heart disease and diabetes. He is flagged as high cardiovascular risk and added to a contact list. The mechanic that finds him is automated, dynamic and continuous.</div>
         </div>
 
@@ -261,7 +260,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Sarah&apos;s commissioner cohort analysis. Population health analysts. Public-health team identifying the at-risk cohort.</div>
           </div>
         </div>
@@ -293,7 +292,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">NHS App BP camera tool reads against medical-grade thresholds; result triggers the CVKM Check Up pathway as a digital service inside the App. Smartwatch biosensor data flows in. The app states the camera reading needs medically validated re-test before clinical action: the digital reading is a prompt, not a diagnosis.</div>
         </div>
 
@@ -305,7 +304,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Priya on the platform side, owning App surfacing. Cohorting-as-a-service. UKHSA data overlay.</div>
           </div>
         </div>
@@ -337,7 +336,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">A medically validated BP cuff and an AF check at the centre. A 24-hour Ambulatory BP smart ring for the diagnostic confirmation. An MHRA-regulated home blood self-sample kit, processed by a UKAS-accredited lab, surfaces high cholesterol and pre-diabetes. Results write back to Abdul&apos;s NHS record. High cholesterol and pre-diabetes get found together, not on three separate visits.</div>
         </div>
 
@@ -349,7 +348,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">The framework supplier shipping the kit. The lab. The platform writing the result back. Abdul.</div>
           </div>
         </div>
@@ -381,7 +380,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">NICE-guideline-aligned prescription cocktail through the NHS App. A long-term CVKM management app delivered through HealthStore. A pre-diabetes prevention programme runs alongside. The 8-week HbA1c retest is the HomeTest moment inside a longer DTx-led pathway; the CGM follows because the HbA1c moved. None of this needs Abdul to take time off work.</div>
         </div>
 
@@ -393,7 +392,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Abdul&apos;s GP. Practice pharmacist if a statin is prescribed. NICE guidelines.</div>
           </div>
         </div>
@@ -425,7 +424,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">Continuous self-monitoring via the CVKM app and biosensor data. Video-call reviews replace periodic in-person ones. Pharmacist-led remote medication titration replaces clinic appointments for dose changes. Periodic HomeTest retests on calendar reminder via post. Liz, his 64-year-old mother, is the cast around him: the same pathway has to work for her too.</div>
         </div>
 
@@ -437,7 +436,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Abdul. His GP holding the longitudinal record. The NHS App. Aisha&apos;s clinical safety review of the cohort-level pattern.</div>
           </div>
         </div>

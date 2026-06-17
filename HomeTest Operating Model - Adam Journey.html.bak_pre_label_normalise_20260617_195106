@@ -157,7 +157,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
     <a href="HomeTest Operating Model - Adam Journey.html" class="active">Adam</a>
     <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
-    <a href="HomeTest Operating Model - Joe Journey.html">Joe</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -256,7 +255,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What he walks in with</div>
           <div class="whats-happening-body">A PSA Active Surveillance cohort growing year on year as more men are eligible. A quarterly clinic cycle. A list of patients who repeatedly miss appointments and a smaller list of patients who have stopped attending altogether. NICE NG131 surveillance guidance in his head. <strong>The clinical question is: how do I keep these men in surveillance without my clinic capacity being the limit?</strong></div>
         </div>
 
@@ -268,7 +267,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who he is talking to</div>
             <div class="careteam-text">His clinical nurse specialist on the cohort. His MDT. His Trust&apos;s outpatient lead on capacity. The radiologist on the imaging follow-on. The patient.</div>
           </div>
         </div>
@@ -302,19 +301,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What the data shows</div>
           <div class="whats-happening-body">Follow-up appointments account for around 54% of NHS outpatient activity. Eight million outpatient appointments went unattended in England in 2023/24. <strong>The PSA-AS quarterly review is precisely the kind of follow-up that, done remotely, releases clinic capacity for the patients who clinically need clinic time.</strong> Surveillance attrition is a known clinical problem in active surveillance cohorts.</div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The clinic-only consequence</div>
           <div class="old-way-body">Patients who fall out of surveillance lose the safety net the surveillance provides. PSA trends are not detected. Disease progression is found later, sometimes too late. The clinical risk is invisible to the clinic and lands on the patient.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who else sees this</div>
             <div class="careteam-text">Catherine, the Acute Trust commissioner who pays for the outpatient capacity Adam burns. The MDT colleagues with the same drop-out curve in their cohorts. The patient who stopped coming.</div>
           </div>
         </div>
@@ -348,19 +347,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is preserved</div>
           <div class="whats-happening-body">The PSA result returns to Adam first, in trend, not to the patient as a raw number. The clinical review remains his. Threshold alerts (built on NICE NG131 surveillance guidance) escalate to him; routine in-range results are reviewed in the same MDT rhythm he uses now. <strong>The kit changes where the blood is drawn. It does not change who reads the trend.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">What he was worried it would be</div>
           <div class="old-way-body">A model that bypasses the consultant, sends results direct to the patient, and removes the clinical interpretation step. Adam would not have adopted that. Most of his consultant colleagues would not have either. Clinician-initiated only works if the clinician&apos;s role is held.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who governs the clinical pathway</div>
             <div class="careteam-text">Aisha, the Clinical Safety Group lead, owning the safety case and the threshold-alert rules. The MHRA-cleared kit supplier on lab assurance. The Trust&apos;s clinical governance lead on local sign-off.</div>
           </div>
         </div>
@@ -396,19 +395,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What this looks like in clinic</div>
           <div class="whats-happening-body">A short conversation at the end of the in-clinic appointment: would you be comfortable doing the next blood at home? Almost every patient says yes. The kit ships from the supplier. The patient takes the sample on the date the clinic would have happened. The lab processes it. The result lands in Adam&apos;s system before he would have seen the patient. <strong>The clinic visit that did not happen is one he did not have capacity for anyway.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old shape</div>
           <div class="old-way-body">Every patient comes in every quarter. No tier of patients reading their trend remotely. No clinic time freed for the patients whose disease behaviour means clinic is the right venue. The clinic-only model treats every patient as if they need clinic time, regardless of whether they clinically do.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is operating the pathway</div>
             <div class="careteam-text">The clinical nurse specialist coordinating onboarding. The supplier shipping the kit. The lab processing the sample. The platform delivering the result back. The patient.</div>
           </div>
         </div>
@@ -442,19 +441,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">How surveillance actually works now</div>
           <div class="whats-happening-body">Routine in-range PSA results are reviewed in trend by Adam in the same MDT rhythm. Threshold breaches (rate of change, absolute value) trigger an alert and an MDT discussion within a defined window. Patients who would benefit from clinic are seen in clinic. Patients whose disease is stable stay home for the next quarterly cycle. <strong>The model surfaces clinical signal, not appointment volume.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old rhythm</div>
           <div class="old-way-body">Every quarter, every patient, in clinic regardless of trend. The signal-to-noise ratio of in-clinic surveillance was poor because most appointments confirmed stability rather than detecting change. The clinically interesting patients shared clinic time with the clinically uneventful ones.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">The MDT, holding the trend review. The CNS, coordinating between routine surveillance and escalation. Priya on the data layer, ensuring the result writes back to the Trust EPR cleanly. The patient, getting on with their life between cycles.</div>
           </div>
         </div>
@@ -488,19 +487,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What the data shows</div>
           <div class="whats-happening-body">PSA-AS cohort size up; surveillance attrition down (drop-out curve flatter across cycles); clinic capacity reallocated from routine PSA reviews to active concerns and imaging follow-on. Outpatient slots returned to the Trust&apos;s elective recovery target. <strong>The same consultant team holds more patients in surveillance than the clinic-only model could have, with no extra clinic time.</strong> The model passes the test that mattered to him: clinical accountability preserved, reach extended, capacity released.</div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old end-state</div>
           <div class="old-way-body">Cohort capped by clinic capacity. Drop-outs growing with cohort age. Routine bloods consuming consultant time. The clinically interesting patients waiting for an appointment behind the clinically uneventful ones. Surveillance failing the patients it was designed to protect.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who sees the difference</div>
             <div class="careteam-text">Adam and his MDT, running a larger surveillance cohort with no clinic-capacity penalty. Catherine, his Trust commissioner, seeing released outpatient slots flow into elective recovery. Mark and the other men in the cohort, staying in surveillance, getting on with their lives.</div>
           </div>
         </div>

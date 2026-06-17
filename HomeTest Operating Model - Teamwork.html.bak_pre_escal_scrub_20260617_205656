@@ -551,7 +551,7 @@
             <li>IAO in post (permanent NHSE employee)</li>
             <li>IAA governance in post</li>
             <li>PTT handover pattern across clinical areas</li>
-            
+            <li>EScAL flow integrated into supplier onboarding</li>
             <li>DPIA refresh cycle running per configuration</li>
           </ul>
         </div>
@@ -563,7 +563,7 @@
             <li>Stewards DSAs with suppliers and commissioners</li>
             <li>Coordinates engagement across PTT teams</li>
             <li>Holds IAO and IAA posts</li>
-            <li>Coordinates Supplier Onboarding Framework submissions for supplier admission</li>
+            <li>Coordinates EScAL submissions for supplier admission</li>
           </ul>
         </div>
       </div>
@@ -572,7 +572,7 @@
         <span class="talks-pill">PTT teams</span>
         <span class="talks-pill">NHS Legal</span>
         <span class="talks-pill">Caldicott Guardian</span>
-        
+        <span class="talks-pill">EScAL</span>
         <span class="talks-pill">Suppliers (DSA)</span>
         <span class="talks-pill">Commissioners (DSA)</span>
       <span class="cap-personas"><span class="personas-label">Affects</span><a href="HomeTest Operating Model - Persona Ngozi.html" title="Open Ngozi's persona page" style="text-decoration:none;line-height:0;"><img class="persona-portrait" src="Assets/Personas/ngozi.png" alt="Ngozi" title="Ngozi"></a></span>
@@ -588,11 +588,11 @@
           <div class="stand-row"><div class="stand-row-text"><strong>IAO appointment</strong>NHSE policy requires the Information Asset Owner to be a permanent NHSE employee. <strong style="display:inline">IAO confirmed in place at the HomeTest Delivery Board on 9 June 2026.</strong> Earlier dependency on a HomeTest transition out of DPSP no longer applies &mdash; the programme remains in DPSP (transfer to At Home and Community cancelled, 9 June 2026).</div><span class="pill pill-live">Live</span><span class="size-pill size-xs">XS</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>IAA governance</strong>IAA (Information Asset Administrator) supports the IAO in day-to-day asset management and access decisions. Unresolved alongside the IAO; same eligibility constraint applies (must be a permanent NHSE employee).</div><span class="pill pill-open">Open</span><span class="size-pill size-xs">XS</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>PTT handover pattern across clinical areas</strong>PTT teams are organised by clinical area. The screening PTT covers HIV only; PSA moves to a different PTT team as the second clinical area enters scope. A portable handover pattern is needed before that handover happens.</div><span class="pill pill-open">Open</span><span class="size-pill size-m">M</span></div>
-          <div class="stand-row"><div class="stand-row-text"><strong>Supplier Onboarding Framework</strong>Strawman v0.1 drafted 24 April 2026 (author Scott Eason). Seven design principles, five criteria dimensions tiered core/scaled/aspirational, published self-assess pack, single combined assurance gate, apply journey. Four open decisions called out for SLT challenge. Operational integration in flight. Retroactive assurance check needed for Alpha suppliers admitted under earlier route.</div><span class="pill pill-flight">In flight</span><span class="size-pill size-l">L</span></div>
+          <div class="stand-row"><div class="stand-row-text"><strong>EScAL supplier assurance compliance</strong>Surfaced April 2026. Suppliers must clear EScAL when coming on board. Process and gate criteria not yet integrated into onboarding flow. Retroactive check needed for Alpha suppliers.</div><span class="pill pill-open">Open</span><span class="size-pill size-m">M</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>Legal-direction document set (DPIA + tech spec + privacy notice + SoS letter)</strong>Beta DPIA at draft v0.8 (last uplift 16 June 2026) incorporating PTT and risk-assessment workshop feedback. Awaiting first-line full review from Rahima Oliver (PTT). Earlier end-June 2026 sign-off target no longer realistic on current trajectory. Template DSA query raised again by PTT with NHS Legal on 9 June 2026, remains outstanding.</div><span class="pill pill-flight">In flight</span><span class="size-pill size-l">L</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>DSAs with suppliers and commissioners</strong>Template DSA in development; PTT advised on 14 May 2026 that the earlier template may not be the correct one. Query raised again with NHS Legal on 9 June 2026 during the DPIA / Directions catch-up, remains outstanding. Initial LA IG engagement meetings underway. Each party independent controller.</div><span class="pill pill-flight">In flight</span><span class="size-pill size-m">M</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>Boilerplate IG packs</strong>Pre-cleared IG artefacts (template DPIA, default controller designation, default lawful-basis position) that a new commissioner can use without doing IG work from scratch. Reduces onboarding load on PTT and commissioners. Light-touch option not yet agreed.</div><span class="pill pill-open">Open</span><span class="size-pill size-m">M</span></div>
-          <div class="stand-row"><div class="stand-row-text"><strong>Supplier onboarding apply journey</strong>End-to-end mechanism for a supplier to discover the criteria pack, self-assess, submit, clear the combined assurance gate and integrate. Two strawman documents in place; not yet in operational use.</div><span class="pill pill-flight">In flight</span><span class="size-pill size-m">M</span></div>
+          <div class="stand-row"><div class="stand-row-text"><strong>Supplier Onboarding Framework</strong>End-to-end pattern for bringing a new supplier through commercial admission, EScAL assurance, clinical safety review and technical integration. Two strawman documents in place; not yet in operational use.</div><span class="pill pill-flight">In flight</span><span class="size-pill size-m">M</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>Private beta legal direction need (PTT response tracking)</strong>Email sent 1 May 2026 to PTT asking whether private beta needs a legal direction. No reply for 18 days as at 18 May. Follow-up in progress. Tracked action, not abstract risk.</div><span class="pill pill-open">Open</span><span class="size-pill size-xs">XS</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>IG decision responsiveness</strong>Standing risk. Platform depends on PTT and other IG bodies; counterparts operate on their own timelines. Delays compound across configurations as platform scales.</div><span class="pill pill-risk">Risk</span><span class="size-pill size-l">L</span></div>
           <div class="stand-row"><div class="stand-row-text"><strong>IG counterpart capacity (PTT and broader NHSE IG)</strong>Standing risk. PTT teams have limited bandwidth. Framework has to plan around finite counterpart capacity.</div><span class="pill pill-risk">Risk</span><span class="size-pill size-l">L</span></div>
@@ -612,7 +612,7 @@
         <div class="detail-h">Standing interfaces</div>
         <table class="intf-table">
           <tr><td class="intf-ext">PTT teams</td><td>Direction submissions, working assumption notifications, response tracking, handover when new clinical areas enter scope</td><td class="intf-cadence">Per-submission + standing relationship</td></tr>
-          
+          <tr><td class="intf-ext">EScAL</td><td>Supplier assurance submissions, gate decisions, retroactive assurance for Alpha suppliers</td><td class="intf-cadence">Per-supplier admission</td></tr>
           <tr><td class="intf-ext">NHS Legal</td><td>Lawful basis advice, controller designation, direction-need advisory</td><td class="intf-cadence">Per-matter + retained advisory</td></tr>
           <tr><td class="intf-ext">Caldicott Guardian</td><td>Escalation on confidentiality positions, advisory input on lawful basis</td><td class="intf-cadence">As needed</td></tr>
           <tr><td class="intf-ext">Suppliers / commissioners</td><td>DSA negotiation, DPIA inputs, controller designation per configuration</td><td class="intf-cadence">Per-counterpart + per-configuration refresh</td></tr>
@@ -1698,7 +1698,7 @@
         <p class="ext-desc">Escalation route for confidentiality and ethical use of patient data.</p>
       </div>
       <div class="ext-card">
-        
+        <div class="ext-card-head"><div class="ext-name">EScAL</div><div class="ext-caps"><a class="ext-cap-pill" href="#cap-3">3</a></div></div>
         <div class="ext-tag">NHSE assurance gate</div>
         <p class="ext-desc">Supplier assurance process. Mandatory gate at admission.</p>
       </div>

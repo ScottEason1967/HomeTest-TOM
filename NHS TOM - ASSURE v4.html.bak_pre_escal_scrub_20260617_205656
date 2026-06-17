@@ -454,7 +454,7 @@
   <div class="stage-intro">
     <h2>About this stage</h2>
     <p><strong>The asymmetry is deliberate.</strong> Suppliers must demonstrate they meet minimum standards before they can operate on the platform. Commissioners face the opposite: barriers are removed, support is provided, the aim is to make participation as easy as possible.</p>
-    <p><strong>Supplier onboarding:</strong> Evidence packs, IG compliance (DPIA, data controller model), clinical safety (DCB0129/DCB0160), MHRA registration where applicable, the Supplier Onboarding Framework. Single reusable gateway rather than per-commissioner reassurance.</p>
+    <p><strong>Supplier onboarding:</strong> Evidence packs, IG compliance (DPIA, data controller model), clinical safety (DCB0129/DCB0160), MHRA registration where applicable, EScAL assurance framework. Single reusable gateway rather than per-commissioner reassurance.</p>
     <p><strong>Commissioner enablement:</strong> Ready-made business cases, pathway templates, integration support, dedicated onboarding contacts. Zero friction for a commissioner who wants to offer home testing to their population.</p>
     <div class="asymmetry-callout">Suppliers face a gateway. Commissioners face an open door.</div>
   <div class="holding-q">
@@ -500,7 +500,7 @@
           <li>Clinical accountability model: where does accountability sit at each touch point in the patient journey?</li>
           <li>Offboarding trigger criteria and process: what happens when a supplier fails to meet standards?</li>
           <li>Information Asset Owner (IAO) appointment: CRITICAL BLOCKER. PTT requires the IAO to be a permanent NHSE employee. Programme heavily contractor-staffed. SRO on maternity leave with deputy in place. Information Asset Administrator (IAA) governance also unresolved. No timeline for resolution. DPIA cannot be approved without IAO sign-off</li>
-          <li>Supplier Onboarding Framework: drafted in April 2026 (Strawman v0.1). Suppliers self-assess against the published criteria pack, submit, clear the assurance gate. Alpha suppliers (Preventx, SH:24) admitted under earlier route may need to complete retroactively.</li>
+          <li>EScAL assurance framework: surfaced in April. Suppliers must go through EScAL when coming on board. Alpha suppliers (Preventx, SH:24) may need to complete retroactively. No owner assigned</li>
           <li>IG resourcing: broader governance gaps beyond IAO. PTT capacity constrained across NHS</li>
         </ul>
       </div>

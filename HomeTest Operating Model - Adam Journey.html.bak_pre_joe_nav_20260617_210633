@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hannah's story: HomeTest Operating Model</title>
+<title>Adam's story: HomeTest Operating Model</title>
 <style>
  .topnav{background:#fff;border-bottom:1px solid #ebeef1;padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.10);position:sticky;top:0;z-index:200;}
  .nav-back{font-size:13px;font-weight:700;color:#003087;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
@@ -155,8 +155,8 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Layla Journey.html">Layla</a>
     <a href="HomeTest Operating Model - Sean Journey.html">Sean</a>
     <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
-    <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
-    <a href="HomeTest Operating Model - Hannah Journey.html" class="active">Hannah</a>
+    <a href="HomeTest Operating Model - Adam Journey.html" class="active">Adam</a>
+    <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -169,52 +169,52 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       <div>
         <div class="hero-rule"></div>
         <div class="hero-eyebrow">A clinician&apos;s story through the operating model</div>
-        <h1 class="hero-title">The bloods that<br><em>never needed</em><br>a clinic.</h1>
-        <p class="hero-strap">Hannah is a GP partner. She runs the routine Iron deficiency anaemia review cycle for her practice. Layla is on her list. So are a hundred others. Every quarter she runs the same six-month FBC clinic, and every quarter the same patients miss the appointment, get rebooked, and miss again. The cycle has nothing to do with the bloods themselves. <strong>This is the story of how the model lets her hold the cohort without holding their diaries.</strong></p>
+        <h1 class="hero-title">The patients<br>he <em>cannot see</em><br>stay in surveillance.</h1>
+        <p class="hero-strap">Adam is a consultant urologist running a PSA Active Surveillance cohort at a large acute trust. He sees his patients on a quarterly cycle. Some miss appointments because of work, travel or caring responsibilities. Some drop out of surveillance entirely. The drop-outs are the patients he worries about most. <strong>This is the story of how the model lets him keep more patients in surveillance without his clinic growing.</strong></p>
       </div>
       <div class="hero-portrait-box">
         <div class="hero-portrait-circ">
-          <img src="Assets/Personas/hannah.png" alt="Hannah">
+          <img src="Assets/Personas/adam.png" alt="Adam">
         </div>
-        <div class="hero-portrait-name">Hannah</div>
-        <div class="hero-portrait-role">GP partner<br>Primary-care monitoring</div>
+        <div class="hero-portrait-name">Adam</div>
+        <div class="hero-portrait-role">Consultant urologist<br>PSA Active Surveillance</div>
       </div>
     </div>
   </div>
 
   <!-- RIBBON -->
   <div class="ribbon-wrap">
-    <div class="ribbon-eyebrow">Hannah&apos;s journey at a glance &middot; six stages, one practice</div>
+    <div class="ribbon-eyebrow">Adam&apos;s journey at a glance &middot; six stages, one cohort</div>
     <div class="ribbon">
       <a class="ribbon-stage" href="#stage-1">
         <div class="ribbon-num">1</div>
-        <div class="ribbon-label">The list</div>
-        <div class="ribbon-substage">The patients she keeps rebooking</div>
+        <div class="ribbon-label">The cohort</div>
+        <div class="ribbon-substage">The patients in front of him</div>
       </a>
       <a class="ribbon-stage" href="#stage-2">
         <div class="ribbon-num">2</div>
-        <div class="ribbon-label">The missed appointment</div>
-        <div class="ribbon-substage">15m a year, £216m, every practice in England</div>
+        <div class="ribbon-label">The drop-outs</div>
+        <div class="ribbon-substage">The clinic-only model&apos;s blind spot</div>
       </a>
       <a class="ribbon-stage" href="#stage-3">
         <div class="ribbon-num">3</div>
         <div class="ribbon-label">The model&apos;s offer</div>
-        <div class="ribbon-substage">Kit out, result back to her record</div>
+        <div class="ribbon-substage">Kit out, result back to him</div>
       </a>
       <a class="ribbon-stage" href="#stage-4">
         <div class="ribbon-num">4</div>
         <div class="ribbon-label">First home prescriptions</div>
-        <div class="ribbon-substage">Layla and the early cohort</div>
+        <div class="ribbon-substage">Right patient, right cycle</div>
       </a>
       <a class="ribbon-stage" href="#stage-5">
         <div class="ribbon-num">5</div>
-        <div class="ribbon-label">Routine monitoring in flight</div>
-        <div class="ribbon-substage">FBCs in the record, not in the diary</div>
+        <div class="ribbon-label">Surveillance in flight</div>
+        <div class="ribbon-substage">Trends, not appointments</div>
       </a>
       <a class="ribbon-stage" href="#stage-6">
         <div class="ribbon-num">6</div>
-        <div class="ribbon-label">The practice shape now</div>
-        <div class="ribbon-substage">Slots for the patients who need clinic</div>
+        <div class="ribbon-label">The clinic shape now</div>
+        <div class="ribbon-substage">Time for the patients who need it</div>
       </a>
     </div>
   </div>
@@ -224,13 +224,13 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="framing-grid">
       <div class="framing-tile">
         <div class="framing-tile-eyebrow">The clinical North Star</div>
-        <div class="framing-tile-h">The clinical accountability does not move. The venue does.</div>
-        <div class="framing-tile-body">Hannah is not interested in a model that bypasses her record or sends raw numbers to a patient. The FBC result lands in her GP system as if it had been drawn at the practice. <strong>The kit changes where the blood is taken. It does not change who reads the trend or who decides what happens next.</strong></div>
+        <div class="framing-tile-h">Clinical accountability preserved. Reach extended. Clinic time freed for the patients who need it.</div>
+        <div class="framing-tile-body">Adam is not interested in a model that quietly removes him from the loop or sends raw numbers to patients without clinical interpretation. The result comes back to him first. He reads it against the PSA trajectory he is tracking. He decides what happens next. <strong>The model that earns clinician adoption is the one that protects clinical accountability rather than routing around it.</strong></div>
       </div>
       <div class="framing-tile">
-        <div class="framing-tile-eyebrow">Why this works for her practice</div>
-        <div class="framing-tile-h">Phlebotomy load lifted. DNA cycle broken. Capacity returned to the patients who need clinic.</div>
-        <div class="framing-tile-body"><strong>Practice-nurse phlebotomy</strong> is a scarce resource, and the routine monitoring cycle consumes a lot of it. <strong>DNA-driven rework</strong> compounds the problem: missed appointment, rebook, miss again. <strong>The home-test cycle</strong> removes the venue constraint, returns the practice nurse slot to acute or complex patients, and surfaces the trend on Hannah&apos;s screen on time.</div>
+        <div class="framing-tile-eyebrow">Why this works for him</div>
+        <div class="framing-tile-h">Reach, adherence, capacity. Three clinical wins in the same move.</div>
+        <div class="framing-tile-body"><strong>Reach.</strong> Patients the in-clinic service misses, rural travellers, shift workers, carers, the gradual drop-outs. <strong>Adherence.</strong> A kit at home does not get missed because of work, weather, transport or childcare. <strong>Capacity.</strong> Every routine quarterly monitoring done at home frees the slot for the patient who clinically needs the room. The pattern does not displace the clinical role. It changes which patients reach the clinic and why.</div>
       </div>
     </div>
   </div>
@@ -240,33 +240,35 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
     <!-- STAGE 1 -->
     <div class="stage" id="stage-1">
-      <div class="stage-side"><div class="stage-number">01</div></div>
+      <div class="stage-side">
+        <div class="stage-number">01</div>
+      </div>
       <div class="stage-main">
-        <div class="stage-eyebrow">The list &middot; the patients she keeps rebooking</div>
-        <h2 class="stage-title">Hannah&apos;s list shows a hundred-odd patients on the Iron deficiency anaemia review cycle. Several names have a familiar rhythm: booked, missed, rebooked, missed again. Layla is one of them. The clinical risk lives with the patients who fall out of the cycle, not the patients she sees. <span class="hm-witness" data-moment="hannah-s1"></span></h2>
+        <div class="stage-eyebrow">The cohort &middot; the patients in front of him</div>
+        <h2 class="stage-title">Adam runs a PSA Active Surveillance clinic at a large acute trust. The cohort grows, the clinic doesn&apos;t. Some patients live far from the hospital, some work shifts, some care for someone at home. The drop-outs are the patients he worries about most. <span class="hm-witness" data-moment="adam-s1"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Hannah Story/hannah-stage1.png" alt="Hannah Stage 1" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Adam Story/adam-stage1.png" alt="Adam Stage 1" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">The bloods are not the problem. The clinic was always the wrong venue for routine monitoring. The patients I lose are the patients who were never going to be able to come in at 11am on a Tuesday.</p>
-          <div class="pull-quote-attribution">Hannah</div>
+          <p class="pull-quote-text">I do not need a new tool. I need the patients I cannot see in clinic to stay in surveillance. Give me a reliable way to monitor them at home and put the result back in front of me, and I will use it.</p>
+          <div class="pull-quote-attribution">Adam</div>
         </div>
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">A practice list of patients on iron supplementation due 6-month FBC monitoring. A diary that books them in 10-minute slots. A practice-nurse rota that runs full. A familiar cluster of DNA-flagged names. <strong>The clinical question is: how do I hold these patients in the monitoring cycle without my clinic capacity being the bottleneck?</strong></div>
+          <div class="whats-happening-body">A PSA Active Surveillance cohort growing year on year as more men are eligible. A quarterly clinic cycle. A list of patients who repeatedly miss appointments and a smaller list of patients who have stopped attending altogether. NICE NG131 surveillance guidance in his head. <strong>The clinical question is: how do I keep these men in surveillance without my clinic capacity being the limit?</strong></div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Book, miss, rebook, miss again. Or worse, drift out of monitoring entirely and re-present with deficiency anaemia symptoms months later. The cycle treats every patient as if they can come in on a Tuesday morning. Most can. Some can&apos;t. The ones who can&apos;t are the ones the cycle quietly drops.</div>
+          <div class="old-way-body">Quarterly in-clinic phlebotomy and consultant review. The patient comes to the hospital, has a PSA drawn, and waits to be seen. The cohort that drops out is the cohort that loses surveillance. The clinical risk lands on the dropped patients, not on the model.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Her practice nurse. Her practice manager on diary capacity. Anita on the ICB / GP commissioner side. The patient.</div>
+            <div class="careteam-text">His clinical nurse specialist on the cohort. His MDT. His Trust&apos;s outpatient lead on capacity. The radiologist on the imaging follow-on. The patient.</div>
           </div>
         </div>
 
@@ -274,9 +276,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-label">Where this lives in the model</div>
           <div class="crosslinks-row">
             <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Hannah.html" target="_blank">Hannah persona</a>
-            <span class="crosslinks-tag">H&amp;M</span>
-            <a href="HomeTest Operating Model - Layla Journey.html" target="_blank">Layla&apos;s journey</a>
+            <a href="HomeTest Operating Model - Persona Adam.html" target="_blank">Adam persona</a>
+            <span class="crosslinks-tag">Why</span>
+            <a href="HomeTest Operating Model - Why.html" target="_blank">Why this model</a>
           </div>
         </div>
       </div>
@@ -284,33 +286,35 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
     <!-- STAGE 2 -->
     <div class="stage" id="stage-2">
-      <div class="stage-side"><div class="stage-number">02</div></div>
+      <div class="stage-side">
+        <div class="stage-number">02</div>
+      </div>
       <div class="stage-main">
-        <div class="stage-eyebrow">The missed appointment &middot; the structural problem</div>
-        <h2 class="stage-title">Fifteen million general-practice appointments are missed in England every year. Two hundred and sixteen million pounds. The routine monitoring slot is precisely the kind of appointment that breaks first. The patient gets blamed for &lsquo;not engaging&rsquo;; the venue takes none of the responsibility. <span class="hm-witness" data-moment="hannah-s2"></span></h2>
+        <div class="stage-eyebrow">The drop-outs &middot; the clinic-only model&apos;s blind spot</div>
+        <h2 class="stage-title">Follow-up appointments are fifty-four per cent of NHS outpatient activity. The PSA-AS quarterly review is exactly the kind of follow-up that never needed a room. The patients who drop out are the ones the clinic-only model was never going to hold. <span class="hm-witness" data-moment="adam-s2"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Hannah Story/hannah-stage2.png" alt="Hannah Stage 2" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Adam Story/adam-stage2.png" alt="Adam Stage 2" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">Layla wasn&apos;t refusing care. She was keeping her job, getting her kids to school, looking after a parent. The clinic was always the wrong venue. The risk was always in the model, not in her.</p>
-          <div class="pull-quote-attribution">Hannah</div>
+          <p class="pull-quote-text">The patients who miss the appointment are not refusing care. They are keeping their jobs, getting their kids to school, looking after a parent. The clinic was always the wrong venue for routine bloods. The risk was always in the model, not in them.</p>
+          <div class="pull-quote-attribution">Adam</div>
         </div>
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">Around 15 million general-practice appointments are missed each year, costing the NHS ~£216m. Routine monitoring appointments DNA at a higher rate than acute or complex visits. Around 307 million GP sessions are scheduled annually. <strong>The home-test cycle is the way to remove the venue cost from the bloods that never needed clinic in the first place.</strong></div>
+          <div class="whats-happening-body">Follow-up appointments account for around 54% of NHS outpatient activity. Eight million outpatient appointments went unattended in England in 2023/24. <strong>The PSA-AS quarterly review is precisely the kind of follow-up that, done remotely, releases clinic capacity for the patients who clinically need clinic time.</strong> Surveillance attrition is a known clinical problem in active surveillance cohorts.</div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Patients drop out of monitoring. Deficiency anaemia gets re-detected later, often via A&amp;E or an acute appointment. The cost lands on a different part of the system. The original missed appointment looks &lsquo;just&rsquo; like £30. The downstream cost is much larger.</div>
+          <div class="old-way-body">Patients who fall out of surveillance lose the safety net the surveillance provides. PSA trends are not detected. Disease progression is found later, sometimes too late. The clinical risk is invisible to the clinic and lands on the patient.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Anita, on the ICB / GP commissioner side, paying for the access problem. The other GP partners running the same DNA curve. The practice nurses doing the rebooking work.</div>
+            <div class="careteam-text">Catherine, the Acute Trust commissioner who pays for the outpatient capacity Adam burns. The MDT colleagues with the same drop-out curve in their cohorts. The patient who stopped coming.</div>
           </div>
         </div>
 
@@ -318,9 +322,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-label">Where this lives in the model</div>
           <div class="crosslinks-row">
             <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Anita.html" target="_blank">Anita &middot; ICB / GP commissioner</a>
+            <a href="HomeTest Operating Model - Persona Catherine.html" target="_blank">Catherine persona</a>
             <span class="crosslinks-tag">H&amp;M</span>
-            <a href="HomeTest Operating Model - Layla Journey.html" target="_blank">Layla&apos;s journey</a>
+            <a href="HomeTest Operating Model - Mark Journey.html" target="_blank">Mark&apos;s journey</a>
           </div>
         </div>
       </div>
@@ -328,33 +332,35 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
     <!-- STAGE 3 -->
     <div class="stage" id="stage-3">
-      <div class="stage-side"><div class="stage-number">03</div></div>
+      <div class="stage-side">
+        <div class="stage-number">03</div>
+      </div>
       <div class="stage-main">
-        <div class="stage-eyebrow">The model&apos;s offer &middot; kit out, result to her record</div>
-        <h2 class="stage-title">A home FBC kit ordered against Hannah&apos;s prescription. The sample comes back to the lab. The result lands in her GP system before the appointment that did not happen would have happened. The clinical role is preserved. The diary is not. <span class="hm-witness" data-moment="hannah-s3"></span></h2>
+        <div class="stage-eyebrow">The model&apos;s offer &middot; kit out, result back to him</div>
+        <h2 class="stage-title">The home pathway sends the kit to the patient. The sample comes back to the lab. The PSA result lands on Adam&apos;s desk before the next clinic, in trend with everything that came before. The clinical role is preserved, the venue is not. <span class="hm-witness" data-moment="adam-s3"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Hannah Story/hannah-stage3.png" alt="Hannah Stage 3" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Adam Story/adam-stage3.png" alt="Adam Stage 3" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">If the result lands in the record, with the trend, and the clinical interpretation is still mine, the kit is just a change of venue. The clinical accountability does not move. That is what I needed to know.</p>
-          <div class="pull-quote-attribution">Hannah</div>
+          <p class="pull-quote-text">I am not interested in a model that sends raw numbers to a patient without clinical interpretation. I am interested in a model where the kit changes the venue and the clinical accountability does not move. That is what this is.</p>
+          <div class="pull-quote-attribution">Adam</div>
         </div>
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">The result returns to Hannah&apos;s GP system via the framework&apos;s EPR write-back. The trend display is unchanged. The clinical review remains hers. Threshold alerts escalate to her in the same way an in-clinic FBC would. <strong>The patient experiences a kit. Hannah experiences the result on the same screen as always.</strong></div>
+          <div class="whats-happening-body">The PSA result returns to Adam first, in trend, not to the patient as a raw number. The clinical review remains his. Threshold alerts (built on NICE NG131 surveillance guidance) escalate to him; routine in-range results are reviewed in the same MDT rhythm he uses now. <strong>The kit changes where the blood is drawn. It does not change who reads the trend.</strong></div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">A model that sends FBC results directly to the patient as raw numbers, or sits the results in a parallel system her practice does not see. Either would have killed adoption. Hannah is not interested in a model that routes around her.</div>
+          <div class="old-way-body">A model that bypasses the consultant, sends results direct to the patient, and removes the clinical interpretation step. Adam would not have adopted that. Most of his consultant colleagues would not have either. Clinician-initiated only works if the clinician&apos;s role is held.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Aisha, the Clinical Safety Group lead, owning the safety case for primary-care home testing. Ngozi, the Information Governance lead, on the EPR write-back DSA. The kit supplier on lab assurance.</div>
+            <div class="careteam-text">Aisha, the Clinical Safety Group lead, owning the safety case and the threshold-alert rules. The MHRA-cleared kit supplier on lab assurance. The Trust&apos;s clinical governance lead on local sign-off.</div>
           </div>
         </div>
 
@@ -362,7 +368,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-label">Where this lives in the model</div>
           <div class="crosslinks-row">
             <span class="crosslinks-tag">What</span>
-            <a href="HomeTest Operating Model - Pattern Overlay Detail.html" target="_blank">Primary-care pattern &middot; IDA</a>
+            <a href="HomeTest Operating Model - Pattern Overlay Detail.html" target="_blank">Clinical overlay &middot; PSA-AS</a>
+            <span class="crosslinks-tag">When</span>
+            <a href="HomeTest Operating Model - Lifecycle.html" target="_blank">ASSURE stage</a>
             <span class="crosslinks-tag">Who</span>
             <a href="HomeTest Operating Model - Persona Aisha.html" target="_blank">Aisha &middot; Clinical / CSG</a>
           </div>
@@ -372,33 +380,35 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
     <!-- STAGE 4 -->
     <div class="stage" id="stage-4">
-      <div class="stage-side"><div class="stage-number">04</div></div>
+      <div class="stage-side">
+        <div class="stage-number">04</div>
+      </div>
       <div class="stage-main">
-        <div class="stage-eyebrow">First home prescriptions &middot; Layla and the early cohort</div>
-        <h2 class="stage-title">Hannah picks the first patients carefully. Stable iron status, comfortable with the kit, the patients whose missed-appointment record is a logistics problem and not a clinical one. Layla is one of the first. The kit goes home, the result comes back, the diary slot stays free. <span class="hm-witness" data-moment="hannah-s4"></span></h2>
+        <div class="stage-eyebrow">First home prescriptions &middot; right patient, right cycle</div>
+        <h2 class="stage-title">Adam picks the first patients carefully. Stable surveillance trajectory. Comfortable with the kit. Comfortable with the clinical safety net behind it. Mark is one of the first. The kit goes home, the result comes back, the next clinic does not. <span class="hm-witness" data-moment="adam-s4"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Hannah Story/hannah-stage4.png" alt="Hannah Stage 4" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Adam Story/adam-stage4.png" alt="Adam Stage 4" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">Patients I would already trust to manage their own monitoring if the tooling existed. Stable trend, comfortable with the kit, family at home if needed. The model meets Layla where she already is.</p>
-          <div class="pull-quote-attribution">Hannah</div>
+          <p class="pull-quote-text">I am picking patients I would already trust with their own monitoring if the tooling existed. Stable trend, comfortable with the kit, family at home who can help if needed. The model meets them where they already are.</p>
+          <div class="pull-quote-attribution">Adam</div>
         </div>
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">A short conversation at the end of the in-clinic appointment: would you be comfortable doing the next FBC at home? Almost every patient says yes. The kit ships via the framework supplier. The patient takes the sample on the date the clinic would have happened. The lab processes it. The result lands in Hannah&apos;s system on time. <strong>The clinic visit that did not happen is one the practice did not have capacity for anyway.</strong></div>
+          <div class="whats-happening-body">A short conversation at the end of the in-clinic appointment: would you be comfortable doing the next blood at home? Almost every patient says yes. The kit ships from the supplier. The patient takes the sample on the date the clinic would have happened. The lab processes it. The result lands in Adam&apos;s system before he would have seen the patient. <strong>The clinic visit that did not happen is one he did not have capacity for anyway.</strong></div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Every patient comes in every six months. No tier of patients reading their own monitoring rhythm. No practice-nurse time freed for the patients who clinically need it. The clinic-only model treats every patient as if they need clinic time, regardless of whether they clinically do.</div>
+          <div class="old-way-body">Every patient comes in every quarter. No tier of patients reading their trend remotely. No clinic time freed for the patients whose disease behaviour means clinic is the right venue. The clinic-only model treats every patient as if they need clinic time, regardless of whether they clinically do.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">The practice nurse coordinating onboarding. The supplier shipping the kit. The lab processing the sample. The framework platform writing the result back. The patient.</div>
+            <div class="careteam-text">The clinical nurse specialist coordinating onboarding. The supplier shipping the kit. The lab processing the sample. The platform delivering the result back. The patient.</div>
           </div>
         </div>
 
@@ -406,9 +416,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-label">Where this lives in the model</div>
           <div class="crosslinks-row">
             <span class="crosslinks-tag">How</span>
-            <a href="HomeTest Operating Model - Operational.html" target="_blank">Lane 3 &middot; primary-care initiated</a>
+            <a href="HomeTest Operating Model - Operational.html" target="_blank">Lane 3 &middot; clinician-initiated</a>
             <span class="crosslinks-tag">H&amp;M</span>
-            <a href="HomeTest Operating Model - Layla Journey.html" target="_blank">Layla&apos;s journey</a>
+            <a href="HomeTest Operating Model - Mark Journey.html" target="_blank">Mark&apos;s journey</a>
           </div>
         </div>
       </div>
@@ -416,33 +426,35 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
     <!-- STAGE 5 -->
     <div class="stage" id="stage-5">
-      <div class="stage-side"><div class="stage-number">05</div></div>
+      <div class="stage-side">
+        <div class="stage-number">05</div>
+      </div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Routine monitoring in flight &middot; FBCs in the record, not in the diary</div>
-        <h2 class="stage-title">The cohort settles. Routine FBCs arrive on time, in trend, in the record. Threshold breaches escalate to her in the same channel she already uses. The practice diary is no longer the limit on how many patients she can hold in the cycle. <span class="hm-witness" data-moment="hannah-s5"></span></h2>
+        <div class="stage-eyebrow">Surveillance in flight &middot; trends, not appointments</div>
+        <h2 class="stage-title">The cohort settles into a new rhythm. Results arrive on Adam&apos;s desk in trend. Stable patients stay in surveillance. Threshold breaches escalate. The clinic now sees the patients who clinically need to be seen, not every patient by default. <span class="hm-witness" data-moment="adam-s5"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Hannah Story/hannah-stage5.png" alt="Hannah Stage 5" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Adam Story/adam-stage5.png" alt="Adam Stage 5" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">The silence is the result. Most of these results are routine, and routine is the point. When something does change, it changes on my screen with everything else around it, not three months later in a missed-appointment letter.</p>
-          <div class="pull-quote-attribution">Hannah</div>
+          <p class="pull-quote-text">The silence is doing clinical work. Every result is reviewed in trend, and escalation happens when the line moves. Safety is the review, not the appointment. That is what surveillance was supposed to be all along.</p>
+          <div class="pull-quote-attribution">Adam</div>
         </div>
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">Routine in-range FBCs are reviewed in trend by Hannah in the same rhythm she would use for in-clinic results. Threshold breaches (haemoglobin, ferritin) trigger an alert and a routine review. Patients who would benefit from clinic come in; patients on a stable trend stay home for the next cycle. <strong>The system surfaces clinical signal, not appointment volume.</strong></div>
+          <div class="whats-happening-body">Routine in-range PSA results are reviewed in trend by Adam in the same MDT rhythm. Threshold breaches (rate of change, absolute value) trigger an alert and an MDT discussion within a defined window. Patients who would benefit from clinic are seen in clinic. Patients whose disease is stable stay home for the next quarterly cycle. <strong>The model surfaces clinical signal, not appointment volume.</strong></div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Every six months, every patient, in clinic regardless of trend. Most appointments confirmed stability rather than detecting change. The clinically uneventful patients shared diary space with the patients who needed clinic, and the patients who needed clinic waited longer.</div>
+          <div class="old-way-body">Every quarter, every patient, in clinic regardless of trend. The signal-to-noise ratio of in-clinic surveillance was poor because most appointments confirmed stability rather than detecting change. The clinically interesting patients shared clinic time with the clinically uneventful ones.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Hannah, holding the trend review. The practice nurse, coordinating between routine and escalation. Priya on the platform data layer, ensuring the result writes back to the GP system cleanly. The patient.</div>
+            <div class="careteam-text">The MDT, holding the trend review. The CNS, coordinating between routine surveillance and escalation. Priya on the data layer, ensuring the result writes back to the Trust EPR cleanly. The patient, getting on with their life between cycles.</div>
           </div>
         </div>
 
@@ -460,33 +472,35 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
     <!-- STAGE 6 -->
     <div class="stage" id="stage-6">
-      <div class="stage-side"><div class="stage-number">06</div></div>
+      <div class="stage-side">
+        <div class="stage-number">06</div>
+      </div>
       <div class="stage-main">
-        <div class="stage-eyebrow">The practice shape now &middot; slots for the patients who need clinic</div>
-        <h2 class="stage-title">More patients in monitoring. Fewer drop-outs. The practice nurse&apos;s diary now holds the appointments that actually need her. Routine FBCs run quietly through the home pathway and the practice access-target line goes the right way for the first time in a long time. <span class="hm-witness" data-moment="hannah-s6"></span></h2>
+        <div class="stage-eyebrow">The clinic shape now &middot; time for the patients who need it</div>
+        <h2 class="stage-title">More patients in surveillance. Fewer drop-outs. The same consultant cohort. The clinic now sees the patients whose disease behaviour says clinic is the right venue. Capacity goes where the clinical need is, not where the diary template said. <span class="hm-witness" data-moment="adam-s6"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Hannah Story/hannah-stage6.png" alt="Hannah Stage 6" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Adam Story/adam-stage6.png" alt="Adam Stage 6" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">The patients I worried about are still in the cycle. The practice nurse is doing work she should always have been doing. The bloods are happening on time. That is the version of this that was worth doing.</p>
-          <div class="pull-quote-attribution">Hannah</div>
+          <p class="pull-quote-text">The patients I worried about are still in surveillance. The clinic is full of the patients who clinically belong there. Same team, more reach, less attrition. That was the only version of this worth doing.</p>
+          <div class="pull-quote-attribution">Adam</div>
         </div>
 
         <div class="whats-happening">
           <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">Cohort size on routine monitoring up. DNA rate on the routine-monitoring slot sharply down. Practice-nurse time reallocated from FBC draws to acute and complex appointments. Access-target performance on routine appointments improving. <strong>The same practice team holds more patients in monitoring than the clinic-only model could, with no extra clinic capacity.</strong> The model passes the test that mattered to Hannah: clinical accountability preserved, reach extended, practice nurse capacity returned.</div>
+          <div class="whats-happening-body">PSA-AS cohort size up; surveillance attrition down (drop-out curve flatter across cycles); clinic capacity reallocated from routine PSA reviews to active concerns and imaging follow-on. Outpatient slots returned to the Trust&apos;s elective recovery target. <strong>The same consultant team holds more patients in surveillance than the clinic-only model could have, with no extra clinic time.</strong> The model passes the test that mattered to him: clinical accountability preserved, reach extended, capacity released.</div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Cohort size capped by practice capacity. DNA rates flat or rising. Practice-nurse phlebotomy slots consuming the workforce time the practice most needed for acute care. Routine monitoring patients silently dropping out of the cycle.</div>
+          <div class="old-way-body">Cohort capped by clinic capacity. Drop-outs growing with cohort age. Routine bloods consuming consultant time. The clinically interesting patients waiting for an appointment behind the clinically uneventful ones. Surveillance failing the patients it was designed to protect.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
             <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Hannah and the practice nurse, holding a larger cohort with no extra diary cost. Anita, the ICB / GP commissioner, seeing released capacity flow into access metrics. Layla and the other patients on the cohort, getting on with their lives.</div>
+            <div class="careteam-text">Adam and his MDT, running a larger surveillance cohort with no clinic-capacity penalty. Catherine, his Trust commissioner, seeing released outpatient slots flow into elective recovery. Mark and the other men in the cohort, staying in surveillance, getting on with their lives.</div>
           </div>
         </div>
 
@@ -506,11 +520,11 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
   <!-- OUTCOME -->
   <div class="outcome">
-    <div class="outcome-eyebrow">Hannah&apos;s win</div>
-    <h2 class="outcome-title">More patients in monitoring. Practice nurse time returned. Access targets moving in the right direction.</h2>
-    <p class="outcome-body">The patients did not see a model. They saw a kit through the post and a routine cycle that kept them in monitoring without keeping them out of work. <strong>The appointments that did not happen are appointments the practice did not have capacity for anyway.</strong> The patients who needed clinic time now find a slot when they need one.</p>
+    <div class="outcome-eyebrow">Adam&apos;s win</div>
+    <h2 class="outcome-title">More patients in surveillance. Fewer drop-outs. Same team. Clinic time for the patients who clinically need it.</h2>
+    <p class="outcome-body">The patients did not see a model. They saw a kit at home and a result that landed with a clinician who knew them. <strong>The clinic that did not happen is the clinic Adam did not have capacity for anyway.</strong> The cohort he worried about most is still in surveillance, and the patients who clinically belong in clinic now find a slot when they need one.</p>
     <div class="outcome-cta">
-      <a href="HomeTest Operating Model - Persona Hannah.html" class="outcome-btn">Open Hannah&apos;s persona &rarr;</a>
+      <a href="HomeTest Operating Model - Persona Adam.html" class="outcome-btn">Open Adam&apos;s persona &rarr;</a>
       <a href="HomeTest Operating Model - Hearts and Minds.html" class="outcome-btn-sec">Back to Hearts and Minds &rarr;</a>
     </div>
   </div>

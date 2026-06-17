@@ -45,7 +45,6 @@
   .story.sarah{border-top:4px solid #AE2573;}
   .story.adam{border-top:4px solid #006747;}
   .story.hannah{border-top:4px solid #00819B;}
-  .story.joe{border-top:4px solid #5BC093;}
 
   .pair-callout{background:var(--warm-cream);border:1px solid #F0DCA0;border-radius:12px;padding:18px 22px;margin-top:18px;font-size:13.5px;color:var(--text-sec);line-height:1.65;}
   .pair-callout strong{color:var(--text);font-weight:700;}
@@ -114,8 +113,8 @@
   </div>
 
 
-  <h2 class="section-h">Four more stories. Inside the machine.</h2>
-  <p class="section-body">The patient stories above explain why the model deserves to exist. These four explain how it works for the people who run it: the commissioner who buys, the consultant who orders, the GP who holds the cohort, and the supplier the framework admits.</p>
+  <h2 class="section-h">Three more stories. Inside the machine.</h2>
+  <p class="section-body">The patient stories above explain why the model deserves to exist. These three explain how it works for the people who run it: the commissioner who buys, the consultant who orders, the GP who holds the cohort.</p>
   <div class="stories">
     <a class="story sarah" href="HomeTest Operating Model - Sarah Journey.html">
       <img src="Assets/Personas/sarah.png" alt="Sarah">
@@ -128,10 +127,6 @@
     <a class="story hannah" href="HomeTest Operating Model - Hannah Journey.html">
       <img src="Assets/Personas/hannah.png" alt="Hannah">
       <div><div class="s-name">Hannah</div><div class="s-role">GP &middot; iron deficiency anaemia cohort &middot; the cohort-hold story</div><p>Holds the IDA review cycle for a hundred-odd patients. The clinical work is real; most of the lost cycles are venue problems, not clinical ones. The kit changes the venue, not the medicine. <strong>Her full journey, six acts &rarr;</strong></p></div>
-    </a>
-    <a class="story joe" href="HomeTest Operating Model - Joe Journey.html">
-      <img src="Assets/Personas/joe.png" alt="Joe">
-      <div><div class="s-name">Joe</div><div class="s-role">Supplier &middot; framework-admitted &middot; the once-and-reuse story</div><p>Runs a self-sample diagnostics business. Twenty staff, two labs, a kit, the regulatory paperwork done. The framework admits him once, and one conformance certificate carries across every commissioner who calls him off. <strong>His full journey, six acts &rarr;</strong></p></div>
     </a>
   </div>
 

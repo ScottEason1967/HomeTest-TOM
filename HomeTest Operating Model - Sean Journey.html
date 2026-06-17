@@ -78,9 +78,11 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .stage-image{background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-radius:12px;padding:32px 24px;text-align:center;color:var(--text-muted);margin-bottom:22px;border:1px dashed #B5D4E5;font-size:12px;font-weight:600;letter-spacing:0.3px;line-height:1.55;}
 .stage-image-icon{font-size:36px;opacity:0.4;margin-bottom:6px;}
 .stage-image-caption{font-size:11px;font-weight:500;opacity:0.85;letter-spacing:0.3px;margin-top:6px;}
-.pull-quote{background:#FFFBEF;border-left:4px solid var(--amber);border-radius:0 12px 12px 0;padding:18px 22px;margin-bottom:20px;}
-.pull-quote-text{font-size:15px;font-style:italic;color:var(--text);line-height:1.55;margin-bottom:6px;}
-.pull-quote-attribution{font-size:11px;font-weight:800;color:var(--amber-deep);letter-spacing:1.4px;text-transform:uppercase;}
+.pull-quote{margin:24px auto 28px;padding:32px 20px 28px;text-align:center;position:relative;max-width:820px;}
+.pull-quote::before{content:'\201C';position:absolute;left:8px;top:-18px;font-size:110px;color:#C9A227;font-family:Georgia,'Times New Roman',serif;line-height:1;opacity:0.65;pointer-events:none;}
+.pull-quote-text{font-size:24px;font-weight:600;color:var(--text,#212B32);line-height:1.45;letter-spacing:-0.3px;max-width:780px;margin:0 auto;font-style:italic;}
+.pull-quote-attribution{font-size:11.5px;font-weight:800;letter-spacing:2px;color:#C9A227;text-transform:uppercase;margin-top:18px;}
+@media(max-width:720px){.pull-quote-text{font-size:20px;}.pull-quote::before{font-size:84px;top:-10px;}}
 .whats-happening{background:#F4F8FC;border:1px solid #d6e2ef;border-radius:12px;padding:18px 22px;margin-bottom:14px;}
 .whats-happening-label{font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:var(--nhs-blue);text-transform:uppercase;margin-bottom:8px;}
 .whats-happening-body{font-size:13px;color:var(--text-sec);line-height:1.7;}
@@ -155,6 +157,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
     <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
     <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
+    <a href="HomeTest Operating Model - Joe Journey.html">Joe</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -246,7 +249,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-label">What the model is doing underneath</div>
           <div class="whats-happening-body">79.9% of people on the learning disability register had an annual health check (March 2025). The Reasonable Adjustment Digital Flag is a national NHS record flag. The Accessible Information Standard has been a legal requirement since 2016. The infrastructure to identify the cohort has existed for years.</div>
         </div>
 
@@ -258,7 +261,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">Hannah, GP. The annual health check team. The learning disability liaison nurse. Sean&apos;s brother.</div>
           </div>
         </div>
@@ -290,7 +293,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-label">What the model is doing underneath</div>
           <div class="whats-happening-body">Easy-read materials, accessible-format letters, support-worker engagement, and the alternative-route pathway designed into the platform from the start. The cohort identification triggers the cohort-appropriate communication.</div>
         </div>
 
@@ -302,7 +305,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">Sean&apos;s brother. The support worker. The learning disability liaison nurse. Easy-read template authors.</div>
           </div>
         </div>
@@ -334,7 +337,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-label">What the model is doing underneath</div>
           <div class="whats-happening-body">The clinical pathway is unchanged. The clinical result is the same biochemical measurement. What changes is the venue, the support model, and the recognition that the patient&apos;s engagement profile is the design constraint, not the patient&apos;s problem.</div>
         </div>
 
@@ -346,7 +349,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">Sean. His brother. The support worker. The home-test kit supplier. Hannah holding the clinical pathway.</div>
           </div>
         </div>
@@ -381,7 +384,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-label">What the model is doing underneath</div>
           <div class="whats-happening-body">The clinical treatment pathway is unchanged. The communication pathway is adapted to the patient&apos;s needs. Easy-read prescribing instructions, alternative-format letters, and the reasonable-adjustment flag staying live across handovers all combine to make the treatment actually take.</div>
         </div>
 
@@ -393,7 +396,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">Hannah. Practice pharmacist. The learning disability liaison nurse. Sean&apos;s brother. The support worker.</div>
           </div>
         </div>
@@ -425,7 +428,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-label">What the model is doing underneath</div>
           <div class="whats-happening-body">39% of reviewed deaths of people with a learning disability were assessed as avoidable (LeDeR annual report 2023, published 2025). Holding the cohort in proper engagement is the system&apos;s response to that finding. The home pathway is one of the first venues where the response is structural rather than aspirational.</div>
         </div>
 
@@ -437,7 +440,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-label">What the care team sees</div>
             <div class="careteam-text">Sean. His brother. The support worker. Hannah. The learning disability liaison nurse. Sarah, looking at the cohort-level numbers.</div>
           </div>
         </div>

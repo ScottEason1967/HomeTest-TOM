@@ -157,7 +157,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
     <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
     <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
-    <a href="HomeTest Operating Model - Joe Journey.html">Joe</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -249,7 +248,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">NICE clinical knowledge summaries place IDA prevalence at around 8% in adult UK women. The standard monitoring cycle is a six-monthly FBC. The cohort is well-defined; the access problem is the failure to attend appointments at clinic-friendly hours.</div>
         </div>
 
@@ -261,7 +260,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Hannah, GP. Practice nurse. Anita on the ICB / GP commissioner side.</div>
           </div>
         </div>
@@ -293,7 +292,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">Around 15 million general-practice appointments are missed each year, costing the NHS £216 million. The cohort that DNAs is the cohort the clinic-only model fails by design. The home pathway is the structural answer, not a service-recovery patch.</div>
         </div>
 
@@ -305,7 +304,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Hannah. Practice nurse. Practice manager. Anita.</div>
           </div>
         </div>
@@ -337,7 +336,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">The home capillary FBC is a recognised pathway for routine monitoring. The sample is processed at a UKAS-accredited lab on the same assay platform that processes in-clinic samples. The result writes back to the practice EPR via the framework integration.</div>
         </div>
 
@@ -349,7 +348,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">The supplier shipping the kit. The lab. The platform writing the result back. Layla.</div>
           </div>
         </div>
@@ -384,7 +383,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">The treatment pathway is NICE-guideline-aligned and unchanged by the home venue. Iron supplementation continues, with dose adjustments based on the haemoglobin and ferritin response. The GP holds the prescribing accountability.</div>
         </div>
 
@@ -396,7 +395,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Hannah. Practice pharmacist if dose changes. NICE guidelines.</div>
           </div>
         </div>
@@ -428,7 +427,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is happening</div>
           <div class="whats-happening-body">Sustained engagement with monitoring is the outcome that matters clinically. The home cycle holds the patient in the cohort, surfaces threshold breaches on time, and frees the practice nurse slot for the patients who clinically need clinic.</div>
         </div>
 
@@ -440,7 +439,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Layla. Hannah. The practice nurse. The platform holding the cycle reminder.</div>
           </div>
         </div>

@@ -120,8 +120,8 @@
         <div class="entity-line">Signs off clinical safety cases per configuration. Holds the hazard log structure and sign-off route.</div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
-        <div class="entity-name">Supplier Onboarding Framework <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">Published criteria pack, self-assessment, combined assurance gate. Suppliers admitted once, conformance certificate portable. <strong>Status:</strong> Strawman v0.1 drafted (24 April 2026). Apply mechanism design in flight. Retroactive check needed for Alpha suppliers admitted under earlier route.</div>
+        <div class="entity-name">EScAL <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">External supplier assurance gateway. Suppliers must pass EScAL before admission. <strong>Status:</strong> engagement underway. Retroactive supplier-assurance check needed for Alpha suppliers; ongoing supplier admission flow being navigated.</div>
       </div>
       <div class="entity">
         <div class="entity-name">Caldicott Guardian</div>

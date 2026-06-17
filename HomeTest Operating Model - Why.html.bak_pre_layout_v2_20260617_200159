@@ -154,10 +154,7 @@
         </div>
       </div>
     </div>
-    <div style="background:rgba(255,255,255,0.08);border-left:4px solid #FFD66B;border-radius:0 12px 12px 0;padding:18px 22px;margin:24px 0 18px;">
-      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:8px;">Four actors. Four north stars. All four have to hold at once.</div>
-      <div style="font-size:15px;line-height:1.65;color:rgba(255,255,255,0.95);">The supplier makes money. The commissioner saves money or gets more for the same money. The clinician&apos;s time goes where it is needed. The centre is funded through orchestration, never as the supplier. These are simultaneous conditions, not trade-offs &mdash; <strong style="color:#fff;">if any one of them fails, the platform fails</strong>, and the patient purpose at the top goes unmet.</div>
-    </div>
+    <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:rgba(255,255,255,0.62);margin:18px 0 4px;text-transform:uppercase;">And for each actor, that resolves into one north star, one reason to be in, and one economic truth</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:8px;">
       <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:12px;padding:18px 20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><img src="Assets/Personas/sarah.png" alt="Sarah" style="width:38px;height:38px;border-radius:50%;border:2px solid #FFD66B;object-fit:cover;object-position:top center;background:#fff;flex-shrink:0;"><div style="font-size:10px;font-weight:800;letter-spacing:1.6px;color:#FFD66B;text-transform:uppercase;">Commissioner</div></div>
@@ -166,10 +163,10 @@
         <div style="font-size:11px;line-height:1.5;color:rgba(255,255,255,0.78);border-top:1px solid rgba(255,255,255,0.18);padding-top:7px;"><strong style="color:#fff;">The money:</strong> saves, or gets more for the same money, at pathway level.</div>
       </div>
       <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:12px;padding:18px 20px;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><img src="Assets/Personas/priya.png" alt="Priya" style="width:38px;height:38px;border-radius:50%;border:2px solid #7EC8E3;object-fit:cover;object-position:top center;background:#fff;flex-shrink:0;"><div style="font-size:10px;font-weight:800;letter-spacing:1.6px;color:#7EC8E3;text-transform:uppercase;">The centre</div></div>
-        <div style="font-size:17px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:8px;">Matchmaker, not counterparty.</div>
-        <div style="font-size:11.5px;line-height:1.5;color:rgba(255,255,255,0.88);margin-bottom:7px;">Set the standards, run the platform, hold the 2030 vision. Never the supplier.</div>
-        <div style="font-size:11px;line-height:1.5;color:rgba(255,255,255,0.78);border-top:1px solid rgba(255,255,255,0.18);padding-top:7px;"><strong style="color:#fff;">The money:</strong> funded sustainably through orchestration, not through supply.</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><img src="Assets/Personas/joe.png" alt="Joe" style="width:38px;height:38px;border-radius:50%;border:2px solid #5BC093;object-fit:cover;object-position:top center;background:#fff;flex-shrink:0;"><div style="font-size:10px;font-weight:800;letter-spacing:1.6px;color:#5BC093;text-transform:uppercase;">Supplier</div></div>
+        <div style="font-size:17px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:8px;">Easy onboarding.</div>
+        <div style="font-size:11.5px;line-height:1.5;color:rgba(255,255,255,0.88);margin-bottom:7px;">A clean, repeatable route to volume: onboard once, reuse across conditions.</div>
+        <div style="font-size:11px;line-height:1.5;color:rgba(255,255,255,0.78);border-top:1px solid rgba(255,255,255,0.18);padding-top:7px;"><strong style="color:#fff;">The money:</strong> sell across conditions with no assurance burden per deployment.</div>
       </div>
       <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:12px;padding:18px 20px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><img src="Assets/Personas/aisha.png" alt="Aisha" style="width:38px;height:38px;border-radius:50%;border:2px solid #C9A0E3;object-fit:cover;object-position:top center;background:#fff;flex-shrink:0;"><div style="font-size:10px;font-weight:800;letter-spacing:1.6px;color:#C9A0E3;text-transform:uppercase;">Clinician</div></div>
@@ -178,80 +175,33 @@
         <div style="font-size:11px;line-height:1.5;color:rgba(255,255,255,0.78);border-top:1px solid rgba(255,255,255,0.18);padding-top:7px;"><strong style="color:#fff;">The value:</strong> clinic time concentrates where it is needed; routine work leaves the room.</div>
       </div>
       <div style="background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.22);border-radius:12px;padding:18px 20px;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><img src="Assets/Personas/joe.png" alt="Joe" style="width:38px;height:38px;border-radius:50%;border:2px solid #5BC093;object-fit:cover;object-position:top center;background:#fff;flex-shrink:0;"><div style="font-size:10px;font-weight:800;letter-spacing:1.6px;color:#5BC093;text-transform:uppercase;">Supplier</div></div>
-        <div style="font-size:17px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:8px;">Easy onboarding.</div>
-        <div style="font-size:11.5px;line-height:1.5;color:rgba(255,255,255,0.88);margin-bottom:7px;">A clean, repeatable route to volume: onboard once, reuse across conditions.</div>
-        <div style="font-size:11px;line-height:1.5;color:rgba(255,255,255,0.78);border-top:1px solid rgba(255,255,255,0.18);padding-top:7px;"><strong style="color:#fff;">The money:</strong> sell across conditions with no assurance burden per deployment.</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;"><img src="Assets/Personas/priya.png" alt="Priya" style="width:38px;height:38px;border-radius:50%;border:2px solid #7EC8E3;object-fit:cover;object-position:top center;background:#fff;flex-shrink:0;"><div style="font-size:10px;font-weight:800;letter-spacing:1.6px;color:#7EC8E3;text-transform:uppercase;">The centre</div></div>
+        <div style="font-size:17px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:8px;">Matchmaker, not counterparty.</div>
+        <div style="font-size:11.5px;line-height:1.5;color:rgba(255,255,255,0.88);margin-bottom:7px;">Set the standards, run the platform, hold the 2030 vision. Never the supplier.</div>
+        <div style="font-size:11px;line-height:1.5;color:rgba(255,255,255,0.78);border-top:1px solid rgba(255,255,255,0.18);padding-top:7px;"><strong style="color:#fff;">The money:</strong> funded sustainably through orchestration, not through supply.</div>
       </div>
     </div>
   </div>
 
-  <div style="margin:30px 0 0;background:linear-gradient(135deg,#1B3A6B,#003087);border-radius:14px;padding:24px 30px;color:#fff;box-shadow:0 10px 30px rgba(0,48,135,0.18);"><div style="font-size:20px;font-weight:900;letter-spacing:-0.3px;line-height:1.25;margin-bottom:10px;">All four north stars have to hold at the same time.</div>
+  <div style="margin:30px 0 0;background:linear-gradient(135deg,#1B3A6B,#003087);border-radius:14px;padding:24px 30px;color:#fff;box-shadow:0 10px 30px rgba(0,48,135,0.18);">
+      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:8px;">The one rule that binds them</div>
+      <div style="font-size:20px;font-weight:900;letter-spacing:-0.3px;line-height:1.25;margin-bottom:10px;">All four north stars have to hold at the same time.</div>
       <div style="font-size:14px;line-height:1.65;color:rgba(255,255,255,0.92);max-width:880px;">The supplier makes money. The commissioner saves money or gets more for the same money. The clinician's time goes where it is needed. The centre is funded through orchestration, never as the supplier. These are not competing interests to be traded off. They are simultaneous conditions: <strong style="color:#fff;">if any one of them fails, the platform fails</strong>, and the patient purpose at the top goes unmet. The model's job is to make all four true at once.</div>
     </div>
 
-  <!-- Arrow row 1: cards → contextual blocks -->
-  <div style="position:relative;height:60px;margin:-4px 0;">
-    <svg viewBox="0 0 1020 60" preserveAspectRatio="none" style="width:100%;height:100%;display:block;overflow:visible;">
-      <path d="M 130 0 C 130 32, 250 26, 250 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-      <polygon points="250,60 244,52 256,52" fill="#FFD66B"/>
-      <path d="M 890 0 C 890 32, 770 26, 770 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-      <polygon points="770,60 764,52 776,52" fill="#FFD66B"/>
-    </svg>
-  </div>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
-    <div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:12px;padding:22px 24px;color:#fff;">
-      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:8px;">For the commissioner &middot; where the economics actually resolves</div>
-      <h2 style="font-size:22px;font-weight:900;color:#fff;letter-spacing:-0.4px;line-height:1.18;margin-bottom:10px;">The commissioner case lands at pathway level, not test level.</h2>
-      <p style="font-size:13px;line-height:1.62;color:rgba(255,255,255,0.92);margin:0 0 8px;">The economics lens above is necessary, not sufficient. In live commissioning, the cost of a new test and the saving it produces sit on different budget lines. The new test cost lands with one budget holder; the freed-up clinic capacity, the avoided onward referral and the workforce time recovered land with others.</p>
-      <p style="font-size:13px;line-height:1.62;color:rgba(255,255,255,0.92);margin:0;">The model only delivers at scale when the test sits inside a pathway and the pathway carries the economics. Best-practice tariffs at pathway level. <strong style="color:#fff;">Configurations only land where the commissioner has a viable funding route at the pathway level.</strong></p>
-    </div>
-    <div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:14px;padding:22px 26px;margin-top:18px;">
-      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:10px;">For the supplier &middot; the structural commitment</div>
+  <div class="snorth-section" style="margin:30px 0 0;">
+<div style="background:linear-gradient(135deg,#003087,#005EB8);border:2px solid #FFB91D;border-radius:14px;padding:22px 26px;margin-top:18px;">
+      <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;color:#FFD66B;text-transform:uppercase;margin-bottom:10px;">Supplier-onboarding north star &middot; the structural commitment</div>
       <div style="font-size:23px;font-weight:900;color:#fff;line-height:1.18;margin-bottom:10px;letter-spacing:-0.4px;">Assure once. Reuse nationally.</div>
       <div style="font-size:13.5px;line-height:1.65;color:rgba(255,255,255,0.92);max-width:880px;">A supplier admitted to the framework is admitted once. The clinical safety case, the IG package and the lab assurance are then portable across every commissioner who calls them off. The local body acts as the deployment authority &mdash; not as a re-assurer. The published artefact stack (templates for DSA, DPIA, DCB0160, clinical safety case starter) is the carrier of the assurance, not the local team. The centre&apos;s job is the upstream assurance; the local job is administering the deployment, not redoing the work.</div>
     </div>
   </div>
 
-  <!-- Arrow row 2: contextual blocks → strategic questions -->
-  <div style="position:relative;height:60px;margin:-4px 0;">
-    <svg viewBox="0 0 1020 60" preserveAspectRatio="none" style="width:100%;height:100%;display:block;overflow:visible;">
-      <path d="M 255 0 C 255 28, 340 28, 340 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-      <polygon points="340,60 334,52 346,52" fill="#FFD66B"/>
-      <path d="M 765 0 C 765 28, 680 28, 680 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-      <polygon points="680,60 674,52 686,52" fill="#FFD66B"/>
-    </svg>
-  </div>
-<div class="strat-section">
-    <div class="strat-eyebrow">What we're trying to figure out at a strategic level</div><h2 class="strat-title">Three strategic questions.</h2>
-    <p class="strat-intro">Cross-cutting questions that <strong>apply to every product</strong>, not just to one stage or one pathway. The three lenses above frame why the model exists. These three frame what is genuinely hard about making it work.</p>
-    <div class="strat-grid">
-      <div class="strat-q">
-        <div class="strat-q-num">Question 01</div>
-        <div class="strat-q-h">Route to market</div>
-        <div class="strat-q-body">What is the best route to market? How does the centre create a market for each product so that demand and supply meet in a way that scales?</div>
-      </div>
-      <div class="strat-q">
-        <div class="strat-q-num">Question 02</div>
-        <div class="strat-q-h">Commercial viability</div>
-        <div class="strat-q-body">How is this made attractive to commissioners, financially viable for suppliers, and demonstrably value for money for the NHS, all at the same time?</div>
-      </div>
-      <div class="strat-q">
-        <div class="strat-q-num">Question 03</div>
-        <div class="strat-q-h">Supply chain at scale</div>
-        <div class="strat-q-body">How is a supply chain built that can handle different use cases, different initiation patterns, and grow with volume without fragmenting?</div>
-      </div>
-    </div>
-  </div>
-  <!-- Arrow row 3: strategic questions → Direction of Travel -->
-  <div style="position:relative;height:60px;margin:-4px 0;">
-    <svg viewBox="0 0 1020 60" preserveAspectRatio="none" style="width:100%;height:100%;display:block;overflow:visible;">
-      <path d="M 340 0 C 340 28, 430 28, 430 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-      <polygon points="430,60 424,52 436,52" fill="#FFD66B"/>
-      <path d="M 680 0 C 680 28, 590 28, 590 56" stroke="#FFD66B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="6 4"/>
-      <polygon points="590,60 584,52 596,52" fill="#FFD66B"/>
-    </svg>
+  <div class="pathway-econ-callout" style="margin:36px 0 0;background:#FFF9EC;border:1px solid #F0DCA0;border-left:6px solid #C9A227;border-radius:12px;padding:24px 28px;">
+    <div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#9A6700;text-transform:uppercase;margin-bottom:8px;">Where the economics actually resolves</div>
+    <h2 style="font-size:22px;font-weight:800;color:#003087;letter-spacing:-0.4px;line-height:1.2;margin-bottom:12px;">The commissioner case lands at pathway level, not test level.</h2>
+    <p style="font-size:14px;line-height:1.7;color:#4C6272;margin:0 0 10px;">The economics lens above is necessary, not sufficient. In live commissioning, the cost of a new test and the saving it produces sit on different budget lines. The new test cost lands with one budget holder; the freed-up clinic capacity, the avoided onward referral and the workforce time recovered land with others. A commissioner already paying for cheaper venepuncture cannot fund the switch out of test economics alone. It reads as a cost pressure on top of an existing line.</p>
+    <p style="font-size:14px;line-height:1.7;color:#4C6272;margin:0;">The model only delivers at scale when the test sits inside a pathway and the pathway carries the economics. Best-practice tariffs at pathway level, costed against the end-to-end condition pathway, not against the test as a component. Tariff articulation itself sits outside this operating model. The operating model&apos;s job is to make the dependency explicit: <strong>configurations only land where the commissioner has a viable funding route at the pathway level.</strong></p>
   </div>
 
   <div class="dot-section" style="margin:36px 0 0;">
@@ -429,6 +379,29 @@
     <h2 style="font-size:22px; font-weight:800; color:#003087; margin:8px 0 14px; letter-spacing:-0.3px;">Same shape as existing NHS national models.</h2>
     <p style="font-size:14px; line-height:1.7; color:#3C4856; margin:0;">The model is not inventing a new way of doing things. It is taking proven NHS national mechanics and applying them to home testing. <strong>Accreditation</strong> sits with established bodies that already do it: CQC for provider quality, the National Cancer Board, GIRFT or the relevant Royal College depending on the test. <strong>Listing</strong> works the way the National Choice Framework already lists eligible providers for elective care. <strong>Access</strong> works the way ERS already gives clinicians a national digital route to those providers. NHSE is the platform that brings the three together for home testing; it is not the body that decides whether a test is clinically safe. That sits where it sits today. <strong>Same shape, new application.</strong></p>
   </div>
+
+  <div class="strat-section">
+    <div class="strat-eyebrow">What we're trying to figure out at a strategic level</div><h2 class="strat-title">Three strategic questions.</h2>
+    <p class="strat-intro">Cross-cutting questions that <strong>apply to every product</strong>, not just to one stage or one pathway. The three lenses above frame why the model exists. These three frame what is genuinely hard about making it work.</p>
+    <div class="strat-grid">
+      <div class="strat-q">
+        <div class="strat-q-num">Question 01</div>
+        <div class="strat-q-h">Route to market</div>
+        <div class="strat-q-body">What is the best route to market? How does the centre create a market for each product so that demand and supply meet in a way that scales?</div>
+      </div>
+      <div class="strat-q">
+        <div class="strat-q-num">Question 02</div>
+        <div class="strat-q-h">Commercial viability</div>
+        <div class="strat-q-body">How is this made attractive to commissioners, financially viable for suppliers, and demonstrably value for money for the NHS, all at the same time?</div>
+      </div>
+      <div class="strat-q">
+        <div class="strat-q-num">Question 03</div>
+        <div class="strat-q-h">Supply chain at scale</div>
+        <div class="strat-q-body">How is a supply chain built that can handle different use cases, different initiation patterns, and grow with volume without fragmenting?</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 </body>

@@ -96,8 +96,6 @@
   <div class="h-flex">
     <div>
       <h1 class="h-title">Joe.</h1>
-      <a href="HomeTest Operating Model - Joe Journey.html" style="display:inline-block;margin-top:14px;background:#5BC093;color:#003087;font-weight:800;font-size:13px;letter-spacing:0.3px;padding:10px 20px;border-radius:8px;text-decoration:none;box-shadow:0 4px 14px rgba(0,32,64,0.20);">Read Joe&apos;s journey &rarr;</a>
-<a href="HomeTest Operating Model - Supplier Onboarding Framework.html" style="display:inline-block;margin-top:14px;margin-left:8px;background:#003087;color:#fff;font-weight:800;font-size:13px;letter-spacing:0.3px;padding:10px 20px;border-radius:8px;text-decoration:none;box-shadow:0 4px 14px rgba(0,32,64,0.20);">Open the framework &rarr;</a>
       <div class="h-role">Supplier</div>
       <div class="h-quote">&ldquo;I'll join the framework if the criteria are clear, the onboarding is light, and I can make a margin per test.&rdquo;</div>
       <div class="h-bio">Operations director at a HomeTest supplier. Runs kit fulfilment, lab analysis, return logistics. Cares about clean onboarding, predictable volume, and a commercial model that lets his business survive.</div>
@@ -131,8 +129,8 @@
     </div>
 
     <div class="joe-card">
-      <div class="joe-card-h">Supplier Onboarding Framework</div>
-      <div class="joe-card-body">Suppliers self-assess against published criteria, submit, then clear a single combined assurance gate (commercial, clinical, IG, technical, operational). Once admitted, the conformance certificate is portable across commissioners. Drafted as a Strawman in April 2026; process integration in flight. Affects the onboarding gateway <a href="HomeTest Operating Model - Persona Priya.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Priya</a> runs.</div>
+      <div class="joe-card-h">EScAL assurance overlay during onboarding</div>
+      <div class="joe-card-body">Suppliers must pass through the EScAL (Enterprise Service Catalogue Assurance Layer) when coming on board. Surfaced as a requirement in April. Process and gate criteria not yet fully integrated into the supplier onboarding flow. Affects the onboarding gateway <a href="HomeTest Operating Model - Persona Priya.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Priya</a> runs.</div>
     </div>
 
     <div class="joe-card">

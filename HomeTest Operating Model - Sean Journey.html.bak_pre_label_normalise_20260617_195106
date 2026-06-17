@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Layla's story: HomeTest Operating Model</title>
+<title>Sean's story: HomeTest Operating Model</title>
 <style>
  .topnav{background:#fff;border-bottom:1px solid #ebeef1;padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.10);position:sticky;top:0;z-index:200;}
  .nav-back{font-size:13px;font-weight:700;color:#003087;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
@@ -152,12 +152,11 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
     <a href="HomeTest Operating Model - Abdul Journey.html">Abdul</a>
     <a href="HomeTest Operating Model - Mark Journey.html">Mark</a>
-    <a href="HomeTest Operating Model - Layla Journey.html" class="active">Layla</a>
-    <a href="HomeTest Operating Model - Sean Journey.html">Sean</a>
+    <a href="HomeTest Operating Model - Layla Journey.html">Layla</a>
+    <a href="HomeTest Operating Model - Sean Journey.html" class="active">Sean</a>
     <a href="HomeTest Operating Model - Sarah Journey.html">Sarah</a>
     <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
     <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
-    <a href="HomeTest Operating Model - Joe Journey.html">Joe</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -170,47 +169,47 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       <div>
         <div class="hero-rule"></div>
         <div class="hero-eyebrow">A patient&apos;s story through the operating model</div>
-        <h1 class="hero-title">A Saturday,<br>not a <em>sick day</em>.</h1>
-        <p class="hero-strap">Layla is 42, works full-time, has two children and a mother she helps care for. Her GP, Hannah, manages her iron-deficiency anaemia. The six-monthly FBC is routine. The Tuesday-morning slot is impossible. <strong>This is the story of how she stays in monitoring without staying out of work.</strong></p>
+        <h1 class="hero-title">The system<br>that <em>finally</em><br>met him.</h1>
+        <p class="hero-strap">Sean is 46 and has a learning disability. He has an annual health check, a brother who supports him, and a system that has failed him quietly for two decades. The reasonable adjustments exist on paper. The kit at home is the first time they meet him in practice. <strong>This is the access story that cuts across every other journey.</strong></p>
       </div>
       <div class="hero-portrait-box">
         <div class="hero-portrait-circ">
-          <img src="Assets/Personas/layla.png" alt="Layla">
+          <img src="Assets/Personas/sean.png" alt="Sean">
         </div>
-        <div class="hero-portrait-name">Layla</div>
-        <div class="hero-portrait-role">Patient on iron supplementation<br>Primary-care monitoring cohort</div>
+        <div class="hero-portrait-name">Sean</div>
+        <div class="hero-portrait-role">Horizontal cohort patient<br>The access story</div>
       </div>
     </div>
   </div>
 
   <!-- RIBBON -->
   <div class="ribbon-wrap">
-    <div class="ribbon-eyebrow">Layla&apos;s journey at a glance &middot; five acts, one pathway</div>
+    <div class="ribbon-eyebrow">Sean&apos;s journey at a glance &middot; five acts, one pathway</div>
     <div class="ribbon">
       <a class="ribbon-stage" href="#stage-1">
         <div class="ribbon-num">1</div>
         <div class="ribbon-label">Stratification</div>
-        <div class="ribbon-substage">the cohort the clinic finds hardest to keep</div>
+        <div class="ribbon-substage">the cohort the system was failing on paper</div>
       </a>
       <a class="ribbon-stage" href="#stage-2">
         <div class="ribbon-num">2</div>
         <div class="ribbon-label">Identification</div>
-        <div class="ribbon-substage">Hannah&apos;s practice flags her</div>
+        <div class="ribbon-substage">outreach that actually reaches him</div>
       </a>
       <a class="ribbon-stage" href="#stage-3">
         <div class="ribbon-num">3</div>
         <div class="ribbon-label">Diagnosis</div>
-        <div class="ribbon-substage">the FBC on a Saturday morning</div>
+        <div class="ribbon-substage">the test that finally happens</div>
       </a>
       <a class="ribbon-stage" href="#stage-4">
         <div class="ribbon-num">4</div>
         <div class="ribbon-label">Treatment</div>
-        <div class="ribbon-substage">the prescription adjusted on the trend</div>
+        <div class="ribbon-substage">care that continues with the adjustments in place</div>
       </a>
       <a class="ribbon-stage" href="#stage-5">
         <div class="ribbon-num">5</div>
         <div class="ribbon-label">Long-term optimisation</div>
-        <div class="ribbon-substage">the cycle that fits her life</div>
+        <div class="ribbon-substage">the access story sustained</div>
       </a>
     </div>
   </div>
@@ -219,14 +218,14 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
   <div class="framing">
     <div class="framing-grid">
       <div class="framing-tile">
-        <div class="framing-tile-eyebrow">The patient North Star</div>
-        <div class="framing-tile-h">The bloods need doing. The clinic visit never needed to be the way to do them.</div>
-        <div class="framing-tile-body">Layla has the condition. The condition needs monitoring. The clinic is where the monitoring has always happened, but the clinic is exactly the venue that does not work for her life. <strong>Move the venue. Keep the monitoring.</strong></div>
+        <div class="framing-tile-eyebrow">The access North Star</div>
+        <div class="framing-tile-h">The adjustments are not a kindness. They are the system finally working.</div>
+        <div class="framing-tile-body">Sean&apos;s cohort lives 19.5 years shorter than the rest of the population. Thirty-nine per cent of those deaths are judged avoidable. The reasonable-adjustment digital flag has existed for years. <strong>The home pathway is the first venue where the flag actually changes how the service runs.</strong></div>
       </div>
       <div class="framing-tile">
-        <div class="framing-tile-eyebrow">Why this works for her</div>
-        <div class="framing-tile-h">No half-day off. No childcare juggle. No DNA letter saying she is the problem.</div>
-        <div class="framing-tile-body">A Saturday-morning sample. The result back in Hannah&apos;s system on time. The next iron prescription unchanged or adjusted as the trend says. <strong>The system stops blaming her for the venue being wrong.</strong></div>
+        <div class="framing-tile-eyebrow">Why this works for him</div>
+        <div class="framing-tile-h">Easy-read materials. Support worker in the loop. A venue he is already comfortable in.</div>
+        <div class="framing-tile-body">The clinic was never the right place for Sean. The waiting room is loud. The phlebotomist is a stranger. The leaflet is at reading age 14 when he reads at reading age 8. <strong>Move the venue and the friction goes with it. Everything else can finally work.</strong></div>
       </div>
     </div>
   </div>
@@ -238,31 +237,31 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-1">
       <div class="stage-side"><div class="stage-number">01</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Stratification — the cohort the clinic finds hardest to keep</div>
-        <h2 class="stage-title">Around 8% of UK adult women live with iron-deficiency anaemia. They are concentrated in cohorts the system serves least well — women in work, women with caring responsibilities, women in shift patterns. The clinical condition is straightforward. The venue mismatch is structural. <span class="hm-witness" data-moment="layla-s1"></span></h2>
+        <div class="stage-eyebrow">Stratification — the cohort the system was failing on paper</div>
+        <h2 class="stage-title">Sean is on the learning disability register. He has had his annual health check most years. The system knows he exists. The reasonable-adjustment digital flag has been on his record since the Accessible Information Standard became a legal duty in 2016. None of that has yet changed how a blood test happens for him. <span class="hm-witness" data-moment="sean-s1"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Layla Story/layla-stage1.png" alt="Layla Stage 1" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Sean Story/sean-stage1.png" alt="Sean Stage 1" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">I have had this for years. I take the tablets, I do the blood test, I get the result. Every part of that works except finding the time to do the blood test.</p>
-          <div class="pull-quote-attribution">Layla</div>
+          <p class="pull-quote-text">They have always known about me. The bit they have not known how to do is what to do about it.</p>
+          <div class="pull-quote-attribution">Sean&apos;s brother</div>
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">NICE clinical knowledge summaries place IDA prevalence at around 8% in adult UK women. The standard monitoring cycle is a six-monthly FBC. The cohort is well-defined; the access problem is the failure to attend appointments at clinic-friendly hours.</div>
+          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-body">79.9% of people on the learning disability register had an annual health check (March 2025). The Reasonable Adjustment Digital Flag is a national NHS record flag. The Accessible Information Standard has been a legal requirement since 2016. The infrastructure to identify the cohort has existed for years.</div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Treat the cohort the same as a 9-to-5 retired patient cohort. Watch DNA rates climb. Send rebooking letters. Blame the patient for not engaging.</div>
+          <div class="old-way-body">Identify the cohort, file the flag, send the standard letter, run the standard appointment, record the DNA when it does not work, repeat next year.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Hannah, GP. Practice nurse. Anita on the ICB / GP commissioner side.</div>
+            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-text">Hannah, GP. The annual health check team. The learning disability liaison nurse. Sean&apos;s brother.</div>
           </div>
         </div>
 
@@ -270,9 +269,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-label">Where this lives in the model</div>
           <div class="crosslinks-row">
             <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Layla.html" target="_blank">Layla persona</a>
-            <span class="crosslinks-tag">Who</span>
-            <a href="HomeTest Operating Model - Persona Hannah.html" target="_blank">Hannah persona</a>
+            <a href="HomeTest Operating Model - Persona Sean.html" target="_blank">Sean persona</a>
+            <span class="crosslinks-tag">Why</span>
+            <a href="HomeTest Operating Model - Why.html" target="_blank">The case for adjustment</a>
           </div>
         </div>
       </div>
@@ -282,31 +281,31 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-2">
       <div class="stage-side"><div class="stage-number">02</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Identification — Hannah&apos;s practice flags her</div>
-        <h2 class="stage-title">Hannah is reviewing the IDA cohort. Layla is overdue her six-month FBC, with a flag on the record for previously missed appointments. The practice opens the conversation about doing the next blood at home. The friction was always the venue; the offer changes the venue. <span class="hm-witness" data-moment="layla-s2"></span></h2>
+        <div class="stage-eyebrow">Identification — outreach that actually reaches him</div>
+        <h2 class="stage-title">The home-test offer reaches Sean through his brother and his support worker, with easy-read materials at his reading level. The reasonable-adjustment flag triggers the alternative communication pathway. The offer is recognisable, the language fits, the consent conversation works. <span class="hm-witness" data-moment="sean-s2"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Layla Story/layla-stage2.png" alt="Layla Stage 2" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Sean Story/sean-stage2.png" alt="Sean Stage 2" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">Hannah said: do you want to try doing the next blood at home? I said yes faster than she could finish the sentence.</p>
-          <div class="pull-quote-attribution">Layla</div>
+          <p class="pull-quote-text">My brother explained it. The pictures helped. I knew what to do because someone had thought about how I would know.</p>
+          <div class="pull-quote-attribution">Sean</div>
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">Around 15 million general-practice appointments are missed each year, costing the NHS £216 million. The cohort that DNAs is the cohort the clinic-only model fails by design. The home pathway is the structural answer, not a service-recovery patch.</div>
+          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-body">Easy-read materials, accessible-format letters, support-worker engagement, and the alternative-route pathway designed into the platform from the start. The cohort identification triggers the cohort-appropriate communication.</div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Re-book, re-book, re-book, miss, discharge from the cycle, see her again at A&amp;E or in a re-presentation that costs ten times more.</div>
+          <div class="old-way-body">Send the standard letter. Watch it not get read. Record another DNA. Update the report saying engagement is low. Cycle.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Hannah. Practice nurse. Practice manager. Anita.</div>
+            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-text">Sean&apos;s brother. The support worker. The learning disability liaison nurse. Easy-read template authors.</div>
           </div>
         </div>
 
@@ -314,9 +313,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-label">Where this lives in the model</div>
           <div class="crosslinks-row">
             <span class="crosslinks-tag">How</span>
-            <a href="HomeTest Operating Model - Operational.html" target="_blank">Lane 3 — primary-care initiated</a>
-            <span class="crosslinks-tag">H&amp;M</span>
-            <a href="HomeTest Operating Model - Hannah Journey.html" target="_blank">Hannah&apos;s journey</a>
+            <a href="HomeTest Operating Model - Operational.html" target="_blank">Lane 2 — adjusted initiation</a>
+            <span class="crosslinks-tag">Status</span>
+            <a href="HomeTest Operating Model - Status.html" target="_blank">Reasonable adjustment programme</a>
           </div>
         </div>
       </div>
@@ -326,78 +325,31 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-3">
       <div class="stage-side"><div class="stage-number">03</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Diagnosis — the FBC on a Saturday morning</div>
-        <h2 class="stage-title">The kit arrives. Layla takes the sample at the kitchen table on a Saturday morning while the kids are watching TV. She posts it back. The lab processes it. The result lands in Hannah&apos;s GP system in time for the cycle that the clinic would have run. <span class="hm-witness" data-moment="layla-s3"></span></h2>
+        <div class="stage-eyebrow">Diagnosis — the test that finally happens</div>
+        <h2 class="stage-title">The kit arrives at Sean&apos;s home. His brother and the support worker are with him. The instructions are accessible. The sample is taken. The result goes to Hannah, the practice, the annual-health-check record. The blood that has not been drawn for three years gets drawn for the first time in a setting Sean trusts. <span class="hm-witness" data-moment="sean-s3"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Layla Story/layla-stage3.png" alt="Layla Stage 3" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Sean Story/sean-stage3.png" alt="Sean Stage 3" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">It was a Saturday job. I did it before the kids were up. I posted it on the way to the shops. I forgot about it until the result came through on the app.</p>
-          <div class="pull-quote-attribution">Layla</div>
+          <p class="pull-quote-text">He sat at the kitchen table with his brother and the support worker. He did the test. He did not flinch. The whole thing took half an hour. We had been trying for years.</p>
+          <div class="pull-quote-attribution">Hannah</div>
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">The home capillary FBC is a recognised pathway for routine monitoring. The sample is processed at a UKAS-accredited lab on the same assay platform that processes in-clinic samples. The result writes back to the practice EPR via the framework integration.</div>
+          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-body">The clinical pathway is unchanged. The clinical result is the same biochemical measurement. What changes is the venue, the support model, and the recognition that the patient&apos;s engagement profile is the design constraint, not the patient&apos;s problem.</div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Take a half-day off work. Find childcare. Sit in the waiting room. Get the blood drawn in 90 seconds. Drive home. The friction is the day, not the test.</div>
+          <div class="old-way-body">Refer for sedated venepuncture. Wait for a slot. Sean does not attend. Cycle.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">The supplier shipping the kit. The lab. The platform writing the result back. Layla.</div>
-          </div>
-        </div>
-
-        <div class="crosslinks">
-          <div class="crosslinks-label">Where this lives in the model</div>
-          <div class="crosslinks-row">
-            <span class="crosslinks-tag">When</span>
-            <a href="HomeTest Operating Model - Lifecycle.html" target="_blank">FULFIL stage</a>
-            <span class="crosslinks-tag">How</span>
-            <a href="HomeTest Operating Model - Operational.html" target="_blank">Lanes 2–4</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- STAGE 4 -->
-
-  <div class="interlude" style="margin:36px 0;padding:0;border:none;background:none;"><img src="Assets/Layla Story/layla-interlude.png" alt="Layla interlude" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 10px 30px rgba(0,32,64,0.14);"></div>
-
-    <div class="stage" id="stage-4">
-      <div class="stage-side"><div class="stage-number">04</div></div>
-      <div class="stage-main">
-        <div class="stage-eyebrow">Treatment — the prescription adjusted on the trend</div>
-        <h2 class="stage-title">The result confirms her haemoglobin and ferritin trends. Hannah reviews the result alongside the prior cycles. The iron prescription stays unchanged or is adjusted on the basis of the trend, exactly as it would have been from an in-clinic sample. The clinical conversation, if needed, happens by phone or message. <span class="hm-witness" data-moment="layla-s4"></span></h2>
-
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Layla Story/layla-stage4.png" alt="Layla Stage 4" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
-
-        <div class="pull-quote">
-          <p class="pull-quote-text">Hannah sent me a message. Same prescription, see you in six months. That was the entire appointment. I was at work.</p>
-          <div class="pull-quote-attribution">Layla</div>
-        </div>
-
-        <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">The treatment pathway is NICE-guideline-aligned and unchanged by the home venue. Iron supplementation continues, with dose adjustments based on the haemoglobin and ferritin response. The GP holds the prescribing accountability.</div>
-        </div>
-
-        <div class="old-way">
-          <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Drag the patient back into clinic to discuss a result that was always going to be a prescription continuation. The visit was the cost; the message was the value.</div>
-        </div>
-
-        <div class="careteam">
-          <div class="careteam-icon">&#x1F465;</div>
-          <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Hannah. Practice pharmacist if dose changes. NICE guidelines.</div>
+            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-text">Sean. His brother. The support worker. The home-test kit supplier. Hannah holding the clinical pathway.</div>
           </div>
         </div>
 
@@ -407,7 +359,54 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
             <span class="crosslinks-tag">Who</span>
             <a href="HomeTest Operating Model - Persona Hannah.html" target="_blank">Hannah persona</a>
             <span class="crosslinks-tag">How</span>
-            <a href="HomeTest Operating Model - Operational.html" target="_blank">Result handling</a>
+            <a href="HomeTest Operating Model - Operational.html" target="_blank">Adjusted result handling</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 4 -->
+
+  <div class="interlude" style="margin:36px 0;padding:0;border:none;background:none;"><img src="Assets/Sean Story/sean-interlude.png" alt="Sean interlude" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 10px 30px rgba(0,32,64,0.14);"></div>
+
+    <div class="stage" id="stage-4">
+      <div class="stage-side"><div class="stage-number">04</div></div>
+      <div class="stage-main">
+        <div class="stage-eyebrow">Treatment — care that continues with the adjustments in place</div>
+        <h2 class="stage-title">The result triggers the same clinical conversation Hannah would have with any patient. Iron status, lifestyle, prescription. The difference is that the conversation also happens with Sean&apos;s brother and support worker in the loop, in the format Sean can engage with. The treatment is the same treatment. The wrap-around is different. <span class="hm-witness" data-moment="sean-s4"></span></h2>
+
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Sean Story/sean-stage4.png" alt="Sean Stage 4" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+
+        <div class="pull-quote">
+          <p class="pull-quote-text">Hannah talks to me and to my brother. The pictures help. The instructions for the tablets came in the picture version too.</p>
+          <div class="pull-quote-attribution">Sean</div>
+        </div>
+
+        <div class="whats-happening">
+          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-body">The clinical treatment pathway is unchanged. The communication pathway is adapted to the patient&apos;s needs. Easy-read prescribing instructions, alternative-format letters, and the reasonable-adjustment flag staying live across handovers all combine to make the treatment actually take.</div>
+        </div>
+
+        <div class="old-way">
+          <div class="old-way-label">The old way</div>
+          <div class="old-way-body">Hand over a printed leaflet at reading age 14. Watch the patient nod. Wonder later why the tablets are not being taken correctly.</div>
+        </div>
+
+        <div class="careteam">
+          <div class="careteam-icon">&#x1F465;</div>
+          <div class="careteam-body">
+            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-text">Hannah. Practice pharmacist. The learning disability liaison nurse. Sean&apos;s brother. The support worker.</div>
+          </div>
+        </div>
+
+        <div class="crosslinks">
+          <div class="crosslinks-label">Where this lives in the model</div>
+          <div class="crosslinks-row">
+            <span class="crosslinks-tag">Who</span>
+            <a href="HomeTest Operating Model - Persona Aisha.html" target="_blank">Clinical safety</a>
+            <span class="crosslinks-tag">Status</span>
+            <a href="HomeTest Operating Model - Status.html" target="_blank">Accessibility programme</a>
           </div>
         </div>
       </div>
@@ -417,31 +416,31 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-5">
       <div class="stage-side"><div class="stage-number">05</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Long-term optimisation — the cycle that fits her life</div>
-        <h2 class="stage-title">Layla stays in the cycle. The next FBC is on a calendar reminder in six months. The kit will arrive. The Saturday morning will happen. The trend will be reviewed. Layla&apos;s anaemia is monitored to the same clinical standard, and the practice no longer carries her DNA history. <span class="hm-witness" data-moment="layla-s5"></span></h2>
+        <div class="stage-eyebrow">Long-term optimisation — the access story sustained</div>
+        <h2 class="stage-title">Sean stays in the cohort the system actually holds. The next test is on a calendar his support worker shares. The flags stay live. The materials are still easy-read. The 19.5-year mortality gap is the system&apos;s problem, not Sean&apos;s. Holding him properly is what closing that gap is made of. <span class="hm-witness" data-moment="sean-s5"></span></h2>
 
-        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Layla Story/layla-stage5.png" alt="Layla Stage 5" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
+        <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Sean Story/sean-stage5.png" alt="Sean Stage 5" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">I do not feel like the patient who keeps letting them down anymore. I just feel like a patient.</p>
-          <div class="pull-quote-attribution">Layla</div>
+          <p class="pull-quote-text">It is something we just do now. The kit, the test, the result. He knows what it is. We know what it is. The system finally knows what it is.</p>
+          <div class="pull-quote-attribution">Sean&apos;s brother</div>
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
-          <div class="whats-happening-body">Sustained engagement with monitoring is the outcome that matters clinically. The home cycle holds the patient in the cohort, surfaces threshold breaches on time, and frees the practice nurse slot for the patients who clinically need clinic.</div>
+          <div class="whats-happening-label">What is happening</div>
+          <div class="whats-happening-body">39% of reviewed deaths of people with a learning disability were assessed as avoidable (LeDeR annual report 2023, published 2025). Holding the cohort in proper engagement is the system&apos;s response to that finding. The home pathway is one of the first venues where the response is structural rather than aspirational.</div>
         </div>
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Drift out of the cycle. Re-present in a year or two with a haemoglobin much lower than it should have been. The clinical risk was always in the model, not the patient.</div>
+          <div class="old-way-body">Build accessibility into the policy. Watch it not change the practice. Run the same annual cycle. Lose patients quietly. Repeat.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
-            <div class="careteam-text">Layla. Hannah. The practice nurse. The platform holding the cycle reminder.</div>
+            <div class="careteam-label">Who is in the loop</div>
+            <div class="careteam-text">Sean. His brother. The support worker. Hannah. The learning disability liaison nurse. Sarah, looking at the cohort-level numbers.</div>
           </div>
         </div>
 
@@ -450,8 +449,8 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="crosslinks-row">
             <span class="crosslinks-tag">When</span>
             <a href="HomeTest Operating Model - Lifecycle.html" target="_blank">MEASURE stage</a>
-            <span class="crosslinks-tag">Status</span>
-            <a href="HomeTest Operating Model - Status.html" target="_blank">Where measurement sits</a>
+            <span class="crosslinks-tag">Why</span>
+            <a href="HomeTest Operating Model - Why.html" target="_blank">The avoidable-death case</a>
           </div>
         </div>
       </div>
@@ -461,11 +460,11 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
   <!-- OUTCOME -->
   <div class="outcome">
-    <div class="outcome-eyebrow">Layla&apos;s win</div>
-    <h2 class="outcome-title">In monitoring. In work. In the cohort the system actually holds, not the cohort the system quietly drops.</h2>
-    <p class="outcome-body">Layla does not see commissioning, frameworks or platforms. She sees a kit through the door, a Saturday morning sample, and a message from Hannah saying see you in six months. <strong>The half-day off she did not take is the half-day she got with her family instead.</strong> The cycle holds.</p>
+    <div class="outcome-eyebrow">Sean&apos;s win</div>
+    <h2 class="outcome-title">The flag finally changes the service. The kit finally meets him in a venue he trusts. The cohort the system has known about for a decade is finally the cohort the system actually holds.</h2>
+    <p class="outcome-body">Sean does not see policy. He sees his brother at the kitchen table, a kit he can use, and a system that, for the first time, met him where he is. <strong>The avoidable death that does not happen is the avoidable death that the system finally chose not to allow.</strong> The access story sustains.</p>
     <div class="outcome-cta">
-      <a href="HomeTest Operating Model - Persona Layla.html" class="outcome-btn">Open Layla&apos;s persona &rarr;</a>
+      <a href="HomeTest Operating Model - Persona Sean.html" class="outcome-btn">Open Sean&apos;s persona &rarr;</a>
       <a href="HomeTest Operating Model - Hearts and Minds.html" class="outcome-btn-sec">Back to Hearts and Minds &rarr;</a>
     </div>
   </div>

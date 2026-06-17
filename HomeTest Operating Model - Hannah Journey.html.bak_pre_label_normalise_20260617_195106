@@ -253,7 +253,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What she walks in with</div>
           <div class="whats-happening-body">A practice list of patients on iron supplementation due 6-month FBC monitoring. A diary that books them in 10-minute slots. A practice-nurse rota that runs full. A familiar cluster of DNA-flagged names. <strong>The clinical question is: how do I hold these patients in the monitoring cycle without my clinic capacity being the bottleneck?</strong></div>
         </div>
 
@@ -265,7 +265,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who she is talking to</div>
             <div class="careteam-text">Her practice nurse. Her practice manager on diary capacity. Anita on the ICB / GP commissioner side. The patient.</div>
           </div>
         </div>
@@ -297,19 +297,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What the data shows</div>
           <div class="whats-happening-body">Around 15 million general-practice appointments are missed each year, costing the NHS ~£216m. Routine monitoring appointments DNA at a higher rate than acute or complex visits. Around 307 million GP sessions are scheduled annually. <strong>The home-test cycle is the way to remove the venue cost from the bloods that never needed clinic in the first place.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The system-side consequence</div>
           <div class="old-way-body">Patients drop out of monitoring. Deficiency anaemia gets re-detected later, often via A&amp;E or an acute appointment. The cost lands on a different part of the system. The original missed appointment looks &lsquo;just&rsquo; like £30. The downstream cost is much larger.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who else sees this</div>
             <div class="careteam-text">Anita, on the ICB / GP commissioner side, paying for the access problem. The other GP partners running the same DNA curve. The practice nurses doing the rebooking work.</div>
           </div>
         </div>
@@ -341,19 +341,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is preserved</div>
           <div class="whats-happening-body">The result returns to Hannah&apos;s GP system via the framework&apos;s EPR write-back. The trend display is unchanged. The clinical review remains hers. Threshold alerts escalate to her in the same way an in-clinic FBC would. <strong>The patient experiences a kit. Hannah experiences the result on the same screen as always.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">What she was worried it would be</div>
           <div class="old-way-body">A model that sends FBC results directly to the patient as raw numbers, or sits the results in a parallel system her practice does not see. Either would have killed adoption. Hannah is not interested in a model that routes around her.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who governs the clinical pathway</div>
             <div class="careteam-text">Aisha, the Clinical Safety Group lead, owning the safety case for primary-care home testing. Ngozi, the Information Governance lead, on the EPR write-back DSA. The kit supplier on lab assurance.</div>
           </div>
         </div>
@@ -385,19 +385,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What this looks like in practice</div>
           <div class="whats-happening-body">A short conversation at the end of the in-clinic appointment: would you be comfortable doing the next FBC at home? Almost every patient says yes. The kit ships via the framework supplier. The patient takes the sample on the date the clinic would have happened. The lab processes it. The result lands in Hannah&apos;s system on time. <strong>The clinic visit that did not happen is one the practice did not have capacity for anyway.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old shape</div>
           <div class="old-way-body">Every patient comes in every six months. No tier of patients reading their own monitoring rhythm. No practice-nurse time freed for the patients who clinically need it. The clinic-only model treats every patient as if they need clinic time, regardless of whether they clinically do.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is operating the pathway</div>
             <div class="careteam-text">The practice nurse coordinating onboarding. The supplier shipping the kit. The lab processing the sample. The framework platform writing the result back. The patient.</div>
           </div>
         </div>
@@ -429,19 +429,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">How monitoring actually runs now</div>
           <div class="whats-happening-body">Routine in-range FBCs are reviewed in trend by Hannah in the same rhythm she would use for in-clinic results. Threshold breaches (haemoglobin, ferritin) trigger an alert and a routine review. Patients who would benefit from clinic come in; patients on a stable trend stay home for the next cycle. <strong>The system surfaces clinical signal, not appointment volume.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old rhythm</div>
           <div class="old-way-body">Every six months, every patient, in clinic regardless of trend. Most appointments confirmed stability rather than detecting change. The clinically uneventful patients shared diary space with the patients who needed clinic, and the patients who needed clinic waited longer.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the loop</div>
             <div class="careteam-text">Hannah, holding the trend review. The practice nurse, coordinating between routine and escalation. Priya on the platform data layer, ensuring the result writes back to the GP system cleanly. The patient.</div>
           </div>
         </div>
@@ -473,19 +473,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What the data shows</div>
           <div class="whats-happening-body">Cohort size on routine monitoring up. DNA rate on the routine-monitoring slot sharply down. Practice-nurse time reallocated from FBC draws to acute and complex appointments. Access-target performance on routine appointments improving. <strong>The same practice team holds more patients in monitoring than the clinic-only model could, with no extra clinic capacity.</strong> The model passes the test that mattered to Hannah: clinical accountability preserved, reach extended, practice nurse capacity returned.</div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old end-state</div>
           <div class="old-way-body">Cohort size capped by practice capacity. DNA rates flat or rising. Practice-nurse phlebotomy slots consuming the workforce time the practice most needed for acute care. Routine monitoring patients silently dropping out of the cycle.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who sees the difference</div>
             <div class="careteam-text">Hannah and the practice nurse, holding a larger cohort with no extra diary cost. Anita, the ICB / GP commissioner, seeing released capacity flow into access metrics. Layla and the other patients on the cohort, getting on with their lives.</div>
           </div>
         </div>

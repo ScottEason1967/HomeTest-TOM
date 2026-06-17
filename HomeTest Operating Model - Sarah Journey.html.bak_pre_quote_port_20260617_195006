@@ -78,11 +78,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .stage-image{background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-radius:12px;padding:32px 24px;text-align:center;color:var(--text-muted);margin-bottom:22px;border:1px dashed #B5D4E5;font-size:12px;font-weight:600;letter-spacing:0.3px;line-height:1.55;}
 .stage-image-icon{font-size:36px;opacity:0.4;margin-bottom:6px;}
 .stage-image-caption{font-size:11px;font-weight:500;opacity:0.85;letter-spacing:0.3px;margin-top:6px;}
-.pull-quote{margin:24px auto 28px;padding:32px 20px 28px;text-align:center;position:relative;max-width:820px;}
-.pull-quote::before{content:'\201C';position:absolute;left:8px;top:-18px;font-size:110px;color:#C9A227;font-family:Georgia,'Times New Roman',serif;line-height:1;opacity:0.65;pointer-events:none;}
-.pull-quote-text{font-size:24px;font-weight:600;color:var(--text,#212B32);line-height:1.45;letter-spacing:-0.3px;max-width:780px;margin:0 auto;font-style:italic;}
-.pull-quote-attribution{font-size:11.5px;font-weight:800;letter-spacing:2px;color:#C9A227;text-transform:uppercase;margin-top:18px;}
-@media(max-width:720px){.pull-quote-text{font-size:20px;}.pull-quote::before{font-size:84px;top:-10px;}}
+.pull-quote{background:#FFFBEF;border-left:4px solid var(--amber);border-radius:0 12px 12px 0;padding:18px 22px;margin-bottom:20px;}
+.pull-quote-text{font-size:15px;font-style:italic;color:var(--text);line-height:1.55;margin-bottom:6px;}
+.pull-quote-attribution{font-size:11px;font-weight:800;color:var(--amber-deep);letter-spacing:1.4px;text-transform:uppercase;}
 .whats-happening{background:#F4F8FC;border:1px solid #d6e2ef;border-radius:12px;padding:18px 22px;margin-bottom:14px;}
 .whats-happening-label{font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:var(--nhs-blue);text-transform:uppercase;margin-bottom:8px;}
 .whats-happening-body{font-size:13px;color:var(--text-sec);line-height:1.7;}
@@ -157,7 +155,6 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <a href="HomeTest Operating Model - Sarah Journey.html" class="active">Sarah</a>
     <a href="HomeTest Operating Model - Adam Journey.html">Adam</a>
     <a href="HomeTest Operating Model - Hannah Journey.html">Hannah</a>
-    <a href="HomeTest Operating Model - Joe Journey.html">Joe</a>
     <a href="reading-guide.html" style="margin-left:auto;background:#FFB91D;color:#003087;font-weight:800;">Reading guide</a>
   </div>
 </nav>
@@ -256,19 +253,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What she walks in with</div>
           <div class="whats-happening-body">UKHSA late-diagnosis data showing the cohort concentrated in specific wards. A Health and Wellbeing Board paper asking what digital does for the gap. The LA sexual health budget. An existing sexual health service contract with the local provider. The clinical case is settled: home self-testing for HIV removes the clinic-visit barrier that keeps the late-diagnosed cohort away. <strong>What&apos;s in front of her is procurement, integration with the existing service, and reach into the wards that don&apos;t engage.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old way she has done this before</div>
           <div class="old-way-body">A bespoke procurement against the LA&apos;s contract regulations. Six to nine months. Clinical safety assurance per supplier. IG assessment per supplier. Service-contract amendment to carry the new pathway. Twelve to fifteen months from Board paper to first kit, on a good run. The last new pathway she stood up before the framework existed took twenty-two months. That is a year her late-diagnosed patients did not have.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who she is talking to</div>
             <div class="careteam-text">Her sexual health service provider lead. Her LA Clinical Safety Officer. Her IG lead. The public-health intelligence team who built the cohort analysis. Procurement, not yet engaged because the route is not yet chosen.</div>
           </div>
         </div>
@@ -302,19 +299,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is in front of her</div>
           <div class="whats-happening-body">The framework page. HIV self-test suppliers admitted to the HomeTest platform. Standard call-off terms. DSA, DPIA, privacy notice and clinical safety case starter templates pre-built. NHS Login carries the cohort. Targeting and reach capabilities exposed via UKHSA data overlays and NHSE social channels. <strong>The route is published; she just has to choose to take it.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old way she has done this before</div>
           <div class="old-way-body">A clean-sheet procurement compliant with the LA&apos;s contract regulations. Spec writing. Supplier engagement. Two or three rounds of clarifications. A standstill period. Bespoke clinical safety case from a blank page. Bespoke IG. Bespoke MI. Three months gone before the first contract draft.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who she is talking to</div>
             <div class="careteam-text">The platform&apos;s commissioner-engagement contact for the configuration. Her LA procurement lead, sense-checking the call-off route. Her sexual health service provider lead, sense-checking how the pathway plugs into the existing service.</div>
           </div>
         </div>
@@ -350,19 +347,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What she is testing</div>
           <div class="whats-happening-body">Her open questions list against the framework&apos;s published outputs. The unsafe-address pathway: how kit goes to a patient whose home address is not a safe delivery point. The low-digital-literacy path: an alternative entry route for patients who can&apos;t engage with an app-led journey. The ward-level outreach overlay: how UKHSA data and NHSE social channels reach the cohorts her clinic doesn&apos;t see. <strong>The framework either answers these or it doesn&apos;t. The platform either has the capability or it doesn&apos;t. She finds out before signing.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old way she has done this before</div>
           <div class="old-way-body">Six rounds of meetings with each supplier to discover what they actually do for her cohort. Bespoke service design negotiated supplier by supplier. Pilot phase running into year two. Or, in the worst case, skip the question entirely and assume what is on offer is fine. The pattern from her last new pathway: assumed it would work for everyone, found out at month nine that the cohort she was targeting hadn&apos;t engaged.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who she is talking to</div>
             <div class="careteam-text">Her public-health intelligence lead on the cohort. Her sexual health service&apos;s outreach lead. The platform&apos;s engagement contact on unsafe-address policy and the alternative entry route. Her safeguarding officer.</div>
           </div>
         </div>
@@ -396,19 +393,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What gets signed</div>
           <div class="whats-happening-body">The call-off itself. The supplier admitted to the platform under the framework. The local sexual health service contract amended to carry the new pathway as an extension. DSA executed against the framework&apos;s template. Clinical safety case approved by the LA&apos;s CSO using the framework&apos;s starter case as the spine. First batch of kits ordered. Outbound communications drafted for the wards the public-health team flagged. <strong>Every step has a published template. Nothing is being designed in the moment.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old way she has done this before</div>
           <div class="old-way-body">A multi-year bilateral contract with each supplier. Bespoke pricing schedule. Bespoke clinical safety case from a blank page. Bespoke IG. Bespoke MI. Each adding months to the deployment timeline. Each reducing the budget left for the actual outreach.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is in the room</div>
             <div class="careteam-text">Her LA procurement lead. Her LA CSO. Her IG lead. The sexual health service provider lead. The platform&apos;s engagement contact handling the call-off process. The supplier&apos;s account manager.</div>
           </div>
         </div>
@@ -444,19 +441,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What she is watching</div>
           <div class="whats-happening-body">The MI dashboard. Kits ordered. Kits delivered. Results returned (positive, negative, invalid). Triage decisions. Follow-up clinic bookings. Reach into the target wards versus the LA baseline. Equity reach against the LA&apos;s inequality targets. Reactive support paths for unsafe-result delivery. <strong>The numbers are visible in real time. She doesn&apos;t need to wait for the annual return.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old way she has done this before</div>
           <div class="old-way-body">Hand-rolled MI. Manual chasing of result returns. Manual follow-up. No view of equity reach until the annual report. The risk: finding out a year late that the cohort the LA targeted hadn&apos;t actually engaged, by which time the next year&apos;s budget had been set on the assumption it had.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who is operating it day-to-day</div>
             <div class="careteam-text">The sexual health service provider running the clinical pathway. The supplier running the kit logistics. The platform running the data layer. The LA outreach team running ward-level engagement. Sarah herself looking at the MI feed weekly.</div>
           </div>
         </div>
@@ -492,19 +489,19 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
 
         <div class="whats-happening">
-          <div class="whats-happening-label">What the model is doing underneath</div>
+          <div class="whats-happening-label">What is in the paper</div>
           <div class="whats-happening-body">HIV detection rate against the LA baseline. Late-diagnosis rate, by ward. Equity reach into the cohorts the LA targeted. Cost per detection. Clinic capacity released back to the service for follow-up and treatment. Patient feedback. Reactive-pathway performance for unsafe-result delivery. The recommendation for year two: extend to the next configuration the platform admits. <strong>Same framework. Same call-off shape. Same MI feed.</strong></div>
         </div>
 
         <div class="old-way">
-          <div class="old-way-label">The old way</div>
+          <div class="old-way-label">The old way she has done this before</div>
           <div class="old-way-body">A board paper hedged with &lsquo;data still maturing&rsquo; and &lsquo;next year we will have a fuller picture&rsquo;. Three years before a programme of this size could be evaluated against equity targets. By which time the LA had moved on, the funding had been re-prioritised, or the member who sponsored it had left office.</div>
         </div>
 
         <div class="careteam">
           <div class="careteam-icon">&#x1F465;</div>
           <div class="careteam-body">
-            <div class="careteam-label">What the care team sees</div>
+            <div class="careteam-label">Who reads the paper</div>
             <div class="careteam-text">The Health and Wellbeing Board. The Director of Public Health. Elected members on the relevant scrutiny committee. The LA finance team setting the next year&apos;s commissioning envelope.</div>
           </div>
         </div>
