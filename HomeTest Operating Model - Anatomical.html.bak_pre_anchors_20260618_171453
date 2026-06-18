@@ -380,7 +380,7 @@
 
   <div class="fls">
         <!-- Level 1 (top) - Foundation - shared, full width, foundation -->
-        <div class="fls-level fls-l1" id="foundation">
+        <div class="fls-level fls-l1">
           <div class="fls-head">
             <div class="fls-num">LEVEL 1</div>
             <div class="fls-name">Foundation</div>
@@ -421,7 +421,7 @@
         </div>
 
 <!-- Level 2 - Overlay - shared, full width -->
-        <div class="fls-level fls-l2" id="overlay">
+        <div class="fls-level fls-l2">
           <div class="fls-head">
             <div class="fls-num">LEVEL 2</div>
             <div class="fls-name">Overlay</div>
