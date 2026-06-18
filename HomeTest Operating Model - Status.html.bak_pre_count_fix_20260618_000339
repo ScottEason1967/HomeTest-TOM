@@ -140,14 +140,14 @@
   <div class="summary">
     <a href="#unresolved" class="sum-card sum-card-open">
       <div class="sum-eyebrow open">Awaiting decision</div>
-      <div class="sum-count">83</div>
+      <div class="sum-count">82</div>
       <div class="sum-label">Unresolved items</div>
       <div class="sum-desc">Governance accountability, architectural positioning, operational mechanism, stage decisions, Open Qs for SLT.</div>
       <div class="sum-cta">See the full list <span class="sum-cta-arrow">&darr;</span></div>
     </a>
     <a href="#in-progress" class="sum-card sum-card-prog">
       <div class="sum-eyebrow prog">Work in flight</div>
-      <div class="sum-count">36</div>
+      <div class="sum-count">35</div>
       <div class="sum-label">In progress</div>
       <div class="sum-desc">Activity already underway across the five lifecycle stages. Not awaiting a decision, only execution.</div>
       <div class="sum-cta">See the full list <span class="sum-cta-arrow">&darr;</span></div>
@@ -156,7 +156,7 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">83 items, awaiting decision or mitigation</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">80 items, awaiting decision or mitigation</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Governance -->
@@ -434,7 +434,7 @@
     <!-- Stage decisions -->
     <details class="cat cat-stage">
       <summary>
-        <span class="cat-h">Stage-specific decisions <span class="cat-count">33</span></span>
+        <span class="cat-h">Stage-specific decisions <span class="cat-count">32</span></span>
         <span class="cat-desc">Lifecycle-stage decisions awaiting resolution. Click to expand.</span>
       </summary>
       <div class="items">
@@ -517,7 +517,7 @@
 
   <!-- IN PROGRESS -->
   <div class="section" id="in-progress">
-    <h2 class="section-h">In progress <span class="count">36 items, work in flight across the five stages</span></h2>
+    <h2 class="section-h">In progress <span class="count">35 items, work in flight across the five stages</span></h2>
     <p class="section-intro">Activity already underway. Not awaiting a decision, only execution. Grouped by lifecycle stage.</p>
 
     <!-- SHAPE -->
@@ -598,7 +598,7 @@
     <!-- MEASURE -->
     <details class="cat stage-measure">
       <summary>
-        <span class="cat-h">MEASURE <span class="cat-count">1</span></span>
+        <span class="cat-h">MEASURE <span class="cat-count">0</span></span>
         <span class="cat-desc">Nothing in flight. Whole stage sits as open decisions.</span>
       </summary>
       <div class="items">

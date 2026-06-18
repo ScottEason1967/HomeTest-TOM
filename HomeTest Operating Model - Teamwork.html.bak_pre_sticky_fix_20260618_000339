@@ -194,7 +194,7 @@
   .cap[class*="cap-c"] .detail-h-stand{color:var(--accent-c);}
 
   /* Sticky top nav */
-  .navbar{position:sticky;top:60px;z-index:150;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:24px;display:flex;flex-direction:column;gap:8px;box-shadow:0 4px 12px rgba(0,32,64,0.08);}
+  .navbar{position:sticky;top:0;z-index:100;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:24px;display:flex;flex-direction:column;gap:8px;box-shadow:0 4px 12px rgba(0,32,64,0.04);}
   .nav-row-caps{display:flex;flex-wrap:wrap;gap:5px;align-items:center;}
 .nav-caps-label{font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);text-align:center;margin:2px 0 10px;}
 .nav-caps-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px 8px;justify-items:stretch;}
