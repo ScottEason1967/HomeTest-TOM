@@ -247,6 +247,10 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         <div class="hero-positioning">
           <div class="hero-positioning-line">An interactive Future State Blueprint</div>
           <div class="hero-positioning-body">Built around the people who live in the service. <strong>Hover the amber chips throughout</strong> &mdash; every key number is witnessed by someone in the cast.</div>
+      <div style="margin:24px 0 0;background:#FFF9EC;border:1.5px solid #F0DCA0;border-left:5px solid #C9A227;border-radius:12px;padding:18px 22px;">
+        <div style="font-size:11px;font-weight:800;letter-spacing:1.8px;color:#9A6700;text-transform:uppercase;margin-bottom:8px;">Health warning &middot; status of this model</div>
+        <p style="font-size:13.5px;color:#5b4a1a;line-height:1.65;margin:0;"><strong>This is a working straw man, not a finished operating model.</strong> It is issued to SLT for feedback and requires iteration and involvement from the programme team before it becomes anything more than that. The architecture, the personas, the journeys, the capability map, the open decisions and the framework principles are an early-stage map of what the future state could look like. Almost every element on this site will need shaping, sense-checking and challenge from across the team. Treat it as a conversation starter, not a position.</p>
+      </div>
         </div>
       </div>
       <div class="patients">
