@@ -406,13 +406,13 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">The commissioner walks in once and leaves with a signed call-off. Where the bilateral route used to take six to nine months, the published catalogue and inherited framework templates compress the buy into weeks. The platform broker holds the supplier and clinical assurance complexity in the back office; the commissioner sees one front door. The lane exposes the role on which the model most depends: the framework administrator, who has to be the steward of the catalogue itself.</div>
-</div>
 </div>
 <!-- ==================== LANE 2: SUPPLIER ONBOARDING (SEVEN STAGES) ==================== -->
 <div class="swimlane-section" id="lane-1">
@@ -502,13 +502,13 @@
  </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">A supplier admitted to the framework can be called off by any commissioner without being re-assured each time. That is the speed multiplier the model exists to create. The supplier&apos;s clinical safety case and lab assurance both travel with the admission; the framework administrator runs the cycle from admission inquiry through to live. The bottleneck the lane exposes is administrative capacity, not assurance quality &mdash; suppliers wait on the framework, not on safety reviews.</div>
-</div>
 </div>
 <!-- ==================== LANE 3: SERVICE DELIVERY ==================== -->
 <div class="swimlane-section" id="lane-2">
@@ -575,13 +575,13 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">Most of the work in the live service sits with the supplier: kit out, sample back, result delivered. The commissioner watches the MI; the platform brokers the data flow and the reactive support paths. The centre does not run the service. Its job is to make the pathway predictable, the data clean, the exceptions handled, and to surface the reactive cases (unsafe-address delivery, undelivered results, withdrawal) into a clinical-safety net that does not fall to the supplier alone.</div>
-</div>
 </div>
 <!-- ==================== LANE 4: COMMERCIAL SETTLEMENT ==================== -->
 <div class="swimlane-section" id="lane-3">
@@ -644,13 +644,13 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">Money flows commissioner-to-supplier under the call-off; the platform takes a small percent fee per completed test, not a margin on the kit. Payment triggers on a completed pathway &mdash; sample returned, lab processed, result delivered &mdash; so the supplier only earns on the service that actually happened. The lane exposes the framework as a marketplace rather than a wholesaler: the centre keeps the rails clean, runs the tariff treatment, and takes a transaction fee for the matchmaking. The commercial mechanics that set the rails sit upstream in Cap-4 of the Teamwork view; this lane is where those mechanics translate into live money movement.</div>
-</div>
 </div>
 <!-- ==================== LANE 5: CLINICAL SAFETY & ASSURANCE ==================== -->
 <div class="swimlane-section" id="lane-4">
@@ -721,13 +721,13 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">Continuous monitoring runs against framework terms, supplier-side MI and clinical-safety incident reporting. Threshold breaches escalate into the formal assurance cycle (Independent Assurance, post-market surveillance, Clinical Safety Group). The lane carries two views at once: supplier-by-supplier compliance and the framework-wide quality picture. The interesting design point is the seam between continuous monitoring and the formal cycle &mdash; everyday performance issues stay operational; threshold breaches flip into assurance governance.</div>
-</div>
 </div>
 <!-- ==================== LANE 6: MARKETPLACE STEWARDSHIP ==================== -->
 <div class="swimlane-section" id="lane-6">
@@ -792,13 +792,13 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">The lane the centre most often forgets to staff. Supplier admission and exit, pricing pressure, demand forecasting and the supplier-switching mechanism all live here. The centre is matchmaker, not contract counterparty &mdash; that means somebody has to monitor concentration, support new entrants, steward the pricing caps and intervene when the market shape starts to fail. Without an active market-dynamics function, the framework becomes a list of incumbent suppliers rather than a competitive marketplace.</div>
-</div>
 </div>
 <!-- ==================== LANE 7: INFORMATION GOVERNANCE ==================== -->
 <div class="swimlane-section" id="lane-5">
@@ -873,13 +873,13 @@
 </div>
 </div>
 </div>
+</div>
 
 
 <!-- LANE SYNTHESIS -->
 <div class="lane-synthesis" style="margin:24px 0 0;padding:18px 22px;background:linear-gradient(135deg,#F4F8FC,#E8F1F6);border-left:4px solid #005EB8;border-radius:0 12px 12px 0;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.4px;color:#005EB8;text-transform:uppercase;margin-bottom:8px;">Lane synthesis &middot; what is happening across the actors</div>
   <div style="font-size:13.5px;color:#212B32;line-height:1.7;">The federated multi-controller model in motion: NHSE as the foundation controller, the commissioner controlling test purpose, the supplier as processor. DPIAs, DSAs and DPAs are inherited from framework templates and refreshed per configuration, with the IAO and IAA holding continuous oversight. The lane exposes that IG is structural, not incident-driven &mdash; the design choice that controllers are federated rather than joint determines the operational shape of every other lane downstream.</div>
-</div>
 </div>
 <!-- SYNTHESIS -->
 <div class="synth">
