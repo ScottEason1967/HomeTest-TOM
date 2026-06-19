@@ -531,13 +531,6 @@
           <strong>PSA-AS</strong> is the Acute Use Case (clinician-init, Mark&apos;s journey). Design firm, deployment prospective.
           <strong>iron deficiency anaemia</strong> is Use Case 3 in the OBO list (GP-init, Layla&apos;s journey, focused on relieving GP pressures), design phase only; pattern picks are working assumptions and several entries say TBC because they genuinely are.
           <strong>Community / Pharmacy</strong> (previously labelled Pharmacy-init) is the fourth initiation pattern from the discovery taxonomy. The fifth canonical pattern, <strong>Programme / System initiated</strong>, is catalogued on the <a href="HomeTest Operating Model - Pattern Overlay Detail.html#initiation" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Initiation overlay</a> and on the <a href="HomeTest Operating Model - Prioritisation Framework.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">HomeTest Prioritisation Framework</a> (medication-management tests, RA on DMARDs/steroids, HRT, GLP-1 monitoring). Not on the Year 1 OBO list. Shown as a sketch so the architecture has a slot if SLT decide to scope it in.
-
-          <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(0,0,0,0.08);">
-            <strong style="color:#212B32;display:block;margin-bottom:6px;font-size:10.5px;letter-spacing:0.5px;text-transform:uppercase;">Clarifying notes on terminology, results and trends</strong>
-            <p style="margin:0 0 6px;"><strong>Initiation channel terminology.</strong> Patient-activated handed-out kits (handed out in person at a pharmacy, outreach event or community setting and then activated by the patient online) are a digital pathway variant, not the non-digital channel. They sit inside the digital channel as a variant of patient-init. The true non-digital channel is telephony: a patient who phones in, never touches the digital surface, and has the test arranged on their behalf. That channel remains a separate gap to be designed for equity and for GDS inclusion.</p>
-            <p style="margin:0 0 6px;"><strong>Result shape.</strong> A condition characteristic, not a pattern. HIV gives a binary outcome (reactive / non-reactive). PSA gives a continuous numerical value, often interpreted in trend during active surveillance. Result shape influences which Result handling pattern is sensible (binary leans Patient-direct, continuous leans Clinician-first) and shapes the hazards loaded into the clinical safety case. The platform carries both shapes via FHIR Observation without modification; variation lives in the patient-facing rendering and the hazard log content.</p>
-            <p style="margin:0;"><strong>Trend analysis.</strong> Longitudinal trend analysis is deprioritised for now. PSA values from capillary and venous samples are not directly comparable, so presenting them on a single trend line carries a clinical safety risk. Position is to research the comparability question rather than build trend rendering at this phase. Result handling continues to expose individual results clearly; longitudinal interpretation stays with the treating clinician until the research lands.</p>
-          </div>
         </div>
 
 
@@ -572,36 +565,75 @@
 
         
 
-<div style="margin:20px 14px 0;padding:14px 18px;background:#FBEAF2;border:1px solid #E8D2DC;border-radius:8px;font-size:12px;color:#4C6272;line-height:1.6;">
-          <strong style="color:#212B32;display:block;margin-bottom:6px;font-size:11px;letter-spacing:0.5px;text-transform:uppercase;">Open questions for SLT / not yet positioned</strong>
-          Scope items and decisions that have surfaced through review but have not been placed in the model yet. Each needs an SLT or sponsor decision before it gets a home in the foundation, overlays, or patterns.
-          <ul style="margin:10px 0 0 18px; padding:0; line-height:1.6;">
-            <li><strong>MHRA non-SaMD ruling: downstream implications.</strong> 8 June 2026 ruling settled the regulatory classification as non-SaMD. Confirmation needed on what changes in the operating model now the classification is settled, particularly on assurance scope and supplier onboarding criteria. <em>Decision sits with SLT with Clinical Safety Lead and Commercial Lead.</em></li>
+        <div style="margin:18px 14px 8px;padding:10px 14px;background:#F8FAFC;border:1px solid #E5E9F0;border-radius:6px;font-size:11px;color:#4C6272;line-height:1.5;">
+          <strong style="color:#212B32;letter-spacing:0.3px;text-transform:uppercase;font-size:10px;">How to read the colour code on this page</strong><br>
+          <span style="display:inline-block;width:10px;height:10px;background:#FBEAF2;border:1px solid #E8D2DC;vertical-align:middle;margin-right:5px;"></span>Pink / red, <strong>open decision awaiting resolution</strong>.
+          <span style="display:inline-block;width:10px;height:10px;background:#FFF8E6;border-left:3px solid #C9A227;vertical-align:middle;margin:0 5px 0 14px;"></span>Amber, <strong>physical constraint / fixed reality</strong> that shapes design.
+          <span style="display:inline-block;width:10px;height:10px;background:#F4F8FC;border-left:3px solid #005EB8;vertical-align:middle;margin:0 5px 0 14px;"></span>Blue, <strong>settled framing</strong> or strategic observation.
+          <span style="display:inline-block;width:10px;height:10px;background:#fff;border:1px solid #E5E9F0;vertical-align:middle;margin:0 5px 0 14px;"></span>Grey, <strong>clarifying note</strong>.
+        </div>
+<div style="margin:20px 0;padding:16px 20px;background:#FBEAF2;border:1px solid #E8D2DC;border-radius:8px;font-size:13px;color:#4C6272;line-height:1.6;">
+  <div style="font-size:10.5px;font-weight:800;letter-spacing:1.2px;color:#212B32;text-transform:uppercase;margin-bottom:6px;">Open Q for SLT</div>
+  <strong>MHRA non-SaMD ruling: downstream implications.</strong> 8 June 2026 ruling settled the regulatory classification as non-SaMD. SLT confirmation needed on what changes in the operating model now the classification is settled, particularly on assurance scope and supplier onboarding criteria. <em>Decision sits with SLT with Clinical Safety Lead and Commercial Lead.</em> <a href="HomeTest Operating Model - Status.html" style="color:#005EB8;font-weight:700;text-decoration:none;">See on Status &rarr;</a>
+</div>
+<div style="margin:8px 14px 0;padding:12px 16px;background:#FBEAF2;border:1px solid #E8D2DC;border-radius:8px;font-size:11.5px;color:#4C6272;line-height:1.55;">
+          <strong style="color:#212B32;display:block;margin-bottom:4px;font-size:11px;letter-spacing:0.5px;text-transform:uppercase;">What's not yet positioned</strong>
+          Scope items that have surfaced through review but haven't been placed in the model yet. Each needs an SLT or sponsor decision before it gets a home in the foundation, overlays, or patterns.
+          <ul style="margin:8px 0 0 18px; padding:0; line-height:1.55;">
             <li><strong>Neighbourhood Health Centres.</strong> Could be a delivery channel (kit distribution / sample collection), a referral source (clinicians there initiate testing), or both. <em>SLT to confirm.</em></li>
-            <li><strong>Adoption: where does it sit structurally?</strong> Adoption activity is being done through the Partnerships workstream, and is two-sided: customer-side partnerships (GIRFT, NHS Online, national programmes that drive demand) and supply-side partnerships (assuring labs, supporting capillary centres, bringing the right supplier mix to market). What has not been resolved is whether adoption appears as a named function in the operating model itself (an overlay, a foundation capability, a row in the RACI), or stays implicit inside Partnerships. <em>Decision: SLT to confirm whether to surface adoption structurally.</em></li>
-            <li><strong>Mobilisation and "hearts and minds".</strong> Transformation requires people to change workflows, clinical assumptions, operating patterns, commissioning behaviours, patient interaction models, risk tolerance, even professional identity. Not soft work; core strategic infrastructure. <em>Currently flagged but not owned in the model.</em></li>
-            <li><strong>Clinician workflow integration.</strong> Acute-initiated and GP-initiated patterns require ordering and result handling inside the clinician's existing EPR or clinical system, not a second screen. Single integration into the clinical workflow is a hard design constraint for acute-init (Mark's PSA-AS journey) and GP-init (Layla's iron deficiency anaemia journey). The integration burden on the supplier and the platform is real and not yet sized.</li>
+            <li><strong>Adoption: where does it sit structurally?</strong> Adoption activity is being done through the Partnerships workstream, and is two-sided: customer-side partnerships (GIRFT, NHS Online, national programmes that drive demand) and supply-side partnerships (assuring labs, supporting capillary centres, bringing the right supplier mix to market). Customer success is a third dimension: making demand and supply work together once both are in the room. Adoption itself runs through early-adopter trusts that benefit commercially from being first movers (Royal Devon, Chel West): they build the capability, consult into other trusts, and become peer advocates. Peer-to-peer credibility carries further than central messaging. What hasn't been resolved is whether adoption appears as a named function in the operating model itself (an overlay, a foundation capability, a row in the RACI), or stays implicit inside Partnerships. <em>Decision: SLT to confirm whether to surface adoption structurally.</em></li>
+            <li><strong>Mobilisation and "hearts and minds".</strong> Transformation requires people to change all of these: workflows, clinical assumptions, operating patterns, commissioning behaviours, patient interaction models, risk tolerance, even professional identity. Not soft work; core strategic infrastructure. The platform succeeds only if clinicians trust it, pathology networks back it, commissioners see value, suppliers believe the market is viable, patients feel safe, national programmes advocate for it, and Trusts see measurable operational benefit. <em>Currently flagged but not owned in the model.</em></li>
+            <li><strong>Clinician workflow integration.</strong> Acute-initiated and GP-initiated patterns require ordering and result handling inside the clinician's existing EPR or clinical system, not a second screen. The genomics service learned this the hard way: a separate ordering UI added integration complexity and was unpopular with clinicians. Single integration into the clinical workflow is a hard design constraint for acute-init (Mark's PSA-AS journey) and GP-init (Layla's iron deficiency anaemia journey). The model accommodates it through the result-handling overlay, but the integration burden on the supplier and the platform is real and not yet sized.</li>
             <li><strong>Segmented strategic messaging.</strong> Different value proposition per audience (clinicians, commissioners, suppliers, patients, national programmes), not a single narrative for all. The model has not yet developed audience-specific articulation. <em>Owner: TBC.</em></li>
-            <li><strong>Build vs buy decisions per overlay.</strong> Each of the eight overlays needs to resolve into platform-build (centre builds once, every commissioner inherits), buy-from-market (suppliers compete to deliver) or local-system responsibility (commissioner or Trust owns). Initiation pattern, result handling and IG lean platform-build. Supply chain, commercial structure and tariff treatment lean buy-from-market. Sign-off route and accreditation bar sit with local systems or accrediting bodies. The build-buy-borrow decision has not been formally taken for every overlay. Required before platform requirements stabilise. <em>Decision: SLT. Owner: SRO with Platform Lead and Commercial Lead.</em></li>
           </ul>
           <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.08);font-size:12px;"><a href="HomeTest Operating Model - Status.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;letter-spacing:0.3px;">See all open items across the model &rarr;</a></div>
         </div>
 
-        <div style="margin:14px 14px 0;padding:14px 18px;background:#FFF8E6;border:1px solid #F0DCA0;border-left:4px solid var(--amber-deep);border-radius:0 8px 8px 0;">
-          <strong style="color:var(--amber-deep);display:block;margin-bottom:8px;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Physical constraint / fixed reality</strong>
-          <div style="font-size:12px;color:#4C6272;line-height:1.6;">
-            <strong style="color:#212B32;">Sample-collection device constraint.</strong> Postal-return viability depends on the device. Transdermal sample-collection devices (Tasso+, Tap, Impress) do not fit Royal Mail Large Letter internal depth dimensions. Any configuration that selects a transdermal device cannot use Large Letter for return, which constrains the supply-chain pattern choice and pushes return logistics into a different size class or carrier route. Conventional capillary-draw and finger-prick kits fit Large Letter. The constraint is physical and lives at the overlay level, not at the configuration level: it pre-empts pattern selection wherever a transdermal device is the right clinical fit.
+<div class="fls-foot">
+          <strong>What the stack shows.</strong> Top down: Foundation (Level 1) and Overlays (Level 2) are shared across every condition. That's why those bands run full width. Pattern picks (Level 3) split into four columns because that's where the conditions diverge: HIV live, PSA-AS prospective, iron deficiency anaemia in design (Use Case 3), and Pharmacy-init as a working sketch from the discovery taxonomy. Adding a fifth condition adds another column at Level 3. Levels 1 and 2 don't change. Configurations (Level 4, at the bottom) are real-world deployments. They're what the stack builds up to.
+        </div>
+
+        <div class="fls-note" style="background:#F4F8FC;border-left:4px solid var(--nhs-blue);">
+          <div class="fls-note-tag" style="color:var(--nhs-blue);">Build vs buy</div>
+          <div class="fls-note-body">
+            <strong>The overlays are also where build vs buy gets decided.</strong> Each of the eight dimensions resolves into either a platform-build capability (the centre builds it once and every commissioner inherits it), a buy-from-market capability (suppliers compete to deliver it within the framework), or a local-system responsibility (the commissioner or Trust owns it). Initiation pattern, result handling and information governance lean toward platform-build (universal mechanics). Supply chain, commercial structure and tariff treatment lean toward buy-from-market. Sign-off route and accreditation bar sit with local systems or accrediting bodies. This is the level at which the BA + product owner work plays out: each overlay needs a build-buy-borrow decision before the platform requirements are stable. <em>That decision has not yet been made for every overlay.</em>
           </div>
         </div>
 
-        <div style="margin:14px 14px 0;padding:14px 18px;background:#F4F8FC;border:1px solid #D5E0EB;border-left:4px solid var(--nhs-blue);border-radius:0 8px 8px 0;">
-          <strong style="color:var(--nhs-blue);display:block;margin-bottom:8px;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Settled framing</strong>
-          <div style="font-size:12px;color:#4C6272;line-height:1.6;">
-            <strong style="color:#212B32;">Test catalog: a named Foundation capability.</strong> The test catalog is a named platform capability, not a passive list. It is the assurance and discoverability surface for tests, providers, pathways and SNOMED codes. The 12-month feature set places test catalog configuration alongside a rules engine (driving which test fits which pathway and configuration) and a dynamic-app capability (screen sets per test, so each test surfaces the right patient experience without bespoke build). These three components together turn the catalog from a static index into an operational mechanism of the platform.
+        <div class="fls-note" style="background:#FFF8E6;border-left:4px solid var(--amber-deep);">
+          <div class="fls-note-tag" style="color:var(--amber-deep);">Sample-collection device constraint</div>
+          <div class="fls-note-body">
+            <strong>Postal-return viability depends on the device.</strong> Transdermal sample-collection devices (Tasso+, Tap, Impress) do not fit Royal Mail Large Letter internal depth dimensions. Any configuration that selects a transdermal device cannot use Large Letter for return, which constrains the supply-chain pattern choice and pushes return logistics into a different size class or carrier route. Conventional capillary-draw and finger-prick kits fit Large Letter. The constraint is physical and lives at the overlay level, not at the configuration level: it pre-empts pattern selection wherever a transdermal device is the right clinical fit.
           </div>
         </div>
 
-        
+        <div class="fls-note">
+          <div class="fls-note-tag">Note on initiation channel terminology</div>
+          <div class="fls-note-body">
+            <strong>Patient-activated handed-out kits are a digital pathway variant, not the non-digital channel.</strong> Kits that are handed out in person (at a pharmacy, an outreach event, a community setting) and then activated by the patient online still run on the digital infrastructure. They sit inside the digital channel as a variant of patient-init. The true non-digital channel is telephony: a patient who phones in, never touches the digital surface, and has the test arranged on their behalf. That channel remains a separate gap to be designed for equity and for GDS inclusion, and should not be confused with handed-out kit variants.
+          </div>
+        </div>
+
+        <div class="fls-note">
+          <div class="fls-note-tag">Note on trend analysis</div>
+          <div class="fls-note-body">
+            <strong>Longitudinal trend analysis is deprioritised for now.</strong> PSA values from capillary samples and from venous samples are not directly comparable, so presenting them on a single trend line carries a clinical safety risk: a patient could be reassured or alarmed by an apparent rise or fall that is actually a modality effect. The position is to research the comparability question rather than build trend rendering into the platform at this phase. Result handling continues to expose individual results clearly; longitudinal interpretation stays with the treating clinician until the research lands.
+          </div>
+        </div>
+
+        <div class="fls-note" style="background:#F4F8FC;border-left:4px solid var(--nhs-blue);">
+          <div class="fls-note-tag" style="color:var(--nhs-blue);">Test catalog: a named Foundation capability</div>
+          <div class="fls-note-body">
+            <strong>The test catalog is a named platform capability, not a passive list.</strong> It is the assurance and discoverability surface for tests, providers, pathways and SNOMED codes. The 12-month feature set places test catalog configuration alongside a rules engine (driving which test fits which pathway and configuration) and a dynamic-app capability (screen sets per test, so each test surfaces the right patient experience without bespoke build). These three components together turn the catalog from a static index into an operational mechanism of the platform.
+          </div>
+        </div>
+
+        <div class="fls-note">
+          <div class="fls-note-tag">Note on result shape</div>
+          <div class="fls-note-body">
+            <strong>Result shape is a condition characteristic, not a pattern.</strong> HIV gives a binary outcome (reactive / non-reactive). PSA gives a continuous numerical value, often interpreted in trend during active surveillance. Nobody picks a result shape; it's intrinsic to the condition. It does, however, influence which Result handling pattern is sensible (binary leans Patient-direct, continuous leans Clinician-first) and shapes the hazards loaded into the clinical safety case (missed positive vs range misinterpretation are different failure modes). The platform carries both shapes via FHIR Observation without modification; the variation lives in the patient-facing rendering and the hazard log content.
+          </div>
+        </div>
   
 
   <!-- PATTERN CATALOGUE -->
