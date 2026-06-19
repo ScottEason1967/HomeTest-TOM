@@ -639,9 +639,9 @@
         <div class="stage-tagline">Market development &amp; demand generation</div>
       </div>
       <div class="stage-status">
-        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">2</span> Decided</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">0</span> Decided</div>
         <div class="status-line"><span class="status-dot" style="background:var(--status-progress);"></span><span class="ct">8</span> In progress</div>
-        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">3</span> Open decisions</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">4</span> Open decisions</div>
       </div>
       <div class="stage-personas all-six">
         <img src="Assets/Personas/sarah.png" alt="Sarah">
@@ -662,9 +662,9 @@
         <div class="stage-tagline">Quality gateway &amp; enablement</div>
       </div>
       <div class="stage-status">
-        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">4</span> Decided</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">0</span> Decided</div>
         <div class="status-line"><span class="status-dot" style="background:var(--status-progress);"></span><span class="ct">5</span> In progress</div>
-        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">4</span> Open decisions</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">8</span> Open decisions</div>
       </div>
       <div class="stage-personas three">
         <img src="Assets/Personas/aisha.png" alt="Aisha" class="lead">
@@ -682,9 +682,9 @@
         <div class="stage-tagline">Commercial framework &amp; access</div>
       </div>
       <div class="stage-status">
-        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">5</span> Decided</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">1</span> Decided</div>
         <div class="status-line"><span class="status-dot" style="background:var(--status-progress);"></span><span class="ct">9</span> In progress</div>
-        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">5</span> Open decisions</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">9</span> Open decisions</div>
       </div>
       <div class="stage-personas three">
         <img src="Assets/Personas/david.png" alt="David" class="lead">
@@ -702,9 +702,9 @@
         <div class="stage-tagline">Where products live &amp; differ</div>
       </div>
       <div class="stage-status">
-        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">1</span> Decided</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">0</span> Decided</div>
         <div class="status-line"><span class="status-dot" style="background:var(--status-progress);"></span><span class="ct">7</span> In progress</div>
-        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">5</span> Open decisions</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">7</span> Open decisions</div>
       </div>
       <div class="stage-personas three">
         <img src="Assets/Personas/abdul.png" alt="Abdul">
@@ -724,8 +724,8 @@
         <div class="stage-tagline">Performance, outcomes &amp; learning</div>
       </div>
       <div class="stage-status">
-        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">1</span> Decided</div>
-        <div class="status-line"><span class="status-dot" style="background:var(--status-progress);"></span><span class="ct">3</span> In progress</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-decided);"></span><span class="ct">0</span> Decided</div>
+        <div class="status-line"><span class="status-dot" style="background:var(--status-progress);"></span><span class="ct">0</span> In progress</div>
         <div class="status-line"><span class="status-dot" style="background:var(--status-open);"></span><span class="ct">6</span> Open decisions</div>
       </div>
       <div class="stage-personas all-six">
@@ -781,11 +781,11 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">In flight</div>
-          <div class="stage-block-body">The 5/4/4 prioritisation framework is in active use to score and sequence candidate conditions. Five initiation patterns codified (self-initiated, secondary care, community/GP, genomics, programme/system-initiated). Future-state framework architecture continues to evolve as conditions enter scope.</div>
+          <div class="stage-block-body">Procurement Options Matrix now covers four options including Digital Primary Care Framework as the fourth option. Growth strategy deck under review for alignment.</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Open</div>
-          <div class="stage-block-body">Formal SLT adoption of the 5/4/4 prioritisation framework (endorsed in principle 9 June 2026; still to be locked as the standing logic for use case selection). Post-PSA condition prioritisation. Six HIV interaction modes: only mode 1 in scope today; sequencing of modes 2 to 6 not yet confirmed.</div>
+          <div class="stage-block-body">Tension between two framings in play: a strategic framing favouring PSR, with central orchestration rejected and a register-then-framework sequencing; and the Commercial workstream matrix with PA23 confirmed and four mutually exclusive options. The two need reconciling before either anchors externally.</div>
         </div>
       </div>
     </div>
@@ -812,7 +812,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Open</div>
-          <div class="stage-block-body">MHRA non-SaMD ruling downstream implications: what changes in the operating model now the classification is settled, particularly on assurance scope and supplier onboarding criteria. Whether the Digital Primary Care Framework (if adopted) carries an assurance level appropriate for HomeTest, or whether HomeTest would inherit the Remote Monitoring service category's assurance bar, which is lower than HomeTest-grade. Pathology lab dual position (clinical infrastructure vs supplier territory) sits with SLT.</div>
+          <div class="stage-block-body">Whether the Digital Primary Care Framework (if adopted) carries an assurance level appropriate for HomeTest, or whether HomeTest would inherit the Remote Monitoring service category's assurance bar, which is lower than HomeTest-grade.</div>
         </div>
       </div>
     </div>
@@ -831,7 +831,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Active programme work</div>
-          <div class="stage-block-body"><span class="outcome-tag">003</span>Alpha and Private Beta only, interim arrangements that retire when the formal framework lands: NHSE&harr;LA MOUs (Salford, East Sussex) and NHSE&harr;Supplier ACE Framework call-off via SBS Lot 1 SBS10255. PA23 settled as the procurement regime, with NHSE Legal support per Commercial Input v0.1.</div>
+          <div class="stage-block-body"><span class="outcome-tag">003</span>Alpha and Private Beta only, interim arrangements that retire when the formal framework lands: NHSE&harr;LA MOUs (Salford, East Sussex) and NHSE&harr;Supplier ACE Framework call-off via SBS Lot 1 SBS10255. Procurement Options Matrix covering four candidate routes (PSR/PA23 Framework, PA23 Dynamic Market, Notify-style central, Digital Primary Care Framework).</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">In flight</div>
@@ -839,7 +839,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Open</div>
-          <div class="stage-block-body">Within-PA23 vehicle choice (Open Framework, Dynamic Market, or Dynamic Purchasing Centre Framework). Coupled to minimum supplier count: an Open Framework can cap supplier numbers; a Dynamic Market cannot. Year 2 framework host and archetype set. Pathology supplier-mix architecture (NHS-pathology-first with private backstop, or parallel mixed-economy). Permanent platform hosting post-Beta. Whether commissioners need to understand the PSR / PA23 distinction or whether the platform abstracts it.</div>
+          <div class="stage-block-body">Recommendation between O1 (PSR or PA23 Framework), O2 (PA23 Dynamic Market), O3 (Notify-style central) and O4 (DPC Framework). PA23 Dynamic Market leads on procedural fit. DPC Framework is the only option with a clean tick on April 2027 deliverability. Notify-style central orchestration has been ruled out as a steady-state route.</div>
         </div>
       </div>
     </div>
@@ -858,15 +858,15 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Active programme work</div>
-          <div class="stage-block-body"><span class="outcome-tag">001</span>800,000 people able to order a free HIV test via NHS App. <span class="outcome-tag">002</span>10,000 HIV home test kits ordered. <span class="outcome-tag">003</span>HIV Private Beta live in 2 LAs (Salford, East Sussex) under interim NHSE&harr;LA MOUs. RDUH selected as acute PSA Active Surveillance partner; mobilisation from 1 June 2026. NHS Login and NHS Notify integrations live. Kit logistics live for HIV.</div>
+          <div class="stage-block-body"><span class="outcome-tag">001</span>800,000 people able to order a free HIV test via NHS App. <span class="outcome-tag">002</span>10,000 HIV home test kits ordered. <span class="outcome-tag">003</span>Private Beta in 2 LAs (HIV via Salford with SH:24, East Sussex with Preventx). NHS Login, NHS Notify integrations. Kit logistics via SH:24 and Preventx (live for HIV).</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">In flight</div>
-          <div class="stage-block-body">Product app build for NHS App ordering surface (August timeline pressure flagged). PSA Active Surveillance Private Beta scaling (up to 100 users across 2 trusts by end of March 2027). Public Beta window targeted December 2026 to March 2027 for up to 1,000+ users. Supplier Onboarding Framework (strawman v0.1 issued for feedback; apply journey and assurance-gate mechanism still to integrate). Royal Mail Market Reach engagement on logistics tariff classification.</div>
+          <div class="stage-block-body">Product app build for NHS App ordering surface (August timeline pressure flagged). Use Case 2 (PSA acute initiated) private beta in 2 trusts. Supplier onboarding model (self-service onboarding, a deliverable shared across Architecture, Supplier and Commercials workstreams). Royal Mail logistics engagement.</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Open</div>
-          <div class="stage-block-body">Collection-first vs delivery-first fulfilment (emerging as parallel patterns, not a replacement). Cold chain logistics for temperature-sensitive tests (e.g. capillary blood for PSA). Supplier switching process and patient continuity during transitions. Centralised kit procurement viability vs the platform-orchestrator model. Service standards and SLAs not yet defined.</div>
+          <div class="stage-block-body">Order of operations between the operating model definition and the product roadmap. Operating model first, product roadmap second so the foundation plus overlays drives what the app builds rather than the app build constraining the operating model.</div>
         </div>
       </div>
     </div>
@@ -885,7 +885,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Active programme work</div>
-          <div class="stage-block-body">KPI framework being scoped (Health Economist onboarded; engagement on initial work pack pending — the cross-cutting blocker now sits at engagement, not approval). Reporting Service Technical Spec. Data flows from suppliers into the platform. PMO holds cross-cutting MI and benefits log.</div>
+          <div class="stage-block-body">KPI framework definition. Reporting Service Technical Spec. Data flows from suppliers into the platform. PMO holds cross-cutting MI and benefits log.</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">In flight</div>
@@ -893,7 +893,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Open</div>
-          <div class="stage-block-body">Whether the Programme Outcomes (001 to 010) are the unit of measurement, or whether the operating model carries its own measurement frame separate from the outcomes. Attribution methodology not yet agreed. Cost-per-test baseline not established. Whether NHSE has the internal capability to run MEASURE as an ongoing function or whether the capability is outsourced.</div>
+          <div class="stage-block-body">Whether the Programme Outcomes (001 to 010) are the unit of measurement, or whether the operating model carries its own measurement frame separate from the outcomes. The two should be reconciled before public reporting.</div>
         </div>
       </div>
     </div>

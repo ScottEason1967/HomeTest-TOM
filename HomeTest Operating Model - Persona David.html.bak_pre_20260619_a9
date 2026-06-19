@@ -128,7 +128,7 @@
 
     <div class="dav-card">
       <div class="dav-card-h">Pricing architecture</div>
-      <div class="dav-card-body">Working structure is <strong>three-tier</strong>: mobilisation fee plus activity plus volume floor. Activity tier measured on cost per valid result (loaded for repeats, rejections, postal failures and abnormal-result handling), not flat per-kit pricing. Maximum pricing set nationally; commissioners negotiate below the ceiling. <strong>Flat per-kit was rejected; subscription was rejected at strategic level.</strong> The final activity-unit position is covered in the Future State team's Recommendation paper. Substantiation depends on health economist input; HE blocker sits across this directly. <strong>PSA Active Surveillance is a separate model (Monitoring Episode, per-patient-per-year), not a variant of this question.</strong></div>
+      <div class="dav-card-body">Working structure is <strong>three-tier</strong>: mobilisation fee plus activity plus volume floor. Activity tier measured on cost per valid result (loaded for repeats, rejections, postal failures and abnormal-result handling), not flat per-kit pricing. Maximum pricing set nationally; commissioners negotiate below the ceiling. <strong>Flat per-kit was rejected; subscription was rejected at strategic level.</strong> Final activity-unit position is A9 in the recommendation paper. Substantiation depends on health economist input; HE blocker sits across this directly. <strong>PSA Active Surveillance is a separate model (Monitoring Episode, per-patient-per-year), not a variant of this question.</strong></div>
     </div>
 
     <div class="dav-card">
@@ -173,7 +173,7 @@
   </div>
 
   <h2 class="section-h">What David needs from the framework</h2>
-  <p class="section-body">Pre-cleared supplier assurance through <a href="HomeTest Operating Model - Persona Joe.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Joe's</a> onboarding gateway, so call-offs draw on a known-good pool without per-deployment reassurance. Health Economist evidence to substantiate the pricing positions before NHSE Pricing engagement. SLT direction on procurement vehicle, framework administration route and pathology supplier-mix to close the gating decisions. Tariff treatment confirmed by NHSE Pricing for the PSA Monitoring Episode and (downstream) for the HIV pricing structure once the Recommendation paper position lands. A standing capability to admit new conditions without re-procurement, so the framework scales beyond the first three clinical areas without restarting.</p>
+  <p class="section-body">Pre-cleared supplier assurance through <a href="HomeTest Operating Model - Persona Joe.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Joe's</a> onboarding gateway, so call-offs draw on a known-good pool without per-deployment reassurance. Health Economist evidence to substantiate the pricing positions before NHSE Pricing engagement. SLT direction on procurement vehicle, framework administration route and pathology supplier-mix to close the gating decisions. Tariff treatment confirmed by NHSE Pricing for the PSA Monitoring Episode and (downstream) for the HIV pricing structure once A9 lands. A standing capability to admit new conditions without re-procurement, so the framework scales beyond the first three clinical areas without restarting.</p>
 
   <h2 class="section-h">Where David appears in the model</h2>
   <ul class="where-list">

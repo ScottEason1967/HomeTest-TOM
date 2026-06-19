@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HomeTest Operating Model: Ecosystem &middot; Served</title>
+<title>HomeTest Operating Model: Ecosystem &middot; Contracted</title>
 <style>
   :root {
     --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
     --nhs-cyan:#00A9CE;
     --amber:#FFB91D; --amber-deep:#C9A227; --warm-cream:#FFF9EC;
-    --accent:#006747;
+    --accent:#C9A227;
     --text:#212B32; --text-sec:#4C6272; --text-muted:#7E8B97;
     --border:#d9dee3; --border-lt:#ebeef1;
     --card:#ffffff; --bg:#f8fafc;
@@ -38,8 +38,8 @@
 
   .header{margin-bottom:30px;}
   .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
-  .h-eyebrow{display:inline-block;background:#006747;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
-  .h-num{display:inline-block;background:#006747;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
+  .h-eyebrow{display:inline-block;background:#C9A227;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
+  .h-num{display:inline-block;background:#C9A227;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
   .h-title{font-size:34px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.5px;line-height:1.15;margin-bottom:10px;}
   .h-subtitle{font-size:16px;color:var(--text-sec);font-weight:500;margin-bottom:14px;}
   .h-intro{max-width:780px;font-size:14px;color:var(--text-sec);line-height:1.7;}
@@ -98,36 +98,45 @@
     <a href="HomeTest Operating Model - Ecosystem Built.html">Built and run</a>
       <a href="HomeTest Operating Model - Ecosystem Consumed.html">Consumed</a>
       <a href="HomeTest Operating Model - Ecosystem Regulated.html">Regulated</a>
-      <a href="HomeTest Operating Model - Ecosystem Contracted.html">Contracted</a>
-      <a class="active" style="background:#006747;color:#fff;" href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
+      <a class="active" style="background:#C9A227;color:#fff;" href="HomeTest Operating Model - Ecosystem Contracted.html">Contracted</a>
+      <a href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
   </div>
 
   <div class="header">
     <div class="amber-rule"></div>
-    <div class="h-eyebrow">Ecosystem &middot; Category 5</div>
-    <h1 class="h-title"><span class="h-num">5</span>Served</h1>
-    <div class="h-subtitle">The output side. Who HomeTest sells to and serves</div>
-    <p class="h-intro">The customers and end users of the operating model. Three audiences with different relationships to the platform: the commissioners who buy it, the patients who use it, and the clinicians (GPs, consultants and prospectively pharmacists) who initiate testing as the upstream of the patient pathway.</p>
+    <div class="h-eyebrow">Ecosystem &middot; Category 4</div>
+    <h1 class="h-title"><span class="h-num">4</span>Contracted commercially</h1>
+    <div class="h-subtitle">Direct commercial relationships</div>
+    <p class="h-intro">Either HomeTest or its commissioners hold these contracts. Five broad categories, each a distinct commercial relationship type. The acute trust partnership for PSA is the most recent addition.</p>
   </div>
 
   <div class="entities">
-      <div class="entity">
-        <div class="entity-name">Commissioners</div>
-        <div class="entity-line">LAs, ICBs, Acute Trusts, NHSE programmes. Buy via the framework, run live configurations locally. Represented by Sarah in the cast. <strong>Direction in flight:</strong> the platform brokers reach and targeting commissioners cannot replicate themselves (UKHSA data, NHSE social, Nextdoor, LSOA-level segmentation), moving the offer beyond passive plumbing. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Commercial Lead with Partnerships Lead.</span></div>
-      </div>
-      <div class="entity">
-        <div class="entity-name">Patients</div>
-        <div class="entity-line">Abdul, Mark, Layla and the archetypes that follow. The end users. The reason the model exists. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Clinical Safety Lead.</span></div>
+      <div class="entity" style="background:#FFF8E6;">
+        <div class="entity-name">Framework suppliers <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Kits, labs, end-to-end providers admitted under the framework instrument. Contracts run between commissioner and supplier with NHSE as framework holder. <strong>Status:</strong> active admission flow. Two PMEs live; supplier EOIs being processed; further suppliers in the funnel.</div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
-        <div class="entity-name">Initiating clinicians <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">GPs, consultants and (prospectively) community pharmacists who initiate testing. GP-init and clinician-init are live patterns; pharmacy-init is a fourth initiation pattern currently subject to an open SLT scope decision. Not directly contracted by HomeTest in any case; they are the upstream of the patient pathway. <strong>Status:</strong> GP-init and clinician-init are confirmed initiation patterns. Pharmacy-init is subject to an open SLT scope decision. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Clinical Safety Lead.</span></div>
+        <div class="entity-name">Royal Mail <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Carrier leg. Volume discounts apply per shipper, not aggregated across suppliers. Engagement underway on a Health Samples package category. <strong>Status:</strong> engagement live. Fulfilment SLA under negotiation, including the requested NHS fast-lane against Tracked 24 reliability gaps. NHSE acts as collective bargaining entity, not buyer.</div>
+      </div>
+      <div class="entity" style="background:#FFF8E6;">
+        <div class="entity-name">Pathology labs <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Where separately contracted (e.g. PSA specialist lab). Sample processing where the supplier model splits logistics from analysis. <strong>Status:</strong> live for HIV via all-inclusive supplier model. For PSA, specialist-lab arrangement in design; NHS pathology network alternative being modelled.</div>
+      </div>
+      <div class="entity" style="background:#E8F5E9;">
+        <div class="entity-name">Acute trust partnership (PSA pathway) <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#2E7D32;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">Selected</span></div>
+        <div class="entity-line">Royal Devon University Healthcare selected as the acute partner for PSA active surveillance (assessment score 92.75/100). Mobilisation from 1 June against a baseline of approximately 917 patients on the existing active surveillance cohort. Cambridge University Hospitals (88.0) and Somerset (77.0) sit as reserves. <strong>Monitor My Health caveat:</strong> RDUH's commercial arm sits outside partnership scope. Broader direction remains to engage all Trusts prospectively, not to single-source PSA on RDUH alone. <strong>Status:</strong> partner selected. Mobilisation 1 June. Partnership commercials and scope-of-work being finalised.</div>
+      </div>
+
+      <div class="entity" style="background:#FCE3E5;">
+        <div class="entity-name">Advisory and capacity <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#B5121B;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">Blocked</span></div>
+        <div class="entity-line">Contracted advisory (e.g. Efficio) and contracted Health Economics capacity. NHS Supply Chain runs an adjacent POCT framework that is not a HomeTest contract but sits in the same supplier market. <strong>Status:</strong> Health Economist onboarding stuck in approval governance; three weeks of expected effort already lost. Cross-cutting blocker across PA23 substantiation, financial principles, supply-chain cost-profile work and volumes.</div>
       </div>
   </div>
 
   <div class="footer-nav">
     <a href="HomeTest Operating Model - Ecosystem.html">&larr; Back to ecosystem hub</a>
-    <a href="HomeTest Operating Model - Ecosystem Built.html">Next: Built and run &rarr;</a>
+    <a href="HomeTest Operating Model - Ecosystem Served.html">Next: Served &rarr;</a>
   </div>
 
 </div>

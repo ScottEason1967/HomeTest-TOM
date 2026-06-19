@@ -121,7 +121,7 @@
       </div>
       <div class="entity" style="background:#FFF8E6;">
         <div class="entity-name">Pattern catalogue <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">Library of reusable overlay options across initiation, commissioning, supply chain and the rest. <strong>Status:</strong> live for HIV patterns; PSA and iron deficiency anaemia patterns being added; pharmacy-init pattern subject to an open SLT scope decision. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead.</span></div>
+        <div class="entity-line">Library of reusable overlay options across initiation, commissioning, supply chain and the rest. <strong>Status:</strong> live for HIV patterns; PSA and iron deficiency anaemia patterns being added; pharmacy-init pattern subject to an open SLT scope decision. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Platform Lead with Service Lead.</span></div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
         <div class="entity-name">Test catalog <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
@@ -129,7 +129,7 @@
       </div>
       <div class="entity" style="background:#FFF8E6;">
         <div class="entity-name">Configurations <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">Live deployments of specific pattern combinations: HIV via LA, PSA via acute trust, iron deficiency anaemia via GP. <strong>Status:</strong> HIV configuration live in private beta; PSA configuration in design; iron deficiency anaemia configuration in discovery. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Commercial Lead.</span></div>
+        <div class="entity-line">Live deployments of specific pattern combinations: HIV via LA, PSA via acute trust, iron deficiency anaemia via GP. <strong>Status:</strong> HIV configuration live in private beta; PSA configuration in design; iron deficiency anaemia configuration in discovery. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Programme team (per configuration).</span></div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
         <div class="entity-name">IG framework structure <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
@@ -149,7 +149,7 @@
       </div>
       <div class="entity" style="background:#FFF8E6;">
         <div class="entity-name">MI and data flow integrity <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">Platform-level reporting, anomaly detection, access controls, audit logs. <strong>Status:</strong> live for HIV; KPI framework not yet designed; outcome attribution methodology undefined. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with IG Lead.</span></div>
+        <div class="entity-line">Platform-level reporting, anomaly detection, access controls, audit logs. <strong>Status:</strong> live for HIV; KPI framework not yet designed; outcome attribution methodology undefined. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Platform Lead with MEASURE owner.</span></div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
         <div class="entity-name">Future State Blueprint <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>

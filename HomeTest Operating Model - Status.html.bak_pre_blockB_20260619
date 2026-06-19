@@ -141,7 +141,7 @@
   <div class="summary">
     <a href="#unresolved" class="sum-card sum-card-open">
       <div class="sum-eyebrow open">Awaiting decision</div>
-      <div class="sum-count">106</div>
+      <div class="sum-count">101</div>
       <div class="sum-label">Unresolved items</div>
       <div class="sum-desc">Governance accountability, architectural positioning, operational mechanism, stage decisions, Open Qs for SLT.</div>
       <div class="sum-cta">See the full list <span class="sum-cta-arrow">&darr;</span></div>
@@ -157,13 +157,13 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">106 listings across 97 unique items &mdash; some SLT items also appear in their source category</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">101 listings across 92 unique items &mdash; some SLT items also appear in their source category</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Open Qs for SLT (now top of Unresolved) -->
     <details class="cat cat-slt" open>
       <summary>
-        <span class="cat-h">Open Qs for SLT <span class="cat-count">24</span></span>
+        <span class="cat-h">Open Qs for SLT <span class="cat-count">23</span></span>
         <span class="cat-desc">Decisions and endorsements sitting with SLT. Some items also appear in their source category, cross-referenced below.</span>
       </summary>
       <div class="items">
@@ -384,16 +384,6 @@
           <a class="item-link" href="HomeTest Operating Model - Operational.html">Open on HOW &rarr;</a>
         </div>
 
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Build vs buy decisions per overlay</div>
-            <div class="item-desc">Each of the eight overlays needs to resolve into either a platform-build capability (centre builds once, every commissioner inherits), a buy-from-market capability (suppliers compete to deliver within the framework), or a local-system responsibility (commissioner or Trust owns). Initiation pattern, result handling and IG lean toward platform-build. Supply chain, commercial structure and tariff treatment lean toward buy-from-market. Sign-off route and accreditation bar sit with local systems or accrediting bodies. The build-buy-borrow decision has not been formally taken for every overlay. Required before platform requirements stabilise.</div>
-            <div class="item-owner"><strong>Decision:</strong> SLT. Owner: SRO with Platform Lead and Commercial Lead.</div>
-            <div class="item-xref"><strong>From:</strong> Anatomical (Build vs buy note).</div>
-          </div>
-          <a class="item-link" href="HomeTest Operating Model - Anatomical.html">Open on WHAT &rarr;</a>
-        </div>
-
       </div>
     </details>
 
@@ -490,7 +480,7 @@
     <!-- Architecture -->
     <details class="cat cat-arch">
       <summary>
-        <span class="cat-h">Architectural positioning <span class="cat-count">6</span></span>
+        <span class="cat-h">Architectural positioning <span class="cat-count">5</span></span>
         <span class="cat-desc">Where things sit in the model. From WHAT page.</span>
       </summary>
       <div class="items">
@@ -525,14 +515,6 @@
             <div class="item-owner"><strong>Owner:</strong> TBC.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Anatomical.html#not-positioned">Open on WHAT &rarr;</a>
-        </div>
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Whether commissioners need to understand the PSR / PA23 distinction</div>
-            <div class="item-desc">Design principle says the platform should abstract the procurement vehicle from commissioners. The mechanism for doing so has not been designed. Open whether commissioners need to engage with the procurement regime at all, or whether the call-off mechanics shield them entirely.</div>
-            <div class="item-owner"><strong>Owner:</strong> Commercial Lead with Platform Lead.</div>
-          </div>
-          <a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a>
         </div>
         <div class="item">
           <div class="item-body">
@@ -646,11 +628,10 @@
     <!-- Stage decisions -->
     <details class="cat cat-stage">
       <summary>
-        <span class="cat-h">Stage-specific decisions <span class="cat-count">33</span></span>
+        <span class="cat-h">Stage-specific decisions <span class="cat-count">31</span></span>
         <span class="cat-desc">Lifecycle-stage decisions awaiting resolution. Click to expand.</span>
       </summary>
       <div class="items">
-                <div class="item"><div class="item-body"><div class="item-title">Cross-stage: clinician workflow integration sizing</div><div class="item-desc">Acute-initiated (Mark's PSA-AS journey) and GP-initiated (Layla's iron deficiency anaemia journey) require ordering and result handling inside the clinician's existing EPR or clinical system, not a second screen. The genomics service learned this the hard way: a separate ordering UI added integration complexity and was unpopular with clinicians. Single integration into the clinical workflow is a hard design constraint. The model accommodates it through the result-handling overlay, but the integration burden on the supplier and the platform is real and not yet sized.</div><div class="item-owner"><strong>Owner:</strong> Platform Lead with Commercial Lead. Sizing required before clinician-initiated configs move to live deployment.</div></div><a class="item-link" href="HomeTest Operating Model - Anatomical.html#not-positioned">Open on WHAT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">SHAPE: clinician-side adoption motivation evidence</div><div class="item-desc">Clinician-initiated configurations only work if the clinician chooses to initiate. The motivation set behind Adam (cohort reach, monitoring-pathway dropout reduction, clinic capacity for patients who need to be seen in person) is grounded in qualitative discovery research. The open question is what additional evidence is needed beyond qualitative research before clinician-initiated configurations move from prospective to live deployment. Sits at the boundary of discovery research, KPI framework and pathway-specific clinical engagement.</div></div><a class="item-link" href="HomeTest Operating Model - Persona Adam.html">Open on Adam &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">SHAPE: inside-the-tent advocate programme</div><div class="item-desc">Candidate exemplar Trusts being scoped to act as in-system advocates for the model. GSTT is a near-term candidate. The advocate route compresses the commissioner sales conversation when an admired peer is already running the service. Adoption capability (Cap-10) owns the function; the candidates are not yet committed.</div></div><a class="item-link" href="HomeTest Operating Model - Persona Adam.html">Open on Adam &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: PSA-AS monitoring-gap commissioner shape</div><div class="item-desc">The PSA Active Surveillance monitoring-gap cohort covers men referred to Urology with elevated PSA but no cancer diagnosis. The commissioner who will hold the budget for this cohort is not yet identified. Acute trust, ICB, primary-care commissioning, joint arrangement and central NHSE positioning are all live possibilities. The team scoping this cohort are in discovery on cohort definition, clinical pathway, and commissioning shape; commissioner identity follows their output. Ruth is the persona slot carrying this open question on the cast.</div></div><a class="item-link" href="HomeTest Operating Model - Persona Ruth.html">Open on Ruth &rarr;</a></div>
@@ -664,7 +645,6 @@
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: offboarding trigger criteria and process</div><div class="item-desc">What happens when a supplier fails to meet standards?</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: IAO appointment in place</div><div class="item-desc"><strong>Closed at the HomeTest Delivery Board, 9 June 2026.</strong> Information Asset Owner now in place as a permanent NHSE employee. Risk register downgraded. Item retained for traceability.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">ASSURE: Supplier Onboarding Framework</div><div class="item-desc">Strawman v0.1 drafted 24 April 2026. Seven design principles, five criteria dimensions (commercial, clinical, IG, technical, operational) each tiered. Apply journey and assurance-gate mechanism still to integrate into operational onboarding.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
-        <div class="item"><div class="item-body"><div class="item-title">ASSURE: commissioner onboarding UX</div><div class="item-desc">How to make onboarding frictionless for commissioners. The Operational swim lanes capture the role-level journey; the granular UX-level commissioner experience (click paths, friction points, decision moments) has not been mapped. Three commissioner types confirmed (paying customers, pathway transformers, remote managers) each needing a different support package.</div><div class="item-owner"><strong>Owner:</strong> Service Lead with Adoption.</div></div><a class="item-link" href="NHS TOM - ASSURE v4.html">Open on ASSURE &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: delivery model assessment</div><div class="item-desc">Should suppliers deliver directly to patients or through NHS infrastructure? Determines the supply chain shape.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: framework purpose-built vs hosted</div><div class="item-desc">Whether the framework is purpose-built or hosted on an existing vehicle (SBS being explored as one possibility).</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">CONTRACT: exit terms and offboarding mechanics</div><div class="item-desc">Contractual mechanics for exit and offboarding.</div></div><a class="item-link" href="NHS TOM - CONTRACT v4.html">Open on CONTRACT &rarr;</a></div>
@@ -689,11 +669,10 @@
     <!-- Operational mechanism -->
     <details class="cat cat-op">
       <summary>
-        <span class="cat-h">Operational mechanism <span class="cat-count">22</span></span>
+        <span class="cat-h">Operational mechanism <span class="cat-count">21</span></span>
         <span class="cat-desc">Lane-by-lane operational decisions. From HOW page. Click to expand.</span>
       </summary>
       <div class="items">
-                <div class="item"><div class="item-body"><div class="item-title">Steady-state supplier discovery pattern</div><div class="item-desc">Suppliers appear in the catalogue once accredited. Commissioners find them through the published catalogue, not through direct supplier outreach. Brand awareness and case studies are supporting activity, not the route in. The steady-state mechanism for how commissioners actually discover relevant suppliers (catalogue browse, recommendation engine, match-by-need, broker-style introductions) is not yet defined.</div><div class="item-owner"><strong>Owner:</strong> Platform Lead with Adoption.</div></div><a class="item-link" href="HomeTest Operating Model - Operational.html">Open on HOW &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">PSA private beta volume target</div><div class="item-desc">100 users across 2 trusts by end of March is the working volume target for PSA private beta. Sits alongside the existing HIV beta volumes. Capacity and service-model sizing should plan against both.</div></div><a class="item-link" href="HomeTest Operating Model - Lifecycle.html">Open on WHEN &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Trend analysis (longitudinal results)</div><div class="item-desc"><strong>Settled: not building at this phase.</strong> PSA values from capillary samples and from venous samples are not directly comparable, so a single trend line carries a modality-mixing safety risk. Research into comparability continues; build of trend rendering is deferred. Individual results continue to be exposed clearly; longitudinal interpretation stays with the treating clinician.</div></div><a class="item-link" href="HomeTest Operating Model - Anatomical.html">Open on WHAT &rarr;</a></div>
         <div class="item"><div class="item-body"><div class="item-title">Commissioner dashboards re-scoped</div><div class="item-desc">Re-anchored to MI requirements rather than to a dashboard product. Health Economist input drives the benefits data definition; what gets surfaced where (dashboard vs PDF report vs API) is downstream of the data requirements work. Reduces scope on the Built layer.</div></div><a class="item-link" href="HomeTest Operating Model - Persona Sarah.html">Open on Sarah &rarr;</a></div>

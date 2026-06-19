@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HomeTest Operating Model: Ecosystem &middot; Served</title>
+<title>HomeTest Operating Model: Ecosystem &middot; Regulated</title>
 <style>
   :root {
     --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
     --nhs-cyan:#00A9CE;
     --amber:#FFB91D; --amber-deep:#C9A227; --warm-cream:#FFF9EC;
-    --accent:#006747;
+    --accent:#7C2855;
     --text:#212B32; --text-sec:#4C6272; --text-muted:#7E8B97;
     --border:#d9dee3; --border-lt:#ebeef1;
     --card:#ffffff; --bg:#f8fafc;
@@ -38,8 +38,8 @@
 
   .header{margin-bottom:30px;}
   .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
-  .h-eyebrow{display:inline-block;background:#006747;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
-  .h-num{display:inline-block;background:#006747;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
+  .h-eyebrow{display:inline-block;background:#7C2855;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
+  .h-num{display:inline-block;background:#7C2855;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
   .h-title{font-size:34px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.5px;line-height:1.15;margin-bottom:10px;}
   .h-subtitle{font-size:16px;color:var(--text-sec);font-weight:500;margin-bottom:14px;}
   .h-intro{max-width:780px;font-size:14px;color:var(--text-sec);line-height:1.7;}
@@ -97,37 +97,57 @@
     <a class="eco-sub-hub" href="HomeTest Operating Model - Ecosystem.html">&larr; Ecosystem hub</a>
     <a href="HomeTest Operating Model - Ecosystem Built.html">Built and run</a>
       <a href="HomeTest Operating Model - Ecosystem Consumed.html">Consumed</a>
-      <a href="HomeTest Operating Model - Ecosystem Regulated.html">Regulated</a>
+      <a class="active" style="background:#7C2855;color:#fff;" href="HomeTest Operating Model - Ecosystem Regulated.html">Regulated</a>
       <a href="HomeTest Operating Model - Ecosystem Contracted.html">Contracted</a>
-      <a class="active" style="background:#006747;color:#fff;" href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
+      <a href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
   </div>
 
   <div class="header">
     <div class="amber-rule"></div>
-    <div class="h-eyebrow">Ecosystem &middot; Category 5</div>
-    <h1 class="h-title"><span class="h-num">5</span>Served</h1>
-    <div class="h-subtitle">The output side. Who HomeTest sells to and serves</div>
-    <p class="h-intro">The customers and end users of the operating model. Three audiences with different relationships to the platform: the commissioners who buy it, the patients who use it, and the clinicians (GPs, consultants and prospectively pharmacists) who initiate testing as the upstream of the patient pathway.</p>
+    <div class="h-eyebrow">Ecosystem &middot; Category 3</div>
+    <h1 class="h-title"><span class="h-num">3</span>Regulated by, or engages with</h1>
+    <div class="h-subtitle">External bodies whose approval shapes the model</div>
+    <p class="h-intro">These bodies adjudicate, sign off, advise, or escalate. The framework has to engage each on its own terms. Eight bodies sit in this category, some governance and some statutory.</p>
   </div>
 
   <div class="entities">
-      <div class="entity">
-        <div class="entity-name">Commissioners</div>
-        <div class="entity-line">LAs, ICBs, Acute Trusts, NHSE programmes. Buy via the framework, run live configurations locally. Represented by Sarah in the cast. <strong>Direction in flight:</strong> the platform brokers reach and targeting commissioners cannot replicate themselves (UKHSA data, NHSE social, Nextdoor, LSOA-level segmentation), moving the offer beyond passive plumbing. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Commercial Lead with Partnerships Lead.</span></div>
+      <div class="entity" style="background:#FFF8E6;">
+        <div class="entity-name">PTT <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Adjudicates IG positions, lawful basis, legal directions. Organised by clinical area, not by platform. Multiple teams engaged as HomeTest scales. <strong>Status:</strong> direction position for private beta still pending. PTT scope is per clinical area, so multiple PTT teams will engage as the platform scales beyond the first condition.</div>
       </div>
       <div class="entity">
-        <div class="entity-name">Patients</div>
-        <div class="entity-line">Abdul, Mark, Layla and the archetypes that follow. The end users. The reason the model exists. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Clinical Safety Lead.</span></div>
+        <div class="entity-name">Clinical Safety Group</div>
+        <div class="entity-line">Signs off clinical safety cases per configuration. Holds the hazard log structure and sign-off route.</div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
-        <div class="entity-name">Initiating clinicians <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">GPs, consultants and (prospectively) community pharmacists who initiate testing. GP-init and clinician-init are live patterns; pharmacy-init is a fourth initiation pattern currently subject to an open SLT scope decision. Not directly contracted by HomeTest in any case; they are the upstream of the patient pathway. <strong>Status:</strong> GP-init and clinician-init are confirmed initiation patterns. Pharmacy-init is subject to an open SLT scope decision. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Clinical Safety Lead.</span></div>
+        <div class="entity-name"><a href="HomeTest Operating Model - Supplier Onboarding Framework.html" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(0,48,135,0.35);text-underline-offset:3px;">Supplier Onboarding Framework &rarr;</a> <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Published criteria pack, self-assessment, combined assurance gate. Suppliers admitted once, conformance certificate portable. <strong>Status:</strong> Strawman v0.1 drafted (24 April 2026). Apply mechanism design in flight. Retroactive check needed for Alpha suppliers admitted under earlier route.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">Caldicott Guardian</div>
+        <div class="entity-line">Escalation route for patient confidentiality decisions across configurations.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">NHS Legal</div>
+        <div class="entity-line">Advisory function for legal positions, contract architecture, regulatory questions.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">NHS Commercial</div>
+        <div class="entity-line">Parent commercial function. Holds the framework instrument architecture at NHSE level.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">ICO</div>
+        <div class="entity-line">Statutory data protection regulator. Breach notification, complaints, audit.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">CQC</div>
+        <div class="entity-line">Where the clinical pathway brings CQC-regulated providers into scope.</div>
       </div>
   </div>
 
   <div class="footer-nav">
     <a href="HomeTest Operating Model - Ecosystem.html">&larr; Back to ecosystem hub</a>
-    <a href="HomeTest Operating Model - Ecosystem Built.html">Next: Built and run &rarr;</a>
+    <a href="HomeTest Operating Model - Ecosystem Contracted.html">Next: Contracted &rarr;</a>
   </div>
 
 </div>

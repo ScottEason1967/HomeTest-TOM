@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HomeTest Operating Model: Ecosystem &middot; Served</title>
+<title>HomeTest Operating Model: Ecosystem &middot; Consumed</title>
 <style>
   :root {
     --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
     --nhs-cyan:#00A9CE;
     --amber:#FFB91D; --amber-deep:#C9A227; --warm-cream:#FFF9EC;
-    --accent:#006747;
+    --accent:#00A9CE;
     --text:#212B32; --text-sec:#4C6272; --text-muted:#7E8B97;
     --border:#d9dee3; --border-lt:#ebeef1;
     --card:#ffffff; --bg:#f8fafc;
@@ -38,8 +38,8 @@
 
   .header{margin-bottom:30px;}
   .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
-  .h-eyebrow{display:inline-block;background:#006747;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
-  .h-num{display:inline-block;background:#006747;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
+  .h-eyebrow{display:inline-block;background:#00A9CE;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:1.8px;padding:7px 16px;border-radius:4px;text-transform:uppercase;margin-bottom:16px;}
+  .h-num{display:inline-block;background:#00A9CE;color:#fff;width:34px;height:34px;border-radius:50%;text-align:center;line-height:34px;font-size:14px;font-weight:900;margin-right:10px;vertical-align:middle;}
   .h-title{font-size:34px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.5px;line-height:1.15;margin-bottom:10px;}
   .h-subtitle{font-size:16px;color:var(--text-sec);font-weight:500;margin-bottom:14px;}
   .h-intro{max-width:780px;font-size:14px;color:var(--text-sec);line-height:1.7;}
@@ -96,38 +96,50 @@
   <div class="eco-sub">
     <a class="eco-sub-hub" href="HomeTest Operating Model - Ecosystem.html">&larr; Ecosystem hub</a>
     <a href="HomeTest Operating Model - Ecosystem Built.html">Built and run</a>
-      <a href="HomeTest Operating Model - Ecosystem Consumed.html">Consumed</a>
+      <a class="active" style="background:#00A9CE;color:#fff;" href="HomeTest Operating Model - Ecosystem Consumed.html">Consumed</a>
       <a href="HomeTest Operating Model - Ecosystem Regulated.html">Regulated</a>
       <a href="HomeTest Operating Model - Ecosystem Contracted.html">Contracted</a>
-      <a class="active" style="background:#006747;color:#fff;" href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
+      <a href="HomeTest Operating Model - Ecosystem Served.html">Served</a>
   </div>
 
   <div class="header">
     <div class="amber-rule"></div>
-    <div class="h-eyebrow">Ecosystem &middot; Category 5</div>
-    <h1 class="h-title"><span class="h-num">5</span>Served</h1>
-    <div class="h-subtitle">The output side. Who HomeTest sells to and serves</div>
-    <p class="h-intro">The customers and end users of the operating model. Three audiences with different relationships to the platform: the commissioners who buy it, the patients who use it, and the clinicians (GPs, consultants and prospectively pharmacists) who initiate testing as the upstream of the patient pathway.</p>
+    <div class="h-eyebrow">Ecosystem &middot; Category 2</div>
+    <h1 class="h-title"><span class="h-num">2</span>Consumed from NHS infrastructure</h1>
+    <div class="h-subtitle">Shared NHS services HomeTest plugs into</div>
+    <p class="h-intro">Configured and paid for per use, not built or run. HomeTest interfaces with these services; the services are owned and operated by their NHS counterparts to their own SLAs. Six services make up this layer today. <strong>Notify scope is currently under live review</strong>: whether it extends into physical fulfilment, kit dispatch and sample handling is an open question with a mid-June target for a response.</p>
   </div>
 
   <div class="entities">
       <div class="entity">
-        <div class="entity-name">Commissioners</div>
-        <div class="entity-line">LAs, ICBs, Acute Trusts, NHSE programmes. Buy via the framework, run live configurations locally. Represented by Sarah in the cast. <strong>Direction in flight:</strong> the platform brokers reach and targeting commissioners cannot replicate themselves (UKHSA data, NHSE social, Nextdoor, LSOA-level segmentation), moving the offer beyond passive plumbing. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Commercial Lead with Partnerships Lead.</span></div>
-      </div>
-      <div class="entity">
-        <div class="entity-name">Patients</div>
-        <div class="entity-line">Abdul, Mark, Layla and the archetypes that follow. The end users. The reason the model exists. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Clinical Safety Lead.</span></div>
+        <div class="entity-name">NHS Login</div>
+        <div class="entity-line">Patient identity and authentication. HomeTest interfaces; the service is owned and run by NHS Login.</div>
       </div>
       <div class="entity" style="background:#FFF8E6;">
-        <div class="entity-name">Initiating clinicians <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
-        <div class="entity-line">GPs, consultants and (prospectively) community pharmacists who initiate testing. GP-init and clinician-init are live patterns; pharmacy-init is a fourth initiation pattern currently subject to an open SLT scope decision. Not directly contracted by HomeTest in any case; they are the upstream of the patient pathway. <strong>Status:</strong> GP-init and clinician-init are confirmed initiation patterns. Pharmacy-init is subject to an open SLT scope decision. <span style="display:block;margin-top:6px;font-size:11px;color:#7E8B97;font-style:italic;letter-spacing:0.3px;"><strong style="font-style:normal;color:#4C6272;">Owner:</strong> Product Lead with Clinical Safety Lead.</span></div>
+        <div class="entity-name">NHS Notify <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Patient communications today. HomeTest configures templates and channels; Notify operates the comms infrastructure. <strong>Status:</strong> scope under active review. Open question on whether Notify also covers physical fulfilment, kit dispatch, return logistics and sample handling. Treat as comms only until the position lands; do not assume fulfilment in scope.</div>
+      </div>
+      <div class="entity" style="background:#FFF8E6;">
+        <div class="entity-name">NHS App <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">The patient digital surface. HomeTest presents through it; the App team owns the surface. <strong>Status:</strong> working partnership with the NHS App test-results team on native rendering of HomeTest results. Interim is a web hand-off into a HomeTest-hosted results UI. Longer-term target is the Personal Data Model (PDM) as the canonical record of test results, with the NHS App as the native render against it. Replaces the IM1 aggregator pattern over time.</div>
+      </div>
+      <div class="entity">
+        <div class="entity-name">FHIR routing</div>
+        <div class="entity-line">Clinical data exchange across NHS systems. HomeTest interfaces; routing is owned centrally.</div>
+      </div>
+      <div class="entity" style="background:#FFF8E6;">
+        <div class="entity-name">Federated Data Platform <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Analytics backbone where in scope. HomeTest aligns to FDP governance; FDP is run separately. <strong>Status:</strong> alignment in flight. FDP governance and lawful basis are being worked through where HomeTest configurations need analytics integration. Position depends on configuration scope.</div>
+      </div>
+      <div class="entity" style="background:#FFF8E6;">
+        <div class="entity-name">Single Patient Record <span style="font-size:10px;font-weight:800;letter-spacing:1px;color:#C9A227;background:#fff;padding:2px 7px;border-radius:3px;margin-left:6px;text-transform:uppercase;">In flight</span></div>
+        <div class="entity-line">Canonical result destination where configuration requires. HomeTest writes; SPR owns the record. <strong>Status:</strong> alignment in flight per configuration. SPR governance defines what result destinations and what controller designation applies; HomeTest aligns rather than creates parallel governance.</div>
       </div>
   </div>
 
   <div class="footer-nav">
     <a href="HomeTest Operating Model - Ecosystem.html">&larr; Back to ecosystem hub</a>
-    <a href="HomeTest Operating Model - Ecosystem Built.html">Next: Built and run &rarr;</a>
+    <a href="HomeTest Operating Model - Ecosystem Regulated.html">Next: Regulated &rarr;</a>
   </div>
 
 </div>

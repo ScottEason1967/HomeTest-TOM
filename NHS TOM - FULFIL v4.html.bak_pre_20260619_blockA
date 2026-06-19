@@ -447,7 +447,7 @@
     <div class="status-heading heading-progress">
       <span class="status-dot dot-progress"></span>
       In Progress
-      <span class="status-count">5 items</span>
+      <span class="status-count">7 items</span>
     </div>
     <ul class="status-list progress">
       <li>Supply chain architecture: Notify capability assessment completed 29 April. Notify can do digital communications (SMS, email, NHS App, letters via Royal Mail) but has no infrastructure for physical kit fulfilment, lab linkage or end-to-end logistics. Notify would have to build fulfilment from scratch. Strawman drafted 30 April for Notify to mark up. Likely direction forming: Notify in for comms, parked for fulfilment and labs. All-inclusive supplier model remains working default for kit fulfilment</li>
@@ -469,8 +469,8 @@
     <ul class="status-list open">
       <li>Service standards and SLAs not yet defined</li>
       <li>Supplier switching process and patient continuity during transitions</li>
-      
-      
+      <li>How HealthStore fulfilment differs from HomeTest (not yet scoped). Notify centralised-payment model assessed as not replicable for HealthStore due to complexity</li>
+      <li>HealthSync: not yet scoped beyond high-level concept. No delivery timeline</li>
       <li>Cold chain logistics for temperature-sensitive tests (e.g. capillary blood for PSA)</li>
       <li>Royal Mail engagement live. Two threads in flight: (1) reliability of the Tracked 24 service for kit logistics, (2) potential new 'Health Samples' package category sized to fit new blood collection devices that currently fall outside Large Letter format and require Small Parcel format at up to three times the price. Notify works through Royal Mail Health; this engagement also runs via MarketReach; route alignment between the three paths still to be reconciled. Deep dive on Royal Mail completed; latest position carried on the Status page</li>
       <li>Whether centralised kit procurement (NHS taking on stock holding and management) is viable or contradicts the platform-orchestrates-doesn't-operate principle. Notify flagged this dependency explicitly in the 29 April session</li>
