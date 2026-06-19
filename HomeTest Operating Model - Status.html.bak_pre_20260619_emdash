@@ -157,7 +157,7 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">106 listings across 97 unique items, some SLT items also appear in their source category</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">106 listings across 97 unique items &mdash; some SLT items also appear in their source category</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Open Qs for SLT (now top of Unresolved) -->
@@ -182,7 +182,7 @@
             <div class="item-title">Endorse the integrated engagement and pre-sales cell</div>
             <div class="item-desc">Engagement runs through one cell under sponsor leadership, not a separate sales team. Senior sponsor endorsement has not formally landed. Without it the cell cannot be presented forward as a settled element of the operating model.</div>
             <div class="item-owner"><strong>Decision:</strong> SLT with sponsor.</div>
-            <div class="item-xref"><strong>Related:</strong> Adoption as a named function in the model (below), the engagement cell is one delivery mechanism within the broader adoption question.</div>
+            <div class="item-xref"><strong>Related:</strong> Adoption as a named function in the model (below) &mdash; the engagement cell is one delivery mechanism within the broader adoption question.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Why.html">Open on WHY &rarr;</a>
         </div>
@@ -257,7 +257,7 @@
             <div class="item-title">Adoption as a named function in the model</div>
             <div class="item-desc">Adoption activity is being delivered through the Partnerships workstream. The unresolved question is whether adoption should be surfaced structurally in the operating model itself (an overlay, a foundation capability, a row in the RACI) or stay implicit inside Partnerships.</div>
             <div class="item-owner"><strong>Decision:</strong> SLT to confirm.</div>
-            <div class="item-xref"><strong>From:</strong> Governance accountability and Architectural positioning. <strong>Related:</strong> Endorse the integrated engagement and pre-sales cell (above), that cell is one delivery mechanism within this broader question.</div>
+            <div class="item-xref"><strong>From:</strong> Governance accountability and Architectural positioning. <strong>Related:</strong> Endorse the integrated engagement and pre-sales cell (above) &mdash; that cell is one delivery mechanism within this broader question.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Governance.html#open-q">Open on WHO &rarr;</a>
         </div>
@@ -472,7 +472,7 @@
         <div class="item">
           <div class="item-body">
             <div class="item-title">Data controller framework</div>
-            <div class="item-desc">Federated multi-controller model: NHSE controller for the foundation, commissioner controller for the testing purpose, supplier as processor. Joint-controller ruled out. Exact controller designation per configuration still being scoped. <strong>Lawful basis position landed (PTT, 20 May 2026):</strong> Private Beta is system delivery (data moved to enable care, no NHSE-side analysis of patient data for its own purposes), no legal Direction required for Private Beta. <strong>Public Beta likely needs a Direction</strong> if NHSE begins to analyse data for its own purposes (e.g. cohort MI). Direction request would need to land before January 2027 or after March 2027 to avoid the DHSC/NHSE legal-merger transition window. Affects every DPIA, every DSA, every supplier contract.</div>
+            <div class="item-desc">Federated multi-controller model: NHSE controller for the foundation, commissioner controller for the testing purpose, supplier as processor. Joint-controller ruled out. Exact controller designation per configuration still being scoped. <strong>Lawful basis position landed (PTT, 20 May 2026):</strong> Private Beta is system delivery (data moved to enable care, no NHSE-side analysis of patient data for its own purposes) &mdash; no legal Direction required for Private Beta. <strong>Public Beta likely needs a Direction</strong> if NHSE begins to analyse data for its own purposes (e.g. cohort MI). Direction request would need to land before January 2027 or after March 2027 to avoid the DHSC/NHSE legal-merger transition window. Affects every DPIA, every DSA, every supplier contract.</div>
             <div class="item-owner"><strong>Decision:</strong> SLT with NHS Legal and Caldicott Guardian.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Governance.html#open-q">Open on WHO &rarr;</a>
@@ -480,7 +480,7 @@
         <div class="item">
           <div class="item-body">
             <div class="item-title">IAO appointment (in place, 9 June 2026)</div>
-            <div class="item-desc">NHSE policy requires the Information Asset Owner to be a permanent NHSE employee. IAO confirmed in place at the HomeTest Delivery Board on 9 June 2026. The earlier dependency on a HomeTest transition out of DPSP no longer applies, the programme remains in DPSP (transfer to At Home and Community cancelled, 9 June 2026). Formal sign-off to process live patient data is no longer blocked on this item.</div>
+            <div class="item-desc">NHSE policy requires the Information Asset Owner to be a permanent NHSE employee. IAO confirmed in place at the HomeTest Delivery Board on 9 June 2026. The earlier dependency on a HomeTest transition out of DPSP no longer applies &mdash; the programme remains in DPSP (transfer to At Home and Community cancelled, 9 June 2026). Formal sign-off to process live patient data is no longer blocked on this item.</div>
             <div class="item-owner"><strong>Owner:</strong> SRO.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Governance.html#open-q">Open on WHO &rarr;</a>
@@ -604,7 +604,7 @@
         <div class="item">
           <div class="item-body">
             <div class="item-title">Tracked action: directions decision on private beta</div>
-            <div class="item-desc">A precise exam question was issued to PTT on 1 May 2026 asking for a definitive yes/no on whether a legal direction is required for private beta. <strong>Answered 20 May 2026:</strong> no Direction required for Private Beta because data movement is system delivery (not NHSE analysis for its own purposes). The constraint moves to Public Beta, a Direction will be needed if NHSE-side analysis (e.g. cohort MI) begins. This row is now closed for Private Beta; Public Beta direction sequencing is tracked separately.</div>
+            <div class="item-desc">A precise exam question was issued to PTT on 1 May 2026 asking for a definitive yes/no on whether a legal direction is required for private beta. <strong>Answered 20 May 2026:</strong> no Direction required for Private Beta because data movement is system delivery (not NHSE analysis for its own purposes). The constraint moves to Public Beta &mdash; a Direction will be needed if NHSE-side analysis (e.g. cohort MI) begins. This row is now closed for Private Beta; Public Beta direction sequencing is tracked separately.</div>
             <div class="item-owner"><strong>Owner:</strong> IG Lead (follow-up). Escalation route via PTT senior leadership.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Operational.html#lane-5">Open on HOW &rarr;</a>

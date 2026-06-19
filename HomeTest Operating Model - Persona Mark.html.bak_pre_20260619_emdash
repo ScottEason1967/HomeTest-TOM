@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Layla: HomeTest Operating Model</title>
+<title>Mark: HomeTest Operating Model</title>
 <style>
   :root {
     --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
@@ -78,8 +78,8 @@
     <a href="HomeTest Operating Model - Persona Abdul.html">Abdul</a>
     <a href="HomeTest Operating Model - Persona Adam.html">Adam</a>
     <a href="HomeTest Operating Model - Persona Hannah.html">Hannah</a>
-    <a href="HomeTest Operating Model - Persona Mark.html">Mark</a>
-    <a href="HomeTest Operating Model - Persona Layla.html" class="active">Layla</a>
+    <a href="HomeTest Operating Model - Persona Mark.html" class="active">Mark</a>
+    <a href="HomeTest Operating Model - Persona Layla.html">Layla</a>
     <a href="HomeTest Operating Model - Persona Sean.html">Sean</a>
     <a href="HomeTest Operating Model - Persona Joe.html">Joe</a>
   </div>
@@ -88,45 +88,48 @@
 <div class="page">
 
   <div class="amber-rule"></div>
-  <div class="h-eyebrow">The cast &middot; meet Layla</div>
+  <div class="h-eyebrow">The cast &middot; meet Mark</div>
 
   <div class="h-flex">
     <div>
-      <h1 class="h-title">Layla.</h1>
-      <div class="h-role">Patient &middot; Primary care initiated</div>
-      <div class="h-quote">&ldquo;I can't take half a day off for bloods. The kit comes to me, I do it on a Saturday, the GP sees the result.&rdquo;</div>
-      <div class="h-bio">42, single parent of two school-age kids, works two part-time jobs (one shift-based). Iron deficiency anaemia diagnosed three years ago, on ferrous sulphate. Her GP needs FBC and ferritin every six months to monitor her response. A clinic visit means losing income; a kit at home means she stays in work and her anaemia stays monitored. She is the access story the model has to serve.</div>
-      <a href="HomeTest Operating Model - Layla Journey.html" style="display:inline-block;margin-top:14px;background:#FFB91D;color:#003087;font-weight:800;font-size:13px;letter-spacing:0.3px;padding:10px 20px;border-radius:8px;text-decoration:none;box-shadow:0 4px 14px rgba(0,32,64,0.20);">Read Layla&apos;s journey &rarr;</a>
+      <h1 class="h-title">Mark.</h1>
+      <div class="h-role">Patient &middot; Secondary care initiated</div>
+      <div class="h-quote">&ldquo;The test comes to me. The consultant sees the result. They only call me if something needs to change.&rdquo;</div>
+      <div class="h-bio">65, retired teacher, lives with his wife. Diagnosed last year with low-grade prostate cancer (CPG 2) and on Active Surveillance &mdash; chose active monitoring rather than immediate treatment. Sees his consultant urologist every six months. PSA-AS lets him do the routine monitoring at home and come in only when the consultant flags a change. Sits in the established pre-treatment cohort per NICE NG131, which is the canonical PSA-AS fit.</div>
+      <a href="HomeTest Operating Model - Mark Journey.html" style="display:inline-block;margin-top:14px;background:#FFB91D;color:#003087;font-weight:800;font-size:13px;letter-spacing:0.3px;padding:10px 20px;border-radius:8px;text-decoration:none;box-shadow:0 4px 14px rgba(0,32,64,0.20);">Read Mark&apos;s journey &rarr;</a>
     </div>
     <div class="h-portrait">
-      <img src="Assets/Personas/layla.png" alt="Layla">
+      <img src="Assets/Personas/mark.png" alt="Mark">
     </div>
   </div>
 
   
   <div class="where-panel">
-    <span class="label">Why Layla is here</span>
-    Layla is a patient on the iron deficiency anaemia GP-initiated configuration, primary care anaemia monitoring. She represents the patient-side of the GP-initiated pattern, distinct from clinician-initiated (<a href="HomeTest Operating Model - Persona Mark.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Mark</a>) and patient-initiated (<a href="HomeTest Operating Model - Persona Abdul.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Abdul</a>). Her configuration matters because primary-care monitoring is the largest pool of long-term-condition testing in the NHS; if HomeTest does not work for the anaemia review cycle, the platform&apos;s headline volume case does not land. Layla sits inside <a href="HomeTest Operating Model - Persona Anita.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Anita</a>&apos;s commissioning shape and on <a href="HomeTest Operating Model - Persona Hannah.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Hannah</a>&apos;s review cycle.
+    <span class="label">Why Mark is here</span>
+    Mark is a patient on the PSA Active Surveillance established cohort &mdash; on active monitoring for low-grade prostate cancer, pre-treatment, watching for any rise in PSA that would trigger escalation. He represents the patient-side of the clinician-initiated pattern: the patient who never sees the catalogue, never selects the supplier, never holds the contract &mdash; receives a clinician-initiated test, gets the result through his clinician. Mark sits inside <a href="HomeTest Operating Model - Persona Catherine.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Catherine</a>&apos;s commissioning shape and on <a href="HomeTest Operating Model - Persona Adam.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Adam</a>&apos;s surveillance pathway. Three roles, one configuration.
   </div>
 
   <h2 class="section-h">Why this role matters</h2>
-  <p class="section-body">Layla is the third Year 1 patient archetype. <strong>Abdul</strong> is patient-initiated (he self-screens with the NHS App, CVKM Check Up follows), <strong>Mark</strong> is clinician-initiated (his consultant requests, PSA-AS), <strong>Layla</strong> is GP-initiated (her GP arranges, iron deficiency anaemia monitoring). Together the three cover the SLT-confirmed initiation patterns. They also test whether the model serves access: Layla is the one whose journey to a clinic is the actual barrier. If the model only works for people who can take time off, it isn't doing the equity job. Her full story is told in <a href="HomeTest Operating Model - Layla Journey.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Layla&apos;s journey</a>, four acts from the missed appointment to the cycle that fits her life.</p>
+  <p class="section-body">Mark is the clinician-initiated patient archetype. Where Abdul represents the <strong>patient-initiated</strong> journey (he self-screens with the NHS App BP tool and that triggers a CVKM pathway), Mark represents the <strong>clinician-initiated</strong> journey (his consultant requests the PSA test from the active surveillance list, the result returns to the consultant first, then to him after clinical review). The operating model has to serve both initiation patterns from the same architecture: that is the test of whether it works. His full story is told in <a href="HomeTest Operating Model - Mark Journey.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Mark&apos;s journey</a>, four acts from diagnosis to life on surveillance.</p>
 
   <div class="pair-callout">
-    <strong>The third archetype carries the equity load.</strong> Abdul and Mark both have routes into care that don't depend on physical access barriers. Layla is the one who can't easily take time off, can't easily get to the clinic, and for whom a kit at home is the difference between staying monitored and falling out of the system. The Purpose statement (better access, earlier detection, fairer outcomes) reads true when Layla's journey works. If she can't reach the model, the model isn't doing what it says on the tin.
+    <strong>Abdul, Mark and Layla are not alternatives.</strong> They are three patient archetypes the operating model has to serve: CVKM screening (patient-init, via NHS App), PSA-AS (clinician-init, acute, longitudinal) and iron deficiency anaemia (GP-init, primary-care monitoring). The model is right when all three fit cleanly into the same foundation, the same overlays, the same pattern catalogue. If we have to fork the architecture to serve them, we have the wrong architecture.
   </div>
 
-  <h2 class="section-h">What's different about Layla's journey</h2>
-  <p class="section-body">Layla doesn't order her own test, and her consultant doesn't either. Her GP arranges it from the practice system as part of her anaemia review cycle. The kit arrives at her house, she takes the sample around her shifts, returns it via post, and the result lands directly in her GP record. Her GP only contacts her if something needs action: medication adjustment, lifestyle review, referral. The data flow is GP-system to lab to GP-record, with Layla as the sample provider rather than the orderer or recipient. This is fundamentally different to both Abdul (who initiates and receives) and Mark (whose consultant initiates and reviews): and it stresses a different part of the model: integration with primary care systems, GP-record write-back, GP-led follow-up.</p>
+  <h2 class="section-h">What's different about Mark's journey</h2>
+  <p class="section-body">Mark doesn't order his own test. His consultant does, from the active surveillance list. The kit (capillary draw, not full venous) arrives at his house. He takes the sample, returns it via Royal Mail to a specialist pathology lab, and the result goes to the consultant first: not to Mark's NHS App. The consultant interprets the value in the context of Mark's PSA trend, decides whether to escalate, and only then is Mark told. This is fundamentally different to Abdul's patient-initiated CVKM screening journey at every stage of the FULFIL lane, even though it uses the same operating model foundation.</p>
 
-  <h2 class="section-h">Where Layla appears in the model</h2>
+  <h2 class="section-h">Where Mark appears in the model</h2>
   <ul class="where-list">
-    <li>The Year 1 patient stories alongside Abdul and Mark on the homepage</li>
-    <li>The GP-initiated initiation pattern on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
-    <li>The patient lane on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> page (overlay cells, alongside Abdul and Mark)</li>
-    <li>The <a href="NHS%20TOM%20-%20FULFIL%20v4.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">FULFIL</a> stage detail page (GP-init configuration)</li>
-    <li>The EPR / SPR data flow conversation in <a href="HomeTest Operating Model - Persona Aisha.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Aisha</a>'s territory: her journey is the canonical primary care integration scenario</li>
+    <li>The Year 1 patient stories trio (Abdul, Mark, Layla) on the homepage</li>
+    <li>The PSA configuration RACI on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
+    <li>The clinician-initiated initiation pattern on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
+    <li>The <a href="NHS%20TOM%20-%20FULFIL%20v4.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">FULFIL</a> stage detail page (PSA pathway, not HIV pathway)</li>
   </ul>
+  <div class="pair-callout" style="margin-top:32px;">
+    <strong>The cast around Mark.</strong> <a href="HomeTest Operating Model - Persona Adam.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Adam</a> is the consultant urologist who initiates Mark&apos;s PSA tests and tracks the trend. <a href="HomeTest Operating Model - Persona Catherine.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Catherine</a> is the Acute Trust commissioner who holds the budget for Mark&apos;s cohort.
+  </div>
+
 </div>
 </body>
 </html>

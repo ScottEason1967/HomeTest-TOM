@@ -238,13 +238,13 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-1">
       <div class="stage-side"><div class="stage-number">01</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Stratification, the cohort eligible for active surveillance</div>
+        <div class="stage-eyebrow">Stratification — the cohort eligible for active surveillance</div>
         <h2 class="stage-title">More than 64,000 men a year are diagnosed with prostate cancer in the UK. Around 6,500 a year choose active surveillance; up to 5,000 more could. Mark sits in that cohort: low-risk disease, watch-and-wait, quarterly PSA. The surveillance is the treatment. <span class="hm-witness" data-moment="mark-s1"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Mark Story/mark-stage1.png" alt="Mark Stage 1" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
 
         <div class="pull-quote">
-          <p class="pull-quote-text">I am sixty-five and I have prostate cancer. They told me it is the kind that does not need treating, just watching. That is the bit nobody warns you about, what the watching actually costs.</p>
+          <p class="pull-quote-text">I am sixty-five and I have prostate cancer. They told me it is the kind that does not need treating, just watching. That is the bit nobody warns you about — what the watching actually costs.</p>
           <div class="pull-quote-attribution">Mark</div>
         </div>
 
@@ -272,7 +272,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-2">
       <div class="stage-side"><div class="stage-number">02</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Identification, Adam&apos;s clinic shortlists him</div>
+        <div class="stage-eyebrow">Identification — Adam&apos;s clinic shortlists him</div>
         <h2 class="stage-title">Adam reviews the cohort. Mark fits the profile for the first wave of home PSA: stable trend, comfortable with the kit idea, no clinical concerns. The shortlist of first patients is small and chosen carefully. Mark gets the conversation at the next clinic. <span class="hm-witness" data-moment="mark-s2"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Mark Story/mark-stage2.png" alt="Mark Stage 2" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
@@ -306,7 +306,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-3">
       <div class="stage-side"><div class="stage-number">03</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Diagnosis, kit out, sample back, result to the consultant first</div>
+        <div class="stage-eyebrow">Diagnosis — kit out, sample back, result to the consultant first</div>
         <h2 class="stage-title">The kit arrives. Mark takes the sample at home on the day the clinic would have happened. The lab processes it. The result lands in Adam&apos;s system before the next clinic, in trend, with the threshold-alert logic wired in. Mark sees the result only after Adam has read it. <span class="hm-witness" data-moment="mark-s3"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Mark Story/mark-stage3.png" alt="Mark Stage 3" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
@@ -323,7 +323,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 
         <div class="old-way">
           <div class="old-way-label">The old way</div>
-          <div class="old-way-body">Two trips to the hospital, phlebotomy for the blood, second trip for the result. Or, on a bad cycle, a missed appointment and a quietly delayed surveillance round.</div>
+          <div class="old-way-body">Two trips to the hospital — phlebotomy for the blood, second trip for the result. Or, on a bad cycle, a missed appointment and a quietly delayed surveillance round.</div>
         </div>
 
         <div class="careteam">
@@ -343,7 +343,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-4">
       <div class="stage-side"><div class="stage-number">04</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Treatment, the surveillance itself</div>
+        <div class="stage-eyebrow">Treatment — the surveillance itself</div>
         <h2 class="stage-title">Active surveillance IS the treatment. The clinical work is the trend interpretation. Adam reads Mark&apos;s PSA in the context of every prior reading and the imaging cycle. Most cycles, nothing changes. The model has not removed the clinical decision; it has removed the unnecessary clinical visit. <span class="hm-witness" data-moment="mark-s4"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Mark Story/mark-stage4.png" alt="Mark Stage 4" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>
@@ -377,7 +377,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="stage" id="stage-5">
       <div class="stage-side"><div class="stage-number">05</div></div>
       <div class="stage-main">
-        <div class="stage-eyebrow">Long-term optimisation, the surveillance that keeps him in surveillance</div>
+        <div class="stage-eyebrow">Long-term optimisation — the surveillance that keeps him in surveillance</div>
         <h2 class="stage-title">Mark stays in the cohort. The quarterly PSA happens at home. The annual imaging happens in clinic. The trend stays stable. The cohort grows. Adam holds more patients in surveillance than the clinic-only model could have, and Mark is one of them. <span class="hm-witness" data-moment="mark-s5"></span></h2>
 
         <div class="stage-image" style="padding:0;border:none;background:none;margin-bottom:22px;"><img src="Assets/Mark Story/mark-stage5.png" alt="Mark Stage 5" style="width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 8px 24px rgba(0,32,64,0.12);"></div>

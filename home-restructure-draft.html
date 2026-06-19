@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HomeTest Operating Model — DRAFT restructure v4</title>
+<title>HomeTest Operating Model, DRAFT restructure v4</title>
 <style>
 :root {
   --nhs-dark:#003087; --nhs-blue:#005EB8; --nhs-green:#006747; --nhs-pink:#AE2573;
@@ -21,7 +21,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .draft-banner{background:var(--warm-cream);border:1.5px solid var(--amber);border-radius:10px;padding:9px 16px;margin-bottom:18px;font-size:11.5px;color:var(--amber-deep);font-weight:700;letter-spacing:0.5px;}
 .draft-banner strong{color:#9A6700;}
 
-/* ===== HERO — deep blue panel, white text ===== */
+/* ===== HERO, deep blue panel, white text ===== */
 .hero-panel{background:linear-gradient(135deg,#003087 0%,#005EB8 100%);border-radius:18px;box-shadow:0 14px 40px rgba(0,32,64,0.32);padding:36px 44px;margin-bottom:18px;}
 .hero-row{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start;}
 .hero-eyebrow{font-size:11px;font-weight:800;letter-spacing:2.4px;color:var(--amber);text-transform:uppercase;margin-bottom:12px;}
@@ -44,10 +44,10 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .patient-bio{font-size:10.5px;color:var(--text-sec);line-height:1.4;}
 @media(max-width:880px){.hero-row{grid-template-columns:1fr;}}
 
-/* ===== WHITE CENTREPIECE — holds the petal ===== */
+/* ===== WHITE CENTREPIECE, holds the petal ===== */
 .centrepiece{background:#fff;border-radius:18px;box-shadow:0 14px 40px rgba(0,48,135,0.22);padding:36px 44px 36px;margin-bottom:18px;}
 
-/* ===== PETAL CSS — LIFTED VERBATIM FROM LIVE home.html ===== */
+/* ===== PETAL CSS, LIFTED VERBATIM FROM LIVE home.html ===== */
 .grid-wrap { position: relative; }
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
   .tile-cell { position: relative; display: flex; }
@@ -123,7 +123,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
   .actor-name { font-size: 13px; font-weight: 800; color: var(--nhs-dark); }
   .actor-role { font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.1px; font-weight: 700; margin-top: 3px; }
   .actor-bio { font-size: 11px; color: var(--text-sec); margin-top: 8px; line-height: 1.45; }
-  /* Commissioner cluster card — one card, four personas, mirrors Operational actor-key Lane 1 cluster */
+  /* Commissioner cluster card, one card, four personas, mirrors Operational actor-key Lane 1 cluster */
   .actor.actor-cluster { grid-column: span 2; cursor: default; }
   .actor.actor-cluster:hover { transform: none; box-shadow: 0 2px 6px rgba(0,32,64,0.04); border-color: var(--border-lt); }
   .actor-portrait.actor-portrait-cluster { display: flex; flex-direction: row; align-items: end; justify-content: center; gap: 0; height: 110px; }
@@ -142,7 +142,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
   
 /* ===== END PETAL CSS ===== */
 
-/* ===== HEARTS AND MINDS — four coloured story tiles ===== */
+/* ===== HEARTS AND MINDS, four coloured story tiles ===== */
 .hm-panel{background:linear-gradient(135deg,#003087 0%,#005EB8 100%);border-radius:18px;box-shadow:0 14px 40px rgba(0,32,64,0.32);padding:32px 40px;margin-bottom:18px;color:#fff;}
 .hm-head{margin-bottom:20px;}
 .hm-eyebrow{font-size:11px;font-weight:800;letter-spacing:2.4px;color:var(--amber);text-transform:uppercase;margin-bottom:8px;}
@@ -183,7 +183,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .st-num{font-size:11px;font-weight:800;color:var(--amber-deep);margin-top:5px;letter-spacing:0.3px;}
 @media(max-width:760px){.st-row{grid-template-columns:1fr;}}
 
-/* ===== CAST section — deep blue, outside the white card feel ===== */
+/* ===== CAST section, deep blue, outside the white card feel ===== */
 .cast-panel{background:linear-gradient(135deg,#003087 0%,#005EB8 100%);border-radius:18px;padding:30px 40px;box-shadow:0 14px 40px rgba(0,32,64,0.32);}
 .cast-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;flex-wrap:wrap;gap:10px;}
 .cast-eyebrow-h{font-size:11px;font-weight:800;letter-spacing:2.4px;color:var(--amber);text-transform:uppercase;}
@@ -208,7 +208,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <strong>DRAFT v4.</strong> Deep blue panels for hero and cast. Sean added as 4th patient (horizontal cohort, not an initiation pattern). Hearts and Minds now 4 tiles. Live home.html untouched.
   </div>
 
-  <!-- ===== HERO — deep blue panel ===== -->
+  <!-- ===== HERO, deep blue panel ===== -->
   <div class="hero-panel">
     <div class="hero-row">
       <div class="hero-left">
@@ -440,7 +440,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
   </div>
   </div>
 
-  <!-- ===== HEARTS AND MINDS — four story tiles ===== -->
+  <!-- ===== HEARTS AND MINDS, four story tiles ===== -->
   <div class="hm-panel">
     <div class="hm-head">
       <div class="hm-eyebrow">Hearts and Minds</div>
@@ -493,7 +493,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       <div class="st-body">
         <div class="st-title">Status</div>
         <div class="st-desc">What is decided, in flight, open. The honest list of what is left.</div>
-        <div class="st-num"><span id="home-count-unresolved">—</span> unresolved &middot; <span id="home-count-in-progress">—</span> in progress</div>
+        <div class="st-num"><span id="home-count-unresolved">-</span> unresolved &middot; <span id="home-count-in-progress">-</span> in progress</div>
       </div>
     </a>
     <a href="HomeTest Operating Model - Teamwork.html" class="st-card st-teamwork">
@@ -506,7 +506,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     </a>
   </div>
 
-  <!-- ===== CAST — deep blue panel, outside the white card feel ===== -->
+  <!-- ===== CAST, deep blue panel, outside the white card feel ===== -->
   <div class="cast-panel">
     <div class="cast-head">
       <div class="cast-eyebrow-h">The cast &middot; fifteen people, one model</div>

@@ -106,14 +106,14 @@
   </div>
 
   <h2 class="section-h">What Catherine needs from the framework</h2>
-  <p class="section-body">Three things. First, a tariff envelope she can plan against: the PSA-AS Monitoring Episode tariff under design has to land with a glide-path her Trust&apos;s finance team can take to board. Second, a contract route that survives audit: acute trust commissioners commission through the Standard Contract architecture, and the call-off mechanism has to slot inside it. Third, an end-to-end clinical pathway her consultants will actually adopt, that&apos;s where <a href="HomeTest Operating Model - Persona Adam.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Adam</a> sits.</p>
+  <p class="section-body">Three things. First, a tariff envelope she can plan against: the PSA-AS Monitoring Episode tariff under design has to land with a glide-path her Trust&apos;s finance team can take to board. Second, a contract route that survives audit: acute trust commissioners commission through the Standard Contract architecture, and the call-off mechanism has to slot inside it. Third, an end-to-end clinical pathway her consultants will actually adopt &mdash; that&apos;s where <a href="HomeTest Operating Model - Persona Adam.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Adam</a> sits.</p>
 
   
   <h2 class="section-h">The commissioner pitch in 60 seconds</h2>
   <p class="section-body">The pitch Catherine hears in the first ten minutes, before she decides whether the conversation is worth continuing. Direct answers to the questions she will ask. No aspiration, no architecture, no abstractions.</p>
 
   <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>Where does the value land for me?</strong> Outpatient capacity released, every PSA done at home is one fewer routine appointment slot consumed, and that slot goes into elective recovery and counts toward the Trust&apos;s capacity commitments. Phlebotomy workload eases. Lab capacity is protected from competing with diagnostic tests. The Trust does not save cash on the unit cost of a test (per-test economics favour in-clinic phlebotomy on raw numbers). The value lands in released capacity at the pathway level, which is why pathway-level tariff is the funding unlock, not per-test cashable saving.
+    <strong>Where does the value land for me?</strong> Outpatient capacity released &mdash; every PSA done at home is one fewer routine appointment slot consumed, and that slot goes into elective recovery and counts toward the Trust&apos;s capacity commitments. Phlebotomy workload eases. Lab capacity is protected from competing with diagnostic tests. The Trust does not save cash on the unit cost of a test (per-test economics favour in-clinic phlebotomy on raw numbers). The value lands in released capacity at the pathway level, which is why pathway-level tariff is the funding unlock, not per-test cashable saving.
   </div>
 
   <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
@@ -125,11 +125,11 @@
   </div>
 
   <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>What if it doesn&apos;t work for my cohort?</strong> Exit terms sit in the call-off contract. The Trust can revert to in-person phlebotomy at any point, the AS cohort is a watch-and-wait population by definition, so switching back to in-person testing is a clinical step-back, not a service breakdown. Switching supplier within the pattern is supported via the supplier-switching mechanism. No multi-year platform lock-in.
+    <strong>What if it doesn&apos;t work for my cohort?</strong> Exit terms sit in the call-off contract. The Trust can revert to in-person phlebotomy at any point &mdash; the AS cohort is a watch-and-wait population by definition, so switching back to in-person testing is a clinical step-back, not a service breakdown. Switching supplier within the pattern is supported via the supplier-switching mechanism. No multi-year platform lock-in.
   </div>
 
   <div class="pair-callout" style="background:#E8F1F6;border:1px solid #B5D4E5;">
-    <strong>How is this different from what other Trusts are already running?</strong> Existing at-home PSA services are one-off pilots inside individual Trusts. Each one runs under its own commercial arm or research programme. They are not interoperable, not nationally accredited, not portable between Trusts. The platform is a national capability any Trust can plug into, same accreditation, same supplier pool, same result-routing back to local EPR. A Trust adopting it gets capacity without having to stand up its own commercial arm.
+    <strong>How is this different from what other Trusts are already running?</strong> Existing at-home PSA services are one-off pilots inside individual Trusts. Each one runs under its own commercial arm or research programme. They are not interoperable, not nationally accredited, not portable between Trusts. The platform is a national capability any Trust can plug into &mdash; same accreditation, same supplier pool, same result-routing back to local EPR. A Trust adopting it gets capacity without having to stand up its own commercial arm.
   </div>
 
   <h2 class="section-h">Where Catherine appears in the model</h2>

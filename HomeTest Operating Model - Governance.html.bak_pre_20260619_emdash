@@ -229,7 +229,7 @@
 
   <div class="status-banner">
     <div class="status-banner-h">Roles populated, named accountability still to land</div>
-    <div class="status-banner-body">This frame uses <strong>roles, not named individuals</strong>. It describes who is accountable, responsible, consulted and informed once the operating model is live and running, the end-state RACI. Roles are deliberately not named to individuals on this page; that is the SRO's call once the model is signed off. The architectural RACI rows still show TBC where the end-state owner has not yet been agreed.</div>
+    <div class="status-banner-body">This frame uses <strong>roles, not named individuals</strong>. It describes who is accountable, responsible, consulted and informed once the operating model is live and running &mdash; the end-state RACI. Roles are deliberately not named to individuals on this page; that is the SRO's call once the model is signed off. The architectural RACI rows still show TBC where the end-state owner has not yet been agreed.</div>
   </div>
 
   <details class="gov-q-banner" id="open-q">
@@ -325,7 +325,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="raci-level-row"><td colspan="5">Level 1, Foundation<span class="level-desc">Universal, built once, reused across every condition.</span></td></tr>
+        <tr class="raci-level-row"><td colspan="5">Level 1 &mdash; Foundation<span class="level-desc">Universal, built once, reused across every condition.</span></td></tr>
         <tr>
           <td class="label">Foundation (Level 1)<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">The universal foundation. Integration, identity, comms, onboarding gateway, IG framework, clinical safety case structure, hazard log structure, MI / data flows.</span></td>
           <td class="col-r"><span class="tbc">TBC</span></td>
@@ -333,7 +333,7 @@
           <td class="col-c"><span class="tbc">TBC</span></td>
           <td class="col-i"><span class="tbc">TBC</span></td>
         </tr>
-        <tr class="raci-level-row"><td colspan="5">Level 2, Overlays<span class="level-desc">Nine overlays. The dimensions where conditions diverge. Each overlay holds a library of patterns.</span></td></tr>
+        <tr class="raci-level-row"><td colspan="5">Level 2 &mdash; Overlays<span class="level-desc">Nine overlays. The dimensions where conditions diverge. Each overlay holds a library of patterns.</span></td></tr>
         <tr>
           <td class="label">Information governance overlay<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">DPIA, DSA, DPA, IAO, controller designation, lawful basis. The data side of every configuration.</span></td>
           <td class="col-r">Ngozi (IG / DPO)</td>
@@ -397,7 +397,7 @@
           <td class="col-c"><span class="tbc">TBC</span></td>
           <td class="col-i"><span class="tbc">TBC</span></td>
         </tr>
-        <tr class="raci-level-row"><td colspan="5">Level 3, Pattern catalogue<span class="level-desc">The library of available choices inside each overlay.</span></td></tr>
+        <tr class="raci-level-row"><td colspan="5">Level 3 &mdash; Pattern catalogue<span class="level-desc">The library of available choices inside each overlay.</span></td></tr>
         <tr>
           <td class="label">Pattern catalogue (Level 3)<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">The library of pattern options inside each overlay.</span></td>
           <td class="col-r"><span class="tbc">TBC</span></td>
@@ -405,7 +405,7 @@
           <td class="col-c"><span class="tbc">TBC</span></td>
           <td class="col-i"><span class="tbc">TBC</span></td>
         </tr>
-        <tr class="raci-level-row"><td colspan="5">Level 4, Configurations<span class="level-desc">Real-world deployments. The picks combined into a working service.</span></td></tr>
+        <tr class="raci-level-row"><td colspan="5">Level 4 &mdash; Configurations<span class="level-desc">Real-world deployments. The picks combined into a working service.</span></td></tr>
         <tr>
           <td class="label">HIV configuration<br><span style="font-weight:400;font-size:11.5px;color:var(--text-sec);">The live deployment in Salford via SH:24.</span></td>
           <td class="col-r"><span class="tbc">TBC</span></td>
@@ -930,7 +930,7 @@
 
   <div class="status-banner" style="background:#E8F1F6;border-left-color:var(--nhs-blue);">
     <div class="status-banner-h" style="color:var(--nhs-blue);">Next step</div>
-    <div class="status-banner-body">This is the end-state accountability layer for the operating model. It describes who will run, govern and own each part once live. The work to deliver the model into this end-state, designing each piece, agreeing each owner, sequencing the build, is tracked separately as project ownership. Both have to be true: the end-state has to be defined (this page), and the path to it has to be delivered (project plan).</div>
+    <div class="status-banner-body">This is the end-state accountability layer for the operating model. It describes who will run, govern and own each part once live. The work to deliver the model into this end-state &mdash; designing each piece, agreeing each owner, sequencing the build &mdash; is tracked separately as project ownership. Both have to be true: the end-state has to be defined (this page), and the path to it has to be delivered (project plan).</div>
   </div>
 
 </div>

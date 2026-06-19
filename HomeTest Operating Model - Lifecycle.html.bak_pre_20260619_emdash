@@ -369,7 +369,7 @@
   @media (max-width:720px){ .page { border-radius:12px; margin-top:18px !important; } }
 
 
-  /* === WHEN two-loops framing, added 2026-06-07 === */
+  /* === WHEN two-loops framing — added 2026-06-07 === */
   .loops-banner{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0 36px;}
   .loops-cell{background:#fff;border:1px solid var(--border-lt);border-top:6px solid;border-radius:0 0 12px 12px;padding:20px 24px;}
   .loops-cell.inner{border-top-color:#006747;}
@@ -451,8 +451,8 @@
     <div class="h-eyebrow">Lifecycle frame</div>
     <div style="font-size:96px;font-weight:900;color:var(--accent);letter-spacing:-2.5px;line-height:0.95;margin:6px 0 6px;">WHEN</div>
     <h1 class="h-title">Two loops, four beats</h1>
-    <div class="h-subtitle">The rhythm by which the model itself gets better, adapt, implement, review, learn</div>
-    <p class="h-intro">There are two loops in the operating model, running at the same time on different clocks. The <strong>inner loop</strong> is the rhythm of doing, the five-stage operational cycle (Shape, Assure, Contract, Fulfil, Measure). The <strong>outer loop</strong> is the slow turn by which the model itself gets better, <strong>adapt</strong> the standards and framework, <strong>implement</strong> the changes, <strong>review</strong> what they produce, <strong>learn</strong> the patterns, then adapt again. Plan, Do, Check, Act, the continuous-improvement cycle, applied to the model itself. The model is the relationship between the two loops.</p>
+    <div class="h-subtitle">The rhythm by which the model itself gets better &mdash; adapt, implement, review, learn</div>
+    <p class="h-intro">There are two loops in the operating model, running at the same time on different clocks. The <strong>inner loop</strong> is the rhythm of doing &mdash; the five-stage operational cycle (Shape, Assure, Contract, Fulfil, Measure). The <strong>outer loop</strong> is the slow turn by which the model itself gets better &mdash; <strong>adapt</strong> the standards and framework, <strong>implement</strong> the changes, <strong>review</strong> what they produce, <strong>learn</strong> the patterns, then adapt again. Plan, Do, Check, Act &mdash; the continuous-improvement cycle, applied to the model itself. The model is the relationship between the two loops.</p>
   </div>
 
 <div class="main">
@@ -484,7 +484,7 @@
     </div>
   </div>
   <div class="picture-h">&#8635; The two loops, in picture</div>
-  <p class="picture-sub">The outer loop is drawn around the pentagon as a slow turning halo with four beats, <strong>adapt, implement, review, learn</strong>, at the compass points. The inner loop is the pentagon itself. Their relative speeds are deliberate: the inner turns several times per outer turn.</p>
+  <p class="picture-sub">The outer loop is drawn around the pentagon as a slow turning halo with four beats &mdash; <strong>adapt, implement, review, learn</strong> &mdash; at the compass points. The inner loop is the pentagon itself. Their relative speeds are deliberate: the inner turns several times per outer turn.</p>
   <div class="rhythm-container">
     <svg class="halo-svg" viewBox="0 0 1100 990" xmlns="http://www.w3.org/2000/svg">
       <circle class="rhythm-ring-track" cx="550" cy="475" r="380"/>
@@ -808,7 +808,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">In flight</div>
-          <div class="stage-block-body">Use Case 2 (PSA acute initiated) clinical safety artefacts being mapped (CRMP, draft HL, draft CSCR). Supplier assurance framework for HomeTest at-scale. <strong>MHRA confirmed 8 June 2026 that the HomeTest platform is not a Software as a Medical Device</strong>, the platform itself does not need MHRA SaMD assurance; supplier kits remain in scope of MHRA medical device regulation. DTAC review continues.</div>
+          <div class="stage-block-body">Use Case 2 (PSA acute initiated) clinical safety artefacts being mapped (CRMP, draft HL, draft CSCR). Supplier assurance framework for HomeTest at-scale. <strong>MHRA confirmed 8 June 2026 that the HomeTest platform is not a Software as a Medical Device</strong> &mdash; the platform itself does not need MHRA SaMD assurance; supplier kits remain in scope of MHRA medical device regulation. DTAC review continues.</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Open</div>
@@ -885,7 +885,7 @@
         </div>
         <div class="stage-block">
           <div class="stage-block-h">Active programme work</div>
-          <div class="stage-block-body">KPI framework being scoped (Health Economist onboarded; engagement on initial work pack pending, the cross-cutting blocker now sits at engagement, not approval). Reporting Service Technical Spec. Data flows from suppliers into the platform. PMO holds cross-cutting MI and benefits log.</div>
+          <div class="stage-block-body">KPI framework being scoped (Health Economist onboarded; engagement on initial work pack pending — the cross-cutting blocker now sits at engagement, not approval). Reporting Service Technical Spec. Data flows from suppliers into the platform. PMO holds cross-cutting MI and benefits log.</div>
         </div>
         <div class="stage-block">
           <div class="stage-block-h">In flight</div>
