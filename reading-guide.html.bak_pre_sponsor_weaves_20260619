@@ -220,8 +220,8 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       <div class="section-eyebrow">About the scope</div>
       <h2 class="section-h">What we were asked for, and what we built.</h2>
       <div class="honest">
-        <p>The original brief was a <strong>commercial Target Operating Model</strong>. As the work moved, it became clear the commercial question (what vehicle delivers this, and how) couldn&apos;t be answered properly without showing the operating reality the vehicle has to support. You can&apos;t size a commercial model in the abstract, and the wider portfolio thinking already in train needed an operating shape to sit inside. So we took the initiative and went wider.</p>
-        <p>The commercial model is still here. <strong>It is the spine of the artefact and it informs every layer.</strong> But it now sits inside a broader frame, alongside the architecture, the lifecycle, the cast, the open questions and the human stories that make the commercial choices testable. That broader frame is a <strong>Future State Blueprint</strong>: the bridge between where the service is today and the future operating model the sponsor&apos;s direction and the wider portfolio thinking already point at.</p>
+        <p>The original brief was a <strong>commercial Target Operating Model</strong>. As the work moved, it became clear the commercial question (what vehicle delivers this, and how) couldn&apos;t be answered properly without showing the operating reality the vehicle has to support. You can&apos;t size a commercial model in the abstract. So we took the initiative and went wider.</p>
+        <p>The commercial model is still here. <strong>It is the spine of the artefact and it informs every layer.</strong> But it now sits inside a broader frame, alongside the architecture, the lifecycle, the cast, the open questions and the human stories that make the commercial choices testable. That broader frame is a <strong>Future State Blueprint</strong>: the bridge between where the service is today and the future operating model the programme is building towards.</p>
       </div>
     </div>
 
