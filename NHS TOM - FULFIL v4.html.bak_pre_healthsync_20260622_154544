@@ -434,8 +434,10 @@
 
   <div class="stage-intro">
     <h2>About this stage</h2>
-    <p><strong>This is where HomeTest primarily lives.</strong> SHAPE, ASSURE and CONTRACT are largely product-agnostic (with product-specific parameters). FULFIL is the stage where the product looks and feels what it is.</p>
-    <p><strong>HomeTest FULFIL:</strong> Kit ordering, sample logistics, lab processing, result return, clinical safety net, patient notifications via NHS Notify. The fulfilment shape varies by configuration (patient-initiated, clinician-initiated, GP-initiated) but the stage itself is what makes HomeTest visible as a service.</p>
+    <p><strong>This is where products primarily live.</strong> SHAPE, ASSURE and CONTRACT are largely product-agnostic (with product-specific parameters). FULFIL is where each product looks and feels different.</p>
+    <p><strong>HomeTest:</strong> Kit ordering, sample logistics, lab processing, result return, clinical safety net, patient notifications via NHS Notify.</p>
+    <p><strong>HealthStore:</strong> Digital therapeutic onboarding, licence management, usage monitoring, clinical pathway integration, outcome tracking.</p>
+    <p><strong>HealthSync (Wearables):</strong> Wearable data integration, continuous monitoring protocols, clinical alerting, device management. Not yet scoped beyond high-level concept.</p>
     <p>Supplier switching and operational transition mechanisms live here. When a supplier exits, FULFIL manages the patient-facing transition to maintain continuity of care.</p>
   </div>
 
