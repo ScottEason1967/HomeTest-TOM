@@ -158,7 +158,7 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">112 listings across 101 unique items, some SLT and behavioural items also appear in their source category</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">111 listings across 100 unique items, some SLT and behavioural items also appear in their source category</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Open Qs for SLT (now top of Unresolved) -->
@@ -492,7 +492,7 @@
     <!-- Architecture -->
     <details class="cat cat-arch">
       <summary>
-        <span class="cat-h">Architectural positioning <span class="cat-count">8</span></span>
+        <span class="cat-h">Architectural positioning <span class="cat-count">7</span></span>
         <span class="cat-desc">Where things sit in the model. From WHAT page.</span>
       </summary>
       <div class="items">
@@ -551,15 +551,6 @@
             <div class="item-owner"><strong>Owner:</strong> Service Designer with NHS App and NHS Online product owners. SLT direction needed on the curation pattern.</div>
           </div>
           <a class="item-link" href="HomeTest Operating Model - Ecosystem.html">Open on WHAT &rarr;</a>
-        </div>
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Cross-programme professional home for the capabilities</div>
-            <div class="item-desc">The capabilities sized in Teamwork (assurance discipline, market-shaping, post-market surveillance, evidence generation, EHIA, pathway integration) are held inside HomeTest today. As HealthStore and HealthSync mature and other DPSP / DDTx programmes adopt the same patterns, these disciplines need a cross-programme professional home, not separate copies inside each programme. Cross-portfolio dependency rather than a HomeTest-only question, but the model relies on it landing.</div>
-            <div class="item-owner"><strong>Owner:</strong> Programme leadership with SLT. Surfaced here as the dependency HomeTest carries on the wider portfolio.</div>
-            <div class="item-xref"><strong>Related:</strong> DTx OM Status &rarr; Architectural positioning &rarr; Professional community for cross-programme capability reuse.</div>
-          </div>
-          <a class="item-link" href="HomeTest Operating Model - Teamwork.html">Open on HOW &rarr;</a>
         </div>
       </div>
     </details>

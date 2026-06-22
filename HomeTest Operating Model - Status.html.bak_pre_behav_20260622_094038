@@ -85,7 +85,6 @@
   details.cat-stage{border-left:4px solid var(--nhs-blue);}
   details.cat-op{border-left:4px solid var(--nhs-green);}
   details.cat-risk{border-left:4px solid var(--status-open);background:#fffafa;}
-  details.cat-behav{border-left:4px solid var(--accent);background:#fbf7fa;}
   /* In-progress stage variants */
   details.stage-shape{border-left:4px solid #005EB8;}
   details.stage-assure{border-left:4px solid #41B6E6;}
@@ -158,7 +157,7 @@
 
   <!-- UNRESOLVED -->
   <div class="section" id="unresolved">
-    <h2 class="section-h">Unresolved <span class="count">112 listings across 101 unique items, some SLT and behavioural items also appear in their source category</span></h2>
+    <h2 class="section-h">Unresolved <span class="count">106 listings across 97 unique items, some SLT items also appear in their source category</span></h2>
     <p class="section-intro">Grouped by type. SLT-relevant categories lead and are expanded by default. Operational and stage-level decisions are collapsed; click to expand.</p>
 
     <!-- Open Qs for SLT (now top of Unresolved) -->
@@ -492,7 +491,7 @@
     <!-- Architecture -->
     <details class="cat cat-arch">
       <summary>
-        <span class="cat-h">Architectural positioning <span class="cat-count">8</span></span>
+        <span class="cat-h">Architectural positioning <span class="cat-count">6</span></span>
         <span class="cat-desc">Where things sit in the model. From WHAT page.</span>
       </summary>
       <div class="items">
@@ -544,68 +543,6 @@
           </div>
           <a class="item-link" href="HomeTest Operating Model - Anatomical.html">Open on WHAT &rarr;</a>
         </div>
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Citizen-facing curation surface for the portfolio</div>
-            <div class="item-desc">How a citizen finds the HomeTest service, and how it sits alongside other prevention and self-care services on NHS App and NHS Online. Not burning for Private Beta. Becomes material as Public Beta opens to ~1,000+ self-initiating citizens, and load-bearing at MVP launch and Wave 1 when self-initiation is the dominant pattern across multiple conditions. The architectural question: is the citizen-facing surface a HomeTest-owned front door, an NHS App native feature with HomeTest as one curated tile alongside others, or an NHS Online category page that funnels into HomeTest deeper journeys. Each option carries different ownership, content discipline and onward navigation responsibilities.</div>
-            <div class="item-owner"><strong>Owner:</strong> Service Designer with NHS App and NHS Online product owners. SLT direction needed on the curation pattern.</div>
-          </div>
-          <a class="item-link" href="HomeTest Operating Model - Ecosystem.html">Open on WHAT &rarr;</a>
-        </div>
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Cross-programme professional home for the capabilities</div>
-            <div class="item-desc">The capabilities sized in Teamwork (assurance discipline, market-shaping, post-market surveillance, evidence generation, EHIA, pathway integration) are held inside HomeTest today. As HealthStore and HealthSync mature and other DPSP / DDTx programmes adopt the same patterns, these disciplines need a cross-programme professional home, not separate copies inside each programme. Cross-portfolio dependency rather than a HomeTest-only question, but the model relies on it landing.</div>
-            <div class="item-owner"><strong>Owner:</strong> Programme leadership with SLT. Surfaced here as the dependency HomeTest carries on the wider portfolio.</div>
-            <div class="item-xref"><strong>Related:</strong> DTx OM Status &rarr; Architectural positioning &rarr; Professional community for cross-programme capability reuse.</div>
-          </div>
-          <a class="item-link" href="HomeTest Operating Model - Teamwork.html">Open on HOW &rarr;</a>
-        </div>
-      </div>
-    </details>
-
-    <!-- Behavioural and relational dependencies -->
-    <details class="cat cat-behav">
-      <summary>
-        <span class="cat-h">Behavioural and relational dependencies <span class="cat-count">4</span></span>
-        <span class="cat-desc">The people-side of the future-state shape. Architecture, contracts and procurement vehicles do not deliver outcomes on their own; sustained behaviour change among commissioners, clinicians, suppliers and NHSE is what makes them work in practice. Listed here so the behavioural dependencies sit at programme altitude alongside the structural ones.</span>
-      </summary>
-      <div class="items">
-
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Commissioner adoption of approved-list discipline</div>
-            <div class="item-desc">The architecture lives or dies on commissioners contracting through the approved list rather than reverting to "buy from the supplier we have used before". Adoption depends on commissioners changing established procurement habits. Without that behaviour change the list stays a register, not a working market. The matchmaker engagement model is the lever that converts the structural option into actual procurement behaviour.</div>
-            <div class="item-owner"><strong>Owners:</strong> NHSE pre-sales and engagement cell with commissioners.</div>
-            <div class="item-xref"><strong>Related:</strong> Engagement cell endorsement (SLT category).</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Clinician trust at portfolio scale</div>
-            <div class="item-desc">Beta volumes prove the operating shape technically and the safety record at limited scale. Clinician trust in remote testing across pathways and regions has to be earned, not assumed, especially as the portfolio extends beyond HIV into PSA Active Surveillance, iron deficiency anaemia and Wave 1/2/3 tests. Sustained workforce engagement, peer advocacy from clinician partners and an observable safety record at MVP and beyond are what carry the operating model from defensible to adopted.</div>
-            <div class="item-owner"><strong>Owners:</strong> Clinical Safety Lead with workforce engagement and clinician peer network.</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">Supplier conformance behaviour beyond Beta</div>
-            <div class="item-desc">Suppliers conform to the published standard at Private Beta volumes because their NHSE relationship is dense and the assurance gaze is immediate. Sustaining standard-conforming behaviour at Public Beta volumes and into MVP and Wave 1 depends on the published standard, the assurance discipline and the removal protocol being credible enough to police drift without NHSE micromanaging each supplier. The supplier forum is one mechanism; the published standard plus the compelled-removal protocol is the other.</div>
-            <div class="item-owner"><strong>Owners:</strong> Independent Assurance Lead with supplier forum convenor.</div>
-            <div class="item-xref"><strong>Related:</strong> Compelled-removal protocol (Operational mechanism category).</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-body">
-            <div class="item-title">NHSE convening discipline sustained across cycles</div>
-            <div class="item-desc">The model assumes NHSE convenes the system, sets standards and holds the assurance authority without becoming a commercial counterparty. The convening discipline has to survive SLT changes, funding cycles and political pressure to behave commercially. The future-state shape only holds if convening is treated as a sustained capability with named ownership and operating cadence, not a posture that depends on who is in the room at any given time.</div>
-            <div class="item-owner"><strong>Owners:</strong> Programme leadership with SLT.</div>
-          </div>
-        </div>
-
       </div>
     </details>
 
