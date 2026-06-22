@@ -194,10 +194,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .cast-eyebrow-h{font-size:11px;font-weight:800;letter-spacing:2.4px;color:var(--amber);text-transform:uppercase;}
 .cast-link{font-size:11.5px;font-weight:800;color:var(--amber);text-decoration:none;}
 .cast-link:hover{color:#fff;}
-.cast-portraits{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;}
-.cast-group{display:flex;gap:8px;flex-wrap:wrap;padding:4px 10px 4px 10px;border-left:1px dashed rgba(255,255,255,0.30);align-items:center;}
-.cast-group:first-of-type{border-left:none;padding-left:0;}
-.cast-group-label{display:block;font-size:9.5px;font-weight:800;letter-spacing:1.4px;color:rgba(255,255,255,0.62);text-transform:uppercase;width:100%;margin-bottom:4px;}
+.cast-portraits{display:flex;gap:8px;flex-wrap:wrap;}
 .cast-portrait{position:relative;width:52px;height:52px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.30);overflow:hidden;background:#f0f4f8;text-decoration:none;display:inline-block;flex-shrink:0;}
 .cast-portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
 .cast-portrait::after{content:attr(data-name);position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);background:var(--nhs-dark);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;z-index:10;}
@@ -547,29 +544,17 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       <a href="home.html" class="cast-link">Detailed cast view &rarr;</a>
     </div>
     <div class="cast-portraits">
-      <div class="cast-group">
-        <span class="cast-group-label">Commissioners</span>
-        <a href="HomeTest Operating Model - Persona Sarah.html" class="cast-portrait" data-name="Sarah"><img src="Assets/Personas/sarah.png" alt="Sarah"></a>
-        <a href="HomeTest Operating Model - Persona Catherine.html" class="cast-portrait" data-name="Catherine"><img src="Assets/Personas/catherine.png" alt="Catherine"></a>
-        <a href="HomeTest Operating Model - Persona Anita.html" class="cast-portrait" data-name="Anita"><img src="Assets/Personas/anita.png" alt="Anita"></a>
-        <a href="HomeTest Operating Model - Persona Ruth.html" class="cast-portrait" data-name="Ruth"><img src="Assets/Personas/ruth.png" alt="Ruth"></a>
-      </div>
-      <div class="cast-group">
-        <span class="cast-group-label">Clinicians</span>
-        <a href="HomeTest Operating Model - Persona Adam.html" class="cast-portrait" data-name="Adam"><img src="Assets/Personas/adam.png" alt="Adam"></a>
-        <a href="HomeTest Operating Model - Persona Hannah.html" class="cast-portrait" data-name="Hannah"><img src="Assets/Personas/hannah.png" alt="Hannah"></a>
-      </div>
-      <div class="cast-group">
-        <span class="cast-group-label">Assurance</span>
-        <a href="HomeTest Operating Model - Persona Aisha.html" class="cast-portrait" data-name="Aisha"><img src="Assets/Personas/aisha.png" alt="Aisha"></a>
-        <a href="HomeTest Operating Model - Persona Ngozi.html" class="cast-portrait" data-name="Ngozi"><img src="Assets/Personas/ngozi.png" alt="Ngozi"></a>
-      </div>
-      <div class="cast-group">
-        <span class="cast-group-label">Marketplace</span>
-        <a href="HomeTest Operating Model - Persona Joe.html" class="cast-portrait" data-name="Joe"><img src="Assets/Personas/joe.png" alt="Joe"></a>
-        <a href="HomeTest Operating Model - Persona Priya.html" class="cast-portrait" data-name="Priya"><img src="Assets/Personas/priya.png" alt="Priya"></a>
-        <a href="HomeTest Operating Model - Persona David.html" class="cast-portrait" data-name="David"><img src="Assets/Personas/david.png" alt="David"></a>
-      </div>
+      <a href="HomeTest Operating Model - Persona Sarah.html" class="cast-portrait" data-name="Sarah"><img src="Assets/Personas/sarah.png" alt="Sarah"></a>
+      <a href="HomeTest Operating Model - Persona Catherine.html" class="cast-portrait" data-name="Catherine"><img src="Assets/Personas/catherine.png" alt="Catherine"></a>
+      <a href="HomeTest Operating Model - Persona Ruth.html" class="cast-portrait" data-name="Ruth"><img src="Assets/Personas/ruth.png" alt="Ruth"></a>
+      <a href="HomeTest Operating Model - Persona Anita.html" class="cast-portrait" data-name="Anita"><img src="Assets/Personas/anita.png" alt="Anita"></a>
+      <a href="HomeTest Operating Model - Persona Adam.html" class="cast-portrait" data-name="Adam"><img src="Assets/Personas/adam.png" alt="Adam"></a>
+      <a href="HomeTest Operating Model - Persona Hannah.html" class="cast-portrait" data-name="Hannah"><img src="Assets/Personas/hannah.png" alt="Hannah"></a>
+      <a href="HomeTest Operating Model - Persona Joe.html" class="cast-portrait" data-name="Joe"><img src="Assets/Personas/joe.png" alt="Joe"></a>
+      <a href="HomeTest Operating Model - Persona Aisha.html" class="cast-portrait" data-name="Aisha"><img src="Assets/Personas/aisha.png" alt="Aisha"></a>
+      <a href="HomeTest Operating Model - Persona Priya.html" class="cast-portrait" data-name="Priya"><img src="Assets/Personas/priya.png" alt="Priya"></a>
+      <a href="HomeTest Operating Model - Persona David.html" class="cast-portrait" data-name="David"><img src="Assets/Personas/david.png" alt="David"></a>
+      <a href="HomeTest Operating Model - Persona Ngozi.html" class="cast-portrait" data-name="Ngozi"><img src="Assets/Personas/ngozi.png" alt="Ngozi"></a>
     </div>
     <div class="foot-strip">
       <a href="home.html">Operating Model home</a> &middot; <a href="reading-guide.html">Reading guide</a> &middot; <a href="HomeTest Operating Model - Supplier Onboarding Framework.html">Supplier Onboarding Framework</a>

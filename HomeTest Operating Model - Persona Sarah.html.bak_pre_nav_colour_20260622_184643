@@ -17,27 +17,10 @@
   .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
   .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
   .nav-back:hover{color:var(--nhs-blue);}
-  .nav-siblings{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
-  .cast-group{display:inline-flex;gap:3px;align-items:center;flex-wrap:wrap;padding:3px 6px;border-radius:6px;}
-  .cast-group.cast-group-patients{border:2px dotted #C9A227;padding:3px 6px;}
-  .cast-group + .cast-group{margin-left:6px;padding-left:10px;border-left:1px solid #d8dde0;}
-  .nav-siblings a{font-size:12px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:6px 11px;border-radius:5px;letter-spacing:0.2px;}
+  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;}
+  .nav-siblings a{font-size:12px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:6px 12px;border-radius:6px;letter-spacing:0.2px;}
   .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
-  .nav-siblings a.cast-abdul.active{background:#FFB91D;color:#231F20;}
-  .nav-siblings a.cast-mark.active{background:#FFB91D;color:#231F20;}
-  .nav-siblings a.cast-layla.active{background:#FFB91D;color:#231F20;}
-  .nav-siblings a.cast-sean.active{background:#4527A0;color:#ffffff;}
-  .nav-siblings a.cast-sarah.active{background:#FFD66B;color:#231F20;}
-  .nav-siblings a.cast-catherine.active{background:#FFD66B;color:#231F20;}
-  .nav-siblings a.cast-anita.active{background:#FFD66B;color:#231F20;}
-  .nav-siblings a.cast-ruth.active{background:#FFD66B;color:#231F20;}
-  .nav-siblings a.cast-adam.active{background:#C9A0E3;color:#231F20;}
-  .nav-siblings a.cast-hannah.active{background:#C9A0E3;color:#231F20;}
-  .nav-siblings a.cast-aisha.active{background:#E8857A;color:#ffffff;}
-  .nav-siblings a.cast-ngozi.active{background:#4A7B82;color:#ffffff;}
-  .nav-siblings a.cast-joe.active{background:#5BC093;color:#ffffff;}
-  .nav-siblings a.cast-priya.active{background:#005EB8;color:#ffffff;}
-  .nav-siblings a.cast-david.active{background:#5B3A8C;color:#ffffff;}
+  .nav-siblings a.active{background:var(--accent);color:#fff;}
   .page{max-width:1100px;margin:0 auto;padding:50px 40px 80px;}
   .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
   .h-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--text-sec);text-transform:uppercase;margin-bottom:18px;}
@@ -84,31 +67,21 @@
 <nav class="topnav">
   <a href="home.html" class="nav-back">&larr; Operating Model</a>
   <div class="nav-siblings">
-    <div class="cast-group cast-group-patients">
-      <a href="HomeTest Operating Model - Persona Abdul.html" class="cast-abdul">Abdul</a>
-      <a href="HomeTest Operating Model - Persona Mark.html" class="cast-mark">Mark</a>
-      <a href="HomeTest Operating Model - Persona Layla.html" class="cast-layla">Layla</a>
-      <a href="HomeTest Operating Model - Persona Sean.html" class="cast-sean">Sean</a>
-    </div>
-    <div class="cast-group cast-group-commissioners">
-      <a href="HomeTest Operating Model - Persona Sarah.html" class="cast-sarah active">Sarah</a>
-      <a href="HomeTest Operating Model - Persona Catherine.html" class="cast-catherine">Catherine</a>
-      <a href="HomeTest Operating Model - Persona Anita.html" class="cast-anita">Anita</a>
-      <a href="HomeTest Operating Model - Persona Ruth.html" class="cast-ruth">Ruth</a>
-    </div>
-    <div class="cast-group cast-group-clinicians">
-      <a href="HomeTest Operating Model - Persona Adam.html" class="cast-adam">Adam</a>
-      <a href="HomeTest Operating Model - Persona Hannah.html" class="cast-hannah">Hannah</a>
-    </div>
-    <div class="cast-group cast-group-assurance">
-      <a href="HomeTest Operating Model - Persona Aisha.html" class="cast-aisha">Aisha</a>
-      <a href="HomeTest Operating Model - Persona Ngozi.html" class="cast-ngozi">Ngozi</a>
-    </div>
-    <div class="cast-group cast-group-marketplace">
-      <a href="HomeTest Operating Model - Persona Joe.html" class="cast-joe">Joe</a>
-      <a href="HomeTest Operating Model - Persona Priya.html" class="cast-priya">Priya</a>
-      <a href="HomeTest Operating Model - Persona David.html" class="cast-david">David</a>
-    </div>
+    <a href="HomeTest Operating Model - Persona Sarah.html" class="active">Sarah</a>
+    <a href="HomeTest Operating Model - Persona Catherine.html">Catherine</a>
+    <a href="HomeTest Operating Model - Persona Anita.html">Anita</a>
+    <a href="HomeTest Operating Model - Persona Ruth.html">Ruth</a>
+    <a href="HomeTest Operating Model - Persona Aisha.html">Aisha</a>
+    <a href="HomeTest Operating Model - Persona Priya.html">Priya</a>
+    <a href="HomeTest Operating Model - Persona David.html">David</a>
+    <a href="HomeTest Operating Model - Persona Ngozi.html">Ngozi</a>
+    <a href="HomeTest Operating Model - Persona Abdul.html">Abdul</a>
+    <a href="HomeTest Operating Model - Persona Adam.html">Adam</a>
+    <a href="HomeTest Operating Model - Persona Hannah.html">Hannah</a>
+    <a href="HomeTest Operating Model - Persona Mark.html">Mark</a>
+    <a href="HomeTest Operating Model - Persona Layla.html">Layla</a>
+    <a href="HomeTest Operating Model - Persona Sean.html">Sean</a>
+    <a href="HomeTest Operating Model - Persona Joe.html">Joe</a>
   </div>
 </nav>
 
