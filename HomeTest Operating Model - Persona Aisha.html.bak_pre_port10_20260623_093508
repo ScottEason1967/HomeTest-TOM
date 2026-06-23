@@ -193,18 +193,13 @@
     </div>
   </div>
 
-  <h2 class="section-h">TOM components &middot; what Aisha owns or participates in</h2>
+  <h2 class="section-h">Where Aisha appears in the model</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Clinical safety case</strong> oversight and hazard log structure</a></li>
-    <li><a href="HomeTest Operating Model - Governance.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>DCB0160 deployer</strong> sign-off route via the local CSO</a></li>
-    <li><a href="HomeTest Operating Model - Governance.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>CATR</strong> (Clinical Assurance to Release) before live patient data</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-14" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Independent Assurance</strong> framework as Cap-14 contributor</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-12" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Post-market surveillance</strong> clinical signal side as Cap-12 contributor</a></li>
+    <li><a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> swimlanes (Clinical / CSG actor row)</li>
+    <li>The Assure stage on the <a href="HomeTest Operating Model - Lifecycle.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">When</a> page</li>
+    <li>Decision rights for clinical configuration on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page.</li>
+    <li>Adjacent to <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> (IG / DPO) throughout. Clinical and IG sign-off run in parallel at every go-live.</li>
   </ul>
 </div>
-
-  <div class="pair-callout">
-   <strong>The cast around Aisha.</strong> <a href="HomeTest Operating Model - Persona Adam.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Adam</a>, <a href="HomeTest Operating Model - Persona Hannah.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Hannah</a> and <a href="HomeTest Operating Model - Persona HealthStore prescribing clinician.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ravi</a> are the configuration-specific clinicians she supports. (The HIV-LA and PSA-AS monitoring-gap configurations don't yet have named clinician archetypes.) <a href="HomeTest Operating Model - Persona David.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">David</a>, <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> and <a href="HomeTest Operating Model - Persona Priya.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Priya</a> are her cross-cutting peers. The clinical safety case for each configuration runs through her, not inside any single one.
-  </div>
 </body>
 </html>

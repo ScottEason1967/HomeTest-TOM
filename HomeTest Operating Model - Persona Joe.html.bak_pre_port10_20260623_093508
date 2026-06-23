@@ -187,18 +187,14 @@
   <h2 class="section-h">What Joe needs from the framework</h2>
   <p class="section-body">Clean onboarding through a single gateway: he doesn't want to repeat clinical safety, IG, and technical assurance for every commissioner who buys. Predictable demand he can plan capacity around: not promises, but commissioning routes that aren't bottlenecked by 211 LAs each running their own procurement. A pricing structure that pays him on a three-tier basis (mobilisation, activity, volume floor), not flat per-kit and not against speculative volume. A clear exit if commercial viability collapses: not stuck with sunk integration costs.</p>
 
-  <h2 class="section-h">TOM components &middot; what Joe owns or participates in</h2>
+  <h2 class="section-h">Where Joe appears in the model</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Supplier Onboarding Framework.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Supplier Onboarding Framework</strong> as a HomeTest supplier</a></li>
-    <li><a href="HomeTest Operating Model - Governance.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>DCB0129</strong> manufacturer responsibility (sits with the supplier, not jointly with NHS)</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Royal Mail Large Letter</strong> kit-fulfilment constraints affect supply-chain pattern choice</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-12" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Post-market surveillance</strong> kit-side as Cap-12 contributor (MHRA Yellow Card, lab non-conformance)</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-14" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Independent Assurance</strong> framework as Cap-14 contributor for kit and lab</a></li>
+    <li>Lane 2 (Supplier onboarding) on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> page</li>
+    <li>The Fulfil stage on the <a href="HomeTest Operating Model - Lifecycle.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">When</a> page (alongside Aisha)</li>
+    <li>Supplier north star and Supply Chain overlay on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
+    <li>Test Supplier and Test Supplier Lab roles across the HIV configuration RACI on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
+    <li>Specialist Pathology Lab and Logistics Supplier roles across the PSA configuration RACI</li>
   </ul>
 </div>
-
-  <div class="pair-callout">
-   <strong>The cast around Joe.</strong> Joe is the HomeTest supplier archetype. He sits opposite multiple commissioners,  <a href="HomeTest Operating Model - Persona Sarah.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Sarah</a> (HIV LA), <a href="HomeTest Operating Model - Persona Catherine.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Catherine</a> (PSA-AS established), <a href="HomeTest Operating Model - Persona Anita.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Anita</a> (iron deficiency anaemia) and <a href="HomeTest Operating Model - Persona Ruth.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ruth</a> (PSA-AS monitoring-gap, TBC),  across HomeTest's live configurations. Cross-cutting peers: <a href="HomeTest Operating Model - Persona David.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">David</a> (commercial), <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> (IG) and <a href="HomeTest Operating Model - Persona Priya.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Priya</a> (platform). Same product, different commissioning shapes.
-  </div>
 </body>
 </html>

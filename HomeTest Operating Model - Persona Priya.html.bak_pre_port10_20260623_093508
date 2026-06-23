@@ -181,18 +181,14 @@
   <p class="section-body">The platform doesn't stop evolving once discovery ends. Two things sit alongside the BAU team and need to be defined now, not later: the DevOps model that keeps the platform iterating in flight, and the catalogue evolution function that handles new test types, new supplier phenotypes (capillary, transdermal, microsampling), and new assurance categories as they emerge. The interoperability layer for ordering and resulting will change over time as standards mature, the National Diagnostic Service evolves, and EPR integration patterns settle. None of this is static. Sizing the BAU team in isolation undersells what the platform needs to keep doing.</p>
   <p class="section-body">Timing matters here. Sourcing a DevOps capability through a framework, writing the business cases, and getting approvals to flow has a lead time measured in months not weeks. If the Year 2 platform is to land on time, the BAU + DevOps sizing has to be done in parallel with the operating model itself, not after it.</p>
 
-  <h2 class="section-h">TOM components &middot; what Priya owns or participates in</h2>
+  <h2 class="section-h">Where Priya appears in the model</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Integration spine</strong> and the FHIR / NHS Login / NHS Notify foundation</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>National App Formulary</strong> and <strong>Store Model</strong> publication and configuration</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Service Wrapper anatomy</strong> as the platform-delivered patient surface</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>MI / data flow integrity</strong> across configurations</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-13" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Pathway integration</strong> coordination with national transformation programmes as Cap-13 contributor</a></li>
+    <li>Lane 6 (Market dynamics) on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> page</li>
+    <li>NHSE Platform actor row in every operational lane</li>
+    <li>Foundation integrity on the architectural RACI on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
+    <li>Centre&apos;s role and platform fee model on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
+    <li>The Open Governance Question on permanent platform hosting post-Beta</li>
   </ul>
 </div>
-
-  <div class="pair-callout">
-   <strong>The cast around Priya.</strong> Priya is the NHSE Platform lead. She holds the platform side of every configuration end-to-end,  data flows, integration, telemetry. Cross-cutting peers: <a href="HomeTest Operating Model - Persona David.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">David</a> (commercial), <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> (IG) and <a href="HomeTest Operating Model - Persona Aisha.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Aisha</a> (clinical). Configuration-specific suppliers (<a href="HomeTest Operating Model - Persona Joe.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Joe</a>, <a href="HomeTest Operating Model - Persona HealthStore supplier.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Marcus</a>, <a href="HomeTest Operating Model - Persona Tariq.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Tariq</a>) plug into the platform she runs.
-  </div>
 </body>
 </html>

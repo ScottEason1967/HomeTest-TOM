@@ -202,17 +202,14 @@
 
   <p class="section-body" style="margin-top:14px;">And it needs <strong>shared outcomes with delivery</strong>, not parallel ones. When IG accountability for risk and delivery accountability for outcomes pull against each other, the team gets conflicting advice, escalations stall, and informal workarounds fill the gap. The framework holds one view of what success looks like across IG and delivery, and runs a steady cadence of short, focused IG conversations through the lifecycle, rather than saving everything up for a heavyweight review at the end. Standard inputs (data flow diagram, controllers map, lawful basis statement) carry agreed quality expectations so the same evidence is not reproduced three different ways across three different reviews.</p>
 
-  <h2 class="section-h">TOM components &middot; what Ngozi owns or participates in</h2>
+  <h2 class="section-h">Where Ngozi appears in the model</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>IG framework structure</strong> and DPIA / DSA architecture</a></li>
-    <li><a href="HomeTest Operating Model - Governance.html#raci-foundation" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>DSPT alignment</strong> as the national IG compliance baseline</a></li>
-    <li><a href="HomeTest Operating Model - Governance.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Federated controller</strong> designation per configuration</a></li>
-    <li><a href="HomeTest Operating Model - Status.html#healthsync" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Patient permission and consent model</strong> for consumer-platform data (HealthSync)</a></li>
+    <li>Information Governance actor row on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> swim lanes</li>
+    <li>IG overlay on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page (alongside Clinical pathway, Commercial, Supply chain etc.)</li>
+    <li>The ASSURE and CONTRACT stages on the <a href="HomeTest Operating Model - Lifecycle.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">When</a> page</li>
+    <li>RACI rows for DPIA, DSA, controller designation and IAO on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
+    <li>The platform envelope on the <a href="HomeTest Operating Model - Why.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Why</a> page Venn, alongside Aisha (clinical framework) and David (commercial framework). The IG framework is the third layer the platform holds.</li>
   </ul>
 </div>
-
-  <div class="pair-callout">
-   <strong>The cast around Ngozi.</strong> Ngozi is the NHSE IG / DPO lead. She holds the information-governance side of every configuration in support of the commissioner of the day. Cross-cutting peers: <a href="HomeTest Operating Model - Persona David.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">David</a> (commercial), <a href="HomeTest Operating Model - Persona Priya.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Priya</a> (platform) and <a href="HomeTest Operating Model - Persona Aisha.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Aisha</a> (clinical). Idris (NHSE Legal) is her escalation point on novel lawful-basis positions.
-  </div>
 </body>
 </html>

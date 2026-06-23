@@ -206,17 +206,14 @@
   <h2 class="section-h">What David needs from the framework</h2>
   <p class="section-body">Pre-cleared supplier assurance through <a href="HomeTest Operating Model - Persona Joe.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Joe's</a> onboarding gateway, so call-offs draw on a known-good pool without per-deployment reassurance. Health Economist evidence to substantiate the pricing positions before NHSE Pricing engagement. SLT direction on procurement vehicle, framework administration route and pathology supplier-mix to close the gating decisions. Tariff treatment confirmed by NHSE Pricing for the PSA Monitoring Episode and (downstream) for the HIV pricing structure once the Recommendation paper position lands. A standing capability to admit new conditions without re-procurement, so the framework scales beyond the first three clinical areas without restarting.</p>
 
-  <h2 class="section-h">TOM components &middot; what David owns or participates in</h2>
+  <h2 class="section-h">Where David appears in the model</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Framework instrument</strong> architecture (NHS Standard Contract with SaaS and data schedules)</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Commercial Model</strong> design and pricing architecture</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-15" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Contract Management</strong> framework as Cap-15 owner</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Nationally funded app framework</strong> design</a></li>
+    <li>Lane 4 (Financial settlement) on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> page</li>
+    <li>The Contract stage on the <a href="HomeTest Operating Model - Lifecycle.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">When</a> page (lead persona)</li>
+    <li>Commercial overlay row on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
+    <li>The Year 1 / Year 2 Decision Right on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
+    <li>Decision rights for pattern admission, refresh and approval on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
   </ul>
 </div>
-
-  <div class="pair-callout">
-   <strong>The cast around David.</strong> David is the NHS Commercial counterpart across every configuration. He sits behind the commissioner of the day,  <a href="HomeTest Operating Model - Persona Sarah.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Sarah</a> (HIV LA), <a href="HomeTest Operating Model - Persona Catherine.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Catherine</a> (PSA-AS established), <a href="HomeTest Operating Model - Persona Anita.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Anita</a> (iron deficiency anaemia), <a href="HomeTest Operating Model - Persona Daniel.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Daniel</a> (HealthStore COPD), <a href="HomeTest Operating Model - Persona Ruth.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ruth</a> (PSA-AS monitoring-gap, TBC). On the cross-cutting cast he works alongside <a href="HomeTest Operating Model - Persona Ngozi.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Ngozi</a> (IG), <a href="HomeTest Operating Model - Persona Priya.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Priya</a> (Platform) and <a href="HomeTest Operating Model - Persona Aisha.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Aisha</a> (Clinical).
-  </div>
 </body>
 </html>

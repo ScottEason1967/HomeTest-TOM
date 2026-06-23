@@ -191,19 +191,14 @@
     <strong>What if I'm not an LA?</strong> The same shape works for an acute trust (Mark's PSA-AS pattern), a primary care setting (Layla's iron deficiency anaemia pattern) or an ICB. The commissioner role is the same; the budget line and the patient cohort differ. Each commissioner type sees the value differently: LA cares about inequality reach, acute trust cares about elective capacity, ICB cares about pathway integration. The pitch needs to be sharpened per customer; that work has not yet been done.
   </div>
 
-  <h2 class="section-h">TOM components &middot; what Sarah owns or participates in</h2>
+  <h2 class="section-h">Where Sarah appears in the model</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Eligibility Filters</strong> self-assessment toolkit for ICB readiness</a></li>
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Commissioning</strong> overlay pattern across configurations</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-13" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Pathway integration</strong> with the local pathway team during onboarding</a></li>
-    <li><a href="HomeTest Operating Model - Teamwork.html#cap-15" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Contract Management</strong> at the ICB call-off level during the agreement&apos;s lifecycle</a></li>
+    <li>Lane 1 (Commissioner buying) on the <a href="HomeTest Operating Model - Operational.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">How</a> page</li>
+    <li>The Contract and Shape stages on the <a href="HomeTest Operating Model - Lifecycle.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">When</a> page</li>
+    <li>The Commissioner north star and Commissioning overlay on the <a href="HomeTest Operating Model - Anatomical.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">What</a> page</li>
+    <li>LA Sex Health Service Commissioner role across the HIV configuration RACI on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
+    <li>Acute Trust Commissioner role across the PSA configuration RACI on the <a href="HomeTest Operating Model - Governance.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Who</a> page</li>
   </ul>
-  <div class="pair-callout">
-    <strong>Targeting and reach as a platform offer.</strong> The platform can broker targeting and outreach capabilities the commissioner cannot easily replicate locally: UKHSA data overlays, NHSE social media reach, geo-targeted channels like Nextdoor, and LSOA-level segmentation. This shifts the platform from a passive pipe to an active reach engine on the commissioner's behalf. Direction set; the exact operating shape and what sits inside the platform versus alongside it is being worked through.
-  </p>
-  <p class="section-body"><strong>Value proposition is different per audience.</strong> An LA Public Health commissioner cares about inequality reach. An acute trust commissioner cares about elective capacity. An ICB commissioner cares about pathway integration. The framework has to articulate the value sharply per customer, not as a single message. <em>Currently no single owner pushing the per-customer narrative.</em>
-  </div>
-
-  </div>
+</div>
 </body>
 </html>
