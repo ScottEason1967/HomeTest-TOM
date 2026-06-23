@@ -544,7 +544,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
   <div class="cast-panel">
     <div class="cast-head">
       <div class="cast-eyebrow-h">The cast &middot; fifteen people, one model</div>
-      <a href="HomeTest Operating Model - Hearts and Minds.html" class="cast-link">Detailed cast view &rarr;</a>
+      <a href="home.html" class="cast-link">Detailed cast view &rarr;</a>
     </div>
     <div class="cast-portraits">
       <div class="cast-group">
