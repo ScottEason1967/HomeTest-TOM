@@ -152,7 +152,7 @@
 
   <h2 class="section-h">TOM components &middot; what Abdul owns or participates in</h2>
   <ul class="where-list">
-    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Patient-init Initiation pattern</strong> (he initiates CVKM screening himself through the NHS App BP tool)</a></li>
+    <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Patient-init Initiation pattern</strong> (he initiates HIV testing himself through the NHS App)</a></li>
     <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>Service Wrapper</strong> six-touchpoint chain end-to-end: Referral / Invite, Login &amp; onboard, In-life Help &amp; Support, Use &amp; Motivation, Signposting / Offboarding, Data return</a></li>
     <li><a href="HomeTest Operating Model - Anatomical.html" style="color:#5E35B2;font-weight:600;text-decoration:none;"><strong>PIDS framing</strong> (Patient Initiated Diagnostic Service)</a></li>
   </ul>

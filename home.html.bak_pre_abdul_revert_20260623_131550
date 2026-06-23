@@ -257,7 +257,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <img src="Assets/Personas/abdul.png" alt="Abdul">
           <div class="patient-body">
             <div class="patient-name">Abdul, 38</div>
-            <div class="patient-role">Self-initiated &middot; CVKM</div>
+            <div class="patient-role">Self-initiated &middot; HIV</div>
             <div class="patient-bio">Checks his own BP on the NHS App.</div>
           </div>
         </a>
@@ -490,7 +490,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
         </div>
         <div class="hm-tile-strap">Patient stories</div>
         <div class="hm-tile-h">Three patient journeys</div>
-        <div class="hm-tile-desc">Abdul, Mark and Layla. One per initiation pattern. CVKM screening, PSA-AS surveillance, primary-care anaemia review.</div>
+        <div class="hm-tile-desc">Abdul, Mark and Layla. One per initiation pattern. HIV self-initiated, PSA-AS active surveillance, primary-care iron deficiency anaemia review.</div>
         <div class="hm-tile-cta">Open all three &rarr;</div>
       </a>
       <a href="HomeTest Operating Model - Sean Journey.html" class="hm-tile hm-sean">
