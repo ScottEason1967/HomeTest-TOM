@@ -129,6 +129,26 @@
   .footer-note h3{margin:0 0 10px;font-size:14px;color:var(--nhs-dark);font-weight:800;}
   @media (max-width:1200px){.matrix,.roadmap-track{grid-template-columns:1fr;} .rd-phase{border-right:none;border-top:1px solid var(--border-lt);}}
   @media print{body{background:#fff;} .topnav,.filter-bar{display:none;} .page{max-width:none;padding:20px 30px;} .summary-strip{break-inside:avoid;} .matrix{grid-template-columns:1fr;gap:0;} .stage{break-before:page;border:none;border-top:2px solid var(--nhs-dark);border-radius:0;page-break-inside:avoid;} .stage:first-child{break-before:auto;} .activity[open] .act-detail{display:block !important;} .activity{break-inside:avoid;border:1px solid var(--border-lt);border-radius:6px;margin:8px 0;padding:8px 12px;} .roadmap{break-inside:avoid;} .roadmap-track{grid-template-columns:repeat(5,1fr);} .card{break-inside:avoid;} .footer-note{break-before:page;} a{color:var(--text);text-decoration:none;} .card-link,.nav-back,.nav-siblings{display:none;}}
+  .two-track-callout{margin:24px 0 18px;background:#F0F6FB;border:1px solid #C8DEEE;border-left:4px solid var(--nhs-blue);border-radius:8px;padding:14px 18px;display:flex;gap:14px;align-items:flex-start;}
+  .ttc-icon{font-size:24px;color:var(--nhs-blue);font-weight:700;line-height:1;padding-top:2px;}
+  .ttc-body{flex:1;}
+  .ttc-title{font-size:13.5px;font-weight:800;color:var(--nhs-dark);margin-bottom:4px;}
+  .ttc-text{font-size:12.5px;color:var(--text-sec);line-height:1.55;}
+  .planc-track{margin:0 0 40px;background:#fff;border:1px solid var(--dep-border);border-radius:10px;overflow:hidden;}
+  .planc-head{background:linear-gradient(135deg,#C9A227 0%,#A38211 100%);color:#fff;padding:12px 18px;}
+  .planc-lane-label{font-size:10px;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,0.85);text-transform:uppercase;margin-bottom:3px;}
+  .planc-lane-sub{font-size:12px;color:rgba(255,255,255,0.92);line-height:1.45;max-width:880px;}
+  .planc-grid{display:grid;grid-template-columns:repeat(5,1fr);}
+  .planc-cell{padding:12px 14px;border-right:1px solid var(--dep-border);background:var(--warm-cream);display:flex;flex-direction:column;gap:5px;min-height:130px;}
+  .planc-cell:last-child{border-right:none;}
+  .planc-phase{font-size:9.5px;font-weight:800;letter-spacing:1.8px;color:var(--amber-deep);text-transform:uppercase;}
+  .planc-dates{font-size:10.5px;font-weight:700;color:var(--dep-text);letter-spacing:0.4px;margin-bottom:3px;}
+  .planc-prose{font-size:11.5px;color:var(--text);line-height:1.5;font-style:italic;flex:1;}
+  .planc-gate{margin-top:6px;background:var(--cp);color:#fff;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:6px;line-height:1.3;}
+  .planc-gate-mark{font-size:13px;}
+  @media (max-width:1200px){.planc-grid{grid-template-columns:1fr;} .planc-cell{border-right:none;border-bottom:1px solid var(--dep-border);}}
+  @media print{.planc-track{break-inside:avoid;}}
+
 </style>
 </head>
 <body>
@@ -151,8 +171,24 @@
   <div class="amber-rule"></div>
   <div class="h-eyebrow">Commercial sourcing strategy</div>
   <h1 class="h-title">Milestone Plan.</h1>
-  <div class="h-sub">Commercial milestone plan sequenced through the five procurement stages. Procurement activities form the spine; decisions from the Status page sit over the top as commercial-owned calls or inbound dependencies. The roadmap below is the primary view. Click any dot to scroll to its detail.</div>
-  <div class="version-bar"><span class="version-pill">v0.3 · workshop input</span><span>Updated 23 June 2026</span></div>
+  <div class="h-sub">Commercial milestone plan sequenced through the five procurement stages. The Plan A spine runs to live framework in August 2027. The Plan C interim route runs in parallel and protects the April 2027 HIV Beta go-live commitment. The roadmap below is the Plan A detail; Plan C summary sits at the top.</div>
+  <div class="version-bar"><span class="version-pill">v0.4 · two-route view</span><span>Updated 23 June 2026</span></div>
+
+  <div class="two-track-callout">
+    <div class="ttc-icon">&harr;</div>
+    <div class="ttc-body">
+      <div class="ttc-title">Two routes running in parallel.</div>
+      <div class="ttc-text">This is the <strong>Plan A delivery view</strong>: NHSE-administered Open Framework under PA23, sequenced through the five procurement stages, earliest live August 2027. The <strong>Plan C interim track</strong> below runs in parallel and protects the April 2027 HIV Beta commitment via commissioner-led routes. Per recommendation paper Section 14.4.</div>
+    </div>
+  </div>
+  <div class="planc-track">
+    <div class="planc-head">
+      <div class="planc-lane-label">PLAN C &middot; INTERIM ROUTE</div>
+      <div class="planc-lane-sub">Commissioner-led procurement using existing frameworks (SBS Sexual Health, open procurement, direct award). Protects April 2027 HIV Beta commitment.</div>
+    </div>
+    <div class="planc-grid"><div class="planc-cell"><div class="planc-phase">S1</div><div class="planc-dates">Aug to Sep 26</div><div class="planc-prose">Identify commissioners requiring HomeTest services from April 2027. Route advice — SBS Sexual Health Framework, open procurement, direct award.</div></div><div class="planc-cell"><div class="planc-phase">S2</div><div class="planc-dates">Sep to Dec 26</div><div class="planc-prose">SBS Sexual Health Framework bridge maintained for HIV. Commissioner-led playbook documented. NHS Online and RDUH direct routes confirmed.</div></div><div class="planc-cell"><div class="planc-phase">S3</div><div class="planc-dates">Jan to Feb 27</div><div class="planc-prose">First commissioner-led procurements going live. Framework fragmentation risk monitored.</div></div><div class="planc-cell"><div class="planc-phase">S4</div><div class="planc-dates">Mar to Jul 27</div><div class="planc-prose">HIV Beta live via commissioner-led routes by April 2027. The gate that delivers the April 2027 commitment.</div><div class="planc-gate"><span class="planc-gate-mark">&#9733;</span>April 2027 &mdash; HIV Beta go-live</div></div><div class="planc-cell"><div class="planc-phase">S5</div><div class="planc-dates">Aug 27 onwards</div><div class="planc-prose">Plan C winds down. Commissioners offered switchover to Plan A as suppliers are admitted to the framework.</div></div></div>
+  </div>
+
   <div class="summary-strip">
     <div class="sblock"><div class="sn">37</div><div class="sl">Commercial-owned items</div></div>
     <div class="sblock"><div class="sn">80</div><div class="sl">Inbound dependencies</div></div>
@@ -196,7 +232,7 @@
           <div class="act-cards">
       <div class="card card-comm" data-cp="1" data-track="commercial">
         <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
-        <div class="card-title">Sourcing Strategy in flight</div>
+        <div class="card-title">Sourcing strategy timeline</div>
         <div class="card-desc">Draft by mid-June 2026, final by end June. Gating document for procurement route and framework administration decisions.</div>
         <div class="card-owner"></div>
         <a class="card-link" href="HomeTest Operating Model - Status.html#sourcing-strategy-timeline">View on Status page &rarr;</a>
