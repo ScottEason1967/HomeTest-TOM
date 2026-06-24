@@ -10,16 +10,15 @@
     --amber:#FFB91D; --amber-deep:#C9A227; --warm-cream:#FFF9EC;
     --text:#212B32; --text-sec:#4C6272; --text-muted:#7E8B97;
     --border:#E5EBF0; --border-lt:#EFF2F5; --card:#ffffff;
-    --nhs-blue-deep:#003087;
     --bg:#F4F7FA;
     --stand-accent:#005EB8; --bau-accent:#006747; --ext-accent:#AE2573;
     --status-live:#006747; --status-flight:#005EB8; --status-open:#B5121B; --status-blocked:#9A6700; --status-risk:#7C2855;
     --status-live-bg:#E0F0E6; --status-flight-bg:#D9E8F4; --status-open-bg:#FCE3E5; --status-blocked-bg:#FDF3D8; --status-risk-bg:#F4E1EC;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:linear-gradient(180deg, var(--nhs-blue) 0%, var(--nhs-blue-deep) 100%);background-attachment:fixed;color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased;}
 
-  .page{max-width:1180px;margin:30px auto 50px;padding:48px 32px 80px;background:#ffffff;border-radius:18px;box-shadow:0 14px 40px rgba(0,48,135,0.20);}
+  .page{max-width:1180px;margin:0 auto;padding:48px 32px 80px;}
 
   .hero{margin-bottom:36px;}
   .amber-rule{width:56px;height:3px;background:var(--amber);border-radius:2px;margin-bottom:14px;}
@@ -224,7 +223,7 @@
     .cap-personas{margin-left:0;width:100%;margin-top:8px;}
   }
 
-  .tom-topnav{background:#fff;border-bottom:1px solid #ebeef1;padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.18);margin:0;border-radius:0;}
+  .tom-topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
   .tom-topnav .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0;}
   .tom-topnav .nav-back:hover{color:var(--nhs-blue);}
   .tom-topnav .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
@@ -285,8 +284,6 @@
 </script>
 
 
-<div class="page">
-
 <nav class="tom-topnav">
   <a href="home.html" class="nav-back">&larr; Operating Model</a>
   <div class="nav-siblings">
@@ -303,6 +300,9 @@
   </div>
 </nav>
 
+
+
+<div class="page">
 
   <nav class="navbar" aria-label="Capability quick-jump">
     <div class="nav-caps-label">Capabilities</div>
