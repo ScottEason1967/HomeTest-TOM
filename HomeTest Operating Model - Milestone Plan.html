@@ -41,4 +41,1844 @@
   .roadmap-track{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--border-lt);}
   .rd-phase{border-right:1px solid var(--border-lt);display:flex;flex-direction:column;}
   .rd-phase:last-child{border-right:none;}
-  .rd-phase-head{background:linear-gradie
+  .rd-phase-head{background:linear-gradient(135deg,#003087 0%,#1A4C9C 100%);color:#fff;padding:12px 14px;}
+  .rd-stage{font-size:9.5px;font-weight:800;letter-spacing:1.8px;color:#7EC8E3;text-transform:uppercase;margin-bottom:3px;}
+  .rd-name{font-size:13px;font-weight:800;color:#fff;line-height:1.2;}
+  .rd-dates{font-size:10.5px;font-weight:700;color:rgba(255,255,255,0.8);letter-spacing:0.4px;margin-top:3px;}
+  .rd-meta{font-size:9.5px;color:rgba(255,255,255,0.65);margin-top:5px;letter-spacing:0.3px;}
+  .rd-dots{padding:10px 12px 14px;display:flex;flex-direction:column;gap:3px;flex:1;}
+  .rd-dot{display:flex;align-items:center;gap:9px;padding:5px 6px;border-radius:5px;text-decoration:none;color:var(--text);transition:background 0.12s;cursor:pointer;}
+  .rd-dot:hover{background:#F5F8FB;}
+  .rd-dot-circle{display:inline-block;width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid #fff;box-shadow:0 0 0 1.5px currentColor;}
+  .rd-dot-name{font-size:11px;line-height:1.3;color:var(--text);flex:1;}
+  .rd-dot-cp{color:var(--cp);} .rd-dot-cp .rd-dot-circle{background:var(--cp);} .rd-dot-cp .rd-dot-name{font-weight:700;color:var(--cp-text);}
+  .rd-dot-comm{color:#3478B5;} .rd-dot-comm .rd-dot-circle{background:#3478B5;}
+  .rd-dot-dep{color:var(--amber-deep);} .rd-dot-dep .rd-dot-circle{background:var(--amber-deep);}
+  .rd-dot-proc{color:var(--text-muted);} .rd-dot-proc .rd-dot-circle{background:var(--text-muted);}
+  body.f-cp .rd-dot[data-cp="0"]{opacity:0.18;pointer-events:none;}
+  body.f-comm .rd-dot-dep,body.f-comm .rd-dot-proc{opacity:0.18;pointer-events:none;}
+  body.f-dep .rd-dot-comm,body.f-dep .rd-dot-proc{opacity:0.18;pointer-events:none;}
+  .roadmap-legend{display:flex;gap:22px;flex-wrap:wrap;padding:12px 24px 18px;border-top:1px solid var(--border-lt);background:#FAFBFD;font-size:11.5px;color:var(--text-sec);}
+  .rd-leg{display:flex;align-items:center;gap:7px;}
+  .rd-leg-dot{display:inline-block;width:10px;height:10px;border-radius:50%;}
+  .rd-leg-cp{background:var(--cp);} .rd-leg-comm{background:#3478B5;} .rd-leg-dep{background:var(--amber-deep);} .rd-leg-proc{background:var(--text-muted);}
+
+  .legend{display:flex;gap:22px;flex-wrap:wrap;font-size:12px;color:var(--text-sec);margin-bottom:30px;padding:12px 18px;background:#fff;border:1px solid var(--border-lt);border-radius:8px;}
+  .legend-item{display:flex;align-items:center;gap:8px;}
+  .legend-dot{width:10px;height:10px;border-radius:50%;}
+  .legend-bar{width:18px;height:4px;border-radius:2px;}
+
+  /* === MATRIX === */
+  .matrix{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:50px;}
+  .stage{background:#fff;border:1px solid var(--border-lt);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;}
+  .stage-head{padding:14px 16px;border-bottom:1px solid var(--border-lt);background:linear-gradient(180deg,#fff 0%,#F8FAFC 100%);}
+  .stage-label{font-size:10px;font-weight:800;color:var(--nhs-blue);letter-spacing:2px;text-transform:uppercase;}
+  .stage-name{font-size:15px;font-weight:800;color:var(--nhs-dark);margin-top:4px;line-height:1.2;}
+  .stage-dates{font-size:11px;font-weight:700;color:var(--text-sec);margin-top:3px;letter-spacing:0.4px;}
+  .stage-meta{font-size:10.5px;color:var(--text-muted);margin-top:6px;}
+  .stage-acts{padding:8px 10px 14px;}
+  .mandie-callout{margin:0;padding:10px 14px;background:var(--warm-cream);border-top:1px solid var(--dep-border);border-bottom:1px solid var(--dep-border);}
+  .mandie-label{font-size:9.5px;font-weight:800;color:var(--amber-deep);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:4px;}
+  .mandie-body{font-size:11px;color:var(--dep-text);line-height:1.45;}
+  .activity{border-top:1px solid var(--border-lt);padding:2px 0;position:relative;}
+  .activity:first-child{border-top:none;}
+  .activity summary{cursor:pointer;list-style:none;padding:9px 6px;border-radius:5px;transition:background 0.12s;}
+  .activity summary::-webkit-details-marker{display:none;}
+  .activity summary:hover{background:#F5F8FB;}
+  .activity[open] summary{background:#EEF4F8;}
+  .activity.is-cp summary{border-left:3px solid var(--cp);padding-left:8px;}
+  .activity.is-cp[open] summary{background:var(--cp-bg);}
+  .act-row{display:flex;flex-direction:column;gap:2px;}
+  .act-name{font-size:12.5px;font-weight:700;color:var(--text);line-height:1.3;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+  .act-chip{display:inline-block;font-size:9.5px;font-weight:700;padding:1px 6px;border-radius:8px;letter-spacing:0.3px;}
+  .act-chip-comm{background:#DCEBF6;color:var(--comm-text);border:1px solid var(--comm-border);}
+  .act-chip-dep{background:#FBEFCB;color:var(--dep-text);border:1px solid var(--dep-border);}
+  .act-sub{font-size:11px;color:var(--text-sec);line-height:1.4;}
+  .act-owner{font-size:10.5px;color:var(--text-muted);font-style:italic;margin-top:3px;}
+  .why-tooltip{display:none;position:absolute;left:calc(100% + 6px);top:0;z-index:50;width:240px;background:#fff;border:1px solid var(--cp);border-left:3px solid var(--cp);border-radius:6px;padding:9px 12px;box-shadow:0 4px 12px rgba(0,0,0,0.10);pointer-events:none;}
+  .activity.is-cp:hover>summary>.act-row>.why-tooltip,.activity.is-cp:focus-within>summary>.act-row>.why-tooltip{display:block;}
+  .why-tooltip-label{display:block;font-weight:800;text-transform:uppercase;letter-spacing:0.8px;font-size:9.5px;color:var(--cp);margin-bottom:4px;}
+  .why-tooltip-body{display:block;font-size:11px;color:var(--cp-text);line-height:1.45;}
+  .stage:last-child .activity .why-tooltip,.stage:nth-last-child(2) .activity .why-tooltip{left:auto;right:calc(100% + 6px);}
+  .act-detail{padding:10px 6px 14px;display:flex;flex-direction:column;gap:8px;}
+  .act-cite{font-size:10px;color:var(--text-muted);font-style:italic;background:#F5F8FB;padding:5px 9px;border-radius:4px;line-height:1.5;}
+  .act-cite-label{font-weight:700;font-style:normal;color:var(--text-sec);text-transform:uppercase;letter-spacing:0.6px;font-size:9px;margin-right:3px;}
+  .act-cards{display:flex;flex-direction:column;gap:8px;}
+  .card{padding:10px 12px;border-radius:6px;border:1px solid var(--border-lt);}
+  .card-comm{background:var(--comm-bg);border-color:var(--comm-border);}
+  .card-dep{background:var(--dep-bg);border-color:var(--dep-border);}
+  .card-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:5px;}
+  .card-tag{font-size:9.5px;font-weight:700;color:var(--text-sec);text-transform:uppercase;letter-spacing:1px;}
+  .cp-badge{font-size:9px;font-weight:800;color:#fff;background:var(--cp);padding:2px 6px;border-radius:3px;letter-spacing:0.8px;}
+  .card-title{font-size:12px;font-weight:700;color:var(--text);line-height:1.35;margin-bottom:4px;}
+  .card-desc{font-size:11px;color:var(--text-sec);line-height:1.5;margin-bottom:5px;}
+  .card-owner{font-size:10.5px;color:var(--text-muted);font-style:italic;margin-bottom:5px;}
+  .card-owner strong{color:var(--text-sec);font-weight:600;font-style:normal;}
+  .card-link{font-size:10px;font-weight:700;color:var(--nhs-blue);text-decoration:none;letter-spacing:0.4px;text-transform:uppercase;}
+  .card-link:hover{text-decoration:underline;}
+  .card-empty{font-size:11px;color:var(--text-muted);font-style:italic;padding:4px 0;}
+  .activity.rd-pinged>summary{animation:rd-ping 0.8s ease;}
+  @keyframes rd-ping {0%{background:var(--cp-bg);} 100%{background:#fff;}}
+  body.f-cp .activity[data-cp="0"]{opacity:0.18;pointer-events:none;}
+  body.f-cp .activity[data-cp="0"] summary{cursor:default;}
+  body.f-dep .card-comm{display:none;}
+  body.f-comm .card-dep{display:none;}
+  body.f-dep .act-chip-comm{opacity:0.2;}
+  body.f-comm .act-chip-dep{opacity:0.2;}
+  .footer-note{margin-top:60px;padding:24px 28px;background:#FFF9EC;border:1px solid #F0DDB0;border-radius:10px;font-size:13px;color:var(--text-sec);line-height:1.6;}
+  .footer-note h3{margin:0 0 10px;font-size:14px;color:var(--nhs-dark);font-weight:800;}
+  @media (max-width:1200px){.matrix,.roadmap-track{grid-template-columns:1fr;} .rd-phase{border-right:none;border-top:1px solid var(--border-lt);}}
+  @media print{body{background:#fff;} .topnav,.filter-bar{display:none;} .page{max-width:none;padding:20px 30px;} .summary-strip{break-inside:avoid;} .matrix{grid-template-columns:1fr;gap:0;} .stage{break-before:page;border:none;border-top:2px solid var(--nhs-dark);border-radius:0;page-break-inside:avoid;} .stage:first-child{break-before:auto;} .activity[open] .act-detail{display:block !important;} .activity{break-inside:avoid;border:1px solid var(--border-lt);border-radius:6px;margin:8px 0;padding:8px 12px;} .roadmap{break-inside:avoid;} .roadmap-track{grid-template-columns:repeat(5,1fr);} .card{break-inside:avoid;} .footer-note{break-before:page;} a{color:var(--text);text-decoration:none;} .card-link,.nav-back,.nav-siblings{display:none;}}
+  .two-track-callout{margin:24px 0 18px;background:#F0F6FB;border:1px solid #C8DEEE;border-left:4px solid var(--nhs-blue);border-radius:8px;padding:14px 18px;display:flex;gap:14px;align-items:flex-start;}
+  .ttc-icon{font-size:24px;color:var(--nhs-blue);font-weight:700;line-height:1;padding-top:2px;}
+  .ttc-body{flex:1;}
+  .ttc-title{font-size:13.5px;font-weight:800;color:var(--nhs-dark);margin-bottom:4px;}
+  .ttc-text{font-size:12.5px;color:var(--text-sec);line-height:1.55;}
+  .planc-track{margin:0 0 40px;background:#fff;border:1px solid var(--dep-border);border-radius:10px;overflow:hidden;}
+  .planc-head{background:linear-gradient(135deg,#C9A227 0%,#A38211 100%);color:#fff;padding:12px 18px;}
+  .planc-lane-label{font-size:10px;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,0.85);text-transform:uppercase;margin-bottom:3px;}
+  .planc-lane-sub{font-size:12px;color:rgba(255,255,255,0.92);line-height:1.45;max-width:880px;}
+  .planc-grid{display:grid;grid-template-columns:repeat(5,1fr);}
+  .planc-cell{padding:12px 14px;border-right:1px solid var(--dep-border);background:var(--warm-cream);display:flex;flex-direction:column;gap:5px;min-height:130px;}
+  .planc-cell:last-child{border-right:none;}
+  .planc-phase{font-size:9.5px;font-weight:800;letter-spacing:1.8px;color:var(--amber-deep);text-transform:uppercase;}
+  .planc-dates{font-size:10.5px;font-weight:700;color:var(--dep-text);letter-spacing:0.4px;margin-bottom:3px;}
+  .planc-prose{font-size:11.5px;color:var(--text);line-height:1.5;font-style:italic;flex:1;}
+  .planc-gate{margin-top:6px;background:var(--cp);color:#fff;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:6px;line-height:1.3;}
+  .planc-gate-mark{font-size:13px;}
+  @media (max-width:1200px){.planc-grid{grid-template-columns:1fr;} .planc-cell{border-right:none;border-bottom:1px solid var(--dep-border);}}
+  @media print{.planc-track{break-inside:avoid;}}
+  /* === ROUTE + VALUE TOGGLES === */
+  .toggle-group{margin:0 0 14px;display:flex;flex-direction:column;gap:8px;}
+  .toggle-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .toggle-label{font-size:11px;font-weight:700;color:var(--text-sec);text-transform:uppercase;letter-spacing:1.5px;margin-right:6px;min-width:110px;}
+  .tog-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--text-sec);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.15s;letter-spacing:0.2px;}
+  .tog-pill:hover{border-color:var(--nhs-blue);color:var(--nhs-blue);}
+  .tog-pill.active{background:var(--nhs-blue);color:#fff;border-color:var(--nhs-blue);}
+
+  /* Route view hide states */
+  body.r-a .planc-track,body.r-a .two-track-callout{display:none;}
+  body.r-c .roadmap,body.r-c .matrix,body.r-c .legend{opacity:0.18;pointer-events:none;}
+  body.r-c .planc-track{box-shadow:0 0 0 3px var(--amber);}
+
+  .live-indicator{display:flex;align-items:center;gap:6px;margin-left:12px;padding:4px 10px;background:#E8F1F6;border:1px solid #B5D4E5;border-radius:999px;font-size:11px;color:var(--nhs-dark);font-weight:700;}
+  .li-label{color:var(--text-sec);text-transform:uppercase;letter-spacing:1px;font-size:10px;}
+  .dyn-live{color:var(--nhs-blue);font-weight:800;letter-spacing:0.3px;}
+
+
+</style>
+</head>
+<body>
+<script>(function(){if(sessionStorage.getItem('hometest-auth')!=='ok'){var next=encodeURIComponent(location.pathname.split('/').pop()||'home.html');location.href='index.html?next='+next;}})();</script>
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Why.html">Why</a>
+    <a href="HomeTest Operating Model - What.html">What</a>
+    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
+    <a href="HomeTest Operating Model - Operational.html">How</a>
+    <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
+    <a href="HomeTest Operating Model - Teamwork.html">HomeTest teamwork</a>
+    <span class="nav-sep"></span>
+    <a href="HomeTest Operating Model - Status.html">Status</a>
+  </div>
+</nav>
+<div class="page">
+  <div class="amber-rule"></div>
+  <div class="h-eyebrow">Commercial sourcing strategy</div>
+  <h1 class="h-title">Milestone Plan.</h1>
+  <div class="h-sub">Commercial milestone plan sequenced through the five procurement stages. The Plan A spine runs to live framework in August 2027. The Plan C interim route runs in parallel and protects the April 2027 HIV Beta go-live commitment. The roadmap below is the Plan A detail; Plan C summary sits at the top.</div>
+  <div class="version-bar"><span class="version-pill">v0.4 · two-route view</span><span>Updated 23 June 2026</span>
+  <div class="live-indicator">
+    <span class="li-label">Plan A live by:</span>
+    <span class="dyn-live" data-low="August 2027" data-high="December 2027">August 2027</span>
+  </div></div>
+
+  <div class="two-track-callout">
+    <div class="ttc-icon">&harr;</div>
+    <div class="ttc-body">
+      <div class="ttc-title">Two routes running in parallel.</div>
+      <div class="ttc-text">This is the <strong>Plan A delivery view</strong>: NHSE-administered Open Framework under PA23, sequenced through the five procurement stages, earliest live August 2027. The <strong>Plan C interim track</strong> below runs in parallel and protects the April 2027 HIV Beta commitment via commissioner-led routes. Per recommendation paper Section 14.4.</div>
+    </div>
+  </div>
+  <div class="planc-track">
+    <div class="planc-head">
+      <div class="planc-lane-label">PLAN C &middot; INTERIM ROUTE</div>
+      <div class="planc-lane-sub">Commissioner-led procurement using existing frameworks (SBS Sexual Health, open procurement, direct award). Protects April 2027 HIV Beta commitment.</div>
+    </div>
+    <div class="planc-grid"><div class="planc-cell"><div class="planc-phase">S1</div><div class="planc-dates"><span class="dyn-dates" data-low="Aug to Oct 26" data-high="Aug to Oct 26">Aug to Oct 26</span></div><div class="planc-prose">Identify commissioners requiring HomeTest services from April 2027. Route advice — SBS Sexual Health Framework, open procurement, direct award.</div></div><div class="planc-cell"><div class="planc-phase">S2</div><div class="planc-dates"><span class="dyn-dates" data-low="Nov to Dec 26" data-high="Nov 26 to Feb 27">Nov to Dec 26</span></div><div class="planc-prose">SBS Sexual Health Framework bridge maintained for HIV. Commissioner-led playbook documented. NHS Online and RDUH direct routes confirmed.</div></div><div class="planc-cell"><div class="planc-phase">S3</div><div class="planc-dates"><span class="dyn-dates" data-low="Jan to Feb 27" data-high="Mar to May 27">Jan to Feb 27</span></div><div class="planc-prose">First commissioner-led procurements going live. Framework fragmentation risk monitored.</div></div><div class="planc-cell"><div class="planc-phase">S4</div><div class="planc-dates"><span class="dyn-dates" data-low="Mar to Apr 27" data-high="Jun to Aug 27">Mar to Apr 27</span></div><div class="planc-prose">HIV Beta live via commissioner-led routes by April 2027. The gate that delivers the April 2027 commitment.</div><div class="planc-gate"><span class="planc-gate-mark">&#9733;</span>April 2027 &mdash; HIV Beta go-live</div></div><div class="planc-cell"><div class="planc-phase">S5</div><div class="planc-dates"><span class="dyn-dates" data-low="May to Jul 27" data-high="Sep to Nov 27">May to Jul 27</span></div><div class="planc-prose">Plan C winds down. Commissioners offered switchover to Plan A as suppliers are admitted to the framework.</div></div></div>
+  </div>
+
+  <div class="summary-strip">
+    <div class="sblock"><div class="sn">37</div><div class="sl">Commercial-owned items</div></div>
+    <div class="sblock"><div class="sn">80</div><div class="sl">Inbound dependencies</div></div>
+    <div class="sblock"><div class="sn">51</div><div class="sl">On critical path</div></div>
+    <div class="sblock"><div class="sn">25</div><div class="sl">Out of scope</div></div>
+  </div>
+
+  <div class="toggle-group">
+    <div class="toggle-row">
+      <span class="toggle-label">Route</span>
+      <button class="tog-pill active" data-route="all">Both routes</button>
+      <button class="tog-pill" data-route="a">Plan A only</button>
+      <button class="tog-pill" data-route="c">Plan C only</button>
+    </div>
+    <div class="toggle-row">
+      <span class="toggle-label">Value scenario</span>
+      <button class="tog-pill active" data-value="low">~£30m · DHSC CAB only · 12 months</button>
+      <button class="tog-pill" data-value="high">£250m+ · CO + HMT · 16 months</button>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <span class="filter-label">Filter</span>
+    <button class="filter-pill active" data-filter="all">All <span class="pn">117</span></button>
+    <button class="filter-pill" data-filter="cp">Critical path only <span class="pn">51</span></button>
+    <button class="filter-pill" data-filter="comm">Commercial only <span class="pn">37</span></button>
+    <button class="filter-pill" data-filter="dep">Dependencies only <span class="pn">80</span></button>
+  </div>
+  <div class="roadmap" id="roadmap">
+    <div class="roadmap-head"><h2>Roadmap</h2><div class="roadmap-sub">Each dot is an activity. Colour shows its type. Click any dot to scroll to its detail card and open it. Critical path runs in red.</div></div>
+    <div class="roadmap-track"><div class="rd-phase" data-phase="S1"><div class="rd-phase-head"><div class="rd-stage">STAGE 1</div><div class="rd-name">Procurement Planning</div><div class="rd-dates"><span class="dyn-dates" data-low="Aug to Oct 26" data-high="Aug to Oct 26">Aug to Oct 26</span></div><div class="rd-meta">14 activities · 7 critical</div></div><div class="rd-dots"><a href="#a-S1-0" class="rd-dot rd-dot-cp" data-target="a-S1-0" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Sourcing strategy approval</span></a><a href="#a-S1-1" class="rd-dot rd-dot-cp" data-target="a-S1-1" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Procurement route lock</span></a><a href="#a-S1-2" class="rd-dot rd-dot-cp" data-target="a-S1-2" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Interim commercial posture endorsement</span></a><a href="#a-S1-3" class="rd-dot rd-dot-comm" data-target="a-S1-3" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Framework administration arrangement</span></a><a href="#a-S1-4" class="rd-dot rd-dot-dep" data-target="a-S1-4" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">5/4/4 prioritisation framework adoption</span></a><a href="#a-S1-5" class="rd-dot rd-dot-cp" data-target="a-S1-5" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Volumes confirmation — cardinal four</span></a><a href="#a-S1-6" class="rd-dot rd-dot-dep" data-target="a-S1-6" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Early market engagement</span></a><a href="#a-S1-7" class="rd-dot rd-dot-cp" data-target="a-S1-7" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Pathology architecture</span></a><a href="#a-S1-8" class="rd-dot rd-dot-cp" data-target="a-S1-8" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Pricing model direction</span></a><a href="#a-S1-9" class="rd-dot rd-dot-cp" data-target="a-S1-9" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Health Economist engagement</span></a><a href="#a-S1-10" class="rd-dot rd-dot-comm" data-target="a-S1-10" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Local pilot mobilisation</span></a><a href="#a-S1-11" class="rd-dot rd-dot-comm" data-target="a-S1-11" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Off-boarding and removal design</span></a><a href="#a-S1-12" class="rd-dot rd-dot-comm" data-target="a-S1-12" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">SHAPE capability for ongoing demand sensing</span></a><a href="#a-S1-13" class="rd-dot rd-dot-dep" data-target="a-S1-13" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">BAU funding and orchestration role</span></a></div></div><div class="rd-phase" data-phase="S2"><div class="rd-phase-head"><div class="rd-stage">STAGE 2</div><div class="rd-name">Pre-Procurement Governance</div><div class="rd-dates"><span class="dyn-dates" data-low="Nov to Dec 26" data-high="Nov 26 to Feb 27">Nov to Dec 26</span></div><div class="rd-meta">13 activities · 10 critical</div></div><div class="rd-dots"><a href="#a-S2-0" class="rd-dot rd-dot-cp" data-target="a-S2-0" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Business case and NHSE-internal approvals</span></a><a href="#a-S2-1" class="rd-dot rd-dot-cp" data-target="a-S2-1" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Cabinet Office spend control</span></a><a href="#a-S2-2" class="rd-dot rd-dot-cp" data-target="a-S2-2" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">HMT approval (settlement letter)</span></a><a href="#a-S2-3" class="rd-dot rd-dot-cp" data-target="a-S2-3" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">IG sign-off, DPIA, data controller framework</span></a><a href="#a-S2-4" class="rd-dot rd-dot-cp" data-target="a-S2-4" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Clinical safety position</span></a><a href="#a-S2-5" class="rd-dot rd-dot-cp" data-target="a-S2-5" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Legal-direction transition window</span></a><a href="#a-S2-6" class="rd-dot rd-dot-cp" data-target="a-S2-6" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">ITT specification — service spec and overlays</span></a><a href="#a-S2-7" class="rd-dot rd-dot-cp" data-target="a-S2-7" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">ITT specification — supply chain and fulfilment</span></a><a href="#a-S2-8" class="rd-dot rd-dot-cp" data-target="a-S2-8" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">ITT specification — assurance and onboarding</span></a><a href="#a-S2-9" class="rd-dot rd-dot-dep" data-target="a-S2-9" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">ITT specification — service operations</span></a><a href="#a-S2-10" class="rd-dot rd-dot-proc" data-target="a-S2-10" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Evaluation criteria sign-off</span></a><a href="#a-S2-11" class="rd-dot rd-dot-dep" data-target="a-S2-11" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Parallel framework risk monitoring</span></a><a href="#a-S2-12" class="rd-dot rd-dot-cp" data-target="a-S2-12" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Adoption motivation and clinician trust</span></a></div></div><div class="rd-phase" data-phase="S3"><div class="rd-phase-head"><div class="rd-stage">STAGE 3</div><div class="rd-name">Procurement Process</div><div class="rd-dates"><span class="dyn-dates" data-low="Jan to Feb 27" data-high="Mar to May 27">Jan to Feb 27</span></div><div class="rd-meta">5 activities · 3 critical</div></div><div class="rd-dots"><a href="#a-S3-0" class="rd-dot rd-dot-cp" data-target="a-S3-0" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">PIN publication</span></a><a href="#a-S3-1" class="rd-dot rd-dot-cp" data-target="a-S3-1" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">ITT publication</span></a><a href="#a-S3-2" class="rd-dot rd-dot-proc" data-target="a-S3-2" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Supplier briefings and clarifications</span></a><a href="#a-S3-3" class="rd-dot rd-dot-cp" data-target="a-S3-3" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Bid window and receipt</span></a><a href="#a-S3-4" class="rd-dot rd-dot-comm" data-target="a-S3-4" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">KPI framework and contract pack</span></a></div></div><div class="rd-phase" data-phase="S4"><div class="rd-phase-head"><div class="rd-stage">STAGE 4</div><div class="rd-name">Evaluation and Award</div><div class="rd-dates"><span class="dyn-dates" data-low="Mar to Apr 27" data-high="Jun to Aug 27">Mar to Apr 27</span></div><div class="rd-meta">5 activities · 4 critical</div></div><div class="rd-dots"><a href="#a-S4-0" class="rd-dot rd-dot-proc" data-target="a-S4-0" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Evaluation panel constituted</span></a><a href="#a-S4-1" class="rd-dot rd-dot-cp" data-target="a-S4-1" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Evaluation and moderation</span></a><a href="#a-S4-2" class="rd-dot rd-dot-cp" data-target="a-S4-2" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Award recommendation</span></a><a href="#a-S4-3" class="rd-dot rd-dot-cp" data-target="a-S4-3" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Standstill period</span></a><a href="#a-S4-4" class="rd-dot rd-dot-cp" data-target="a-S4-4" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Contract signature</span></a></div></div><div class="rd-phase" data-phase="S5"><div class="rd-phase-head"><div class="rd-stage">STAGE 5</div><div class="rd-name">Post-Procurement Governance</div><div class="rd-dates"><span class="dyn-dates" data-low="May to Jul 27" data-high="Sep to Nov 27">May to Jul 27</span></div><div class="rd-meta">5 activities · 2 critical</div></div><div class="rd-dots"><a href="#a-S5-0" class="rd-dot rd-dot-cp" data-target="a-S5-0" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">Mobilisation</span></a><a href="#a-S5-1" class="rd-dot rd-dot-comm" data-target="a-S5-1" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Steady-state supplier management</span></a><a href="#a-S5-2" class="rd-dot rd-dot-proc" data-target="a-S5-2" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">Contract management setup</span></a><a href="#a-S5-3" class="rd-dot rd-dot-cp" data-target="a-S5-3" data-cp="1"><span class="rd-dot-circle"></span><span class="rd-dot-name">MEASURE stage standup</span></a><a href="#a-S5-4" class="rd-dot rd-dot-proc" data-target="a-S5-4" data-cp="0"><span class="rd-dot-circle"></span><span class="rd-dot-name">BAU transition</span></a></div></div></div>
+    <div class="roadmap-legend">
+      <span class="rd-leg"><span class="rd-leg-dot rd-leg-cp"></span>Critical path</span>
+      <span class="rd-leg"><span class="rd-leg-dot rd-leg-comm"></span>Commercial-led</span>
+      <span class="rd-leg"><span class="rd-leg-dot rd-leg-dep"></span>Dependency-led</span>
+      <span class="rd-leg"><span class="rd-leg-dot rd-leg-proc"></span>Procurement process step</span>
+    </div>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><span class="legend-bar" style="background:var(--cp);"></span><span>Critical path (red border on activity in matrix)</span></div>
+    <div class="legend-item"><span class="legend-dot" style="background:#7AAED4;"></span><span>Commercial decision (blue chip count)</span></div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--amber-deep);"></span><span>Inbound dependency (amber chip count; click links to Status page)</span></div>
+  </div>
+  <div class="matrix"><div class="stage" data-stage="S1"><div class="stage-head"><div class="stage-label">STAGE 1</div><div class="stage-name">Procurement Planning</div><div class="stage-dates"><span class="dyn-dates" data-low="Aug to Oct 26" data-high="Aug to Oct 26">Aug to Oct 26</span></div><div class="stage-meta">14 activities · 7 on critical path · 50 items</div></div><div class="stage-acts">
+      <details class="activity is-cp" id="a-S1-0" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Sourcing strategy approval<span class="act-chip act-chip-comm">5 dec</span></div>
+            <div class="act-sub">Approval of the strategy paper through NHSE Commercial governance</div>
+            <div class="act-owner">Commercial Lead with Deputy Director DTx</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Approved strategy is the input every downstream gate refers to; nothing else proceeds without it.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Recommendation paper §10, §14; NHSE Commercial governance</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Sourcing strategy timeline</div>
+        <div class="card-desc">Draft by mid-June 2026, final by end June. Gating document for procurement route and framework administration decisions.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#sourcing-strategy-timeline">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Dual-route commercial recommendation in draft Recommendation paper</div>
+        <div class="card-desc">Plan A: NHSE-administered Open Framework under PA23 (long-term; earliest go-live August 2027). Plan C: commissioner-led direct via existing frameworks (interim; for HIV via NHS SBS Sexual Health Framework SBS10255). Plan A and Plan C progressed in parallel. Plan B (Digital Primary Care Framework) was discounted at the 22 June playback. Aligned with the PSR-first interim view raised at SLT 1-1 on 28 May. Provisional; Confirmed at the 22 June 2026 SLT Leeds playback. NHSE Commercial attending in support.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#two-track-commercial-recommendation-in-draft-recommendation-paper">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">SBS positioned as six-month PSR bridge for HIV in the recommendation paper</div>
+        <div class="card-desc">SBS now formally positioned as the six-month interim procurement bridge for HIV under Plan B/C of the two-track recommendation. Sits behind the PA23 Plan A. External procurement legal counsel workshop held 18 June; advice note received. Confirmed at the 22 June 2026 SLT Leeds playback.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#sbs-positioned-as-six-month-psr-bridge-for-hiv-in-the-recommendation-paper">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Commercial framework design in progress</div>
+        <div class="card-desc">GPIT three-layer construct under consideration as candidate contracting model: catalogue agreement, framework agreement, call-off agreement.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#commercial-framework-design-in-progress">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Pricing structure (covered in the Future State team's Recommendation paper)</div>
+        <div class="card-desc">Three-tier model(mobilisation + activity + volume floor) is the working frame, with cost per valid result on the activity tier. Surfaced through the RFI and supplier forums.Flat per-kit was rejected. Subscription rejected at strategic level.The Future State team's Recommendation paper carries the final activity-unit position. Substantiation sits with Health Economist input, sequenced behind the PSA pathway workstream. PSA Active Surveillance is a separate question (per-patient-per-year Monitoring Episode), not a variant of this.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial, Health Economist and NHSE Strategic Finance.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#pricing-structure-covered-in-the-future-state-teams-recommendation-paper">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S1-1" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Procurement route lock<span class="act-chip act-chip-comm">5 dec</span><span class="act-chip act-chip-dep">1 dep</span></div>
+            <div class="act-sub">Open Framework recommended post-playback. Final lock against PA23 routes</div>
+            <div class="act-owner">Commercial Lead with NHSE Commercial</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">The procurement route is the structural choice. Every approval, ITT and contract pattern flows from this lock.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023; recommendation paper §10 (Options Matrix); SBS Meeting Note 6 May 2026</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Procurement vehicle: two-track recommendation</div>
+        <div class="card-desc">Two tracks progressed in parallel.Plan C (interim): NHS SBS Sexual Health Framework (SBS10255) as the Plan C interim vehicle for HIV; Alpha/Beta MOUs continue to cover live deployments.Plan A (long-term): PA23 is the recommended procurement regime per the Recommendation paper, supported by NHS Legal. Working two-track: Plan A NHSE-administered Open Framework under PA23 (long-term, earliest go-live August 2027); Plan C commissioner-led direct via existing frameworks (interim, covers April 2027). Plan B (Digital Primary Care Framework leverage) was discounted at playback.Framework administration: NHSE direct, SBS, CCS or third-party; sits inside Plan A. Confirmed at the 22 June 2026 SLT Leeds playback. The Plan A earliest go-live is August 2027; Plan C interim covers the April 2027 commitment.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and NHS Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#procurement-vehicle-three-step-decision-shape">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Procurement Options Matrix (4 options, scored against 15 criteria)</div>
+        <div class="card-desc">Refreshed 8 May with Digital Primary Care Framework added as fourth column. PA23 Dynamic Market scored highest on procedural fit (13/15) in the historical Options Matrix; PA23 Open Framework (10/15) was chosen at the 22 June 2026 SLT playback for the longer-term scaling shape. Draft recommendation paper now carries the two-track position (NHSE-administered Open Framework under PA23 as Plan A; commissioner-led direct via existing frameworks (incl. NHS SBS Sexual Health Framework SBS10255 for HIV) as Plan C; Plan B DPCF discounted). Confirmed at the 22 June 2026 SLT Leeds playback.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#procurement-options-matrix-4-options-scored-against-15-criteria">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">15 commercial criteria used to score the Options Matrix</div>
+        <div class="card-desc">Covers pricing model, procurement route, framework administration, supplier switching, commissioner funding, evidence requirements, deliverability against April 2027.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#15-commercial-criteria-used-to-score-the-options-matrix">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Procurement vehicle decision: within-PA23 market form</div>
+        <div class="card-desc">PA23 is the recommended procurement regime per the Recommendation paper, supported by NHS Legal (formal advice note will follow the recommendation rather than gate it). External procurement legal counsel workshop held 18 June. NHSE-administered Open Framework is the confirmed Plan A position (22 June 2026 SLT playback). Confirmed at the 22 June 2026 SLT Leeds playback.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#procurement-vehicle-decision-within-pa23-market-form">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Whether commissioners need to understand the PSR / PA23 distinction</div>
+        <div class="card-desc">Design principle says the platform should abstract the procurement vehicle from commissioners. The mechanism for doing so has not been designed. Open whether commissioners need to engage with the procurement regime at all, or whether the call-off mechanics shield them entirely.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Head of Technology &amp; Product.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#whether-commissioners-need-to-understand-the-psr-pa23-distinction">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">National rollout without local fragmentation</div>
+        <div class="card-desc">The architecture answers what the model is composed of. It does not yet answer how the model gets rolled out at national scale so LAs, ICBs and Trusts adopt it consistently. Execution discipline, not architecture.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Owner: SRO with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#national-rollout-without-local-fragmentation">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S1-2" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Interim commercial posture endorsement<span class="act-chip act-chip-comm">4 dec</span><span class="act-chip act-chip-dep">1 dep</span></div>
+            <div class="act-sub">SLT endorsement of matchmaker-with-assurance as the live interim shape</div>
+            <div class="act-owner">SLT</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Without SLT endorsement the interim shape cannot be presented as NHSE position and the compelled-removal protocol has no authority to bite.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Recommendation paper §11 (interim shape); SLT playback minutes</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Endorse operating in interim commercial shape</div>
+        <div class="card-desc">The Plan A earliest August 2027; Plan C interim covers the April 2027 commitment. The matchmaker-with-assurance model is the live operating shape. SLT endorsement of the interim posture and the named reopen triggers (portfolio scale, transacted volume, supplier demand, NHSE Legal repositioning, FY27 planning round) is needed before this is presented as NHSE's settled position.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#endorse-operating-in-interim-commercial-shape">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Interim legal architecture: PSR plus standard call-off plus approved list</div>
+        <div class="card-desc">The legal architecture under which the interim machinery operates. Pending written NHSE Legal view of PSR applicability. SLT confirmation of approach before Legal opinion lands.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with NHS Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#interim-legal-architecture-psr-plus-standard-call-off-plus-approved-list">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Endorse the compelled-removal protocol</div>
+        <div class="card-desc">Removal from the approved list is the only enforcement leverage NHSE holds in the interim model. No framework call-off and therefore no termination clause. The protocol must be defensible the first time it bites. SLT endorsement of failure thresholds, escalation steps, named removal authority and supplier appeal right.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with Commercial Operations and NHSE Commercial and NHS Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#endorse-the-compelled-removal-protocol">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">NHSE role: orchestrator, not party</div>
+        <div class="card-desc">NHSE convenes, assures and introduces. The contract sits between supplier and customer. NHSE takes no percentage of the bilateral. Confirms the position of principle on the commercial posture.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#nhse-role-orchestrator-not-party">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">MoU scope: Alpha and Beta only, not BAU</div>
+        <div class="card-desc">Memoranda of Understanding served the Alpha and Beta phases. Not the BAU contracting instrument. Wave entrants sign the standard call-off.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#mou-scope-alpha-and-beta-only-not-bau">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-3" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Framework administration arrangement<span class="act-chip act-chip-comm">2 dec</span></div>
+            <div class="act-sub">Who administers the framework: NHSE direct, NHS Supply Chain, CCS</div>
+            <div class="act-owner">Commercial Lead with NHSE Commercial</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> NHSE Commercial guidance; NHS Supply Chain 1% mechanism as precedent</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Framework administrator: NHSE vs NHS Supply Chain vs CCS</div>
+        <div class="card-desc">NHS Supply Chain going through option analysis.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#framework-administrator-nhse-vs-nhs-supply-chain-vs-ccs">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Framework administration route</div>
+        <div class="card-desc">NHSE direct, SBS, CCS or third-party delivery partner. NHS Commercial preference is to outsource. Decision required ahead of June Options Paper.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#framework-administration-route">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-4" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">5/4/4 prioritisation framework adoption<span class="act-chip act-chip-comm">1 dec</span><span class="act-chip act-chip-dep">1 dep</span></div>
+            <div class="act-sub">Decision framework for which pathways come next under the framework</div>
+            <div class="act-owner">SLT with Commercial Lead</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Recommendation paper §9 (prioritisation framework)</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">5/4/4 prioritisation framework adoption</div>
+        <div class="card-desc">Formal adoption of the 5/4/4 prioritisation framework as the sequencing logic for conditions across the portfolio.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#544-prioritisation-framework-adoption">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">SHAPE: post-PSA prioritisation</div>
+        <div class="card-desc">Which conditions or pathways to prioritise after PSA. Five pathway patterns identified.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Sponsor with SRO, Commercial Operations with NHSE Commercial, Clinical Safety Lead and Exec Advice &amp; Partnerships.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#shape-post-psa-prioritisation">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S1-5" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Volumes confirmation — cardinal four<span class="act-chip act-chip-comm">1 dec</span><span class="act-chip act-chip-dep">6 dep</span></div>
+            <div class="act-sub">Demand sensing inputs that feed contract value, gating approvals</div>
+            <div class="act-owner">DEPENDENCY: Demand Forecasting with NHSE Strategic Finance</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Volumes set the contract value. Value sets the approval route (NHSE-only, Cabinet Office, HMT). Slip here ripples through every approvals timeline.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Recommendation paper §14 (cardinal four); Mandie playback note</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Clinician trust at portfolio scale</div>
+        <div class="card-desc">Beta volumes prove the operating shape technically and the safety record at limited scale. Clinician trust in remote testing across pathways and regions has to be earned, not assumed, especially as the portfolio extends beyond HIV into PSA Active Surveillance, iron deficiency anaemia and Wave 1/2/3 tests. Sustained workforce engagement, peer advocacy from clinician partners and an observable safety record at MVP and beyond are what carry the operating model from defensible to adopted.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owners:</strong> Clinical Safety Lead with workforce engagement and clinician peer network.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#clinician-trust-at-portfolio-scale">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Supplier conformance behaviour beyond Beta</div>
+        <div class="card-desc">Suppliers conform to the published standard at Private Beta volumes because their NHSE relationship is dense and the assurance gaze is immediate. Sustaining standard-conforming behaviour at Public Beta volumes and into MVP and Wave 1 depends on the published standard, the assurance discipline and the removal protocol being credible enough to police drift without NHSE micromanaging each supplier. The supplier forum is one mechanism; the published standard plus the compelled-removal protocol is the other.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owners:</strong> Independent Assurance Lead with supplier forum convenor.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#supplier-conformance-behaviour-beyond-beta">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Health Economist onboarded but not yet engaged</div>
+        <div class="card-desc">The Health Economist is engaged at 2.5 days a week from 9 June 2026. Priority sequence set by Deputy Director DTx: HomeTest PSA pathway costs and ROI first, then HealthStore COPD pathway, then a standard cost / benefits model across both products, then HomeTest 12-test shortlist, HIV ROI sense check, HealthStore CR and Heart Failure ROI, MSK vs Mental Health for the 3rd HealthStore category. Cost analysis, recommendation-paper financial principles section, supply-chain cost profile and SBS volumes work all queue against this sequence; sections that need input out of sequence will be caveated until the relevant priority lands.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> SRO with Commercial Operations and NHSE Commercial. Escalation route: SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#health-economist-onboarded-but-not-yet-engaged">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">PSA private beta volume target</div>
+        <div class="card-desc">100 users across 2 trusts by end of March is the working volume target for PSA private beta. Sits alongside the existing HIV beta volumes. Capacity and service-model sizing should plan against both.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> HomeTest Principal Delivery Manager with PSA Active Surveillance lead partner.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#psa-private-beta-volume-target">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Capacity ceilings and overflow</div>
+        <div class="card-desc">Local commissioning budgets cap volumes. No overflow mechanism if demand spikes. Working position: paying for excess is cheaper than engineering caps. Central backstop not yet agreed.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and NHSE Strategic Finance.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#capacity-ceilings-and-overflow">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Addressable market sizing</div>
+        <div class="card-desc">No quantified model exists. Working order-of-magnitude is one million tests.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and NHSE Strategic Finance.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#addressable-market-sizing">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Beta scope</div>
+        <div class="card-desc">Private Beta up to 100 targeted tests. Public Beta up to 1,000+ between December 2026 and March 2027.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#beta-scope">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-6" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Early market engagement<span class="act-chip act-chip-comm">2 dec</span><span class="act-chip act-chip-dep">3 dep</span></div>
+            <div class="act-sub">Pre-PIN supplier engagement, supplier pipeline mapping</div>
+            <div class="act-owner">Commercial Operations with Partnerships</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Pre-market engagement notice provisions)</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Acute pathology partner selected, mobilising</div>
+        <div class="card-desc">Royal Devon University Healthcare selected as the acute PSA Active Surveillance partner (EOI assessment score 92.75 of 100); Cambridge University Hospitals (88.0) and Somerset NHS Foundation Trust (77.0) sit as reserves. Mobilisation from 1 June 2026 under MOU as Alpha/Beta interim contracting. Acute self-sample pathways, high-sensitivity PSA analysers in place. Cross-references the RDUH mobilisation item above for the pilot subset detail.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#acute-pathology-partner-selected-mobilising">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Endorse the integrated engagement and pre-sales cell</div>
+        <div class="card-desc">Engagement runs through one cell under sponsor leadership, not a separate sales team. Senior sponsor endorsement has not formally landed. Without it the cell cannot be presented forward as a settled element of the operating model.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with sponsor.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#endorse-the-integrated-engagement-and-pre-sales-cell">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Four pathology supplier phenotypes identified</div>
+        <div class="card-desc">NHS-supplied pathology (14 networks), NHS commercial partnerships (51/49 ventures), specialist non-NHS labs, and all-inclusive commercial suppliers.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#four-pathology-supplier-phenotypes-identified">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Pathology supplier-mix architecture</div>
+        <div class="card-desc">Whether the framework runs NHS-pathology-first with private backstop, or a parallel mixed-economy model where private and NHS labs compete. Affects should-cost modelling, EOI partner selection, and supplier-cap design. Both routes are alive; SLT-level decision needed to lock the position.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Owner: Exec Advice &amp; Partnerships with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#pathology-supplier-mix-architecture">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Adoption as a named function in the model</div>
+        <div class="card-desc">Adoption activity is being delivered through the Partnerships workstream. The unresolved question is whether adoption should be surfaced structurally in the operating model itself (an overlay, a foundation capability, a row in the RACI) or stay implicit inside Partnerships.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT to confirm.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#adoption-as-a-named-function-in-the-model">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S1-7" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Pathology architecture<span class="act-chip act-chip-comm">1 dec</span><span class="act-chip act-chip-dep">4 dep</span></div>
+            <div class="act-sub">NHS-first vs mixed-economy, supplier-mix, pathology dual position</div>
+            <div class="act-owner">DEPENDENCY: Operating Model Owner with Partnerships</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Pathology architecture determines who can bid and how. Cannot draft ITT without this locked.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — Who page; Section 14 dovetail timeline</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Pathology lab dual position</div>
+        <div class="card-desc">Pathology labs sit in two places at once: clinical infrastructure under the Clinical Safety Lead's safety governance AND suppliers under the NHSE Commercial's contract framework. The model has not yet resolved which territory holds the contract.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Affects procurement vehicle, tariff treatment, and the assurance bar applied.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#pathology-lab-dual-position">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Pharmacy-led prescribing</div>
+        <div class="card-desc">Whether pharmacy-initiated testing belongs in scope as a fourth initiation pattern. Affects supply chain, accreditation, sign-off and result handling design.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#pharmacy-led-prescribing">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Permanent platform hosting post-Beta</div>
+        <div class="card-desc">When HomeTest exits discovery, where does the platform live permanently: inside NHSE, an ALB, or a new entity?</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Owner: SRO with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#permanent-platform-hosting-post-beta">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">HPV Self-Testing architecture as comparator</div>
+        <div class="card-desc">Prime contractor plus 8 regional NHS labs. 4 million expected volume.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#hpv-self-testing-architecture-as-comparator">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Trust integration architecture (build vs buy vs collaborate)</div>
+        <div class="card-desc">Four options on the table for how HomeTest integrates with acute trust systems. Reuse Genomics InterSystems (essentially ruled out on fit and ownership). Collaborate with Genomics on a common component. Build a tightly-scoped HomeTest integration with a small number of trusts. Buy a third-party integration capability. Decision affects the Built foundation (integration spine), downstream cost and the pace at which acute use cases can scale.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Owner: Head of Technology &amp; Product with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#trust-integration-architecture-build-vs-buy-vs-collaborate">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S1-8" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Pricing model direction<span class="act-chip act-chip-comm">3 dec</span><span class="act-chip act-chip-dep">2 dep</span></div>
+            <div class="act-sub">Profit centre vs cost recovery vs revenue. Day-1 vs Year-2/3 architecture</div>
+            <div class="act-owner">Commercial Operations with NHSE Strategic Finance</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Pricing posture sets the contract value calculation alongside volumes; locks the Year-2/3 platform-fee design.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Recommendation paper §12; NHSE financial framework</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Profit-centre, cost-recovery or revenue posture at BAU</div>
+        <div class="card-desc">Day 1 position: direct supplier-commissioner payment flows with NHSE not touching the money. Year 2/3 destination: framework management fee on supplier call-off, NHS Supply Chain 1% mechanism as the precedent. SLT endorsement of the BAU funding mechanism and the trigger conditions for moving from Day 1 to Year 2/3 model.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with NHSE strategic finance.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#profit-centre-cost-recovery-or-revenue-posture-at-bau">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="1" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Centralised payment · Day 1 direct, Year 2/3 platform fee</div>
+        <div class="card-desc">Working position for MVP and the Day 1 launch: payment flows run between commissioner and supplier directly. NHSE does not touch payment flows in the first iteration. Position endorsed by Commercial Finance. The Year 2/3 destination is the platform-fee model: a Procurement Act compliant framework management fee on supplier call-off, with transparent reinvestment, NHS Supply Chain 1% mechanism as the precedent. Trigger conditions are approved-list maturity and sustainable call-off volume. The orchestrator role does not change; the funding mechanism does. See the Why page Direction of Travel.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Finance with Commercial Operations with NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#centralised-payment-day-1-direct-year-23-platform-fee">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Pricing model direction</div>
+        <div class="card-desc">Maximum pricing set nationally; commissioners negotiate below ceiling locally.Three-tier structure underneath the cap(mobilisation fee, activity on cost per valid result, volume floor). Flat per-kit pricing rejected through RFI and supplier forums; subscription rejected at strategic level. The final activity-unit position is covered in the Future State team's Recommendation paper.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#pricing-model-direction">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Cost-benefit dislocation at local system level</div>
+        <div class="card-desc">Costs and benefits of home testing sit in different parts of the local budget. Pathology networks don't run phlebotomy: that sits under clinical services or the ICB. When home testing replaces venepuncture, the saving lands in one budget line and the new spend lands in another. Without best-practice tariffs at pathway level, ICBs see home testing as a cost pressure rather than a value case. The economic case is the unlock for adoption.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with NHSE strategic finance. Health Economist input required.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#cost-benefit-dislocation-at-local-system-level">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">CONTRACT: tariff planning window and primary-care constraint</div>
+        <div class="card-desc">Tariff planning guidance is issued October to November 2026. Modelling has to land August to September 2026 to clear governance for the 2027/28 cycle.Primary care tariff is effectively off the table for 2027/28within the available time, because the route through the BMA negotiation cycle is too contentious to land cleanly. Practical 2027/28 opportunities sit withPSA Active Surveillance via best-practice tariff, plusMSK and cardiac rehabvia Digital Therapeutics. Tightens the August 2026 modelling deadline and narrows the realistic in-scope conditions for next year's tariff cycle.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial, NHSE Pricing and Health Economist.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#contract-tariff-planning-window-and-primary-care-constraint">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S1-9" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Health Economist engagement</div>
+            <div class="act-sub">Health Economist engaged from 9 June 2026, priorities PSA then COPD then standard model</div>
+            <div class="act-owner">DEPENDENCY: Health Economist with Deputy Director DTx</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Cost-benefit and tariff modelling is the unlock for system-level adoption; gates approvals and pricing.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Martin O'Neil priority list confirmed June 2026</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-10" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Local pilot mobilisation<span class="act-chip act-chip-comm">1 dec</span></div>
+            <div class="act-sub">RDUH PSA Active Surveillance pilot informs spec, KPIs, pricing</div>
+            <div class="act-owner">Commercial Operations with Partnerships</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> RDUH partnership note</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">FULFIL: RDUH PSA Active Surveillance pilot mobilisation</div>
+        <div class="card-desc">Royal Devon University Healthcare selected as acute PSA Active Surveillance partner (EOI assessment score 92.75 of 100). Mobilisation from 1 June 2026. The existing RDUH AS cohort baseline is approximately 917 patients. The HomeTest pilot subset is approximately 100 to 200 patients in the June 2026 to March 2027 engagement window. Cambridge University Hospitals (88.0) and Somerset NHS Foundation Trust (77.0) sit as reserves. Mobilisation runs under MOU as Alpha/Beta interim contracting; transitions into the formal framework instrument at BAU.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Exec Advice &amp; Partnerships with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-rduh-psa-active-surveillance-pilot-mobilisation">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-11" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Off-boarding and removal design<span class="act-chip act-chip-comm">3 dec</span></div>
+            <div class="act-sub">Supplier removal process, compelled-removal protocol, minimum supplier count</div>
+            <div class="act-owner">Commercial Operations with NHS Legal</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> No NHSE precedent for off-boarding; bespoke design required</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Supplier removal process</div>
+        <div class="card-desc">PA23 provides the legal basis but operational process not defined. Notice periods, evidence thresholds, appeals, transition support all need designing.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and NHSE Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#supplier-removal-process">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Minimum supplier count</div>
+        <div class="card-desc">Two per region? Per pathway? Per test type? Not defined. A resilience question.Coupled to the procurement vehicle decision:under PA23, an Open Framework can cap supplier numbers; a Dynamic Market cannot. A supplier cap rules out the Dynamic Market vehicle.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#minimum-supplier-count">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Supplier off-boarding has no NHSE precedent</div>
+        <div class="card-desc">Theframeworkneeds a defined process for removing a supplier that fails standards, exits the market or is replaced. There is no precedent elsewhere in NHSE the platform can lift wholesale: PA23 provides the legal basis but operational mechanics (notice periods, evidence thresholds, appeals, patient continuity, sample-in-flight handling, residual contractual obligations) all need to be designed. Without it the platform locks in to first-mover suppliers by default.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Head of Operations. Cross-reference to ASSURE off-boarding trigger criteria.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#supplier-off-boarding-has-no-nhse-precedent">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-12" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">SHAPE capability for ongoing demand sensing<span class="act-chip act-chip-comm">1 dec</span></div>
+            <div class="act-sub">NHSE internal capability for SHAPE work beyond programme close</div>
+            <div class="act-owner">DEPENDENCY: Operating Model Owner with Partnerships</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — SHAPE lifecycle stage</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">SHAPE: NHSE internal capability for ongoing SHAPE</div>
+        <div class="card-desc">Whether NHSE has the internal capability to run SHAPE as an ongoing function. The Dynamic Market / Framework structure assumes some ongoing function.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Sponsor with SRO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#shape-nhse-internal-capability-for-ongoing-shape">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S1-13" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">BAU funding and orchestration role<span class="act-chip act-chip-dep">3 dep</span></div>
+            <div class="act-sub">National orchestration funding posture into BAU; Self Health Services umbrella position</div>
+            <div class="act-owner">DEPENDENCY: Operating Model Owner with NHSE Strategic Finance</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — BAU end-state design</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">National orchestration BAU funding</div>
+        <div class="card-desc">Who funds the routing, DevOps, interoperability, assurance management, Blue Book maintenance, supplier onboarding, analytics and standards updates at steady state?</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Owner: Commercial Operations with NHSE Commercial and Health Economist.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#national-orchestration-bau-funding">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Self Health Services umbrella brand adoption</div>
+        <div class="card-desc">Formal adoption of Self Health Services as the umbrella brand across HomeTest.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#self-health-services-umbrella-brand-adoption">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Neighbourhood Health Centres role</div>
+        <div class="card-desc">Could be a delivery channel (kit distribution / sample collection), a referral source (clinicians there initiate testing), or both.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT to confirm.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#neighbourhood-health-centres-role">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    </div></div><div class="stage" data-stage="S2"><div class="stage-head"><div class="stage-label">STAGE 2</div><div class="stage-name">Pre-Procurement Governance</div><div class="stage-dates"><span class="dyn-dates" data-low="Nov to Dec 26" data-high="Nov 26 to Feb 27">Nov to Dec 26</span></div><div class="stage-meta">13 activities · 10 on critical path · 55 items</div></div><div class="mandie-callout"><div class="mandie-label">Mandie playback note</div><div class="mandie-body">The 3 to 4 month approvals window is NHSE-internal only. Cabinet Office and HMT sit on top of that, value-gated. Volumes confirmation is the input that sets which approval route applies.</div></div><div class="stage-acts">
+      <details class="activity is-cp" id="a-S2-0" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Business case and NHSE-internal approvals<span class="act-chip act-chip-dep">2 dep</span></div>
+            <div class="act-sub">NHSE Commercial assurance, business case build, 3 to 4 month internal window</div>
+            <div class="act-owner">Commercial Lead with NHSE Commercial</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">The 3 to 4 month NHSE-internal window is the floor on the approvals stage. Cabinet Office and HMT sit on top of this, not in parallel.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> NHSE Commercial standard approvals process; Mandie playback note</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Endorse assurance-primary, commercial-secondary investment sequence</div>
+        <div class="card-desc">Independent assurance, the NICE EVA conditional interface, assurance portability and the supplier IG envelope form the layer NHSE earns its place through. Commercial machinery sits on top of this. Investment sequence and resource allocation reflect the priority.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#endorse-assurance-primary-commercial-secondary-investment-sequence">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">National Assurance Board composition and constitutional layer</div>
+        <div class="card-desc">Who sits on it? Who owns final authority? How are disputes arbitrated? Appeals process? How are standards updated? How are suppliers challenged? Currently a name in the architecture, not a constituted body.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> SRO with NHSE, Clinical Safety Group input.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#national-assurance-board-composition-and-constitutional-layer">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-1" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Cabinet Office spend control</div>
+            <div class="act-sub">£20m commercial spend threshold per Cabinet Office Controls Version 7</div>
+            <div class="act-owner">Commercial Lead with NHSE Commercial</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Cabinet Office approval is value-gated and external to NHSE. Sits on top of the NHSE-internal window per Mandie's note.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Cabinet Office Controls Version 7 (live as of 7 July 2025); gov.uk official guidance</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-2" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">HMT approval (settlement letter)</div>
+            <div class="act-sub">Value-dependent. NHSE settlement letter sets delegated limits</div>
+            <div class="act-owner">Commercial Lead with NHSE Strategic Finance</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Value above the NHSE settlement-letter delegation requires HMT sign-off. External, value-gated, parallel to Cabinet Office.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> HMT delegated limits per NHSE England Capital Addendum 17 November 2025</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-3" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">IG sign-off, DPIA, data controller framework<span class="act-chip act-chip-dep">10 dep</span></div>
+            <div class="act-sub">Information governance position, DPIA, Public Beta Direction, data controller architecture</div>
+            <div class="act-owner">DEPENDENCY: NHSE IG and Legal</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">IG sign-off must land before ITT can be issued with a defensible spec. Capacity in NHSE IG is the constraint, not just position.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Recommendation paper §8 (IG); Public Beta Direction; UK GDPR</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Data controller framework and Public Beta Direction</div>
+        <div class="card-desc">Federated multi-controller model: NHSE controller for the foundation, commissioner controller for the testing purpose, supplier as processor. Joint-controller ruled out. Exact controller designation per configuration still being scoped. Lawful basis position landed (PTT, 20 May 2026): Private Beta is system delivery, no legal Direction required. Public Beta likely needs a Direction if NHSE begins to analyse data for its own purposes. Direction request would need to land before January 2027 or after March 2027 to avoid the DHSC/NHSE legal-merger transition window. Affects every DPIA, every DSA, every supplier contract.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with NHS Legal and Caldicott Guardian.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#data-controller-framework-and-public-beta-direction">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Data controller framework</div>
+        <div class="card-desc">Federated multi-controller model: NHSE controller for the foundation, commissioner controller for the testing purpose, supplier as processor. Joint-controller ruled out. Exact controller designation per configuration still being scoped.Lawful basis position landed (PTT, 20 May 2026):Private Beta is system delivery (data moved to enable care, no NHSE-side analysis of patient data for its own purposes), no legal Direction required for Private Beta.Public Beta likely needs a Directionif NHSE begins to analyse data for its own purposes (e.g. cohort MI). Direction request would need to land before January 2027 or after March 2027 to avoid the DHSC/NHSE legal-merger transition window. Affects every DPIA, every DSA, every supplier contract.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with NHS Legal and Caldicott Guardian.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#data-controller-framework">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Public beta DPIA scope agreed in principle</div>
+        <div class="card-desc">Public beta DPIA scope agreed in principle: include Pathway 2 (acute-initiated) and Pathway 3 (GP-initiated). Right to descope Pathway 3 first, Pathway 2 second if complexity threatens launch. Reasoning: data flows for Pathway 2 are not materially different from Pathway 1.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#public-beta-dpia-scope-agreed-in-principle">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Beta DPIA in draft v0.8, sign-off slipping past end June</div>
+        <div class="card-desc">Currently at Beta DPIA draft v0.8. Latest uplift 16 June 2026 to incorporate PTT and risk assessment workshop feedback. Awaiting first line full review from PTT's Rahima Oliver. Earlier target of end-June 2026 sign-off no longer realistic on current trajectory. Template DSA query raised again by PTT with NHS Legal on 9 June 2026, remains outstanding. Risk Register entry on DPIA sign-off being tracked.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#beta-dpia-in-draft-v08-sign-off-slipping-past-end-june">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">DSA work with LAs and suppliers ongoing</div>
+        <div class="card-desc">Template DSA being developed. Initial LA IG engagement meetings underway.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#dsa-work-with-las-and-suppliers-ongoing">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Tracked action: directions decision on private beta</div>
+        <div class="card-desc">A precise exam question was issued to PTT on 1 May 2026 asking for a definitive yes/no on whether a legal direction is required for private beta.Answered 20 May 2026:no Direction required for Private Beta because data movement is system delivery (not NHSE analysis for its own purposes). The constraint moves to Public Beta, a Direction will be needed if NHSE-side analysis (e.g. cohort MI) begins. This row is now closed for Private Beta; Public Beta direction sequencing is tracked separately.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> IG &amp; Assurance SME (follow-up). Escalation route via PTT senior leadership.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#tracked-action-directions-decision-on-private-beta">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">IG decision responsiveness</div>
+        <div class="card-desc">The platform depends on PTT and other IG bodies to confirm positions on lawful basis, controller designation, direction need, and DPIA sign-off. Those counterparts operate on their own timelines and rarely commit to a response window or articulate the rules they apply. The framework's response is the assumption discipline embedded in the IG lane (working assumption documented, SLT signed off, programme board records it), but the underlying risk is that delays compound across configurations as the platform scales. Needs visibility at programme level, not just inside the IG lane.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> SRO with IG &amp; Assurance SME and Commercial Operations with NHSE Commercial. Programme to surface IG response gaps as a standing item.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#ig-decision-responsiveness">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">IG counterpart capacity (PTT and broader NHSE IG)</div>
+        <div class="card-desc">Beyond the IAO requirement, IG counterpart capacity is constrained across NHS. PTT teams in particular have limited bandwidth, and IG bodies are not resourced for the cadence of work a multi-condition, multi-configuration platform generates over time. The framework has to assume IG counterpart bandwidth is finite and plan around it: batched submissions where possible, early engagement before formal sign-off windows, working assumptions where responses lag, and a clear escalation route when capacity is the blocker rather than the position.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> IG &amp; Assurance SME with SRO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#ig-counterpart-capacity-ptt-and-broader-nhse-ig">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">PTT scope is fragmented across clinical areas</div>
+        <div class="card-desc">PTT teams are organised by clinical area, not by platform. The team that decides directions for the current clinical area is not the team that decides directions for primary care, secondary care diagnostics, or screening outside the current condition. As the platform scales, it engages multiple PTT teams in parallel, each with its own posture, process and timeline. The framework needs to be portable across them, with a clear handover pattern when a new clinical area first comes into scope.Now confirmed:the current screening PTT team adjudicates HIV only. PSA will move to a different PTT team as the platform scales beyond the first clinical area.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> IG &amp; Assurance SME with SRO. Pattern to be agreed before the second clinical area enters SHAPE.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#ptt-scope-is-fragmented-across-clinical-areas">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Boilerplate IG packs</div>
+        <div class="card-desc">Light-touch option for commissioners with pre-cleared IG artefacts not yet agreed.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> IG &amp; Assurance SME with DPO with Commercial Operations with NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#boilerplate-ig-packs">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-4" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Clinical safety position<span class="act-chip act-chip-dep">8 dep</span></div>
+            <div class="act-sub">MHRA non-SaMD ruling, Clinical Safety Lead split, hazard log, SLSP</div>
+            <div class="act-owner">DEPENDENCY: Clinical Safety Lead with MHRA</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Clinical safety sign-off is non-negotiable for go-live. DCB0160 deployer designation also shapes contracting model.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> DCB0129/DCB0160 standards; MHRA non-SaMD guidance; recommendation paper §8</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">MHRA non-SaMD ruling: downstream implications</div>
+        <div class="card-desc">8 June 2026 ruling settled the regulatory classification as non-SaMD. SLT confirmation of what changes in the operating model now the classification is settled, particularly on assurance scope and supplier onboarding criteria.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT with Clinical Safety Lead and Commercial Operations with NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#mhra-non-samd-ruling-downstream-implications">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Clinical Safety Lead accountability split across initiation patterns</div>
+        <div class="card-desc">The two configuration RACIs split clinical accountability differently: Sex Health Service Clinical Lead in HIV, Acute Trust Consultant and Clinical Safety Officer in PSA. The Clinical Safety Lead's overarching accountability across both pathways needs an explicit single statement.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Group.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#clinical-safety-lead-accountability-split-across-initiation-patterns">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Clinical safety: hazard log and SLSP</div>
+        <div class="card-desc">8 hazards across 4 groupings and SLSP in progress. GDS Alpha Assessment complete. SH:24 submitted HomeTest-specific Clinical Safety Case.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#clinical-safety-hazard-log-and-slsp">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">NHSE residual clinical responsibility</div>
+        <div class="card-desc">Position sharpened. NHSE retains DCB0129 manufacturer obligations as the platform manufacturer. Deployer obligations (DCB0160) sit with whoever actually operates the service locally (LA, Trust, or supplier-as-managed-service). Risk-bearing follows the deployer designation, not the commissioner.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead with NHSE Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#nhse-residual-clinical-responsibility">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">DCB0160 model</div>
+        <div class="card-desc">Safe deployment model selected. Single independent deployer-side CSO across waves of LAs, central artefact creation, local amendment and sign-off. Removes the per-LA bottleneck risk. Public Beta to use a modified version of the same model.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead with independent deployer-side CSO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#dcb0160-model">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Safe Launch Engine</div>
+        <div class="card-desc">Term appears in a published clinical-safety position statement but scope, ownership, technical content and cost are not defined. Clinical Safety needs to define it before treating as a load-bearing capability.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#safe-launch-engine">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Reactive result clinical pathway</div>
+        <div class="card-desc">What happens clinically when a result is reactive or abnormal. Architecture in place: Reactive Results API implemented, supplier clinical follow-up obligation, platform safety control that withholds abnormal results from user-visible release and triggers the clinical pathway, data controller split defined. Onward referral routes mapped per configuration. Pre-BAU hardening: watertight safety-net evidence as Beta exit criterion.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#reactive-result-clinical-pathway">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">ASSURE: clinical accountability model per touch point</div>
+        <div class="card-desc">Where does clinical accountability sit at each touch point in the patient journey?</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#assure-clinical-accountability-model-per-touch-point">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-5" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Legal-direction transition window<span class="act-chip act-chip-dep">2 dep</span></div>
+            <div class="act-sub">April 2027 merger implications for vehicle and entity; six-month end-to-end lead time</div>
+            <div class="act-owner">DEPENDENCY: NHS Legal</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">NHSE entity changes around April 2027 affect contracting party. Legal-direction lead time is six months end to end.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> NHSE Legal opinion (in flight); April 2027 NHSE merger timeline</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Legal-direction transition window around the April 2027 merger</div>
+        <div class="card-desc">The DHSC and NHSE legally merge April 2027. A transition window approximately January to March 2027 is likely while existing legal Directions fold into a replacement legal mechanism (the replacement mechanism is TBC). Materially affects the Public Beta MI route, because any Direction-dependent data flow that needs to be issued, amended or renewed during that window may be blocked or carry an unusual approval shape. Compounds with the existing six-month Direction lead time risk: a Direction submitted in late 2026 may land into a different governance regime than the one it was submitted under.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> IG &amp; Assurance SME with SRO. Cross-cutting with the wider merger planning.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#legal-direction-transition-window-around-the-april-2027-merger">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Legal-direction lead time is six months end to end</div>
+        <div class="card-desc">A new or amended legal direction takes around six months from request to landing. The MI scope and data flows the direction covers must be locked before the request is issued; if scope shifts after issue, the request restarts and the next available answer is two cycles away. Treating the direction as a late-stage compliance step rather than a sequencing constraint blocks the programme for cycles at a time. Mitigation is deliberate MI-scope convergence before any direction request, and a one-shot discipline on what is submitted.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> IG &amp; Assurance SME with Commercial Operations, NHSE Commercial and SRO. Standing item on programme board.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#legal-direction-lead-time-is-six-months-end-to-end">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-6" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">ITT specification — service spec and overlays<span class="act-chip act-chip-comm">2 dec</span><span class="act-chip act-chip-dep">12 dep</span></div>
+            <div class="act-sub">Service spec, scope, build-vs-buy per overlay, supplier model, supplier switching</div>
+            <div class="act-owner">Commercial Lead with Operating Model Owner</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">The ITT spec is the legal expression of everything the operating model has decided. Cannot publish without overlays, supplier model and switching mechanics locked.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Tender notice and associated tender documents)</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Build vs buy decisions per overlay</div>
+        <div class="card-desc">Each of the eight overlays needs to resolve into either a platform-build capability (centre builds once, every commissioner inherits), a buy-from-market capability (suppliers compete to deliver within the framework), or a local-system responsibility (commissioner or Trust owns). Initiation pattern, result handling and IG lean toward platform-build. Supply chain, commercial structure and tariff treatment lean toward buy-from-market. Sign-off route and accreditation bar sit with local systems or accrediting bodies. The build-buy-borrow decision has not been formally taken for every overlay. Required before platform requirements stabilise.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT. Owner: SRO with Head of Technology &amp; Product and Commercial Operations with NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#build-vs-buy-decisions-per-overlay">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">CONTRACT: delivery model assessment</div>
+        <div class="card-desc">Should suppliers deliver directly to patients or through NHS infrastructure? Determines the supply chain shape.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Product Manager.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#contract-delivery-model-assessment">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">CONTRACT: framework purpose-built vs hosted</div>
+        <div class="card-desc">Whether the framework is purpose-built or hosted on an existing vehicle (SBS being explored as one possibility).</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Sponsor with Commercial Operations and NHSE Commercial and NHS Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#contract-framework-purpose-built-vs-hosted">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">CONTRACT: future-condition accommodation</div>
+        <div class="card-desc">How the framework accommodates future conditions beyond HIV without requiring a new procurement each time.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Sponsor with Commercial Operations and NHSE Commercial and SRO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#contract-future-condition-accommodation">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">FULFIL: supplier switching process</div>
+        <div class="card-desc">And patient continuity during transitions.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Product Manager.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-supplier-switching-process">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Single-supplier and multi-supplier accommodation</div>
+        <div class="card-desc">Framework must accommodate both end-to-end single-supplier and disaggregated multi-supplier supply chains.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#single-supplier-and-multi-supplier-accommodation">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">All-inclusive supplier model is working default (not locked)</div>
+        <div class="card-desc">Internal challenge on whether it holds when suppliers only cover a subset of test cases.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#all-inclusive-supplier-model-is-working-default-not-locked">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">CATR scope</div>
+        <div class="card-desc">Settled in principle. Single independent deployer-side CSO appointed centrally; single artefact set inherited and amended by each LA in waves. Centre carries 95%, local body confirms local 5%. Operational mechanics now wired into the HOW page.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead with independent deployer-side CSO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#catr-scope">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">NHS App scope for the order journey is open</div>
+        <div class="card-desc">NHS App leadership is reviewing whether the order journey for HomeTest belongs in the App at all. Material because publishing QR codes, launch points, marketing surfaces and downstream design all assume the App as the default entry point. If the order journey lands somewhere else, the patient initiation pattern, the integration spine commitments and the comms approach all need rework. Cross-reference Ecosystem Consumed (NHS App entry is already flagged in-flight on test-results integration; the order journey is a separate scope question).</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Head of Technology &amp; Product with SRO. Resolution sits with NHS App.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#nhs-app-scope-for-the-order-journey-is-open">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Supply chain architecture</div>
+        <div class="card-desc">Notify capability assessment completed 29 April. Likely direction: Notify in for comms, parked for fulfilment and labs.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#supply-chain-architecture">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">NHS Notify integration for patient notifications</div>
+        <div class="card-desc">Digital comms settled as Notify's domain. Notify will integrate.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#nhs-notify-integration-for-patient-notifications">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">SHAPE: six HIV interaction modes, only mode 1 in scope today</div>
+        <div class="card-desc">The HIV pathway has six interaction modes identified.Mode 1: self-directed(NHS App-led, in scope today).Mode 2: planned clinical referral.Mode 3: proactive community outreach.Mode 4: household or network champion.Mode 5: opportunistic clinician-initiated.Mode 6: group or supported setting. The other five modes are open SHAPE pattern questions for prioritisation, design and inclusion in the configuration. Currently no SLT-confirmed sequencing.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Exec Advice &amp; Partnerships.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#shape-six-hiv-interaction-modes-only-mode-1-in-scope-today">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Cross-stage: clinician workflow integration sizing</div>
+        <div class="card-desc">Acute-initiated (Mark's PSA-AS journey) and GP-initiated (Layla's iron deficiency anaemia journey) require ordering and result handling inside the clinician's existing EPR or clinical system, not a second screen. The genomics service learned this the hard way: a separate ordering UI added integration complexity and was unpopular with clinicians. Single integration into the clinical workflow is a hard design constraint. The model accommodates it through the result-handling overlay, but the integration burden on the supplier and the platform is real and not yet sized.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Head of Technology &amp; Product with Commercial Operations and NHSE Commercial. Sizing required before clinician-initiated configs move to live deployment.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#cross-stage-clinician-workflow-integration-sizing">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">CONTRACT: PSA-AS monitoring-gap commissioner shape</div>
+        <div class="card-desc">The PSA Active Surveillance monitoring-gap cohort covers men referred to Urology with elevated PSA but no cancer diagnosis. The commissioner who will hold the budget for this cohort is not yet identified. Acute trust, ICB, primary-care commissioning, joint arrangement and central NHSE positioning are all live possibilities. The team scoping this cohort are in discovery on cohort definition, clinical pathway, and commissioning shape; commissioner identity follows their output. Ruth is the persona slot carrying this open question on the cast.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Exec Advice &amp; Partnerships.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#contract-psa-as-monitoring-gap-commissioner-shape">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-7" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">ITT specification — supply chain and fulfilment<span class="act-chip act-chip-dep">6 dep</span></div>
+            <div class="act-sub">Cold chain, Royal Mail, collection-vs-delivery, kit procurement model</div>
+            <div class="act-owner">Commercial Lead with Operating Model Owner</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Fulfilment model is a material differentiator between bidders and a major cost line. Has to be in spec, not left open.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — FULFIL stage; Royal Mail Health engagement note</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">FULFIL: cold chain logistics</div>
+        <div class="card-desc">For temperature-sensitive tests (e.g. capillary blood for PSA).</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Exec Advice &amp; Partnerships with Clinical Safety Lead.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-cold-chain-logistics">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">FULFIL: Royal Mail engagement and route alignment</div>
+        <div class="card-desc">Commercial Briefing Paper exists framing BAU optimisation (Tracked 24 pricing and reliability at NHS scale) and Blue Sky design (new health-logistics product category between Large Letter and Small Parcel). First scaled use targeted from April 2027. Engagement ongoing with no settled outcome surfaced in primary sources. Notify route (Royal Mail Health) and the MarketReach engagement still to be reconciled.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Exec Advice &amp; Partnerships with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-royal-mail-engagement-and-route-alignment">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">FULFIL: centralised kit procurement viability</div>
+        <div class="card-desc">Whether centralised procurement (NHS taking on stock holding and management) is viable or contradicts the platform-orchestrator model.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Product Manager.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-centralised-kit-procurement-viability">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">FULFIL: collection-first vs delivery-first fulfilment</div>
+        <div class="card-desc">Delivery-first (postal kit dispatch and return) carries 5-7 day wait, unsafe-address and motivation-decay barriers. Collection-first (pharmacy or community-hub pickup of an activated kit) removes those barriers but introduces channel partnership and operational complexity. Emerging as a parallel fulfilment pattern, not a replacement. Another DTx programme has independently inserted &quot;collect from pharmacy&quot; into journeys lifted from HomeTest screens, signalling a shared architectural move. Affects which configurations can carry both fulfilment patterns and which lean to one.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Exec Advice &amp; Partnerships.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-collection-first-vs-delivery-first-fulfilment">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">FULFIL: service standards and SLAs</div>
+        <div class="card-desc">Not yet defined.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Commercial Operations and NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#fulfil-service-standards-and-slas">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Royal Mail Health terms</div>
+        <div class="card-desc">Volume discounts apply per shipper rather than aggregated across NHS suppliers. Not viable to leverage without fundamental model change.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Head of Operations with Commercial Operations with NHSE Commercial.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#royal-mail-health-terms">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-8" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">ITT specification — assurance and onboarding<span class="act-chip act-chip-dep">7 dep</span></div>
+            <div class="act-sub">Supplier eligibility, Supplier Onboarding Framework, off-boarding triggers, IAO</div>
+            <div class="act-owner">Commercial Lead with Clinical Safety Lead with NHSE IG and Legal</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Eligibility criteria and SOF mechanics are how bidders are admitted and removed. Must be defensible from day one.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — ASSURE stage; Supplier Onboarding Framework</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Supplier eligibility criteria being shaped</div>
+        <div class="card-desc">Commercial, clinical and IG entry criteria need to be defined and published so suppliers can self-assess before engaging.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#supplier-eligibility-criteria-being-shaped">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Supplier Onboarding Framework: built out</div>
+        <div class="card-desc">Framework now built out in the operating model with seven design principles, five-dimension criteria grid (commercial, clinical, IG, technical, operational) across three tiers, three access routes and a seven-stage apply journey. Four open SLT decisions surfaced on the framework page. Not yet in operational use; alpha suppliers admitted under earlier route may need to complete retroactively.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#supplier-onboarding-framework-built-out">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">ASSURE: minimum supplier standards</div>
+        <div class="card-desc">Not yet codified. Direction agreed that these should include accreditation, clinical safety, IG and commercial entry criteria.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead with Commercial Operations with NHSE Commercial and IG &amp; Assurance SME.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#assure-minimum-supplier-standards">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">ASSURE: offboarding trigger criteria and process</div>
+        <div class="card-desc">What happens when a supplier fails to meet standards?</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Clinical Safety Lead.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#assure-offboarding-trigger-criteria-and-process">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">ASSURE: Supplier Onboarding Framework</div>
+        <div class="card-desc">Strawman v0.1 drafted 24 April 2026. Seven design principles, five criteria dimensions (commercial, clinical, IG, technical, operational) each tiered. Apply journey and assurance-gate mechanism still to integrate into operational onboarding.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial, Clinical Safety Lead and IG &amp; Assurance SME.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#assure-supplier-onboarding-framework">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">ASSURE: commissioner onboarding UX</div>
+        <div class="card-desc">How to make onboarding frictionless for commissioners. The Operational swim lanes capture the role-level journey; the granular UX-level commissioner experience (click paths, friction points, decision moments) has not been mapped. Three commissioner types confirmed (paying customers, pathway transformers, remote managers) each needing a different support package.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Service Lead with Adoption.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#assure-commissioner-onboarding-ux">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">ASSURE: IAO appointment in place</div>
+        <div class="card-desc">Closed at the HomeTest Delivery Board, 9 June 2026.Information Asset Owner now in place as a permanent NHSE employee. Risk register downgraded. Item retained for traceability.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> SRO (closed item, retained for traceability).</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#assure-iao-appointment-in-place">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S2-9" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">ITT specification — service operations<span class="act-chip act-chip-dep">4 dep</span></div>
+            <div class="act-sub">Trend analysis, repeat-test cadence, result delivery failure handling</div>
+            <div class="act-owner">Commercial Lead with Operating Model Owner</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — Operational page (HOW)</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Trend analysis (longitudinal results)</div>
+        <div class="card-desc">Settled: not building at this phase.PSA values from capillary samples and from venous samples are not directly comparable, so a single trend line carries a modality-mixing safety risk. Research into comparability continues; build of trend rendering is deferred. Individual results continue to be exposed clearly; longitudinal interpretation stays with the treating clinician.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#trend-analysis-longitudinal-results">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Repeat-test cadence</div>
+        <div class="card-desc">How often patients should retest after a non-reactive or in-range result. Signposting and cadence rules vary by configuration and are not yet codified.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Clinical Safety Lead with Product Manager.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#repeat-test-cadence">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">Result delivery failure handling</div>
+        <div class="card-desc">What the platform does if a result is missing, late, or fails delivery via NHS App. Backstop process not specified.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Head of Operations with Clinical Safety Lead.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#result-delivery-failure-handling">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">SHAPE: clinician-side adoption motivation evidence</div>
+        <div class="card-desc">Clinician-initiated configurations only work if the clinician chooses to initiate. The motivation set behind Adam (cohort reach, monitoring-pathway dropout reduction, clinic capacity for patients who need to be seen in person) is grounded in qualitative discovery research. The open question is what additional evidence is needed beyond qualitative research before clinician-initiated configurations move from prospective to live deployment. Sits at the boundary of discovery research, KPI framework and pathway-specific clinical engagement.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Commercial Operations and NHSE Commercial and Exec Advice &amp; Partnerships.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#shape-clinician-side-adoption-motivation-evidence">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S2-10" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Evaluation criteria sign-off</div>
+            <div class="act-sub">Weighted criteria, panel composition, moderation approach</div>
+            <div class="act-owner">Commercial Lead with NHSE Commercial</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Assessment criteria)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S2-11" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Parallel framework risk monitoring<span class="act-chip act-chip-dep">1 dep</span></div>
+            <div class="act-sub">Watching parallel supply chain frameworks that fragment supplier market</div>
+            <div class="act-owner">Commercial Operations with Partnerships</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating risks register</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Parallel supply-chain framework fragmenting the supplier market</div>
+        <div class="card-desc">The NHS Supply Chain POCT framework plans to add home testing and is already in use by parts of the system. A parallel framework[see our framework]fragments the supplier market the platform is trying to organise, and is being built outside the platform's authority. The framework cannot decide it away. The mitigation is positioning: clarity on which suppliers and use cases each framework is best suited to, an explicit interface where the two overlap, and an aligned commercial story so suppliers are not forced to pick a side.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and SRO. Cross-programme alignment needed with NHS Supply Chain.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#parallel-supply-chain-framework-fragmenting-the-supplier-market">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S2-12" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Adoption motivation and clinician trust<span class="act-chip act-chip-dep">1 dep</span></div>
+            <div class="act-sub">Hearts and Minds work in flight; clinician trust at portfolio scale</div>
+            <div class="act-owner">Partnerships</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Without clinician trust the framework wins suppliers but no take-up. Programme delivery risk.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — Hearts and Minds page</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">Commissioner adoption of approved-list discipline</div>
+        <div class="card-desc">The architecture lives or dies on commissioners contracting through the approved list rather than reverting to &quot;buy from the supplier we have used before&quot;. Adoption depends on commissioners changing established procurement habits. Without that behaviour change the list stays a register, not a working market. The matchmaker engagement model is the lever that converts the structural option into actual procurement behaviour.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owners:</strong> NHSE pre-sales and engagement cell with commissioners.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#commissioner-adoption-of-approved-list-discipline">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    </div></div><div class="stage" data-stage="S3"><div class="stage-head"><div class="stage-label">STAGE 3</div><div class="stage-name">Procurement Process</div><div class="stage-dates"><span class="dyn-dates" data-low="Jan to Feb 27" data-high="Mar to May 27">Jan to Feb 27</span></div><div class="stage-meta">5 activities · 3 on critical path · 3 items</div></div><div class="stage-acts">
+      <details class="activity is-cp" id="a-S3-0" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">PIN publication</div>
+            <div class="act-sub">Prior Information Notice on Find a Tender service</div>
+            <div class="act-owner">Commercial Operations</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">PIN is the first public step. Pre-PIN approvals must be complete before this can be issued.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Pipeline notice and PIN)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S3-1" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">ITT publication</div>
+            <div class="act-sub">Invitation to Tender issued — formal procurement window opens</div>
+            <div class="act-owner">Commercial Operations</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">ITT publication starts the statutory clock. Once issued, spec cannot be materially changed.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Tender notice)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S3-2" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Supplier briefings and clarifications</div>
+            <div class="act-sub">Bidder questions window, supplier day if needed</div>
+            <div class="act-owner">Commercial Operations</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Equal treatment principles)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S3-3" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Bid window and receipt</div>
+            <div class="act-sub">Statutory minimum window per PA23; bid receipt and registration</div>
+            <div class="act-owner">Commercial Operations</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Statutory minimums; cannot be compressed.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Tendering periods)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S3-4" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">KPI framework and contract pack<span class="act-chip act-chip-comm">2 dec</span><span class="act-chip act-chip-dep">1 dep</span></div>
+            <div class="act-sub">Drafted in parallel; contract pack ready for evaluation and award</div>
+            <div class="act-owner">Commercial Lead with NHS Legal</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> NHS Standard Contract; recommendation paper §13</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">MEASURE: KPI framework</div>
+        <div class="card-desc">Not yet designed. Prior DTx experience showed licence-based KPIs failed because they didn't track outcomes.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Health Economist.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#measure-kpi-framework">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">PSA Active Surveillance Monitoring Episode tariff design</div>
+        <div class="card-desc">NHSE Strategic Finance has drafted a Patient-Not-Present tariff for PSA active surveillance. Glide-path: shadow 26/27, dual-run at 50% in 27/28, live at 100% in 28/29. Five reconciliation mechanisms: bundled episode, efficiency-factor offset, glide-path, capacity-release credits, ICB-level capitated AS top-up.</div>
+        <div class="card-owner"></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#psa-active-surveillance-monitoring-episode-tariff-design">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">CONTRACT: exit terms and offboarding mechanics</div>
+        <div class="card-desc">Contractual mechanics for exit and offboarding.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Sponsor with Commercial Operations and NHSE Commercial and NHS Legal.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#contract-exit-terms-and-offboarding-mechanics">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    </div></div><div class="stage" data-stage="S4"><div class="stage-head"><div class="stage-label">STAGE 4</div><div class="stage-name">Evaluation and Award</div><div class="stage-dates"><span class="dyn-dates" data-low="Mar to Apr 27" data-high="Jun to Aug 27">Mar to Apr 27</span></div><div class="stage-meta">5 activities · 4 on critical path · 0 items</div></div><div class="stage-acts">
+      <details class="activity" id="a-S4-0" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Evaluation panel constituted</div>
+            <div class="act-sub">Named panel, conflicts checked, training completed</div>
+            <div class="act-owner">Commercial Operations with NHSE Commercial</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Evaluation procedures)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S4-1" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Evaluation and moderation</div>
+            <div class="act-sub">Scoring against weighted criteria, moderation, due diligence</div>
+            <div class="act-owner">Evaluation Panel</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Evaluation outcome determines admitted suppliers; defensibility of moderation is the standstill challenge surface.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Assessment criteria)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S4-2" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Award recommendation</div>
+            <div class="act-sub">Award paper drafted, internal sign-off prior to standstill</div>
+            <div class="act-owner">Commercial Lead</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Sign-off gates the standstill notice.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> NHSE Commercial governance</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S4-3" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Standstill period</div>
+            <div class="act-sub">Statutory standstill under PA23, intention to award notices issued</div>
+            <div class="act-owner">Commercial Operations</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Statutory; cannot be compressed.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Standstill period)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S4-4" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Contract signature</div>
+            <div class="act-sub">Framework agreements signed with admitted suppliers</div>
+            <div class="act-owner">Commercial Lead with Admitted Suppliers</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Signature unlocks call-off mechanics and mobilisation.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Procurement Act 2023 (Contract details notice)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    </div></div><div class="stage" data-stage="S5"><div class="stage-head"><div class="stage-label">STAGE 5</div><div class="stage-name">Post-Procurement Governance</div><div class="stage-dates"><span class="dyn-dates" data-low="May to Jul 27" data-high="Sep to Nov 27">May to Jul 27</span></div><div class="stage-meta">5 activities · 2 on critical path · 9 items</div></div><div class="stage-acts">
+      <details class="activity is-cp" id="a-S5-0" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Mobilisation<span class="act-chip act-chip-comm">3 dec</span></div>
+            <div class="act-sub">Onboarding admitted suppliers, supplier readiness, first call-offs, Hearts and Minds activation</div>
+            <div class="act-owner">Commercial Operations with Operating Model Owner with Partnerships</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">Framework value realises only if mobilisation lands with named suppliers and first call-offs flow.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — Hearts and Minds page; supplier onboarding framework</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Mobilisation and &quot;hearts and minds&quot;</div>
+        <div class="card-desc">Transformation requires people to change: workflows, clinical assumptions, operating patterns, commissioning behaviours, patient interaction models, risk tolerance, even professional identity. Not soft work; core strategic infrastructure.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Status:</strong> Currently flagged but not owned in the model.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#mobilisation-and-hearts-and-minds">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Mobilisation and Hearts and Minds as named function</div>
+        <div class="card-desc">Transformation requires people to change: workflows, clinical assumptions, operating patterns, commissioning behaviours, patient interaction models, risk tolerance, even professional identity. Not soft work; core strategic infrastructure. Currently flagged but not owned in the model.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Decision:</strong> SLT to confirm whether to surface as a named function.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#mobilisation-and-hearts-and-minds-as-named-function">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">NHS Online dependency window</div>
+        <div class="card-desc">NHS Online targets September 2027 go-live and wants to be national from day one rather than rolling out by region. This makes CDC integration and pharmacy pickup an all-or-nothing dependency on the NHS Online launch window: HomeTest cannot phase these capabilities in earlier or by region without misaligning with NHS Online's national-from-day-one shape. Any configuration that depends on CDC integration or pharmacy pickup is gated by the September 2027 launch holding to plan.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Exec Advice &amp; Partnerships with Head of Technology &amp; Product. External dependency.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#nhs-online-dependency-window">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S5-1" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Steady-state supplier management<span class="act-chip act-chip-comm">1 dec</span></div>
+            <div class="act-sub">Ongoing supplier discovery, market refresh cadence</div>
+            <div class="act-owner">Commercial Operations</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — BAU design</div>
+          <div class="act-cards">
+      <div class="card card-comm" data-cp="0" data-track="commercial">
+        <div class="card-head"><span class="card-tag">Commercial decision</span></div>
+        <div class="card-title">Steady-state supplier discovery pattern</div>
+        <div class="card-desc">Suppliers appear in the catalogue once accredited. Commissioners find them through the published catalogue, not through direct supplier outreach. Brand awareness and case studies are supporting activity, not the route in. The steady-state mechanism for how commissioners actually discover relevant suppliers (catalogue browse, recommendation engine, match-by-need, broker-style introductions) is not yet defined.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Head of Technology &amp; Product with Adoption.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#steady-state-supplier-discovery-pattern">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S5-2" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">Contract management setup</div>
+            <div class="act-sub">KPI monitoring cadence, supplier reviews, removal protocol live</div>
+            <div class="act-owner">Commercial Operations</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> NHS Standard Contract; framework operating model</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    
+      <details class="activity is-cp" id="a-S5-3" data-cp="1">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">MEASURE stage standup<span class="act-chip act-chip-dep">5 dep</span></div>
+            <div class="act-sub">MEASURE is currently empty on the operating model; needs owners, scope, attribution method</div>
+            <div class="act-owner">DEPENDENCY: Operating Model Owner</div>
+            <div class="why-tooltip"><span class="why-tooltip-label">Why critical</span><span class="why-tooltip-body">No feedback loop from outcomes to SHAPE means the operating model has no closed loop. Material gap.</span></div>
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — MEASURE stage (no items in flight)</div>
+          <div class="act-cards">
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">MEASURE: attribution methodology</div>
+        <div class="card-desc">Undefined. Linking a home test kit to a downstream clinical outcome requires methodology not yet agreed.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with IG &amp; Assurance SME.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#measure-attribution-methodology">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">MEASURE: feedback loop to SHAPE</div>
+        <div class="card-desc">Not yet designed. The mechanism (what data, in what format, at what frequency) is undefined.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with SRO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#measure-feedback-loop-to-shape">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">MEASURE: marketplace health metrics</div>
+        <div class="card-desc">NPS, referral rates, commissioner satisfaction sit alongside, not instead of, clinical outcome metrics.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Exec Advice &amp; Partnerships.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#measure-marketplace-health-metrics">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="1" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span><span class="cp-badge">CRITICAL PATH</span></div>
+        <div class="card-title">MEASURE: cost-per-test baseline</div>
+        <div class="card-desc">Not established. Without a validated cost-per-test, value comparisons are unreliable.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Commercial Operations with NHSE Commercial and Health Economist.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#measure-cost-per-test-baseline">View on Status page &rarr;</a>
+      </div>
+    
+      <div class="card card-dep" data-cp="0" data-track="dependency">
+        <div class="card-head"><span class="card-tag">Inbound dependency</span></div>
+        <div class="card-title">SHAPE: MEASURE feedback loop into SHAPE</div>
+        <div class="card-desc">How the MEASURE feedback loop formally feeds into SHAPE. Not yet designed.</div>
+        <div class="card-owner"><div class="item-owner"><strong>Owner:</strong> Product Manager with Exec Advice &amp; Partnerships and SRO.</div></div>
+        <a class="card-link" href="HomeTest Operating Model - Status.html#shape-measure-feedback-loop-into-shape">View on Status page &rarr;</a>
+      </div>
+    </div>
+        </div>
+      </details>
+    
+      <details class="activity" id="a-S5-4" data-cp="0">
+        <summary>
+          <div class="act-row">
+            <div class="act-name">BAU transition</div>
+            <div class="act-sub">Handover from Future State Team to BAU owners</div>
+            <div class="act-owner">Commercial Lead with Operating Model Owner</div>
+            
+          </div>
+        </summary>
+        <div class="act-detail">
+          <div class="act-cite"><span class="act-cite-label">Source:</span> Operating model — Teamwork page (BAU capabilities)</div>
+          <div class="act-cards"><div class="card-empty">Procurement-process activity. No Status page items attached.</div></div>
+        </div>
+      </details>
+    </div></div></div>
+  <div class="footer-note">
+    <h3>How to use this page at the workshop</h3>
+    Three working sessions, in order. Session 1: validate the spine and stage placement, walk through each cell, flag misplacements. Session 2: separate decisions, activities and risks within each spine cell and confirm or reassign the owner. Session 3: size each item with T-shirt effort and the week or month it has to land. Output is v0.4 with placements defended and sizing in place.
+  </div>
+</div>
+<script>
+(function(){
+  document.querySelectorAll('.filter-pill').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var f=btn.getAttribute('data-filter');
+      document.querySelectorAll('.filter-pill').forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+      document.body.classList.remove('f-cp','f-comm','f-dep');
+      if(f==='cp')document.body.classList.add('f-cp');
+      if(f==='comm')document.body.classList.add('f-comm');
+      if(f==='dep')document.body.classList.add('f-dep');
+    });
+  });
+  document.querySelectorAll('.rd-dot').forEach(function(dot){
+    dot.addEventListener('click',function(e){
+      e.preventDefault();
+      var target=dot.getAttribute('data-target');
+      var el=document.getElementById(target);
+      if(!el)return;
+      el.open=true;
+      el.scrollIntoView({behavior:'smooth',block:'start'});
+      el.classList.add('rd-pinged');
+      setTimeout(function(){el.classList.remove('rd-pinged');},1400);
+    });
+  });
+
+  // Route view toggle
+  document.querySelectorAll('.tog-pill[data-route]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var r=btn.getAttribute('data-route');
+      document.querySelectorAll('.tog-pill[data-route]').forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+      document.body.classList.remove('r-a','r-c');
+      if(r==='a')document.body.classList.add('r-a');
+      if(r==='c')document.body.classList.add('r-c');
+    });
+  });
+  // Value scenario toggle — swaps dates and go-live indicator
+  function applyValueScenario(scenario){
+    document.querySelectorAll('.dyn-dates,.dyn-live').forEach(function(el){
+      var v = el.getAttribute(scenario==='high'?'data-high':'data-low');
+      if(v) el.textContent = v;
+    });
+  }
+  document.querySelectorAll('.tog-pill[data-value]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var v=btn.getAttribute('data-value');
+      document.querySelectorAll('.tog-pill[data-value]').forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+      applyValueScenario(v);
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
