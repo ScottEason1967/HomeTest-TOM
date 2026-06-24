@@ -175,25 +175,26 @@
   .planc-detail-head h2{font-size:22px;color:var(--amber-deep);font-weight:800;margin:0 0 4px;letter-spacing:-0.3px;}
   .planc-detail-sub{font-size:13px;color:var(--text-sec);max-width:880px;line-height:1.5;}
   /* Stacked phase layout — each phase is a row, activity cards inside */
-  .planc-detail-matrix{display:flex;flex-direction:column;gap:18px;}
+  .planc-detail-matrix{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
   .planc-stage{background:#fff;border:1px solid var(--dep-border);border-left:5px solid var(--amber-deep);border-radius:10px;overflow:hidden;}
-  .planc-stage-head{padding:14px 22px;background:linear-gradient(90deg,var(--warm-cream) 0%, #fff 100%);border-bottom:1px solid var(--dep-border);display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;}
+  .planc-stage-head{padding:14px 16px;background:linear-gradient(180deg,var(--warm-cream) 0%, #fff 100%);border-bottom:1px solid var(--dep-border);}
   .planc-stage-label{font-size:10.5px;font-weight:800;color:var(--amber-deep);letter-spacing:2px;text-transform:uppercase;}
-  .planc-stage-name{font-size:18px;font-weight:800;color:var(--dep-text);line-height:1.2;}
-  .planc-stage-dates{font-size:12px;font-weight:700;color:var(--text-sec);letter-spacing:0.4px;background:#fff;padding:3px 10px;border-radius:999px;border:1px solid var(--dep-border);}
-  .planc-stage-meta{font-size:11px;color:var(--text-muted);margin-left:auto;}
-  .planc-stage-acts{padding:14px 22px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;}
-  .planc-activity{border:1px solid var(--border-lt);border-radius:8px;background:#FAFBFD;overflow:hidden;}
-  .planc-activity summary{cursor:pointer;list-style:none;padding:12px 14px;transition:background 0.12s;}
+  .planc-stage-name{font-size:15px;font-weight:800;color:var(--dep-text);line-height:1.2;margin-top:4px;}
+  .planc-stage-dates{font-size:11px;font-weight:700;color:var(--text-sec);margin-top:3px;letter-spacing:0.4px;}
+  .planc-stage-meta{font-size:10.5px;color:var(--text-muted);margin-top:6px;}
+  .planc-stage-acts{padding:8px 10px 14px;}
+  .planc-activity{border-top:1px solid var(--border-lt);padding:2px 0;}
+  .planc-activity:first-child{border-top:none;}
+  .planc-activity summary{cursor:pointer;list-style:none;padding:9px 6px;border-radius:5px;transition:background 0.12s;}
   .planc-activity summary::-webkit-details-marker{display:none;}
   .planc-activity summary:hover{background:#F0F4F8;}
   .planc-activity[open] summary{background:#EEF4F8;}
-  .planc-activity.is-cp{border-left:4px solid var(--cp);}
-  .planc-activity.is-cp summary{background:#FFF7F6;}
+  
+  .planc-activity.is-cp summary{border-left:3px solid var(--cp);padding-left:8px;}
   .planc-activity.is-cp[open] summary{background:var(--cp-bg);}
   .planc-act-row{display:flex;flex-direction:column;gap:5px;}
-  .planc-act-name{font-size:13.5px;font-weight:700;color:var(--text);line-height:1.3;}
-  .planc-act-sub{font-size:12px;color:var(--text-sec);line-height:1.45;}
+  .planc-act-name{font-size:12.5px;font-weight:700;color:var(--text);line-height:1.3;}
+  .planc-act-sub{font-size:11px;color:var(--text-sec);line-height:1.4;}
   .planc-act-owner{font-size:11px;color:var(--text-muted);font-style:italic;margin-top:4px;}
   .planc-why{font-size:11.5px;color:var(--cp-text);background:#fff;border-left:2px solid var(--cp);padding:6px 10px;margin-top:6px;line-height:1.45;}
   .planc-why-label{font-weight:800;text-transform:uppercase;letter-spacing:0.6px;font-size:9.5px;color:var(--cp);margin-right:3px;display:block;margin-bottom:2px;}
@@ -230,299 +231,6 @@
     <span class="li-label">Plan A live by:</span>
     <span class="dyn-live" data-low="August 2027" data-high="December 2027">August 2027</span>
   </div></div>
-
-  <div class="two-track-callout">
-    <div class="ttc-icon">&harr;</div>
-    <div class="ttc-body">
-      <div class="ttc-title">Two routes running in parallel.</div>
-      <div class="ttc-text">This is the <strong>Plan A delivery view</strong>: NHSE-administered Open Framework under PA23, sequenced through the five procurement stages, earliest live August 2027. The <strong>Plan C interim track</strong> below runs in parallel and protects the April 2027 HIV Beta commitment via commissioner-led routes. Per recommendation paper Section 14.4.</div>
-    </div>
-  </div>
-  <div class="planc-track">
-    <div class="planc-head">
-      <div class="planc-lane-label">PLAN C &middot; INTERIM ROUTE</div>
-      <div class="planc-lane-sub">Commissioner-led procurement using existing frameworks (SBS Sexual Health, open procurement, direct award). Protects April 2027 HIV Beta commitment.</div>
-    </div>
-    <div class="planc-grid"><div class="planc-cell"><div class="planc-phase">S1</div><div class="planc-dates"><span class="dyn-dates" data-low="Aug to Oct 26" data-high="Aug to Oct 26">Aug to Oct 26</span></div><div class="planc-prose">Identify commissioners requiring HomeTest services from April 2027. Route advice — SBS Sexual Health Framework, open procurement, direct award.</div></div><div class="planc-cell"><div class="planc-phase">S2</div><div class="planc-dates"><span class="dyn-dates" data-low="Nov to Dec 26" data-high="Nov 26 to Feb 27">Nov to Dec 26</span></div><div class="planc-prose">SBS Sexual Health Framework bridge maintained for HIV. Commissioner-led playbook documented. NHS Online and RDUH direct routes confirmed.</div></div><div class="planc-cell"><div class="planc-phase">S3</div><div class="planc-dates"><span class="dyn-dates" data-low="Jan to Feb 27" data-high="Mar to May 27">Jan to Feb 27</span></div><div class="planc-prose">First commissioner-led procurements going live. Framework fragmentation risk monitored.</div></div><div class="planc-cell"><div class="planc-phase">S4</div><div class="planc-dates"><span class="dyn-dates" data-low="Mar to Apr 27" data-high="Jun to Aug 27">Mar to Apr 27</span></div><div class="planc-prose">HIV Beta live via commissioner-led routes by April 2027. The gate that delivers the April 2027 commitment.</div><div class="planc-gate"><span class="planc-gate-mark">&#9733;</span>April 2027 &mdash; HIV Beta go-live</div></div><div class="planc-cell"><div class="planc-phase">S5</div><div class="planc-dates"><span class="dyn-dates" data-low="May to Jul 27" data-high="Sep to Nov 27">May to Jul 27</span></div><div class="planc-prose">Plan C winds down. Commissioners offered switchover to Plan A as suppliers are admitted to the framework.</div></div><div class="planc-detail-section"><div class="planc-detail-head"><h2>Plan C — Commissioner-led interim, full detail</h2><div class="planc-detail-sub">The interim route that protects April 2027. Sequenced through the same five procurement stages so the dovetail with Plan A is visible.</div></div><div class="planc-detail-matrix"><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 1</div><div class="planc-stage-name">Procurement Planning</div><div class="planc-stage-dates">Aug to Oct 26</div><div class="planc-stage-meta">5 activities · 2 on critical path</div></div><div class="planc-stage-acts">
-      <details class="planc-activity is-cp" id="pc-S1-0">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Identify Plan C commissioner cohort</div>
-            <div class="planc-act-sub">Map which commissioners need HomeTest services by April 2027.</div>
-            <div class="planc-act-owner">Commercial Operations with Partnerships</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Without a confirmed commissioner cohort there is no Plan C delivery vehicle.</div>
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity is-cp" id="pc-S1-1">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Route mapping per commissioner</div>
-            <div class="planc-act-sub">NHS SBS Sexual Health Framework, open procurement, direct award. Match each commissioner to a defensible route.</div>
-            <div class="planc-act-owner">Commercial Lead with NHS Legal</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Each commissioner needs a defensible procurement route under PA23.</div>
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S1-2">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan C playbook v1 drafted</div>
-            <div class="planc-act-sub">Document the commissioner-led approach for replication and audit defensibility.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S1-3">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Hill Dickinson legal advice for Plan C</div>
-            <div class="planc-act-sub">External counsel input on commissioner-led procurement model.</div>
-            <div class="planc-act-owner">NHS Legal with Hill Dickinson</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S1-4">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">RDUH PSA-AS pilot mobilising</div>
-            <div class="planc-act-sub">Acute partner relationship established and pilot scope confirmed.</div>
-            <div class="planc-act-owner">Commercial Operations with Partnerships</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 2</div><div class="planc-stage-name">Pre-Procurement Governance</div><div class="planc-stage-dates">Nov to Dec 26</div><div class="planc-stage-meta">6 activities · 2 on critical path</div></div><div class="planc-stage-acts">
-      <details class="planc-activity is-cp" id="pc-S2-0">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">SBS Sexual Health Framework bridge confirmed</div>
-            <div class="planc-act-sub">Six-month PSR bridge for HIV configured and live.</div>
-            <div class="planc-act-owner">Commercial Lead with NHS SBS</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> SBS bridge is the live mechanism that delivers HIV volumes through to April 2027.</div>
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S2-1">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan C playbook v1 published</div>
-            <div class="planc-act-sub">Playbook signed off and circulated to commissioners.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity is-cp" id="pc-S2-2">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">NHS Online direct route confirmed</div>
-            <div class="planc-act-sub">NHS Online procurement route locked in.</div>
-            <div class="planc-act-owner">Commercial Lead with NHS Online</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> NHS Online is the largest Plan C commissioner; their route confirmation gates volume.</div>
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S2-3">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Commissioner engagement plan</div>
-            <div class="planc-act-sub">Communicate Plan C delivery roadmap and the dovetail with Plan A.</div>
-            <div class="planc-act-owner">Partnerships with Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S2-4">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan C risk register established</div>
-            <div class="planc-act-sub">Framework fragmentation, audit defensibility, switchover risks.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S2-5">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan A and Plan C dovetail tracked</div>
-            <div class="planc-act-sub">Plan A standup running in parallel; weekly checkpoint on the dovetail.</div>
-            <div class="planc-act-owner">Commercial Lead</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 3</div><div class="planc-stage-name">Procurement Process</div><div class="planc-stage-dates">Jan to Feb 27</div><div class="planc-stage-meta">4 activities · 1 on critical path</div></div><div class="planc-stage-acts">
-      <details class="planc-activity is-cp" id="pc-S3-0">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">First commissioner-led procurements live</div>
-            <div class="planc-act-sub">Early adopter commissioners begin running Plan C procurements.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Live procurements are the first proof point that Plan C delivers.</div>
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S3-1">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Framework fragmentation risk monitored</div>
-            <div class="planc-act-sub">Active monitoring of parallel framework activity that could fragment the supplier market.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S3-2">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Commissioner support office in place</div>
-            <div class="planc-act-sub">Commercial team provides ongoing support to commissioners running PA23 procurements.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S3-3">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">HIV Beta volumes via SBS tracked</div>
-            <div class="planc-act-sub">KPI dashboard for HIV Beta call-off volumes through the SBS bridge.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 4</div><div class="planc-stage-name">Evaluation and Award</div><div class="planc-stage-dates">Mar to Apr 27</div><div class="planc-stage-meta">4 activities · 1 on critical path</div></div><div class="planc-stage-acts">
-      <details class="planc-activity is-cp" id="pc-S4-0">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">HIV Beta GO LIVE via Plan C — April 2027</div>
-            <div class="planc-act-sub">The April 2027 commitment delivered. HIV Beta operational through commissioner-led routes.</div>
-            <div class="planc-act-owner">Commercial Lead with admitted commissioners</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> This is the date Martin and the programme are committed to. Plan C is what delivers it.</div>
-            <div class="planc-act-gate">★ April 2027 — HIV Beta go-live</div>
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S4-1">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Steady state Plan C operations</div>
-            <div class="planc-act-sub">Plan C running as the live operating model for HomeTest services.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S4-2">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Switchover plan to Plan A drafted</div>
-            <div class="planc-act-sub">Plan for migrating commissioners from Plan C routes to the Plan A framework once it goes live.</div>
-            <div class="planc-act-owner">Commercial Lead</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S4-3">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan C KPI tracking established</div>
-            <div class="planc-act-sub">Volumes, supplier compliance, commissioner satisfaction tracked monthly.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 5</div><div class="planc-stage-name">Post-Procurement Governance</div><div class="planc-stage-dates">May 27 onwards</div><div class="planc-stage-meta">4 activities · 1 on critical path</div></div><div class="planc-stage-acts">
-      <details class="planc-activity is-cp" id="pc-S5-0">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan C maintained until Plan A live</div>
-            <div class="planc-act-sub">Plan C operates as the live delivery vehicle until Plan A admits suppliers and is operational.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Plan C is the live commitment until Plan A is up; no gap in service.</div>
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S5-1">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Switchover wave 1</div>
-            <div class="planc-act-sub">First commissioners migrate from Plan C routes to Plan A framework.</div>
-            <div class="planc-act-owner">Commercial Lead with Partnerships</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S5-2">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Plan C wind-down per agreed schedule</div>
-            <div class="planc-act-sub">Phased wind-down once Plan A is delivering volumes; switchover schedule agreed with commissioners.</div>
-            <div class="planc-act-owner">Commercial Operations</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    
-      <details class="planc-activity" id="pc-S5-3">
-        <summary>
-          <div class="planc-act-row">
-            <div class="planc-act-name">Lessons captured for BAU operating model</div>
-            <div class="planc-act-sub">What worked in Plan C, what didn't, captured for the BAU framework operating model.</div>
-            <div class="planc-act-owner">Commercial Operations with Operating Model Owner</div>
-            
-            
-          </div>
-        </summary>
-      </details>
-    </div></div></div></div>
-  </div>
-  </div>
-
   <div class="summary-strip">
     <div class="sblock"><div class="sn">37</div><div class="sl">Commercial-owned items</div></div>
     <div class="sblock"><div class="sn">80</div><div class="sl">Inbound dependencies</div></div>
@@ -2133,6 +1841,286 @@
         </div>
       </details>
     </div></div></div>
+  <div class="planc-detail-section"><div class="planc-detail-head"><h2>Plan C — Commissioner-led interim, full detail</h2><div class="planc-detail-sub">The interim route that protects April 2027. Sequenced through the same five procurement stages so the dovetail with Plan A is visible.</div></div><div class="planc-detail-matrix"><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 1</div><div class="planc-stage-name">Procurement Planning</div><div class="planc-stage-dates">Aug to Oct 26</div><div class="planc-stage-meta">5 activities · 2 on critical path</div></div><div class="planc-stage-acts">
+      <details class="planc-activity is-cp" id="pc-S1-0">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Identify Plan C commissioner cohort</div>
+            <div class="planc-act-sub">Map which commissioners need HomeTest services by April 2027.</div>
+            <div class="planc-act-owner">Commercial Operations with Partnerships</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Without a confirmed commissioner cohort there is no Plan C delivery vehicle.</div>
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity is-cp" id="pc-S1-1">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Route mapping per commissioner</div>
+            <div class="planc-act-sub">NHS SBS Sexual Health Framework, open procurement, direct award. Match each commissioner to a defensible route.</div>
+            <div class="planc-act-owner">Commercial Lead with NHS Legal</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Each commissioner needs a defensible procurement route under PA23.</div>
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S1-2">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan C playbook v1 drafted</div>
+            <div class="planc-act-sub">Document the commissioner-led approach for replication and audit defensibility.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S1-3">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Hill Dickinson legal advice for Plan C</div>
+            <div class="planc-act-sub">External counsel input on commissioner-led procurement model.</div>
+            <div class="planc-act-owner">NHS Legal with Hill Dickinson</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S1-4">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">RDUH PSA-AS pilot mobilising</div>
+            <div class="planc-act-sub">Acute partner relationship established and pilot scope confirmed.</div>
+            <div class="planc-act-owner">Commercial Operations with Partnerships</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 2</div><div class="planc-stage-name">Pre-Procurement Governance</div><div class="planc-stage-dates">Nov to Dec 26</div><div class="planc-stage-meta">6 activities · 2 on critical path</div></div><div class="planc-stage-acts">
+      <details class="planc-activity is-cp" id="pc-S2-0">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">SBS Sexual Health Framework bridge confirmed</div>
+            <div class="planc-act-sub">Six-month PSR bridge for HIV configured and live.</div>
+            <div class="planc-act-owner">Commercial Lead with NHS SBS</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> SBS bridge is the live mechanism that delivers HIV volumes through to April 2027.</div>
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S2-1">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan C playbook v1 published</div>
+            <div class="planc-act-sub">Playbook signed off and circulated to commissioners.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity is-cp" id="pc-S2-2">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">NHS Online direct route confirmed</div>
+            <div class="planc-act-sub">NHS Online procurement route locked in.</div>
+            <div class="planc-act-owner">Commercial Lead with NHS Online</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> NHS Online is the largest Plan C commissioner; their route confirmation gates volume.</div>
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S2-3">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Commissioner engagement plan</div>
+            <div class="planc-act-sub">Communicate Plan C delivery roadmap and the dovetail with Plan A.</div>
+            <div class="planc-act-owner">Partnerships with Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S2-4">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan C risk register established</div>
+            <div class="planc-act-sub">Framework fragmentation, audit defensibility, switchover risks.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S2-5">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan A and Plan C dovetail tracked</div>
+            <div class="planc-act-sub">Plan A standup running in parallel; weekly checkpoint on the dovetail.</div>
+            <div class="planc-act-owner">Commercial Lead</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 3</div><div class="planc-stage-name">Procurement Process</div><div class="planc-stage-dates">Jan to Feb 27</div><div class="planc-stage-meta">4 activities · 1 on critical path</div></div><div class="planc-stage-acts">
+      <details class="planc-activity is-cp" id="pc-S3-0">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">First commissioner-led procurements live</div>
+            <div class="planc-act-sub">Early adopter commissioners begin running Plan C procurements.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Live procurements are the first proof point that Plan C delivers.</div>
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S3-1">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Framework fragmentation risk monitored</div>
+            <div class="planc-act-sub">Active monitoring of parallel framework activity that could fragment the supplier market.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S3-2">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Commissioner support office in place</div>
+            <div class="planc-act-sub">Commercial team provides ongoing support to commissioners running PA23 procurements.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S3-3">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">HIV Beta volumes via SBS tracked</div>
+            <div class="planc-act-sub">KPI dashboard for HIV Beta call-off volumes through the SBS bridge.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 4</div><div class="planc-stage-name">Evaluation and Award</div><div class="planc-stage-dates">Mar to Apr 27</div><div class="planc-stage-meta">4 activities · 1 on critical path</div></div><div class="planc-stage-acts">
+      <details class="planc-activity is-cp" id="pc-S4-0">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">HIV Beta GO LIVE via Plan C — April 2027</div>
+            <div class="planc-act-sub">The April 2027 commitment delivered. HIV Beta operational through commissioner-led routes.</div>
+            <div class="planc-act-owner">Commercial Lead with admitted commissioners</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> This is the date Martin and the programme are committed to. Plan C is what delivers it.</div>
+            <div class="planc-act-gate">★ April 2027 — HIV Beta go-live</div>
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S4-1">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Steady state Plan C operations</div>
+            <div class="planc-act-sub">Plan C running as the live operating model for HomeTest services.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S4-2">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Switchover plan to Plan A drafted</div>
+            <div class="planc-act-sub">Plan for migrating commissioners from Plan C routes to the Plan A framework once it goes live.</div>
+            <div class="planc-act-owner">Commercial Lead</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S4-3">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan C KPI tracking established</div>
+            <div class="planc-act-sub">Volumes, supplier compliance, commissioner satisfaction tracked monthly.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    </div></div><div class="planc-stage"><div class="planc-stage-head"><div class="planc-stage-label">STAGE 5</div><div class="planc-stage-name">Post-Procurement Governance</div><div class="planc-stage-dates">May 27 onwards</div><div class="planc-stage-meta">4 activities · 1 on critical path</div></div><div class="planc-stage-acts">
+      <details class="planc-activity is-cp" id="pc-S5-0">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan C maintained until Plan A live</div>
+            <div class="planc-act-sub">Plan C operates as the live delivery vehicle until Plan A admits suppliers and is operational.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            <div class="planc-why"><span class="planc-why-label">Why critical:</span> Plan C is the live commitment until Plan A is up; no gap in service.</div>
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S5-1">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Switchover wave 1</div>
+            <div class="planc-act-sub">First commissioners migrate from Plan C routes to Plan A framework.</div>
+            <div class="planc-act-owner">Commercial Lead with Partnerships</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S5-2">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Plan C wind-down per agreed schedule</div>
+            <div class="planc-act-sub">Phased wind-down once Plan A is delivering volumes; switchover schedule agreed with commissioners.</div>
+            <div class="planc-act-owner">Commercial Operations</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    
+      <details class="planc-activity" id="pc-S5-3">
+        <summary>
+          <div class="planc-act-row">
+            <div class="planc-act-name">Lessons captured for BAU operating model</div>
+            <div class="planc-act-sub">What worked in Plan C, what didn't, captured for the BAU framework operating model.</div>
+            <div class="planc-act-owner">Commercial Operations with Operating Model Owner</div>
+            
+            
+          </div>
+        </summary>
+      </details>
+    </div></div></div></div>
+  </div>
+  </div>
+
   <div class="footer-note">
     <h3>How to use this page at the workshop</h3>
     Three working sessions, in order. Session 1: validate the spine and stage placement, walk through each cell, flag misplacements. Session 2: separate decisions, activities and risks within each spine cell and confirm or reassign the owner. Session 3: size each item with T-shirt effort and the week or month it has to land. Output is  with placements defended and sizing in place.
