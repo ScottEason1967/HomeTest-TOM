@@ -3,62 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <title>HomeTest Operating Model — Milestone Plan</title>
-<meta name="robots" content="noindex,nofollow">
 <style>
-  :root{--nhs-dark:#003087;--nhs-blue:#005EB8;--text:#212B32;--text-sec:#4C6272;--text-muted:#7E8B97;--border:#d9dee3;--border-lt:#ebeef1;--bg:#f8fafc;--amber:#FFB91D;--amber-deep:#C9A227;--warm-cream:#FFF9EC;--dep-border:#F0DDB0;}
+  :root{--nhs-dark:#003087;--nhs-blue:#005EB8;--accent:#7C2855;--text:#212B32;--text-sec:#4C6272;--text-muted:#7E8B97;--border:#d9dee3;--border-lt:#ebeef1;--bg:#f8fafc;--amber:#FFB91D;--amber-deep:#C9A227;--warm-cream:#FFF9EC;--cp:#DA291C;--cp-bg:#FBE9E6;--cp-text:#9B1D14;--comm-bg:#F0F6FB;--comm-border:#C8DEEE;--comm-text:#0F4F82;--dep-bg:#FFF9EC;--dep-border:#F0DDB0;--dep-text:#7C5A0E;}
   *{box-sizing:border-box;} html,body{margin:0;padding:0;}
-  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;}
   a{color:var(--nhs-blue);}
   .topnav{background:#fff;border-bottom:1px solid var(--border);padding:14px 40px;display:flex;align-items:center;gap:24px;font-size:13px;flex-wrap:wrap;}
-  .nav-back{font-weight:700;color:var(--nhs-dark);text-decoration:none;}
-  .nav-back:hover{text-decoration:underline;}
+  .nav-back{font-weight:700;color:var(--nhs-dark);text-decoration:none;} .nav-back:hover{text-decoration:underline;}
   .nav-siblings{display:flex;gap:16px;flex-wrap:wrap;}
-  .nav-siblings a{color:var(--text-sec);text-decoration:none;font-weight:600;}
-  .nav-siblings a:hover{color:var(--nhs-blue);}
+  .nav-siblings a{color:var(--text-sec);text-decoration:none;font-weight:600;} .nav-siblings a:hover{color:var(--nhs-blue);}
   .nav-sep{display:inline-block;width:1px;background:var(--border);height:18px;align-self:center;}
-  .page{max-width:780px;margin:0 auto;padding:80px 40px 100px;}
+  .page{max-width:1480px;margin:0 auto;padding:50px 40px 80px;}
   .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
   .h-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--text-sec);text-transform:uppercase;margin-bottom:14px;}
-  .h-title{font-size:42px;font-weight:800;color:var(--nhs-dark);margin:0 0 14px;letter-spacing:-1px;line-height:1.05;}
-  .h-sub{font-size:16px;color:var(--text-sec);line-height:1.6;margin-bottom:28px;}
-  .callout{background:var(--warm-cream);border:1px solid var(--dep-border);border-left:4px solid var(--amber-deep);border-radius:8px;padding:18px 22px;font-size:13px;color:var(--text-sec);line-height:1.65;}
-  .callout strong{color:var(--nhs-dark);}
-  .back-link{margin-top:36px;font-size:12px;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;color:var(--nhs-blue);text-decoration:none;display:inline-block;}
-  .back-link:hover{text-decoration:underline;}
-</style>
-</head>
-<body>
-<script>
-(function(){
-  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
-    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
-    location.href = 'index.html?next=' + next;
-  }
-})();
-</script>
-<nav class="topnav">
-  <a href="home.html" class="nav-back">&larr; Operating Model</a>
-  <div class="nav-siblings">
-    <a href="HomeTest Operating Model - Why.html">Why</a>
-    <a href="HomeTest Operating Model - What.html">What</a>
-    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
-    <a href="HomeTest Operating Model - Operational.html">How</a>
-    <a href="HomeTest Operating Model - Governance.html">Who</a>
-    <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
-    <a href="HomeTest Operating Model - Teamwork.html">HomeTest teamwork</a>
-    <span class="nav-sep"></span>
-    <a href="HomeTest Operating Model - Status.html">Status</a>
-  </div>
-</nav>
-<div class="page">
-  <div class="amber-rule"></div>
-  <div class="h-eyebrow">Commercial sourcing strategy</div>
-  <h1 class="h-title">Milestone Plan.</h1>
-  <div class="h-sub">The commercial sourcing strategy milestone plan is in development. The working view is being prepared for the upcoming workshop and is not yet ready for general distribution.</div>
-  <div class="callout">
-    <strong>What this page will hold.</strong> The end-to-end commercial milestone plan sequenced through the five procurement stages: planning, pre-procurement governance, procurement process, evaluation and award, and post-procurement governance. The plan threads together the procurement spine, the decisions sitting with SLT, the inbound dependencies that gate commercial work, and the critical path the timetable hangs from.
-  </div>
-  <a href="HomeTest Operating Model - Status.html" class="back-link">&larr; Back to Status</a>
-</div>
-</body>
-</html>
+  .h-title{font-size:42px;font-weight:800;color:var(--nhs-dark);margin:0 0 12px;letter-spacing:-1px;line-height:1.05;}
+  .h-sub{font-size:16px;color:var(--text-sec);max-width:920px;line-height:1.6;margin-bottom:18px;}
+  .version-bar{display:flex;gap:12px;align-items:center;font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:26px;font-weight:700;}
+  .version-pill{background:var(--warm-cream);color:var(--amber-deep);padding:3px 10px;border-radius:999px;border:1px solid var(--dep-border);}
+  .summary-strip{background:#E8F1F6;border:1px solid #B5D4E5;border-radius:10px;padding:16px 22px;display:flex;gap:30px;flex-wrap:wrap;font-size:12.5px;color:var(--nhs-dark);margin-bottom:24px;}
+  .summary-strip .sblock{display:flex;flex-direction:column;}
+  .summary-strip .sn{font-size:22px;font-weight:800;color:var(--nhs-dark);line-height:1;}
+  .summary-strip .sl{font-size:11px;font-weight:700;color:var(--text-sec);text-transform:uppercase;letter-spacing:1.2px;margin-top:4px;}
+
+  .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;align-items:center;}
+  .filter-label{font-size:11px;font-weight:700;color:var(--text-sec);text-transform:uppercase;letter-spacing:1.5px;margin-right:6px;}
+  .filter-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--text-sec);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.15s;letter-spacing:0.2px;}
+  .filter-pill:hover{border-color:var(--nhs-blue);color:var(--nhs-blue);}
+  .filter-pill.active{background:var(--nhs-blue);color:#fff;border-color:var(--nhs-blue);}
+  .filter-pill .pn{font-size:10.5px;opacity:0.7;}
+  .filter-pill.active .pn{opacity:1;}
+
+  /* === ROADMAP === */
+  .roadmap{margin:30px 0 40px;background:#fff;border-radius:12px;box-shadow:0 4px 14px rgba(0,30,90,0.06);overflow:hidden;}
+  .roadmap-head{padding:20px 24px 14px;}
+  .roadmap-head h2{font-size:20px;color:var(--nhs-dark);font-weight:800;margin:0 0 4px;letter-spacing:-0.3px;}
+  .roadmap-sub{font-size:12.5px;color:var(--text-sec);max-width:880px;line-height:1.5;}
+  .roadmap-track{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--border-lt);}
+  .rd-phase{border-right:1px solid var(--border-lt);display:flex;flex-direction:column;}
+  .rd-phase:last-child{border-right:none;}
+  .rd-phase-head{background:linear-gradie
