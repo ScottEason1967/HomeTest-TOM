@@ -1,0 +1,22 @@
+# Backup files from atomic-edit Python scripts
+*.bak
+*.bak_*
+*.bak.*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office temp lock files
+~$*
+.~lock.*
+
+# Editor backups
+*~
+*.swp
+*.swo
+
+# Python script byproducts (if any creep in)
+__pycache__/
+*.pyc
