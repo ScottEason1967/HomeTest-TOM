@@ -26,14 +26,16 @@ a:hover{text-decoration:underline}
 .core-panel h3{margin:0 0 8px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--nhs-blue)}
 .core-panel p{margin:0 0 8px;font-size:12.5px;color:#3B4A54}
 .core-panel .core-list{margin:0;padding-left:20px;columns:2;column-gap:32px;font-size:13px}
-.core-panel .core-list li{margin:2px 0;break-inside:avoid}
+.core-panel .core-list li{margin:2px 0;break-inside:avoid;line-height:1.4}
 .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:0 0 28px}
-.timeline .tl{background:#fff;border:1px solid var(--border-lt);border-radius:8px;padding:10px 12px;font-size:11px}
-.timeline .tl-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--nhs-blue)}
-.timeline .tl-name{font-weight:700;color:var(--near-black);margin:2px 0}
+.timeline .tl{display:block;background:#fff;border:1px solid var(--border-lt);border-radius:8px;padding:12px 14px;font-size:11px;color:var(--near-black);text-decoration:none;transition:all 0.15s;cursor:pointer}
+.timeline .tl:hover{border-color:var(--nhs-blue);background:#F4F9FC;transform:translateY(-1px);box-shadow:0 4px 10px rgba(0,94,184,0.08);text-decoration:none}
+.timeline .tl-label{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--nhs-blue)}
+.timeline .tl-name{font-weight:700;color:var(--near-black);margin:3px 0}
 .timeline .tl-dates{color:#5A6B76}
-.timeline .tl-count{margin-top:4px;font-size:10px;font-weight:700;color:var(--nhs-blue)}
-.ws-stage{margin-bottom:28px;background:#fff;border:1px solid var(--border-lt);border-radius:12px;overflow:hidden}
+.timeline .tl-count{margin-top:5px;font-size:10px;font-weight:700;color:var(--nhs-blue)}
+.timeline .tl-arrow{display:inline-block;margin-left:6px;font-size:11px}
+.ws-stage{margin-bottom:28px;background:#fff;border:1px solid var(--border-lt);border-radius:12px;overflow:hidden;scroll-margin-top:20px}
 .ws-stage-head{padding:14px 20px;background:linear-gradient(180deg,#005EB8 0%,#004fa2 100%);color:#fff;display:grid;grid-template-columns:110px 1fr 130px 100px;align-items:center;gap:14px}
 .ws-stage-label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
 .ws-stage-name{font-size:16px;font-weight:800}
@@ -58,9 +60,9 @@ a:hover{text-decoration:underline}
 .ws-field p{margin:0;font-size:13px;line-height:1.5;color:#231F20}
 .ws-list{margin:0;padding-left:20px}
 .ws-list li{font-size:13px;line-height:1.55;margin:3px 0}
-.ws-list-tight li{margin:1px 0;font-size:12.5px}
-.ws-att-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.ws-att-core,.ws-att-extras{background:#F7FAFC;border-radius:6px;padding:10px 12px}
+.ws-list-tight li{margin:2px 0;font-size:12.5px}
+.ws-att-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}
+.ws-att-core,.ws-att-extras{background:#F7FAFC;border-radius:6px;padding:12px 14px}
 .ws-att-extras{background:#FDF6E9;border:1px solid #F4E1BA}
 .ws-att-caption{font-size:10px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#5A6B76;margin-bottom:6px}
 .ws-att-extras .ws-att-caption{color:#8A6A1D}
@@ -96,15 +98,15 @@ a:hover{text-decoration:underline}
   <h3>Core group · attends every workshop</h3>
   <p>The same anchor group runs through every session so continuity holds across the twelve weeks. Additional specialists are pulled in only where the session content calls for it.</p>
   <ul class="core-list">
-    <li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li>
+    <li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li>
   </ul>
 </div>
 
-<div class="timeline"><div class="tl"><div class="tl-label">STAGE 1</div><div class="tl-name">Procurement Planning</div><div class="tl-dates">Jul to Oct 26</div><div class="tl-count">6 workshops</div></div><div class="tl"><div class="tl-label">STAGE 2</div><div class="tl-name">Pre-Procurement Governance</div><div class="tl-dates">Nov to Dec 26</div><div class="tl-count">3 workshops</div></div><div class="tl"><div class="tl-label">STAGE 3</div><div class="tl-name">Tender and Bid</div><div class="tl-dates">Jan to Feb 27</div><div class="tl-count">2 workshops</div></div><div class="tl"><div class="tl-label">STAGE 4</div><div class="tl-name">Evaluation and Award</div><div class="tl-dates">Feb to Jun 27</div><div class="tl-count">2 workshops</div></div><div class="tl"><div class="tl-label">STAGE 5</div><div class="tl-name">Contract and Mobilisation</div><div class="tl-dates">Jun to Aug 27</div><div class="tl-count">2 workshops</div></div></div>
+<div class="timeline"><a class="tl" href="#stage-S1"><div class="tl-label">STAGE 1</div><div class="tl-name">Procurement Planning</div><div class="tl-dates">Jul to Oct 26</div><div class="tl-count">6 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S2"><div class="tl-label">STAGE 2</div><div class="tl-name">Pre-Procurement Governance</div><div class="tl-dates">Nov to Dec 26</div><div class="tl-count">3 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S3"><div class="tl-label">STAGE 3</div><div class="tl-name">Tender and Bid</div><div class="tl-dates">Jan to Feb 27</div><div class="tl-count">2 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S4"><div class="tl-label">STAGE 4</div><div class="tl-name">Evaluation and Award</div><div class="tl-dates">Feb to Jun 27</div><div class="tl-count">2 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S5"><div class="tl-label">STAGE 5</div><div class="tl-name">Contract and Mobilisation</div><div class="tl-dates">Jun to Aug 27</div><div class="tl-count">2 workshops <span class="tl-arrow">→</span></div></a></div>
 
 <main>
 
-  <section class="ws-stage" data-stage="S1">
+  <section class="ws-stage" data-stage="S1" id="stage-S1">
     <div class="ws-stage-head">
       <div class="ws-stage-label">STAGE 1</div>
       <div class="ws-stage-name">Procurement Planning</div>
@@ -125,7 +127,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><ul class="ws-list"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Simon Leigh — Health Economist</li><li>Louise Bird — Commercial Finance Lead, NHSE</li><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Meera Parkash — Clinical Safety Lead</li><li>Wendy Higgins — Information Governance Lead</li><li>Will Twells — Product Manager, HomeTest / service owner</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Read the Recommendation Paper v1.1 and the Six Cornerstones summary. Bring current thinking on volumes for HIV and PSA-AS. Preview the 5/4/4.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Get to first-cut positions on each of the six cornerstones</li><li>Surface disagreements early and assign owners</li><li>Agree the workshop cadence and outputs for the rest of S1</li><li>Nominate a scribe and a decisions log owner</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>First-cut position on each cornerstone with named owner</li><li>Cornerstone-by-cornerstone action list with target dates</li></ul></div>
@@ -145,7 +147,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Simon Leigh (Health Economist)</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Simon Leigh — Health Economist</li><li>Louise Bird — Commercial Finance Lead, NHSE</li><li>Katharine North — Digital Innovation Senior Manager</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Health Economist working papers on total addressable, addressable and served market for HIV and PSA-AS. 5/4/4 template.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Land planning-assumption volumes for HIV, PSA-AS and the next three pathways</li><li>Convert volumes to £ using indicative unit prices</li><li>Identify the sensitivity range that changes framework value materially</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Which volume basis becomes the planning assumption</li><li>Which pathways are named on the 5/4/4 for tier 1 vs tier 2/3</li></ul></div>
@@ -165,7 +167,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Simon Leigh (Health Economist)</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Simon Leigh — Health Economist</li><li>Louise Bird — Commercial Finance Lead, NHSE</li><li>Daniel Lynagh — Payments / Commercial, NHSE</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Health Economist pricing paper. Existing tariff work from the Recommendation Paper. Preventx and SH:24 cost breakdown emails.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Land a maximum/ceiling pricing approach</li><li>Agree tariff structure and payment flow direction</li><li>Confirm the model supports Plan A and Plan C without contortion</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Pricing model direction (max price vs range vs indexed)</li><li>Payment flow: direct to supplier vs via NHSE vs via commissioner</li><li>Whether tariff is a Phase 2 output or Alpha dependency</li></ul></div>
@@ -185,7 +187,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><ul class="ws-list"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Chris Coltman — NHS Supply Chain</li><li>Hazel Randall — PSR / Procurement Act engagement, Commercial</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Framework administration option paper. SBS and NHS Supply Chain conversations to date. CCS soundings.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Compare four administration routes against timing, cost and control</li><li>Land the recommendation with the group</li><li>Sequence the sign-off with Cabinet Office and HMT approvals</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Preferred framework administrator</li><li>Fallback if preferred route can't hit August 2027</li></ul></div>
@@ -205,7 +207,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><ul class="ws-list"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Hazel Randall — PSR / Procurement Act engagement, Commercial</li><li>Laura Elstrup — NHS Online research lead</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>IDA Tactical Procurement Plan. Recommendation Paper Plan C section. Existing framework options review (G-Cloud, DOS, DPS).</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Confirm framework choice for NHS Online IDA</li><li>Map the commissioner journey and where Plan C lots land</li><li>Land the SBS PSR bridge terms</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Framework selection for Plan C interim</li><li>Commissioner playbook v0.1 scope</li><li>Whether the PSR bridge stays 6 months or extends</li></ul></div>
@@ -225,15 +227,15 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Clinical Safety Lead</li><li>Legal lead</li></ul></div></div></div>
-        <div class="ws-field"><h4>Prep required</h4><p>Existing service spec fragments from Recommendation Paper and Operating Model. Service overlays inventory.</p></div>
-        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Split the ITT into four tracks with named leads</li><li>Agree drafting cadence and review gates</li><li>Identify overlay-specific vs common content</li></ul></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Meera Parkash — Clinical Safety Lead</li><li>Wendy Higgins — Information Governance Lead</li><li>Will Twells — Product Manager, HomeTest / service owner</li><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li></ul></div></div></div>
+        <div class="ws-field"><h4>Prep required</h4><p>Existing service spec fragments from Recommendation Paper and Operating Model. Service overlays inventory. Data controller and clinical safety positions.</p></div>
+        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Split the ITT into four tracks with named leads</li><li>Agree drafting cadence and review gates</li><li>Identify overlay-specific vs common content</li><li>Confirm clinical safety and IG hooks into the drafting</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Track leads for each of the four ITT areas</li><li>Review gate cadence (weekly, fortnightly)</li><li>Common vs overlay-specific split</li></ul></div>
         <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>ITT drafting plan (v0.1)</li><li>Track leads confirmed</li><li>Drafting responsibilities matrix</li></ul></div>
       </div>
     </details></div>
   </section>
-  <section class="ws-stage" data-stage="S2">
+  <section class="ws-stage" data-stage="S2" id="stage-S2">
     <div class="ws-stage-head">
       <div class="ws-stage-label">STAGE 2</div>
       <div class="ws-stage-name">Pre-Procurement Governance</div>
@@ -254,7 +256,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Finance lead</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Louise Bird — Commercial Finance Lead, NHSE</li><li>Daniel Lynagh — Payments / Commercial, NHSE</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Draft business case. Cabinet Office guidance on spend control thresholds. HMT settlement letter template.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Confirm business case draft is ready to submit</li><li>Book slots for Cabinet Office and HMT reviews</li><li>Sequence approvals with framework administrator decision</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Business case submission date</li><li>Cabinet Office review window</li><li>HMT settlement letter target date</li></ul></div>
@@ -274,7 +276,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Clinical Safety Lead</li><li>Legal lead</li><li>PTT rep</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Meera Parkash — Clinical Safety Lead</li><li>Wendy Higgins — Information Governance Lead</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Existing DPIA drafts. Data Controller Notes (Dec 2025). Clinical safety hazard log.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Land the data controller framework for ITT</li><li>Sign off DPIA scope for Public Beta and framework</li><li>Confirm clinical safety position and hazard log status</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Data controller framework (NHSE role)</li><li>DPIA sign-off timeline</li><li>Clinical safety accountability model</li></ul></div>
@@ -294,7 +296,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Procurement adviser</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Hazel Randall — PSR / Procurement Act engagement, Commercial</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Draft evaluation criteria. Weighting proposal. Scoring model template.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Agree weightings across price, quality, delivery</li><li>Confirm scoring model (0-5 vs 0-10)</li><li>Plan evaluator training</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Weighting split (per-lot or single)</li><li>Scoring model</li><li>Evaluator training approach</li></ul></div>
@@ -302,7 +304,7 @@ a:hover{text-decoration:underline}
       </div>
     </details></div>
   </section>
-  <section class="ws-stage" data-stage="S3">
+  <section class="ws-stage" data-stage="S3" id="stage-S3">
     <div class="ws-stage-head">
       <div class="ws-stage-label">STAGE 3</div>
       <div class="ws-stage-name">Tender and Bid</div>
@@ -323,7 +325,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><ul class="ws-list"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Annie Wakefield — Stakeholder Engagement (Servita)</li><li>Paul Butler — Lead Senior Communications and Engagement Manager, NHSE</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Draft ITT. Supplier engagement history from Supplier Forums 1-3. Clarification log template.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Finalise supplier briefing pack</li><li>Agree clarification handling process</li><li>Book briefing sessions</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Briefing pack sign-off</li><li>Clarification response SLA (48h, 5 days)</li><li>Number and format of briefing sessions</li></ul></div>
@@ -343,7 +345,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Panel chair</li><li>Procurement adviser</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Hazel Randall — PSR / Procurement Act engagement, Commercial</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Panel membership proposal. Conflicts register. Evaluation criteria pack from S2.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Confirm panel members and roles</li><li>Complete conflicts of interest register</li><li>Agree moderation and consensus approach</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Panel composition</li><li>COI declarations</li><li>Moderation approach (individual then group)</li></ul></div>
@@ -351,7 +353,7 @@ a:hover{text-decoration:underline}
       </div>
     </details></div>
   </section>
-  <section class="ws-stage" data-stage="S4">
+  <section class="ws-stage" data-stage="S4" id="stage-S4">
     <div class="ws-stage-head">
       <div class="ws-stage-label">STAGE 4</div>
       <div class="ws-stage-name">Evaluation and Award</div>
@@ -372,7 +374,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Evaluation panel</li><li>Procurement adviser</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Evaluation panel (constituted in S3)</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Mock bid (or previous bid anonymised). Scoring templates. Evaluation criteria pack.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Score the mock bid individually then compare</li><li>Discuss scoring divergences and align</li><li>Confirm any scoring rule refinements</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Scoring calibration adjustments (if any)</li><li>Panel readiness declaration</li></ul></div>
@@ -392,7 +394,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Evaluation panel</li><li>Legal lead</li><li>Procurement adviser</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Hazel Randall — PSR / Procurement Act engagement, Commercial</li><li>Evaluation panel</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Individual panel scores. Draft award recommendation. Standstill letter template.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Reach consensus on scoring</li><li>Draft award recommendation</li><li>Prepare standstill notification</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Award recommendation</li><li>Standstill window dates</li></ul></div>
@@ -400,7 +402,7 @@ a:hover{text-decoration:underline}
       </div>
     </details></div>
   </section>
-  <section class="ws-stage" data-stage="S5">
+  <section class="ws-stage" data-stage="S5" id="stage-S5">
     <div class="ws-stage-head">
       <div class="ws-stage-label">STAGE 5</div>
       <div class="ws-stage-name">Contract and Mobilisation</div>
@@ -421,7 +423,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Awarded suppliers</li><li>Operating Model Owner</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Deborah Osinaike — Procurement Lead, Commercial Directorate, NHSE</li><li>Will Twells — Product Manager, HomeTest / service owner</li><li>Awarded suppliers</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Signed contracts. Onboarding checklist. First-90-day template.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Sequence supplier onboarding</li><li>Agree first-90-day milestones</li><li>Set up supplier management cadence</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Onboarding order</li><li>First-90-day milestones per supplier</li><li>Supplier management meeting cadence</li></ul></div>
@@ -441,7 +443,7 @@ a:hover{text-decoration:underline}
         </div>
       </summary>
       <div class="ws-body">
-        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neil (chair, Deputy Director)</li><li>Mandy Holt</li><li>Rachel Flower</li><li>James Cowley (NHSE Commercial)</li><li>Richard Samuel</li><li>Chris Leary</li><li>Shirley Gaynor Ward</li><li>Scott Eason</li><li>Matt Thomas</li><li>Matt Visser</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Data lead</li><li>Operating Model Owner</li></ul></div></div></div>
+        <div class="ws-field"><h4>Attendees</h4><div class="ws-att-wrap"><div class="ws-att-core"><div class="ws-att-caption">Core group (attends every workshop)</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill — Deputy Director DTx (chair)</li><li>Rachel Flower — Deputy Director, IG, Legal &amp; Partnerships</li><li>Chris Leary — Deputy Director Clinical, Digital Clinical Informatics</li><li>Richard Samuel — Programme Director</li><li>Shirley Gaynor-Ward — Digital Diagnostics and Therapeutics, Product &amp; Platforms</li><li>Mandy Holt — NHSE Commercial</li><li>James Cowley — NHSE Commercial</li><li>Simone Bilton — Product Owner, Pathway 2</li><li>Scott Eason — Commercial Operations Lead, Partnerships</li><li>Matt Thomas — Principal Delivery Manager, Home Testing</li><li>Matt Visser — Financial Scrutiny / Technical Architecture</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session</div><ul class="ws-list ws-list-tight"><li>Will Twells — Product Manager, HomeTest / service owner</li><li>Data lead (TBC)</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>KPI framework draft. Dashboard prototype. Feedback loop design from Operating Model.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Confirm KPI set and calculation approach</li><li>Agree dashboard first-cut</li><li>Design feedback loop back to prioritisation</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>KPI list</li><li>Dashboard scope for v1</li><li>Feedback cadence</li></ul></div>
@@ -456,12 +458,12 @@ a:hover{text-decoration:underline}
     <div class="ws-standing">
       <div class="ws-standing-title">Commercial team standup</div>
       <div class="ws-standing-when">Weekly cadence throughout S1-S5 · 30 min</div>
-      <div class="ws-standing-att">Scott, Rachel, James (as needed), invited leads</div>
+      <div class="ws-standing-att">Scott Eason, Rachel Flower, James Cowley (as needed), invited leads</div>
       <div class="ws-standing-note">Blocker sweep, action tracking, upcoming decisions.</div>
     </div>
   </section>
 </main>
 
-<div class="foot">HomeTest programme · v0.2</div>
+<div class="foot">HomeTest programme · v0.4</div>
 </body>
 </html>
