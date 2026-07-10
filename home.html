@@ -106,7 +106,8 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
   .why-circle:hover { transform: translate(-50%, -50%) scale(1.03); box-shadow: 0 12px 40px rgba(0,32,64,0.28); }
   
   .why-portraits { display: flex; gap: 2px; justify-content: center; align-items: center; margin-bottom: 4px; }
-  .why-portraits img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; object-position: top center; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,32,64,0.18); background: #fff; }
+  .why-portraits img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; object-position: top center; border: 2px solid var(--amber); box-shadow: 0 1px 4px rgba(0,32,64,0.18); background: #fff; }
+  .why-portraits img.why-held { border: 2px dashed var(--amber-deep); opacity: 0.7; }
   .why-q { font-size: 28px; font-weight: 900; color: var(--nhs-dark); letter-spacing: -0.4px; line-height: 1; margin: 2px 0 4px; }
   .why-cap { font-size: 10px; color: var(--text-sec); line-height: 1.4; margin-bottom: 8px; padding: 0; max-width: 200px; }
   .why-pills { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; }
@@ -154,14 +155,21 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .hm-title{font-size:24px;font-weight:900;color:#fff;letter-spacing:-0.5px;margin-bottom:6px;}
 .hm-intro{font-size:13px;color:rgba(255,255,255,0.88);line-height:1.55;max-width:760px;}
 .hm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-.hm-tile{background:#fff;border-radius:13px;padding:18px 16px 16px;text-decoration:none;color:inherit;display:flex;flex-direction:column;border-top:5px solid;transition:transform 0.18s,box-shadow 0.22s;box-shadow:0 4px 14px rgba(0,0,0,0.12);}
+.hm-tile{background:#fff;border-radius:13px;padding:18px 16px 16px;color:inherit;display:flex;flex-direction:column;border-top:5px solid;transition:transform 0.18s,box-shadow 0.22s;box-shadow:0 4px 14px rgba(0,0,0,0.12);}
+.hm-tile-body{display:flex;flex-direction:column;flex-grow:1;text-decoration:none;color:inherit;}
+.hm-portraits a{display:inline-block;text-decoration:none;line-height:0;}
 .hm-tile:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.22);}
 .hm-tile.hm-patient{border-top-color:var(--amber);}
 .hm-tile.hm-sean{border-top-color:#6A4DBF;}
 .hm-tile.hm-commissioner{border-top-color:var(--nhs-blue);}
 .hm-tile.hm-clinician{border-top-color:var(--nhs-pink);}
 .hm-portraits{display:flex;justify-content:flex-start;gap:0;margin-bottom:10px;height:40px;align-items:end;}
-.hm-portraits img{width:36px;height:36px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,32,64,0.18);object-fit:cover;object-position:top center;background:#fff;}
+.hm-portraits img{width:36px;height:36px;border-radius:50%;border:2px solid;box-shadow:0 1px 4px rgba(0,32,64,0.18);object-fit:cover;object-position:top center;background:#fff;}
+.hm-tile.hm-patient .hm-portraits img{border-color:var(--amber);}
+.hm-tile.hm-patient .hm-portraits img.hm-held{border-style:dashed;border-color:var(--amber-deep);opacity:0.72;}
+.hm-tile.hm-sean .hm-portraits img{border-color:#6A4DBF;}
+.hm-tile.hm-commissioner .hm-portraits img{border-color:var(--nhs-blue);}
+.hm-tile.hm-clinician .hm-portraits img{border-color:var(--nhs-pink);}
 .hm-portraits img + img{margin-left:-10px;}
 .hm-tile-h{font-size:13.5px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.2px;margin-bottom:4px;}
 .hm-tile-strap{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;color:var(--amber-deep);}
@@ -468,7 +476,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
       <div class="why-portraits">
         <img src="Assets/Personas/abdul.png" alt="Abdul">
         <img src="Assets/Personas/mark.png" alt="Mark">
-        <img src="Assets/Personas/layla.png" alt="Layla">
+        <img src="Assets/Personas/devi.png" alt="Devi">
+        <img src="Assets/Personas/layla.png" alt="Layla (Held)" class="why-held" title="Layla — Held">
+        <img src="Assets/Personas/sean.png" alt="Sean">
       </div>
       <div class="why-q">WHY</div>
       <div class="why-cap">Better access. Earlier detection. Fairer outcomes. At scale.</div>
@@ -487,49 +497,57 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="hm-head">
       <div class="hm-eyebrow">Hearts and Minds</div>
       <h2 class="hm-title">Stories from the people who matter.</h2>
-      <p class="hm-intro">Architecture wins arguments. Stories win adoption. Four journeys, one per audience the model has to land with.</p>
+      <p class="hm-intro">Architecture wins arguments. Stories win adoption. Four tiles. Four audiences the model has to land with: the patients, the access story, the commissioners buying it and the clinicians running it.</p>
     </div>
     <div class="hm-grid">
-      <a href="HomeTest Operating Model - Hearts and Minds.html" class="hm-tile hm-patient">
+      <div class="hm-tile hm-patient">
         <div class="hm-portraits">
-          <img src="Assets/Personas/abdul.png" alt="Abdul">
-          <img src="Assets/Personas/mark.png" alt="Mark">
-          <img src="Assets/Personas/devi.png" alt="Devi">
-          <img src="Assets/Personas/layla.png" alt="Layla">
+          <a href="HomeTest Operating Model - Persona Abdul.html" title="Abdul"><img src="Assets/Personas/abdul.png" alt="Abdul"></a>
+          <a href="HomeTest Operating Model - Persona Mark.html" title="Mark"><img src="Assets/Personas/mark.png" alt="Mark"></a>
+          <a href="HomeTest Operating Model - Persona Devi.html" title="Devi"><img src="Assets/Personas/devi.png" alt="Devi"></a>
+          <a href="HomeTest Operating Model - Persona Layla.html" title="Layla — Held"><img src="Assets/Personas/layla.png" alt="Layla (Held)" class="hm-held"></a>
         </div>
-        <div class="hm-tile-strap">Patient stories</div>
-        <div class="hm-tile-h">Four patient journeys</div>
-        <div class="hm-tile-desc">Abdul, Mark, Devi and Layla. CVKM screening, PSA-AS surveillance, HbA1c at-risk register review, and iron deficiency anaemia held for a future GP-init landing.</div>
-        <div class="hm-tile-cta">Open all four &rarr;</div>
-      </a>
-      <a href="HomeTest Operating Model - Sean Journey.html" class="hm-tile hm-sean">
-        <div class="hm-portraits"><img src="Assets/Personas/sean.png" alt="Sean"></div>
-        <div class="hm-tile-strap">The access story</div>
-        <div class="hm-tile-h">Sean&apos;s journey</div>
-        <div class="hm-tile-desc">The horizontal cohort that cuts across every pathway. Learning disability, mental illness, needle phobia, children and young people. The people the system fails hardest.</div>
-        <div class="hm-tile-cta">Open Sean&apos;s story &rarr;</div>
-      </a>
-      <a href="HomeTest Operating Model - Hearts and Minds.html#commissioners" class="hm-tile hm-commissioner">
+        <a href="HomeTest Operating Model - Hearts and Minds.html#patients" class="hm-tile-body">
+          <div class="hm-tile-strap">Patient stories</div>
+          <div class="hm-tile-h">Four patient journeys</div>
+          <div class="hm-tile-desc">Abdul, Mark, Devi and Layla (held). CVKM screening, PSA-AS surveillance, HbA1c at-risk register review, and iron deficiency anaemia held for a future GP-init landing.</div>
+          <div class="hm-tile-cta">Open all four &rarr;</div>
+        </a>
+      </div>
+      <div class="hm-tile hm-sean">
+        <div class="hm-portraits"><a href="HomeTest Operating Model - Persona Sean.html" title="Sean"><img src="Assets/Personas/sean.png" alt="Sean"></a></div>
+        <a href="HomeTest Operating Model - Sean Journey.html" class="hm-tile-body">
+          <div class="hm-tile-strap">The access story</div>
+          <div class="hm-tile-h">Sean&apos;s journey</div>
+          <div class="hm-tile-desc">The horizontal cohort that cuts across every pathway. Learning disability, mental illness, needle phobia, children and young people. The people the system fails hardest.</div>
+          <div class="hm-tile-cta">Open Sean&apos;s story &rarr;</div>
+        </a>
+      </div>
+      <div class="hm-tile hm-commissioner">
         <div class="hm-portraits">
-          <img src="Assets/Personas/sarah.png" alt="Sarah">
-          <img src="Assets/Personas/catherine.png" alt="Catherine">
-          <img src="Assets/Personas/anita.png" alt="Anita">
+          <a href="HomeTest Operating Model - Persona Sarah.html" title="Sarah"><img src="Assets/Personas/sarah.png" alt="Sarah"></a>
+          <a href="HomeTest Operating Model - Persona Catherine.html" title="Catherine"><img src="Assets/Personas/catherine.png" alt="Catherine"></a>
+          <a href="HomeTest Operating Model - Persona Anita.html" title="Anita"><img src="Assets/Personas/anita.png" alt="Anita"></a>
         </div>
-        <div class="hm-tile-strap">Commissioner stories</div>
-        <div class="hm-tile-h">Three commissioners, three configurations</div>
-        <div class="hm-tile-desc">Sarah at the local authority (HIV self-testing). Catherine at the ICB (PSA active surveillance). Anita at the ICB/GP boundary (HbA1c at-risk register). Same operating model, three ways to buy.</div>
-        <div class="hm-tile-cta">Open the commissioner journeys &rarr;</div>
-      </a>
-      <a href="HomeTest Operating Model - Adam Journey.html" class="hm-tile hm-clinician">
+        <a href="HomeTest Operating Model - Hearts and Minds.html#commissioners" class="hm-tile-body">
+          <div class="hm-tile-strap">Commissioner stories</div>
+          <div class="hm-tile-h">Three commissioners, three configurations</div>
+          <div class="hm-tile-desc">Sarah at the local authority (HIV self-testing). Catherine at the ICB (PSA active surveillance). Anita at the ICB/GP boundary (HbA1c at-risk register). Same operating model, three ways to buy.</div>
+          <div class="hm-tile-cta">Open the commissioner journeys &rarr;</div>
+        </a>
+      </div>
+      <div class="hm-tile hm-clinician">
         <div class="hm-portraits">
-          <img src="Assets/Personas/adam.png" alt="Adam">
-          <img src="Assets/Personas/hannah.png" alt="Hannah">
+          <a href="HomeTest Operating Model - Persona Adam.html" title="Adam"><img src="Assets/Personas/adam.png" alt="Adam"></a>
+          <a href="HomeTest Operating Model - Persona Hannah.html" title="Hannah"><img src="Assets/Personas/hannah.png" alt="Hannah"></a>
         </div>
-        <div class="hm-tile-strap">Clinician stories</div>
-        <div class="hm-tile-h">Adam &amp; Hannah</div>
-        <div class="hm-tile-desc">Two clinician journeys. Consultant urologist on PSA-AS surveillance, and GP partner on routine Iron deficiency anaemia review. Same shape, different venue. Open either from the journey nav once you&apos;re in.</div>
-        <div class="hm-tile-cta">Open Adam&apos;s journey &rarr; (Hannah&apos;s sits alongside)</div>
-      </a>
+        <a href="HomeTest Operating Model - Hearts and Minds.html#clinicians" class="hm-tile-body">
+          <div class="hm-tile-strap">Clinician stories</div>
+          <div class="hm-tile-h">Two clinicians, two configurations</div>
+          <div class="hm-tile-desc">Adam, consultant urologist on PSA active surveillance. Hannah, GP holding two GP-init cohorts: HbA1c annual review (current) and iron deficiency anaemia (held). Same shape, different venue.</div>
+          <div class="hm-tile-cta">Open the clinician journeys &rarr;</div>
+        </a>
+      </div>
     </div>
   </div>
 
