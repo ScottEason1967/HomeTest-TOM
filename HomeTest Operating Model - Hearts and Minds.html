@@ -33,6 +33,12 @@
   .section-body{font-size:15px;color:var(--text-sec);line-height:1.75;max-width:820px;}
   .section-body strong{color:var(--text);font-weight:700;}
   .stories{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;}
+  .stories-machine{display:flex;flex-direction:column;gap:14px;margin-top:18px;}
+  .stories-machine-row{display:grid;gap:14px;}
+  .stories-machine-row.commissioners{grid-template-columns:1fr 1fr 1fr;}
+  .stories-machine-row.clinicians{grid-template-columns:1fr 1fr;}
+  .stories-machine-row.supplier{grid-template-columns:1fr;}
+  @media(max-width:820px){.stories-machine-row.commissioners,.stories-machine-row.clinicians{grid-template-columns:1fr;}}
   .story{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:start;background:var(--card);border:1px solid var(--border-lt);border-radius:12px;padding:16px 18px;box-shadow:0 6px 18px rgba(0,48,135,0.08);text-decoration:none;}
   .story:hover{box-shadow:0 10px 26px rgba(0,48,135,0.14);}
   .story img{width:84px;height:84px;border-radius:12px;object-fit:cover;display:block;}
@@ -125,33 +131,39 @@
   </div>
 
 
-  <h2 class="section-h">Four more stories. Inside the machine.</h2>
-  <p class="section-body">The patient stories above explain why the model deserves to exist. These four explain how it works for the people who run it: the commissioner who buys, the consultant who orders, the GP who holds the cohort, and the supplier the framework admits.</p>
-  <div class="stories">
-    <a class="story sarah" href="HomeTest Operating Model - Sarah Journey.html">
+  <h2 class="section-h">Six more stories. Inside the machine.</h2>
+  <p class="section-body">The patient stories above explain why the model deserves to exist. These six explain how it works for the people who run it. Three commissioners, buying at different levels of the system. The consultant urologist who leads Active Surveillance and the GP who holds the primary-care review cycle. And the supplier the framework admits.</p>
+  <div class="stories-machine">
+    <div class="stories-machine-row commissioners">
+      <a class="story sarah" href="HomeTest Operating Model - Sarah Journey.html">
       <img src="Assets/Personas/sarah.png" alt="Sarah">
       <div><div class="s-name">Sarah</div><div class="s-role">Commissioner &middot; LA sexual health &middot; the buyer story</div><p>Holds the HIV cohort budget for a local authority. Pays for testing to land where it actually reaches the people the in-clinic model misses. Knows the unit economics, knows the political ceiling, makes the call. <strong>Her full journey, six acts &rarr;</strong></p></div>
     </a>
-    <a class="story catherine" href="HomeTest Operating Model - Catherine Journey.html">
+      <a class="story catherine" href="HomeTest Operating Model - Catherine Journey.html">
       <img src="Assets/Personas/catherine.png" alt="Catherine">
       <div><div class="s-name">Catherine</div><div class="s-role">Commissioner &middot; ICB PSA active surveillance &middot; the pathway-buyer story</div><p>Holds the PSA active-surveillance cohort budget across her Integrated Care Board. Buys the pathway, not each Trust. Consultant urologists across her acute partners on the NICE monitoring cadence, phlebotomy capacity squeezed against post-pandemic clinic demand. Runs the framework via NHS mandate into her acute partners. <strong>Her full journey, six stages &rarr;</strong></p></div>
     </a>
-    <a class="story anita" href="HomeTest Operating Model - Anita Journey.html">
+      <a class="story anita" href="HomeTest Operating Model - Anita Journey.html">
       <img src="Assets/Personas/anita.png" alt="Anita">
       <div><div class="s-name">Anita</div><div class="s-role">Commissioner &middot; ICB / GP HbA1c &middot; the at-risk-register story</div><p>Holds the annual-review budget for the diabetes at-risk register in primary care. Buys the surveillance pattern that keeps working-age patients in the cycle instead of drifting out. QOF-adjacent for cadence, NHS DPP-linked for onward referral. HbA1c is the current working GP-init exemplar. <strong>Her full journey, six stages &rarr;</strong></p></div>
     </a>
-    <a class="story adam" href="HomeTest Operating Model - Adam Journey.html">
+    </div>
+    <div class="stories-machine-row clinicians">
+      <a class="story adam" href="HomeTest Operating Model - Adam Journey.html">
       <img src="Assets/Personas/adam.png" alt="Adam">
       <div><div class="s-name">Adam</div><div class="s-role">Consultant urologist &middot; PSA Active Surveillance &middot; the surveillance lead story</div><p>Holds the Active Surveillance cohort at his trust. Decides who comes off, who stays in, who escalates. The home PSA is the data point; the clinical decision stays in the clinic. <strong>His full journey, six acts &rarr;</strong></p></div>
     </a>
-    <a class="story hannah" href="HomeTest Operating Model - Hannah Journey.html">
+      <a class="story hannah" href="HomeTest Operating Model - Hannah Journey.html">
       <img src="Assets/Personas/hannah.png" alt="Hannah">
       <div><div class="s-name">Hannah</div><div class="s-role">GP &middot; two GP-init configurations &middot; the cohort-holder story</div><p>Holds the annual HbA1c review cycle for the diabetes at-risk register (Devi&apos;s cohort, current) and the IDA review cycle (Layla&apos;s cohort, held for a future GP-init landing). The clinical work is real; most of the lost cycles are venue problems, not clinical ones. The kit changes the venue, not the medicine. <strong>Her full journey, six acts &rarr;</strong></p></div>
     </a>
-    <a class="story joe" href="HomeTest Operating Model - Joe Journey.html">
+    </div>
+    <div class="stories-machine-row supplier">
+      <a class="story joe" href="HomeTest Operating Model - Joe Journey.html">
       <img src="Assets/Personas/joe.png" alt="Joe">
       <div><div class="s-name">Joe</div><div class="s-role">Supplier &middot; framework-admitted &middot; the once-and-reuse story</div><p>Runs a self-sample diagnostics business. Twenty staff, two labs, a kit, the regulatory paperwork done. The framework admits him once, and one conformance certificate carries across every commissioner who calls him off. <strong>His full journey, six acts &rarr;</strong></p></div>
     </a>
+    </div>
   </div>
 
   <h2 class="section-h">What this layer does on the road</h2>
