@@ -154,7 +154,10 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .hm-eyebrow{font-size:11px;font-weight:800;letter-spacing:2.4px;color:var(--amber);text-transform:uppercase;margin-bottom:8px;}
 .hm-title{font-size:24px;font-weight:900;color:#fff;letter-spacing:-0.5px;margin-bottom:6px;}
 .hm-intro{font-size:13px;color:rgba(255,255,255,0.88);line-height:1.55;max-width:760px;}
-.hm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.hm-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;}
+.hm-grid > .hm-tile{grid-column:span 2;}
+.hm-grid > .hm-tile:nth-child(4){grid-column:2 / span 2;}
+.hm-grid > .hm-tile:nth-child(5){grid-column:4 / span 2;}
 .hm-tile{background:#fff;border-radius:13px;padding:18px 16px 16px;color:inherit;display:flex;flex-direction:column;border-top:5px solid;transition:transform 0.18s,box-shadow 0.22s;box-shadow:0 4px 14px rgba(0,0,0,0.12);}
 .hm-tile-body{display:flex;flex-direction:column;flex-grow:1;text-decoration:none;color:inherit;}
 .hm-portraits a{display:inline-block;text-decoration:none;line-height:0;}
@@ -182,7 +185,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .hm-tile.hm-clinician .hm-tile-strap{color:var(--nhs-pink);}
 .hm-tile-desc{font-size:11.5px;color:var(--text-sec);line-height:1.45;flex-grow:1;}
 .hm-tile-cta{margin-top:10px;font-size:11px;font-weight:800;color:var(--nhs-dark);}
-@media(max-width:880px){.hm-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:880px){.hm-grid{grid-template-columns:repeat(2,1fr);}.hm-grid > .hm-tile{grid-column:auto;}.hm-grid > .hm-tile:nth-child(4),.hm-grid > .hm-tile:nth-child(5){grid-column:auto;}}
 @media(max-width:520px){.hm-grid{grid-template-columns:1fr;}}
 
 /* ===== STATUS + TEAMWORK strip ===== */

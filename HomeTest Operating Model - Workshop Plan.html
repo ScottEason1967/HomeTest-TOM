@@ -29,7 +29,10 @@ a:hover{text-decoration:underline}
 .core-panel .core-list li{margin:2px 0;break-inside:avoid;line-height:1.4}
 .scenario-filter{background:#fff;border:1px solid var(--border-lt);border-radius:10px;padding:14px 18px;margin-bottom:20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .scenario-filter-label{font-size:11px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;color:var(--nhs-blue)}
-.scenario-filter-desc{font-size:12px;color:#5A6B76;margin-right:auto}
+.scenario-filter-desc{font-size:12px;color:#5A6B76;margin-right:auto;min-width:0;flex:1 1 200px}
+
+.sf-btn-group{display:flex;gap:8px;flex-wrap:nowrap;flex-shrink:0}
+@media (max-width:720px){.sf-btn-group{flex-wrap:wrap}}
 .sf-btn{background:#fff;border:1.5px solid var(--border-lt);color:#3B4A54;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:700;cursor:pointer;transition:all 0.15s}
 .sf-btn:hover{border-color:var(--nhs-blue);color:var(--nhs-blue)}
 .sf-btn.active{background:var(--nhs-blue);border-color:var(--nhs-blue);color:#fff}
@@ -121,9 +124,11 @@ a:hover{text-decoration:underline}
 <div class="scenario-filter">
   <span class="scenario-filter-label">Filter by value scenario</span>
   <span class="scenario-filter-desc">Some workshops shift content or become optional depending on which value scenario the Cornerstones workshop lands.</span>
-  <button class="sf-btn active" data-filter="all">All workshops</button>
-  <button class="sf-btn" data-filter="low">Low scenario (~£30m)</button>
-  <button class="sf-btn" data-filter="high">High scenario (£250m+)</button>
+  <div class="sf-btn-group">
+    <button class="sf-btn active" data-filter="all">All workshops</button>
+    <button class="sf-btn" data-filter="low">Low scenario (~£30m)</button>
+    <button class="sf-btn" data-filter="high">High scenario (£250m+)</button>
+  </div>
 </div>
 
 <div class="timeline"><a class="tl" href="#stage-S1"><div class="tl-label">STAGE 1</div><div class="tl-name">Procurement Planning</div><div class="tl-dates">Jul to Oct 26</div><div class="tl-count">6 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S2"><div class="tl-label">STAGE 2</div><div class="tl-name">Pre-Procurement Governance</div><div class="tl-dates">Nov to Dec 26</div><div class="tl-count">3 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S3"><div class="tl-label">STAGE 3</div><div class="tl-name">Tender and Bid</div><div class="tl-dates">Jan to Feb 27</div><div class="tl-count">2 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S4"><div class="tl-label">STAGE 4</div><div class="tl-name">Evaluation and Award</div><div class="tl-dates">Feb to Jun 27</div><div class="tl-count">2 workshops <span class="tl-arrow">→</span></div></a><a class="tl" href="#stage-S5"><div class="tl-label">STAGE 5</div><div class="tl-name">Contract and Mobilisation</div><div class="tl-dates">Jun to Aug 27</div><div class="tl-count">2 workshops <span class="tl-arrow">→</span></div></a></div>
