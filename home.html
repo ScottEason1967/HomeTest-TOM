@@ -171,6 +171,9 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .hm-tile.hm-sean .hm-portraits a{border-color:#6A4DBF;}
 .hm-tile.hm-commissioner .hm-portraits a{border-color:var(--nhs-blue);}
 .hm-tile.hm-clinician .hm-portraits a{border-color:var(--nhs-pink);}
+.hm-tile.hm-supplier{border-top-color:#5BC093;}
+.hm-tile.hm-supplier .hm-portraits a{border-color:#5BC093;}
+.hm-tile.hm-supplier .hm-tile-strap{color:#2A7A4A;}
 .hm-portraits a + a{margin-left:-10px;}
 .hm-tile-h{font-size:13.5px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.2px;margin-bottom:4px;}
 .hm-tile-strap{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;color:var(--amber-deep);}
@@ -211,6 +214,14 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
 .cast-portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
 .cast-portrait::after{content:attr(data-name);position:absolute;bottom:-28px;left:50%;transform:translateX(-50%);background:var(--nhs-dark);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.15s;z-index:10;}
 .cast-portrait:hover::after{opacity:1;}
+/* Cast-portrait role-coloured borders */
+.cast-portrait[data-name="Sarah"],.cast-portrait[data-name="Catherine"],.cast-portrait[data-name="Anita"],.cast-portrait[data-name="Ruth"]{border-color:#003087;}
+.cast-portrait[data-name="Adam"],.cast-portrait[data-name="Hannah"]{border-color:#C9A0E3;}
+.cast-portrait[data-name="Aisha"],.cast-portrait[data-name="Ngozi"]{border-color:#7C2855;}
+.cast-portrait[data-name="Joe"]{border-color:#5BC093;}
+.cast-portrait[data-name="Priya"]{border-color:#005EB8;}
+.cast-portrait[data-name="David"]{border-color:#B85728;}
+
 
 .foot-strip{margin-top:18px;text-align:center;font-size:11px;color:rgba(255,255,255,0.78);line-height:1.6;}
 .foot-strip a{color:var(--amber);text-decoration:none;font-weight:700;}
@@ -498,7 +509,7 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
     <div class="hm-head">
       <div class="hm-eyebrow">Hearts and Minds</div>
       <h2 class="hm-title">Stories from the people who matter.</h2>
-      <p class="hm-intro">Architecture wins arguments. Stories win adoption. Four tiles. Four audiences the model has to land with: the patients, the access story, the commissioners buying it and the clinicians running it.</p>
+      <p class="hm-intro">Architecture wins arguments. Stories win adoption. Five tiles. Five audiences the model has to land with: the patients, the access story, the commissioners buying it, the clinicians running it, and the suppliers who build it.</p>
     </div>
     <div class="hm-grid">
       <div class="hm-tile hm-patient">
@@ -547,6 +558,17 @@ body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,san
           <div class="hm-tile-h">Two clinicians, two configurations</div>
           <div class="hm-tile-desc">Adam, consultant urologist on PSA active surveillance. Hannah, GP holding two GP-init cohorts: HbA1c annual review (current) and iron deficiency anaemia (held). Same shape, different venue.</div>
           <div class="hm-tile-cta">Open the clinician journeys &rarr;</div>
+        </a>
+      </div>
+      <div class="hm-tile hm-supplier">
+        <div class="hm-portraits">
+          <a href="HomeTest Operating Model - Persona Joe.html" title="Joe"><img src="Assets/Personas/joe.png" alt="Joe"></a>
+        </div>
+        <a href="HomeTest Operating Model - Joe Journey.html" class="hm-tile-body">
+          <div class="hm-tile-strap">Supplier story</div>
+          <div class="hm-tile-h">Joe&apos;s journey</div>
+          <div class="hm-tile-desc">The supplier the framework admits, once, and every commissioner reuses. Onboarding once, published call-off terms, portable assurance. The story of what &quot;easy onboarding&quot; actually feels like to a supplier trying to reach NHS scale.</div>
+          <div class="hm-tile-cta">Open Joe&apos;s story &rarr;</div>
         </a>
       </div>
     </div>
