@@ -94,6 +94,17 @@ a:hover{text-decoration:underline}
 .foot{margin-top:36px;font-size:11px;color:#5A6B76;text-align:center}
 @media (max-width:900px){.ws-att-wrap{grid-template-columns:1fr}}
 .ws-owner-flag{color:#DA291C;font-weight:800;font-size:11px;margin-top:2px;letter-spacing:0.2px}
+
+/* main-model nav (plumbed in) */
+.topnav{background:#fff;border-bottom:1px solid #D6DEE5;padding:14px 36px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;font-size:13px;}
+.topnav .nav-back{font-size:13px;font-weight:700;color:#003087;text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+.topnav .nav-back:hover{color:#005EB8;}
+.topnav .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
+.topnav .nav-siblings a{font-size:12.5px;font-weight:600;color:#4C6272;text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
+.topnav .nav-siblings a:hover{background:#f0f4f8;color:#212B32;}
+.topnav .nav-siblings .nav-sep{display:inline-block;width:1px;height:18px;background:#D6DEE5;margin:0 6px;}
+.topnav .nav-rg{background:#FFB91D;color:#003087;font-weight:800;padding:7px 14px;border-radius:6px;text-decoration:none;font-size:12.5px;letter-spacing:0.2px;margin-left:auto;white-space:nowrap;}
+.topnav .nav-rg:hover{background:#FFD45A;color:#003087;}
 </style>
 </head>
 <body>
@@ -105,8 +116,23 @@ a:hover{text-decoration:underline}
   document.body.innerHTML = '<div style="padding:40px;font-family:sans-serif;text-align:center;color:#666"><h2>Access required</h2><p>This page requires authorisation.</p></div>';
 })();
 </script>
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Why.html">Why</a>
+    <a href="HomeTest Operating Model - What.html">What</a>
+    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
+    <a href="HomeTest Operating Model - Operational.html">How</a>
+    <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <a href="HomeTest Operating Model - Hearts and Minds.html">Hearts and Minds</a>
+    <a href="HomeTest Operating Model - Teamwork.html">Teamwork</a>
+    <span class="nav-sep"></span>
+    <a href="HomeTest Operating Model - Status.html">Status</a>
+    <a href="reading-guide.html" class="nav-rg">Reading guide</a>
+  </div>
+</nav>
 <div class="hero">
-  <a class="back-link" href="HomeTest Operating Model - Plan Detail.html">← Back to Plan Detail</a>
+  <a class="back-link" href="HomeTest Operating Model - Milestone Plan.html">← Back to Milestone Plan</a>
   <div class="subtitle">HOMETEST OPERATING MODEL</div>
   <h1>Workshop programme</h1>
   <div class="lede">Structured working sessions distributed across the five procurement stages, each anchored to a specific decision or output that needs to land in that stage. Ownership of each session and its outputs sits on the programme side; the commercial team attends and consumes the outputs into the sourcing strategy. Every workshop is a click-through with a full agenda: attendees, prep required, objectives, decisions to land and outputs.</div>
