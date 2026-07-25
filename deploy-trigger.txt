@@ -1,0 +1,6 @@
+GitHub Pages rebuild trigger
+
+This file exists only to create a commit that forces a fresh GitHub Pages deployment after a stuck/queued deploy.
+Safe to delete once the site has updated.
+
+Created (UTC): 2026-07-25T11:29:01Z
