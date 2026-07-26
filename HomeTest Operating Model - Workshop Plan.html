@@ -117,7 +117,7 @@ a:hover{text-decoration:underline}
 /* standalone nav full-bleed fix (centred body) */
 body{padding-top:0;}
 html{overflow-x:hidden;}
-.cnav{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);margin-bottom:26px;box-sizing:border-box;}
+
 
 /* three-tier attendees */
 .ws-att-wrap{grid-template-columns:1fr 1fr 1fr;gap:16px}
@@ -144,6 +144,16 @@ html{overflow-x:hidden;}
 .core-lead-text{font-size:14px;font-weight:700;color:#9F2D2D;line-height:1.4}
 </style>
 <style>html{scroll-padding-top:90px;}</style>
+<style>
+/* ==== House visual-consistency lift (vis-lift 20260726_100423) ==== */
+
+html{ background:linear-gradient(180deg,#005EB8 0%,#003087 100%); background-attachment:fixed; }
+body{ background:transparent !important; padding:0 !important; }
+
+.page-card{ background:#fff; border-radius:18px; box-shadow:0 14px 40px rgba(0,48,135,0.20); padding:34px 40px 56px; margin:26px 0 44px; }
+.amber-rule{ width:72px; height:4px; background:#FFB91D; border-radius:2px; margin:0 0 20px; }
+@media (max-width:720px){ .page-card{ border-radius:12px; padding:24px 20px 36px; } }
+</style>
 </head>
 <body>
 <script>
@@ -155,6 +165,8 @@ html{overflow-x:hidden;}
 })();
 </script>
 <nav class="cnav"><div class="cnav-brand">HomeTest &middot; Commercial sourcing strategy</div><div class="cnav-tabs"><a href="HomeTest Operating Model - Introduction.html" class="cnav-tab">Introduction</a><a href="HomeTest Operating Model - Milestone Plan.html" class="cnav-tab">Milestone Plan</a><a href="HomeTest Operating Model - Workshop Plan.html" class="cnav-tab active">Workshop Programme</a><a href="HomeTest Operating Model - Future State Deliverables.html" class="cnav-tab">Future State Deliverables</a></div></nav>
+<div class="page-card">
+<div class="amber-rule"></div>
 <div class="hero">
   <a class="back-link" href="HomeTest Operating Model - Milestone Plan.html">← Back to Milestone Plan</a>
   <div class="subtitle">HOMETEST OPERATING MODEL</div>
@@ -673,5 +685,6 @@ html{overflow-x:hidden;}
   });
 })();
 </script>
+</div>
 </body>
 </html>
