@@ -13,7 +13,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:var(--font);color:var(--near-black);background:#FAFBFC}
-body{padding:32px 44px 64px;max-width:none;margin:0;line-height:1.5}
+body{padding:32px 44px 64px;max-width:1180px;margin:0 auto;line-height:1.5}
 a{color:var(--nhs-blue);text-decoration:none}
 a:hover{text-decoration:underline}
 .hero{background:linear-gradient(180deg,#003087 0%,#004fa2 100%);color:#fff;padding:34px 40px 30px;border-radius:14px;margin-bottom:32px;position:relative}
@@ -117,7 +117,7 @@ a:hover{text-decoration:underline}
 /* standalone nav full-bleed fix (centred body) */
 body{padding-top:0;}
 html{overflow-x:hidden;}
-
+.cnav{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);margin-bottom:26px;box-sizing:border-box;}
 
 /* three-tier attendees */
 .ws-att-wrap{grid-template-columns:1fr 1fr 1fr;gap:16px}
@@ -143,17 +143,6 @@ html{overflow-x:hidden;}
 .core-tier-lead .ws-att-caption{color:#B23A3A;margin-bottom:8px}
 .core-lead-text{font-size:14px;font-weight:700;color:#9F2D2D;line-height:1.4}
 </style>
-<style>html{scroll-padding-top:90px;}</style>
-<style>
-/* ==== House visual-consistency lift (vis-lift 20260726_100423) ==== */
-
-html{ background:linear-gradient(180deg,#005EB8 0%,#003087 100%); background-attachment:fixed; }
-body{ background:transparent !important; padding:0 !important; }
-
-.page-card{ background:#fff; border-radius:18px; box-shadow:0 14px 40px rgba(0,48,135,0.20); padding:34px 40px 56px; margin:26px auto 44px; max-width:1480px; }
-.amber-rule{ width:72px; height:4px; background:#FFB91D; border-radius:2px; margin:0 0 20px; }
-@media (max-width:720px){ .page-card{ border-radius:12px; padding:24px 20px 36px; } }
-</style>
 </head>
 <body>
 <script>
@@ -165,8 +154,6 @@ body{ background:transparent !important; padding:0 !important; }
 })();
 </script>
 <nav class="cnav"><div class="cnav-brand">HomeTest &middot; Commercial sourcing strategy</div><div class="cnav-tabs"><a href="HomeTest Operating Model - Introduction.html" class="cnav-tab">Introduction</a><a href="HomeTest Operating Model - Milestone Plan.html" class="cnav-tab">Milestone Plan</a><a href="HomeTest Operating Model - Workshop Plan.html" class="cnav-tab active">Workshop Programme</a><a href="HomeTest Operating Model - Future State Deliverables.html" class="cnav-tab">Future State Deliverables</a></div></nav>
-<div class="page-card">
-<div class="amber-rule"></div>
 <div class="hero">
   <a class="back-link" href="HomeTest Operating Model - Milestone Plan.html">← Back to Milestone Plan</a>
   <div class="subtitle">HOMETEST OPERATING MODEL</div>
@@ -283,7 +270,7 @@ body{ background:transparent !important; padding:0 !important; }
           <div class="ws-card-meta">
             <div class="ws-when">w/c 17 Aug 2026 · <span class="ws-dur">2 hours</span> <span class="ws-scenario-badge sb-shifts">Content shifts by scenario</span></div>
             <div class="ws-card-title">Commercial models</div><div class="ws-owner-flag">Programme-led, lead to be confirmed</div>
-            <div class="ws-oneliner">Pricing structure, tariff design and payment flow. Must work for Plan A and Plan C together.</div>
+            <div class="ws-oneliner">Pricing structure, tariff design and payment flow. Must work for the framework and the interim route together.</div>
           </div>
           <span class="ws-toggle">▾</span>
         </div>
@@ -292,7 +279,7 @@ body{ background:transparent !important; padding:0 !important; }
         <div class="ws-scenario-note">Ceiling pricing values differ by scenario. Low scenario constrains headline framework value; high scenario opens more pricing headroom but pulls in additional approvals.</div>
         <div class="ws-field"><h4>Attendees</h4><div class="ws-att-lead"><span class="ws-att-lead-cap">Session lead</span>Programme team member(s) to be identified</div><div class="ws-att-wrap"><div class="ws-att-fs"><div class="ws-att-caption">Future State team &middot; support and facilitate</div><ul class="ws-list ws-list-tight"><li>James Cowley</li><li>Rachel Flower</li><li>Scott Eason</li><li>Hannah Brian</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session &middot; experts</div><ul class="ws-list ws-list-tight"><li>Simon Leigh</li><li>Mandie Holt (optional)</li></ul></div><div class="ws-att-contrib"><div class="ws-att-caption">Contributors &middot; core group, SLT and others as needed</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill</li><li>Chris Leary</li><li>Richard Samuel</li><li>Shirley Gaynor-Ward</li><li>Simone Bilton</li><li>Matt Thomas</li><li>Matt Visser</li><li>Will Twells</li></ul></div></div></div>
         <div class="ws-field"><h4>Prep required</h4><p>Health Economist pricing paper. Existing tariff work from the Recommendation Paper. Preventx and SH:24 cost breakdown emails.</p></div>
-        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Land a maximum/ceiling pricing approach</li><li>Agree tariff structure and payment flow direction</li><li>Confirm the model supports Plan A and Plan C without contortion</li></ul></div>
+        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Land a maximum/ceiling pricing approach</li><li>Agree tariff structure and payment flow direction</li><li>Confirm the model supports the framework and the interim route without contortion</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Pricing model direction (max price vs range vs indexed)</li><li>Payment flow: direct to supplier vs via NHSE vs via commissioner</li><li>Whether tariff is a Phase 2 output or Alpha dependency</li></ul></div>
         <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>Commercial models direction paper</li><li>Pricing recommendation for Recommendation Paper appendix</li></ul></div>
       </div>
@@ -324,19 +311,19 @@ body{ background:transparent !important; padding:0 !important; }
           <span class="ws-seq">6</span>
           <div class="ws-card-meta">
             <div class="ws-when">w/c 24 Aug 2026 · <span class="ws-dur">2 hours</span> <span class="ws-scenario-badge sb-both">Both scenarios</span></div>
-            <div class="ws-card-title">Interim route — Plan C design</div><div class="ws-owner-flag">Programme-led, lead to be confirmed</div>
+            <div class="ws-card-title">Interim route design</div><div class="ws-owner-flag">Programme-led, lead to be confirmed</div>
             <div class="ws-oneliner">Commissioner-led interim via existing frameworks. NHS Online IDA is the first live instance.</div>
           </div>
           <span class="ws-toggle">▾</span>
         </div>
       </summary>
-      <div class="ws-body"><div class="ws-decides"><span class="ws-decides-label">Decides on the roadmap</span><a class="ws-decides-link" href="HomeTest Operating Model - Milestone Plan.html#a-S1-27">Cornerstone 4 &mdash; Interim route (Plan C) &rarr;</a></div>
+      <div class="ws-body"><div class="ws-decides"><span class="ws-decides-label">Decides on the roadmap</span><a class="ws-decides-link" href="HomeTest Operating Model - Milestone Plan.html#a-S1-27">Cornerstone 4 &mdash; Interim route &rarr;</a></div>
         
         <div class="ws-field"><h4>Attendees</h4><div class="ws-att-lead"><span class="ws-att-lead-cap">Session lead</span>Programme team member(s) to be identified</div><div class="ws-att-wrap"><div class="ws-att-fs"><div class="ws-att-caption">Future State team &middot; support and facilitate</div><ul class="ws-list ws-list-tight"><li>James Cowley</li><li>Rachel Flower</li><li>Scott Eason</li><li>Hannah Brian</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session &middot; experts</div><ul class="ws-list ws-list-tight"><li>Mandie Holt (optional)</li></ul></div><div class="ws-att-contrib"><div class="ws-att-caption">Contributors &middot; core group, SLT and others as needed</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill</li><li>Chris Leary</li><li>Richard Samuel</li><li>Shirley Gaynor-Ward</li><li>Simone Bilton</li><li>Matt Thomas</li><li>Matt Visser</li><li>Will Twells</li></ul></div></div></div>
-        <div class="ws-field"><h4>Prep required</h4><p>IDA Tactical Procurement Plan. Recommendation Paper Plan C section. Existing framework options review (G-Cloud, DOS, DPS).</p></div>
-        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Confirm framework choice for NHS Online IDA</li><li>Map the commissioner journey and where Plan C lots land</li><li>Land the SBS PSR bridge terms</li></ul></div>
-        <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Framework selection for Plan C interim</li><li>Commissioner playbook v0.1 scope</li><li>Whether the PSR bridge stays 6 months or extends</li></ul></div>
-        <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>Plan C interim design paper</li><li>Commissioner playbook outline</li><li>PSR bridge terms note</li></ul></div>
+        <div class="ws-field"><h4>Prep required</h4><p>IDA Tactical Procurement Plan. Recommendation Paper interim route section. Existing framework options review (G-Cloud, DOS, DPS).</p></div>
+        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Confirm framework choice for NHS Online IDA</li><li>Map the commissioner journey and where interim-route lots land</li><li>Land the SBS PSR bridge terms</li></ul></div>
+        <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Framework selection for the interim route</li><li>Commissioner playbook v0.1 scope</li><li>Whether the PSR bridge stays 6 months or extends</li></ul></div>
+        <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>Interim route design paper</li><li>Commissioner playbook outline</li><li>PSR bridge terms note</li></ul></div>
       </div>
     </details>
     <details class="ws-card" data-scenario="both" id="ws-S1-6">
@@ -373,8 +360,8 @@ body{ background:transparent !important; padding:0 !important; }
       </summary>
       <div class="ws-body"><div class="ws-decides"><span class="ws-decides-label">Decides on the roadmap</span><a class="ws-decides-link" href="HomeTest Operating Model - Milestone Plan.html#a-S1-6">Early market engagement &rarr;</a></div>
         <div class="ws-field"><h4>Attendees</h4><div class="ws-att-lead"><span class="ws-att-lead-cap">Session lead</span>Richard Samuel &middot; Partnerships</div><div class="ws-att-wrap"><div class="ws-att-fs"><div class="ws-att-caption">Future State team &middot; support and facilitate</div><ul class="ws-list ws-list-tight"><li>James Cowley</li><li>Rachel Flower</li><li>Scott Eason</li><li>Hannah Brian</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session &middot; experts</div><ul class="ws-list ws-list-tight"><li>Mandie Holt (optional)</li><li>Commissioner representatives</li></ul></div><div class="ws-att-contrib"><div class="ws-att-caption">Contributors &middot; core group, SLT and others as needed</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill</li><li>Chris Leary</li><li>Richard Samuel</li><li>Shirley Gaynor-Ward</li><li>Simone Bilton</li><li>Matt Thomas</li><li>Matt Visser</li><li>Will Twells</li></ul></div></div></div>
-        <div class="ws-field"><h4>Prep required</h4><p>Plan C commissioner cohort and route mapping work to date. The three confirmed commissioner types (paying customers, pathway transformers, replicators).</p></div>
-        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Define the commissioner audiences and what each needs from the programme</li><li>Shape the commissioner engagement plan ahead of Stage 2</li><li>Confirm how commissioner input feeds the ITT specification and Plan C routes</li></ul></div>
+        <div class="ws-field"><h4>Prep required</h4><p>Interim commissioner cohort and route mapping work to date. The three confirmed commissioner types (paying customers, pathway transformers, replicators).</p></div>
+        <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Define the commissioner audiences and what each needs from the programme</li><li>Shape the commissioner engagement plan ahead of Stage 2</li><li>Confirm how commissioner input feeds the ITT specification and the interim routes</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Commissioner engagement approach and cadence</li><li>Who fronts commissioner engagement</li></ul></div>
         <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>Input to the commissioner engagement plan (Stage 2 activity)</li><li>Commissioner engagement calendar</li></ul></div>
       </div>
@@ -535,10 +522,10 @@ body{ background:transparent !important; padding:0 !important; }
       </summary>
       <div class="ws-body"><div class="ws-decides"><span class="ws-decides-label">Decides on the roadmap</span><a class="ws-decides-link" href="HomeTest Operating Model - Milestone Plan.html#pc-S3-2">Commissioner support office &rarr;</a></div>
         <div class="ws-field"><h4>Attendees</h4><div class="ws-att-lead"><span class="ws-att-lead-cap">Session lead</span>Programme team member(s) to be identified</div><div class="ws-att-wrap"><div class="ws-att-fs"><div class="ws-att-caption">Future State team &middot; support and facilitate</div><ul class="ws-list ws-list-tight"><li>James Cowley</li><li>Rachel Flower</li><li>Scott Eason</li><li>Hannah Brian</li></ul></div><div class="ws-att-extras"><div class="ws-att-caption">Plus for this session &middot; experts</div><ul class="ws-list ws-list-tight"><li>Mandie Holt (optional)</li><li>Commissioner representatives</li></ul></div><div class="ws-att-contrib"><div class="ws-att-caption">Contributors &middot; core group, SLT and others as needed</div><ul class="ws-list ws-list-tight"><li>Martin O'Neill</li><li>Chris Leary</li><li>Richard Samuel</li><li>Shirley Gaynor-Ward</li><li>Simone Bilton</li><li>Matt Thomas</li><li>Matt Visser</li><li>Will Twells</li></ul></div></div></div>
-        <div class="ws-field"><h4>Prep required</h4><p>Commissioner engagement plan. Plan C playbook. Route confirmations to date.</p></div>
+        <div class="ws-field"><h4>Prep required</h4><p>Commissioner engagement plan. Interim route playbook. Route confirmations to date.</p></div>
         <div class="ws-field"><h4>Objectives</h4><ul class="ws-list"><li>Walk the commissioner onboarding journey end to end</li><li>Confirm support arrangements for the first commissioner-led procurements</li><li>Surface friction points ahead of first use</li></ul></div>
         <div class="ws-field"><h4>Decisions to land</h4><ul class="ws-list"><li>Onboarding approach for early adopter commissioners</li><li>Support model until the commissioner support office stands up</li></ul></div>
-        <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>Commissioner onboarding pack outline</li><li>Support model input to the Plan C track</li></ul></div>
+        <div class="ws-field"><h4>Outputs</h4><ul class="ws-list"><li>Commissioner onboarding pack outline</li><li>Support model input to the interim route track</li></ul></div>
       </div>
     </details></div>
   </section>
@@ -685,6 +672,5 @@ body{ background:transparent !important; padding:0 !important; }
   });
 })();
 </script>
-</div>
 </body>
 </html>
