@@ -396,39 +396,68 @@
             <div class="fls-name">Foundation</div>
             <div class="fls-tag">Universal capabilities. Two parts: what HomeTest builds and runs, and what HomeTest consumes from shared NHS infrastructure. The BAU team sizes around the first. The second is interfaced with, governed and configured, not staffed.</div>
           </div>
-          <div class="fls-split-bc">
-            <div class="fls-bc fls-bc-built">
-              <img class="fls-bc-ht-logo" src="Assets/nhs-hometest.svg" alt="NHS HomeTest" title="Built and run by HomeTest">
-              <div class="fls-bc-label">Built foundation</div>
-              <div class="fls-bc-line">What HomeTest builds, runs and staffs directly.</div>
-              <div class="fls-bc-chips">
-                <span class="fls-chip">Integration spine</span>
-                <span class="fls-chip">Framework instrument</span>
-                <span class="fls-chip">IG framework structure</span>
-                <span class="fls-chip">Clinical safety case structure</span>
-                <span class="fls-chip">Hazard log structure</span>
-                <span class="fls-chip">Onboarding gateway</span>
-                <span class="fls-chip">Pattern catalogue</span>
-                <span class="fls-chip">MI / data flow integrity</span>
-                <span class="fls-chip">Patient experience standard</span>
-              </div>
-              <a class="fls-bc-link" href="HomeTest Operating Model - Ecosystem Built.html">See in ecosystem map &rarr;</a>
-            </div>
-            <div class="fls-bc fls-bc-consumed">
-              <img class="fls-bc-nhs-logo" src="Assets/NHS-England-Logo-High-Res.jpg" alt="NHS England" title="Consumed from NHS England infrastructure">
-              <div class="fls-bc-label">Consumed foundation</div>
-              <div class="fls-bc-line">Shared NHS services HomeTest plugs into. Configured and paid for per use, not built or run.</div>
-              <div class="fls-bc-chips">
-                <span class="fls-chip">NHS Login (identity)</span>
-                <span class="fls-chip">NHS Notify (comms)</span>
-                <span class="fls-chip">NHS App (patient surface)</span>
-                <span class="fls-chip">FHIR routing</span>
-                <span class="fls-chip">Federated Data Platform</span>
-                <span class="fls-chip">Single Patient Record</span>
-              </div>
-              <a class="fls-bc-link" href="HomeTest Operating Model - Ecosystem Consumed.html">See in ecosystem map &rarr;</a>
-            </div>
-          </div>
+          <div class="fls-depmap" style="position:relative;margin-top:8px;">
+<svg viewBox="0 0 960 475" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;overflow:visible;" role="img" aria-label="Foundation dependency map: built capabilities joined by dotted lines to the consumed NHS services they run on.">
+<style>
+.fls-depmap text{font-family:Arial,system-ui,"Segoe UI",sans-serif;}
+.dm-lbl{fill:#fff;font-size:12.5px;font-weight:800;letter-spacing:1.4px;}
+.dm-sub{fill:rgba(255,255,255,.72);font-size:11.5px;}
+.dm-pill{fill:#003087;font-size:10px;font-weight:800;}
+.dm-ct{fill:#003087;font-size:13px;font-weight:700;}
+.dm-eco{fill:#fff;font-size:11px;font-weight:800;letter-spacing:.4px;text-decoration:underline;}
+.dm-leg{fill:rgba(255,255,255,.7);font-size:10.5px;}
+.dm-link{fill:none;stroke:#FFD66B;stroke-width:2.4;stroke-dasharray:2 7;stroke-linecap:round;opacity:.85;transition:opacity .15s,stroke-width .15s;}
+.dm-bchip,.dm-cchip{transition:opacity .15s;cursor:default;}
+.dm-faded{opacity:.5;}
+.dm-cr{fill:#fff;stroke:rgba(0,0,0,.06);}
+.dm-eco-a{cursor:pointer;}
+</style>
+<rect x="0" y="0" width="442" height="458" rx="12" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.18)"/>
+<rect x="518" y="0" width="442" height="458" rx="12" fill="rgba(126,200,227,.10)" stroke="rgba(126,200,227,.30)"/>
+<rect x="334" y="12" width="98" height="22" rx="5" fill="#fff"/><text class="dm-pill" x="383" y="27" text-anchor="middle">NHS HomeTest</text>
+<rect x="850" y="12" width="92" height="22" rx="5" fill="#fff"/><text class="dm-pill" x="896" y="27" text-anchor="middle">NHS England</text>
+<text class="dm-lbl" x="20" y="30">BUILT FOUNDATION</text>
+<text class="dm-sub" x="20" y="51">What HomeTest builds, runs and staffs directly.</text>
+<text class="dm-lbl" x="538" y="30">CONSUMED FOUNDATION</text>
+<text class="dm-sub" x="538" y="51">Shared NHS services HomeTest plugs into, not built or run.</text>
+<g>
+<path class="dm-link" data-from="is" data-to="login" d="M380,87 C458,87 458,87 536,87"/>
+<path class="dm-link" data-from="is" data-to="notify" d="M380,87 C458,87 458,125 536,125"/>
+<path class="dm-link" data-from="is" data-to="fhir" d="M380,87 C458,87 458,201 536,201"/>
+<path class="dm-link" data-from="pe" data-to="notify" d="M380,125 C458,125 458,125 536,125"/>
+<path class="dm-link" data-from="pe" data-to="app" d="M380,125 C458,125 458,163 536,163"/>
+<path class="dm-link" data-from="cs" data-to="app" d="M380,163 C458,163 458,163 536,163"/>
+<path class="dm-link" data-from="ig" data-to="fdp" d="M380,201 C458,201 458,239 536,239"/>
+<path class="dm-link" data-from="ig" data-to="spr" d="M380,201 C458,201 458,277 536,277"/>
+<path class="dm-link" data-from="mi" data-to="fdp" d="M380,239 C458,239 458,239 536,239"/>
+</g>
+<g class="dm-bchip" data-key="is"><rect class="dm-cr" x="18" y="72" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="92" text-anchor="middle">Integration spine</text></g>
+<g class="dm-bchip" data-key="pe"><rect class="dm-cr" x="18" y="110" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="130" text-anchor="middle">Patient experience standard</text></g>
+<g class="dm-bchip" data-key="cs"><rect class="dm-cr" x="18" y="148" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="168" text-anchor="middle">Clinical safety case structure</text></g>
+<g class="dm-bchip" data-key="ig"><rect class="dm-cr" x="18" y="186" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="206" text-anchor="middle">IG framework structure</text></g>
+<g class="dm-bchip" data-key="mi"><rect class="dm-cr" x="18" y="224" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="244" text-anchor="middle">MI / data flow integrity</text></g>
+<g class="dm-bchip dm-faded" data-key="fw"><rect class="dm-cr" x="18" y="268" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="288" text-anchor="middle">Framework instrument</text></g>
+<g class="dm-bchip dm-faded" data-key="hz"><rect class="dm-cr" x="18" y="306" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="326" text-anchor="middle">Hazard log structure</text></g>
+<g class="dm-bchip dm-faded" data-key="ob"><rect class="dm-cr" x="18" y="344" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="364" text-anchor="middle">Onboarding gateway</text></g>
+<g class="dm-bchip dm-faded" data-key="pc"><rect class="dm-cr" x="18" y="382" width="362" height="30" rx="8"/><text class="dm-ct" x="199" y="402" text-anchor="middle">Pattern catalogue</text></g>
+<g class="dm-cchip" data-id="login"><rect class="dm-cr" x="536" y="72" width="406" height="30" rx="8"/><text class="dm-ct" x="739" y="92" text-anchor="middle">NHS Login (identity)</text></g>
+<g class="dm-cchip" data-id="notify"><rect class="dm-cr" x="536" y="110" width="406" height="30" rx="8"/><text class="dm-ct" x="739" y="130" text-anchor="middle">NHS Notify (comms)</text></g>
+<g class="dm-cchip" data-id="app"><rect class="dm-cr" x="536" y="148" width="406" height="30" rx="8"/><text class="dm-ct" x="739" y="168" text-anchor="middle">NHS App (patient surface)</text></g>
+<g class="dm-cchip" data-id="fhir"><rect class="dm-cr" x="536" y="186" width="406" height="30" rx="8"/><text class="dm-ct" x="739" y="206" text-anchor="middle">FHIR routing</text></g>
+<g class="dm-cchip" data-id="fdp"><rect class="dm-cr" x="536" y="224" width="406" height="30" rx="8"/><text class="dm-ct" x="739" y="244" text-anchor="middle">Federated Data Platform</text></g>
+<g class="dm-cchip" data-id="spr"><rect class="dm-cr" x="536" y="262" width="406" height="30" rx="8"/><text class="dm-ct" x="739" y="282" text-anchor="middle">Single Patient Record</text></g>
+<a class="dm-eco-a" href="HomeTest Operating Model - Ecosystem Built.html"><text class="dm-eco" x="20" y="438">SEE IN ECOSYSTEM MAP &#8594;</text></a>
+<a class="dm-eco-a" href="HomeTest Operating Model - Ecosystem Consumed.html"><text class="dm-eco" x="538" y="438">SEE IN ECOSYSTEM MAP &#8594;</text></a>
+<text class="dm-leg" x="6" y="472">Dotted line: a built capability running on a consumed NHS service.  Faded: internal, no shared dependency.  Hover a built item to trace it.</text>
+</svg>
+<script>
+(function(){var r=document.querySelector(".fls-depmap");if(!r)return;
+var bs=r.querySelectorAll(".dm-bchip"),ls=r.querySelectorAll(".dm-link"),cs=r.querySelectorAll(".dm-cchip");
+function reset(){ls.forEach(function(l){l.style.opacity=".85";l.style.strokeWidth="2.4";});cs.forEach(function(c){c.style.opacity="1";});bs.forEach(function(b){b.style.opacity=b.classList.contains("dm-faded")?".5":"1";});}
+bs.forEach(function(b){b.addEventListener("mouseenter",function(){var k=b.getAttribute("data-key");var t=[];ls.forEach(function(l){var on=l.getAttribute("data-from")===k;l.style.opacity=on?"1":".08";l.style.strokeWidth=on?"3.4":"2.4";if(on)t.push(l.getAttribute("data-to"));});cs.forEach(function(c){c.style.opacity=t.indexOf(c.getAttribute("data-id"))>-1?"1":".35";});bs.forEach(function(x){if(x!==b)x.style.opacity=x.classList.contains("dm-faded")?".3":".5";});b.style.opacity="1";});b.addEventListener("mouseleave",reset);});
+reset();})();
+</script>
+</div>
         </div>
 
 <!-- Level 2 - Overlay - shared, full width -->
