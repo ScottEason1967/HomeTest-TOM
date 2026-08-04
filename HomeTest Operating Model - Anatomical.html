@@ -179,7 +179,7 @@
   @media(max-width:900px) { .hdr-in{flex-direction:column;} .vocab{grid-template-columns:1fr 1fr;} .nstars{flex-direction:column;} .catalogue-head{flex-direction:column;} .fls-split{grid-template-columns:1fr;} .fls-pill-overlay{min-width:100px;} }
 
   /* Four-level stack */
-  .fls { margin:18px 0 8px 0; display:flex; flex-direction:column; gap:10px; }
+  .fls { margin:18px 0 8px 0; display:flex; flex-direction:column; gap:16px; }
   .fls-level { border-radius:14px; padding:18px 22px 20px 22px; position:relative; box-shadow:0 2px 6px rgba(0,32,64,0.06); }
   .fls-l1 { background:linear-gradient(135deg, rgba(0,48,135,0.96), rgba(0,48,135,0.84)); color:#fff; }
   .fls-l2 { background:linear-gradient(135deg, rgba(0,94,184,0.92), rgba(0,94,184,0.78)); color:#fff; }
@@ -394,12 +394,12 @@
           <div class="fls-head">
             <div class="fls-num">LEVEL 1</div>
             <div class="fls-name">Foundation</div>
-            <div class="fls-tag">Universal capabilities. Two parts: what HomeTest builds and runs, and what HomeTest consumes from shared NHS infrastructure. The BAU team sizes around the first. The second is interfaced with, governed and configured, not staffed.</div>
+            <div class="fls-tag">Universal capabilities. Two parts: what HomeTest builds and runs, and what HomeTest consumes from shared NHS infrastructure. The BAU team sizes around the first. The second is interfaced with, governed and configured, not staffed. The dotted lines trace each built capability to the consumed NHS service it runs on, so you can see where the foundation leans on shared NHS infrastructure and where it stands alone.</div>
           </div>
           <div class="fls-depmap" style="position:relative;margin-top:8px;">
 <svg viewBox="0 0 960 475" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;overflow:visible;" role="img" aria-label="Foundation dependency map: built capabilities joined by dotted lines to the consumed NHS services they run on.">
 <style>
-.fls-depmap text{font-family:Arial,system-ui,"Segoe UI",sans-serif;}
+.fls-depmap text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;}
 .dm-lbl{fill:#fff;font-size:12.5px;font-weight:800;letter-spacing:1.4px;}
 .dm-sub{fill:rgba(255,255,255,.72);font-size:11.5px;}
 .dm-pill{fill:#003087;font-size:10px;font-weight:800;}
@@ -414,8 +414,8 @@
 </style>
 <rect x="0" y="0" width="442" height="458" rx="12" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.18)"/>
 <rect x="518" y="0" width="442" height="458" rx="12" fill="rgba(126,200,227,.10)" stroke="rgba(126,200,227,.30)"/>
-<rect x="334" y="12" width="98" height="22" rx="5" fill="#fff"/><text class="dm-pill" x="383" y="27" text-anchor="middle">NHS HomeTest</text>
-<rect x="850" y="12" width="92" height="22" rx="5" fill="#fff"/><text class="dm-pill" x="896" y="27" text-anchor="middle">NHS England</text>
+<rect x="324" y="9" width="108" height="28" rx="5" fill="#fff"/><image href="Assets/nhs-hometest.svg" x="330" y="13" width="96" height="20" preserveAspectRatio="xMidYMid meet"/>
+<rect x="902" y="8" width="44" height="30" rx="5" fill="#fff"/><image href="Assets/NHS-England-Logo-High-Res.jpg" x="907" y="12" width="34" height="22" preserveAspectRatio="xMidYMid meet"/>
 <text class="dm-lbl" x="20" y="30">BUILT FOUNDATION</text>
 <text class="dm-sub" x="20" y="51">What HomeTest builds, runs and staffs directly.</text>
 <text class="dm-lbl" x="538" y="30">CONSUMED FOUNDATION</text>
@@ -480,7 +480,7 @@ reset();})();
           </div>
         </div>
 
-<div style="margin:36px 0 16px;background:linear-gradient(135deg,#003087,#005EB8);color:#fff;border-radius:14px;padding:22px 26px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
+<div style="margin:0;background:linear-gradient(135deg,#003087,#005EB8);color:#fff;border-radius:14px;padding:22px 26px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
  <div style="flex:1;min-width:260px;">
   <div style="font-size:10.5px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;color:#FFB91D;margin-bottom:6px;">How we chose these patterns</div>
   <div style="font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:4px;">The five-pattern catalogue and the tier and scoring logic that picks configurations.</div>
