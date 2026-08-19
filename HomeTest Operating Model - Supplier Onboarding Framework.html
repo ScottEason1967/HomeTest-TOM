@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Supplier Onboarding Framework: HomeTest Operating Model</title>
-<style>
+<style>html{overflow-y:scroll;}
   :root{--nhs-dark:#003087;--nhs-blue:#005EB8;--nhs-green:#006747;--nhs-pink:#AE2573;--amber:#FFB91D;--amber-deep:#C9A227;--warm-cream:#FFF9EC;--accent:#1B3A6B;--text:#212B32;--text-sec:#4C6272;--text-muted:#7E8B97;--border-lt:#ebeef1;--bg:#f8fafc;--card:#fff;}
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--nhs-blue) 0%,var(--nhs-dark) 100%);background-attachment:fixed;color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;}
   .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.18);}
   .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
   .nav-back:hover{color:var(--nhs-blue);}
-  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;}
+  .nav-siblings{align-items:center;display:flex;gap:4px;flex-wrap:wrap;}
   .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
   .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
   .nav-siblings a.active{background:var(--nhs-blue);color:#fff;}
@@ -198,7 +198,7 @@
         <span class="layer-badge">Layer 2 &middot; The key</span>
         <div class="layer-title">Test and capability assurance. Per category.</div>
         <div class="layer-body">
-          <p>Clinical evidence that capillary self-sampling is non-inferior to the venous draw for the analyte, judged by a clinician panel convened for the gate. Laboratory accreditation that names the test, the method and the site. Kit conformity for the assembled device, regulated and registered as the diagnostic it is. Platform and API integration proven against published, versioned specifications.</p>
+          <p>Laboratory validation evidence that the capillary sample performs no worse than the venous draw for the analyte: a validated result, not a process claim. The validation service judges the evidence, with a clinician panel convened for each gate. Then the capability criteria, which curate standards that already exist: API integration on UK FHIR R4; kits assembled to MHRA standard, with the certificate; tracking messages at the set points of the journey; results in the standard data format; laboratory accreditation whose schedule names capillary collection; and service standards, such as the time to replace a failed kit.</p>
           <p>Granted per category, while that category&apos;s gate is open. A supplier holds as many keys as it can evidence.</p>
         </div>
         <div class="layer-holds"><strong>What it gets you:</strong> the right to sell that category through the framework. The register shows who holds which keys.</div>

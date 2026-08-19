@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Money Loop: HomeTest Operating Model</title>
+<style>html{overflow-y:scroll;}
+  :root{--nhs-dark:#003087;--nhs-blue:#005EB8;--nhs-green:#006747;--sup-green:#388C5D;--copper:#B85728;--assur:#7C2855;--amber:#FFB91D;--amber-deep:#C9A227;--warm-cream:#FFF9EC;--teal:#0E7C61;--teal-bg:#E3F2EE;--text:#212B32;--text-sec:#4C6272;--text-muted:#7E8B97;--border-lt:#ebeef1;--bg:#f8fafc;--red:#DA291C;--red-dark:#9B1D14;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--nhs-blue) 0%,var(--nhs-dark) 100%);background-attachment:fixed;color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.18);}
+  .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+  .nav-back:hover{color:var(--nhs-blue);}
+  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
+  .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
+  .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
+  .nav-siblings a.active{background:var(--nhs-blue);color:#fff;}
+  .nav-sep{width:1px;height:18px;background:var(--border-lt);margin:0 6px;display:inline-block;}
+  .page{max-width:1150px;margin:30px auto 50px;padding:50px 46px 66px;background:#fff;border-radius:18px;box-shadow:0 14px 40px rgba(0,48,135,0.20);}
+  .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
+  .h-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--text-sec);text-transform:uppercase;margin-bottom:14px;}
+  .h-title{font-size:48px;font-weight:800;color:var(--nhs-dark);letter-spacing:-1.3px;line-height:1.04;margin-bottom:14px;}
+  .h-sub{font-size:16px;color:var(--text-sec);line-height:1.68;max-width:880px;margin-bottom:14px;}
+  .h-sub strong{color:var(--text);}
+  .inprinciple{margin:0 0 26px;padding:12px 17px;background:var(--warm-cream);border:1px solid #F0DCA0;border-left:5px solid var(--amber-deep);border-radius:10px;font-size:12.5px;color:#5b4a1a;line-height:1.6;}
+  .inprinciple strong{color:#9A6700;}
+  .mcard{border:1px solid var(--border-lt);border-radius:12px;padding:16px 18px;background:#fff;box-shadow:0 3px 10px rgba(0,30,90,0.05);}
+  .mcard-h{font-size:14px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.2px;margin-bottom:6px;line-height:1.25;}
+  .mcard-b{font-size:12px;color:var(--text-sec);line-height:1.58;}
+  .mcard-b strong{color:var(--text);}
+  .mcard a.mlink{display:inline-block;margin-top:8px;font-size:10.5px;font-weight:800;color:var(--nhs-blue);text-decoration:none;}
+  .mcard a.mlink:hover{text-decoration:underline;}
+  .portrow{display:flex;gap:7px;align-items:center;margin-top:10px;flex-wrap:wrap;}
+  .pchip{width:38px;height:38px;border-radius:50%;overflow:hidden;border:2.5px solid;flex-shrink:0;box-shadow:0 2px 6px rgba(0,30,90,0.18);background:#fff;}
+  .pchip img{width:100%;height:100%;object-fit:cover;display:block;}
+  .foot{margin-top:38px;padding-top:20px;border-top:1px solid var(--border-lt);text-align:center;font-size:11.5px;color:var(--text-muted);line-height:1.6;}
+  @media(max-width:760px){.h-title{font-size:34px;}.page{padding:34px 20px 54px;}}
+  .loop-row{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap;margin-top:8px;}
+  .loop-step{flex:1 1 190px;background:linear-gradient(135deg,#00204F,var(--nhs-dark));border-radius:12px;padding:15px 17px;position:relative;color:#fff;}
+  .loop-num{position:absolute;top:-11px;left:14px;width:22px;height:22px;border-radius:50%;background:var(--amber);color:var(--nhs-dark);font-size:11px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.3);}
+  .loop-step-h{font-size:13px;font-weight:800;color:#FFD66B;margin:6px 0 5px;line-height:1.3;}
+  .loop-step-b{font-size:11.5px;color:rgba(255,255,255,0.88);line-height:1.55;}
+  .loop-arrow{display:flex;align-items:center;color:var(--amber-deep);font-weight:900;font-size:20px;}
+  .loop-return{margin:16px 6px 4px;height:30px;border:2px dashed #E8C25A;border-top:none;border-radius:0 0 16px 16px;position:relative;}
+  .loop-return::before{content:'\25C2';position:absolute;left:-7px;top:-13px;font-size:20px;color:var(--amber-deep);}
+  .loop-return-label{position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:10.5px;font-weight:700;color:#9A6700;letter-spacing:0.4px;white-space:nowrap;}
+  .loop-flag{margin-top:18px;background:var(--warm-cream);border:1px solid #F0DCA0;border-radius:10px;padding:13px 16px;font-size:12px;color:#5b4a1a;line-height:1.6;}
+  .loop-flag strong{color:#9A6700;}
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:22px;}
+  @media(max-width:900px){.loop-arrow{width:100%;justify-content:center;transform:rotate(90deg);height:24px;}}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Why.html">Why</a>
+    <a href="HomeTest Operating Model - What.html">What</a>
+    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
+    <a href="HomeTest Operating Model - Operational.html">How</a>
+    <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <a href="HomeTest Operating Model - Teamwork.html">Teamwork</a>
+    <span class="nav-sep"></span>
+    <a href="HomeTest Operating Model - Commercial Model.html">Commercial Model</a>
+    <a href="HomeTest Operating Model - Supplier Onboarding Framework.html">Supplier Onboarding</a>
+    <a href="HomeTest Operating Model - Prioritisation Framework.html">Prioritisation</a>
+    <a href="HomeTest Operating Model - Status.html">Status</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="amber-rule"></div>
+  <div class="h-eyebrow">The commercial model &middot; the money</div>
+  <h1 class="h-title">The money loop.</h1>
+  <p class="h-sub">Money does not flow through NHSE. It flows directly between commissioner and supplier. A share of throughput returns to NHSE and pays for the framework. The model gets income only when the market sells.</p>
+  <div class="inprinciple"><strong>Agreed in principle. Not final.</strong> The repatriation mechanics are the critical open item; see the flag below.</div>
+
+  <div class="loop-row">
+    <div class="loop-step"><span class="loop-num">1</span><div class="loop-step-h">The commissioner pays the supplier</div><div class="loop-step-b">Payment is direct, for each activity, at or below the national maximum price. NHSE does not hold a budget and does not touch payments.</div></div>
+    <div class="loop-arrow">&#9656;</div>
+    <div class="loop-step"><span class="loop-num">2</span><div class="loop-step-h">The supplier pays the levy</div><div class="loop-step-b">The framework provider charges the supplier one to two percent of throughput. Suppliers are used to this type of charge. The charge applies only to sales.</div></div>
+    <div class="loop-arrow">&#9656;</div>
+    <div class="loop-step"><span class="loop-num">3</span><div class="loop-step-h">A part returns to NHSE</div><div class="loop-step-b">A platform fee: a percentage of throughput, taken from the provider levy. It is not a separate invoice to suppliers.</div></div>
+    <div class="loop-arrow">&#9656;</div>
+    <div class="loop-step"><span class="loop-num">4</span><div class="loop-step-h">NHSE reinvests it as contribution</div><div class="loop-step-b">It pays for the clinician panels, the validation service, the app integration and pathway change. It is possibly not sufficient for all NHSE costs. That is acceptable.</div></div>
+  </div>
+  <div class="loop-return"><span class="loop-return-label">The money returns to the start and pays for the services that give the framework its value.</span></div>
+  <div class="loop-flag"><strong>The critical assumption: repatriation of funds.</strong> These items are not decided: the name of the charge, the mechanism that returns the money, the VAT treatment, and the competition risk. The return line is theory until these items are decided. The model carries it as an assumption, not a certainty.</div>
+
+  <div class="facts">
+    <div class="mcard"><div class="mcard-h">Why suppliers pay.</div><div class="mcard-b">NHSE gives three things that other routes do not give: quality assurance and clinical validation; automatic permission for orders through the national app; and investment in pathway change that makes home sampling the standard route.</div></div>
+    <div class="mcard"><div class="mcard-h">The language.</div><div class="mcard-b">Any over-recovery is a contribution to development, for example the app. The return is a platform fee on throughput. It is never described in other terms.</div></div>
+    <div class="mcard"><div class="mcard-h">The discipline.</div><div class="mcard-b">The model must be simple to operate and transparent. If many people are necessary to calculate an invoice, the design is wrong.</div><a class="mlink" href="HomeTest Operating Model - Operational.html">The settlement lane on How &rarr;</a></div>
+  </div>
+
+  <div class="foot">The money loop &middot; agreed in principle &middot; part of the commercial model. <a href="HomeTest Operating Model - Commercial Model.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Back to the commercial model &rarr;</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Commissioners Buy: HomeTest Operating Model</title>
+<style>html{overflow-y:scroll;}
+  :root{--nhs-dark:#003087;--nhs-blue:#005EB8;--nhs-green:#006747;--sup-green:#388C5D;--copper:#B85728;--assur:#7C2855;--amber:#FFB91D;--amber-deep:#C9A227;--warm-cream:#FFF9EC;--teal:#0E7C61;--teal-bg:#E3F2EE;--text:#212B32;--text-sec:#4C6272;--text-muted:#7E8B97;--border-lt:#ebeef1;--bg:#f8fafc;--red:#DA291C;--red-dark:#9B1D14;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--nhs-blue) 0%,var(--nhs-dark) 100%);background-attachment:fixed;color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.18);}
+  .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+  .nav-back:hover{color:var(--nhs-blue);}
+  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
+  .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
+  .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
+  .nav-siblings a.active{background:var(--nhs-blue);color:#fff;}
+  .nav-sep{width:1px;height:18px;background:var(--border-lt);margin:0 6px;display:inline-block;}
+  .page{max-width:1150px;margin:30px auto 50px;padding:50px 46px 66px;background:#fff;border-radius:18px;box-shadow:0 14px 40px rgba(0,48,135,0.20);}
+  .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
+  .h-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--text-sec);text-transform:uppercase;margin-bottom:14px;}
+  .h-title{font-size:48px;font-weight:800;color:var(--nhs-dark);letter-spacing:-1.3px;line-height:1.04;margin-bottom:14px;}
+  .h-sub{font-size:16px;color:var(--text-sec);line-height:1.68;max-width:880px;margin-bottom:14px;}
+  .h-sub strong{color:var(--text);}
+  .inprinciple{margin:0 0 26px;padding:12px 17px;background:var(--warm-cream);border:1px solid #F0DCA0;border-left:5px solid var(--amber-deep);border-radius:10px;font-size:12.5px;color:#5b4a1a;line-height:1.6;}
+  .inprinciple strong{color:#9A6700;}
+  .mcard{border:1px solid var(--border-lt);border-radius:12px;padding:16px 18px;background:#fff;box-shadow:0 3px 10px rgba(0,30,90,0.05);}
+  .mcard-h{font-size:14px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.2px;margin-bottom:6px;line-height:1.25;}
+  .mcard-b{font-size:12px;color:var(--text-sec);line-height:1.58;}
+  .mcard-b strong{color:var(--text);}
+  .mcard a.mlink{display:inline-block;margin-top:8px;font-size:10.5px;font-weight:800;color:var(--nhs-blue);text-decoration:none;}
+  .mcard a.mlink:hover{text-decoration:underline;}
+  .portrow{display:flex;gap:7px;align-items:center;margin-top:10px;flex-wrap:wrap;}
+  .pchip{width:38px;height:38px;border-radius:50%;overflow:hidden;border:2.5px solid;flex-shrink:0;box-shadow:0 2px 6px rgba(0,30,90,0.18);background:#fff;}
+  .pchip img{width:100%;height:100%;object-fit:cover;display:block;}
+  .foot{margin-top:38px;padding-top:20px;border-top:1px solid var(--border-lt);text-align:center;font-size:11.5px;color:var(--text-muted);line-height:1.6;}
+  @media(max-width:760px){.h-title{font-size:34px;}.page{padding:34px 20px 54px;}}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;}
+  .actor-links{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;}
+  .actor-links a{font-size:10px;font-weight:800;color:var(--nhs-blue);text-decoration:none;border:1px solid #B5D4E5;border-radius:999px;padding:3px 10px;}
+  .actor-links a:hover{background:var(--nhs-blue);color:#fff;}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Why.html">Why</a>
+    <a href="HomeTest Operating Model - What.html">What</a>
+    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
+    <a href="HomeTest Operating Model - Operational.html">How</a>
+    <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <a href="HomeTest Operating Model - Teamwork.html">Teamwork</a>
+    <span class="nav-sep"></span>
+    <a href="HomeTest Operating Model - Commercial Model.html">Commercial Model</a>
+    <a href="HomeTest Operating Model - Supplier Onboarding Framework.html">Supplier Onboarding</a>
+    <a href="HomeTest Operating Model - Prioritisation Framework.html">Prioritisation</a>
+    <a href="HomeTest Operating Model - Status.html">Status</a>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="amber-rule"></div>
+  <div class="h-eyebrow">The commercial model &middot; demand side</div>
+  <h1 class="h-title">How commissioners buy.</h1>
+  <p class="h-sub">Commissioners buy from the framework, not from NHSE. They call off from the accredited register, at or below a national maximum price, and they pay the supplier directly.</p>
+  <div class="inprinciple"><strong>Agreed in principle. Not final.</strong> Sufficient for models and SLT records; not sufficient for a tender.</div>
+
+  <div class="cards">
+    <div class="mcard">
+      <div class="mcard-h">Call-offs below a national maximum price.</div>
+      <div class="mcard-b">NHSE sets a national maximum price for each test. A commissioner does its own call-off from the register and gets a lower price with competition and volume. NHSE does not guarantee volumes; it shares forecasts. The framework agreement holds the entry terms, the price fundamentals and the performance management. The call-off holds the order terms and the local terms. Accreditation is in the schedules.</div>
+      <div class="actor-links">
+        <a href="HomeTest Operating Model - Persona Sarah.html">Sarah &rarr;</a>
+        <a href="HomeTest Operating Model - Persona Catherine.html">Catherine &rarr;</a>
+        <a href="HomeTest Operating Model - Persona Anita.html">Anita &rarr;</a>
+        <a href="HomeTest Operating Model - Persona Ruth.html">Ruth &rarr;</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <div class="mcard-h">Payment for each activity, not for each completed test.</div>
+      <div class="mcard-b">Each stage of the cycle has a price: delivery, sample, analysis, result. If a cycle completes 70 percent of its stages, the supplier receives 70 percent of the payment. The completion rate is a programme measurement, not a payment condition, because the supplier does not control all causes of non-completion. KPIs in the contracts give the remedies. Service credits are not used.</div>
+      <a class="mlink" href="HomeTest Operating Model - Operational.html">The settlement lane on How &rarr;</a>
+    </div>
+    <div class="mcard">
+      <div class="mcard-h">Money flows directly.</div>
+      <div class="mcard-b">The supplier invoices the commissioner at the rates and frequency in the call-off. The commissioner pays from its own budget. NHSE does not hold a budget and does not touch payments.</div>
+      <a class="mlink" href="HomeTest Operating Model - Money Loop.html">The money loop &rarr;</a>
+    </div>
+    <div class="mcard">
+      <div class="mcard-h">Volume tiers: open.</div>
+      <div class="mcard-b">The plan is prices that decrease when volume increases, with a fairness mechanism: the first buyers must not pay more than later, larger buyers. There is tension between volume discounts and a market with no maximum number of suppliers. Both options are in the model. There is no decision.</div>
+    </div>
+    <div class="mcard">
+      <div class="mcard-h">Choice on the register.</div>
+      <div class="mcard-b">The register shows each accredited supplier for each open category. A commissioner compares suppliers on price and on the differences above the minimum standard: device, speed, service. More suppliers in a category cause lower prices below the maximum.</div>
+      <a class="mlink" href="HomeTest Operating Model - Supplier Onboarding Framework.html">How suppliers get onto the register &rarr;</a>
+    </div>
+    <div class="mcard">
+      <div class="mcard-h">An NHS organisation can also serve itself.</div>
+      <div class="mcard-b">A commissioner or a pathology network can do its own home sampling instead of a purchase from the framework. NHSE gives help through a community of practice and a concierge service, off the framework.</div>
+    </div>
+  </div>
+
+  <div class="foot">How commissioners buy &middot; agreed in principle &middot; part of the commercial model. <a href="HomeTest Operating Model - Commercial Model.html" style="color:var(--nhs-blue);font-weight:700;text-decoration:none;">Back to the commercial model &rarr;</a></div>
+</div>
+</body>
+</html>

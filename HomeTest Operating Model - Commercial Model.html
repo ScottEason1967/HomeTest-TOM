@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commercial Model: HomeTest Operating Model</title>
+<style>html{overflow-y:scroll;}
+  :root{--nhs-dark:#003087;--nhs-blue:#005EB8;--nhs-green:#006747;--sup-green:#388C5D;--copper:#B85728;--assur:#7C2855;--amber:#FFB91D;--amber-deep:#C9A227;--warm-cream:#FFF9EC;--teal:#0E7C61;--teal-bg:#E3F2EE;--text:#212B32;--text-sec:#4C6272;--text-muted:#7E8B97;--border-lt:#ebeef1;--bg:#f8fafc;--red:#DA291C;--red-dark:#9B1D14;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,var(--nhs-blue) 0%,var(--nhs-dark) 100%);background-attachment:fixed;color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  .topnav{background:#fff;border-bottom:1px solid var(--border-lt);padding:14px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 2px 14px rgba(0,48,135,0.18);}
+  .nav-back{font-size:13px;font-weight:700;color:var(--nhs-dark);text-decoration:none;display:inline-flex;align-items:center;gap:6px;}
+  .nav-back:hover{color:var(--nhs-blue);}
+  .nav-siblings{display:flex;gap:4px;flex-wrap:wrap;align-items:center;}
+  .nav-siblings a{font-size:12.5px;font-weight:600;color:var(--text-sec);text-decoration:none;padding:7px 14px;border-radius:6px;letter-spacing:0.2px;}
+  .nav-siblings a:hover{background:#f0f4f8;color:var(--text);}
+  .nav-siblings a.active{background:var(--nhs-blue);color:#fff;}
+  .nav-sep{width:1px;height:18px;background:var(--border-lt);margin:0 6px;display:inline-block;}
+  .page{max-width:1150px;margin:30px auto 50px;padding:50px 46px 66px;background:#fff;border-radius:18px;box-shadow:0 14px 40px rgba(0,48,135,0.20);}
+  .amber-rule{width:72px;height:4px;background:var(--amber);border-radius:2px;margin-bottom:18px;}
+  .h-eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--text-sec);text-transform:uppercase;margin-bottom:14px;}
+  .h-title{font-size:48px;font-weight:800;color:var(--nhs-dark);letter-spacing:-1.3px;line-height:1.04;margin-bottom:14px;}
+  .h-sub{font-size:16px;color:var(--text-sec);line-height:1.68;max-width:880px;margin-bottom:14px;}
+  .h-sub strong{color:var(--text);}
+  .inprinciple{margin:0 0 26px;padding:12px 17px;background:var(--warm-cream);border:1px solid #F0DCA0;border-left:5px solid var(--amber-deep);border-radius:10px;font-size:12.5px;color:#5b4a1a;line-height:1.6;}
+  .inprinciple strong{color:#9A6700;}
+  .mcard{border:1px solid var(--border-lt);border-radius:12px;padding:16px 18px;background:#fff;box-shadow:0 3px 10px rgba(0,30,90,0.05);}
+  .mcard-h{font-size:14px;font-weight:800;color:var(--nhs-dark);letter-spacing:-0.2px;margin-bottom:6px;line-height:1.25;}
+  .mcard-b{font-size:12px;color:var(--text-sec);line-height:1.58;}
+  .mcard-b strong{color:var(--text);}
+  .mcard a.mlink{display:inline-block;margin-top:8px;font-size:10.5px;font-weight:800;color:var(--nhs-blue);text-decoration:none;}
+  .mcard a.mlink:hover{text-decoration:underline;}
+  .portrow{display:flex;gap:7px;align-items:center;margin-top:10px;flex-wrap:wrap;}
+  .pchip{width:38px;height:38px;border-radius:50%;overflow:hidden;border:2.5px solid;flex-shrink:0;box-shadow:0 2px 6px rgba(0,30,90,0.18);background:#fff;}
+  .pchip img{width:100%;height:100%;object-fit:cover;display:block;}
+  .foot{margin-top:38px;padding-top:20px;border-top:1px solid var(--border-lt);text-align:center;font-size:11.5px;color:var(--text-muted);line-height:1.6;}
+  @media(max-width:760px){.h-title{font-size:34px;}.page{padding:34px 20px 54px;}}
+  .peoplebar{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;margin:0 0 26px;padding:16px 18px;background:#F4F8FC;border:1px solid #D5E8F0;border-radius:14px;}
+  .peoplebar-lab{flex-basis:100%;font-size:10px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--text-muted);margin-bottom:2px;}
+  .person{text-align:center;text-decoration:none;width:64px;}
+  .person .pchip{width:46px;height:46px;margin:0 auto;transition:transform .13s;}
+  .person:hover .pchip{transform:scale(1.12);}
+  .person-name{display:block;font-size:10.5px;font-weight:700;color:var(--nhs-dark);margin-top:5px;line-height:1.15;}
+  .person-role{display:block;font-size:8.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.4px;}
+  .hub{display:grid;grid-template-columns:1fr 44px 1.3fr 44px 1fr;grid-template-areas:"sup a1 frame a2 comm" "row2 row2 row2 row2 row2";gap:14px 0;align-items:stretch;margin-bottom:22px;}
+  .tile{border-radius:16px;padding:20px 20px 18px;transition:transform .15s, box-shadow .15s;border:1.5px solid var(--border-lt);background:#fff;box-shadow:0 4px 14px rgba(0,30,90,0.07);text-decoration:none;display:block;color:inherit;}
+  a.tile:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,30,90,0.14);}
+  .tile-eyebrow{font-size:9.5px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:7px;}
+  .tile-h{font-size:19px;font-weight:900;color:var(--nhs-dark);letter-spacing:-0.4px;line-height:1.15;margin-bottom:8px;}
+  .tile-b{font-size:12px;color:var(--text-sec);line-height:1.55;}
+  .tile-cta{display:inline-block;margin-top:12px;font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--nhs-blue);}
+  .tile-sup{grid-area:sup;border-top:5px solid var(--sup-green);}
+  .tile-sup .tile-eyebrow{color:var(--sup-green);}
+  .tile-comm{grid-area:comm;border-top:5px solid var(--nhs-dark);}
+  .tile-comm .tile-eyebrow{color:var(--nhs-dark);}
+  .tile-frame{grid-area:frame;border:3px solid var(--red);background:#FFFDFC;box-shadow:0 10px 26px rgba(218,41,28,0.12);text-align:center;padding:24px 22px 20px;}
+  .tile-frame .tile-eyebrow{color:var(--red-dark);}
+  .tile-frame .tile-h{font-size:23px;color:var(--red-dark);}
+  .tile-frame .tile-b{max-width:340px;margin:0 auto;}
+  .frame-law{margin-top:12px;padding-top:11px;border-top:1px dashed #F2CFC9;font-size:10.5px;color:var(--text-sec);line-height:1.55;}
+  .frame-law strong{color:var(--red-dark);}
+  .row2{grid-area:row2;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2px;}
+  .tile-road{border-top:5px solid var(--amber-deep);}
+  .tile-road .tile-eyebrow{color:#9A6700;}
+  .tile-money{border-top:5px solid var(--teal);}
+  .tile-money .tile-eyebrow{color:var(--teal);}
+  .tile-eco{border-top:5px solid var(--assur);}
+  .tile-eco .tile-eyebrow{color:var(--assur);}
+  .draftpill{display:inline-block;font-size:8.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#9A6700;background:var(--warm-cream);border:1px solid #F0DCA0;border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:middle;}
+  .harrow{display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;color:var(--amber-deep);}
+  .harrow.a1{grid-area:a1;}
+  .harrow.a2{grid-area:a2;}
+  .section{margin-top:40px;}
+  .section-eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;color:var(--nhs-blue);text-transform:uppercase;margin-bottom:8px;}
+  .section-h{font-size:25px;font-weight:900;color:var(--nhs-dark);letter-spacing:-0.6px;line-height:1.15;margin-bottom:14px;}
+  .rails{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
+  .rail{flex:1 1 165px;background:#F4F8FC;border:1px solid #D5E8F0;border-top:4px solid var(--nhs-blue);border-radius:10px;padding:11px 13px;font-size:11px;color:var(--text-sec);line-height:1.55;}
+  .rail strong{display:block;font-size:11.5px;color:var(--nhs-dark);margin-bottom:4px;}
+  .ledger{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .ledger-col{border-radius:12px;padding:17px 19px;}
+  .ledger-col.done{background:var(--teal-bg);border:1px solid #BEE0D2;border-top:4px solid var(--teal);}
+  .ledger-col.open{background:var(--warm-cream);border:1px solid #F0DCA0;border-top:4px solid var(--amber-deep);}
+  .ledger-h{font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:10px;}
+  .ledger-col.done .ledger-h{color:var(--teal);}
+  .ledger-col.open .ledger-h{color:#9A6700;}
+  .ledger-col ul{list-style:none;}
+  .ledger-col li{font-size:12px;line-height:1.5;padding:4px 0 4px 16px;position:relative;color:var(--text-sec);}
+  .ledger-col.done li::before{content:'';position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:50%;background:var(--teal);}
+  .ledger-col.open li::before{content:'';position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:50%;background:var(--amber-deep);}
+  @media(max-width:1000px){.hub{grid-template-columns:1fr;grid-template-areas:"sup" "a1" "frame" "a2" "comm" "row2";}.harrow{transform:rotate(90deg);height:30px;}.row2{grid-template-columns:1fr;}.ledger{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  if (sessionStorage.getItem('hometest-auth') !== 'ok') {
+    var next = encodeURIComponent(location.pathname.split('/').pop() || 'home.html');
+    location.href = 'index.html?next=' + next;
+  }
+})();
+</script>
+
+<nav class="topnav">
+  <a href="home.html" class="nav-back">&larr; Operating Model</a>
+  <div class="nav-siblings">
+    <a href="HomeTest Operating Model - Why.html">Why</a>
+    <a href="HomeTest Operating Model - What.html">What</a>
+    <a href="HomeTest Operating Model - Lifecycle.html">When</a>
+    <a href="HomeTest Operating Model - Operational.html">How</a>
+    <a href="HomeTest Operating Model - Governance.html">Who</a>
+    <a href="HomeTest Operating Model - Teamwork.html">Teamwork</a>
+    <span class="nav-sep"></span>
+    <a href="HomeTest Operating Model - Commercial Model.html" class="active">Commercial Model</a>
+    <a href="HomeTest Operating Model - Supplier Onboarding Framework.html">Supplier Onboarding</a>
+    <a href="HomeTest Operating Model - Prioritisation Framework.html">Prioritisation</a>
+    <a href="HomeTest Operating Model - Status.html">Status</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="amber-rule"></div>
+  <div class="h-eyebrow">The commercial model on one page &middot; HomeTest</div>
+  <h1 class="h-title">The commercial model.</h1>
+  <p class="h-sub"><strong>The framework is the product.</strong> NHSE builds it and sells access to it. Suppliers supply to it and pay a levy on their sales. Commissioners buy from it, below a national maximum price. Each tile opens its page.</p>
+  <div class="inprinciple"><strong>All items are agreed in principle. They are not final.</strong> Sufficient for models and SLT records. Not sufficient for a tender.</div>
+
+  <div class="peoplebar">
+    <span class="peoplebar-lab">The people in the model &middot; click a person for their page</span>
+    <a class="person" href="HomeTest Operating Model - Persona Joe.html"><span class="pchip" style="border-color:#388C5D;"><img src="Assets/Personas/joe.png" alt="Joe"></span><span class="person-name">Joe</span><span class="person-role">Supplier</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Sarah.html"><span class="pchip" style="border-color:#003087;"><img src="Assets/Personas/sarah.png" alt="Sarah"></span><span class="person-name">Sarah</span><span class="person-role">Commissioner</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Catherine.html"><span class="pchip" style="border-color:#003087;"><img src="Assets/Personas/catherine.png" alt="Catherine"></span><span class="person-name">Catherine</span><span class="person-role">Commissioner</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Anita.html"><span class="pchip" style="border-color:#003087;"><img src="Assets/Personas/anita.png" alt="Anita"></span><span class="person-name">Anita</span><span class="person-role">Commissioner</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Ruth.html"><span class="pchip" style="border-color:#003087;"><img src="Assets/Personas/ruth.png" alt="Ruth"></span><span class="person-name">Ruth</span><span class="person-role">Commissioner</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona David.html"><span class="pchip" style="border-color:#B85728;"><img src="Assets/Personas/david.png" alt="David"></span><span class="person-name">David</span><span class="person-role">Commercial</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Priya.html"><span class="pchip" style="border-color:#005EB8;"><img src="Assets/Personas/priya.png" alt="Priya"></span><span class="person-name">Priya</span><span class="person-role">Platform</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Aisha.html"><span class="pchip" style="border-color:#7C2855;"><img src="Assets/Personas/aisha.png" alt="Aisha"></span><span class="person-name">Aisha</span><span class="person-role">Clinical</span></a>
+    <a class="person" href="HomeTest Operating Model - Persona Ngozi.html"><span class="pchip" style="border-color:#7C2855;"><img src="Assets/Personas/ngozi.png" alt="Ngozi"></span><span class="person-name">Ngozi</span><span class="person-role">IG</span></a>
+  </div>
+
+  <div class="hub">
+    <a class="tile tile-sup" href="HomeTest Operating Model - Supplier Onboarding Framework.html">
+      <div class="tile-eyebrow">Suppliers</div>
+      <div class="tile-h">Supply to it.</div>
+      <div class="tile-b">A supplier passes company assurance one time, then gets accreditation for each test category at the gates on the published roadmap.</div>
+      <span class="tile-cta">The supplier onboarding process &rarr;</span>
+    </a>
+    <div class="harrow a1">&#9656;</div>
+    <div class="tile tile-frame">
+      <div class="tile-eyebrow">The framework &middot; what we sell</div>
+      <div class="tile-h">Home self-sampling as a service</div>
+      <div class="tile-b">One master lot: the full journey from request to result. NHSE builds the framework, sets the standards, opens the gates, and takes a share of throughput.</div>
+      <div class="frame-law"><strong>An open framework under the Procurement Act 2023 (PA23).</strong> At each reopening NHSE can add or remove suppliers, never lots. Therefore one broad lot, with gates below it.</div>
+    </div>
+    <div class="harrow a2">&#9656;</div>
+    <a class="tile tile-comm" href="HomeTest Operating Model - How Commissioners Buy.html">
+      <div class="tile-eyebrow">Commissioners</div>
+      <div class="tile-h">Buy from it.</div>
+      <div class="tile-b">Commissioners call off from the accredited register, at or below the national maximum price, and pay the supplier directly.</div>
+      <span class="tile-cta">How commissioners buy &rarr;</span>
+    </a>
+    <div class="row2">
+      <a class="tile tile-road" href="HomeTest Operating Model - Prioritisation Framework.html">
+        <div class="tile-eyebrow">The roadmap of tests</div>
+        <div class="tile-h">Tests join at gates.</div>
+        <div class="tile-b">The prioritisation framework decides which test categories join, and when. Gates open approximately each six months. Suppliers accredit at the same gates.</div>
+        <span class="tile-cta">The prioritisation framework &rarr;</span>
+      </a>
+      <a class="tile tile-money" href="HomeTest Operating Model - Money Loop.html">
+        <div class="tile-eyebrow">The money</div>
+        <div class="tile-h">The money loop.</div>
+        <div class="tile-b">Commissioner pays supplier. Supplier pays the provider levy. A part returns to NHSE as a platform fee and is reinvested.</div>
+        <span class="tile-cta">The money loop &rarr;</span>
+      </a>
+      <a class="tile tile-eco" href="../../Procurement Ecosystem (draft)/index.html">
+        <div class="tile-eyebrow">The procurement ecosystem<span class="draftpill">Draft &middot; local</span></div>
+        <div class="tile-h">The actors, connected.</div>
+        <div class="tile-b">The six commercial foundations at the centre, with the full cast wired to the parts they work. A working draft, kept off the live site.</div>
+        <span class="tile-cta">The ecosystem map &rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-eyebrow">Where it stands</div>
+    <h2 class="section-h">Agreed in principle. Open items.</h2>
+    <div class="rails">
+      <div class="rail"><strong>The vehicle</strong>An open framework under the Procurement Act 2023, operated by a framework provider. In-house is kept in reserve.</div>
+      <div class="rail"><strong>The term</strong>Three years plus one, the work position. Reopening approximately each six months at the start.</div>
+      <div class="rail"><strong>The size</strong>Approximately £250m for the framework life, agreed in principle. Conservative, contingency included.</div>
+      <div class="rail"><strong>The date</strong>Go-live in calendar Q1 2028; anchor 1 April 2028. August 2027 is not possible.</div>
+      <div class="rail"><strong>The discipline</strong>Simple to operate and transparent. If many people are necessary to calculate an invoice, the design is wrong.</div>
+    </div>
+    <div class="ledger">
+      <div class="ledger-col done">
+        <div class="ledger-h">Agreed in principle</div>
+        <ul>
+          <li>One master lot for the full journey; supplementary and component lots rejected for round one</li>
+          <li>A framework provider operates the framework; in-house kept in reserve</li>
+          <li>Consortiums permitted with one nominated prime; NHS bids permitted</li>
+          <li>Open to each qualified supplier; no maximum; minimum target approximately three for each test</li>
+          <li>Two assurance steps, gates approximately each six months; tests accredited, not use cases</li>
+          <li>A levy of one to two percent, with a part returned to NHSE as a platform fee on throughput</li>
+          <li>Payment for each activity; a national maximum price; KPIs give the remedies</li>
+          <li>Insourcers get help off the framework</li>
+        </ul>
+      </div>
+      <div class="ledger-col open">
+        <div class="ledger-h">Open items</div>
+        <ul>
+          <li>Repatriation of funds: name, mechanism, VAT, competition risk. This blocks the return line</li>
+          <li>The connection between NHSE assurance and the provider process</li>
+          <li>The proof at tender: a service that operates, or one ready at service start</li>
+          <li>The content of the test standard; a route for laboratories that do not have it yet</li>
+          <li>Go-live before full platform integration</li>
+          <li>Paid innovation for roadmap items; publication of throughput data</li>
+          <li>The activities, the price book, the tender template</li>
+          <li>The tiers, the gain-share, the fairness mechanism</li>
+          <li>Reopening frequency; new prices for current suppliers at reopening</li>
+          <li>NHSE costs and break-even; interim cover to Q1 2028; host start dates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    The commercial model on one page &middot; agreed in principle &middot; the framework is the product: suppliers supply to it, commissioners buy from it, and a share of throughput pays for it.
+  </div>
+
+</div>
+</body>
+</html>
